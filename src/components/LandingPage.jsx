@@ -44,7 +44,7 @@ function LandingPage() {
         </div>
 
         {/* Hero Section */}
-        <div className="relative  lg:max-w-5xl  xl:max-w-[94rem] mx-auto  min-h-[60vh] flex flex-col w-full items-center">
+        <div className="relative  lg:max-w-5xl  xl:max-w-7xl mx-auto  min-h-[60vh] flex flex-col w-full items-center">
           <div className="absolute left-0 -bottom-2">
             <img
               src={landingLeftImg}
