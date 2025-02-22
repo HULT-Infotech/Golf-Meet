@@ -66,7 +66,7 @@ function LandingPage() {
           <img
             src="favicons/favicon.svg"
             alt="Golfmeet Logo"
-            className="w-48 z-10 object-contain md:w-[640px] drop-shadow-2xl"
+            className="w-48 z-10 object-contain lg:w-[640px] drop-shadow-2xl"
             draggable="false"
           />
         </div>
