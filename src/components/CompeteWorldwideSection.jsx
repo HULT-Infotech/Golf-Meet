@@ -38,6 +38,7 @@ function CompeteWorldwideSection() {
                 transition-transform duration-300 hover:scale-110"
             >
               <img
+              draggable="false"
                 src={logo}
                 alt={`Golf Meet Logo ${index + 1}`}
                 className="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
