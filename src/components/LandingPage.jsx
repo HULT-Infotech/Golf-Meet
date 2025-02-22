@@ -3,9 +3,11 @@ import landingRightImg from "../assets/landing_right_img.svg";
 import landingLeftImg from "../assets/landing_left_img.svg";
 import indiaFlag from "../assets/india_flag.png";
 
+import Illustration_Golfers_Mobile from "../assets/Illustration_Golfers_Mobile.svg";
+
 function LandingPage() {
   return (
-    <section className="min-h-screen text-center">
+    <section className="min-h-screen p-2 text-center">
       <div className="relative flex flex-col min-h-[60vh] bg-gray-50 noise-bg">
         <style>
           {`
@@ -16,21 +18,25 @@ function LandingPage() {
         `}
         </style>
         {/* Top Navbar */}
-        <div className="absolute top-0 w-full flex justify-between items-center px-10 py-5">
-          <div className="flex gap-5">
-            <button className="bg-red-600 font-quattrocento text-white px-5 py-2 rounded shadow-md hover:bg-red-700 transition drop-shadow-2xl">
+        <div className="lg:absolute top-0 w-full flex justify-between items-center px-5 lg:px-10 py-5 flex-col-reverse md:flex-row">
+          <div className="flex gap-5 mt-4 md:mt-0 w-full lg:w-auto">
+            <button className="text-sm lg:text-base bg-red-600 font-quattrocento text-white px-2 py-1 md:px-5 md:py-2 rounded shadow-md hover:bg-red-700 transition drop-shadow-2xl">
               REGISTER NOW
             </button>
-            <a href="#" className="text-black text-center my-auto font-medium">
+            <a href="#" className="text-sm md:text-base text-black font-poppins text-center my-auto font-medium">
               HOW TO PLAY
             </a>
-            <a href="#" className="text-black my-auto font-medium">
+            <a href="#" className="text-sm md:text-base text-black font-poppins  my-auto font-medium">
               PAY FEES
             </a>
           </div>
-          <div className="flex items-center gap-2">
-            <img src={indiaFlag} alt="India Flag" className="w-6 h-5" />
-            <span className="font-quattrocento font-semibold text-sm">En</span>
+          <div className="flex items-center w-full md:w-auto justify-between gap-2">
+            <div className="flex items-center gap-1">
+              <img src={indiaFlag} alt="India Flag" className="w-6 h-5" />
+              <span className="font-quattrocento font-semibold text-sm">
+                En
+              </span>
+            </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
@@ -43,8 +49,8 @@ function LandingPage() {
           </div>
         </div>
 
-        {/* Hero Section */}
-        <div className="relative  lg:max-w-5xl  xl:max-w-7xl mx-auto  min-h-[60vh] flex flex-col w-full items-center">
+        {/*//! Hero Section Laptops */}
+        <div className="hidden relative  lg:max-w-5xl  xl:max-w-7xl mx-auto  min-h-[60vh] lg:flex flex-col w-full items-center">
           <div className="absolute left-0 -bottom-2">
             <img
               src={landingLeftImg}
@@ -72,9 +78,26 @@ function LandingPage() {
             />
           </div>
         </div>
+
+        {/*//! Design Mobile */}
+        <div className="relative flex flex-col lg:hidden items-center">
+          <img
+            src="favicons/favicon.svg"
+            alt="Golfmeet Logo"
+            className="w-10/12 sm:w-3/6   object-contain drop-shadow-2xl"
+            draggable="false"
+          />
+
+          <img
+            src={Illustration_Golfers_Mobile}
+            alt="Golf Illustration"
+            className="w-10/12 sm:w-3/6  "
+            draggable="false"
+          />
+        </div>
       </div>
       {/* Title */}
-      <h1 className="text-4xl font-quattrocento md:text-6xl xl:text-7xl font-bold lg:mt-16 xl:mt-20">
+      <h1 className="text-3xl sm:text-4xl mt-5 font-quattrocento md:text-6xl xl:text-7xl font-bold lg:mt-16 xl:mt-20">
         GOLF MEET INDIA 2025
       </h1>
       <p className="text-gray-600 text-lg mt-2">
