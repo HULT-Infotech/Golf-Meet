@@ -4,6 +4,7 @@ import landingLeftImg from "../assets/landing_left_img.svg";
 import indiaFlag from "../assets/india_flag.png";
 
 import Illustration_Golfers_Mobile from "../assets/Illustration_Golfers_Mobile.svg";
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   return (
@@ -15,9 +16,9 @@ function LandingPage() {
             <button className="text-sm lg:text-base bg-red-600 font-quattrocento text-white px-2 py-1 md:px-5 md:py-2 rounded shadow-md hover:bg-red-700 transition drop-shadow-2xl">
               REGISTER NOW
             </button>
-            <a href="#" className="text-sm md:text-base text-black font-poppins text-center my-auto font-medium">
+            <Link to="/home-to-play" className="text-sm md:text-base text-black font-poppins text-center my-auto font-medium">
               HOW TO PLAY
-            </a>
+            </Link>
             <a href="#" className="text-sm md:text-base text-black font-poppins  my-auto font-medium">
               PAY FEES
             </a>
