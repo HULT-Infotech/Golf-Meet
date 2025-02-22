@@ -18,7 +18,7 @@ function LandingPage() {
         {/* Top Navbar */}
         <div className="absolute top-0 w-full flex justify-between items-center px-10 py-5">
           <div className="flex gap-5">
-            <button className="bg-red-600 font-quattrocento text-white px-5 py-2 rounded shadow-md hover:bg-red-700 transition">
+            <button className="bg-red-600 font-quattrocento text-white px-5 py-2 rounded shadow-md hover:bg-red-700 transition drop-shadow-2xl">
               REGISTER NOW
             </button>
             <a href="#" className="text-black text-center my-auto font-medium">
@@ -30,7 +30,7 @@ function LandingPage() {
           </div>
           <div className="flex items-center gap-2">
             <img src={indiaFlag} alt="India Flag" className="w-6 h-5" />
-            <span className="font-quattrocento">En</span>
+            <span className="font-quattrocento font-semibold text-sm">En</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
@@ -49,7 +49,7 @@ function LandingPage() {
             <img
               src={landingLeftImg}
               alt="Golf Illustration Left"
-              className=""
+              className="w-full"
               draggable="false"
             />
           </div>
@@ -57,7 +57,7 @@ function LandingPage() {
             <img
               src={landingRightImg}
               alt="Golf Illustration Right"
-              className=" "
+              className="w-full "
               draggable="false"
             />
           </div>
