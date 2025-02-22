@@ -43,12 +43,12 @@ function LandingPage() {
         </div>
 
         {/*//! Hero Section Laptops */}
-        <div className="hidden relative  lg:max-w-5xl  xl:max-w-7xl mx-auto  min-h-[60vh] lg:flex flex-col w-full items-center">
+        <div className="hidden relative  lg:max-w-5xl  xl:max-w-screen-2xl mx-auto  min-h-[60vh] lg:flex flex-col w-full items-center">
           <div className="absolute left-0 -bottom-2">
             <img
               src={landingLeftImg}
               alt="Golf Illustration Left"
-              className="w-full lg:w-[350px]  xl:w-[460px] "
+              className="w-full lg:w-[350px]  xl:w-[560px] "
               draggable="false"
             />
           </div>
@@ -56,7 +56,7 @@ function LandingPage() {
             <img
               src={landingRightImg}
               alt="Golf Illustration Right"
-              className="w-full lg:w-[380px]  xl:w-[500px] "
+              className="w-full lg:w-[380px]  xl:w-[600px] "
               draggable="false"
             />
           </div>
@@ -66,7 +66,7 @@ function LandingPage() {
             <img
               src="favicons/favicon.svg"
               alt="Golfmeet Logo"
-              className="w-48 object-contain lg:w-[380px]  xl:w-[500px] drop-shadow-2xl"
+              className="w-48 object-contain lg:w-[450px]  xl:w-[600px] drop-shadow-2xl"
               draggable="false"
             />
           </div>

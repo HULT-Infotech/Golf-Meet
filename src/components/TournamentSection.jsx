@@ -1,79 +1,88 @@
 import React from "react";
 import golfIllustration from "../assets/golfIllustration.svg";
-import golfFlag from "../assets/golf-flag.svg"; 
+import golfFlag from "../assets/golf-flag.svg";
 
 const TournamentSection = () => {
   return (
     <section className="relative bg-white text-black py-16">
+      {/* Steps */} 
 
-      {/* Steps */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center relative z-10">
-        <div>
-          <h4 className="text-lg font-bold text-green-700">1. Register</h4>
-          <p className="text-sm text-gray-600">
-            Create an account and secure your spot on the tour.
-          </p>
+    <h1 className="text-3xl px-10 mb-10 font-quattrocento font-semibold text-center text-[#014D4E] ">HOW IT WORKS</h1>
+      <div className="flex flex-col gap-10 items-center justify-center sm:flex-wrap sm:flex-row sm:gap-10">
+        {/*  Step 1 */}
+        <div className="flex items-start space-x-3">
+          <span className="w-8 h-10 rounded-full bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+            1
+          </span>
+          <div>
+            <h3 className="text-gray-500 text-sm font-medium">Register</h3>
+            <h2 className="text-xl font-bold text-gray-900">
+              Register to Play
+            </h2>
+            <p className="text-gray-700 text-sm w-56 sm:w-72">
+              Grab your clubs and secure your spot on the course. Share basic
+              details about you and your golf experience.
+            </p>
+          </div>
         </div>
-        <div>
-          <h4 className="text-lg font-bold text-green-700">2. Get the Green Light</h4>
-          <p className="text-sm text-gray-600">
-            Our team will verify your profile before approving your entry.
-          </p>
+
+        {/*  Step 2 */}
+        <div className="flex items-start space-x-3">
+          <span className="w-8 h-10 rounded-full bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+            2
+          </span>
+          <div>
+            <h3 className="text-gray-500 text-sm font-medium">
+              Profile Approval
+            </h3>
+            <h2 className="text-xl font-bold text-gray-900">
+              Get the Green Light
+            </h2>
+            <p className="text-gray-700 text-sm w-56 sm:w-72">
+              We will check your profile to ensure you’re a true amateur. Let’s
+              keep the tournament authentic and exciting!
+            </p>
+          </div>
         </div>
-        <div>
-          <h4 className="text-lg font-bold text-green-700">3. Chip in for the Game</h4>
-          <p className="text-sm text-gray-600">
-            Pay tournament fees and get access to exciting competitions.
-          </p>
+
+        {/*  Step 3 */}
+        <div className="flex items-start space-x-3">
+          <span className="w-8 h-10 rounded-full bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+            3
+          </span>
+          <div>
+            <h3 className="text-gray-500 text-sm font-medium">
+              Pay Tournament Fees
+            </h3>
+            <h2 className="text-xl font-bold text-gray-900">
+              Chip in for the game
+            </h2>
+            <p className="text-gray-700 text-sm w-56 sm:w-72">
+              Make your contribution to participate in the tournament.
+              Convenient payment plans for everyone.
+            </p>
+          </div>
         </div>
-        <div>
-          <h4 className="text-lg font-bold text-green-700">4. Hit the Fairway</h4>
-          <p className="text-sm text-gray-600">
-            Play your best rounds and enter the leaderboard.
-          </p>
+
+        {/*  Step 4 */}
+        <div className="flex items-start space-x-3">
+          <span className="w-8 h-10 rounded-full bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+            4
+          </span>
+          <div>
+            <h3 className="text-gray-500 text-sm font-medium">
+              Play the Tournament
+            </h3>
+            <h2 className="text-xl font-bold text-gray-900">Hit the Fairway</h2>
+            <p className="text-gray-700 text-sm w-56 sm:w-72">
+              Take your position on the fairway and bring your A-game to the
+              tournament. It's time to show your skills and aim for the
+              leaderboard!
+            </p>
+          </div>
         </div>
+
       </div>
-
-      {/* Main Content */}
-      <div className="relative text-center mt-12">
-        <h2 className="text-3xl md:text-4xl font-bold font-serif">
-          THE SOCIAL AMATEUR TOURNAMENT WITH A DIFFERENCE
-        </h2>
-
-        {/* Golf Balls */}
-        <div className="flex justify-center gap-4 mt-4">
-          <span className="w-5 h-5 bg-gray-300 rounded-full"></span>
-          <span className="w-5 h-5 bg-gray-300 rounded-full"></span>
-          <span className="w-5 h-5 bg-gray-300 rounded-full"></span>
-        </div>
-
-        {/* Description */}
-        <p className="text-gray-700 text-lg max-w-2xl mx-auto mt-6">
-          Unlike typical golf tournaments where the result depends on your form 
-          on the tournament day, GolfMeet gives you and everyone else a fair 
-          chance all year long.
-        </p>
-      </div>
-
-      {/* Illustration + Play Info */}
-      <div className="flex flex-col md:flex-row items-center justify-between mt-12">
-        <img src={golfIllustration} alt="Golf Illustration" className="w-full md:w-1/3" />
-
-        <div className="max-w-lg">
-          <p className="text-xl font-bold text-green-700">
-            Play any number of rounds within the year. Your best 12 rounds will get 
-            added to the leaderboard.*
-          </p>
-          <p className="text-gray-600 text-sm mt-3">
-            * You can play unlimited rounds at any eligible golf course around the world. 
-            But at least 8 of your qualifying rounds must be played at golf courses 
-            within your home country.
-          </p>
-        </div>
-      </div>
-
-      {/* Golf Flag */}
-      <img src={golfFlag} alt="Golf Flag" className="absolute bottom-0 right-5 w-12" />
     </section>
   );
 };
