@@ -6,15 +6,15 @@ import indiaFlag from "../assets/india_flag.png";
 function LandingPage() {
   return (
     <section className="min-h-screen text-center">
-      <div className="relative flex flex-col bg-gray-50 noise-bg">
-      <style>
-        {`
+      <div className="relative flex flex-col min-h-[60vh] bg-gray-50 noise-bg">
+        <style>
+          {`
           .noise-bg {
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23noiseFilter)' opacity='0.1'/%3E%3C/svg%3E");
             background-repeat: repeat;
           }
         `}
-      </style>
+        </style>
         {/* Top Navbar */}
         <div className="absolute top-0 w-full flex justify-between items-center px-10 py-5">
           <div className="flex gap-5">
@@ -44,7 +44,7 @@ function LandingPage() {
         </div>
 
         {/* Hero Section */}
-        <div className="relative flex flex-col w-full items-center">
+        <div className="relative  max-w-[94rem] mx-auto  min-h-[60vh] flex flex-col w-full items-center">
           <div className="absolute left-0 -bottom-2">
             <img
               src={landingLeftImg}
@@ -63,16 +63,18 @@ function LandingPage() {
           </div>
 
           {/* Center Logo */}
+          <div className="absolute  -bottom-20">
           <img
-            src="favicons/favicon.svg"
-            alt="Golfmeet Logo"
-            className="w-48 z-10 object-contain lg:w-[640px] drop-shadow-2xl"
-            draggable="false"
-          />
+              src="favicons/favicon.svg"
+              alt="Golfmeet Logo"
+              className="w-48 object-contain lg:w-[380px]  xl:w-[580px] drop-shadow-2xl"
+              draggable="false"
+            />
+          </div>
         </div>
       </div>
       {/* Title */}
-      <h1 className="text-4xl font-quattrocento md:text-6xl font-bold mt-5">
+      <h1 className="text-4xl font-quattrocento md:text-6xl font-bold mt-20">
         GOLF MEET INDIA 2025
       </h1>
       <p className="text-gray-600 text-lg mt-2">
