@@ -8,20 +8,29 @@ function LandingPage() {
     <section className="relative min-h-screen bg-gray-100 flex flex-col items-center justify-center text-center">
       {/* Top Navbar */}
       <div className="absolute top-0 w-full flex justify-between items-center px-10 py-5">
-        <div className="flex font-quattrocento gap-5">
-          <button className="bg-red-600 text-white px-5 py-2 rounded shadow-md hover:bg-red-700 transition">
+        <div className="flex gap-5">
+          <button className="bg-red-600 font-quattrocento text-white px-5 py-2 rounded shadow-md hover:bg-red-700 transition">
             REGISTER NOW
           </button>
-          <a href="#" className="text-black font-medium">
+          <a href="#" className="text-black text-center my-auto font-medium">
             HOW TO PLAY
           </a>
-          <a href="#" className="text-black font-medium">
+          <a href="#" className="text-black my-auto font-medium">
             PAY FEES
           </a>
         </div>
-        <div className="flex items-center gap-2">
-          <img src={indiaFlag} alt="India Flag" className="w-5 h-5" />
-          <span>En ▼</span>
+        <div className="flex items-center  gap-2">
+          <img src={indiaFlag} alt="India Flag" className="w-6 h-5" />
+          <span className="font-quattrocento">En</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#5f6368"
+          >
+            <path d="M480-360 280-560h400L480-360Z" />
+          </svg>
         </div>
       </div>
 
@@ -32,6 +41,7 @@ function LandingPage() {
             src={landingLeftImg}
             alt="Golf Illustration Left"
             className="w-60"
+            draggable="false"
           />
         </div>
         <div className="absolute right-0 top-10">
@@ -39,6 +49,7 @@ function LandingPage() {
             src={landingRightImg}
             alt="Golf Illustration Right"
             className="w-60"
+            draggable="false"
           />
         </div>
 
@@ -47,6 +58,7 @@ function LandingPage() {
           src="favicons/favicon.svg"
           alt="Golfmeet Logo"
           className="w-48 md:w-72"
+          draggable="false"
         />
 
         {/* Title */}
