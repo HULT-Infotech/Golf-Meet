@@ -7,7 +7,7 @@ import Illustration_Golfers_Mobile from "../assets/Illustration_Golfers_Mobile.s
 
 function LandingPage() {
   return (
-    <section className="min-h-screen p-2 text-center">
+    <section className="min-h-screen text-center">
       <div className="relative flex flex-col min-h-[60vh] bg-gray-50 noise-bg">
         <style>
           {`
