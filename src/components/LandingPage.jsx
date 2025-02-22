@@ -44,12 +44,12 @@ function LandingPage() {
         </div>
 
         {/* Hero Section */}
-        <div className="relative  max-w-[94rem] mx-auto  min-h-[60vh] flex flex-col w-full items-center">
+        <div className="relative  lg:max-w-5xl  xl:max-w-[94rem] mx-auto  min-h-[60vh] flex flex-col w-full items-center">
           <div className="absolute left-0 -bottom-2">
             <img
               src={landingLeftImg}
               alt="Golf Illustration Left"
-              className="w-full"
+              className="w-full lg:w-[350px]  xl:w-[460px] "
               draggable="false"
             />
           </div>
@@ -57,24 +57,24 @@ function LandingPage() {
             <img
               src={landingRightImg}
               alt="Golf Illustration Right"
-              className="w-full "
+              className="w-full lg:w-[380px]  xl:w-[500px] "
               draggable="false"
             />
           </div>
 
           {/* Center Logo */}
-          <div className="absolute  -bottom-20">
+          <div className="absolute lg:-bottom-14 xl:-bottom-16">
             <img
               src="favicons/favicon.svg"
               alt="Golfmeet Logo"
-              className="w-48 object-contain lg:w-[380px]  xl:w-[580px] drop-shadow-2xl"
+              className="w-48 object-contain lg:w-[380px]  xl:w-[500px] drop-shadow-2xl"
               draggable="false"
             />
           </div>
         </div>
       </div>
       {/* Title */}
-      <h1 className="text-4xl font-quattrocento md:text-6xl lg:text-7xl xl:text-8xl font-bold mt-20">
+      <h1 className="text-4xl font-quattrocento md:text-6xl xl:text-7xl font-bold lg:mt-16 xl:mt-20">
         GOLF MEET INDIA 2025
       </h1>
       <p className="text-gray-600 text-lg mt-2">
