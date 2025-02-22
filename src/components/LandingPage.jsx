@@ -7,7 +7,7 @@ function LandingPage() {
   return (
     <section className="relative min-h-screen bg-gray-100 flex flex-col items-center justify-center text-center">
       {/* Top Navbar */}
-      <div className="absolute top-0 w-full flex justify-between items-center px-10 py-5">
+      <div className="absolute font-quattrocento top-0 w-full flex justify-between items-center px-10 py-5">
         <div className="flex gap-5">
           <button className="bg-red-600 text-white px-5 py-2 rounded shadow-md hover:bg-red-700 transition">
             REGISTER NOW
@@ -34,14 +34,14 @@ function LandingPage() {
         <img src="favicons/favicon.svg" alt="Golfmeet Logo" className="w-48 md:w-72" />
 
         {/* Title */}
-        <h1 className="text-4xl md:text-6xl font-bold mt-5">GOLF MEET INDIA 2025</h1>
+        <h1 className="text-4xl font-quattrocento md:text-6xl font-bold mt-5">GOLF MEET INDIA 2025</h1>
         <p className="text-gray-600 text-lg mt-2">
           The year-long amateur golf tournament
         </p>
         <p className="text-gray-500 text-sm">JANUARY 2025 - DECEMBER 2025</p>
 
         {/* Register Button */}
-        <button className="mt-6 bg-black text-white px-6 py-3 rounded shadow-lg hover:bg-gray-800 transition">
+        <button className="mt-6 font-quattrocento bg-black text-white px-6 py-3 rounded shadow-lg hover:bg-gray-800 transition">
           REGISTRATION OPEN
         </button>
       </div>
