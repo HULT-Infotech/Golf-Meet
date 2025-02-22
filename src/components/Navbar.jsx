@@ -5,7 +5,7 @@ import centralLogo from "/favicons/favicon.svg";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-200  noise-bg shadow-md py-5 px-5 lg:px-10 flex flex-col-reverse sm:flex-row items-center justify-between w-full 
+    <nav className="bg-gray-200  noise-bg shadow-lg py-5 px-5 lg:px-10 flex flex-col-reverse sm:flex-row items-center justify-between w-full 
         sticky top-0 z-50">
       
       {/* Left Section - Buttons */}
