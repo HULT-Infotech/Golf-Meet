@@ -5,7 +5,7 @@ import centralLogo from "/favicons/favicon.svg";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-200  noise-bg shadow-md py-5 px-5 lg:px-10 flex flex-col-reverse md:flex-row items-center justify-between w-full 
+    <nav className="bg-gray-200  noise-bg shadow-md py-5 px-5 lg:px-10 flex flex-col-reverse sm:flex-row items-center justify-between w-full 
         sticky top-0 z-50">
       
       {/* Left Section - Buttons */}
@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
 
       {/* Center Section - Logo */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 top-2 md:top-2">
+      <div className="hidden md:block absolute  left-2/3 md:left-2/4 transform -translate-x-1/2 top-2 md:top-2">
         <img src={centralLogo} alt="Central Logo" className="w-12 md:w-24" />
       </div>
 
