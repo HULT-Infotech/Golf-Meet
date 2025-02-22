@@ -1,10 +1,18 @@
 import React from 'react'
-import LandingPage from '../components/LandingPage'
+import LandingSection from '../components/LandingSection'
+import CompeteWorldwideSection from '../components/CompeteWorldwideSection'
+
+
 
 function HomePage() {
   return (
    <>
-   <LandingPage/>
+   {/* Section 1  */}
+   <LandingSection/>
+
+    {/* Section 2 */}
+    <CompeteWorldwideSection/>
+   
    
    </>
   )

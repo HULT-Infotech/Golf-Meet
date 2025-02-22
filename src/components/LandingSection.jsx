@@ -9,14 +9,6 @@ function LandingPage() {
   return (
     <section className="min-h-screen text-center">
       <div className="relative flex flex-col min-h-[60vh] bg-gray-50 noise-bg">
-        <style>
-          {`
-          .noise-bg {
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23noiseFilter)' opacity='0.1'/%3E%3C/svg%3E");
-            background-repeat: repeat;
-          }
-        `}
-        </style>
         {/* Top Navbar */}
         <div className="lg:absolute top-0 w-full flex justify-between items-center px-5 lg:px-10 py-5 flex-col-reverse md:flex-row">
           <div className="flex gap-5 mt-4 md:mt-0 w-full lg:w-auto">
@@ -106,7 +98,7 @@ function LandingPage() {
       <p className="text-gray-500 text-sm">JANUARY 2025 - DECEMBER 2025</p>
 
       {/* Register Button */}
-      <button className=" mt-5 group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-gray-800 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20">
+      <button className=" my-7 group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-gray-800 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20">
         <span className="text-lg font-quattrocento"> REGISTRATION OPEN</span>
         <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
           <div className="relative h-full w-10 bg-white/20"></div>
