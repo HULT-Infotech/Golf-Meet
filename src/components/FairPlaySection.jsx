@@ -36,17 +36,17 @@ const FairPlaySection = () => {
         </p>
         
         <div className="mb-4 md:mb-8 lg:mb-12">
-          <p className="font-semibold text-lg md:text-xl lg:text-2xl xl:text-3xl mx-auto max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-2xl xl:max-w-3xl text-[#014D4E]">
+          <p className="font-semibold text-lg md:text-xl lg:text-2xl xl:text-3xl mx-auto max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-2xl text-[#014D4E]">
             With the GolfMeet handicap, all that matters is your consistency.
           </p>
-          <p className="mt-2 mb-8 md:mb-12 lg:mb-16 font-semibold text-base md:text-lg xl:text-xl max-w-xs sm:max-w-sm md:max-w-md mx-auto text-[#014D4E]">
+          <p className="mt-12 mb-8 md:mb-12 lg:mb-16 font-semibold text-base md:text-lg xl:text-xl max-w-xs sm:max-w-sm md:max-w-md mx-auto text-[#014D4E]">
             Not your age or gender.
           </p>
         </div>
       </section>
 
       {/* Second Section - Pricing */}
-      <section className="text-center flex flex-col justify-center p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20 w-full max-w-full overflow-hidden">
+      <section className="text-center flex flex-col justify-center p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20 w-full">
         <h2 className="text-xl md:text-2xl font-semibold mb-4">
           TOURNAMENT FEE
         </h2>
