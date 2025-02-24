@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="w-full">
       {/* Main Footer Section */}
-      <section className="bg-[#014D4E] noise-bg relative py-6 px-4 flex justify-between items-center min-h-96">
+      <section className="bg-[#134849] noise-bg relative py-6 px-4 flex justify-between items-center min-h-96">
         {/* Left Illustration */}
         <div className="absolute bottom-0 left-0">
           <img
@@ -89,7 +89,7 @@ function Footer() {
 
       {/* Bottom Gray Section */}
       <section className="bg-gray-100 noise-bg h-24 text-center flex justify-center items-center  w-full">
-        <p>Copyright © 2024 Golfmeet LLP. All Rights Reserved.</p>
+        <p className="text-gray-600 text-sm">Copyright © 2024 Golfmeet LLP. All Rights Reserved.</p>
       </section>
     </footer>
   );
