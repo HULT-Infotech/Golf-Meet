@@ -1,5 +1,6 @@
 import React from "react";
 import Illustration_Golfers_Mobile from "../assets/Illustration_Golfers_Mobile.svg";
+import INDIA_golfmeet_logo from "/favicons/favicon.svg";
 
 const FairPlaySection = () => {
   return (
@@ -13,28 +14,26 @@ const FairPlaySection = () => {
             className="w-[65vw] object-contain"
           />
         </div>
-        
+
         <h2 className="text-sm md:text-lg lg:text-xl uppercase tracking-wide my-4 md:my-6 lg:my-10">
           Play Fair. No More Handicap Inflation!
         </h2>
-        
+
         <div className="mx-auto max-w-4xl">
-          <h6 className="text-base md:text-lg lg:text-xl">
-            Introduction
-          </h6>
+          <h6 className="text-base md:text-lg lg:text-xl">Introduction</h6>
           <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl mx-auto uppercase py-2 md:py-4 font-quattrocento tracking-wider font-bold mt-2">
             The GolfMeet
             <br />
             <span className="block mt-2 md:mt-4">Handicap</span>
           </h1>
         </div>
-        
+
         <p className="mt-4 text-[#014D4E] text-xl md:text-2xl my-4 md:my-6 lg:my-10 mx-auto max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl">
           GolfMeet uses machine learning to compute the accurate handicap of
           each player, based on their scores on each hole of every course they
           have played.
         </p>
-        
+
         <div className="mb-4 md:mb-8 lg:mb-12">
           <p className="font-semibold text-lg md:text-xl lg:text-2xl mx-auto max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-3xl lg:p-5 text-[#014D4E]">
             With the GolfMeet handicap, all that matters is your consistency.
@@ -50,11 +49,11 @@ const FairPlaySection = () => {
         <h2 className="text-xl md:text-2xl font-semibold mb-4">
           TOURNAMENT FEE
         </h2>
-        
+
         <div className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-quattrocento mb-2">
           ₹48,000
         </div>
-        
+
         <p className="text-xs my-4 md:my-6 lg:my-8 xl:my-10 text-gray-500 uppercase mb-4 md:mb-6 lg:mb-8">
           Fee is inclusive of 18% GST. Green fee is not included.
         </p>
@@ -109,9 +108,23 @@ const FairPlaySection = () => {
                   {option.totalPrice}
                 </div>
               </div>
-              <div className="text-lg md:text-xl font-semibold">{option.savings}</div>
+              <div className="text-lg md:text-xl font-semibold">
+                {option.savings}
+              </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      {/* Third Section - Logo */}
+      <section className="bg-gray-100 noise-bg flex justify-center items-center w-full p-10 min-h-[350px] drop-shadow-2xl">
+        <div className="w-[30vw] transition-transform duration-500 ">
+          <img
+            draggable="false"
+            src={INDIA_golfmeet_logo}
+            alt="Golf Meet Logo"
+            className="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+          />
         </div>
       </section>
     </>
