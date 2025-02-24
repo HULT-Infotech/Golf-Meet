@@ -4,6 +4,7 @@ import CompeteWorldwideSection from '../components/CompeteWorldwideSection'
 import Navbar from '../components/Navbar'
 import HowItWorksSection from '../components/HowItWorksSection'
 import FairPlaySection from '../components/FairPlaySection'
+import Footer from '../components/Footer'
 
 
 
@@ -22,8 +23,8 @@ function HomePage() {
 
     {/* Section 4 */}
     <FairPlaySection/>
-
-   <section className='min-h-screen bg-black'></section>
+   
+   <Footer/>
    </>
   )
 }
