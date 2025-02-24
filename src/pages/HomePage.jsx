@@ -23,7 +23,6 @@ function HomePage() {
     {/* Section 4 */}
     <FairPlaySection/>
 
-   <section className='min-h-screen'></section>
    <section className='min-h-screen bg-black'></section>
    </>
   )

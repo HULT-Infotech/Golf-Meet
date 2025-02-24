@@ -34,40 +34,55 @@ const FairPlaySection = () => {
         </p>
       </section>
 
-      <div className="mt-10">
-        <h3 className="text-lg font-semibold">Tournament Fee</h3>
-        <p className="text-3xl font-bold">₹48,000</p>
-        <p className="text-xs text-gray-500">
+      <section className="text-center flex flex-col justify-center  min-h-svh">
+        <h2 className="text-2xl font-semibold mb-4">TOURNAMENT FEE</h2>
+        <div className="text-6xl font-bold font-quattrocento  mb-2">
+          ₹48,000
+        </div>
+        <p className="text-xs my-10 text-gray-500 uppercase mb-8">
           Fee is inclusive of 18% GST. Green fee is not included.
         </p>
-      </div>
 
-      <h3 className="mt-6 text-lg font-semibold">Available Payment Plans:</h3>
-      <div className="flex justify-center gap-6 mt-6">
-        {/* Single Installment */}
-        <div className="bg-green-700 text-white p-6 rounded-lg w-64">
-          <p className="text-lg font-semibold">1 Installment of</p>
-          <p className="text-2xl font-bold">₹39,999</p>
-          <p className="mt-2">Total ₹39,999</p>
-          <p className="mt-1 text-sm">You Save 16%</p>
-        </div>
+        <h2 className="text-2xl font-semibold mb-8">AVAILABLE PAYMENT PLANS:</h2>
 
-        {/* 4 Installments */}
-        <div className="border p-6 rounded-lg w-64">
-          <p className="text-lg font-semibold">4 Installments of</p>
-          <p className="text-2xl font-bold">₹10,699</p>
-          <p className="mt-2">Total ₹42,796</p>
-          <p className="mt-1 text-sm">You Save 10%</p>
-        </div>
+        <section className="flex justify-center gap-8">
+          {/* Single Payment */}
+          <article className="w-72 border-2 rounded border-black p-8 transition-all duration-300 hover:border-transparent hover:bg-teal-700 hover:text-white group">
+            <div className="text-6xl font-bold mb-4">1</div>
+            <div className="text-xl uppercase mb-4">Installment of</div>
+            <div className="text-4xl font-bold mb-4">₹39,999</div>
+            <div className="border-t border-black/30 group-hover:border-white/30 pt-4 mb-4">
+              <div className="uppercase">Total</div>
+              <div className="text-2xl">₹39,999</div>
+            </div>
+            <div className="text-xl">YOU SAVE 16%</div>
+          </article>
 
-        {/* 12 Installments */}
-        <div className="border p-6 rounded-lg w-64">
-          <p className="text-lg font-semibold">12 Installments of</p>
-          <p className="text-2xl font-bold">₹3,999</p>
-          <p className="mt-2">Total ₹48,000</p>
-          <p className="mt-1 text-sm">No Savings</p>
-        </div>
-      </div>
+          {/* 4 Installments */}
+          <article className="w-72 border-2 rounded border-black p-8 transition-all duration-300 hover:bg-teal-700 hover:text-white hover:border-transparent group">
+            <div className="text-6xl font-bold mb-4">4</div>
+            <div className="text-xl uppercase mb-4">Installments of</div>
+            <div className="text-4xl font-bold mb-4">₹10,699</div>
+            <div className="border-t border-black/30 group-hover:border-white/30 pt-4 mb-4">
+              <div className="uppercase">Total</div>
+              <div className="text-2xl">₹42,796</div>
+            </div>
+            <div className="text-xl">YOU SAVE 10%</div>
+          </article>
+
+          {/* 12 Installments */}
+          <article className="w-72 border-2 rounded border-black p-8 transition-all duration-300 hover:bg-teal-700 hover:text-white hover:border-transparent group">
+            <div className="text-6xl font-bold mb-4">12</div>
+            <div className="text-xl uppercase mb-4">Installments of</div>
+            <div className="text-4xl font-bold mb-4">₹3,999</div>
+            <div className="border-t border-black/30 group-hover:border-white/30 pt-4 mb-4">
+              <div className="uppercase">Total</div>
+              <div className="text-2xl">₹48,000</div>
+            </div>
+            <div className="text-xl">NO SAVINGS</div>
+          </article>
+        </section>
+      </section>
     </>
   );
 };
