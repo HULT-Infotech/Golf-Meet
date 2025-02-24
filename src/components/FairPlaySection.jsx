@@ -5,7 +5,7 @@ import Illustration_Golfers_Mobile from "../assets/Illustration_Golfers_Mobile.s
 const FairPlaySection = () => {
   return (
     <>
-      <section className=" relative bg-gray-100 noise-bg min-h-[90vh] drop-shadow-xl  p-6 text-center">
+      <section className=" relative bg-gray-100 noise-bg min-h-[93vh] drop-shadow-xl flex flex-col justify-between p-8 text-center">
         <div className=" absolute -z-10 bottom-0 -left-7 flex  justify-center align-center w-full opacity-30">
           <img
             src={Illustration_Golfers_Mobile}
@@ -13,25 +13,32 @@ const FairPlaySection = () => {
             className=" w-[60vw] object-cover"
           />
         </div>
-        <h2 className="text-sm md:text-lg lg:text-2xl uppercase tracking-wide my-10">
+        <h2 className="text-sm md:text-lg lg:text-2xl uppercase tracking- my-10">
           Play Fair. No More Handicap Inflation!
         </h2>
-
-        <h6 className="text-base md:text-lg lg:text-xl">Introduction</h6>
-        <h1 className="text-4xl lg:text-7xl uppercase py-4 font-quattrocento font-bold mt-2">
-          The GolfMeet <br /> Handicap
-        </h1>
-        <p className="mt-4 text-[#014D4E] max-w-2xl text-2xl my-10 mx-auto">
+        <div>
+          <h6 className="text-base md:text-lg lg:text-xl xl:text-2xl">
+            Introduction
+          </h6>
+          <h1 className="text-4xl lg:text-7xl max-w-xl mx-auto uppercase py-4 font-quattrocento tracking-wider font-bold mt-2">
+            The GolfMeet
+            <br />
+            <span className="block mt-4">Handicap</span>
+          </h1>
+        </div>
+        <p className="mt-4 text-[#014D4E] max-w-2xl text-2xl xl:text-3xl xl:max-w-4xl xl:p-3 my-10 mx-auto">
           GolfMeet uses machine learning to compute the accurate handicap of
           each player, based on their scores on each hole of every course they
           have played.
         </p>
-        <p className="mt-4 font-bold text-lg max-w-md mx-auto text-[#014D4E]">
-          With the GolfMeet handicap, all that matters is your consistency.
-        </p>
-        <p className="mt-10 font-bold text-lg max-w-md mx-auto text-[#014D4E]">
-          Not your age or gender.
-        </p>
+        <div>
+          <p className="my- font-semibold text-lg xl:text-3xl max-w-3xl xl:p-10 mx-auto text-[#014D4E]">
+            With the GolfMeet handicap, all that matters is your consistency.
+          </p>
+          <p className="mb-20 font-semibold text-lg xl:text-xl max-w-md mx-auto text-[#014D4E]">
+            Not your age or gender.
+          </p>
+        </div>
       </section>
 
       <section className="text-center flex flex-col justify-center  min-h-svh">
@@ -43,7 +50,9 @@ const FairPlaySection = () => {
           Fee is inclusive of 18% GST. Green fee is not included.
         </p>
 
-        <h2 className="text-2xl font-semibold mb-8">AVAILABLE PAYMENT PLANS:</h2>
+        <h2 className="text-2xl font-semibold mb-8">
+          AVAILABLE PAYMENT PLANS:
+        </h2>
 
         <section className="flex justify-center gap-8">
           {/* Single Payment */}
