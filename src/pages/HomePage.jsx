@@ -3,6 +3,7 @@ import LandingSection from '../components/LandingSection'
 import CompeteWorldwideSection from '../components/CompeteWorldwideSection'
 import Navbar from '../components/Navbar'
 import HowItWorksSection from '../components/HowItWorksSection'
+import FairPlaySection from '../components/FairPlaySection'
 
 
 
@@ -19,7 +20,9 @@ function HomePage() {
    {/* Section 3 */}
    <HowItWorksSection/>
 
-   <section className='min-h-screen'></section>
+    {/* Section 4 */}
+    <FairPlaySection/>
+
    <section className='min-h-screen bg-black'></section>
    </>
   )
