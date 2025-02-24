@@ -41,7 +41,7 @@ const FairPlaySection = () => {
         </div>
       </section>
 
-      <section className="text-center flex flex-col justify-center  min-h-svh">
+      <section className="text-center flex flex-col justify-center p-20">
         <h2 className="text-2xl font-semibold lg:text-2xl mb-4">
           TOURNAMENT FEE
         </h2>
