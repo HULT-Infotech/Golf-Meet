@@ -2,7 +2,7 @@ import React from "react";
 import golfIllustration from "../assets/golfIllustration.svg";
 import golfFlag from "../assets/golf-flag.svg";
 import Illustration_Golf_Balls from "../assets/Illustration_Golf_Balls.svg";
-
+import Illustration_Greens_mobile from "../assets/Illustration_Greens_mobile.svg";
 const HowItWorksSection = () => {
   return (
     <section className="relative bg-white text-black py-16">
@@ -86,9 +86,17 @@ const HowItWorksSection = () => {
           </div>
         </div>
       </div>
+      <div className="md:hidden py-7 relative">
+        <img
+          src={Illustration_Greens_mobile}
+          className="w-full relative z-10"
+          alt="Illustration Greens mobile"
+        />
+        <div className="absolute bottom-0 left-0 w-full h-28 noise-bg" />
+      </div>
 
       {/*  Section 4 */}
-      <div className="mx-auto  my-16 bg-gradient-to-b noise-bg py-16">
+      <div className="mx-auto  noise-bg md:py-20">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-quattrocento font-bold mb-8 tracking-wide lg:text-6xl">
             THE SOCIAL AMATEUR
@@ -134,7 +142,6 @@ const HowItWorksSection = () => {
               the world. But at least 8 of your qualifying rounds must be played
               at golf courses within your home country.
             </p>
-
           </div>
         </div>
       </div>
