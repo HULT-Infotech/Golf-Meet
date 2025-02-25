@@ -2,9 +2,23 @@ import React from "react";
 import landingRightImg from "../assets/landing_right_img.svg";
 import landingLeftImg from "../assets/landing_left_img.svg";
 import indiaFlag from "../assets/india_flag.png";
+import INDIA_golfmeet_logo from "/favicons/favicon.svg";
+
 function Footer() {
   return (
     <footer className="w-full">
+      
+      {/* Third Section - Logo */}
+      <section className="bg-gray-100 noise-bg flex justify-center items-center w-full p-10 min-h-[350px] drop-shadow-2xl">
+        <div className="w-[30vw] transition-transform duration-500 ">
+          <img
+            draggable="false"
+            src={INDIA_golfmeet_logo}
+            alt="Golf Meet Logo"
+            className="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+          />
+        </div>
+      </section>
       {/* Main Footer Section */}
       <section className="bg-[#134849] noise-bg relative py-6 px-4 flex justify-between items-center min-h-96">
         {/* Left Illustration */}

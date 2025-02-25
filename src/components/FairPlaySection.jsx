@@ -1,6 +1,5 @@
 import React from "react";
 import Illustration_Golfers_Mobile from "../assets/Illustration_Golfers_Mobile.svg";
-import INDIA_golfmeet_logo from "/favicons/favicon.svg";
 
 const FairPlaySection = () => {
   return (
@@ -113,18 +112,6 @@ const FairPlaySection = () => {
               </div>
             </article>
           ))}
-        </div>
-      </section>
-
-      {/* Third Section - Logo */}
-      <section className="bg-gray-100 noise-bg flex justify-center items-center w-full p-10 min-h-[350px] drop-shadow-2xl">
-        <div className="w-[30vw] transition-transform duration-500 ">
-          <img
-            draggable="false"
-            src={INDIA_golfmeet_logo}
-            alt="Golf Meet Logo"
-            className="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-          />
         </div>
       </section>
     </>
