@@ -4,9 +4,10 @@ import golfFlag from "../assets/golf-flag.svg";
 import Illustration_Golf_Balls from "../assets/Illustration_Golf_Balls.svg";
 import Illustration_Greens_mobile from "../assets/Illustration_Greens_mobile.svg";
 import Illustration_Greens_Desktop from "../assets/Illustration_Greens_Desktop.svg";
+import video_section_right_bg_with_flag from "../assets/video-section.svg";
 const HowItWorksSection = () => {
   return (
-    <section className="relative bg-white text-black py-16">
+    <section className="relative bg-white text-black pt-16">
       {/* Steps */}
 
       <h1 className="text-3xl sm:text-4xl px-10 lg:mt-10 font-quattrocento font-semibold text-center text-[#014D4E] md:text-5xl mb-10 lg:mb-0">
@@ -98,7 +99,7 @@ const HowItWorksSection = () => {
       </div>
 
       {/*  Section 4 */}
-      <div className="mx-auto noise-bg md:py-20">
+      <div className="mx-auto noise-bg py-10 md:py-20">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-quattrocento font-bold mb-8 tracking-wide lg:text-6xl">
             THE SOCIAL AMATEUR
@@ -147,6 +148,9 @@ const HowItWorksSection = () => {
           </div>
         </div>
       </div>
+      <div className="absolute  -bottom-10 right-0  z-10 ">
+            <img src={video_section_right_bg_with_flag} alt="right_bg_with_flag " />
+         </div>
     </section>
   );
 };
