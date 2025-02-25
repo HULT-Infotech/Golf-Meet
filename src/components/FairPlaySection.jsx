@@ -1,17 +1,16 @@
 import React from "react";
 import Illustration_Golfers_Mobile from "../assets/Illustration_Golfers_Mobile.svg";
-import INDIA_golfmeet_logo from "/favicons/favicon.svg";
 
 const FairPlaySection = () => {
   return (
     <>
       {/* First Section - Introduction */}
-      <section className="relative bg-gray-100 noise-bg min-h-[96vh] drop-shadow-xl w-full flex flex-col justify-between p-4 sm:p-6 md:p-8 text-center">
+      <section className="relative bg-gray-100 noise-bg md:min-h-[96vh] drop-shadow-xl w-full flex flex-col justify-between p-4 sm:p-6 md:p-8 text-center">
         <div className="absolute z-10 bottom-0 left-0 right-0 flex justify-center items-center w-full opacity-30">
           <img
             src={Illustration_Golfers_Mobile}
             alt="Illustration of Golfers"
-            className="w-[65vw] object-contain"
+            className="w-[100vw] md:w-[65vw] object-contain"
           />
         </div>
 
@@ -45,7 +44,7 @@ const FairPlaySection = () => {
       </section>
 
       {/* Second Section - Pricing */}
-      <section className="text-center flex flex-col justify-center p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20 w-full">
+      <section className="text-center flex flex-col justify-center p-4 sm:p-8 lg:p-16 xl:p-20 w-full">
         <h2 className="text-xl md:text-2xl font-semibold mb-4">
           TOURNAMENT FEE
         </h2>
@@ -113,18 +112,6 @@ const FairPlaySection = () => {
               </div>
             </article>
           ))}
-        </div>
-      </section>
-
-      {/* Third Section - Logo */}
-      <section className="bg-gray-100 noise-bg flex justify-center items-center w-full p-10 min-h-[350px] drop-shadow-2xl">
-        <div className="w-[30vw] transition-transform duration-500 ">
-          <img
-            draggable="false"
-            src={INDIA_golfmeet_logo}
-            alt="Golf Meet Logo"
-            className="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-          />
         </div>
       </section>
     </>

@@ -114,7 +114,7 @@ const HowItWorksSection = () => {
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-          <div className="w-2/3 md:w-1/3">
+          <div className="w-10/12 md:w-1/3">
             {/* Golf bag illustration */}
             <img
               src={golfIllustration}

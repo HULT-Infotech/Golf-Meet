@@ -2,13 +2,27 @@ import React from "react";
 import landingRightImg from "../assets/landing_right_img.svg";
 import landingLeftImg from "../assets/landing_left_img.svg";
 import indiaFlag from "../assets/india_flag.png";
+import INDIA_golfmeet_logo from "/favicons/favicon.svg";
+
 function Footer() {
   return (
     <footer className="w-full">
+      
+      {/* Third Section - Logo */}
+      <section className="bg-gray-100 noise-bg flex justify-center items-center w-full p-10 md:min-h-[350px] drop-shadow-2xl">
+        <div className=" w-[90vw] md:w-[30vw] transition-transform duration-500 ">
+          <img
+            draggable="false"
+            src={INDIA_golfmeet_logo}
+            alt="Golf Meet Logo"
+            className="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+          />
+        </div>
+      </section>
       {/* Main Footer Section */}
       <section className="bg-[#134849] noise-bg relative py-6 px-4 flex justify-between items-center min-h-96">
         {/* Left Illustration */}
-        <div className="absolute bottom-0 left-0">
+        <div className=" hidden lg:block absolute bottom-0 left-0">
           <img
             src={landingLeftImg}
             className="filter brightness-0 opacity-50"
@@ -17,7 +31,7 @@ function Footer() {
         </div>
 
         {/* Right Illustration */}
-        <div className="absolute bottom-0 right-0">
+        <div className=" hidden lg:block absolute bottom-0 right-0">
           <img
             src={landingRightImg}
             className="filter brightness-0 opacity-50"
@@ -26,7 +40,7 @@ function Footer() {
         </div>
 
         {/* Content Sections */}
-        <div className="flex justify-between w-full max-w-5xl mx-auto items-center z-10">
+        <div className="flex justify-between w-full max-w-5xl md:mx-auto md:items-center z-10 flex-col-reverse md:flex-row gap-20 md:gap-0 md:h-auto px-6 py-10">
           {/* Left Section - Site Language and Country of Play */}
           <div className="flex flex-col space-y-4 text-white">
             <div>
