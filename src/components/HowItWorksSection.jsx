@@ -94,7 +94,7 @@ const HowItWorksSection = () => {
           className="w-full relative z-10 md:hidden "
           alt="Illustration Greens mobile"
         />
-        <img src={Illustration_Greens_Desktop} alt="Illustration_Greens_Desktop" className="w-full hidden md:block h-80v  object-cover " />
+        <img src={Illustration_Greens_Desktop} alt="Illustration_Greens_Desktop" draggable="false" className="w-full hidden md:block h-80v  object-cover " />
         <div className="absolute bottom-0 left-0 w-full h-28 noise-bg md:hidden" />
       </div>
 
@@ -112,6 +112,7 @@ const HowItWorksSection = () => {
           <div className="relative h-30 mb-8 p-10 md:p-0">
             <img
               src={Illustration_Golf_Balls}
+              draggable="false"
               alt="Golf Balls"
               className="mx-auto md:w-1/2"
             />
@@ -129,6 +130,7 @@ const HowItWorksSection = () => {
             {/* Golf bag illustration */}
             <img
               src={golfIllustration}
+              draggable="false"
               alt="Golf Equipment Illustration"
               className="w-full"
             />
@@ -148,8 +150,8 @@ const HowItWorksSection = () => {
           </div>
         </div>
       </div>
-      <div className="absolute  -bottom-10 right-0  z-10 ">
-            <img src={video_section_right_bg_with_flag} alt="right_bg_with_flag " />
+      <div className="absolute  -bottom-24 right-0  w-full ">
+            <img src={video_section_right_bg_with_flag} draggable="false" alt="right_bg_with_flag " className="w-full" />
          </div>
     </section>
   );
