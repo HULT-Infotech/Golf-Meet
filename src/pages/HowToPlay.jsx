@@ -12,7 +12,7 @@ const HowToPlay = () => {
       <section className="    bg-gray-100 noise-bg relative flex flex-col min-h-[92vh] md:flex-row ">
         <div className=" relative flex flex-col w-full md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
-          <div className="relative flex-1 flex flex-col justify-center items-start p-8 md:p-16 xl:ml-20">
+          <div className="relative flex flex-col justify-center items-start p-8 md:p-16 xl:ml-20">
             <h1 className="font-quattrocento text-5xl lg:text-6xl font-bold mb-4">
               HOW TO PLAY
             </h1>
@@ -24,11 +24,11 @@ const HowToPlay = () => {
           </div>
 
           {/* Right Image Section */}
-          <div className="relative flex-1">
+          <div className="relative flex items-end">
             <img
               src={howToPlay_bg}
               alt="Golfers Illustration"
-              className="absolute bottom-0 right-20 w-full object-contain pointer-events-none"
+              className="bottom-0 md:right-20 w-full object-contain pointer-events-none"
             />
           </div>
 
