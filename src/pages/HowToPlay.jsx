@@ -39,11 +39,18 @@ const HowToPlay = () => {
           alt="Green left element"
           className=" hidden md:block absolute md:-bottom-12 left-0 w-[270px] md:w-[400px] lg:w-[550px] lg:-bottom-16 object-contain pointer-events-none"
         />
-         <img
+        <img
           src={howToPlay_greenleft_mobile}
           alt="Green left element"
           className="absolute md:hidden -bottom-20 sm:-bottom-32 left-0 w-[350px] "
         />
+      </section>
+
+      <section className=" flex w-full">
+        <div className="flex"></div>
+        <div>
+          <img src="" alt="" />
+        </div>
       </section>
     </>
   );
