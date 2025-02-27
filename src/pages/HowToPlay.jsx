@@ -9,8 +9,8 @@ const HowToPlay = () => {
   return (
     <>
       <Navbar />
-      <section className="    bg-gray-100 noise-bg ">
-        <div className="relative flex flex-col min-h-[92vh] md:flex-row">
+      <section className="    bg-gray-100 noise-bg relative flex flex-col min-h-[92vh] md:flex-row ">
+        <div className=" relative flex flex-col w-full md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex-1 flex flex-col justify-center items-start p-8 md:p-16 xl:ml-20">
             <h1 className="font-quattrocento text-5xl lg:text-6xl font-bold mb-4">
@@ -28,17 +28,17 @@ const HowToPlay = () => {
             <img
               src={howToPlay_bg}
               alt="Golfers Illustration"
-              className="absolute bottom-0 right-20 w-full  md:w-[100%] xl:w-[70%] object-contain pointer-events-none"
+              className="absolute bottom-0 right-20 w-full object-contain pointer-events-none"
             />
           </div>
 
+          </div>
           {/* Decorative Green Element */}
           <img
             src={howToPlay_greenleft}
             alt="Green left element"
             className="absolute -bottom-8 left-0 w-[150px] md:w-[400px] lg:w-[550px] lg:-bottom-16 object-contain pointer-events-none"
           />
-        </div>
       </section>
     </>
   );
