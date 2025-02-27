@@ -6,6 +6,9 @@ import howToPlay_bg from "../assets/howToPlay-bg.svg";
 import howToPlay_greenleft from "../assets/howToPlay-greenleft.svg";
 import howToPlay_greenleft_mobile from "../assets/howToPlay-greenleft-mobile.svg";
 
+import Mobile_Screen_Step_1 from "../assets/how-to-play-img/Mobile-Screen-Step-1.png";
+import Mobile_Screen_Step_2 from "../assets/how-to-play-img/Mobile-Screen-Step-2.png";
+
 const HowToPlay = () => {
   return (
     <>
@@ -47,9 +50,93 @@ const HowToPlay = () => {
       </section>
 
       <section className=" flex w-full">
-        <div className="flex"></div>
-        <div>
-          <img src="" alt="" />
+        <div className="flex flex-col justify-center items-center w-full p-8">
+          {/*  step 1 */}
+          <div className="flex flex-row justify-center items-center mx-auto">
+            <div className="flex items-start space-x-4 lg:mt-32">
+              <span className="w-8 h-10 rounded-full bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+                1
+              </span>
+              <div>
+                <h2 className="text-xl font-bold text-gray-900">
+                  SPECIFY YOUR AVAILABILITY
+                </h2>
+                <p className="text-gray-700 text-sm w-60">
+                  In the app, specify your preferred dates and golf courses
+                  where you can play at least 2 weeks in advance.
+                </p>
+              </div>
+            </div>
+            <div className="md:w-[20vw]">
+              <img src={Mobile_Screen_Step_1} alt="Mobile_Screen_Step_1" />
+            </div>
+          </div>
+
+          {/* step 2  */}
+
+          <div className="flex flex-row-reverse justify-center items-center mx-auto">
+            <div className="flex items-start space-x-4 lg:mt-32">
+              <span className="w-8 h-10 rounded-full bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+                2
+              </span>
+              <div>
+                <h2 className="text-xl font-bold text-gray-900">
+                  SPECIFY YOUR AVAILABILITY
+                </h2>
+                <p className="text-gray-700 text-sm w-60">
+                  In the app, specify your preferred dates and golf courses
+                  where you can play at least 2 weeks in advance.
+                </p>
+              </div>
+            </div>
+            <div className="md:w-[20vw]">
+              <img src={Mobile_Screen_Step_2} alt="Mobile_Screen_Step_1" />
+            </div>
+          </div>
+
+          {/* step 3  */}
+
+          <div className="flex flex-row justify-center items-center mx-auto">
+            <div className="flex items-start space-x-4 lg:mt-32">
+              <span className="w-8 h-10 rounded-full bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+                3
+              </span>
+              <div>
+                <h2 className="text-xl font-bold text-gray-900">
+                  SPECIFY YOUR AVAILABILITY
+                </h2>
+                <p className="text-gray-700 text-sm w-60">
+                  In the app, specify your preferred dates and golf courses
+                  where you can play at least 2 weeks in advance.
+                </p>
+              </div>
+            </div>
+            <div className="md:w-[20vw]">
+              <img src={Mobile_Screen_Step_1} alt="Mobile_Screen_Step_1" />
+            </div>
+          </div>
+
+          {/* step 4  */}
+
+          <div className="flex flex-row-reverse justify-center items-center mx-auto">
+            <div className="flex items-start space-x-4 lg:mt-32">
+              <span className="w-8 h-10 rounded-full bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+                4
+              </span>
+              <div>
+                <h2 className="text-xl font-bold text-gray-900">
+                  SPECIFY YOUR AVAILABILITY
+                </h2>
+                <p className="text-gray-700 text-sm w-60">
+                  In the app, specify your preferred dates and golf courses
+                  where you can play at least 2 weeks in advance.
+                </p>
+              </div>
+            </div>
+            <div className="md:w-[20vw]">
+              <img src={Mobile_Screen_Step_2} alt="Mobile_Screen_Step_1" />
+            </div>
+          </div>
         </div>
       </section>
     </>
