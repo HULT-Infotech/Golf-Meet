@@ -10,10 +10,10 @@ const HowToPlay = () => {
   return (
     <>
       <Navbar />
-      <section className="bg-gray-100 noise-bg relative flex flex-col min-h-[92vh] md:flex-row ">
+      <section className="bg-gray-100 noise-bg relative flex flex-col md:min-h-[92vh] md:flex-row ">
         <div className="flex flex-col w-full justify-between md:justify-around  gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
-          <div className="relative flex flex-col justify-center items-start p-8 md:p-16 xl:ml-20">
+          <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20">
             <h1 className="font-quattrocento text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
               HOW TO PLAY
             </h1>
@@ -37,7 +37,12 @@ const HowToPlay = () => {
         <img
           src={howToPlay_greenleft}
           alt="Green left element"
-          className="absolute -bottom-8 left-0 w-[270px] md:w-[400px] lg:w-[550px] lg:-bottom-16 object-contain pointer-events-none"
+          className=" hidden md:block absolute md:-bottom-12 left-0 w-[270px] md:w-[400px] lg:w-[550px] lg:-bottom-16 object-contain pointer-events-none"
+        />
+         <img
+          src={howToPlay_greenleft_mobile}
+          alt="Green left element"
+          className="absolute md:hidden -bottom-20 sm:-bottom-32 left-0 w-[350px] "
         />
       </section>
     </>
