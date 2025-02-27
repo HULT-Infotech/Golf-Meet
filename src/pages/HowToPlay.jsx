@@ -1,30 +1,47 @@
 import React from "react";
-import howToPlay_bg from "../assets/howToPlay-bg.svg";
 import Navbar from "../components/Navbar";
-function HowToPlay() {
+
+// Images
+import howToPlay_bg from "../assets/howToPlay-bg.svg";
+import howToPlay_greenleft from "../assets/howToPlay-greenleft.svg";
+
+const HowToPlay = () => {
   return (
     <>
       <Navbar />
-      <section className="min-h-[91vh]  bg-gray-100 noise-bg flex flex-col md:flex-row justify-evenly items-center">
-        <div className="">
-          <h1 className=" font-quattrocento lg:text-[7rem] font-bold">
-            HOW TO PLAY
-          </h1>
-          <p className="text-lg font-bold  text-gray-600">
-            After you have paid the tournament fees, <br /> log into the
-            GolfMeet mobile app.
-          </p>
-        </div>
-        <div className="flex    justify-center">
+      <section className="    bg-gray-100 noise-bg ">
+        <div className="relative flex flex-col min-h-[92vh] md:flex-row">
+          {/* Text Section */}
+          <div className="relative flex-1 flex flex-col justify-center items-start p-8 md:p-16">
+            <h1 className="font-quattrocento text-5xl md:text-7xl font-bold mb-4">
+              HOW TO PLAY
+            </h1>
+            <p className="text-lg font-bold text-gray-600 leading-relaxed">
+              After you have paid the tournament fees,
+              <br className="hidden md:block" />
+              log into the GolfMeet mobile app.
+            </p>
+          </div>
+
+          {/* Right Image Section */}
+          <div className="relative flex-1">
+            <img
+              src={howToPlay_bg}
+              alt="Golfers Illustration"
+              className="absolute bottom-0 right-0 w-full  md:w-[100%] lg:w-[70%] object-contain pointer-events-none"
+            />
+          </div>
+
+          {/* Decorative Green Element */}
           <img
-            src={howToPlay_bg}
-            alt="howToPlay_bg "
-            className=" absolute bottom-0 object-contain"
+            src={howToPlay_greenleft}
+            alt="Green left element"
+            className="absolute -bottom-8 left-0 w-[150px] md:w-[250px] lg:w-[550px] lg:-bottom-16 object-contain pointer-events-none"
           />
         </div>
       </section>
     </>
   );
-}
+};
 
 export default HowToPlay;
