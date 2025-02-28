@@ -49,14 +49,14 @@ const HowToPlay = () => {
         <img
           src={howToPlay_greenleft_mobile}
           alt="Green left element"
-          className="absolute md:hidden -bottom-20 sm:-bottom-32 left-0 w-[350px] "
+          className="absolute md:hidden -bottom-20 sm:-bottom-20 left-0 w-[350px] "
         />
       </section>
 
       <section className=" flex flex-col w-full">
         <div className="relative  flex flex-col justify-center items-center w-full py-10 md:p-5 px-5">
           {/*  step 1 */}
-          <div className="  flex flex-col md:flex-row justify-center  items-center md:items-start md:justify-around w-full mx-auto max-w-screen-xl">
+          <div className="  flex flex-col md:flex-row justify-center  items-center lg:items-start md:justify-around w-full mx-auto max-w-screen-lg">
             <div className="flex flex-col   md:flex-row items-start md:space-x-4 lg:mt-32">
               <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
                 1
