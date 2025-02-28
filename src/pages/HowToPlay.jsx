@@ -9,6 +9,10 @@ import howToPlay_greenleft_mobile from "../assets/howToPlay-greenleft-mobile.svg
 import Mobile_Screen_Step_1 from "../assets/how-to-play-img/Mobile-Screen-Step-1.png";
 import Mobile_Screen_Step_2 from "../assets/how-to-play-img/Mobile-Screen-Step-2.png";
 
+import ground_1 from "../assets/how-to-play-img/ground-1.svg";
+import ground_2 from "../assets/how-to-play-img/ground-2.svg";
+import ground_3 from "../assets/how-to-play-img/ground-3.svg";
+import ground_4 from "../assets/how-to-play-img/ground-4.svg";
 const HowToPlay = () => {
   return (
     <>
@@ -49,10 +53,10 @@ const HowToPlay = () => {
         />
       </section>
 
-      <section className=" flex w-full">
-        <div className="flex flex-col justify-center items-center w-full py-20 md:p-10 px-5">
+      <section className=" flex flex-col w-full">
+        <div className="relative  flex flex-col justify-center items-center w-full py-10 md:p-5 px-5">
           {/*  step 1 */}
-          <div className="flex flex-col md:flex-row justify-center  items-center md:items-start md:justify-around w-full mx-auto max-w-screen-xl">
+          <div className="  flex flex-col md:flex-row justify-center  items-center md:items-start md:justify-around w-full mx-auto max-w-screen-xl">
             <div className="flex flex-col   md:flex-row items-start md:space-x-4 lg:mt-32">
               <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
                 1
@@ -71,9 +75,15 @@ const HowToPlay = () => {
               <img src={Mobile_Screen_Step_1} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
-
-          {/* step 2  */}
-
+          {/* g1  */}
+          <img
+            src={ground_1}
+            alt="ground_1"
+            className=" absolute left-0  bottom-0"
+          />
+        </div>
+        {/* step 2  */}
+        <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5">
           <div className="flex flex-col md:flex-row-reverse justify-center md:items-start md:justify-around w-full items-center mx-auto max-w-screen-xl">
             <div className="flex flex-col md:flex-row md:justify-between  items-start md:space-x-4 lg:mt-32">
               <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
@@ -94,9 +104,14 @@ const HowToPlay = () => {
               <img src={Mobile_Screen_Step_2} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
-
-          {/* step 3  */}
-
+          <img
+            src={ground_2}
+            alt="ground_2"
+            className=" absolute  right-0  bottom-0"
+          />
+        </div>
+        {/* step 3  */}
+        <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5">
           <div className="flex flex-col md:flex-row justify-center md:items-start items-center  md:justify-around w-full mx-auto max-w-screen-xl">
             <div className="flex flex-col  md:flex-row items-start  md:space-x-4 lg:mt-32">
               <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
@@ -118,9 +133,14 @@ const HowToPlay = () => {
               <img src={Mobile_Screen_Step_1} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
-
-          {/* step 4  */}
-
+          <img
+            src={ground_3}
+            alt="ground_3"
+            className=" absolute left-0 bottom-10"
+          />
+        </div>
+        {/* step 4  */}
+        <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5">
           <div className="flex flex-col md:flex-row-reverse justify-center items-center md:items-start md:justify-around w-full mx-auto max-w-screen-xl">
             <div className="flex flex-col   md:flex-row items-start md:space-x-4 lg:mt-32">
               <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
@@ -142,6 +162,11 @@ const HowToPlay = () => {
               <img src={Mobile_Screen_Step_2} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
+          <img
+            src={ground_4}
+            alt="ground_4"
+            className=" absolute  right-0 bottom-10"
+          />
         </div>
       </section>
       <Footer />
