@@ -52,7 +52,7 @@ const HowToPlay = () => {
       <section className=" flex w-full">
         <div className="flex flex-col justify-center items-center w-full py-20 px-5">
           {/*  step 1 */}
-          <div className="flex flex-col md:flex-row justify-center items-center md:justify-around w-full mx-auto">
+          <div className="flex flex-col md:flex-row justify-center items-center md:justify-around w-full mx-auto max-w-screen-xl">
             <div className="flex flex-col   md:flex-row items-start md:space-x-4 lg:mt-32">
               <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
                 1
@@ -74,7 +74,7 @@ const HowToPlay = () => {
 
           {/* step 2  */}
 
-          <div className="flex flex-col md:flex-row-reverse justify-center md:justify-around w-full items-center mx-auto">
+          <div className="flex flex-col md:flex-row-reverse justify-center md:justify-around w-full items-center mx-auto max-w-screen-xl">
             <div className="flex flex-col md:flex-row md:justify-between  items-start md:space-x-4 lg:mt-32">
               <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
                 2
@@ -97,7 +97,7 @@ const HowToPlay = () => {
 
           {/* step 3  */}
 
-          <div className="flex flex-col md:flex-row justify-center items-center md:justify-around w-full mx-auto">
+          <div className="flex flex-col md:flex-row justify-center items-center md:justify-around w-full mx-auto max-w-screen-xl">
             <div className="flex flex-col  md:flex-row items-start md:space-x-4 lg:mt-32">
               <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
                 3
@@ -121,7 +121,7 @@ const HowToPlay = () => {
 
           {/* step 4  */}
 
-          <div className="flex flex-col md:flex-row-reverse justify-center items-center md:justify-around w-full mx-auto">
+          <div className="flex flex-col md:flex-row-reverse justify-center items-center md:justify-around w-full mx-auto max-w-screen-xl">
             <div className="flex flex-col   md:flex-row items-start md:space-x-4 lg:mt-32">
               <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
                 4
