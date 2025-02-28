@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-
+import Footer from "../components/Footer";
 // Images
 import howToPlay_bg from "../assets/howToPlay-bg.svg";
 import howToPlay_greenleft from "../assets/howToPlay-greenleft.svg";
@@ -50,95 +50,101 @@ const HowToPlay = () => {
       </section>
 
       <section className=" flex w-full">
-        <div className="flex flex-col justify-center items-center w-full p-8">
+        <div className="flex flex-col justify-center items-center w-full py-20 px-5">
           {/*  step 1 */}
-          <div className="flex flex-row justify-center items-center mx-auto">
-            <div className="flex items-start space-x-4 lg:mt-32">
-              <span className="w-8 h-10 rounded-full bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+          <div className="flex flex-col md:flex-row justify-center items-center md:justify-around w-full mx-auto">
+            <div className="flex flex-col   md:flex-row items-start md:space-x-4 lg:mt-32">
+              <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
                 1
               </span>
               <div>
-                <h2 className="text-xl font-bold text-gray-900">
+                <h2 className="text-4xl max-w-80 font-quattrocento font-bold text-gray-900">
                   SPECIFY YOUR AVAILABILITY
                 </h2>
-                <p className="text-gray-700 text-sm w-60">
+                <p className="text-gray-700 text-sm text-wrap max-w-72">
                   In the app, specify your preferred dates and golf courses
                   where you can play at least 2 weeks in advance.
                 </p>
               </div>
             </div>
-            <div className="md:w-[20vw]">
+            <div className="w-[80%] md:w-[20vw] p-2">
               <img src={Mobile_Screen_Step_1} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
 
           {/* step 2  */}
 
-          <div className="flex flex-row-reverse justify-center items-center mx-auto">
-            <div className="flex items-start space-x-4 lg:mt-32">
-              <span className="w-8 h-10 rounded-full bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+          <div className="flex flex-col md:flex-row-reverse justify-center md:justify-around w-full items-center mx-auto">
+            <div className="flex flex-col md:flex-row md:justify-between  items-start md:space-x-4 lg:mt-32">
+              <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
                 2
               </span>
               <div>
-                <h2 className="text-xl font-bold text-gray-900">
-                  SPECIFY YOUR AVAILABILITY
+                <h2 className="text-4xl max-w-80 font-quattrocento font-bold text-gray-900">
+                  GET MATCHED WITH OTHER PLAYERS
                 </h2>
-                <p className="text-gray-700 text-sm w-60">
-                  In the app, specify your preferred dates and golf courses
-                  where you can play at least 2 weeks in advance.
+                <p className="text-gray-700 text-sm text-wrap max-w-72">
+                  The app will notify you when you are matched with other
+                  players for your next round. <br /> The match is made based on
+                  the shared preferences for golf courses and dates.
                 </p>
               </div>
             </div>
-            <div className="md:w-[20vw]">
+            <div className="w-[70%] md:w-[20vw] p-4">
               <img src={Mobile_Screen_Step_2} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
 
           {/* step 3  */}
 
-          <div className="flex flex-row justify-center items-center mx-auto">
-            <div className="flex items-start space-x-4 lg:mt-32">
-              <span className="w-8 h-10 rounded-full bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+          <div className="flex flex-col md:flex-row justify-center items-center md:justify-around w-full mx-auto">
+            <div className="flex flex-col  md:flex-row items-start md:space-x-4 lg:mt-32">
+              <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
                 3
               </span>
               <div>
-                <h2 className="text-xl font-bold text-gray-900">
-                  SPECIFY YOUR AVAILABILITY
+                <h2 className="text-4xl max-w-80 font-quattrocento font-bold text-gray-900">
+                  Finalize the plans with your group
                 </h2>
-                <p className="text-gray-700 text-sm w-60">
-                  In the app, specify your preferred dates and golf courses
-                  where you can play at least 2 weeks in advance.
+                <p className="text-gray-700 text-sm text-wrap max-w-72">
+                  Chat in the app with other players of your group to change or
+                  finalize the date, course and tee time.{" "}
+                  <br className="text-red-500" /> Please remember that no-shows
+                  incur penalty points.
                 </p>
               </div>
             </div>
-            <div className="md:w-[20vw]">
+            <div className="w-[80%] md:w-[20vw] p-2">
               <img src={Mobile_Screen_Step_1} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
 
           {/* step 4  */}
 
-          <div className="flex flex-row-reverse justify-center items-center mx-auto">
-            <div className="flex items-start space-x-4 lg:mt-32">
-              <span className="w-8 h-10 rounded-full bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+          <div className="flex flex-col md:flex-row-reverse justify-center items-center md:justify-around w-full mx-auto">
+            <div className="flex flex-col   md:flex-row items-start md:space-x-4 lg:mt-32">
+              <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
                 4
               </span>
               <div>
-                <h2 className="text-xl font-bold text-gray-900">
-                  SPECIFY YOUR AVAILABILITY
+                <h2 className="text-4xl max-w-80 font-quattrocento font-bold text-gray-900">
+                  Please remember that no-shows incur penalty points.
                 </h2>
-                <p className="text-gray-700 text-sm w-60">
-                  In the app, specify your preferred dates and golf courses
-                  where you can play at least 2 weeks in advance.
+                <p className="text-gray-700 text-sm text-wrap max-w-72">
+                  Exchange the player codes and enter it into the app to start
+                  the round. The format to use is stroke play. <br />
+                  Record your score in the GolfMeet app. When prompted, verify
+                  the scores submitted by your group players.
                 </p>
               </div>
             </div>
-            <div className="md:w-[20vw]">
+            <div className="w-[70%] md:w-[20vw] p-4">
               <img src={Mobile_Screen_Step_2} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };
