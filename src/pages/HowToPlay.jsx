@@ -13,6 +13,12 @@ import ground_1 from "../assets/how-to-play-img/ground-1.svg";
 import ground_2 from "../assets/how-to-play-img/ground-2.svg";
 import ground_3 from "../assets/how-to-play-img/ground-3.svg";
 import ground_4 from "../assets/how-to-play-img/ground-4.svg";
+
+import ground_1_mobile from "../assets/how-to-play-img/ground-1-mobile.svg";
+import ground_2_mobile from "../assets/how-to-play-img/ground-2-mobile.svg";
+import ground_3_mobile from "../assets/how-to-play-img/ground-3-mobile.svg";
+import ground_4_mobile from "../assets/how-to-play-img/ground-4-mobile.svg";
+
 const HowToPlay = () => {
   return (
     <>
@@ -79,7 +85,12 @@ const HowToPlay = () => {
           <img
             src={ground_1}
             alt="ground_1"
-            className=" absolute left-0  bottom-0"
+            className=" absolute left-0  bottom-0  hidden md:block"
+          />
+          <img
+            src={ground_1_mobile}
+            alt="ground_1"
+            className=" absolute left-0  bottom-0  md:hidden "
           />
         </div>
         {/* step 2  */}
@@ -107,7 +118,12 @@ const HowToPlay = () => {
           <img
             src={ground_2}
             alt="ground_2"
-            className=" absolute  right-0  bottom-0"
+            className=" absolute  right-0  bottom-0 hidden md:block"
+          />
+          <img
+            src={ground_2_mobile}
+            alt="ground_3"
+            className=" absolute right-0  bottom-0  md:hidden "
           />
         </div>
         {/* step 3  */}
@@ -136,7 +152,13 @@ const HowToPlay = () => {
           <img
             src={ground_3}
             alt="ground_3"
-            className=" absolute left-0 bottom-10"
+            className=" absolute left-0 bottom-10 hidden md:block"
+          />
+
+          <img
+            src={ground_3_mobile}
+            alt="ground_3"
+            className=" absolute left-0  bottom-0  md:hidden "
           />
         </div>
         {/* step 4  */}
@@ -165,7 +187,12 @@ const HowToPlay = () => {
           <img
             src={ground_4}
             alt="ground_4"
-            className=" absolute  right-0 bottom-10"
+            className=" absolute  right-0 bottom-10 hidden md:block"
+          />
+          <img
+            src={ground_4_mobile}
+            alt="ground_5"
+            className=" absolute  right-0  bottom-0  md:hidden "
           />
         </div>
       </section>
