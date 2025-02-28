@@ -19,6 +19,8 @@ import ground_2_mobile from "../assets/how-to-play-img/ground-2-mobile.svg";
 import ground_3_mobile from "../assets/how-to-play-img/ground-3-mobile.svg";
 import ground_4_mobile from "../assets/how-to-play-img/ground-4-mobile.svg";
 
+import gold_coins_3 from "../assets/how-to-play-img/3-gold-coins.svg";
+
 const HowToPlay = () => {
   return (
     <>
@@ -162,7 +164,7 @@ const HowToPlay = () => {
           />
         </div>
         {/* step 4  */}
-        <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5">
+        <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5 mb-10">
           <div className="flex flex-col md:flex-row-reverse justify-center items-center md:items-start md:justify-around w-full mx-auto max-w-screen-xl">
             <div className="flex flex-col   md:flex-row items-start md:space-x-4 lg:mt-32">
               <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
@@ -187,13 +189,40 @@ const HowToPlay = () => {
           <img
             src={ground_4}
             alt="ground_4"
-            className=" absolute  right-0 bottom-10 hidden md:block"
+            className=" absolute  right-0 bottom-10 hidden sm:block"
           />
           <img
             src={ground_4_mobile}
             alt="ground_5"
-            className=" absolute  right-0  bottom-0  md:hidden "
+            className=" absolute  right-0  bottom-0  sm:hidden "
           />
+        </div>
+
+        {/* step 5 */}
+        <div className="relative">
+          <div className=" relative -bottom-10 p-8 md:-bottom-16 lg:-left-8 xl:-left-4  flex flex-col rotate-3 rounded-md bg-[#014D4E] noise-bg md:flex-row justify-center shadow-2xl items-center w-[90%] mx-auto min-h-[600px] ">
+            <div className="flex flex-col   md:flex-row items-start md:space-x-4 lg:mt-32">
+              <span className="w-8 h-10 rounded-full mb-4 bg-white text-[#014D4E] flex items-center justify-center text-lg font-semibold">
+                5
+              </span>
+              <div>
+                <h2 className="text-4xl uppercase max-w-80 text-white md:text-5xl md:max-w-xl font-quattrocento font-bold ">
+                  Earn your GolfMeet points
+                </h2>
+                <p className="text-gray-200 text-sm text-wrap max-w-72">
+                  GolfMeet converts your scores into points. As you play more
+                  rounds, GolfMeet calculates your handicap using a proprietary
+                  method. This handicap is used to adjust your points further.{" "}
+                  <br /> The Leaderboard will reflect your standing based on
+                  your points.
+                </p>
+              </div>
+            </div>
+            <div className="w-[80%] sm:w-2/5 md:w-[24vw] p-2 md:p-0">
+              <img src={gold_coins_3} alt="gold_coins_3" />
+            </div>
+          </div>
+          <div className=" absolute bg-[#014D4E] min-h-[400px] rotate-12 -z-10 w-[50%] top-10 rounded-md right-20 md:right-8 xl:right-14 md:bottom-0 noise-bg "></div>
         </div>
       </section>
       <Footer />
