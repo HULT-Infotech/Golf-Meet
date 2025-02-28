@@ -201,7 +201,7 @@ const HowToPlay = () => {
         {/* step 5 */}
         <div className="relative">
           <div className=" relative -bottom-10 p-8 md:-bottom-16 lg:-left-8 xl:-left-4  flex flex-col rotate-3 rounded-md bg-[#014D4E] noise-bg md:flex-row justify-center shadow-2xl items-center w-[90%] mx-auto min-h-[600px] ">
-            <div className="flex flex-col   md:flex-row items-start md:space-x-4 lg:mt-32">
+            <div className="flex flex-col -rotate-3   md:flex-row items-start md:space-x-4 lg:mt-32">
               <span className="w-8 h-10 rounded-full mb-4 bg-white text-[#014D4E] flex items-center justify-center text-lg font-semibold">
                 5
               </span>
@@ -218,7 +218,7 @@ const HowToPlay = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[80%] sm:w-2/5 md:w-[24vw] p-2 md:p-0">
+            <div className="w-[80%] -rotate-3 sm:w-2/5 md:w-[24vw] p-2 md:p-0">
               <img src={gold_coins_3} alt="gold_coins_3" />
             </div>
           </div>
