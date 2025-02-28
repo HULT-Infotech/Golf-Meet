@@ -222,7 +222,7 @@ const HowToPlay = () => {
               <img src={gold_coins_3} alt="gold_coins_3" />
             </div>
           </div>
-          <div className=" absolute bg-[#014D4E] min-h-[400px] rotate-12 -z-10 w-[50%] top-10 rounded-md right-20 md:right-8 xl:right-14 md:bottom-0 noise-bg "></div>
+          <div className=" absolute bg-[#014D4E] min-h-[400px] rotate-12 -z-10 w-2/3 md:w-[50%] top-4 rounded-md md:top-auto right-20 md:right-8 xl:right-14 md:bottom-0 noise-bg "></div>
         </div>
       </section>
       <Footer />
