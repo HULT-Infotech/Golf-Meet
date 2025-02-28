@@ -67,7 +67,7 @@ const HowToPlay = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[80%] md:w-[20vw] p-2">
+            <div className="w-[80%] sm:w-2/5 md:w-[24vw] p-2 md:p-0">
               <img src={Mobile_Screen_Step_1} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
@@ -90,7 +90,7 @@ const HowToPlay = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[70%] md:w-[20vw] p-4">
+            <div className="w-[70%] sm:w-[35%] md:w-[20vw] p-4 md:p-0">
               <img src={Mobile_Screen_Step_2} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
@@ -108,13 +108,13 @@ const HowToPlay = () => {
                 </h2>
                 <p className="text-gray-700 text-sm text-wrap max-w-72">
                   Chat in the app with other players of your group to change or
-                  finalize the date, course and tee time.{" "}
+                  finalize the date, course and tee time.
                   <br className="text-red-500" /> Please remember that no-shows
                   incur penalty points.
                 </p>
               </div>
             </div>
-            <div className="w-[80%] md:w-[20vw] p-2">
+            <div className="w-[80%] sm:w-2/5 md:w-[24vw] p-2 md:p-0">
               <img src={Mobile_Screen_Step_1} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
@@ -138,13 +138,13 @@ const HowToPlay = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[70%] md:w-[20vw] p-4">
+            <div className="w-[70%] sm:w-[35%] md:w-[20vw] p-4 md:p-0">
               <img src={Mobile_Screen_Step_2} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 };
