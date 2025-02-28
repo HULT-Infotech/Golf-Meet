@@ -58,7 +58,7 @@ const HowToPlay = () => {
                 1
               </span>
               <div>
-                <h2 className="text-4xl max-w-80 font-quattrocento font-bold text-gray-900">
+                <h2 className="text-4xl max-w-80 md:text-5xl md:max-w-xl font-quattrocento font-bold text-gray-900">
                   SPECIFY YOUR AVAILABILITY
                 </h2>
                 <p className="text-gray-700 text-sm text-wrap max-w-72">
@@ -80,7 +80,7 @@ const HowToPlay = () => {
                 2
               </span>
               <div>
-                <h2 className="text-4xl max-w-80 font-quattrocento font-bold text-gray-900">
+                <h2 className="text-4xl max-w-80  md:text-5xl md:max-w-xl font-quattrocento font-bold text-gray-900">
                   GET MATCHED WITH OTHER PLAYERS
                 </h2>
                 <p className="text-gray-700 text-sm text-wrap max-w-72">
@@ -103,7 +103,7 @@ const HowToPlay = () => {
                 3
               </span>
               <div>
-                <h2 className="text-4xl max-w-80 font-quattrocento font-bold text-gray-900">
+                <h2 className="text-4xl uppercase md:text-5xl max-w-80 md:max-w-xl font-quattrocento font-bold text-gray-900">
                   Finalize the plans with your group
                 </h2>
                 <p className="text-gray-700 text-sm text-wrap max-w-72">
@@ -127,7 +127,7 @@ const HowToPlay = () => {
                 4
               </span>
               <div>
-                <h2 className="text-4xl max-w-80 font-quattrocento font-bold text-gray-900">
+                <h2 className="text-4xl max-w-80 uppercase md:text-5xl md:max-w-xl font-quattrocento font-bold text-gray-900">
                   Please remember that no-shows incur penalty points.
                 </h2>
                 <p className="text-gray-700 text-sm text-wrap max-w-72">
