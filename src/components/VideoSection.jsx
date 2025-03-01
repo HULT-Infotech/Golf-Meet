@@ -2,7 +2,7 @@ import React from "react";
 
 function VideoSection() {
   return (
-    <section className="bg-[#014D4E] noise-bg min-h-screen flex flex-col items-center justify-center pt-10 md:p-20 relative">
+    <section className="bg-[#014D4E] min-h-screen flex flex-col items-center justify-center pt-10 md:p-20 relative">
       {/* Video player container with border */}
       <div className="w-full max-w-5xl border-2 border-[#00B5CB] rounded mb-8">
         <div className="relative w-full aspect-video bg-black flex items-center justify-center">
