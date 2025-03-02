@@ -22,10 +22,10 @@ const logos = [
 
 function CompeteWorldwideSection() {
   return (
-    <section className="bg-[#016769] min-h-[397px] noise-bg overflow-hidden">
+    <section className="bg-[#016769] flex flex-col items-center justify-center min-h-[397px] noise-bg ">
       <div className="mx-auto px-4">
         {/* Title */}
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-quattrocento font-bold text-center text-neutral-50 mix-blend-screen pt-8 mb-10">
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-quattrocento font-bold text-center text-[#CCCCCC] mix-blend-overlay  pt-8 mb-14">
           COMPETE WORLDWIDE
         </h2>
 
