@@ -7,22 +7,23 @@ import Footer from "../components/Footer";
 
 const FaqItem = ({ question, answer, isOpen, toggleOpen }) => {
   return (
-    <div className="border border-gray-300 rounded mb-4">
-      <div 
-        className="flex justify-between items-center p-4 cursor-pointer"
+    <div className={`mb-4 rounded ${isOpen ? 'border border-[#014D4E]' : ''}`}>
+      <div
+        className="flex justify-between items-center p-4 cursor-pointer bg-white"
         onClick={toggleOpen}
       >
         <span className="text-sm">{question}</span>
         <span className="text-xl">{isOpen ? '−' : '+'}</span>
       </div>
       {isOpen && (
-        <div className="p-4 text-sm text-gray-600 border-t border-gray-300">
+        <div className="p-4 text-sm text-gray-600">
           {answer}
         </div>
       )}
     </div>
   );
 };
+
 
 function FaQ() {
   const [openItems, setOpenItems] = useState({
@@ -46,7 +47,7 @@ function FaQ() {
         {
           id: 'one-time-password',
           question: 'I am not receiving the one-time password via SMS. What should I do?',
-          answer: ''
+          answer: 'You must use a mobile number to register. The GolfMeet tournament requires you to use the GolfMeet mobile app. However, please be assured that your mobile number will not be shared with any third party under any circumstances.'
         },
         {
           id: 'email-alternative',
@@ -56,7 +57,7 @@ function FaQ() {
         {
           id: 'different-country',
           question: 'Can I register from one country even if my mobile is from a different country?',
-          answer: ''
+          answer: 'You must use a mobile number to register. The GolfMeet tournament requires you to use the GolfMeet mobile app. However, please be assured that your mobile number will not be shared with any third party under any circumstances.'
         }
       ]
     },
@@ -67,12 +68,12 @@ function FaQ() {
         {
           id: 'discontinue-refund',
           question: 'I would like to discontinue my participation. Can I get a refund?',
-          answer: ''
+          answer: 'You must use a mobile number to register. The GolfMeet tournament requires you to use the GolfMeet mobile app. However, please be assured that your mobile number will not be shared with any third party under any circumstances.'
         },
         {
           id: 'banned-refund',
           question: 'I was banned for violating the code of conduct. Can I get a refund?',
-          answer: ''
+          answer: 'You must use a mobile number to register. The GolfMeet tournament requires you to use the GolfMeet mobile app. However, please be assured that your mobile number will not be shared with any third party under any circumstances.'
         }
       ]
     },
@@ -83,12 +84,12 @@ function FaQ() {
         {
           id: 'change-date-scheduling',
           question: 'Can I change my preferred dates after I have been matched with a group?',
-          answer: ''
+          answer: 'You must use a mobile number to register. The GolfMeet tournament requires you to use the GolfMeet mobile app. However, please be assured that your mobile number will not be shared with any third party under any circumstances.'
         },
         {
           id: 'no-show-scheduling',
           question: "What happens if I do not show up after I had accepted the group's schedule?",
-          answer: ''
+          answer: 'You must use a mobile number to register. The GolfMeet tournament requires you to use the GolfMeet mobile app. However, please be assured that your mobile number will not be shared with any third party under any circumstances.'
         }
       ]
     },
@@ -99,12 +100,12 @@ function FaQ() {
         {
           id: 'change-date-scoring',
           question: 'Can I change my preferred dates after I have been matched with a group?',
-          answer: ''
+          answer: 'You must use a mobile number to register. The GolfMeet tournament requires you to use the GolfMeet mobile app. However, please be assured that your mobile number will not be shared with any third party under any circumstances.'
         },
         {
           id: 'no-show-scoring',
           question: "What happens if I do not show up after I had accepted the group's schedule?",
-          answer: ''
+          answer: 'You must use a mobile number to register. The GolfMeet tournament requires you to use the GolfMeet mobile app. However, please be assured that your mobile number will not be shared with any third party under any circumstances.'
         }
       ]
     },
@@ -115,7 +116,7 @@ function FaQ() {
         {
           id: 'change-date-leaderboard',
           question: 'Can I change my preferred dates after I have been matched with a group?',
-          answer: ''
+          answer: 'You must use a mobile number to register. The GolfMeet tournament requires you to use the GolfMeet mobile app. However, please be assured that your mobile number will not be shared with any third party under any circumstances.'
         }
       ]
     },
@@ -126,7 +127,7 @@ function FaQ() {
         {
           id: 'change-account-details',
           question: 'How do I change my account details?',
-          answer: ''
+          answer: 'You must use a mobile number to register. The GolfMeet tournament requires you to use the GolfMeet mobile app. However, please be assured that your mobile number will not be shared with any third party under any circumstances.'
         }
       ]
     }
