@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import faq_bg from "../assets/faq/right-bg.svg";
 import faq_greenleft from "../assets/faq/faq-green-left.svg";
-
+import faq_greenleft_mobile from "../assets/faq/faq-green-left-mobile.svg";
 function FaQ() {
   return (
     <>
@@ -11,7 +11,7 @@ function FaQ() {
         <div className="flex flex-col w-full justify-between md:justify-around  gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20">
-            <h1 className="font-quattrocento text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
+            <h1 className="font-quattrocento text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
               FREQUENTLY <br /> ASKED <br /> QUESTIONS
             </h1>
           </div>
@@ -34,7 +34,7 @@ function FaQ() {
         <img
           src={faq_greenleft}
           alt="Green left element"
-          className="absolute md:hidden -bottom-20 sm:-bottom-20 left-0 w-[350px] "
+          className="absolute md:hidden -bottom-10 sm:-bottom-20 left-0 w-[350px] "
         />
       </section>
     </>
