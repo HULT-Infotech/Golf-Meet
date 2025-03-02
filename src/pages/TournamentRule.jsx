@@ -39,12 +39,31 @@ function TournamentRule() {
       </section>
 
       <section className="flex flex-col items-center justify-center mt-36 ">
-        <div className=" flex flex-col justify-center  text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
-          <h2 className=" text-5xl font-bold uppercase font-quattrocento">Player Code of Conduct </h2>
-          <p className=" text-lg underline underline-offset-4">
-            Please refer to the
-            <strong> GolfMeet Player Code of Conduct </strong> here
-          </p>
+        <div className="flex justify-between items-center  text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
+          <div className=" flex flex-col ">
+            <h2 className=" text-5xl font-bold uppercase font-quattrocento">
+              Player Code of Conduct
+            </h2>
+            <p className=" text-lg underline underline-offset-4">
+              Please refer to the
+              <strong> GolfMeet Player Code of Conduct </strong> here
+            </p>
+          </div>
+          <div>
+            <svg
+              width="25"
+              height="47"
+              viewBox="0 0 25 47"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1.5L23 23.5L1 45.5"
+                stroke="#014D4E"
+                stroke-width="2"
+              />
+            </svg>
+          </div>
         </div>
 
         <img src={tr_last} alt="tr_last" className=" w-full" />
