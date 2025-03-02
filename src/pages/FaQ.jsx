@@ -180,11 +180,11 @@ function FaQ() {
       </section>
 
       {/* FAQ Content Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-white mt-24">
         <div className="flex max-w-[1200px] mx-auto gap-6">
           {/* Left Sidebar - With the specified complex gradient */}
           <div 
-            className="hidden md:block w-48 text-white p-4 rounded-lg self-start"
+            className="hidden md:block w-64 text-white p-4 rounded-lg self-start"
             style={categoryGradientStyle}
           >
             <h3 className="font-bold text-base mb-4 uppercase relative">
