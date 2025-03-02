@@ -24,30 +24,28 @@ function LandingPage() {
 
             <Link
               to="/home-to-play"
-              className="text-sm  text-[#201E15] font-quattrocentoSans font-bold text-center my-auto "
+              className="text-base  leading-4 text-[#201E15] font-quattrocentoSans font-bold text-center my-auto "
             >
               HOW TO PLAY
             </Link>
             <a
               href="#"
-              className="text-sm tracking-[0.5px]  text-[#201E15] font-quattrocentoSans  my-auto font-bold"
+              className="text-base leading-4  text-[#201E15] font-quattrocentoSans  my-auto font-bold"
             >
               PAY FEES
             </a>
           </div>
           <div className="flex items-center w-full md:w-auto justify-between gap-2">
             <div className="flex items-center gap-1">
-              <img src={indiaFlag} alt="India Flag" className="w-6 h-5" />
-              <span className="font-quattrocento font-semibold text-sm">
-                En
-              </span>
+              <img src={indiaFlag} alt="India Flag" className="w-6 h-5 mr-1" />
+              <span className="font-quattrocento font-bold text-base">En</span>
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
-              fill="#5f6368"
+              fill="#201E15"
             >
               <path d="M480-360 280-560h400L480-360Z" />
             </svg>
