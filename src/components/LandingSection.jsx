@@ -15,7 +15,7 @@ function LandingPage() {
           <div className="flex gap-10 mt-4 md:mt-0 w-full lg:w-auto">
             <button
               className="text-sm lg:text-base bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-2 py-1 md:px-5 md:py-2 rounded transition-all duration-300 ease-in-out shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)] 
-  hover:from-[#E5181A] hover:via-[#E51719] hover:to-[#CC1517] hover:scale-110"
+  hover:from-[#E5181A] hover:via-[#E51719] hover:to-[#CC1517] hover:scale-110 hover:shadow-[0px_2px_10px_0px_rgba(0,0,0,0.45)]"
             >
               <span className="font-quattrocento text-[#FFF7D9]">
                 REGISTER NOW
@@ -24,13 +24,13 @@ function LandingPage() {
 
             <Link
               to="/home-to-play"
-              className="text-sm  text-black font-poppins text-center my-auto font-medium"
+              className="text-sm  text-[#201E15] font-sans text-center my-auto font-medium"
             >
               HOW TO PLAY
             </Link>
             <a
               href="#"
-              className="text-sm  text-black font-poppins  my-auto font-medium"
+              className="text-sm tracking-[0.5px]  text-[#201E15] font-sans  my-auto font-bold"
             >
               PAY FEES
             </a>
