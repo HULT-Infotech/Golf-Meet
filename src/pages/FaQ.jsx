@@ -179,7 +179,7 @@ function FaQ() {
         <img
           src={faq_greenleft_mobile}
           alt="Green left element"
-          className="absolute md:hidden -bottom-10 sm:-bottom-20 left-0 w-[350px]"
+          className="absolute hidden -bottom-36 sm:-bottom-20 left-0 w-full"
         />
       </section>
 

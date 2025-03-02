@@ -90,7 +90,7 @@ function LandingPage() {
         </div>
       </div>
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl mt-5 font-quattrocento md:text-6xl font-bold lg:mt-16 xl:mt-20">
+      <h1 className="text-3xl sm:text-4xl mt-5 font-quattrocento md:text-6xl lg:text-7xl font-bold lg:mt-16 xl:mt-20">
         GOLF MEET INDIA 2025
       </h1>
       <p className="text-gray-600 text-lg mt-2">
