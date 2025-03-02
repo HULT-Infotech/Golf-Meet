@@ -24,13 +24,13 @@ function LandingPage() {
 
             <Link
               to="/home-to-play"
-              className="text-sm  text-[#201E15] font-sans text-center my-auto font-medium"
+              className="text-sm  text-[#201E15] font-quattrocentoSans font-bold text-center my-auto "
             >
               HOW TO PLAY
             </Link>
             <a
               href="#"
-              className="text-sm tracking-[0.5px]  text-[#201E15] font-sans  my-auto font-bold"
+              className="text-sm tracking-[0.5px]  text-[#201E15] font-quattrocentoSans  my-auto font-bold"
             >
               PAY FEES
             </a>
