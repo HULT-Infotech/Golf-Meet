@@ -189,19 +189,24 @@ function FaQ() {
           >
             <h3 className="font-bold text-base mb-4 uppercase relative">
               CATEGORIES
-              <span className="absolute left-0 bottom-[-8px] w-12 h-[2px] bg-white"></span>
             </h3>
             <ul className="text-sm mt-6">
-              {categoryData.map(category => (
-                <li 
-                  key={category.id}
-                  className={`py-2 px-2 cursor-pointer border-b border-[#02686A]/30 last:border-b-0 hover:text-[#8ED8B4] transition-colors duration-200 ${activeCategory === category.id ? 'text-[#8ED8B4]' : ''}`}
-                  onClick={() => handleCategoryClick(category.id)}
-                >
-                  {category.title}
-                </li>
-              ))}
-            </ul>
+  {categoryData.map(category => (
+    <li 
+      key={category.id}
+      className="py-2 cursor-pointer transition-colors duration-200 hover:text-[#8ED8B4] relative"
+      onClick={() => handleCategoryClick(category.id)}
+    >
+      <span className="relative inline-block after:content-[''] after:block after:w-full after:h-[1.4px] after:bg-white after:mt-1">
+        {category.title}
+      </span>
+    </li>
+  ))}
+</ul>
+
+
+
+
           </div>
 
           {/* Main Content */}
