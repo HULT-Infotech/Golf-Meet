@@ -156,7 +156,7 @@ function FaQ() {
               FREQUENTLY <br /> ASKED <br /> QUESTIONS
             </h1>
             {/* Mobile-only text added here */}
-            <div className="bg-gray-200 p-3 text-sm md:hidden mb-4 w-full">
+            <div className="p-3 text-sm md:hidden mb-4 w-full">
               After you have paid the tournament fees, log into the GolfMeet mobile app.
             </div>
           </div>
