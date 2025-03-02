@@ -152,9 +152,13 @@ function FaQ() {
         <div className="flex flex-col w-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20">
-            <h1 className="font-quattrocento text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
+            <h1 className="font-quattrocento text-[2.3rem] sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
               FREQUENTLY <br /> ASKED <br /> QUESTIONS
             </h1>
+            {/* Mobile-only text added here */}
+            <div className="bg-gray-200 p-3 text-sm md:hidden mb-4 w-full">
+              After you have paid the tournament fees, log into the GolfMeet mobile app.
+            </div>
           </div>
           
           {/* Right Image Section */}
@@ -178,8 +182,6 @@ function FaQ() {
           className="absolute md:hidden -bottom-10 sm:-bottom-20 left-0 w-[350px]"
         />
       </section>
-
-
 
       {/* FAQ Content Section */}
       <section className="py-8 md:py-16 px-4 bg-white mt-8 md:mt-24">
