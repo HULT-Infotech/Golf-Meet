@@ -7,12 +7,12 @@ import Footer from "../components/Footer";
 
 const FaqItem = ({ question, answer, isOpen, toggleOpen }) => {
   return (
-    <div className={`mb-4 border rounded-sm transition-all duration-300 ${isOpen ? 'border-[#014D4E] shadow-md' : 'border-gray-200'}`}>
+    <div className={`mb-4 border rounded-sm transition-all duration-300 ${isOpen ? 'border-[rgb(1,77,78)] shadow-md' : 'border-gray-200'}`}>
       <div
         className="flex justify-between items-center p-4 cursor-pointer bg-white rounded-lg"
         onClick={toggleOpen}
       >
-        <span className="text-sm">{question}</span>
+        <span className="text-sm md:text-base">{question}</span>
         <span className="text-xl">{isOpen ? '−' : '+'}</span>
       </div>
       <div
@@ -20,14 +20,11 @@ const FaqItem = ({ question, answer, isOpen, toggleOpen }) => {
           isOpen ? 'max-h-[500px] opacity-100 p-4 border-t border-gray-200 rounded-b-lg' : 'max-h-0 opacity-0 p-0'
         }`}
       >
-        <p className="text-sm text-gray-600">{answer}</p>
+        <p className="text-sm md:text-base text-gray-600">{answer}</p>
       </div>
     </div>
   );
 };
-
-
-
 
 function FaQ() {
   const [openItems, setOpenItems] = useState({
@@ -139,15 +136,13 @@ function FaQ() {
 
   const handleCategoryClick = (categoryId) => {
     setActiveCategory(categoryId);
-    // Optionally scroll to that category section
+    // Scroll to that category section
     document.getElementById(categoryId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   // Custom gradient style
   const categoryGradientStyle = {
     background: "linear-gradient(150deg, rgb(48, 92, 93) 0%, rgb(0, 54, 55) 50%, rgb(0, 53, 54) 100%)"
-
-
   };
 
   return (
@@ -184,41 +179,39 @@ function FaQ() {
         />
       </section>
 
+
+
       {/* FAQ Content Section */}
-      <section className="py-16 px-4 bg-white mt-24">
-        <div className="flex max-w-[1200px] mx-auto gap-6">
+      <section className="py-8 md:py-16 px-4 bg-white mt-8 md:mt-24">
+        <div className="flex flex-col md:flex-row max-w-[1200px] mx-auto gap-6">
           {/* Left Sidebar - With the specified complex gradient */}
           <div 
-            className="hidden md:block w-64 text-white p-4 rounded-md self-start"
+            className="hidden md:block w-64 text-white p-4 rounded-md sticky top-20 self-start"
             style={categoryGradientStyle}
           >
             <h3 className="font-semibold text-2xl mb-2 uppercase relative">
               CATEGORIES
             </h3>
             <ul className="text-sm mt-6">
-  {categoryData.map(category => (
-    <li 
-      key={category.id}
-      className="py-2 cursor-pointer transition-colors duration-200 hover:text-[#8ED8B4] relative"
-      onClick={() => handleCategoryClick(category.id)}
-    >
-      <span className="relative inline-block after:content-[''] after:block after:w-full after:h-[1.4px] after:bg-white after:mt-1">
-        {category.title}
-      </span>
-    </li>
-  ))}
-</ul>
-
-
-
-
+              {categoryData.map(category => (
+                <li 
+                  key={category.id}
+                  className={`py-3 cursor-pointer transition-colors duration-200 relative ${activeCategory === category.id ? 'font-bold' : ''}`}
+                  onClick={() => handleCategoryClick(category.id)}
+                >
+                  <span className="relative inline-block after:content-[''] after:block after:w-full after:h-[1.4px] after:bg-white after:mt-1">
+                    {category.title}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Main Content */}
           <div className="flex-1">
             {categoryData.map(category => (
-              <div id={category.id} key={category.id} className="mb-12">
-                <h2 className="text-[#014D4E] text-4xl font-bold mb-6 font-quattrocento uppercase">{category.title.toUpperCase()}</h2>
+              <div id={category.id} key={category.id} className="mb-12 scroll-mt-20">
+                <h2 className="text-[#014D4E] text-2xl md:text-4xl font-bold mb-6 font-quattrocento uppercase">{category.title.toUpperCase()}</h2>
                 {category.items.map(item => (
                   <FaqItem 
                     key={item.id}
@@ -233,6 +226,18 @@ function FaQ() {
           </div>
         </div>
       </section>
+
+      {/* Fixed Mobile Navigation Buttons - For easier category navigation */}
+      <div className="fixed bottom-4 right-4 md:hidden">
+        <button 
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="bg-[#014D4E] text-white p-3 rounded-full shadow-lg"
+        >
+          <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 11l7-7 7 7M5 19l7-7 7 7"></path>
+          </svg>
+        </button>
+      </div>
 
       <Footer />
     </>
