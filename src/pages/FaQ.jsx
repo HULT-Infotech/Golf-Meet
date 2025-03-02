@@ -7,22 +7,26 @@ import Footer from "../components/Footer";
 
 const FaqItem = ({ question, answer, isOpen, toggleOpen }) => {
   return (
-    <div className={`mb-4 rounded ${isOpen ? 'border border-[#014D4E]' : ''}`}>
+    <div className={`mb-4 border rounded-sm transition-all duration-300 ${isOpen ? 'border-[#014D4E] shadow-md' : 'border-gray-200'}`}>
       <div
-        className="flex justify-between items-center p-4 cursor-pointer bg-white"
+        className="flex justify-between items-center p-4 cursor-pointer bg-white rounded-lg"
         onClick={toggleOpen}
       >
         <span className="text-sm">{question}</span>
         <span className="text-xl">{isOpen ? '−' : '+'}</span>
       </div>
-      {isOpen && (
-        <div className="p-4 text-sm text-gray-600">
-          {answer}
-        </div>
-      )}
+      <div
+        className={`overflow-hidden transition-all duration-300 ease-in-out bg-white ${
+          isOpen ? 'max-h-[500px] opacity-100 p-4 border-t border-gray-200 rounded-b-lg' : 'max-h-0 opacity-0 p-0'
+        }`}
+      >
+        <p className="text-sm text-gray-600">{answer}</p>
+      </div>
     </div>
   );
 };
+
+
 
 
 function FaQ() {
