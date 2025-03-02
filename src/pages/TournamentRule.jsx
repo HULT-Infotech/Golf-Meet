@@ -68,8 +68,11 @@ function TournamentRule() {
         </div>
 
         <div className="flex max-w-screen-xl">
-          <div className=" flex flex-col min-h-96 justify-between min-w-60  p-4  bg-[linear-gradient(to_bottom_right,#014d4ed1_0%,#014D4E_100%)] rounded-sm text-white mt-10 mr-20">
-            <h1 className="text-lg">SECTIONS</h1>
+          <div 
+            className="flex flex-col min-h-96 justify-between min-w-60 p-6 rounded-sm text-white mt-10 mr-20" 
+            style={{ background: "linear-gradient(150deg, rgb(48, 92, 93) 0%, rgb(0, 54, 55) 50%, rgb(0, 53, 54) 100%)" }}
+          >
+            <h1 className="text-3xl font-medium mb-6">SECTIONS</h1>
             {[
               { id: "home", label: "Home country" },
               { id: "leaderboard", label: "Leaderboard criteria" },
@@ -82,9 +85,9 @@ function TournamentRule() {
               { id: "penalties", label: "Penalties" },
               { id: "mulligans", label: "Mulligans" },
             ].map((option, index) => (
-              <article key={index} className="flex flex-col">
-                <h2 className=" underline underline-offset-4 font-semibold">
-                  {option.label}{" "}
+              <article key={index} className="flex flex-col mb-3">
+                <h2 className="text-base leading-relaxed underline underline-offset-4 font-medium">
+                  {option.label}
                 </h2>
               </article>
             ))}
