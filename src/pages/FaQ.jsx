@@ -184,10 +184,10 @@ function FaQ() {
         <div className="flex max-w-[1200px] mx-auto gap-6">
           {/* Left Sidebar - With the specified complex gradient */}
           <div 
-            className="hidden md:block w-64 text-white p-4 rounded-lg self-start"
+            className="hidden md:block w-64 text-white p-4 rounded-md self-start"
             style={categoryGradientStyle}
           >
-            <h3 className="font-bold text-base mb-4 uppercase relative">
+            <h3 className="font-semibold text-2xl mb-2 uppercase relative">
               CATEGORIES
             </h3>
             <ul className="text-sm mt-6">
@@ -213,7 +213,7 @@ function FaQ() {
           <div className="flex-1">
             {categoryData.map(category => (
               <div id={category.id} key={category.id} className="mb-12">
-                <h2 className="text-[#014D4E] text-2xl font-bold mb-6 uppercase">{category.title.toUpperCase()}</h2>
+                <h2 className="text-[#014D4E] text-4xl font-bold mb-6 font-quattrocento uppercase">{category.title.toUpperCase()}</h2>
                 {category.items.map(item => (
                   <FaqItem 
                     key={item.id}
