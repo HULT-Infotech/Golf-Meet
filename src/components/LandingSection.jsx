@@ -9,17 +9,29 @@ import { Link } from "react-router-dom";
 function LandingPage() {
   return (
     <section className="min-h-screen text-center">
-      <div className="relative flex flex-col min-h-[60vh] bg-gray-50 noise-bg">
+      <div className="relative flex flex-col min-h-[70vh] bg-gray-50 noise-bg">
         {/* Top Navbar */}
-        <div className="lg:absolute top-0 w-full flex justify-between items-center px-5 lg:px-10 py-5 flex-col-reverse md:flex-row">
-          <div className="flex gap-5 mt-4 md:mt-0 w-full lg:w-auto">
-            <button className="text-sm lg:text-base bg-red-600 font-quattrocento text-white px-2 py-1 md:px-5 md:py-2 rounded shadow-md hover:bg-red-700 transition drop-shadow-2xl">
-              REGISTER NOW
+        <div className="lg:absolute top-0 w-full flex justify-between items-center px-5 lg:px-10 py-10 flex-col-reverse md:flex-row">
+          <div className="flex gap-10 mt-4 md:mt-0 w-full lg:w-auto">
+            <button
+              className="text-sm lg:text-base bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-2 py-1 md:px-5 md:py-2 rounded transition-all duration-300 ease-in-out shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)] 
+  hover:from-[#E5181A] hover:via-[#E51719] hover:to-[#CC1517] hover:scale-110"
+            >
+              <span className="font-quattrocento text-[#FFF7D9]">
+                REGISTER NOW
+              </span>
             </button>
-            <Link to="/home-to-play" className="text-sm md:text-base text-black font-poppins text-center my-auto font-medium">
+
+            <Link
+              to="/home-to-play"
+              className="text-sm  text-black font-poppins text-center my-auto font-medium"
+            >
               HOW TO PLAY
             </Link>
-            <a href="#" className="text-sm md:text-base text-black font-poppins  my-auto font-medium">
+            <a
+              href="#"
+              className="text-sm  text-black font-poppins  my-auto font-medium"
+            >
               PAY FEES
             </a>
           </div>
@@ -43,7 +55,7 @@ function LandingPage() {
         </div>
 
         {/*//! Hero Section Laptops */}
-        <div className="hidden relative  lg:max-w-5xl  xl:max-w-[85vw] mx-auto  min-h-[60vh] lg:flex flex-col w-full items-center">
+        <div className="hidden relative  lg:max-w-5xl  xl:max-w-[85vw] mx-auto  min-h-[70vh] lg:flex flex-col w-full items-center">
           <div className="absolute left-0 -bottom-2">
             <img
               src={landingLeftImg}
@@ -62,11 +74,11 @@ function LandingPage() {
           </div>
 
           {/* Center Logo */}
-          <div className="absolute lg:-bottom-14 xl:-bottom-16">
+          <div className="absolute lg:-bottom-14 xl:-bottom-20">
             <img
               src="favicons/favicon.svg"
               alt="Golfmeet Logo"
-              className="w-48 object-contain lg:w-[380px]  xl:w-[35vw] drop-shadow-2xl"
+              className="w-48 object-contain lg:w-[380px]  xl:w-[35vw] drop-shadow-[0_10px_10px_rgba(0,0,0,0.40)]"
               draggable="false"
             />
           </div>
