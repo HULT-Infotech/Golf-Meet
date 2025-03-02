@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import faq_bg from "../assets/faq/right-bg.svg";
 import faq_greenleft from "../assets/faq/faq-green-left.svg";
 import faq_greenleft_mobile from "../assets/faq/faq-green-left-mobile.svg";
+import Footer from "../components/Footer";
 function FaQ() {
   return (
     <>
@@ -37,6 +38,8 @@ function FaQ() {
           className="absolute md:hidden -bottom-10 sm:-bottom-20 left-0 w-[350px] "
         />
       </section>
+
+      <Footer/>
     </>
   );
 }

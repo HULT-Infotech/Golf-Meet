@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
 import tr_greenleft from "../assets/tournament-rule/tr-green-left.svg";
 import tr_last from "../assets/tournament-rule/tr-last.svg";
+import Footer from "../components/Footer";
 function TournamentRule() {
   return (
     <>
@@ -66,8 +67,70 @@ function TournamentRule() {
           </div>
         </div>
 
+        <div className="flex max-w-screen-xl">
+          <div className=" flex flex-col min-h-96 justify-between min-w-60  p-4  bg-[linear-gradient(to_bottom_right,#014d4ed1_0%,#014D4E_100%)] rounded-sm text-white mt-10 mr-20">
+            <h1 className="text-lg">SECTIONS</h1>
+            {[
+              { id: "home", label: "Home country" },
+              { id: "leaderboard", label: "Leaderboard criteria" },
+              { id: "format", label: "Format of play" },
+              { id: "local", label: "Local rules" },
+              { id: "teebox", label: "Tee box" },
+              { id: "marking", label: "Marking the ball" },
+              { id: "scorecard", label: "Scorecard" },
+              { id: "hole", label: "Hole not in play" },
+              { id: "penalties", label: "Penalties" },
+              { id: "mulligans", label: "Mulligans" },
+            ].map((option, index) => (
+              <article key={index} className="flex flex-col">
+                <h2 className=" underline underline-offset-4 font-semibold">
+                  {option.label}{" "}
+                </h2>
+              </article>
+            ))}
+          </div>
+          <div className="flex flex-col gap-4 mt-10">
+            {" "}
+            <div className="mb-6">
+              <h2 className="text-teal-800 font-semibold font-quattrocento text-4xl mb-4">
+                HOME COUNTRY
+              </h2>
+              <ul className="list-disc pl-6">
+                <li className="mb-2">
+                  Home country is the country in which you paid the GolfMeet
+                  tournament fees.
+                </li>
+              </ul>
+            </div>
+            {/* Leaderboard Criteria Section */}
+            <div>
+              <h2 className="text-teal-800 font-semibold font-quattrocento text-4xl mb-4">
+                LEADERBOARD CRITERIA
+              </h2>
+              <ul className="list-disc pl-6">
+                <li className="mb-2">
+                  For your scores to be considered on the leaderboard, you must
+                  play at least 12 rounds of golf scheduled through the GolfMeet
+                  app.
+                </li>
+                <li className="mb-2">
+                  If you play more than 12 rounds scheduled through the GolfMeet
+                  app, your best 12 rounds will be considered for the
+                  leaderboard.
+                </li>
+                <li className="mb-2">
+                  You may play in any country, at a golf course listed on the
+                  GolfMeet app. However, for your home country, rounds are only
+                  considered when played in that country.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <img src={tr_last} alt="tr_last" className=" w-full" />
       </section>
+      <Footer />
     </>
   );
 }
