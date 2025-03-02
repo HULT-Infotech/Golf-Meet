@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function LandingPage() {
   return (
     <section className="min-h-screen text-center">
-      <div className="relative flex flex-col min-h-[60vh] bg-gray-50 noise-bg">
+      <div className="relative flex flex-col min-h-[70vh] bg-gray-50 noise-bg">
         {/* Top Navbar */}
         <div className="lg:absolute top-0 w-full flex justify-between items-center px-5 lg:px-10 py-5 flex-col-reverse md:flex-row">
           <div className="flex gap-5 mt-4 md:mt-0 w-full lg:w-auto">
@@ -43,7 +43,7 @@ function LandingPage() {
         </div>
 
         {/*//! Hero Section Laptops */}
-        <div className="hidden relative  lg:max-w-5xl  xl:max-w-[85vw] mx-auto  min-h-[60vh] lg:flex flex-col w-full items-center">
+        <div className="hidden relative  lg:max-w-5xl  xl:max-w-[85vw] mx-auto  min-h-[70vh] lg:flex flex-col w-full items-center">
           <div className="absolute left-0 -bottom-2">
             <img
               src={landingLeftImg}
@@ -62,7 +62,7 @@ function LandingPage() {
           </div>
 
           {/* Center Logo */}
-          <div className="absolute lg:-bottom-14 xl:-bottom-16">
+          <div className="absolute lg:-bottom-14 xl:-bottom-20">
             <img
               src="favicons/favicon.svg"
               alt="Golfmeet Logo"
