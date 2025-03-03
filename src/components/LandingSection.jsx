@@ -100,20 +100,23 @@ function LandingPage() {
         </div>
       </div>
       {/* Title */}
-      <h1 className="text-3xl sm:text-4xl mt-5 font-quattrocento md:text-6xl lg:text-7xl xl:text-[96px] leading-[106.37px] tracking-[0.025em] font-bold lg:mt-16 xl:mt-20">
+      <h1 className="text-3xl sm:text-4xl mt-5 font-quattrocento md:text-6xl lg:text-7xl xl:text-[94px] leading-[106.37px] tracking-[0.025em] font-bold lg:mt-16 xl:mt-20">
         GOLF MEET INDIA 2025
       </h1>
-      <p className="text-gray-600 text-lg mt-2">
+      <p className="font-quattrocentoSans font-normal text-[24px] leading-[26.59px] tracking-[-0.025em] text-center text-[#201E15] mt-2">
         The year-long amateur golf tournament
       </p>
-      <p className="text-gray-500 text-sm">JANUARY 2025 - DECEMBER 2025</p>
-
+      <p className="font-quattrocentoSans font-normal mt-1 text-[16px] leading-[17.73px] tracking-[-0.025em] text-center text-[#201E15] p-2">
+        JANUARY 2025 - DECEMBER 2025
+      </p>
       {/* Register Button */}
-      <button className=" my-7 group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-gray-800 backdrop-blur-lg px-6 py-2 text-base font-semibold text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20">
-        <span className="text-lg font-quattrocento"> REGISTRATION OPEN</span>
-        <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
+      <button className=" my-7  rounded-md bg-gray-800 backdrop-blur-lg px-6 py-2 text-base font-normal bg-gradient-to-b from-[#828282] via-[#333333] to-[#1A1A1A] shadow-[0px_2px_4px_0px_#0000008C] transition-all duration-500 hover:shadow-[0px_4px_10px_0px_#00000073] hover:bg-gradient-to-b hover:from-[#6C6C6C] hover:via-[#2F2F2F] hover:to-[#1A1A1A] ">
+        <span className="text-lg text-[#FFF7D9] font-quattrocento">
+          REGISTRATION OPEN
+        </span>
+        {/* <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
           <div className="relative h-full w-10 bg-white/20"></div>
-        </div>
+        </div> */}
       </button>
     </section>
   );
