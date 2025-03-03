@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 function LandingPage() {
   return (
-    <section className="min-h-screen text-center">
+    <section className="min-h-screen text-center mb-10">
       <div className="relative flex flex-col min-h-[70vh] bg-gray-50 noise-bg">
         {/* Top Navbar */}
         <div className="lg:absolute top-0 w-full flex justify-between items-center px-5 lg:px-10 py-10 flex-col-reverse md:flex-row">
