@@ -1,22 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import indiaFlag from "../assets/india_flag.png";
-import centralLogo from "/favicons/favicon.svg"; 
+import centralLogo from "/favicons/favicon.svg";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-200  noise-bg shadow-lg py-5 px-5 lg:px-10 flex flex-col-reverse sm:flex-row items-center justify-between w-full 
-        sticky top-0 z-50">
-      
+    <nav
+      className="bg-gray-200  noise-bg shadow-lg py-5 px-5 lg:px-10 flex flex-col-reverse sm:flex-row items-center justify-between w-full 
+        sticky top-0 z-50"
+    >
       {/* Left Section - Buttons */}
-      <div className="flex gap-5 mt-4 md:mt-0 w-full lg:w-auto items-center">
-        <button className="text-sm lg:text-base bg-red-600 font-quattrocento text-white px-3 py-2 md:px-5 md:py-2 rounded shadow-md hover:bg-red-700 transition">
-          REGISTER NOW
+      <div className="flex gap-10 mt-4 md:mt-0 w-full lg:w-auto items-center">
+        <button
+          className="text-sm lg:text-base bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-2 py-1 md:px-5 md:py-2 rounded transition-all duration-300 ease-in-out shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)] 
+    hover:from-[#E5181A] hover:via-[#E51719] hover:to-[#CC1517] hover:scale-110 hover:shadow-[0px_2px_10px_0px_rgba(0,0,0,0.45)]"
+        >
+          <span className="font-quattrocento text-[#FFF7D9]">REGISTER NOW</span>
         </button>
-        <Link to="/home-to-play" className="text-sm md:text-base text-black font-poppins text-center font-medium">
+
+        <Link
+          to="/home-to-play"
+          className="text-base  leading-4 text-[#201E15] font-quattrocentoSans font-bold text-center my-auto "
+        >
           HOW TO PLAY
         </Link>
-        <a href="#" className="text-sm md:text-base text-black font-poppins font-medium">
+        <a
+          href="#"
+          className="text-base leading-4  text-[#201E15] font-quattrocentoSans  my-auto font-bold"
+        >
           PAY FEES
         </a>
       </div>

@@ -8,11 +8,10 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Open Sans", "sans-serif"],
-        outfit: ["Outfit", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
         quattrocento: ["Quattrocento", "serif"],
+        quattrocentoSans: ["Quattrocento Sans", "sans-serif"]
       },
     },
   },
   plugins: [],
-}
+};
