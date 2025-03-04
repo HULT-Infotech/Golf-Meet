@@ -5,12 +5,16 @@ import Illustration_Golf_Balls from "../assets/Illustration_Golf_Balls.svg";
 import Illustration_Greens_mobile from "../assets/Illustration_Greens_mobile.svg";
 import Illustration_Greens_Desktop from "../assets/Illustration_Greens_Desktop.svg";
 import video_section_right_bg_with_flag from "../assets/video-section.svg";
+import glow_yellow from "../assets/glow_yellow.svg";
 const HowItWorksSection = () => {
   return (
     <section className="relative bg-white text-black pt-16">
       {/* Steps */}
 
-      <h1 className="text-3xl sm:text-4xl px-10 lg:mt-10 font-quattrocento font-bold md:text-[64px] leading-[70.91px] tracking-[0.025em] text-center  text-[#014D4E] md:text-5xl mb-10 lg:mb-0 " style={{textShadow:"0px 0px 6px #F4D4555C"}}>
+      <h1
+        className="text-3xl sm:text-4xl px-10 lg:mt-10 font-quattrocento font-bold md:text-[64px] leading-[70.91px] tracking-[0.025em] text-center  text-[#014D4E] md:text-5xl mb-10 lg:mb-0 "
+        style={{ textShadow: "0px 0px 6px #F4D4555C" }}
+      >
         HOW IT WORKS
       </h1>
 
@@ -94,14 +98,19 @@ const HowItWorksSection = () => {
           className="w-full relative z-10 md:hidden "
           alt="Illustration Greens mobile"
         />
-        <img src={Illustration_Greens_Desktop} alt="Illustration_Greens_Desktop" draggable="false" className="w-full hidden md:block h-80v  object-cover " />
+        <img
+          src={Illustration_Greens_Desktop}
+          alt="Illustration_Greens_Desktop"
+          draggable="false"
+          className="w-full hidden md:block h-80v  object-cover "
+        />
         <div className="absolute bottom-0 left-0 w-full h-28 noise-bg md:hidden" />
       </div>
 
       {/*  Section 4 */}
       <div className="mx-auto noise-bg py-10 md:py-20">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-quattrocento font-bold mb-8 tracking-wide lg:text-6xl">
+          <h1 className="text-4xl mb-8  lg:text-[96px] font-quattrocento font-bold  leading-[106.37px] tracking-[0.025em] text-center">
             THE SOCIAL AMATEUR
             <br />
             TOURNAMENT WITH A<br />
@@ -114,11 +123,11 @@ const HowItWorksSection = () => {
               src={Illustration_Golf_Balls}
               draggable="false"
               alt="Golf Balls"
-              className="mx-auto md:w-1/2"
+              className="mx-auto md:w-1/2 lg:w-[29%]"
             />
           </div>
 
-          <p className="text-teal-700 font-sans text-xl mb-16 p-4 max-w-3xl mx-auto">
+          <p className="text-teal-700 font-sans text-xl mb-16 p-4 max-w-xl mx-auto">
             Unlike typical golf tournaments where the result depends on your
             form on the tournament day, GolfMeet gives you and everyone else a
             fair chance all year long.
@@ -137,12 +146,12 @@ const HowItWorksSection = () => {
           </div>
 
           <div className="w-4/5 lg:max-w-[800px] mx-auto md:p-12">
-            <h2 className="text-teal-700 text-2xl font-bold mb-4 md:text-3xl">
+            <h2 className="text-teal-700 text-2xl font-bold mb-4 md:text-4xl">
               Play any number of rounds within the year. Your best 12 rounds
               will get added to the leaderboard.*
             </h2>
 
-            <p className="text-sm text-gray-600 md:text-lg">
+            <p className="text-sm text-gray-600 md:text-lg  md:max-w-xl">
               *You can play unlimited rounds at any eligible golf course around
               the world. But at least 8 of your qualifying rounds must be played
               at golf courses within your home country.
@@ -150,9 +159,17 @@ const HowItWorksSection = () => {
           </div>
         </div>
       </div>
+      <div className="absolute flex justify-end  bottom-96  right-0 w-full">
+        <img src={glow_yellow} alt="glow_yellow" className="w-1/2" />
+      </div>
       <div className="absolute  -bottom-24 right-0  w-full ">
-            <img src={video_section_right_bg_with_flag} draggable="false" alt="right_bg_with_flag " className="w-full" />
-         </div>
+        <img
+          src={video_section_right_bg_with_flag}
+          draggable="false"
+          alt="right_bg_with_flag "
+          className="w-full"
+        />
+      </div>
     </section>
   );
 };
