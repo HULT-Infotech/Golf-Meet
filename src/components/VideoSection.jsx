@@ -15,7 +15,7 @@ function VideoSection() {
 
       {/* Tagline and description */}
       <div className="text-center text-white py-10">
-        <h2 className="text-5xl flex  flex-col md:flex-row  justify-center items-center gap-5 font-quattrocento md:text-5xl lg:text-6xl font-medium tracking-wider mb-4">
+        <h2 className="text-5xl flex  flex-col md:flex-row  justify-center items-center gap-5 font-quattrocento md:text-5xl lg:text-6xl font-bold tracking-wider mb-4">
           <svg
             width="13"
             height="14"
@@ -77,7 +77,7 @@ function VideoSection() {
             />
           </svg>
         </h2>
-        <p className=" md:block hidden text-lg">
+        <p className=" md:block hidden font-quattrocentoSans font-light text-[20px] leading-[26.59px] tracking-[0.025em] text-center">
           Meet new golfers in your area. Make new friends. Compete with amateur
           golfers nationwide.
         </p>
