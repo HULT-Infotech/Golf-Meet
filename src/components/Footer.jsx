@@ -3,6 +3,7 @@ import landingRightImg from "../assets/landing_right_img.svg";
 import landingLeftImg from "../assets/landing_left_img.svg";
 import indiaFlag from "../assets/india_flag.png";
 import INDIA_golfmeet_logo from "/favicons/favicon.svg";
+import green_bg from "../assets/green.webp";
 
 function Footer() {
   return (
@@ -20,7 +21,7 @@ function Footer() {
         </div>
       </section>
       {/* Main Footer Section */}
-      <section className="bg-[#134849] noise-bg relative py-6 px-4 flex justify-between items-center min-h-96">
+      <section className="relative px-4 flex justify-between items-center min-h-96" style={{ backgroundImage: `url(${green_bg})` }}>
         {/* Left Illustration */}
         <div className=" hidden lg:block absolute bottom-0 left-0">
           <img
