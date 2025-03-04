@@ -8,7 +8,7 @@ import UAE_golfmeet_logo from "../assets/CompeteWorldWide-Img/UAE-golfmeet-logo.
 import JAPAN_golfmeet_logo from "../assets/CompeteWorldWide-Img/JAPAN-golfmeet-logo.svg";
 import THAILAND_golfmeet_logo from "../assets/CompeteWorldWide-Img/THAILAND-golfmeet-logo.svg";
 import INDIA_golfmeet_logo from "/favicons/favicon.svg";
-
+import green_bg from "../assets/green.webp";
 // Array of logos
 const logos = [
   SPAIN_golfmeet_logo,
@@ -22,10 +22,10 @@ const logos = [
 
 function CompeteWorldwideSection() {
   return (
-    <section className="bg-[#016769] flex flex-col items-center justify-center min-h-[397px] noise-bg ">
+    <section className="flex flex-col items-center justify-center min-h-[397px]  "  style={{ backgroundImage: `url(${green_bg})` }}>
       <div className="mx-auto px-4">
         {/* Title */}
-        <h2 className="text-2xl md:text-3xl lg:text-5xl font-quattrocento font-bold text-center text-[#CCCCCC] mix-blend-overlay  pt-8 mb-14">
+        <h2 className="text-2xl md:text-3xl lg:text-5xl font-quattrocento font-bold text-center text-[#CCCCCC] mix-blend-overlay brightness-100  pt-8 mb-14">
           COMPETE WORLDWIDE
         </h2>
 
