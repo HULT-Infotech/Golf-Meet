@@ -11,7 +11,7 @@ function LandingPage() {
     <section className="min-h-screen text-center mb-10">
       <div className="relative flex flex-col min-h-[70vh] bg-gray-50 noise-bg">
         {/* Top Navbar */}
-        <div className="lg:absolute top-0 w-full flex justify-between items-center px-5 lg:px-10 py-10 flex-col-reverse md:flex-row">
+        <div className="lg:absolute z-50 top-0 w-full flex justify-between items-center px-5 lg:px-10 py-10 flex-col-reverse md:flex-row">
           <div className="flex gap-10 mt-4 md:mt-0 w-full lg:w-auto">
             <button
               className="text-sm lg:text-base bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-2 py-1 md:px-5 md:py-2 rounded transition-all duration-300 ease-in-out shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)] 
