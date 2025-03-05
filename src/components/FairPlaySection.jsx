@@ -5,7 +5,7 @@ const FairPlaySection = () => {
   return (
     <>
       {/* First Section - Introduction */}
-      <section className="relative bg-gray-100 noise-bg md:min-h-[96vh] drop-shadow-xl w-full flex flex-col justify-between p-4 sm:p-6 md:p-8 text-center">
+      <section className="relative bg-gray-100 noise-bg md:min-h-[96vh] drop-shadow-xl w-full flex flex-col justify-between p-4 sm:p-0 md:px-8 text-center">
         <div className="absolute z-10 bottom-0 left-0 right-0 flex justify-center items-center w-full opacity-30">
           <img
             src={Illustration_Golfers_Mobile}
@@ -20,7 +20,7 @@ const FairPlaySection = () => {
 
         <div className="mx-auto max-w-4xl">
           <h6 className="text-base md:text-lg lg:text-xl">Introduction</h6>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl mx-auto uppercase py-2 md:py-4 font-quattrocento tracking-wider font-bold mt-2">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl mx-auto uppercase  font-quattrocento font-bold xl:text-[96px] leading-[106.37px] tracking-[0.025em] text-center">
             The GolfMeet
             <br />
             <span className="block mt-2 md:mt-4">Handicap</span>
@@ -37,7 +37,7 @@ const FairPlaySection = () => {
           <p className="font-semibold text-lg md:text-xl lg:text-2xl mx-auto max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-3xl lg:p-5 text-[#014D4E]">
             With the GolfMeet handicap, all that matters is your consistency.
           </p>
-          <p className="mt-12 mb-8 md:mb-12 lg:mb-16 font-semibold text-base md:text-lg xl:text-xl max-w-xs sm:max-w-sm md:max-w-md mx-auto text-[#014D4E]">
+          <p className="mt-12  font-semibold text-base md:text-lg xl:text-xl max-w-xs sm:max-w-sm md:max-w-md mx-auto text-[#014D4E]">
             Not your age or gender.
           </p>
         </div>

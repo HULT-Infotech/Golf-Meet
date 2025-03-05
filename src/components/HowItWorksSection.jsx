@@ -18,7 +18,7 @@ const HowItWorksSection = () => {
         HOW IT WORKS
       </h1>
 
-      <div className="flex flex-col gap-10 items-center justify-center sm:flex-wrap sm:flex-row sm:gap-10 xl:flex-nowrap lg:gap-0">
+      <div className="flex flex-col gap-10 items-center justify-center sm:flex-wrap sm:flex-row sm:gap-10 xl:flex-nowrap lg:gap-10">
         {/*  Step 1 */}
         <div className="flex items-start space-x-4 lg:-mt-60">
           <span className="w-8 h-10 rounded-full bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
@@ -26,10 +26,10 @@ const HowItWorksSection = () => {
           </span>
           <div>
             <h3 className="text-gray-500 text-sm font-medium">Register</h3>
-            <h2 className="text-xl font-bold text-gray-900">
+            <h2 className="text-2xl font-bold font-quattrocento text-gray-900">
               Register to Play
             </h2>
-            <p className="text-gray-700 text-sm w-60">
+            <p className="text-gray-700 text-sm w-64">
               Grab your clubs and secure your spot on the course. Share basic
               details about you and your golf experience.
             </p>
@@ -45,7 +45,7 @@ const HowItWorksSection = () => {
             <h3 className="text-gray-500 text-sm font-medium">
               Profile Approval
             </h3>
-            <h2 className="text-xl font-bold text-gray-900">
+            <h2 className="text-2xl font-bold font-quattrocento text-gray-900">
               Get the Green Light
             </h2>
             <p className="text-gray-700 text-sm w-60">
@@ -64,10 +64,10 @@ const HowItWorksSection = () => {
             <h3 className="text-gray-500 text-sm font-medium">
               Pay Tournament Fees
             </h3>
-            <h2 className="text-xl font-bold text-gray-900">
+            <h2 className="text-2xl font-bold font-quattrocento text-gray-900">
               Chip in for the game
             </h2>
-            <p className="text-gray-700 text-sm w-60">
+            <p className="text-gray-700 text-sm w-64">
               Make your contribution to participate in the tournament.
               Convenient payment plans for everyone.
             </p>
@@ -83,8 +83,8 @@ const HowItWorksSection = () => {
             <h3 className="text-gray-500 text-sm font-medium">
               Play the Tournament
             </h3>
-            <h2 className="text-xl font-bold text-gray-900">Hit the Fairway</h2>
-            <p className="text-gray-700 text-sm w-60">
+            <h2 className="text-2xl font-bold font-quattrocento text-gray-900">Hit the Fairway</h2>
+            <p className="text-gray-700 text-sm w-64">
               Take your position on the fairway and bring your A-game to the
               tournament. It's time to show your skills and aim for the
               leaderboard!
@@ -110,7 +110,7 @@ const HowItWorksSection = () => {
       {/*  Section 4 */}
       <div className="mx-auto noise-bg py-10 md:py-20">
         <div className="text-center mb-12">
-          <h1 className="text-4xl mb-8  lg:text-[96px] font-quattrocento font-bold  leading-[106.37px] tracking-[0.025em] text-center">
+          <h1 className="text-4xl mb-8  lg:text-[90px] font-quattrocento font-bold  leading-[106.37px] tracking-[0.025em] text-center">
             THE SOCIAL AMATEUR
             <br />
             TOURNAMENT WITH A<br />
