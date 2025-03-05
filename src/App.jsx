@@ -5,6 +5,7 @@ import HowToPlay from "./pages/HowToPlay";
 import TournamentRule from "./pages/TournamentRule";
 import FaQ from "./pages/FaQ";
 import ScrollToTop from "./utils/ScrollToTop";
+import CodeOfConduct from "./pages/CodeOfConduct";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/home-to-play" element={<HowToPlay />} />
         <Route path="/faq" element={<FaQ />} />
         <Route path="/tournament-rule" element={<TournamentRule />} />
+        <Route path="/code-of-conduct" element={<CodeOfConduct />} />
       </Routes>
       <ScrollToTop />
     </BrowserRouter>
