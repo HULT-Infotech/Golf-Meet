@@ -8,7 +8,6 @@ import green_bg from "../assets/green.webp";
 function Footer() {
   return (
     <footer className="w-full">
-      
       {/* Third Section - Logo */}
       <section className="bg-gray-100 noise-bg flex justify-center items-center w-full p-10 md:min-h-[350px] drop-shadow-2xl">
         <div className=" w-[90vw] md:w-[30vw] transition-transform duration-500 ">
@@ -21,12 +20,15 @@ function Footer() {
         </div>
       </section>
       {/* Main Footer Section */}
-      <section className="relative px-4 flex justify-between items-center min-h-96" style={{ backgroundImage: `url(${green_bg})` }}>
+      <section
+        className="relative px-4 flex justify-between items-start  min-h-96"
+        style={{ backgroundImage: `url(${green_bg})` }}
+      >
         {/* Left Illustration */}
         <div className=" hidden lg:block absolute bottom-0 left-0">
           <img
             src={landingLeftImg}
-            className="filter brightness-0 opacity-50"
+            className="filter brightness-0 opacity-30"
             alt="Golfers Left"
           />
         </div>
@@ -35,29 +37,29 @@ function Footer() {
         <div className=" hidden lg:block absolute bottom-0 right-0">
           <img
             src={landingRightImg}
-            className="filter brightness-0 opacity-50"
+            className="filter brightness-0 opacity-30"
             alt="Golfers Right"
           />
         </div>
 
         {/* Content Sections */}
-        <div className="flex justify-between w-full max-w-5xl md:mx-auto md:items-center z-10 flex-col-reverse md:flex-row gap-20 md:gap-0 md:h-auto px-6 py-10">
+        <div className="flex justify-between w-full max-w-7xl md:mx-auto md:items-center z-10 flex-col-reverse md:flex-row gap-20 md:gap-0 md:h-auto py-16">
           {/* Left Section - Site Language and Country of Play */}
-          <div className="flex flex-col space-y-4 text-white">
+          <div className="flex flex-col space-y-8 text-white">
             <div>
-              <label className="block text-sm font-medium mb-2">
+              <label className="block text-sm font-quattrocentoSans font-semibold mb-2">
                 SITE LANGUAGE
               </label>
-              <select className="bg-white font-quattrocento text-gray-800 p-2 rounded-md w-40">
+              <select className="bg-white font-quattrocento text-gray-800 p-2 rounded-sm w-36">
                 <option className="font-quattrocento">English</option>
                 {/* Add more language options as needed */}
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium mb-2">
+              <label className="block text-sm font-quattrocentoSans font-semibold mb-2">
                 COUNTRY OF PLAY
               </label>
-              <div className="bg-white  text-gray-800 p-2 rounded-md w-40 flex items-center">
+              <div className="bg-white  text-gray-800 p-2 rounded-sm w-36 flex items-center">
                 <img
                   src={indiaFlag}
                   alt="India Flag"
@@ -69,7 +71,7 @@ function Footer() {
           </div>
 
           {/* Middle Section - Frequently Asked Questions, Tournament Rules, etc. */}
-          <div className="flex flex-col uppercase space-y-4 text-white text-left">
+          <div className="flex flex-col uppercase space-y-8 font-quattrocentoSans text-white text-left">
             <a href="/faq" className="hover:underline">
               Frequently Asked Questions
             </a>
@@ -85,7 +87,7 @@ function Footer() {
           </div>
 
           {/* Right Section - Player Support, Terms of Use, etc. */}
-          <div className="flex uppercase flex-col space-y-4 text-white text-left">
+          <div className="flex uppercase flex-col font-quattrocentoSans space-y-8 text-white text-left">
             <a href="/player-support" className="hover:underline">
               Player Support
             </a>
@@ -104,7 +106,9 @@ function Footer() {
 
       {/* Bottom Gray Section */}
       <section className="bg-gray-100 noise-bg h-24 text-center flex justify-center items-center  w-full">
-        <p className="text-gray-600 text-sm">Copyright © 2024 Golfmeet LLP. All Rights Reserved.</p>
+        <p className="text-gray-600 text-sm">
+          Copyright © 2024 Golfmeet LLP. All Rights Reserved.
+        </p>
       </section>
     </footer>
   );

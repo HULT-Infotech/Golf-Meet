@@ -66,33 +66,37 @@ const FairPlaySection = () => {
             {
               installments: 1,
               installmentLabel: "Installment of",
-              installmentPrice: "₹39,999",
+              installmentPrice: "₹ 39,999",
               totalLabel: "Total",
-              totalPrice: "₹39,999",
+              totalPrice: "₹ 39,999",
               savings: "YOU SAVE 16%",
             },
             {
               installments: 4,
               installmentLabel: "Installments of",
-              installmentPrice: "₹10,699",
+              installmentPrice: "₹ 10,699",
               totalLabel: "Total",
-              totalPrice: "₹42,796",
+              totalPrice: "₹ 42,796",
               savings: "YOU SAVE 10%",
             },
             {
               installments: 12,
               installmentLabel: "Installments of",
-              installmentPrice: "₹3,999",
+              installmentPrice: "₹ 3,999",
               totalLabel: "Total",
-              totalPrice: "₹48,000",
+              totalPrice: "₹ 48,000",
               savings: "NO SAVINGS",
             },
           ].map((option, index) => (
             <article
               key={index}
-              className="w-full max-w-xs h-auto min-h-96 md:w-64 lg:w-72 flex flex-col justify-evenly border-2 rounded border-black p-4 md:p-6 lg:p-8 mb-4 md:mb-0 transition-all duration-300 hover:border-transparent hover:bg-[linear-gradient(to_bottom_right,#0d8488_0%,#014D4E_100%)] hover:text-white group"
+              className={`w-full max-w-xs h-auto min-h-[500px] md:w-64 lg:w-96 flex flex-col justify-evenly border-2 rounded border-black p-4 md:p-6 lg:p-14 mb-4 md:mb-0 transition-all duration-300 group ${
+                index === 0
+                  ? "bg-[linear-gradient(to_bottom_right,#0d8488_0%,#014D4E_100%)] text-white border-transparent"
+                  : ""
+              }`}
             >
-              <div className="text-4xl md:text-5xl font-medium font-sans mb-2 md:mb-4">
+              <div className="text-4xl md:text-4xl font-normal font-sans mb-2 md:mb-4">
                 {option.installments}
               </div>
               <div className="text-lg md:text-xl uppercase mb-2 md:mb-4">
@@ -101,7 +105,11 @@ const FairPlaySection = () => {
               <div className="text-4xl md:text-5xl font-quattrocento font-bold mb-2 md:mb-4">
                 {option.installmentPrice}
               </div>
-              <div className="border-t border-black/30 group-hover:border-white/30 pt-3 md:pt-4 mb-2 md:mb-4">
+              <div
+                className={`border-t ${
+                  index === 0 ? "border-white/30" : "border-black/30"
+                } pt-3 md:pt-4 mb-2 md:mb-4`}
+              >
                 <div className="uppercase">{option.totalLabel}</div>
                 <div className="text-xl md:text-2xl font-quattrocento font-bold">
                   {option.totalPrice}
