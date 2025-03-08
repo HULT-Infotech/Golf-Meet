@@ -214,25 +214,25 @@ function FaQ() {
 
       {/* FAQ Content Section */}
       <section className="py-8 md:py-16 px-4 bg-white mt-8 md:mt-24">
-        <div className="flex flex-col md:flex-row max-w-[1200px] mx-auto gap-6">
+        <div className="flex flex-col md:flex-row max-w-[1300px] mx-auto gap-6 md:gap-12">
           {/* Left Sidebar - With the specified complex gradient */}
           <div
-            className="hidden md:block w-64 text-white p-4 rounded-md sticky top-20 self-start"
+            className="hidden md:block w-64 text-white p-4 md:p-6 rounded-md sticky top-32 self-start"
             style={categoryGradientStyle}
           >
-            <h3 className="font-semibold text-2xl mb-2 uppercase relative">
+            <h3 className="font-quattrocentoSans font-bold text-[32px] leading-[100%] tracking-[0em] uppercase mb-2 relative">
               CATEGORIES
             </h3>
             <ul className="text-sm mt-6">
               {categoryData.map((category) => (
                 <li
                   key={category.id}
-                  className={`py-3 cursor-pointer transition-colors duration-200 relative ${
+                  className={`py-3 cursor-pointer transition-colors duration-200 relative   ${
                     activeCategory === category.id ? "font-bold" : ""
                   }`}
                   onClick={() => handleCategoryClick(category.id)}
                 >
-                  <span className="relative inline-block after:content-[''] after:block after:w-full after:h-[1.4px] after:bg-white after:mt-1">
+                  <span className="relative inline-block text-[#FFFFFFCC] after:content-[''] after:block after:w-full after:h-[1.4px] after:bg-white after:mt-1">
                     {category.title}
                   </span>
                 </li>
