@@ -64,8 +64,8 @@ const HowToPlay = () => {
       <section className=" flex flex-col w-full">
         <div className="relative  flex flex-col justify-center items-center w-full py-10 md:p-5 px-5">
           {/*  step 1 */}
-          <div className="  flex flex-col md:flex-row justify-center  items-center lg:items-start  md:justify-between w-full mx-auto max-w-screen-lg">
-            <div className="flex flex-col   md:flex-row items-start md:space-x-6 lg:mt-32">
+          <div className="  flex flex-col md:flex-row justify-center  items-center lg:items-start  md:justify-between w-full mx-auto max-w-6xl">
+            <div className="flex flex-col   md:flex-row items-start md:space-x-6 lg:mt-36">
               <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-5xl font-bold">
                 1
               </span>
@@ -98,7 +98,7 @@ const HowToPlay = () => {
         </div>
         {/* step 2  */}
         <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5">
-          <div className="flex flex-col md:flex-row-reverse justify-center md:items-start md:justify-around w-full items-center mx-auto max-w-screen-xl">
+          <div className=" flex flex-col md:flex-row-reverse justify-center  items-center lg:items-start  md:justify-between w-full mx-auto max-w-7xl">
             <div className="flex flex-col md:flex-row md:justify-between  items-start md:space-x-4 lg:mt-32">
               <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-5xl font-bold">
                 2
@@ -134,7 +134,7 @@ const HowToPlay = () => {
         </div>
         {/* step 3  */}
         <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5">
-          <div className="flex flex-col md:flex-row justify-center md:items-start items-center  md:justify-around w-full mx-auto max-w-screen-xl">
+          <div className=" flex flex-col md:flex-row justify-center  items-center lg:items-start  md:justify-between w-full mx-auto max-w-6xl">
             <div className="flex flex-col  md:flex-row items-start  md:space-x-4 lg:mt-32">
               <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-5xl font-bold">
                 3
@@ -159,7 +159,7 @@ const HowToPlay = () => {
           <img
             src={ground_3}
             alt="ground_3"
-            className=" absolute left-0 bottom-10 hidden md:block"
+            className=" absolute left-0 bottom-0 hidden md:block"
           />
 
           <img

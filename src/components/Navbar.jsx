@@ -57,9 +57,9 @@ const Navbar = () => {
       </div>
 
       {/* Center Section - Logo */}
-      <div className="hidden md:block absolute left-2/3 md:left-2/4 transform -translate-x-1/2 top-2 md:top-2">
+      <Link to='/' className="hidden md:block absolute left-2/3 md:left-2/4 transform -translate-x-1/2 top-2 md:top-2">
         <img src={centralLogo} alt="Central Logo" className="w-12 md:w-24" />
-      </div>
+      </Link>
 
       {/* Right Section - Language Selector */}
       <div className="flex items-center w-full md:w-auto justify-end gap-2">
