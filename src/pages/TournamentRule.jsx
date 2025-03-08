@@ -12,19 +12,17 @@ function TournamentRule() {
         <div className="flex flex-col w-full justify-between md:justify-around  gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20">
-            <h1 className="font-quattrocento text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
+            <h1 className="font-quattrocento font-bold text-4xl sm:text-5xl lg:text-[96px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
               TOURNAMENT <br /> RULES
             </h1>
           </div>
 
           {/* Right Image Section */}
-          <div className="flex items-end px-5 md:px-0">
-            <img
-              src={tr_bg}
-              alt="Golfers Illustration"
-              className=" w-full object-contain pointer-events-none"
-            />
-          </div>
+          <img
+            src={tr_bg}
+            alt="Golfers Illustration"
+            className="w-full md:w-[60%] pointer-events-none relative md:-bottom-[90px] md:right-36"
+          />
         </div>
         {/* Decorative Green Element */}
         <img
@@ -39,100 +37,94 @@ function TournamentRule() {
         />
       </section>
 
-      <section className="flex flex-col items-center justify-center mt-36 ">
-        <div className="flex justify-between items-center  text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
-          <div className=" flex flex-col ">
-            <h2 className=" text-5xl font-bold uppercase font-quattrocento">
-              Player Code of Conduct
-            </h2>
-            <p className=" text-lg underline underline-offset-4">
-              Please refer to the
-              <strong> GolfMeet Player Code of Conduct </strong> here
-            </p>
-          </div>
-          <div>
-            <svg
-              width="25"
-              height="47"
-              viewBox="0 0 25 47"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 1.5L23 23.5L1 45.5"
-                stroke="#014D4E"
-                stroke-width="2"
-              />
-            </svg>
-          </div>
+      <div className="flex justify-between items-center  text-[#014D4E] bg-[#014D4E0D] w-full max-w-7xl p-7 mx-auto mt-32 rounded-md">
+        <div className=" flex flex-col ">
+          <h2 className=" text-5xl font-bold uppercase font-quattrocento">
+            Player Code of Conduct
+          </h2>
+          <p className=" text-lg underline underline-offset-4">
+            Please refer to the
+            <strong> GolfMeet Player Code of Conduct </strong> here
+          </p>
         </div>
-
-        <div className="flex max-w-screen-xl">
-          <div 
-            className="flex flex-col min-h-96 justify-between min-w-60 p-6 rounded-sm text-white mt-10 mr-20" 
-            style={{ background: "linear-gradient(150deg, rgb(48, 92, 93) 0%, rgb(0, 54, 55) 50%, rgb(0, 53, 54) 100%)" }}
+        <div>
+          <svg
+            width="25"
+            height="47"
+            viewBox="0 0 25 47"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <h1 className="text-3xl font-medium mb-6">SECTIONS</h1>
-            {[
-              { id: "home", label: "Home country" },
-              { id: "leaderboard", label: "Leaderboard criteria" },
-              { id: "format", label: "Format of play" },
-              { id: "local", label: "Local rules" },
-              { id: "teebox", label: "Tee box" },
-              { id: "marking", label: "Marking the ball" },
-              { id: "scorecard", label: "Scorecard" },
-              { id: "hole", label: "Hole not in play" },
-              { id: "penalties", label: "Penalties" },
-              { id: "mulligans", label: "Mulligans" },
-            ].map((option, index) => (
-              <article key={index} className="flex flex-col mb-3">
-                <h2 className="text-base leading-relaxed underline underline-offset-4 font-medium">
-                  {option.label}
-                </h2>
-              </article>
-            ))}
+            <path d="M1 1.5L23 23.5L1 45.5" stroke="#014D4E" stroke-width="2" />
+          </svg>
+        </div>
+      </div>
+
+      <section className="flex relative justify-center w-full mx-auto max-w-screen-xl ">
+        <div
+          className="flex flex-col max-h-max min-w-80 p-6 rounded-md sticky top-28  mt-10 mr-20"
+          style={{
+            background:
+              "linear-gradient(150deg, rgb(48, 92, 93) 0%, rgb(0, 54, 55) 50%, rgb(0, 53, 54) 100%)",
+          }}
+        >
+          <h1 className="text-3xl text-white font-medium mb-6">SECTIONS</h1>
+          {[
+            { id: "home", label: "Home country" },
+            { id: "leaderboard", label: "Leaderboard criteria" },
+            { id: "format", label: "Format of play" },
+            { id: "local", label: "Local rules" },
+            { id: "teebox", label: "Tee box" },
+            { id: "marking", label: "Marking the ball" },
+            { id: "scorecard", label: "Scorecard" },
+            { id: "hole", label: "Hole not in play" },
+            { id: "penalties", label: "Penalties" },
+            { id: "mulligans", label: "Mulligans" },
+          ].map((option, index) => (
+            <article key={index} className="flex flex-col justify-between min-h-10  mb-3">
+              <h2 className="font-quattrocentoSans font-semibold text-[20px] leading-[100%] tracking-[0em] text-[#FFFFFFCC] underline underline-offset-8">
+                {option.label}
+              </h2>
+            </article>
+          ))}
+        </div>
+        <div className="flex flex-col gap-4 mt-10">
+          <div className="mb-6">
+            <h2 className="text-teal-800 font-semibold font-quattrocento text-4xl mb-4">
+              HOME COUNTRY
+            </h2>
+            <ul className="list-disc pl-6">
+              <li className="mb-2">
+                Home country is the country in which you paid the GolfMeet
+                tournament fees.
+              </li>
+            </ul>
           </div>
-          <div className="flex flex-col gap-4 mt-10">
-            {" "}
-            <div className="mb-6">
-              <h2 className="text-teal-800 font-semibold font-quattrocento text-4xl mb-4">
-                HOME COUNTRY
-              </h2>
-              <ul className="list-disc pl-6">
-                <li className="mb-2">
-                  Home country is the country in which you paid the GolfMeet
-                  tournament fees.
-                </li>
-              </ul>
-            </div>
-            {/* Leaderboard Criteria Section */}
-            <div>
-              <h2 className="text-teal-800 font-semibold font-quattrocento text-4xl mb-4">
-                LEADERBOARD CRITERIA
-              </h2>
-              <ul className="list-disc pl-6">
-                <li className="mb-2">
-                  For your scores to be considered on the leaderboard, you must
-                  play at least 12 rounds of golf scheduled through the GolfMeet
-                  app.
-                </li>
-                <li className="mb-2">
-                  If you play more than 12 rounds scheduled through the GolfMeet
-                  app, your best 12 rounds will be considered for the
-                  leaderboard.
-                </li>
-                <li className="mb-2">
-                  You may play in any country, at a golf course listed on the
-                  GolfMeet app. However, for your home country, rounds are only
-                  considered when played in that country.
-                </li>
-              </ul>
-            </div>
+          {/* Leaderboard Criteria Section */}
+          <div>
+            <h2 className="text-teal-800 font-semibold font-quattrocento text-4xl mb-4">
+              LEADERBOARD CRITERIA
+            </h2>
+            <ul className="list-disc pl-6">
+              <li className="mb-2">
+                For your scores to be considered on the leaderboard, you must
+                play at least 12 rounds of golf scheduled through the GolfMeet
+                app.
+              </li>
+              <li className="mb-2">
+                If you play more than 12 rounds scheduled through the GolfMeet
+                app, your best 12 rounds will be considered for the leaderboard.
+              </li>
+              <li className="mb-2">
+                You may play in any country, at a golf course listed on the
+                GolfMeet app. However, for your home country, rounds are only
+                considered when played in that country.
+              </li>
+            </ul>
           </div>
         </div>
-
-        <img src={tr_last} alt="tr_last" className=" w-full" />
       </section>
+      <img src={tr_last} alt="tr_last" className=" w-full" />
       <Footer />
     </>
   );
