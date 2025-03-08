@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
 import tr_greenleft from "../assets/tournament-rule/tr-green-left.svg";
 import tr_last from "../assets/tournament-rule/tr-last.svg";
+import tr_mobile from "../assets/tournament-rule/tournaments-mobile.svg";
 import Footer from "../components/Footer";
 
 function TournamentRule() {
@@ -88,10 +89,10 @@ function TournamentRule() {
       {/* Main container */}
       <div className="md:h-[100vh] flex flex-col relative">
         {/* Hero section */}
-        <section className="bg-gray-100 noise-bg relative flex flex-col md:h-[65vh] md:flex-row">
-          <div className="flex flex-col w-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
+        <section className="bg-gray-100 noise-bg relative flex flex-col h-[100vh] md:h-[65vh] md:flex-row">
+          <div className="flex flex-col w-full h-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
             {/* Text Section */}
-            <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8 min-w-[300px]">
+            <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8 min-w-[300px] z-10">
               <h1 className="font-quattrocento font-bold text-4xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
                 TOURNAMENT <br /> RULES
               </h1>
@@ -101,7 +102,12 @@ function TournamentRule() {
             <img
               src={tr_bg}
               alt="Golfers Illustration"
-              className="w-full h-auto md:w-auto md:h-full max-w-[800px] pointer-events-none relative md:-bottom-[25px] md:right-0 md:mr-12"
+              className="w-full h-auto md:w-auto md:h-full max-w-[800px] pointer-events-none relative md:-bottom-[25px] md:right-0 md:mr-12 hidden md:block"
+            />
+            <img
+              src={tr_mobile}
+              alt="Mobile Golfers Illustration"
+              className="w-full h-auto pointer-events-none absolute bottom-0 left-0 object-contain md:hidden"
             />
           </div>
           {/* Decorative elements */}
@@ -113,7 +119,7 @@ function TournamentRule() {
           <img
             src={tr_greenleft}
             alt="Green left element"
-            className="absolute md:hidden -bottom-8 sm:-bottom-12 left-0 w-[210px] pointer-events-none"
+            className="absolute md:hidden bottom-0 left-0 w-[210px] pointer-events-none z-0"
           />
         </section>
 
@@ -326,57 +332,62 @@ function TournamentRule() {
         </div>
       </section>
 
-      {/* Fixed Mobile Navigation Button */}
-      <div className="fixed bottom-4 right-4 md:hidden">
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="bg-[#014D4E] text-white p-3 rounded-full shadow-lg"
-        >
-          <svg
-            className="h-6 w-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M5 11l7-7 7 7M5 19l7-7 7 7"
-            />
-          </svg>
-        </button>
-      </div>
-
       <div ref={footerRef}>
         <img src={tr_last} alt="tr_last" className="w-full" />
         <Footer />
       </div>
 
-      {/* Custom styles for 2500px+ screens */}
       <style jsx>{`
-        @media (min-width: 2500px) {
+        @media (min-width: 2556px) {
           h1 {
-            font-size: 140px;
+            font-size: 180px; 
           }
           h2 {
-            font-size: 58px; /* Equivalent to text-5xl */
+            font-size: 58px; 
           }
+          /* Right image (golfers illustration) */
+          img[src="${tr_bg}"] {
+            max-width: 1200px; 
+            margin-right: 6rem; 
+          }
+          
+          img[src="${tr_greenleft}"].hidden.md\\:block {
+            width: 700px; 
+          }
+          
           .player-code-of-conduct {
-            margin-left: 4rem; /* Additional left shift for 2500px+ */
-            padding: 2rem; /* Larger padding */
+            margin-left: 4rem;
+            padding: 3rem; 
+            max-width: 1000px; 
           }
           .player-code-of-conduct h2 {
-            font-size: 58px; /* Larger heading */
+            font-size: 72px; /* Increased from 58px to 72px */
           }
           .player-code-of-conduct p {
-            font-size: 24px; /* Larger text */
+            font-size: 30px; 
             margin-top: 0.5rem;
           }
           .player-code-of-conduct svg {
-            width: 30px;
-            height: 60px;
+            width: 40px; 
+            height: 80px; 
+          }
+        }
+
+        @media (max-width: 767px) {
+          section {
+            overflow: hidden;
+          }
+          .flex-col.h-full {
+            position: relative;
+            gap: 0;
+          }
+          img[src="${tr_mobile}"] {
+            max-height: 60vh;
+            object-fit: contain;
+          }
+          img[src="${tr_greenleft}"].absolute.md\\:hidden {
+            max-height: 30vh;
+            object-fit: contain;
           }
         }
       `}</style>
