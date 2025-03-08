@@ -78,7 +78,7 @@ function Footer() {
             <a href="/tournament-rules" className="hover:underline">
               Tournament Rules
             </a>
-            <a href="/player-code" className="hover:underline">
+            <a href="/code-of-conduct" className="hover:underline">
               Player Code of Conduct
             </a>
             <a href="/affiliate-login" className="hover:underline">

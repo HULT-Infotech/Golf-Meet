@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/home-to-play" element={<HowToPlay />} />
         <Route path="/faq" element={<FaQ />} />
-        <Route path="/tournament-rule" element={<TournamentRule />} />
+        <Route path="/tournament-rules" element={<TournamentRule />} />
         <Route path="/code-of-conduct" element={<CodeOfConduct />} />
       </Routes>
       <ScrollToTop />
