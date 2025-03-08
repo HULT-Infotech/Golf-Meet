@@ -9,7 +9,7 @@ function TournamentRule() {
   const [activeSection, setActiveSection] = useState("home");
   const sidebarRef = useRef(null);
   const footerRef = useRef(null);
-  
+
   const sections = [
     { id: "home", label: "Home country" },
     { id: "leaderboard", label: "Leaderboard criteria" },
@@ -25,96 +25,86 @@ function TournamentRule() {
 
   const handleSectionClick = (sectionId) => {
     setActiveSection(sectionId);
-    // Scroll to that section
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
 
-  // Function to handle scrolling behavior - both for sticky behavior and section highlighting
   useEffect(() => {
     const sidebar = sidebarRef.current;
     const footer = footerRef.current;
-    
+
     const handleScroll = () => {
       if (!sidebar || !footer) return;
-      
-      // Check if footer is visible in viewport for stopping the sidebar
+
       const rect = footer.getBoundingClientRect();
       const sidebarHeight = sidebar.offsetHeight;
-      
+
       if (rect.top < window.innerHeight) {
         const footerTop = rect.top;
         const viewportHeight = window.innerHeight;
         const stopPosition = footerTop - viewportHeight + sidebarHeight;
-        
+
         if (stopPosition < 0) {
           sidebar.style.transform = `translateY(${stopPosition}px)`;
         } else {
-          sidebar.style.transform = 'translateY(0)';
+          sidebar.style.transform = "translateY(0)";
         }
       } else {
-        sidebar.style.transform = 'translateY(0)';
+        sidebar.style.transform = "translateY(0)";
       }
-      
-      // Update active section based on scroll position
-      // Get all section elements
-      const sectionElements = sections.map(section => ({
-        id: section.id,
-        element: document.getElementById(section.id)
-      })).filter(item => item.element);
-      
-      // Find which section is currently most visible in the viewport
+
+      const sectionElements = sections
+        .map((section) => ({
+          id: section.id,
+          element: document.getElementById(section.id),
+        }))
+        .filter((item) => item.element);
+
       let currentSectionId = activeSection;
-      
+
       for (const section of sectionElements) {
         const rect = section.element.getBoundingClientRect();
-        // If section is in viewport and near the top
         if (rect.top <= 150 && rect.bottom > 150) {
           currentSectionId = section.id;
           break;
         }
       }
-      
-      // Update active section if changed
+
       if (currentSectionId !== activeSection) {
         setActiveSection(currentSectionId);
       }
     };
 
-    // Add scroll event listener
-    window.addEventListener('scroll', handleScroll);
-    
-    // Initial check
+    window.addEventListener("scroll", handleScroll);
     handleScroll();
-    
-    // Cleanup
+
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [activeSection, sections]);
 
   return (
     <>
       <Navbar />
-      {/* Main container with 100vh height on larger screens */}
+      {/* Main container */}
       <div className="md:h-[100vh] flex flex-col relative">
-        {/* Hero section - maintaining original structure but reduced height */}
+        {/* Hero section */}
         <section className="bg-gray-100 noise-bg relative flex flex-col md:h-[65vh] md:flex-row">
           <div className="flex flex-col w-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
-            {/* Text Section - positioned higher */}
-            <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8">
+            {/* Text Section */}
+            <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8 min-w-[300px]">
               <h1 className="font-quattrocento font-bold text-4xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
                 TOURNAMENT <br /> RULES
               </h1>
             </div>
 
-            {/* Right Image Section - Adjusted positioning */}
+            {/* Right Image Section */}
             <img
               src={tr_bg}
               alt="Golfers Illustration"
-              className="w-full h-auto md:w-full md:h-auto pointer-events-none relative md:-bottom-[25px] md:right-0 md:mr-12"
+              className="w-full h-auto md:w-auto md:h-full max-w-[800px] pointer-events-none relative md:-bottom-[25px] md:right-0 md:mr-12"
             />
           </div>
-          {/* Further reduced size of decorative elements while maintaining positioning */}
+          {/* Decorative elements */}
           <img
             src={tr_greenleft}
             alt="Green left element"
@@ -123,22 +113,22 @@ function TournamentRule() {
           <img
             src={tr_greenleft}
             alt="Green left element"
-            className="absolute md:hidden -bottom-8 sm:-bottom-12 left-0 w-[210px]"
+            className="absolute md:hidden -bottom-8 sm:-bottom-12 left-0 w-[210px] pointer-events-none"
           />
         </section>
 
-        {/* Player Code of Conduct section - reduced size + added margin for bigger screens */}
-        <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-full max-w-7xl p-5 mx-auto mt-16 md:mt-20 md:mx-20 lg:mx-auto rounded-md">
+        {/* Player Code of Conduct section */}
+        <div className="flex justify-start items-center text-[#014D4E] bg-[#014D4E0D] w-full max-w-7xl p-5 mx-auto mt-16 md:mt-20 md:ml-10 lg:ml-20 player-code-of-conduct">
           <div className="flex flex-col">
             <h2 className="text-3xl font-bold uppercase font-quattrocento">
               Player Code of Conduct
             </h2>
             <p className="text-base underline underline-offset-4">
-              Please refer to the
-              <strong> GolfMeet Player Code of Conduct </strong> here
+              Please refer to the{" "}
+              <strong>GolfMeet Player Code of Conduct</strong> here
             </p>
           </div>
-          <div>
+          <div className="ml-4">
             <svg
               width="20"
               height="44"
@@ -146,13 +136,19 @@ function TournamentRule() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="M1 1.5L23 23.5L1 45.5" stroke="#014D4E" strokeWidth="2" />
+              <path
+                d="M1 1.5L23 23.5L1 45.5"
+                stroke="#014D4E"
+                strokeWidth="2"
+              />
             </svg>
           </div>
         </div>
       </div>
 
-      <section className="flex relative justify-center w-full mx-auto max-w-screen-xl">
+      {/* Main content section */}
+      <section className="flex relative justify-center w-full mx-auto max-w-screen-xl px-4 sm:px-6 md:px-8">
+        {/* Sidebar */}
         <div
           ref={sidebarRef}
           className="hidden md:block w-80 text-white p-6 rounded-md sticky top-28 self-start mt-10 mr-20 transition-transform"
@@ -181,7 +177,8 @@ function TournamentRule() {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-4 mt-10">
+        {/* Content */}
+        <div className="flex flex-col gap-4 mt-10 w-full">
           <div className="mb-6 scroll-mt-32" id="home">
             <h2 className="text-teal-800 font-semibold font-quattrocento text-3xl mb-8">
               HOME COUNTRY
@@ -193,7 +190,7 @@ function TournamentRule() {
               </li>
             </ul>
           </div>
-          
+
           <div className="mb-6 scroll-mt-32" id="leaderboard">
             <h2 className="text-teal-800 font-semibold font-quattrocento text-3xl mb-8">
               LEADERBOARD CRITERIA
@@ -215,7 +212,7 @@ function TournamentRule() {
               </li>
             </ul>
           </div>
-          
+
           <div className="mb-6 scroll-mt-32" id="format">
             <h2 className="text-teal-800 font-semibold font-quattrocento text-3xl mb-8">
               FORMAT OF PLAY
@@ -225,11 +222,12 @@ function TournamentRule() {
                 The tournament follows Stableford scoring format.
               </li>
               <li className="mb-2">
-                Points are awarded based on your score relative to par on each hole.
+                Points are awarded based on your score relative to par on each
+                hole.
               </li>
             </ul>
           </div>
-          
+
           <div className="mb-6 scroll-mt-32" id="local">
             <h2 className="text-teal-800 font-semibold font-quattrocento text-3xl mb-8">
               LOCAL RULES
@@ -239,11 +237,12 @@ function TournamentRule() {
                 Each golf course may have its own specific local rules.
               </li>
               <li className="mb-2">
-                Players should familiarize themselves with these rules before playing.
+                Players should familiarize themselves with these rules before
+                playing.
               </li>
             </ul>
           </div>
-          
+
           <div className="mb-6 scroll-mt-32" id="teebox">
             <h2 className="text-teal-800 font-semibold font-quattrocento text-3xl mb-8">
               TEE BOX
@@ -257,18 +256,19 @@ function TournamentRule() {
               </li>
             </ul>
           </div>
-          
+
           <div className="mb-6 scroll-mt-32" id="marking">
             <h2 className="text-teal-800 font-semibold font-quattrocento text-3xl mb-8">
               MARKING THE BALL
             </h2>
             <ul className="list-disc pl-6">
               <li className="mb-2">
-                All players must mark their golf balls clearly for identification.
+                All players must mark their golf balls clearly for
+                identification.
               </li>
             </ul>
           </div>
-          
+
           <div className="mb-6 scroll-mt-32" id="scorecard">
             <h2 className="text-teal-800 font-semibold font-quattrocento text-3xl mb-8">
               SCORECARD
@@ -282,18 +282,19 @@ function TournamentRule() {
               </li>
             </ul>
           </div>
-          
+
           <div className="mb-6 scroll-mt-32" id="hole">
             <h2 className="text-teal-800 font-semibold font-quattrocento text-3xl mb-8">
               HOLE NOT IN PLAY
             </h2>
             <ul className="list-disc pl-6">
               <li className="mb-2">
-                If a hole is closed or under maintenance, follow local course instructions.
+                If a hole is closed or under maintenance, follow local course
+                instructions.
               </li>
             </ul>
           </div>
-          
+
           <div className="mb-6 scroll-mt-32" id="penalties">
             <h2 className="text-teal-800 font-semibold font-quattrocento text-3xl mb-8">
               PENALTIES
@@ -303,11 +304,12 @@ function TournamentRule() {
                 Standard golf penalties apply according to official rules.
               </li>
               <li className="mb-2">
-                Violations of the GolfMeet code of conduct may result in disqualification.
+                Violations of the GolfMeet code of conduct may result in
+                disqualification.
               </li>
             </ul>
           </div>
-          
+
           <div className="mb-20 scroll-mt-32" id="mulligans">
             <h2 className="text-teal-800 font-semibold font-quattrocento text-3xl mb-8">
               MULLIGANS
@@ -342,15 +344,42 @@ function TournamentRule() {
               strokeLinejoin="round"
               strokeWidth="2"
               d="M5 11l7-7 7 7M5 19l7-7 7 7"
-            ></path>
+            />
           </svg>
         </button>
       </div>
-      
+
       <div ref={footerRef}>
         <img src={tr_last} alt="tr_last" className="w-full" />
         <Footer />
       </div>
+
+      {/* Custom styles for 2500px+ screens */}
+      <style jsx>{`
+        @media (min-width: 2500px) {
+          h1 {
+            font-size: 140px;
+          }
+          h2 {
+            font-size: 58px; /* Equivalent to text-5xl */
+          }
+          .player-code-of-conduct {
+            margin-left: 4rem; /* Additional left shift for 2500px+ */
+            padding: 2rem; /* Larger padding */
+          }
+          .player-code-of-conduct h2 {
+            font-size: 58px; /* Larger heading */
+          }
+          .player-code-of-conduct p {
+            font-size: 24px; /* Larger text */
+            margin-top: 0.5rem;
+          }
+          .player-code-of-conduct svg {
+            width: 30px;
+            height: 60px;
+          }
+        }
+      `}</style>
     </>
   );
 }
