@@ -29,10 +29,10 @@ const HowToPlay = () => {
         <div className="flex flex-col w-full justify-between md:justify-around  gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20">
-            <h1 className="font-quattrocento text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">
+            <h1 className="font-quattrocento font-bold text-5xl lg:text-[96px] leading-[100%] tracking-[0.025em]">
               HOW TO PLAY
             </h1>
-            <p className="sm:text-lg font-bold text-gray-600 leading-relaxed">
+            <p className="sm:text-lg md:text-xl font-bold text-gray-600 leading-relaxed">
               After you have paid the tournament fees,
               <br className="hidden md:block" />
               log into the GolfMeet mobile app.
@@ -64,16 +64,17 @@ const HowToPlay = () => {
       <section className=" flex flex-col w-full">
         <div className="relative  flex flex-col justify-center items-center w-full py-10 md:p-5 px-5">
           {/*  step 1 */}
-          <div className="  flex flex-col md:flex-row justify-center  items-center lg:items-start md:justify-around w-full mx-auto max-w-screen-lg">
-            <div className="flex flex-col   md:flex-row items-start md:space-x-4 lg:mt-32">
-              <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+          <div className="  flex flex-col md:flex-row justify-center  items-center lg:items-start  md:justify-between w-full mx-auto max-w-6xl">
+            <div className="flex flex-col   md:flex-row items-start md:space-x-6 lg:mt-36">
+              <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-5xl font-bold">
                 1
               </span>
               <div>
-                <h2 className="text-4xl max-w-80 md:text-5xl md:max-w-xl font-quattrocento font-bold text-gray-900">
+                <h2 className="font-quattrocento font-bold text-4xl md:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-xl">
                   SPECIFY YOUR AVAILABILITY
                 </h2>
-                <p className="text-gray-700 text-sm text-wrap max-w-72">
+
+                <p className="mt-5 font-quattrocentoSans font-normal text-[24px] leading-[100%] tracking-[0em] text-black text-wrap max-w-[450px]">
                   In the app, specify your preferred dates and golf courses
                   where you can play at least 2 weeks in advance.
                 </p>
@@ -97,19 +98,22 @@ const HowToPlay = () => {
         </div>
         {/* step 2  */}
         <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5">
-          <div className="flex flex-col md:flex-row-reverse justify-center md:items-start md:justify-around w-full items-center mx-auto max-w-screen-xl">
+          <div className=" flex flex-col md:flex-row-reverse justify-center  items-center lg:items-start  md:justify-between w-full mx-auto max-w-7xl">
             <div className="flex flex-col md:flex-row md:justify-between  items-start md:space-x-4 lg:mt-32">
-              <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+              <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-5xl font-bold">
                 2
               </span>
               <div>
-                <h2 className="text-4xl max-w-80  md:text-5xl md:max-w-xl font-quattrocento font-bold text-gray-900">
+                <h2 className="font-quattrocento font-bold text-4xl md:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-2xl">
                   GET MATCHED WITH OTHER PLAYERS
                 </h2>
-                <p className="text-gray-700 text-sm text-wrap max-w-72">
+                <p className="mt-5 font-quattrocentoSans font-normal text-[24px] leading-[100%] tracking-[0em] text-black text-wrap max-w-[550px]">
                   The app will notify you when you are matched with other
-                  players for your next round. <br /> The match is made based on
-                  the shared preferences for golf courses and dates.
+                  players for your next round.
+                </p>
+                <p className="mt-5 font-quattrocentoSans font-normal text-[24px] leading-[100%] tracking-[0em] text-black text-wrap max-w-[550px]">
+                  The match is made based on the shared preferences for golf
+                  courses and dates.
                 </p>
               </div>
             </div>
@@ -130,31 +134,32 @@ const HowToPlay = () => {
         </div>
         {/* step 3  */}
         <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5">
-          <div className="flex flex-col md:flex-row justify-center md:items-start items-center  md:justify-around w-full mx-auto max-w-screen-xl">
+          <div className=" flex flex-col md:flex-row justify-center  items-center lg:items-start  md:justify-between w-full mx-auto max-w-6xl">
             <div className="flex flex-col  md:flex-row items-start  md:space-x-4 lg:mt-32">
-              <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+              <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-5xl font-bold">
                 3
               </span>
               <div>
-                <h2 className="text-4xl uppercase md:text-5xl max-w-80 md:max-w-xl font-quattrocento font-bold text-gray-900">
+                <h2 className="font-quattrocento font-bold uppercase text-4xl md:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-4xl">
                   Finalize the plans with your group
                 </h2>
-                <p className="text-gray-700 text-sm text-wrap max-w-72">
+                <p className=" mt-5  font-quattrocentoSans font-normal text-[24px] leading-[100%] tracking-[0em] text-black text-wrap max-w-[450px]">
                   Chat in the app with other players of your group to change or
                   finalize the date, course and tee time.
-                  <br className="text-red-500" /> Please remember that no-shows
-                  incur penalty points.
+                </p>
+                <p className="text-[#E5181A] mt-5  font-quattrocentoSans font-normal text-[24px] leading-[100%] tracking-[0em]  text-wrap max-w-[450px]">
+                  Please remember that no-shows incur penalty points.
                 </p>
               </div>
             </div>
-            <div className="w-[80%] sm:w-2/5 md:w-[24vw] p-2 md:p-0">
-              <img src={Mobile_Screen_Step_1} alt="Mobile_Screen_Step_1" />
+            <div className=" w-[70%] sm:w-[35%] md:w-[20vw] p-4 md:p-0">
+              <img src={Mobile_Screen_Step_2} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
           <img
             src={ground_3}
             alt="ground_3"
-            className=" absolute left-0 bottom-10 hidden md:block"
+            className=" absolute left-0 bottom-0 hidden md:block"
           />
 
           <img
@@ -167,23 +172,25 @@ const HowToPlay = () => {
         <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5 mb-10">
           <div className="flex flex-col md:flex-row-reverse justify-center items-center md:items-start md:justify-around w-full mx-auto max-w-screen-xl">
             <div className="flex flex-col   md:flex-row items-start md:space-x-4 lg:mt-32">
-              <span className="w-8 h-10 rounded-full mb-4 bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
+              <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-5xl font-bold">
                 4
               </span>
               <div>
-                <h2 className="text-4xl max-w-80 uppercase md:text-5xl md:max-w-xl font-quattrocento font-bold text-gray-900">
-                  Please remember that no-shows incur penalty points.
+                <h2 className="font-quattrocento uppercase font-bold text-4xl md:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-4xl">
+                  Play your round and keep scores
                 </h2>
-                <p className="text-gray-700 text-sm text-wrap max-w-72">
+                <p className="mt-5 font-quattrocentoSans font-normal text-[24px] leading-[100%] tracking-[0em] text-black text-wrap max-w-[460px]">
                   Exchange the player codes and enter it into the app to start
-                  the round. The format to use is stroke play. <br />
+                  the round. The format to use is stroke play.
+                </p>
+                <p className="mt-5 font-quattrocentoSans font-normal text-[24px] leading-[100%] tracking-[0em] text-black text-wrap max-w-[520px]">
                   Record your score in the GolfMeet app. When prompted, verify
                   the scores submitted by your group players.
                 </p>
               </div>
             </div>
-            <div className="w-[70%] sm:w-[35%] md:w-[20vw] p-4 md:p-0">
-              <img src={Mobile_Screen_Step_2} alt="Mobile_Screen_Step_1" />
+            <div className="w-[80%] sm:w-2/5 md:w-[24vw] p-2 md:p-0">
+              <img src={Mobile_Screen_Step_1} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
           <img
@@ -201,20 +208,23 @@ const HowToPlay = () => {
         {/* step 5 */}
         <div className="relative">
           <div className=" relative -bottom-10 p-8 md:-bottom-16 lg:-left-8 xl:-left-4  flex flex-col rotate-3 rounded-md bg-[#014D4E] noise-bg md:flex-row justify-center shadow-2xl items-center w-[90%] mx-auto min-h-[600px] ">
-            <div className="flex flex-col -rotate-3   md:flex-row items-start md:space-x-4 lg:mt-32">
-              <span className="w-8 h-10 rounded-full mb-4 bg-white text-[#014D4E] flex items-center justify-center text-lg font-semibold">
+            <div className="flex flex-col -rotate-3   md:flex-row items-start md:space-x-7 ">
+              <span className="w-[45px] font-quattrocentoSans h-[60px] md:w-[90px] md:h-[120px] rounded-full bg-white text-[#014D4E] flex items-center justify-center text-5xl font-bold ">
                 5
               </span>
               <div>
-                <h2 className="text-4xl uppercase max-w-80 text-white md:text-5xl md:max-w-xl font-quattrocento font-bold ">
+                <h2 className="font-quattrocento uppercase font-bold text-4xl md:text-[64px] leading-[100%] tracking-[0em] text-white max-w-80 md:max-w-2xl ">
                   Earn your GolfMeet points
                 </h2>
-                <p className="text-gray-200 text-sm text-wrap max-w-72">
+                <p className="mt-5 font-quattrocentoSans font-normal text-[24px] leading-[100%] tracking-[0em] text-gray-300 text-wrap max-w-[520px]">
                   GolfMeet converts your scores into points. As you play more
                   rounds, GolfMeet calculates your handicap using a proprietary
-                  method. This handicap is used to adjust your points further.{" "}
-                  <br /> The Leaderboard will reflect your standing based on
-                  your points.
+                  method. This handicap is used to adjust your points further.
+                </p>
+
+                <p className="mt-5 font-quattrocentoSans font-normal text-[24px] leading-[100%] tracking-[0em] text-gray-300 text-wrap max-w-[520px]">
+                  The Leaderboard will reflect your standing based on your
+                  points.
                 </p>
               </div>
             </div>
