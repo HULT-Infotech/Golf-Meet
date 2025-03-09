@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
 import tr_greenleft from "../assets/tournament-rule/tr-green-left.svg";
+import tr_greenleft_m from "../assets/tournament-rule/green-mobile.svg";
+import bg_m from "../assets/tournament-rule/mobile-bg.svg";
 import tr_last from "../assets/tournament-rule/tr-last.svg";
 import tr_mobile from "../assets/tournament-rule/tournaments-mobile.svg";
 import Footer from "../components/Footer";
@@ -107,7 +109,7 @@ function TournamentRule() {
             <img
               src={tr_mobile}
               alt="Mobile Golfers Illustration"
-              className="w-full h-auto pointer-events-none absolute bottom-0 left-0 object-contain md:hidden"
+              className="w-3/4 h-auto pointer-events-none absolute bottom-44 left-1/2 transform -translate-x-1/2 object-contain md:hidden"
             />
           </div>
           {/* Decorative elements */}
@@ -117,14 +119,14 @@ function TournamentRule() {
             className="hidden md:block absolute md:-bottom-4 left-0 w-[160px] md:w-[240px] lg:w-[360px] xl:w-[460px] lg:-bottom-8 object-contain pointer-events-none"
           />
           <img
-            src={tr_greenleft}
-            alt="Green left element"
-            className="absolute md:hidden bottom-0 left-0 w-[210px] pointer-events-none z-0"
+            src={tr_greenleft_m}
+            alt="Green left element mobile"
+            className="absolute md:hidden bottom-16 left-0 w-full object-contain pointer-events-none z-0"
           />
         </section>
 
         {/* Player Code of Conduct section */}
-        <div className="flex justify-start items-center text-[#014D4E] bg-[#014D4E0D] w-full max-w-7xl p-5 mx-auto mt-16 md:mt-20 md:ml-10 lg:ml-20 player-code-of-conduct">
+        <div className="flex justify-start items-center text-[#014D4E] bg-[#014D4E0D] w-full max-w-7xl p-5 mx-auto mt-8 md:mt-20 md:ml-10 lg:ml-20 player-code-of-conduct">
           <div className="flex flex-col">
             <h2 className="text-3xl font-bold uppercase font-quattrocento">
               Player Code of Conduct
@@ -148,6 +150,36 @@ function TournamentRule() {
                 strokeWidth="2"
               />
             </svg>
+          </div>
+        </div>
+
+        {/* Mobile Sections Navigation - Only visible on mobile */}
+        <div 
+          className="md:hidden w-full py-4 relative"
+          style={{
+            background: 'linear-gradient(to bottom, #014D4E, #003637)'
+          }}
+        >
+          <h3 className="text-white text-xl font-bold uppercase text-center mb-4">
+            SECTIONS
+          </h3>
+          
+          <div className="overflow-x-auto">
+            <div className="flex w-max px-4">
+              {sections.map((section) => (
+                <div 
+                  key={section.id}
+                  className={`flex-shrink-0 cursor-pointer px-4 py-2 text-white text-center whitespace-nowrap ${
+                    activeSection === section.id ? "font-bold" : "opacity-80"
+                  }`}
+                  onClick={() => handleSectionClick(section.id)}
+                >
+                  <span className={`${activeSection === section.id ? "relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-white" : ""}`}>
+                    {section.label}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -385,9 +417,22 @@ function TournamentRule() {
             max-height: 60vh;
             object-fit: contain;
           }
-          img[src="${tr_greenleft}"].absolute.md\\:hidden {
-            max-height: 30vh;
-            object-fit: contain;
+          img[src="${tr_greenleft_m}"].absolute.md\\:hidden {
+            width: 100vw;
+            margin-top:3rem;
+            left: 0;
+            right: 0;
+          }
+          /* Mobile sections navigation styling */
+          .overflow-x-auto {
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; /* Firefox */
+          }
+          .overflow-x-auto::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Edge */
+          }
+          .w-max {
+            gap: 0.5rem;
           }
         }
       `}</style>
