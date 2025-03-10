@@ -8,12 +8,13 @@ import coc_coins3 from "../assets/coc-coins3.svg";
 import coc_coins4 from "../assets/coc-coins4.svg";
 import coc_coins5 from "../assets/coc-coins5.svg";
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function CodeOfConduct() {
   return (
     <>
       <Navbar />
-      <section className="bg-gray-100 noise-bg relative flex flex-col md:min-h-[92vh] md:flex-row ">
+      <section className="bg-gray-100 noise-bg relative flex flex-col md:min-h-[70vh] md:flex-row ">
         <div className="flex flex-col w-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20">
@@ -51,7 +52,7 @@ function CodeOfConduct() {
       </section>
 
       {/* Tournament Rules Section */}
-      <section className="flex flex-col items-center justify-center mt-36 relative">
+      <section className="flex flex-col items-center justify-center mt-16 relative">
         <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
           <div className="flex flex-col">
             <h2 className="text-5xl font-bold uppercase font-quattrocento">
@@ -178,6 +179,8 @@ function CodeOfConduct() {
           </div>
         </div>
       </section>
+
+      <Footer/>
     </>
   );
 }
