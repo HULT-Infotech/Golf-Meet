@@ -125,7 +125,7 @@ function CodeOfConduct() {
         />
 
         {/* Content Container */}
-        <div className="relative bg-gray-100 shadow-2xl rounded-lg p-8 w-[85%] max-w-6xl shadow-gray-400 drop-shadow-2xl shadow-t-lg z-20">
+        <div className="relative bg-gray-100 bottom-10 rounded-lg p-8 w-[85%] max-w-6xl shadow-gray-800 drop-shadow-2xl shadow z-20">
           <p className="text-lg text-gray-700 leading-relaxed mb-6 font-quattrocentoSans font-bold max-w-4xl mx-auto">
             As a participant in GolfMeet, you are expected to adhere to the
             highest standards of conduct both on and off the course. Your
