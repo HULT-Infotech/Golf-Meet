@@ -84,7 +84,7 @@ function CodeOfConduct() {
       {/* Code of Conduct Section */}
       <section className="relative my-16 px-4 flex items-center justify-center">
         {/* Absolute background image container */}
-        <div className="absolute inset-0 w-full z-20 h-full">
+        <div className="absolute inset-0 w-full z-6 h-full">
           <img
             src={code_of_conduct}
             alt="Code of Conduct background"
@@ -96,32 +96,37 @@ function CodeOfConduct() {
         <img
           src={coc_coins1}
           alt="Coins"
-          className="absolute top-0 right-0 w-[150px] md:w-[200px] z-50"
+          className="absolute top-0 right-24 w-[150px] md:w-[200px] z-30"
         />
         <img
           src={coc_coins2}
           alt="Coins"
-          className="absolute top-[15%] left-0 w-[150px] md:w-[200px] z-20"
+          className="absolute top-[15%] left-20 w-[100px] md:w-[150px] z-30"
+        />
+        <img
+          src={coc_coins2}
+          alt="Coins"
+          className="absolute top-[30%] left-24 w-[100px] md:w-[150px] z-10"
         />
         <img
           src={coc_coins3}
           alt="Coins"
-          className="absolute left-0 top-1/2 transform -translate-y-1/3 w-[150px] md:w-[200px] z-20"
+          className="absolute left-8 top-3/4 transform -translate-y-1/3 w-[150px] md:w-[200px] z-10"
         />
         <img
           src={coc_coins4}
           alt="Coins"
-          className="absolute bottom-[15%] right-0 w-[150px] md:w-[200px] z-50"
+          className="absolute bottom-[45%] right-0 w-[150px] md:w-[200px] z-30"
         />
         <img
           src={coc_coins5}
           alt="Coins"
-          className="absolute bottom-[5%] right-[10%] w-[150px] md:w-[200px] z-10"
+          className="absolute bottom-[5%] right-[5%] w-[100px] md:w-[150px] z-30"
         />
 
         {/* Content Container */}
-        <div className="relative z-30 bg-gray-100 shadow-2xl rounded-lg p-8 w-[85%] max-w-6xl shadow-gray-400 drop-shadow-2xl">
-          <p className="text-lg text-gray-700 leading-relaxed mb-6 font-quattrocentoSans font-bold">
+        <div className="relative bg-gray-100 shadow-2xl rounded-lg p-8 w-[85%] max-w-6xl shadow-gray-400 drop-shadow-2xl shadow-t-lg z-20">
+          <p className="text-lg text-gray-700 leading-relaxed mb-6 font-quattrocentoSans font-bold max-w-4xl mx-auto">
             As a participant in GolfMeet, you are expected to adhere to the
             highest standards of conduct both on and off the course. Your
             behavior should reflect the values of the game of golf—respect,
@@ -129,12 +134,12 @@ function CodeOfConduct() {
             ensure a fair and enjoyable experience for all players.
           </p>
 
-          <div className="space-y-6">
+          <div className="space-y-8 max-w-4xl mx-auto">
             <div>
               <h3 className="text-2xl font-bold text-black mb-4 font-quattrocentoSans">
                 1. General Conduct
               </h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 font-quattrocentoSans">
+              <ul className="list-disc list-inside space-y-4 text-gray-700 font-quattrocentoSans">
                 <li>
                   Respect for Others: Treat fellow participants with respect and
                   courtesy at all times. Abusive language, disrespectful
@@ -159,7 +164,7 @@ function CodeOfConduct() {
               <h3 className="text-2xl font-bold text-black mb-4 font-quattrocentoSans">
                 2. On the Course
               </h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 font-quattrocentoSans">
+              <ul className="list-disc list-inside space-y-4 text-gray-700 font-quattrocentoSans">
                 <li>
                   Punctuality: Arrive at your scheduled tee time promptly.
                   Delays can disrupt the flow of the round and inconvenience
@@ -192,7 +197,7 @@ function CodeOfConduct() {
               <h3 className="text-2xl font-bold text-black mb-4 font-quattrocentoSans">
                 3. Behavior on the Course
               </h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 font-quattrocentoSans">
+              <ul className="list-disc list-inside space-y-4 text-gray-700 font-quattrocentoSans">
                 <li>
                   No Cheating: Do not engage in any form of cheating, including
                   but not limited to altering your scorecard, improving your
@@ -218,7 +223,7 @@ function CodeOfConduct() {
               <h3 className="text-2xl font-bold text-black mb-4 font-quattrocentoSans">
                 4. Dispute Resolution
               </h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 font-quattrocentoSans">
+              <ul className="list-disc list-inside space-y-4 text-gray-700 font-quattrocentoSans">
                 <li>
                   Disputes: Any disputes regarding rulings or decisions should
                   be handled calmly and respectfully. In the event of a dispute,
@@ -232,7 +237,7 @@ function CodeOfConduct() {
               <h3 className="text-2xl font-bold text-black mb-4 font-quattrocentoSans">
                 5. Personal Responsibility
               </h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 font-quattrocentoSans">
+              <ul className="list-disc list-inside space-y-4 text-gray-700 font-quattrocentoSans">
                 <li>
                   Environmental Respect: Take care to preserve the integrity of
                   the course by disposing of trash responsibly and avoiding
@@ -254,7 +259,7 @@ function CodeOfConduct() {
                 Participants may be disqualified for any of the following
                 reasons:
               </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 font-quattrocentoSans">
+              <ul className="list-disc list-inside space-y-4 text-gray-700 font-quattrocentoSans">
                 <li>Violation of any part of this Code of Conduct.</li>
                 <li>Deliberate rule violations or cheating.</li>
                 <li>Inappropriate or disruptive behavior.</li>
