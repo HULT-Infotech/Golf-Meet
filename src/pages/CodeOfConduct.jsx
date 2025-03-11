@@ -19,7 +19,7 @@ function CodeOfConduct() {
         <div className="flex flex-col w-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20">
-            <h1 className="font-quattrocento text-6xl lg:text-7xl xl:text-8xl max-w-2xl font-bold mb-4 text-[#201E15]" style={{ fontSize: "95px" }}>
+            <h1 className="font-quattrocento text-6xl lg:text-7xl xl:text-8xl max-w-2xl font-bold mb-4 text-[#201E15]" style={{ fontSize: "64px" }}>
               PLAYER CODE OF CONDUCT
             </h1>
           </div>
@@ -92,37 +92,37 @@ function CodeOfConduct() {
         <img
           src={coc_coins1}
           alt="Coins"
-          className="absolute top-0 right-24 w-[150px] md:w-[200px] z-30"
+          className="absolute top-[2%] right-20 w-[150px] md:w-[240px] z-30"
         />
         <img
           src={coc_coins2}
           alt="Coins"
-          className="absolute top-[15%] left-20 w-[100px] md:w-[150px] z-30"
+          className="absolute top-[13%] left-20 w-[100px] md:w-[150px] z-30"
         />
         <img
           src={coc_coins2}
           alt="Coins"
-          className="absolute top-[30%] left-24 w-[100px] md:w-[150px] z-10"
+          className="absolute top-[22%] left-16 w-[100px] md:w-[150px] z-10"
         />
         <img
           src={coc_coins3}
           alt="Coins"
-          className="absolute left-8 top-3/4 transform -translate-y-1/3 w-[150px] md:w-[200px] z-10"
+          className="absolute top-[40%] left-8  transform -translate-y-1/3 w-[150px] md:w-[200px] z-10"
         />
         <img
           src={coc_coins4}
           alt="Coins"
-          className="absolute bottom-[45%] right-0 w-[150px] md:w-[200px] z-30"
+          className="absolute bottom-[25%] right-0 w-[150px] md:w-[240px] z-10"
         />
         <img
           src={coc_coins5}
           alt="Coins"
-          className="absolute bottom-[5%] right-[5%] w-[100px] md:w-[150px] z-30"
+          className="absolute bottom-[14%] right-[5%] w-[100px] md:w-[150px] z-30"
         />
 
         {/* Content Container */}
         <div className="relative bg-gray-100 bottom-20 rounded-lg p-8 w-[85%] max-w-6xl shadow-gray-800 drop-shadow-2xl shadow z-20">
-          <p className="text-xl text-black leading-relaxed mb-6 font-quattrocentoSans font-bold max-w-4xl mx-auto" style={{ fontSize: "24px" }}>
+          <p className="text-xl text-black leading-relaxed mb-12 font-quattrocentoSans font-bold max-w-4xl mx-auto" style={{ fontSize: "24px", lineHeight: "1.4" }}>
             As a participant in GolfMeet, you are expected to adhere to the
             highest standards of conduct both on and off the course. Your
             behavior should reflect the values of the game of golf—respect,
@@ -132,7 +132,7 @@ function CodeOfConduct() {
 
           <div className="space-y-8 max-w-4xl mx-auto">
             <div>
-              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "36px" }}>
+              <h3 className="text-xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "24px" }}>
                 1. General Conduct
               </h3>
               <ul className="space-y-4 text-black font-quattrocentoSans text-lg pl-8" style={{ fontSize: "22px", listStyleType: "disc" }}>
@@ -154,7 +154,7 @@ function CodeOfConduct() {
                 </li>
                 <li style={{ paddingLeft: "10px" }}>
                   <span style={{ display: "block", marginLeft: "10px" }}>
-                     with Rules: Adhere to these rules and regulations,
+                    Compliance with Rules: Adhere to these rules and regulations,
                     as well as the local rules of the course. Any violation may
                     result in disqualification.
                   </span>
@@ -163,7 +163,7 @@ function CodeOfConduct() {
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "36px" }}>
+              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "24px" }}>
                 2. On the Course
               </h3>
               <ul className="space-y-4 text-black font-quattrocentoSans text-lg pl-8" style={{ fontSize: "22px", listStyleType: "disc" }}>
@@ -206,7 +206,7 @@ function CodeOfConduct() {
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "36px" }}>
+              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "24px" }}>
                 3. Behavior on the Course
               </h3>
               <ul className="space-y-4 text-black font-quattrocentoSans text-lg pl-8" style={{ fontSize: "22px", listStyleType: "disc" }}>
@@ -238,7 +238,7 @@ function CodeOfConduct() {
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "36px" }}>
+              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "24px" }}>
                 4. Dispute Resolution
               </h3>
               <ul className="space-y-4 text-black font-quattrocentoSans text-lg pl-8" style={{ fontSize: "22px", listStyleType: "disc" }}>
@@ -254,7 +254,7 @@ function CodeOfConduct() {
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "36px" }}>
+              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "24px" }}>
                 5. Personal Responsibility
               </h3>
               <ul className="space-y-4 text-black font-quattrocentoSans text-lg pl-8" style={{ fontSize: "22px", listStyleType: "disc" }}>
@@ -276,7 +276,7 @@ function CodeOfConduct() {
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "36px" }}>
+              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "24px" }}>
                 6. Disqualification
               </h3>
               <p className="text-lg text-black mb-2 font-quattrocentoSans" style={{ fontSize: "22px" }}>
@@ -313,9 +313,9 @@ function CodeOfConduct() {
             </div>
 
             <p className="text-xl text-black leading-relaxed font-quattrocentoSans" style={{ fontSize: "24px" }}>
-              By participating in GolfMeet, you agree to adhere to this Code of
+              <strong>By participating in GolfMeet, you agree to adhere to this Code of
               Conduct and contribute to making the tournament enjoyable for your
-              fellow participants.
+              fellow participants.</strong>
             </p>
           </div>
         </div>
