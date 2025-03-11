@@ -20,7 +20,7 @@ import ground_3_mobile from "../assets/how-to-play-img/ground-3-mobile.svg";
 import ground_4_mobile from "../assets/how-to-play-img/ground-4-mobile.svg";
 
 import gold_coins_3 from "../assets/how-to-play-img/3-gold-coins.svg";
-
+import step_5_bg from "../assets/how-to-play-img/step_5_bg.webp";
 const HowToPlay = () => {
   return (
     <>
@@ -207,7 +207,8 @@ const HowToPlay = () => {
 
         {/* step 5 */}
         <div className="relative">
-          <div className="relative -bottom-10 p-8 md:-bottom-16 lg:-left-8 xl:-left-4 flex flex-col rotate-3 rounded-md bg-[#014D4E] noise-bg md:flex-row justify-center shadow-2xl items-center w-[90%] mx-auto min-h-[600px]">
+          <div className="w-full absolute "> <img src={step_5_bg} alt="step_5_bg" /></div>
+          <div className="relative -bottom-10 p-8 md:-bottom-16 lg:-left-8 xl:-left-4 flex flex-col rotate-3 rounded-md  md:flex-row justify-center  items-center w-[90%] mx-auto min-h-[600px]">
             <div className="flex flex-col -rotate-3 md:flex-row items-start md:space-x-8">
               <span className="w-[45px] font-quattrocentoSans h-[60px] md:w-[90px] md:h-[120px] rounded-full bg-white text-[#014D4E] flex items-center justify-center text-5xl font-bold">
                 5
