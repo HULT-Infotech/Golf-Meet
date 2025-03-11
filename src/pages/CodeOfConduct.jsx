@@ -10,6 +10,7 @@ import coc_coins5 from "../assets/coc-coins5.svg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
+
 function CodeOfConduct() {
   return (
     <>
@@ -18,10 +19,9 @@ function CodeOfConduct() {
         <div className="flex flex-col w-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20">
-            <h1 className="font-quattrocento text-5xl lg:text-6xl xl:text-7xl max-w-2xl font-bold mb-4 text-[#201E15]">
+            <h1 className="font-quattrocento text-6xl lg:text-7xl xl:text-8xl max-w-2xl font-bold mb-4 text-[#201E15]" style={{ fontSize: "95px" }}>
               PLAYER CODE OF CONDUCT
             </h1>
-            
           </div>
 
           {/* Right Image Section */}
@@ -51,10 +51,10 @@ function CodeOfConduct() {
       <section className="flex flex-col items-center justify-center mt-16 relative">
         <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
           <div className="flex flex-col">
-            <h2 className="text-5xl font-bold uppercase font-quattrocento">
+            <h2 className="text-5xl font-bold uppercase font-quattrocento" style={{ fontSize: "52px" }}>
               TOURNAMENT RULES
             </h2>
-            <p className="text-lg underline underline-offset-4">
+            <p className="text-lg underline underline-offset-4" style={{ fontSize: "22px" }}>
               Please refer to the
               <strong> GolfMeet Tournament Rules </strong> here
             </p>
@@ -122,156 +122,203 @@ function CodeOfConduct() {
 
         {/* Content Container */}
         <div className="relative bg-gray-100 bottom-20 rounded-lg p-8 w-[85%] max-w-6xl shadow-gray-800 drop-shadow-2xl shadow z-20">
-  <p className="text-xl text-black leading-relaxed mb-6 font-quattrocentoSans font-bold max-w-4xl mx-auto">
-    As a participant in GolfMeet, you are expected to adhere to the
-    highest standards of conduct both on and off the course. Your
-    behavior should reflect the values of the game of golf—respect,
-    integrity, and sportsmanship. This Code of Conduct is in place to
-    ensure a fair and enjoyable experience for all players.
-  </p>
+          <p className="text-xl text-black leading-relaxed mb-6 font-quattrocentoSans font-bold max-w-4xl mx-auto" style={{ fontSize: "24px" }}>
+            As a participant in GolfMeet, you are expected to adhere to the
+            highest standards of conduct both on and off the course. Your
+            behavior should reflect the values of the game of golf—respect,
+            integrity, and sportsmanship. This Code of Conduct is in place to
+            ensure a fair and enjoyable experience for all players.
+          </p>
 
-  <div className="space-y-8 max-w-4xl mx-auto">
-    <div>
-      <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans">
-        1. General Conduct
-      </h3>
-      <ul className="list-disc list-inside space-y-4 text-black font-quattrocentoSans text-lg">
-        <li>
-          Respect for Others: Treat fellow participants with respect and
-          courtesy at all times. Abusive language, disrespectful
-          behavior, or acts of aggression will result in penalties or
-          disqualification from GolfMeet.
-        </li>
-        <li>
-          Sportsmanship: Uphold the principles of sportsmanship by
-          displaying honesty, courtesy, and fairness. Accept the outcome
-          of each round and the tournament with grace and humility,
-          regardless of the result.
-        </li>
-        <li>
-          Compliance with Rules: Adhere to these rules and regulations,
-          as well as the local rules of the course. Any violation may
-          result in disqualification.
-        </li>
-      </ul>
-    </div>
+          <div className="space-y-8 max-w-4xl mx-auto">
+            <div>
+              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "36px" }}>
+                1. General Conduct
+              </h3>
+              <ul className="space-y-4 text-black font-quattrocentoSans text-lg pl-8" style={{ fontSize: "22px", listStyleType: "disc" }}>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Respect for Others: Treat fellow participants with respect and
+                    courtesy at all times. Abusive language, disrespectful
+                    behavior, or acts of aggression will result in penalties or
+                    disqualification from GolfMeet.
+                  </span>
+                </li>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Sportsmanship: Uphold the principles of sportsmanship by
+                    displaying honesty, courtesy, and fairness. Accept the outcome
+                    of each round and the tournament with grace and humility,
+                    regardless of the result.
+                  </span>
+                </li>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                     with Rules: Adhere to these rules and regulations,
+                    as well as the local rules of the course. Any violation may
+                    result in disqualification.
+                  </span>
+                </li>
+              </ul>
+            </div>
 
-    <div>
-      <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans">
-        2. On the Course
-      </h3>
-      <ul className="list-disc list-inside space-y-4 text-black font-quattrocentoSans text-lg">
-        <li>
-          Punctuality: Arrive at your scheduled tee time promptly.
-          Delays can disrupt the flow of the round and inconvenience
-          other participants. You could incur penalty points if your
-          group players complain about your delay.
-        </li>
-        <li>
-          Course Etiquette: Maintain proper etiquette at all times. This
-          includes repairing divots, fixing ball marks on greens, raking
-          bunkers, and keeping pace of play.
-        </li>
-        <li>
-          Quiet Please: Refrain from talking, moving, or making noise
-          while another player is preparing to hit or during their
-          swing.
-        </li>
-        <li>
-          Safety: Always ensure that no one is in the line of fire
-          before swinging. Be mindful of others' safety and well-being
-          at all times.
-        </li>
-        <li>
-          Scoring: Record the score for each hole as soon as you
-          complete the hole.
-        </li>
-      </ul>
-    </div>
+            <div>
+              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "36px" }}>
+                2. On the Course
+              </h3>
+              <ul className="space-y-4 text-black font-quattrocentoSans text-lg pl-8" style={{ fontSize: "22px", listStyleType: "disc" }}>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Punctuality: Arrive at your scheduled tee time promptly.
+                    Delays can disrupt the flow of the round and inconvenience
+                    other participants. You could incur penalty points if your
+                    group players complain about your delay.
+                  </span>
+                </li>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Course Etiquette: Maintain proper etiquette at all times. This
+                    includes repairing divots, fixing ball marks on greens, raking
+                    bunkers, and keeping pace of play.
+                  </span>
+                </li>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Quiet Please: Refrain from talking, moving, or making noise
+                    while another player is preparing to hit or during their
+                    swing.
+                  </span>
+                </li>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Safety: Always ensure that no one is in the line of fire
+                    before swinging. Be mindful of others' safety and well-being
+                    at all times.
+                  </span>
+                </li>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Scoring: Record the score for each hole as soon as you
+                    complete the hole.
+                  </span>
+                </li>
+              </ul>
+            </div>
 
-    <div>
-      <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans">
-        3. Behavior on the Course
-      </h3>
-      <ul className="list-disc list-inside space-y-4 text-black font-quattrocentoSans text-lg">
-        <li>
-          No Cheating: Do not engage in any form of cheating, including
-          but not limited to altering your scorecard, improving your
-          lie, or using prohibited equipment. Violators will be
-          disqualified.
-        </li>
-        <li>
-          Dress Code: Adhere to the tournament's dress code of the
-          course, which may include wearing collared shirts, appropriate
-          shorts/pants, and golf shoes (spikeless or soft spikes may be
-          required).
-        </li>
-        <li>
-          Mobile Phones: You must carry your mobile phone for recording
-          scores in the GolfMeet app. However, please ensure that the
-          phone is set to silent or vibrate mode while on the course to
-          avoid disturbing play.
-        </li>
-      </ul>
-    </div>
+            <div>
+              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "36px" }}>
+                3. Behavior on the Course
+              </h3>
+              <ul className="space-y-4 text-black font-quattrocentoSans text-lg pl-8" style={{ fontSize: "22px", listStyleType: "disc" }}>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    No Cheating: Do not engage in any form of cheating, including
+                    but not limited to altering your scorecard, improving your
+                    lie, or using prohibited equipment. Violators will be
+                    disqualified.
+                  </span>
+                </li>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Dress Code: Adhere to the tournament's dress code of the
+                    course, which may include wearing collared shirts, appropriate
+                    shorts/pants, and golf shoes (spikeless or soft spikes may be
+                    required).
+                  </span>
+                </li>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Mobile Phones: You must carry your mobile phone for recording
+                    scores in the GolfMeet app. However, please ensure that the
+                    phone is set to silent or vibrate mode while on the course to
+                    avoid disturbing play.
+                  </span>
+                </li>
+              </ul>
+            </div>
 
-    <div>
-      <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans">
-        4. Dispute Resolution
-      </h3>
-      <ul className="list-disc list-inside space-y-4 text-black font-quattrocentoSans text-lg">
-        <li>
-          Disputes: Any disputes regarding rulings or decisions should
-          be handled calmly and respectfully. In the event of a dispute,
-          players should register a request on the GolfMeet app for an
-          official and binding resolution.
-        </li>
-      </ul>
-    </div>
+            <div>
+              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "36px" }}>
+                4. Dispute Resolution
+              </h3>
+              <ul className="space-y-4 text-black font-quattrocentoSans text-lg pl-8" style={{ fontSize: "22px", listStyleType: "disc" }}>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Disputes: Any disputes regarding rulings or decisions should
+                    be handled calmly and respectfully. In the event of a dispute,
+                    players should register a request on the GolfMeet app for an
+                    official and binding resolution.
+                  </span>
+                </li>
+              </ul>
+            </div>
 
-    <div>
-      <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans">
-        5. Personal Responsibility
-      </h3>
-      <ul className="list-disc list-inside space-y-4 text-black font-quattrocentoSans text-lg">
-        <li>
-          Environmental Respect: Take care to preserve the integrity of
-          the course by disposing of trash responsibly and avoiding
-          damage to the course or surrounding environment.
-        </li>
-        <li>
-          Attire and Equipment: Players are responsible for bringing
-          their own golf clubs, balls, and appropriate attire. GolfMeet
-          is not responsible for lost or damaged personal property.
-        </li>
-      </ul>
-    </div>
+            <div>
+              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "36px" }}>
+                5. Personal Responsibility
+              </h3>
+              <ul className="space-y-4 text-black font-quattrocentoSans text-lg pl-8" style={{ fontSize: "22px", listStyleType: "disc" }}>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Environmental Respect: Take care to preserve the integrity of
+                    the course by disposing of trash responsibly and avoiding
+                    damage to the course or surrounding environment.
+                  </span>
+                </li>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Attire and Equipment: Players are responsible for bringing
+                    their own golf clubs, balls, and appropriate attire. GolfMeet
+                    is not responsible for lost or damaged personal property.
+                  </span>
+                </li>
+              </ul>
+            </div>
 
-    <div>
-      <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans">
-        6. Disqualification
-      </h3>
-      <p className="text-lg text-black mb-2 font-quattrocentoSans">
-        Participants may be disqualified for any of the following
-        reasons:
-      </p>
-      <ul className="list-disc list-inside space-y-4 text-black font-quattrocentoSans text-lg">
-        <li>Violation of any part of this Code of Conduct.</li>
-        <li>Deliberate rule violations or cheating.</li>
-        <li>Inappropriate or disruptive behavior.</li>
-        <li>Failure to follow directions from officials or staff.</li>
-        <li>Violating tournament-specific rules or dress codes.</li>
-      </ul>
-    </div>
+            <div>
+              <h3 className="text-3xl font-bold text-black mb-4 font-quattrocentoSans" style={{ fontSize: "36px" }}>
+                6. Disqualification
+              </h3>
+              <p className="text-lg text-black mb-2 font-quattrocentoSans" style={{ fontSize: "22px" }}>
+                Participants may be disqualified for any of the following
+                reasons:
+              </p>
+              <ul className="space-y-4 text-black font-quattrocentoSans text-lg pl-8" style={{ fontSize: "22px", listStyleType: "disc" }}>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Violation of any part of this Code of Conduct.
+                  </span>
+                </li>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Deliberate rule violations or cheating.
+                  </span>
+                </li>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Inappropriate or disruptive behavior.
+                  </span>
+                </li>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Failure to follow directions from officials or staff.
+                  </span>
+                </li>
+                <li style={{ paddingLeft: "10px" }}>
+                  <span style={{ display: "block", marginLeft: "10px" }}>
+                    Violating tournament-specific rules or dress codes.
+                  </span>
+                </li>
+              </ul>
+            </div>
 
-    <p className="text-xl text-black leading-relaxed font-quattrocentoSans">
-      By participating in GolfMeet, you agree to adhere to this Code of
-      Conduct and contribute to making the tournament enjoyable for your
-      fellow participants.
-    </p>
-  </div>
-</div>
-        
+            <p className="text-xl text-black leading-relaxed font-quattrocentoSans" style={{ fontSize: "24px" }}>
+              By participating in GolfMeet, you agree to adhere to this Code of
+              Conduct and contribute to making the tournament enjoyable for your
+              fellow participants.
+            </p>
+          </div>
+        </div>
       </section>
 
       <Footer />
