@@ -208,8 +208,8 @@ const HowToPlay = () => {
 
         {/* step 5 */}
         <div className="relative">
-          <div className="w-full absolute hidden md:block"> <img src={step_5_bg} alt="step_5_bg" /></div>
-          <div className="w-full absolute md:hidden"> <img src={step_5_bg_mobile} alt="step_5_bg w-full" /></div>
+          <div className="w-full absolute hidden md:block mx-auto"> <img src={step_5_bg} alt="step_5_bg" className="w-full" /></div>
+          <div className="w-full absolute md:hidden"> <img src={step_5_bg_mobile} alt="step_5_bg" className="w-full" /></div>
           <div className="relative -bottom-10 p-8 md:-bottom-16 lg:-left-8 xl:-left-4 flex flex-col md:flex-row justify-center  items-center w-[90%] mx-auto min-h-[600px]">
             <div className="flex flex-col md:flex-row items-start md:space-x-8">
               <span className="w-[45px] font-quattrocentoSans h-[60px] md:w-[90px] md:h-[120px] rounded-full bg-white text-[#014D4E] flex items-center justify-center text-5xl font-bold">
