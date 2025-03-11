@@ -94,16 +94,16 @@ function LandingPage() {
           <img
             src={Illustration_Golfers_Mobile}
             alt="Golf Illustration"
-            className="w-10/12 sm:w-3/6  "
+            className="w-10/12 sm:w-3/6 mr-5 "
             draggable="false"
           />
         </div>
       </div>
       {/* Title */}
-      <h1 className="text-7xl mt-5 font-quattrocento md:text-6xl lg:text-7xl xl:text-[94px] md:leading-[106.37px] md:tracking-[0.025em] font-bold lg:mt-16 xl:mt-20">
+      <h1 className="text-[90px] leading-[90px] tracking-[0.025em] mt-5 text-center w-[350px] md:w-auto mx-auto font-quattrocento md:text-6xl lg:text-7xl xl:text-[94px] md:leading-[106.37px] md:tracking-[0.025em] font-bold lg:mt-16 xl:mt-20">
         GOLF MEET INDIA 2025
       </h1>
-      <p className="font-quattrocentoSans font-normal text-[24px] leading-[26.59px] tracking-[-0.025em] text-center text-[#201E15] mt-2">
+      <p className="font-quattrocentoSans w-96 sm:w-auto font-normal text-[24px] leading-[26.59px] tracking-[-0.025em] text-center text-[#201E15] mt-4">
         The year-long amateur golf tournament
       </p>
       <p className="font-quattrocentoSans font-normal mt-1 text-[16px] leading-[17.73px] tracking-[-0.025em] text-center text-[#201E15] p-2">
