@@ -126,55 +126,63 @@ function TournamentRule() {
         </section>
 
         {/* Player Code of Conduct section */}
-        <div className="flex justify-start items-center text-[#014D4E] bg-[#014D4E0D] w-full max-w-7xl p-5 mx-auto mt-8 md:mt-20 md:ml-10 lg:ml-20 player-code-of-conduct">
-          <div className="flex flex-col">
-            <h2 className="text-3xl font-bold uppercase font-quattrocento">
-              Player Code of Conduct
-            </h2>
-            <p className="text-base underline underline-offset-4">
-              Please refer to the{" "}
-              <strong>GolfMeet Player Code of Conduct</strong> here
-            </p>
+        <section className="flex flex-col items-center justify-center mt-16 relative">
+          <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
+            <div className="flex flex-col">
+              <h2 className="text-5xl font-bold uppercase font-quattrocento">
+                Player Code of Conduct
+              </h2>
+              <p className="text-lg underline underline-offset-4">
+                Please refer to the
+                <strong> GolfMeet Tournament Rules </strong> here
+              </p>
+            </div>
+            <div>
+              <svg
+                width="25"
+                height="47"
+                viewBox="0 0 25 47"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1.5L23 23.5L1 45.5"
+                  stroke="#014D4E"
+                  strokeWidth="2"
+                />
+              </svg>
+            </div>
           </div>
-          <div className="ml-4">
-            <svg
-              width="20"
-              height="44"
-              viewBox="0 0 25 47"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 1.5L23 23.5L1 45.5"
-                stroke="#014D4E"
-                strokeWidth="2"
-              />
-            </svg>
-          </div>
-        </div>
+        </section>
 
         {/* Mobile Sections Navigation - Only visible on mobile */}
-        <div 
+        <div
           className="md:hidden w-full py-4 relative"
           style={{
-            background: 'linear-gradient(to bottom, #014D4E, #003637)'
+            background: "linear-gradient(to bottom, #014D4E, #003637)",
           }}
         >
           <h3 className="text-white text-xl font-bold uppercase text-center mb-4">
             SECTIONS
           </h3>
-          
+
           <div className="overflow-x-auto">
             <div className="flex w-max px-4">
               {sections.map((section) => (
-                <div 
+                <div
                   key={section.id}
                   className={`flex-shrink-0 cursor-pointer px-4 py-2 text-white text-center whitespace-nowrap ${
                     activeSection === section.id ? "font-bold" : "opacity-80"
                   }`}
                   onClick={() => handleSectionClick(section.id)}
                 >
-                  <span className={`${activeSection === section.id ? "relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-white" : ""}`}>
+                  <span
+                    className={`${
+                      activeSection === section.id
+                        ? "relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-white"
+                        : ""
+                    }`}
+                  >
                     {section.label}
                   </span>
                 </div>
@@ -372,36 +380,36 @@ function TournamentRule() {
       <style jsx>{`
         @media (min-width: 2556px) {
           h1 {
-            font-size: 180px; 
+            font-size: 180px;
           }
           h2 {
-            font-size: 58px; 
+            font-size: 58px;
           }
           /* Right image (golfers illustration) */
           img[src="${tr_bg}"] {
-            max-width: 1200px; 
-            margin-right: 6rem; 
+            max-width: 1200px;
+            margin-right: 6rem;
           }
-          
+
           img[src="${tr_greenleft}"].hidden.md\\:block {
-            width: 700px; 
+            width: 700px;
           }
-          
+
           .player-code-of-conduct {
             margin-left: 4rem;
-            padding: 3rem; 
-            max-width: 1000px; 
+            padding: 3rem;
+            max-width: 1000px;
           }
           .player-code-of-conduct h2 {
             font-size: 72px; /* Increased from 58px to 72px */
           }
           .player-code-of-conduct p {
-            font-size: 30px; 
+            font-size: 30px;
             margin-top: 0.5rem;
           }
           .player-code-of-conduct svg {
-            width: 40px; 
-            height: 80px; 
+            width: 40px;
+            height: 80px;
           }
         }
 
@@ -419,7 +427,7 @@ function TournamentRule() {
           }
           img[src="${tr_greenleft_m}"].absolute.md\\:hidden {
             width: 100vw;
-            margin-top:3rem;
+            margin-top: 3rem;
             left: 0;
             right: 0;
           }
