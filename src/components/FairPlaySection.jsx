@@ -19,13 +19,15 @@ const FairPlaySection = () => {
         </h2>
 
         <div className="mx-auto max-w-4xl relative">
-  <h6 className="text-base md:text-lg lg:text-xl relative z-10">Introduction</h6>
-  <h1 className="text-5xl md:text-6xl lg:text-7xl mx-auto uppercase font-quattrocento font-bold xl:text-[96px] leading-[106.37px] tracking-[0.025em] text-center relative z-10">
-    The GolfMeet
-    <br />
-    <span className="block mt-2 md:mt-4">Handicap</span>
-  </h1>
-</div>
+          <h6 className="text-base md:text-lg lg:text-xl relative z-10">
+            Introduction
+          </h6>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl mx-auto uppercase font-quattrocento font-bold xl:text-[96px] leading-[106.37px] tracking-[0.025em] text-center relative z-10">
+            The GolfMeet
+            <br />
+            <span className="block mt-2 md:mt-4">Handicap</span>
+          </h1>
+        </div>
 
         <p className="mt-4 text-[#014D4E] text-xl md:text-2xl my-4 md:my-6 lg:my-10 mx-auto max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl">
           GolfMeet uses machine learning to compute the accurate handicap of
@@ -96,13 +98,13 @@ const FairPlaySection = () => {
                   : ""
               }`}
             >
-              <div className="text-4xl md:text-4xl font-normal font-sans mb-2 md:mb-4">
+              <div className="text-5xl md:text-4xl font-normal font-sans mb-2 md:mb-4">
                 {option.installments}
               </div>
-              <div className="text-lg md:text-xl uppercase mb-2 md:mb-4">
+              <div className="text-2xl md:text-xl  uppercase mb-2 md:mb-4">
                 {option.installmentLabel}
               </div>
-              <div className="text-4xl md:text-5xl font-quattrocento font-bold mb-2 md:mb-4">
+              <div className="text-5xl font-quattrocento font-bold mb-2 md:mb-4">
                 {option.installmentPrice}
               </div>
               <div
@@ -111,7 +113,7 @@ const FairPlaySection = () => {
                 } pt-3 md:pt-4 mb-2 md:mb-4`}
               >
                 <div className="uppercase">{option.totalLabel}</div>
-                <div className="text-xl md:text-2xl font-quattrocento font-bold">
+                <div className="text-3xl font-quattrocento font-bold">
                   {option.totalPrice}
                 </div>
               </div>

@@ -12,7 +12,7 @@ const HowItWorksSection = () => {
       {/* Steps */}
 
       <h1
-        className="text-3xl sm:text-4xl px-10 lg:mt-10 font-quattrocento font-bold md:text-[64px] leading-[70.91px] tracking-[0.025em] text-center  text-[#014D4E] md:text-5xl mb-10 lg:mb-0 "
+        className="text-[64px] px-10 lg:mt-10 font-quattrocento font-bold md:text-[64px] leading-[70.91px] tracking-[0.025em] text-center  text-[#014D4E] md:text-5xl mb-10 lg:mb-0 "
         style={{ textShadow: "0px 0px 6px #F4D4555C" }}
       >
         HOW IT WORKS
@@ -110,7 +110,7 @@ const HowItWorksSection = () => {
       {/*  Section 4 */}
       <div className="mx-auto noise-bg py-10 md:py-20">
         <div className="text-center mb-12">
-          <h1 className="text-4xl mb-8  lg:text-[90px] font-quattrocento font-bold  leading-[106.37px] tracking-[0.025em] text-center">
+          <h1 className="text-[50px] leading-[60px] w-auto mb-8  lg:text-[90px] font-quattrocento font-bold  md:leading-[106.37px] tracking-[0.025em] text-center">
             THE SOCIAL AMATEUR
             <br />
             TOURNAMENT WITH A<br />
