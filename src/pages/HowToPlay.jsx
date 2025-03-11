@@ -21,6 +21,7 @@ import ground_4_mobile from "../assets/how-to-play-img/ground-4-mobile.svg";
 
 import gold_coins_3 from "../assets/how-to-play-img/3-gold-coins.svg";
 import step_5_bg from "../assets/how-to-play-img/step_5_bg.webp";
+import step_5_bg_mobile from "../assets/how-to-play-img/step_5_bg_mobile.png";
 const HowToPlay = () => {
   return (
     <>
@@ -207,9 +208,10 @@ const HowToPlay = () => {
 
         {/* step 5 */}
         <div className="relative">
-          <div className="w-full absolute "> <img src={step_5_bg} alt="step_5_bg" /></div>
-          <div className="relative -bottom-10 p-8 md:-bottom-16 lg:-left-8 xl:-left-4 flex flex-col rotate-3 rounded-md  md:flex-row justify-center  items-center w-[90%] mx-auto min-h-[600px]">
-            <div className="flex flex-col -rotate-3 md:flex-row items-start md:space-x-8">
+          <div className="w-full absolute hidden md:block"> <img src={step_5_bg} alt="step_5_bg" /></div>
+          <div className="w-full absolute md:hidden"> <img src={step_5_bg_mobile} alt="step_5_bg w-full" /></div>
+          <div className="relative -bottom-10 p-8 md:-bottom-16 lg:-left-8 xl:-left-4 flex flex-col md:flex-row justify-center  items-center w-[90%] mx-auto min-h-[600px]">
+            <div className="flex flex-col md:flex-row items-start md:space-x-8">
               <span className="w-[45px] font-quattrocentoSans h-[60px] md:w-[90px] md:h-[120px] rounded-full bg-white text-[#014D4E] flex items-center justify-center text-5xl font-bold">
                 5
               </span>
@@ -233,7 +235,7 @@ const HowToPlay = () => {
               <img src={gold_coins_3} alt="gold_coins_3" />
             </div>
           </div>
-          <div className="absolute bg-[#014D4E] min-h-[400px] rotate-12 -z-10 w-2/3 md:w-[50%] top-4 rounded-md md:top-auto right-20 md:right-8 xl:right-14 md:bottom-0 noise-bg"></div>
+          {/* <div className="absolute bg-[#014D4E] min-h-[400px] rotate-12 -z-10 w-2/3 md:w-[50%] top-4 rounded-md md:top-auto right-20 md:right-8 xl:right-14 md:bottom-0 noise-bg"></div> */}
         </div>
       </section>
       <Footer />
