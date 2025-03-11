@@ -57,7 +57,7 @@ const Navbar = () => {
 
           {/* Center Logo */}
           <Link to="/" className="absolute left-1/2 transform -translate-x-1/2 -bottom-3">
-            <img src={centralLogo} alt="Central Logo" className="w-16" />
+            <img src={centralLogo} alt="Central Logo" className="w-20" />
           </Link>
 
           {/* Hamburger Menu */}
