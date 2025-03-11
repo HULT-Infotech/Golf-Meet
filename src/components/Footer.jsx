@@ -10,7 +10,7 @@ function Footer() {
     <footer className="w-full">
       {/* Third Section - Logo */}
       <section className="bg-gray-100 noise-bg flex justify-center items-center w-full p-10 md:min-h-[350px] drop-shadow-2xl">
-        <div className=" w-[90vw] md:w-[30vw] transition-transform duration-500 ">
+        <div className="w-[90vw] md:w-[30vw] transition-transform duration-500">
           <img
             draggable="false"
             src={INDIA_golfmeet_logo}
@@ -19,13 +19,41 @@ function Footer() {
           />
         </div>
       </section>
-      {/* Main Footer Section */}
+      
+      {/* Main Footer Section - With reduced opacity gradient */}
       <section
-        className="relative px-4 flex justify-between items-start  min-h-96"
-        style={{ backgroundImage: `url(${green_bg})` }}
+        className="relative px-4 flex justify-between items-start min-h-96 shadow-[0_-15px_30px_-10px_rgba(0,0,0,0.3)]"
+        style={{ 
+          position: 'relative',
+        }}
       >
+        {/* Background with reduced opacity gradient */}
+        <div 
+          className="absolute inset-0 w-full h-full"
+          style={{
+            backgroundImage: `url(${green_bg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        ></div>
+
+        {/* Gradient overlay with reduced opacity */}
+        <div 
+          className="absolute inset-0 w-full h-full"
+          style={{
+            backgroundImage: 'linear-gradient(to bottom, rgba(1, 77, 78, 0.6), rgba(0, 30, 31, 0.6))',
+            zIndex: 2,
+          }}
+        ></div>
+        
+        {/* Additional shadow overlay at the top */}
+        <div 
+          className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-black/30 to-transparent"
+          style={{ zIndex: 5 }}
+        ></div>
+
         {/* Left Illustration */}
-        <div className=" hidden lg:block absolute bottom-0 left-0">
+        <div className="hidden lg:block absolute bottom-0 left-0 z-10">
           <img
             src={landingLeftImg}
             className="filter brightness-0 opacity-30"
@@ -34,7 +62,7 @@ function Footer() {
         </div>
 
         {/* Right Illustration */}
-        <div className=" hidden lg:block absolute bottom-0 right-0">
+        <div className="hidden lg:block absolute bottom-0 right-0 z-10">
           <img
             src={landingRightImg}
             className="filter brightness-0 opacity-30"
@@ -43,7 +71,7 @@ function Footer() {
         </div>
 
         {/* Content Sections */}
-        <div className="flex justify-between w-full max-w-7xl md:mx-auto md:items-center z-10 flex-col-reverse md:flex-row gap-20 md:gap-0 md:h-auto py-16">
+        <div className="flex justify-between w-full max-w-7xl md:mx-auto md:items-center z-20 flex-col-reverse md:flex-row gap-20 md:gap-0 md:h-auto py-16 relative">
           {/* Left Section - Site Language and Country of Play */}
           <div className="flex flex-col space-y-8 text-white">
             <div>
@@ -59,13 +87,13 @@ function Footer() {
               <label className="block text-sm font-quattrocentoSans font-semibold mb-2">
                 COUNTRY OF PLAY
               </label>
-              <div className="bg-white  text-gray-800 p-2 rounded-sm w-36 flex items-center">
+              <div className="bg-white text-gray-800 p-2 rounded-sm w-36 flex items-center">
                 <img
                   src={indiaFlag}
                   alt="India Flag"
                   className="w-5 h-5 mr-2 inline-block"
                 />
-                <span className=" font-quattrocento">INDIA</span>
+                <span className="font-quattrocento">INDIA</span>
               </div>
             </div>
           </div>
@@ -105,7 +133,7 @@ function Footer() {
       </section>
 
       {/* Bottom Gray Section */}
-      <section className="bg-gray-100 noise-bg h-24 text-center flex justify-center items-center  w-full">
+      <section className="bg-gray-100 noise-bg h-24 text-center flex justify-center items-center w-full">
         <p className="text-gray-600 text-sm">
           Copyright © 2024 Golfmeet LLP. All Rights Reserved.
         </p>

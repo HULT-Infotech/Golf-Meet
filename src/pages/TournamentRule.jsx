@@ -7,6 +7,7 @@ import bg_m from "../assets/tournament-rule/mobile-bg.svg";
 import tr_last from "../assets/tournament-rule/tr-last.svg";
 import tr_mobile from "../assets/tournament-rule/tournaments-mobile.svg";
 import Footer from "../components/Footer";
+import gradientbox from "../assets/greenbox.png"
 
 function TournamentRule() {
   const [activeSection, setActiveSection] = useState("home");
@@ -159,7 +160,7 @@ function TournamentRule() {
         <div
           className="md:hidden w-full py-4 relative"
           style={{
-            background: "linear-gradient(to bottom, #014D4E, #003637)",
+            background: `url(${gradientbox})`,
           }}
         >
           <h3 className="text-white text-xl font-bold uppercase text-center mb-4">
@@ -200,7 +201,7 @@ function TournamentRule() {
           className="hidden md:block w-80 text-white p-6 rounded-md sticky top-28 self-start mt-10 mr-20 transition-transform"
           style={{
             background:
-              "linear-gradient(150deg, rgb(48, 92, 93) 0%, rgb(0, 54, 55) 50%, rgb(0, 53, 54) 100%)",
+              `url(${gradientbox})`,
           }}
         >
           <h3 className="font-bold text-[32px] leading-[100%] tracking-[0em] uppercase mb-6">
