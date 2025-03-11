@@ -19,9 +19,14 @@ function CodeOfConduct() {
         <div className="flex flex-col w-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20">
-            <h1 className="font-quattrocento text-6xl lg:text-7xl xl:text-8xl max-w-2xl font-bold mb-4 text-[#201E15]" style={{ fontSize: "64px" }}>
-              PLAYER CODE OF CONDUCT
-            </h1>
+          <h1
+  className="font-quattrocento text-6xl lg:text-7xl xl:text-8xl max-w-2xl font-bold mb-4 text-[#201E15]"
+  style={{ fontSize: "80px", lineHeight: "1.1" }}
+>
+  <span className="whitespace-nowrap">PLAYER CODE</span>
+  <br />
+  OF CONDUCT
+</h1>
           </div>
 
           {/* Right Image Section */}
