@@ -133,7 +133,7 @@ const HowToPlay = () => {
           />
         </div>
         {/* step 3  */}
-        <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5">
+        <div className="flex relative flex-col justify-center min-h-[750px] items-center w-full py-10 md:p-5 px-5">
           <div className="flex flex-col md:flex-row justify-center items-center lg:items-start md:justify-between w-full mx-auto max-w-6xl">
             <div className="flex flex-col md:flex-row items-start md:space-x-8 lg:mt-32">
               <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-5xl font-bold">
@@ -152,7 +152,7 @@ const HowToPlay = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[75%] sm:w-[40%] md:w-[22vw] p-4 md:p-0">
+            <div className="w-[75%] sm:w-[40%] md:w-[22vw] p-4 mt-20 md:p-0">
               <img src={Mobile_Screen_Step_2} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
@@ -169,7 +169,7 @@ const HowToPlay = () => {
           />
         </div>
         {/* step 4  */}
-        <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5 mb-10">
+        <div className="flex relative flex-col justify-center min-h-[750px] items-center w-full py-10 md:p-5 px-5 mb-10">
           <div className="flex flex-col md:flex-row-reverse justify-center items-center md:items-start md:justify-around w-full mx-auto max-w-screen-xl">
             <div className="flex flex-col md:flex-row items-start md:space-x-8 lg:mt-32">
               <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-5xl font-bold">
