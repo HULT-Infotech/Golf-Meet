@@ -7,6 +7,10 @@ import coc_coins2 from "../assets/coc-coins2.svg";
 import coc_coins3 from "../assets/coc-coins3.svg";
 import coc_coins4 from "../assets/coc-coins4.svg";
 import coc_coins5 from "../assets/coc-coins5.svg";
+import mcoc_coins1 from "../assets/m-coin.png";
+import mcoc_coins2 from "../assets/m-coin1.png";
+import mcoc_coins3 from "../assets/m-coin2.png";
+import mcoc_coins4 from "../assets/m-coin3.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
@@ -103,6 +107,31 @@ function CodeOfConduct() {
           src={coc_coins2}
           alt="Coins"
           className="absolute top-[13%] left-20 w-[100px] md:w-[150px] z-30 hidden md:block"
+        />
+        <img
+          src={mcoc_coins1}
+          alt="Coins"
+          className="absolute bottom-2 left-0 w-[120px] z-30 md:hidden"
+        />
+        <img
+          src={mcoc_coins2}
+          alt="Coins"
+          className="absolute bottom-[60%] left-0 w-[60px] z-30 md:hidden"
+        />
+        <img
+          src={mcoc_coins3}
+          alt="Coins"
+          className="absolute top-[2.5%] right-0 w-[60px] z-30 md:hidden"
+        />
+        <img
+          src={mcoc_coins4}
+          alt="Coins"
+          className="absolute top-[48%] right-0 w-[55px] z-30 md:hidden"
+        />
+        <img
+          src={coc_coins2}
+          alt="Coins"
+          className="absolute top-[70%] -right-12 w-[130px] z-10 md:hidden"
         />
         <img
           src={coc_coins2}
