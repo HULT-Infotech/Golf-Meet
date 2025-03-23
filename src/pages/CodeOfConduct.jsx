@@ -14,7 +14,7 @@ import mcoc_coins4 from "../assets/m-coin3.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
-
+ 
 function CodeOfConduct() {
   return (
     <div className="md:overflow-visible overflow-hidden"> {/* Added overflow hidden for mobile only */}
@@ -58,35 +58,38 @@ function CodeOfConduct() {
         />
       </section>
 
-      <section className="flex flex-col items-center justify-center mt-8 sm:mt-12 md:mt-16 relative">
-        <div className="flex flex-col sm:flex-row justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[95%] sm:w-[90%] md:w-[85%] p-4 sm:p-6 md:p-7 rounded-md">
-          <div className="flex flex-col">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase font-quattrocento text-center sm:text-left mb-2 sm:mb-0" style={{ fontSize: "clamp(32px, 6vw, 52px)" }}>
-              TOURNAMENT RULES
-            </h2>
-            <p className="text-base sm:text-lg underline underline-offset-4 text-center sm:text-left" style={{ fontSize: "clamp(16px, 4vw, 22px)" }}>
-              Please refer to the
-              <strong> GolfMeet Tournament Rules </strong> here
-            </p>
-          </div>
-          <div className="mt-4 sm:mt-0">
-            <svg
-              width="20"
-              height="38"
-              viewBox="0 0 25 47"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-10 sm:w-6 sm:h-12 md:w-7 md:h-14"
-            >
-              <path
-                d="M1 1.5L23 23.5L1 45.5"
-                stroke="#014D4E"
-                strokeWidth="2"
-              />
-            </svg>
-          </div>
-        </div>
-      </section>
+      <section className="flex flex-col items-center justify-center mt-8 sm:mt-12 md:mt-16 relative">   
+  <div className="flex flex-col sm:flex-row justify-between items-start text-[#014D4E] bg-[#F3F8F8] w-full sm:w-[90%] md:w-[85%] p-6 sm:p-6 md:p-7 rounded-md">     
+    <div className="flex flex-col items-start w-full">       
+      <h2 className="text-[34px] leading-tight sm:text-4xl md:text-5xl font-bold uppercase font-quattrocento text-left mb-2 sm:mb-0">         
+        TOURNAMENT<br />RULES       
+      </h2>       
+      <p className="text-[16px] sm:text-lg text-left mt-1">         
+        Please refer to the <span className="font-bold">GolfMeet<br className="sm:hidden" /> Tournament Rules</span> <span className="inline-block">           
+          <span className="hidden sm:inline-block border-b border-[#014D4E]">here</span>
+          <span className="inline-block sm:hidden">here</span>
+        </span>       
+      </p>       
+      <div className="w-[78%] h-[1px] bg-[#014D4E] mt-2 opacity-80 sm:hidden"></div>     
+    </div>     
+    <div className="absolute right-8 top-1/2 transform -translate-y-1/2 sm:static sm:transform-none sm:mt-0">       
+      <svg         
+        width="20"          
+        height="38"         
+        viewBox="0 0 25 47"         
+        fill="none"         
+        xmlns="http://www.w3.org/2000/svg"         
+        className="sm:w-6 sm:h-12 md:w-7 md:h-14"       
+      >         
+        <path           
+          d="M1 1.5L23 23.5L1 45.5"           
+          stroke="#014D4E"           
+          strokeWidth="2"         
+        />       
+      </svg>     
+    </div>   
+  </div>
+</section>
 
       {/* Code of Conduct Section */}
       <section className="relative mt-32 px-4 flex items-center justify-center">
