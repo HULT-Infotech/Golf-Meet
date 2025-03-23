@@ -1,7 +1,7 @@
 import React from "react";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
+import tr_bg_mobile from "../assets/tr_bg_m.svg";
 import code_of_conduct_greenleft from "../assets/code-of-conduct/code-conduct-left.svg";
-import code_of_conduct_greenleft_mobile from "../assets/code-of-conduct/code-conduct-left-mobile.svg";
 import coc_coins1 from "../assets/coc-coins1.svg";
 import coc_coins2 from "../assets/coc-coins2.svg";
 import coc_coins3 from "../assets/coc-coins3.svg";
@@ -14,7 +14,6 @@ import mcoc_coins4 from "../assets/m-coin3.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
-import code_of_conduct_mobile from "../assets/code-of-conduct/bg-code-mobile.png"; // Added mobile background image
 
 function CodeOfConduct() {
   return (
@@ -23,10 +22,10 @@ function CodeOfConduct() {
       <section className="bg-gray-100 noise-bg relative flex flex-col md:min-h-[50vh] lg:min-h-[70vh] md:flex-row">
         <div className="flex flex-col w-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto">
 
-          <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20">
+        <div className="relative flex flex-col justify-center items-center md:items-start p-8 md:pl-10 md:p-0 xl:ml-20">
           <h1
-  className="font-quattrocento text-6xl lg:text-7xl xl:text-8xl max-w-2xl font-bold mb-4 text-[#201E15]"
-  style={{ fontSize: "80px", lineHeight: "1.1" }}
+  className="font-quattrocento text-5xl md:text-6xl lg:text-7xl xl:text-8xl max-w-2xl font-bold mb-4 mt-4 text-[#201E15] text-center md:text-left"
+  style={{ fontSize: "clamp(32px, 10vw, 80px)", lineHeight: "1.1" }}
 >
   <span className="whitespace-nowrap">PLAYER CODE</span>
   <br />
@@ -35,14 +34,20 @@ function CodeOfConduct() {
 
           </div>
 
-          {/* Right Image Section */}
-          <div className="flex relative -bottom-3 items-end px-4 sm:px-5 md:px-0">
-            <img
-              src={tr_bg}
-              alt="Golfers Illustration"
-              className="w-full object-contain pointer-events-none"
-            />
-          </div>
+          {/* Right Image Section with mobile-specific version */}
+          {/* Right Image Section with mobile-specific version */}
+<div className="flex relative -bottom-3 items-end px-0">
+  <img
+    src={tr_bg}
+    alt="Golfers Illustration"
+    className="w-full object-contain pointer-events-none hidden md:block"
+  />
+  <img
+    src={tr_bg_mobile}
+    alt="Golfers Illustration Mobile"
+    className="w-[85%] object-contain pointer-events-none md:hidden"
+  />
+</div>
         </div>
 
         {/* Decorative Green Element */}
@@ -50,11 +55,6 @@ function CodeOfConduct() {
           src={code_of_conduct_greenleft}
           alt="Green left element"
           className="hidden md:block absolute md:-bottom-12 left-0 w-[270px] md:w-[400px] lg:-bottom-24 object-contain pointer-events-none"
-        />
-        <img
-          src={code_of_conduct_greenleft_mobile}
-          alt="Green left element"
-          className="absolute md:hidden -bottom-20 sm:-bottom-20 left-0 w-[350px]"
         />
       </section>
 
