@@ -14,12 +14,19 @@ import mcoc_coins4 from "../assets/m-coin3.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
+import faq_bg_mobile from "../assets/paper.svg"; // New import
  
 function CodeOfConduct() {
   return (
     <div className="md:overflow-visible overflow-hidden"> {/* Added overflow hidden for mobile only */}
       <Navbar />
-      <section className="sm:bg-gray-100 noise-bg-m sm:noise-bg relative flex flex-col md:min-h-[50vh] lg:min-h-[70vh] md:flex-row">
+      <section className="sm:bg-gray-100 noise-bg-m sm:noise-bg relative flex flex-col md:min-h-[50vh] lg:min-h-[70vh] md:flex-row"
+      style={{
+                backgroundImage: `url(${faq_bg_mobile})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'top',
+                backgroundRepeat: 'no-repeat',
+              }}>
         <div className="flex flex-col w-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto">
 
         <div className="relative flex flex-col justify-center items-center md:items-start p-8 md:pl-10 md:p-0 xl:ml-20">

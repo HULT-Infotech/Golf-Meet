@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import faq_bg from "../assets/faq/right-bg.svg";
 import faq_greenleft from "../assets/faq/faq-green-left.svg";
 import faq_greenleft_mobile from "../assets/faq/faq-green-left-mobile.svg";
+import faq_bg_mobile from "../assets/paper.svg"; // New import
 import Footer from "../components/Footer";
 import gradientbox from "../assets/gradientbox.png"
 
@@ -64,7 +65,7 @@ function FaQ() {
           question:
             "Can I use an email address instead of a mobile number to use the GolfMeet app?",
           answer:
-            "You must use a mobile number to register. The GolfMeet tournament requires you to use the GolfMeet mobile app. However, please be assured that your mobile number will not be shared with any third party under any circumstances.",
+            "You must use a mobile number to register. The GolfMeet турни requires you to use the GolfMeet mobile app. However, please be assured that your mobile number will not be shared with any third party under any circumstances.",
         },
         {
           id: "different-country",
@@ -168,7 +169,6 @@ function FaQ() {
     document.getElementById(categoryId)?.scrollIntoView({ behavior: "smooth" });
   };
 
-  // Custom gradient style
   const categoryGradientStyle = {
     background:
       "linear-gradient(150deg, rgb(48, 92, 93) 0%, rgb(0, 54, 55) 50%, rgb(0, 53, 54) 100%)",
@@ -177,7 +177,15 @@ function FaQ() {
   return (
     <>
       <Navbar />
-      <section className="bg-gray-100 noise-bg relative flex flex-col md:min-h-[85vh] md:flex-row">
+      <section 
+        className="sm:bg-gray-100 sm:noise-bg relative flex flex-col h-[120vh] md:h-auto md:min-h-[85vh] md:flex-row"
+        style={{
+          backgroundImage: `url(${faq_bg_mobile})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'top',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         <div className="flex flex-col w-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
@@ -196,7 +204,7 @@ function FaQ() {
             <img
               src={faq_bg}
               alt="Golfers Illustration"
-              className="w-[80%] object-contain pointer-events-none"
+              className="w-[80%] object-contain pointer-events-none md:block hidden"
             />
           </div>
         </div>
@@ -215,63 +223,63 @@ function FaQ() {
 
       {/* FAQ Content Section */}
       <section className="py-8 md:py-16 px-4 bg-white mt-8 md:mt-24">
-  <div className="flex flex-col md:flex-row max-w-[1300px] mx-auto gap-6 md:gap-12">
-    {/* Left Sidebar - Using imported gradientbox image */}
-    <div
-      className="hidden md:block w-64 text-white p-4 md:p-6 rounded-md sticky top-32 self-start"
-      style={{
-        ...categoryGradientStyle,
-        background: `url(${gradientbox})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
-      <h3 className="font-quattrocentoSans font-bold text-[32px] leading-[100%] tracking-[0em] uppercase mb-2 relative">
-        CATEGORIES
-      </h3>
-      <ul className="text-sm mt-6">
-        {categoryData.map((category) => (
-          <li
-            key={category.id}
-            className={`py-3 cursor-pointer transition-colors duration-200 relative   ${
-              activeCategory === category.id ? "font-bold" : ""
-            }`}
-            onClick={() => handleCategoryClick(category.id)}
+        <div className="flex flex-col md:flex-row max-w-[1300px] mx-auto gap-6 md:gap-12">
+          {/* Left Sidebar - Using imported gradientbox image */}
+          <div
+            className="hidden md:block w-64 text-white p-4 md:p-6 rounded-md sticky top-32 self-start"
+            style={{
+              ...categoryGradientStyle,
+              background: `url(${gradientbox})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
           >
-            <span className="relative inline-block text-[#FFFFFFCC] after:content-[''] after:block after:w-full after:h-[1.4px] after:bg-white after:mt-1">
-              {category.title}
-            </span>
-          </li>
-        ))}
-      </ul>
-    </div>
+            <h3 className="font-quattrocentoSans font-bold text-[32px] leading-[100%] tracking-[0em] uppercase mb-2 relative">
+              CATEGORIES
+            </h3>
+            <ul className="text-sm mt-6">
+              {categoryData.map((category) => (
+                <li
+                  key={category.id}
+                  className={`py-3 cursor-pointer transition-colors duration-200 relative   ${
+                    activeCategory === category.id ? "font-bold" : ""
+                  }`}
+                  onClick={() => handleCategoryClick(category.id)}
+                >
+                  <span className="relative inline-block text-[#FFFFFFCC] after:content-[''] after:block after:w-full after:h-[1.4px] after:bg-white after:mt-1">
+                    {category.title}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-    {/* Main Content */}
-    <div className="flex-1">
-      {categoryData.map((category) => (
-        <div
-          id={category.id}
-          key={category.id}
-          className="mb-12 scroll-mt-20"
-        >
-          <h2 className="text-[#014D4E] text-2xl md:text-4xl font-bold mb-6 font-quattrocento uppercase">
-            {category.title.toUpperCase()}
-          </h2>
-          {category.items.map((item) => (
-            <FaqItem
-              key={item.id}
-              question={item.question}
-              answer={item.answer}
-              isOpen={openItems[item.id] || false}
-              toggleOpen={() => toggleItem(item.id)}
-            />
-          ))}
+          {/* Main Content */}
+          <div className="flex-1">
+            {categoryData.map((category) => (
+              <div
+                id={category.id}
+                key={category.id}
+                className="mb-12 scroll-mt-20"
+              >
+                <h2 className="text-[#014D4E] text-2xl md:text-4xl font-bold mb-6 font-quattrocento uppercase">
+                  {category.title.toUpperCase()}
+                </h2>
+                {category.items.map((item) => (
+                  <FaqItem
+                    key={item.id}
+                    question={item.question}
+                    answer={item.answer}
+                    isOpen={openItems[item.id] || false}
+                    toggleOpen={() => toggleItem(item.id)}
+                  />
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
       <Footer />
     </>
