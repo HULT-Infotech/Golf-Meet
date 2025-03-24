@@ -19,7 +19,7 @@ function CodeOfConduct() {
   return (
     <div className="md:overflow-visible overflow-hidden"> {/* Added overflow hidden for mobile only */}
       <Navbar />
-      <section className="bg-gray-100 noise-bg relative flex flex-col md:min-h-[50vh] lg:min-h-[70vh] md:flex-row">
+      <section className="sm:bg-gray-100 noise-bg-m sm:noise-bg relative flex flex-col md:min-h-[50vh] lg:min-h-[70vh] md:flex-row">
         <div className="flex flex-col w-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto">
 
         <div className="relative flex flex-col justify-center items-center md:items-start p-8 md:pl-10 md:p-0 xl:ml-20">
@@ -59,7 +59,7 @@ function CodeOfConduct() {
       </section>
 
       <section className="flex flex-col items-center justify-center mt-8 sm:mt-12 md:mt-16 relative">   
-  <div className="flex flex-col sm:flex-row justify-between items-start text-[#014D4E] bg-[#F3F8F8] w-full sm:w-[90%] md:w-[85%] p-6 sm:p-6 md:p-7 rounded-md">     
+  <div className="flex flex-col sm:flex-row justify-between items-start text-[#014D4E] bg-[#F3F8F8] w-[95%] sm:w-[90%] md:w-[85%] max-w-6xl] p-6 sm:p-6 md:p-7 rounded-md">     
     <div className="flex flex-col items-start w-full">       
       <h2 className="text-[34px] leading-tight sm:text-4xl md:text-5xl font-bold uppercase font-quattrocento text-left mb-2 sm:mb-0">         
         TOURNAMENT<br />RULES       
