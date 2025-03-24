@@ -232,7 +232,7 @@ function FaQ() {
       </section>
 
       {/* New Full-width Mobile Image with higher z-index */}
-      <div className="w-full md:hidden -mt-28 mb-4 relative z-10">
+      <div className="w-full md:hidden -mt-24 mb-4 relative z-10">
         <img
           src={faq_gm}
           alt="Full-width Golfers Illustration"
