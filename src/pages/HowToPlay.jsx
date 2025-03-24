@@ -18,6 +18,7 @@ import ground_1_mobile from "../assets/how-to-play-img/ground-1-mobile.svg";
 import ground_2_mobile from "../assets/how-to-play-img/ground-2-mobile.svg";
 import ground_3_mobile from "../assets/how-to-play-img/ground-3-mobile.svg";
 import ground_4_mobile from "../assets/how-to-play-img/ground-4-mobile.svg";
+import faq_bg_mobile from "../assets/paper.svg"; // New import
 
 import gold_coins_3 from "../assets/how-to-play-img/3-gold-coins.svg";
 import step_5_bg from "../assets/how-to-play-img/step_5_bg.webp";
@@ -26,7 +27,13 @@ const HowToPlay = () => {
   return (
     <>
       <Navbar />
-      <section className="bg-gray-100 noise-bg relative flex flex-col md:min-h-[92vh] md:flex-row ">
+      <section className="bg-gray-100 noise-bg relative flex flex-col md:min-h-[92vh] md:flex-row "
+      style={{
+                            backgroundImage: `url(${faq_bg_mobile})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'top',
+                            backgroundRepeat: 'no-repeat',
+                          }}>
         <div className="flex flex-col w-full justify-between md:justify-around  gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20">

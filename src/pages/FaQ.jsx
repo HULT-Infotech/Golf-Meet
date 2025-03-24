@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import faq_bg from "../assets/faq/right-bg.svg";
+import faq_mobile_hero from "../assets/faq-m.svg";
 import faq_greenleft from "../assets/faq/faq-green-left.svg";
 import faq_greenleft_mobile from "../assets/faq/faq-green-left-mobile.svg";
-import faq_bg_mobile from "../assets/paper.svg"; // New import
+import faq_gm from "../assets/f-gm.png";
+import faq_bg_mobile from "../assets/paper.svg";
 import Footer from "../components/Footer";
 import gradientbox from "../assets/gradientbox.png"
 
@@ -178,7 +180,7 @@ function FaQ() {
     <>
       <Navbar />
       <section 
-        className="sm:bg-gray-100 sm:noise-bg relative flex flex-col h-[120vh] md:h-auto md:min-h-[85vh] md:flex-row"
+        className="bg-gray-100 noise-bg relative flex flex-col h-auto md:min-h-[85vh] md:flex-row"
         style={{
           backgroundImage: `url(${faq_bg_mobile})`,
           backgroundSize: 'cover',
@@ -186,7 +188,7 @@ function FaQ() {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <div className="flex flex-col w-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
+        <div className="flex flex-col w-full justify-between md:justify-around md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
             <h1 className="font-quattrocento font-bold text-[2.3rem] text-[#201E15] sm:text-5xl lg:text-[80px] leading-[100%] tracking-[0.025em] mb-4">
@@ -200,11 +202,19 @@ function FaQ() {
           </div>
 
           {/* Right Image Section */}
-          <div className="flex items-end px-5 md:px-0">
+          <div className="flex items-center justify-center px-5 md:px-0 md:items-end sm:mt-0 -mt-8">
+            {/* Desktop Image */}
             <img
               src={faq_bg}
               alt="Golfers Illustration"
-              className="w-[80%] object-contain pointer-events-none md:block hidden"
+              className="w-[80%] object-contain pointer-events-none hidden md:block"
+            />
+            
+            {/* Mobile Image - Centered and reduced gap */}
+            <img
+              src={faq_mobile_hero}
+              alt="Golfers Mobile Illustration"
+              className="w-[75%] max-w-[400px] object-contain pointer-events-none md:hidden mx-auto"
             />
           </div>
         </div>
@@ -220,6 +230,15 @@ function FaQ() {
           className="absolute hidden -bottom-36 sm:-bottom-20 left-0 w-full"
         />
       </section>
+
+      {/* New Full-width Mobile Image with higher z-index */}
+      <div className="w-full md:hidden -mt-28 mb-4 relative z-10">
+        <img
+          src={faq_gm}
+          alt="Full-width Golfers Illustration"
+          className="w-full object-cover"
+        />
+      </div>
 
       {/* FAQ Content Section */}
       <section className="py-8 md:py-16 px-4 bg-white mt-8 md:mt-24">

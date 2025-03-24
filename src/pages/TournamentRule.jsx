@@ -8,6 +8,7 @@ import tr_last from "../assets/tournament-rule/tr-last.svg";
 import tr_mobile from "../assets/tournament-rule/tournaments-mobile.svg";
 import Footer from "../components/Footer";
 import gradientbox from "../assets/greenbox.png"
+import faq_bg_mobile from "../assets/paper.svg"; // New import
 
 function TournamentRule() {
   const [activeSection, setActiveSection] = useState("home");
@@ -92,7 +93,13 @@ function TournamentRule() {
       {/* Main container */}
       <div className="md:h-[100vh] flex flex-col relative">
         {/* Hero section */}
-        <section className="bg-gray-100 noise-bg relative flex flex-col h-[100vh] md:h-[65vh] md:flex-row">
+        <section className="bg-gray-100 noise-bg relative flex flex-col h-[100vh] md:h-[65vh] md:flex-row"
+        style={{
+                  backgroundImage: `url(${faq_bg_mobile})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'top',
+                  backgroundRepeat: 'no-repeat',
+                }}>
           <div className="flex flex-col w-full h-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
             {/* Text Section */}
             <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8 min-w-[300px] z-10">
