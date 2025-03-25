@@ -29,7 +29,7 @@ const HowToPlay = () => {
     <>
       <Navbar />
       <section 
-        className="bg-gray-100 noise-bg relative flex flex-col md:min-h-[80vh] md:flex-row"
+        className="bg-gray-100 noise-bg relative flex flex-col md:min-h-[80vh] md:flex-row mb-12 md:mb-0"
       >
         <div className="flex flex-col w-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
