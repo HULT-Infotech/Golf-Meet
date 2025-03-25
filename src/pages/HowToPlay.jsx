@@ -34,12 +34,12 @@ const HowToPlay = () => {
         <div className="flex flex-col w-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex flex-col justify-center sm:-mt-20 items-start p-8 md:pl-10 md:p-0 xl:ml-20">
-            <h1 className="font-quattrocento font-bold text-4xl sm:text-5xl lg:text-[96px] leading-[100%] tracking-[0.025em] whitespace-nowrap text-[#201E15]">
+            <h1 className="font-quattrocento font-bold text-4xl sm:text-5xl md:text-[3rem] lg:text-[96px] leading-[100%] tracking-[0.025em] whitespace-nowrap text-[#201E15]">
               HOW TO PLAY
             </h1>
-            <p className="text-base sm:text-lg md:text-xl font-semibold text-[#201E15] leading-relaxed">
+            <p className="text-base sm:text-lg md:text-lg lg:text-xl font-semibold text-[#201E15] leading-relaxed">
               After you have paid the tournament fees,
-              <br className="hidden md:block" />
+              <br className="hidden lg:block" />
               log into the GolfMeet mobile app.
             </p>
           </div>
@@ -78,7 +78,7 @@ const HowToPlay = () => {
                 1
               </span>
               <div className="md:mt-2 w-full">
-                <h2 className="font-quattrocento font-bold text-3xl sm:text-5xl md:text-[52px] lg:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-xl">
+                <h2 className="font-quattrocento font-bold text-3xl sm:text-5xl md:text-[40px] lg:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-xl">
                   SPECIFY YOUR AVAILABILITY
                 </h2>
 
@@ -113,7 +113,7 @@ const HowToPlay = () => {
                 2
               </span>
               <div className="md:mt-2 w-full">
-                <h2 className="font-quattrocento font-bold text-3xl sm:text-5xl md:text-[52px] lg:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-2xl">
+                <h2 className="font-quattrocento font-bold text-3xl sm:text-5xl md:text-[40px] lg:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-2xl">
                   GET MATCHED WITH OTHER PLAYERS
                 </h2>
                 <p className="mt-4 sm:mt-6 font-quattrocentoSans font-normal text-base sm:text-[20px] md:text-[22px] leading-[100%] tracking-[0em] text-black text-wrap max-w-[550px]">
@@ -150,7 +150,7 @@ const HowToPlay = () => {
                 3
               </span>
               <div className="md:mt-2 w-full">
-                <h2 className="font-quattrocento uppercase font-bold text-3xl sm:text-5xl md:text-[52px] lg:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-4xl">
+                <h2 className="font-quattrocento uppercase font-bold text-3xl sm:text-5xl md:text-[40px] lg:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-4xl">
                   Finalize the plans with your group
                 </h2>
                 <p className="mt-4 sm:mt-6 font-quattrocentoSans font-normal text-base sm:text-[20px] md:text-[22px] leading-[100%] tracking-[0em] text-black text-wrap max-w-[450px]">
@@ -186,7 +186,7 @@ const HowToPlay = () => {
                 4
               </span>
               <div className="md:mt-2 w-full">
-                <h2 className="font-quattrocento uppercase font-bold text-3xl sm:text-5xl md:text-[52px] lg:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-4xl">
+                <h2 className="font-quattrocento uppercase font-bold text-3xl sm:text-5xl md:text-[40px] lg:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-4xl">
                   Play your round and keep scores
                 </h2>
                 <p className="mt-4 sm:mt-6 font-quattrocentoSans font-normal text-base sm:text-[20px] md:text-[22px] leading-[100%] tracking-[0em] text-black text-wrap max-w-[460px]">
@@ -225,20 +225,20 @@ const HowToPlay = () => {
           </div>
           <div className="relative -bottom-10 p-8 md:-bottom-16 lg:-left-8 xl:-left-4 flex flex-col md:flex-row justify-center items-center w-[90%] mx-auto min-h-[600px]">
             <div className="flex flex-col md:flex-row items-start md:space-x-8 w-full md:w-auto">
-              <span className="w-[45px] font-quattrocentoSans h-[60px] md:w-[60px] md:h-[80px] lg:w-[90px] lg:h-[120px] rounded-full bg-white text-[#014D4E] flex items-center justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
+              <span className="w-[45px] font-quattrocentoSans h-[60px] md:w-[60px] md:h-[80px] lg:w-[90px] lg:h-[120px] rounded-full bg-white text-[#014D4E] flex items-center justify-center md:-mt-[17.4rem] lg:mt-2 text-3xl sm:text-5xl font-bold flex-shrink-0">
                 5
               </span>
-              <div className="md:mt-2 w-full">
-                <h2 className="font-quattrocento uppercase font-bold text-3xl sm:text-5xl md:text-[52px] lg:text-[64px] leading-[100%] tracking-[0em] text-white max-w-80 md:max-w-2xl">
+              <div className="md:-mt-[17rem] lg:mt-2 w-full">
+                <h2 className="font-quattrocento uppercase font-bold text-3xl sm:text-5xl md:text-[40px] lg:text-[64px] leading-[100%] tracking-[0em] text-white max-w-80 md:max-w-2xl">
                   Earn your GolfMeet points
                 </h2>
-                <p className="mt-4 sm:mt-6 font-quattrocentoSans font-normal text-base sm:text-[20px] md:text-[22px] leading-[100%] tracking-[0em] text-gray-300 text-wrap max-w-[520px]">
+                <p className="mt-4 sm:mt-6 font-quattrocentoSans font-normal text-base sm:text-[20px] md:text-[18px] lg:text-[22px] leading-[100%] tracking-[0em] text-gray-300 text-wrap max-w-[520px]">
                   GolfMeet converts your scores into points. As you play more
                   rounds, GolfMeet calculates your handicap using a proprietary
                   method. This handicap is used to adjust your points further.
                 </p>
 
-                <p className="mt-4 sm:mt-6 font-quattrocentoSans font-normal text-base sm:text-[20px] md:text-[22px] leading-[100%] tracking-[0em] text-gray-300 text-wrap max-w-[520px]">
+                <p className="mt-4 sm:mt-6 font-quattrocentoSans font-normal text-base sm:text-[20px] md:text-[18px] lg:text-[22px] leading-[100%] tracking-[0em] text-gray-300 text-wrap max-w-[520px]">
                   The Leaderboard will reflect your standing based on your
                   points.
                 </p>
