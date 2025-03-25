@@ -76,11 +76,11 @@ const HowToPlay = () => {
         {/* Step 1 */}
         <div className="relative flex flex-col justify-center items-center w-full py-10 md:p-5 px-5">
           <div className="flex flex-col md:flex-row justify-center items-center lg:items-start md:justify-between w-full mx-auto max-w-6xl">
-            <div className="flex flex-col md:flex-row items-start md:space-x-8 lg:mt-36">
-              <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold">
+            <div className="flex flex-col md:flex-row items-start md:space-x-8 lg:mt-36 w-full md:w-auto">
+              <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
                 1
               </span>
-              <div className="md:mt-2">
+              <div className="md:mt-2 w-full">
                 <h2 className="font-quattrocento font-bold text-3xl sm:text-5xl md:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-xl">
                   SPECIFY YOUR AVAILABILITY
                 </h2>
@@ -91,7 +91,7 @@ const HowToPlay = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[85%] sm:w-[45%] md:w-[26vw] p-2 md:p-0">
+            <div className="w-[85%] sm:w-[45%] md:w-[26vw] p-2 md:p-0 mt-6 md:mt-0">
               <img src={Mobile_Screen_Step_1} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
@@ -108,15 +108,14 @@ const HowToPlay = () => {
           />
         </div>
 
-        {/* Subsequent steps (Step 2-5) follow the same pattern with similar responsive adjustments */}
         {/* Step 2 */}
         <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5">
           <div className="flex flex-col md:flex-row-reverse justify-center items-center lg:items-start md:justify-between w-full mx-auto max-w-7xl">
-            <div className="flex flex-col md:flex-row md:justify-between items-start md:space-x-8 lg:mt-32">
-              <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold">
+            <div className="flex flex-col md:flex-row md:justify-between items-start md:space-x-8 lg:mt-32 w-full md:w-auto">
+              <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
                 2
               </span>
-              <div className="md:mt-2">
+              <div className="md:mt-2 w-full">
                 <h2 className="font-quattrocento font-bold text-3xl sm:text-5xl md:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-2xl">
                   GET MATCHED WITH OTHER PLAYERS
                 </h2>
@@ -130,7 +129,7 @@ const HowToPlay = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[75%] sm:w-[40%] md:w-[22vw] p-4 md:p-0">
+            <div className="w-[75%] sm:w-[40%] md:w-[22vw] p-4 md:p-0 mt-6 md:mt-0">
               <img src={Mobile_Screen_Step_2} alt="Mobile_Screen_Step_2" />
             </div>
           </div>
@@ -149,11 +148,11 @@ const HowToPlay = () => {
         {/* Step 3 */}
         <div className="flex relative flex-col justify-center md:min-h-[750px] items-center w-full py-10 md:p-5 px-5">
           <div className="flex flex-col md:flex-row justify-center items-center lg:items-start md:justify-between w-full mx-auto max-w-6xl">
-            <div className="flex flex-col md:flex-row items-start md:space-x-8 lg:mt-32">
-              <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold">
+            <div className="flex flex-col md:flex-row items-start md:space-x-8 lg:mt-32 w-full md:w-auto">
+              <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
                 3
               </span>
-              <div className="md:mt-2">
+              <div className="md:mt-2 w-full">
                 <h2 className="font-quattrocento font-bold uppercase text-3xl sm:text-5xl md:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-4xl">
                   Finalize the plans with your group
                 </h2>
@@ -166,7 +165,7 @@ const HowToPlay = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[75%] sm:w-[40%] md:w-[22vw] p-4 md:mt-20 md:p-0">
+            <div className="w-[75%] sm:w-[40%] md:w-[22vw] p-4 md:mt-20 md:p-0 mt-6 md:mt-0">
               <img src={Mobile_Screen_Step_2} alt="Mobile_Screen_Step_2" />
             </div>
           </div>
@@ -185,11 +184,11 @@ const HowToPlay = () => {
         {/* Step 4 */}
         <div className="flex relative flex-col justify-start md:min-h-[750px] items-center w-full py-10 md:p-5 px-5 mb-10">
           <div className="flex flex-col md:flex-row-reverse justify-center items-center md:items-start md:justify-around w-full mx-auto max-w-screen-xl">
-            <div className="flex flex-col md:flex-row items-start md:space-x-8 lg:mt-32">
-              <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold">
+            <div className="flex flex-col md:flex-row items-start md:space-x-8 lg:mt-32 w-full md:w-auto">
+              <span className="w-[45px] h-[60px] md:w-[90px] md:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
                 4
               </span>
-              <div className="md:mt-2">
+              <div className="md:mt-2 w-full">
                 <h2 className="font-quattrocento uppercase font-bold text-3xl sm:text-5xl md:text-[64px] leading-[100%] tracking-[0em] text-black max-w-80 md:max-w-4xl">
                   Play your round and keep scores
                 </h2>
@@ -203,7 +202,7 @@ const HowToPlay = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[85%] sm:w-[45%] md:w-[26vw] p-2 md:mt-14 md:p-0">
+            <div className="w-[85%] sm:w-[45%] md:w-[26vw] p-2 md:mt-14 md:p-0 mt-6 md:mt-0">
               <img src={Mobile_Screen_Step_1} alt="Mobile_Screen_Step_1" />
             </div>
           </div>
@@ -228,11 +227,11 @@ const HowToPlay = () => {
             <img src={step_5_bg_mobile} alt="step_5_bg_mobile" className="w-full" />
           </div>
           <div className="relative -bottom-10 p-8 md:-bottom-16 lg:-left-8 xl:-left-4 flex flex-col md:flex-row justify-center items-center w-[90%] mx-auto min-h-[600px]">
-            <div className="flex flex-col md:flex-row items-start md:space-x-8">
-              <span className="w-[45px] font-quattrocentoSans h-[60px] md:w-[90px] md:h-[120px] rounded-full bg-white text-[#014D4E] flex items-center justify-center text-3xl sm:text-5xl font-bold">
+            <div className="flex flex-col md:flex-row items-start md:space-x-8 w-full md:w-auto">
+              <span className="w-[45px] font-quattrocentoSans h-[60px] md:w-[90px] md:h-[120px] rounded-full bg-white text-[#014D4E] flex items-center justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
                 5
               </span>
-              <div className="md:mt-2">
+              <div className="md:mt-2 w-full">
                 <h2 className="font-quattrocento uppercase font-bold text-3xl sm:text-5xl md:text-[64px] leading-[100%] tracking-[0em] text-white max-w-80 md:max-w-2xl">
                   Earn your GolfMeet points
                 </h2>
@@ -248,7 +247,7 @@ const HowToPlay = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[80%] -rotate-3 sm:w-[45%] md:w-[26vw] p-2 md:p-0">
+            <div className="w-[80%] -rotate-3 sm:w-[45%] md:w-[26vw] p-2 md:p-0 mt-6 md:mt-0">
               <img src={gold_coins_3} alt="gold_coins_3" />
             </div>
           </div>
