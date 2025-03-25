@@ -34,7 +34,7 @@ const HowToPlay = () => {
         <div className="flex flex-col w-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex flex-col justify-center sm:-mt-20 items-start p-8 md:pl-10 md:p-0 xl:ml-20">
-            <h1 className="font-quattrocento font-bold text-4xl sm:text-5xl md:text-[3rem] lg:text-[96px] leading-[100%] tracking-[0.025em] whitespace-nowrap text-[#201E15]">
+            <h1 className="font-quattrocento font-bold text-4xl sm:text-5xl md:text-[3rem] lg:text-[clamp(70px,5vw+1.18rem,100px)] leading-[100%] tracking-[0.025em] whitespace-nowrap text-[#201E15]">
               HOW TO PLAY
             </h1>
             <p className="text-base sm:text-lg md:text-lg lg:text-xl font-semibold text-[#201E15] leading-relaxed">
@@ -69,12 +69,13 @@ const HowToPlay = () => {
       <section className="flex flex-col w-full">
         {/* Step 1 */}
         <div 
-  className="relative flex flex-col justify-center items-center w-full py-10 md:p-5 px-5 
-             md:h-[30rem] lg:h-auto"
+  className="relative flex flex-col  items-center w-full py-10 md:p-5 px-5  md:mt-10
+             md:h-[25rem] lg:h-[40rem]"
 >
           <div className="flex flex-col md:flex-row justify-center items-center lg:items-start md:justify-between w-full mx-auto max-w-6xl">
             <div className="flex flex-col md:flex-row items-start md:space-x-8 lg:mt-36 w-full md:w-auto">
-              <span className="w-[45px] h-[60px] md:w-[60px] md:h-[80px] lg:w-[90px] lg:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
+              <span className="w-[45px] h-[60px] md:w-[60px] md:h-[80px] lg:w-[clamp(45px,5vw,110px)] 
+                 lg:h-[clamp(60px,7vw,120px)] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
                 1
               </span>
               <div className="md:mt-2 w-full">
@@ -106,10 +107,12 @@ const HowToPlay = () => {
         </div>
 
         {/* Step 2 */}
-        <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5 md:h-[30rem] lg:h-auto">
+        <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5 lg:-mt-8
+             md:h-[25rem] lg:h-[50rem]">
           <div className="flex flex-col md:flex-row-reverse justify-center items-center lg:items-start md:justify-between w-full mx-auto max-w-7xl">
             <div className="flex flex-col md:flex-row md:justify-between items-start md:space-x-8 lg:mt-32 w-full md:w-auto">
-              <span className="w-[45px] h-[60px] md:w-[60px] md:h-[80px] lg:w-[90px] lg:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
+              <span className="w-[45px] h-[60px] md:w-[60px] md:h-[80px] lg:w-[clamp(45px,5vw,110px)] 
+                 lg:h-[clamp(60px,7vw,120px)] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
                 2
               </span>
               <div className="md:mt-2 w-full">
@@ -143,10 +146,11 @@ const HowToPlay = () => {
         </div>
 
         {/* Step 3 */}
-        <div className="flex relative flex-col justify-center md:h-[30rem] lg:h-[45rem] items-center w-full py-10 md:p-5 px-5">
+        <div className="flex relative flex-col justify-center md:h-[30rem] lg:h-[50rem] items-center w-full py-10 md:p-5 px-5 lg:-mt-12">
           <div className="flex flex-col md:flex-row justify-center items-center lg:items-start md:justify-between w-full mx-auto max-w-6xl">
             <div className="flex flex-col md:flex-row items-start md:space-x-8 lg:mt-32 w-full md:w-auto">
-              <span className="w-[45px] h-[60px] md:w-[60px] md:h-[80px] lg:w-[90px] lg:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
+              <span className="w-[45px] h-[60px] md:w-[60px] md:h-[80px] lg:w-[clamp(45px,5vw,110px)] 
+                 lg:h-[clamp(60px,7vw,120px)] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
                 3
               </span>
               <div className="md:mt-2 w-full">
@@ -179,10 +183,11 @@ const HowToPlay = () => {
         </div>
 
         {/* Step 4 */}
-        <div className="flex relative flex-col justify-start md:h-[30rem] lg:h-[45rem] items-center w-full py-10 md:p-5 px-5 mb-10">
+        <div className="flex relative flex-col justify-start md:h-[30rem] lg:h-[45rem] items-center w-full py-10 md:p-5 px-5 mb-10 lg:mt-24">
           <div className="flex flex-col md:flex-row-reverse justify-center items-center md:items-start md:justify-around w-full mx-auto max-w-screen-xl">
             <div className="flex flex-col md:flex-row items-start md:space-x-8 lg:mt-32 w-full md:w-auto">
-              <span className="w-[45px] h-[60px] md:w-[60px] md:h-[80px] lg:w-[90px] lg:h-[120px] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
+              <span className="w-[45px] h-[60px] md:w-[60px] md:h-[80px] lg:w-[clamp(45px,5vw,110px)] 
+                 lg:h-[clamp(60px,7vw,120px)] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
                 4
               </span>
               <div className="md:mt-2 w-full">
@@ -225,20 +230,21 @@ const HowToPlay = () => {
           </div>
           <div className="relative -bottom-10 p-8 md:-bottom-16 lg:-left-8 xl:-left-4 flex flex-col md:flex-row justify-center items-center w-[90%] mx-auto min-h-[600px]">
             <div className="flex flex-col md:flex-row items-start md:space-x-8 w-full md:w-auto">
-              <span className="w-[45px] font-quattrocentoSans h-[60px] md:w-[60px] md:h-[80px] lg:w-[90px] lg:h-[120px] rounded-full bg-white text-[#014D4E] flex items-center justify-center md:-mt-[17.4rem] lg:mt-2 text-3xl sm:text-5xl font-bold flex-shrink-0">
+              <span className="w-[45px] font-quattrocentoSans h-[60px] md:w-[60px] md:h-[80px] lg:w-[clamp(45px,5vw,110px)] 
+                 lg:h-[clamp(60px,7vw,120px)] rounded-full bg-white text-[#014D4E] flex items-center justify-center lg:ml-2 xl:ml-0 md:-mt-[17.4rem] lg:-mt-44 xl:mt-2 text-3xl sm:text-5xl font-bold flex-shrink-0">
                 5
               </span>
-              <div className="md:-mt-[17rem] lg:mt-2 w-full">
-                <h2 className="font-quattrocento uppercase font-bold text-3xl sm:text-5xl md:text-[40px] lg:text-[64px] leading-[100%] tracking-[0em] text-white max-w-80 md:max-w-2xl">
+              <div className="md:-mt-[17rem] lg:-mt-44 xl:mt-2 w-full">
+                <h2 className="font-quattrocento uppercase font-bold text-3xl sm:text-5xl md:text-[40px] lg:text-[clamp(40px,5vw,64px)] leading-[100%] tracking-[0em] text-white max-w-80 md:max-w-2xl">
                   Earn your GolfMeet points
                 </h2>
-                <p className="mt-4 sm:mt-6 font-quattrocentoSans font-normal text-base sm:text-[20px] md:text-[18px] lg:text-[22px] leading-[100%] tracking-[0em] text-gray-300 text-wrap max-w-[520px]">
+                <p className="mt-4 sm:mt-6 font-quattrocentoSans font-normal text-base sm:text-[20px] md:text-[18px] lg:text-[clamp(18px,3vw+0.5rem,22px)] leading-[100%] tracking-[0em] text-gray-300 text-wrap max-w-[520px]">
                   GolfMeet converts your scores into points. As you play more
                   rounds, GolfMeet calculates your handicap using a proprietary
                   method. This handicap is used to adjust your points further.
                 </p>
 
-                <p className="mt-4 sm:mt-6 font-quattrocentoSans font-normal text-base sm:text-[20px] md:text-[18px] lg:text-[22px] leading-[100%] tracking-[0em] text-gray-300 text-wrap max-w-[520px]">
+                <p className="mt-4 sm:mt-6 font-quattrocentoSans font-normal text-base sm:text-[20px] md:text-[18px] lg:text-[clamp(18px,3vw+0.5rem,22px)] leading-[100%] tracking-[0em] text-gray-300 text-wrap max-w-[520px]">
                   The Leaderboard will reflect your standing based on your
                   points.
                 </p>
