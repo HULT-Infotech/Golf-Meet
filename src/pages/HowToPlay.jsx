@@ -34,7 +34,7 @@ const HowToPlay = () => {
         <div className="flex flex-col w-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex flex-col justify-center sm:-mt-20 items-start p-8 md:pl-10 md:p-0 xl:ml-20">
-            <h1 className="font-quattrocento font-bold text-4xl sm:text-5xl md:text-[3rem] lg:text-[clamp(70px,5vw+1.18rem,100px)] leading-[100%] tracking-[0.025em] whitespace-nowrap text-[#201E15]">
+            <h1 className="font-quattrocento font-bold text-4xl sm:text-5xl md:text-[3rem] lg:text-[clamp(70px,5vw+1.2rem,100px)] leading-[100%] tracking-[0.025em] whitespace-nowrap text-[#201E15]">
               HOW TO PLAY
             </h1>
             <p className="text-base sm:text-lg md:text-lg lg:text-xl font-semibold text-[#201E15] leading-relaxed">
@@ -45,7 +45,7 @@ const HowToPlay = () => {
           </div>
 
           {/* Right Image Section */}
-          <div className="flex items-end px-5 md:px-0">
+          <div className="flex items-end px-5 md:px-0 xl:mt-4">
             <img
               src={howToPlay_bg}
               alt="Golfers Illustration"
