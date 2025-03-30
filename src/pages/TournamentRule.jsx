@@ -8,7 +8,6 @@ import tr_last from "../assets/tournament-rule/tr-last.svg";
 import tr_mobile from "../assets/tournament-rule/tournaments-mobile.svg";
 import Footer from "../components/Footer";
 import gradientbox from "../assets/greenbox.png"
-import faq_bg_mobile from "../assets/paper.svg"; // New import
 
 function TournamentRule() {
   const [activeSection, setActiveSection] = useState("home");
@@ -93,13 +92,7 @@ function TournamentRule() {
       {/* Main container */}
       <div className="md:h-[100vh] flex flex-col relative">
         {/* Hero section */}
-        <section className="bg-gray-100 noise-bg relative flex flex-col h-[100vh] md:h-[65vh] md:flex-row"
-        style={{
-                  backgroundImage: `url(${faq_bg_mobile})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'top',
-                  backgroundRepeat: 'no-repeat',
-                }}>
+        <section className="bg-gray-100 noise-bg relative flex flex-col h-auto md:h-[100vh] md:flex-row">
           <div className="flex flex-col w-full h-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
             {/* Text Section */}
             <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8 min-w-[300px] z-10">
@@ -108,33 +101,44 @@ function TournamentRule() {
               </h1>
             </div>
 
-            {/* Right Image Section */}
-            <img
-              src={tr_bg}
-              alt="Golfers Illustration"
-              className="w-full h-auto md:w-auto md:h-full max-w-[800px] pointer-events-none relative md:-bottom-[25px] md:right-0 md:mr-12 hidden md:block"
-            />
+            {/* Right Image Section - Updated to match HowToPlay style */}
+            <div className="flex items-end px-5 md:px-0">
+              <img
+                src={tr_bg}
+                alt="Golfers Illustration"
+                className="w-full h-auto object-contain pointer-events-none md:mr-12 md:mt-4 hidden md:block"
+              />
+            </div>
+          </div>
+          
+          {/* Mobile image - Updated to match HowToPlay style */}
+          <div className="flex items-end px-5 w-full md:hidden">
             <img
               src={tr_mobile}
               alt="Mobile Golfers Illustration"
-              className="w-3/4 h-auto pointer-events-none absolute bottom-44 left-1/2 transform -translate-x-1/2 object-contain md:hidden"
+              className="w-full h-auto pointer-events-none object-contain"
             />
           </div>
-          {/* Decorative elements */}
+          
+          {/* Desktop decorative element */}
           <img
             src={tr_greenleft}
             alt="Green left element"
             className="hidden md:block absolute md:-bottom-4 left-0 w-[160px] md:w-[240px] lg:w-[360px] xl:w-[460px] lg:-bottom-8 object-contain pointer-events-none"
           />
+        </section>
+
+        {/* Mobile decorative element - Moved outside the section */}
+        <div className="relative md:hidden">
           <img
             src={tr_greenleft_m}
             alt="Green left element mobile"
-            className="absolute md:hidden bottom-16 left-0 w-full object-contain pointer-events-none z-0"
+            className="absolute w-full object-contain pointer-events-none -top-16 z-0 bottom-0 left-0"
           />
-        </section>
+        </div>
 
         {/* Player Code of Conduct section */}
-        <section className="flex flex-col items-center justify-center mt-16 relative">
+        <section className="flex flex-col items-center justify-center mt-52 relative">
           <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">
               <h2 className="text-5xl font-bold uppercase font-quattrocento">
@@ -433,11 +437,14 @@ function TournamentRule() {
             max-height: 60vh;
             object-fit: contain;
           }
-          img[src="${tr_greenleft_m}"].absolute.md\\:hidden {
+          /* Updated mobile green element styling */
+          img[src="${tr_greenleft_m}"] {
             width: 100vw;
-            margin-top: 3rem;
+            position: absolute;
+            bottom: 0;
             left: 0;
             right: 0;
+            z-index: 0;
           }
           /* Mobile sections navigation styling */
           .overflow-x-auto {
