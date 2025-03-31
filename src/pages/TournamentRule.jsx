@@ -90,7 +90,7 @@ function TournamentRule() {
     <>
       <Navbar />
       {/* Main container */}
-      <div className="md:h-[100vh] flex flex-col relative">
+      <div className="md:h-[108vh] flex flex-col relative">
         {/* Hero section */}
         <section className="bg-gray-100 noise-bg relative flex flex-col h-auto md:h-[100vh] md:flex-row">
           <div className="flex flex-col w-full h-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
@@ -138,7 +138,7 @@ function TournamentRule() {
         </div>
 
         {/* Player Code of Conduct section */}
-        <section className="flex flex-col items-center justify-center mt-52 relative">
+        <section className="flex flex-col items-center justify-center mt-52 md:mt-12 relative">
           <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">
               <h2 className="text-5xl font-bold uppercase font-quattrocento">
@@ -205,7 +205,7 @@ function TournamentRule() {
       </div>
 
       {/* Main content section */}
-      <section className="flex relative justify-center w-full mx-auto max-w-screen-xl px-4 sm:px-6 md:px-8">
+      <section className="flex relative md:mt-12 justify-center w-full mx-auto max-w-screen-xl px-4 sm:px-6 md:px-8">
         {/* Sidebar */}
         <div
           ref={sidebarRef}

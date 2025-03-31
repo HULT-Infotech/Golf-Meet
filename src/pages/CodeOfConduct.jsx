@@ -14,11 +14,10 @@ import mcoc_coins4 from "../assets/m-coin3.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
-import faq_bg_mobile from "../assets/paper.svg"; // New import
  
 function CodeOfConduct() {
   return (
-    <div className="md:overflow-visible overflow-hidden"> {/* Added overflow hidden for mobile only */}
+    <div className="md:overflow-visible overflow-hidden">
       <Navbar />
       <section 
   className="sm:bg-gray-100 noise-bg-m sm:noise-bg relative flex flex-col md:min-h-[50vh] lg:min-h-[70vh] md:flex-row"

@@ -10,13 +10,7 @@ import { Link } from "react-router-dom";
 function LandingPage() {
   return (
     <section className="min-h-screen text-center mb-10">
-      <div className="relative flex flex-col min-h-[70vh] bg-gray-50 noise-bg"
-      style={{
-                      backgroundImage: `url(${faq_bg_mobile})`,
-                      backgroundSize: 'cover',
-                      backgroundPosition: 'top',
-                      backgroundRepeat: 'no-repeat',
-                    }}>
+      <div className="relative flex flex-col min-h-[70vh] bg-gray-50 noise-bg">
         {/* Top Navbar */}
         <div className="lg:absolute z-50 top-0 w-full flex justify-between items-center px-5 lg:px-10 py-10 flex-col-reverse md:flex-row">
           <div className="flex gap-10 mt-4 md:mt-0 w-full lg:w-auto">
