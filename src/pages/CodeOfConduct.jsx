@@ -20,7 +20,7 @@ function CodeOfConduct() {
     <div className="md:overflow-visible overflow-hidden">
       <Navbar />
       <section 
-  className="sm:bg-gray-100 noise-bg-m sm:noise-bg relative flex flex-col md:min-h-[50vh] lg:min-h-[70vh] md:flex-row"
+  className="sm:bg-gray-100 noise-bg-m sm:noise-bg relative flex flex-col md:min-h-[50vh] lg:min-h-[78vh] md:flex-row"
   
 >
   <div className="flex flex-col w-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto">
@@ -36,7 +36,7 @@ function CodeOfConduct() {
     </div>
 
     {/* Right Image Section with mobile-specific version */}
-    <div className="flex relative -bottom-3 items-end px-0">
+    <div className="flex relative bottom-0 items-end px-0">
       <img
         src={tr_bg}
         alt="Golfers Illustration"
@@ -110,12 +110,12 @@ function CodeOfConduct() {
         <img
           src={coc_coins1}
           alt="Coins"
-          className="absolute top-[2%] right-20 w-[150px] md:w-[240px] z-30 hidden md:block"
+          className="absolute top-[3%] right-20 w-[150px] lg:w-[180px] lg:-right-6 xl:right-20 xl:w-[200px] z-30 hidden md:block"
         />
         <img
           src={coc_coins2}
           alt="Coins"
-          className="absolute top-[13%] left-20 w-[100px] md:w-[150px] z-30 hidden md:block"
+          className="absolute top-[11%] left-20 w-[100px] lg:w-[120px] lg:left-2 xl:left-20 xl:w-[140px] md:w-[150px] z-30 hidden md:block"
         />
         <img
           src={mcoc_coins1}
