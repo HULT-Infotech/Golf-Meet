@@ -1,7 +1,8 @@
 import React from "react";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
+import tr_bg_mobile from "../assets/check.svg";
+import tr_dec_mobile from "../assets/green-m.svg";
 import code_of_conduct_greenleft from "../assets/code-of-conduct/code-conduct-left.svg";
-import code_of_conduct_greenleft_mobile from "../assets/code-of-conduct/code-conduct-left-mobile.svg";
 import coc_coins1 from "../assets/coc-coins1.svg";
 import coc_coins2 from "../assets/coc-coins2.svg";
 import coc_coins3 from "../assets/coc-coins3.svg";
@@ -14,79 +15,84 @@ import mcoc_coins4 from "../assets/m-coin3.png";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
-import code_of_conduct_mobile from "../assets/code-of-conduct/bg-code-mobile.png"; // Added mobile background image
-
+ 
 function CodeOfConduct() {
   return (
-    <div className="md:overflow-visible overflow-hidden"> {/* Added overflow hidden for mobile only */}
+    <div className="md:overflow-visible overflow-hidden">
       <Navbar />
-      <section className="bg-gray-100 noise-bg relative flex flex-col md:min-h-[50vh] lg:min-h-[70vh] md:flex-row">
-        <div className="flex flex-col w-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto">
-
-          <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20">
-          <h1
-  className="font-quattrocento text-6xl lg:text-7xl xl:text-8xl max-w-2xl font-bold mb-4 text-[#201E15]"
-  style={{ fontSize: "80px", lineHeight: "1.1" }}
+      <section 
+      
+  className="sm:bg-gray-100 sm:noise-bg noise-bg relative flex flex-col md:min-h-[70vh] lg:min-h-[78vh] md:flex-row tr-bg-m"
 >
-  <span className="whitespace-nowrap">PLAYER CODE</span>
-  <br />
-  OF CONDUCT
-</h1>
+  <div className="flex flex-col w-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto">
+    <div className="relative flex flex-col justify-center items-center md:items-start p-8 md:pl-10 md:p-0 xl:ml-20">
+      <h1
+        className="font-quattrocento text-5xl md:text-6xl md:text-[37px]  lg:text-[55px] xl:text-8xl max-w-2xl font-bold mb-4 mt-4 text-[#201E15] text-center md:text-left xl:text-[80px]"
+        style={{lineHeight: "1.1" }}
+      >
+        <span className="whitespace-nowrap">PLAYER CODE</span>
+        <br />
+        OF CONDUCT
+      </h1>
+    </div>
 
-          </div>
+    {/* Right Image Section with mobile-specific version */}
+    <div className="flex relative bottom-0 items-end px-0">
+      <img
+        src={tr_bg}
+        alt="Golfers Illustration"
+        className="w-full object-contain pointer-events-none hidden md:block"
+      />
+      <img
+        src={tr_bg_mobile}
+        alt="Golfers Illustration Mobile"
+        className="w-[90%] object-contain pointer-events-none md:hidden"
+      />
+    </div>
+  </div>
 
-          {/* Right Image Section */}
-          <div className="flex relative -bottom-3 items-end px-4 sm:px-5 md:px-0">
-            <img
-              src={tr_bg}
-              alt="Golfers Illustration"
-              className="w-full object-contain pointer-events-none"
-            />
-          </div>
-        </div>
-
-        {/* Decorative Green Element */}
-        <img
-          src={code_of_conduct_greenleft}
-          alt="Green left element"
-          className="hidden md:block absolute md:-bottom-12 left-0 w-[270px] md:w-[400px] lg:-bottom-24 object-contain pointer-events-none"
-        />
-        <img
-          src={code_of_conduct_greenleft_mobile}
-          alt="Green left element"
-          className="absolute md:hidden -bottom-20 sm:-bottom-20 left-0 w-[350px]"
-        />
-      </section>
-
-      <section className="flex flex-col items-center justify-center mt-8 sm:mt-12 md:mt-16 relative">
-        <div className="flex flex-col sm:flex-row justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[95%] sm:w-[90%] md:w-[85%] p-4 sm:p-6 md:p-7 rounded-md">
-          <div className="flex flex-col">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase font-quattrocento text-center sm:text-left mb-2 sm:mb-0" style={{ fontSize: "clamp(32px, 6vw, 52px)" }}>
+  {/* Decorative Green Element */}
+  <img
+    src={code_of_conduct_greenleft}
+    alt="Green left element"
+    className="hidden md:block absolute md:-bottom-20 left-0 w-[270px] lg:w-[400px] lg:-bottom-24 object-contain pointer-events-none"
+  />
+  
+  {/* Mobile decorative element - only visible on mobile */}
+  <img
+    src={tr_dec_mobile}
+    alt="Mobile decorative element"
+    className="absolute -bottom-10 left-0 w-[180px] object-contain pointer-events-none md:hidden"
+  />
+</section>
+<section className="flex flex-col items-center justify-center  mt-20 md:mt-20 xl:mt-24 relative mb-6 sm:mb-0">
+          <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
+            <div className="flex flex-col">
+              <h2 className="lg:text-5xl md:4xl text-[1.8rem]  font-bold uppercase font-quattrocento">
               TOURNAMENT RULES
-            </h2>
-            <p className="text-base sm:text-lg underline underline-offset-4 text-center sm:text-left" style={{ fontSize: "clamp(16px, 4vw, 22px)" }}>
-              Please refer to the
-              <strong> GolfMeet Tournament Rules </strong> here
-            </p>
+              </h2>
+              <p className="lg:text-lg md:3xl tect-[1.5rem]  underline underline-offset-4">
+                Please refer to the
+                <strong> GolfMeet Tournament Rules </strong> here
+              </p>
+            </div>
+            <div>
+              <svg
+                width="22"
+                height="42"
+                viewBox="0 0 25 47"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1.5L23 23.5L1 45.5"
+                  stroke="#014D4E"
+                  strokeWidth="2"
+                />
+              </svg>
+            </div>
           </div>
-          <div className="mt-4 sm:mt-0">
-            <svg
-              width="20"
-              height="38"
-              viewBox="0 0 25 47"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-10 sm:w-6 sm:h-12 md:w-7 md:h-14"
-            >
-              <path
-                d="M1 1.5L23 23.5L1 45.5"
-                stroke="#014D4E"
-                strokeWidth="2"
-              />
-            </svg>
-          </div>
-        </div>
-      </section>
+        </section>
 
       {/* Code of Conduct Section */}
       <section className="relative mt-32 px-4 flex items-center justify-center">
@@ -107,12 +113,12 @@ function CodeOfConduct() {
         <img
           src={coc_coins1}
           alt="Coins"
-          className="absolute top-[2%] right-20 w-[150px] md:w-[240px] z-30 hidden md:block"
+          className="absolute lg:top-[3%] top-[6%] right-6  w-[150px] lg:w-[180px] lg:-right-6 xl:right-20 xl:w-[200px] z-30 hidden md:block"
         />
         <img
           src={coc_coins2}
           alt="Coins"
-          className="absolute top-[13%] left-20 w-[100px] md:w-[150px] z-30 hidden md:block"
+          className="absolute top-[11%] left-4 w-[100px] lg:w-[120px] lg:left-2 xl:left-20 xl:w-[130px] z-30 hidden md:block"
         />
         <img
           src={mcoc_coins1}
@@ -142,22 +148,22 @@ function CodeOfConduct() {
         <img
           src={coc_coins2}
           alt="Coins"
-          className="absolute top-[22%] left-16 w-[100px] md:w-[150px] z-10 hidden md:block"
+          className="absolute top-[18%] lg:top-[21%]  left-0 w-[100px] lg:w-[120px] lg:left-0 xl:left-12 xl:w-[130px] z-30 hidden md:block"
         />
         <img
           src={coc_coins3}
           alt="Coins"
-          className="absolute top-[40%] left-8 transform -translate-y-1/3 w-[150px] md:w-[200px] z-10 hidden md:block"
+          className="absolute top-[43%] left-0 lg:left-12 xl-left-10 transform -translate-y-1/3 w-[150px] lg:w-[160px] xl-w-[220px] z-10 hidden md:block"
         />
         <img
           src={coc_coins4}
           alt="Coins"
-          className="absolute bottom-[25%] right-0 w-[150px] md:w-[240px] z-10 hidden md:block"
+          className="absolute w-[180px]  bottom-[25%] right-0 xl:w-[200px] w-140px lg:w-[190px] z-10 hidden md:block"
         />
         <img
           src={coc_coins5}
           alt="Coins"
-          className="absolute bottom-[14%] right-[5%] w-[100px] md:w-[150px] z-30 hidden md:block"
+          className="absolute bottom-[14%] right-[5%] lg:w-[120px] w-[100px] xl:w-[130px] z-30 hidden md:block"
         />
 
         {/* Content Container */}
