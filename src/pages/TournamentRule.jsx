@@ -3,11 +3,10 @@ import Navbar from "../components/Navbar";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
 import tr_greenleft from "../assets/tournament-rule/tr-green-left.svg";
 import tr_greenleft_m from "../assets/tournament-rule/green-mobile.svg";
-import bg_m from "../assets/tournament-rule/mobile-bg.svg";
 import tr_last from "../assets/tournament-rule/tr-last.svg";
 import tr_mobile from "../assets/tournament-rule/tournaments-mobile.svg";
 import Footer from "../components/Footer";
-import gradientbox from "../assets/greenbox.png"
+import gradientbox from "../assets/greenbox.png";
 
 function TournamentRule() {
   const [activeSection, setActiveSection] = useState("home");
@@ -138,7 +137,7 @@ function TournamentRule() {
         </div>
 
         {/* Player Code of Conduct section */}
-        <section className="flex flex-col items-center justify-center mt-52 md:mt-12 relative">
+        <section className="flex flex-col items-center justify-center  mt-52 md:mt-12 relative mb-6 sm:mb-0">
           <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">
               <h2 className="text-5xl font-bold uppercase font-quattrocento">
@@ -169,9 +168,9 @@ function TournamentRule() {
 
         {/* Mobile Sections Navigation - Only visible on mobile */}
         <div
-          className="md:hidden w-full py-4 relative"
+          className="md:hidden w-full py-4 relative noise-bg"
           style={{
-            background: `url(${gradientbox})`,
+            background: `linear-gradient(to bottom, #1e4d4d, #0a3333)`, // Changed to use the mobile gradient box image
           }}
         >
           <h3 className="text-white text-xl font-bold uppercase text-center mb-4">
@@ -211,8 +210,7 @@ function TournamentRule() {
           ref={sidebarRef}
           className="hidden md:block w-80 text-white p-6 rounded-md sticky top-28 self-start mt-10 mr-20 transition-transform"
           style={{
-            background:
-              `url(${gradientbox})`,
+            background: `url(${gradientbox})`, // Keep the original gradient box for desktop
           }}
         >
           <h3 className="font-bold text-[32px] leading-[100%] tracking-[0em] uppercase mb-6">

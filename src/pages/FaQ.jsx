@@ -6,6 +6,7 @@ import faq_greenleft from "../assets/faq/faq-green-left.svg";
 import faq_greenleft_mobile from "../assets/faq/faq-green-left-mobile.svg";
 import faq_gm from "../assets/f-gm.png";
 import Footer from "../components/Footer";
+import gradientbox from "../assets/greenbox.png";
 
 const FaqItem = ({ question, answer, isOpen, toggleOpen }) => {
   return (
@@ -169,11 +170,6 @@ function FaQ() {
     document.getElementById(categoryId)?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const categoryGradientStyle = {
-    background:
-      "linear-gradient(150deg, rgb(48, 92, 93) 0%, rgb(0, 54, 55) 50%, rgb(0, 53, 54) 100%)",
-  };
-
   return (
     <>
       <Navbar />
@@ -233,30 +229,34 @@ function FaQ() {
       </div>
 
       <section className="py-8 md:py-16 px-6 md:px-8 bg-white mt-8 md:mt-24">
-  <div className="flex flex-col md:flex-row max-w-[1300px] mx-auto gap-6 md:gap-12">
-    {/* Left Sidebar - Using imported gradientbox image */}
-    <div
-      className="hidden md:block w-64 text-white p-4 md:p-6 rounded-md sticky top-32 self-start"
-    >
-      <h3 className="font-quattrocentoSans font-bold text-[32px] leading-[100%] tracking-[0em] uppercase mb-2 relative">
-        CATEGORIES
-      </h3>
-      <ul className="text-sm mt-6">
-        {categoryData.map((category) => (
-          <li
-            key={category.id}
-            className={`py-3 cursor-pointer transition-colors duration-200 relative ${
-              activeCategory === category.id ? "font-bold" : ""
-            }`}
-            onClick={() => handleCategoryClick(category.id)}
+        <div className="flex flex-col md:flex-row max-w-[1300px] mx-auto gap-6 md:gap-12">
+          {/* Left Sidebar - Using imported gradientbox image */}
+          <div
+            className="hidden md:block w-64 text-white p-4 md:p-6 rounded-md sticky top-32 self-start"
+            style={{
+              background: `url(${gradientbox})`,
+            }}
           >
-            <span className="relative inline-block text-[#FFFFFFCC] after:content-[''] after:block after:w-full after:h-[1.4px] after:bg-white after:mt-1">
-              {category.title}
-            </span>
-          </li>
-        ))}
-      </ul>
-    </div>
+            <h3 className="font-quattrocentoSans font-bold text-[32px] leading-[100%] tracking-[0em] uppercase mb-2 relative">
+              CATEGORIES
+            </h3>
+            <ul className="text-sm mt-6">
+              {categoryData.map((category) => (
+                <li
+                  key={category.id}
+                  className={`py-3 cursor-pointer transition-colors duration-200 relative ${
+                    activeCategory === category.id ? "font-bold" : ""
+                  }`}
+                  onClick={() => handleCategoryClick(category.id)}
+                >
+                  <span className="relative inline-block text-[#FFFFFFCC] after:content-[''] after:block after:w-full after:h-[1.4px] after:bg-white after:mt-1">
+                    {category.title}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
           {/* Main Content */}
           <div className="flex-1">
             {categoryData.map((category) => (
