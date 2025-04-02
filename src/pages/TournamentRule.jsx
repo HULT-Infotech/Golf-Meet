@@ -142,7 +142,7 @@ function TournamentRule() {
         <section className="flex flex-col items-center justify-center  mt-48 md:mt-12 relative mb-6 sm:mb-0">
           <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">
-              <h2 className="lg:text-5xl md:4xl text-[2rem]  font-bold uppercase font-quattrocento">
+              <h2 className="lg:text-5xl md:4xl text-[1.8rem]  font-bold uppercase font-quattrocento">
                 Player Code of Conduct
               </h2>
               <p className="lg:text-lg md:3xl tect-[1.5rem]  underline underline-offset-4">

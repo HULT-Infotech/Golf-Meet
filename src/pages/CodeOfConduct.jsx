@@ -21,6 +21,7 @@ function CodeOfConduct() {
     <div className="md:overflow-visible overflow-hidden">
       <Navbar />
       <section 
+      
   className="sm:bg-gray-100 sm:noise-bg noise-bg relative flex flex-col md:min-h-[70vh] lg:min-h-[78vh] md:flex-row tr-bg-m"
 >
   <div className="flex flex-col w-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto">
@@ -64,10 +65,10 @@ function CodeOfConduct() {
     className="absolute -bottom-10 left-0 w-[180px] object-contain pointer-events-none md:hidden"
   />
 </section>
-<section className="flex flex-col items-center justify-center  mt-48 md:mt-20 xl:mt-24 relative mb-6 sm:mb-0">
+<section className="flex flex-col items-center justify-center  mt-20 md:mt-20 xl:mt-24 relative mb-6 sm:mb-0">
           <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">
-              <h2 className="lg:text-5xl md:4xl text-[2rem]  font-bold uppercase font-quattrocento">
+              <h2 className="lg:text-5xl md:4xl text-[1.8rem]  font-bold uppercase font-quattrocento">
               TOURNAMENT RULES
               </h2>
               <p className="lg:text-lg md:3xl tect-[1.5rem]  underline underline-offset-4">
