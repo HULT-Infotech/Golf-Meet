@@ -7,6 +7,8 @@ import tr_last from "../assets/tournament-rule/tr-last.svg";
 import tr_mobile from "../assets/tournament-rule/tournaments-mobile.svg";
 import Footer from "../components/Footer";
 import gradientbox from "../assets/greenbox.png";
+import land_m1 from "../assets/land-m.svg";
+import land_m2 from "../assets/land-fm1.svg";
 
 function TournamentRule() {
   const [activeSection, setActiveSection] = useState("home");
@@ -137,21 +139,21 @@ function TournamentRule() {
         </div>
 
         {/* Player Code of Conduct section */}
-        <section className="flex flex-col items-center justify-center  mt-52 md:mt-12 relative mb-6 sm:mb-0">
+        <section className="flex flex-col items-center justify-center  mt-48 md:mt-12 relative mb-6 sm:mb-0">
           <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">
-              <h2 className="text-5xl font-bold uppercase font-quattrocento">
+              <h2 className="lg:text-5xl md:4xl text-[2rem]  font-bold uppercase font-quattrocento">
                 Player Code of Conduct
               </h2>
-              <p className="text-lg underline underline-offset-4">
+              <p className="lg:text-lg md:3xl tect-[1.5rem]  underline underline-offset-4">
                 Please refer to the
                 <strong> GolfMeet Tournament Rules </strong> here
               </p>
             </div>
             <div>
               <svg
-                width="25"
-                height="47"
+                width="22"
+                height="42"
                 viewBox="0 0 25 47"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -383,7 +385,26 @@ function TournamentRule() {
       </section>
 
       <div ref={footerRef}>
-        <img src={tr_last} alt="tr_last" className="w-full mb-8 " />
+        <img src={tr_last} alt="tr_last" className="md:block hidden w-full mb-8 " />
+        <div className="relative w-full">
+                {/* First image at right edge with no space */}
+                <div className="w-full flex justify-end md:hidden">
+                  <img
+                    src={land_m1} // Using the same image for demo - replace with desired image
+                    alt="Right-aligned image"
+                    className="w-[65%] object-contain"
+                  />
+                </div>
+                
+                {/* Second image below the first, at left edge with no space */}
+                <div className="w-full flex justify-start -mt-12 md:hidden">
+                  <img
+                    src={land_m2} // Using land_m1 image as requested
+                    alt="Left-aligned image"
+                    className="w-[40%] mb-20 object-contain md:hidden"
+                  />
+                </div>
+              </div>
         <div className="relative">
   {/* Subtle bottom shadow that fades upward */}
   <div className="h-6 w-full bg-gradient-to-t from-gray-400 via-gray-100 to-transparent opacity-40"></div>

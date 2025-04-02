@@ -64,38 +64,34 @@ function CodeOfConduct() {
     className="absolute -bottom-10 left-0 w-[180px] object-contain pointer-events-none md:hidden"
   />
 </section>
-      <section className="flex flex-col items-center justify-center mt-16 sm:mt-12 md:mt-16 relative">   
-  <div className="flex flex-col sm:flex-row justify-between items-start text-[#014D4E] bg-[#F3F8F8] w-[95%] sm:w-[90%] md:w-[85%] max-w-6xl p-6 sm:p-6 md:p-7 rounded-md">     
-    <div className="flex flex-col items-start w-full">       
-      <h2 className="text-[34px] leading-tight sm:text-4xl xl:text-[3rem] lg:text-[2.9rem] md:text-[2.5rem] font-bold uppercase font-quattrocento text-left mb-2 sm:mb-0">         
-        TOURNAMENT<br />RULES       
-      </h2>       
-      <p className="text-[16px] sm:text-lg text-left mt-1">         
-        Please refer to the <span className="font-bold">GolfMeet<br className="sm:hidden" /> Tournament Rules</span> <span className="inline-block">           
-          <span className="hidden sm:inline-block border-b border-[#014D4E]">here</span>
-          <span className="inline-block sm:hidden">here</span>
-        </span>       
-      </p>       
-      <div className="w-[78%] h-[1px] bg-[#014D4E] mt-2 opacity-80 sm:hidden"></div>     
-    </div>     
-    <div className="absolute right-8 top-1/2 transform -translate-y-1/2 sm:static sm:transform-none sm:mt-0">       
-      <svg         
-        width="20"          
-        height="38"         
-        viewBox="0 0 25 47"         
-        fill="none"         
-        xmlns="http://www.w3.org/2000/svg"         
-        className="sm:w-6 sm:h-12 md:w-7 md:h-14"       
-      >         
-        <path           
-          d="M1 1.5L23 23.5L1 45.5"           
-          stroke="#014D4E"           
-          strokeWidth="2"         
-        />       
-      </svg>     
-    </div>   
-  </div>
-</section>
+<section className="flex flex-col items-center justify-center  mt-48 md:mt-20 xl:mt-24 relative mb-6 sm:mb-0">
+          <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
+            <div className="flex flex-col">
+              <h2 className="lg:text-5xl md:4xl text-[2rem]  font-bold uppercase font-quattrocento">
+              TOURNAMENT RULES
+              </h2>
+              <p className="lg:text-lg md:3xl tect-[1.5rem]  underline underline-offset-4">
+                Please refer to the
+                <strong> GolfMeet Tournament Rules </strong> here
+              </p>
+            </div>
+            <div>
+              <svg
+                width="22"
+                height="42"
+                viewBox="0 0 25 47"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1.5L23 23.5L1 45.5"
+                  stroke="#014D4E"
+                  strokeWidth="2"
+                />
+              </svg>
+            </div>
+          </div>
+        </section>
 
       {/* Code of Conduct Section */}
       <section className="relative mt-32 px-4 flex items-center justify-center">
