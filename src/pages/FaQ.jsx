@@ -4,15 +4,17 @@ import faq_bg from "../assets/faq/right-bg.svg";
 import faq_mobile_hero from "../assets/faq-m.svg";
 import faq_greenleft from "../assets/faq/faq-green-left.svg";
 import faq_greenleft_mobile from "../assets/faq/faq-green-left-mobile.svg";
-import faq_gm from "../assets/f-gm.png";
+import faq_gm from "../assets/f-gm.svg";
 import Footer from "../components/Footer";
 import gradientbox from "../assets/greenbox.png";
+import land_m1 from "../assets/land-m.svg";
+import land_m2 from "../assets/land-fm1.svg";
 
 const FaqItem = ({ question, answer, isOpen, toggleOpen }) => {
   return (
     <div
       className={`mb-4 border rounded-sm transition-all duration-300 ${
-        isOpen ? "border-[rgb(1,77,78)] shadow-md" : "border-gray-200"
+        isOpen ? "border-[#014D4E] shadow-md" : "border-gray-200"
       }`}
     >
       <div
@@ -215,7 +217,7 @@ function FaQ() {
         <img
           src={faq_greenleft_mobile}
           alt="Green left element"
-          className="absolute hidden -bottom-36 sm:-bottom-20 left-0 w-full"
+          className="absolute hidden bottom-0 sm:-bottom-20 left-0 w-full"
         />
       </section>
 
@@ -283,7 +285,34 @@ function FaQ() {
         </div>
       </section>
 
-      <Footer />
+      {/* Two Images Before Footer */}
+      <div className="relative w-full">
+        {/* First image at right edge with no space */}
+        <div className="w-full flex justify-end md:hidden">
+          <img
+            src={land_m1} // Using the same image for demo - replace with desired image
+            alt="Right-aligned image"
+            className="w-[65%] object-contain"
+          />
+        </div>
+        
+        {/* Second image below the first, at left edge with no space */}
+        <div className="w-full flex justify-start -mt-12 md:hidden">
+          <img
+            src={land_m2} // Using land_m1 image as requested
+            alt="Left-aligned image"
+            className="w-[40%] mb-20 object-contain md:hidden"
+          />
+        </div>
+      </div>
+
+      {/* Footer with improved top shadow */}
+      <div className="relative">
+  {/* Subtle bottom shadow that fades upward */}
+  <div className="h-6 w-full bg-gradient-to-t from-gray-400 via-gray-100 to-transparent opacity-40"></div>
+  {/* Footer component */}
+  <Footer className=""/>
+</div>
     </>
   );
 }

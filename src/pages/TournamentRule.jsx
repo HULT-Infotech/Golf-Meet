@@ -95,7 +95,7 @@ function TournamentRule() {
           <div className="flex flex-col w-full h-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
             {/* Text Section */}
             <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8 min-w-[300px] z-10">
-              <h1 className="font-quattrocento font-bold text-4xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
+              <h1 className="font-quattrocento font-bold  text-4xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
                 TOURNAMENT <br /> RULES
               </h1>
             </div>
@@ -383,8 +383,13 @@ function TournamentRule() {
       </section>
 
       <div ref={footerRef}>
-        <img src={tr_last} alt="tr_last" className="w-full" />
-        <Footer />
+        <img src={tr_last} alt="tr_last" className="w-full mb-8 " />
+        <div className="relative">
+  {/* Subtle bottom shadow that fades upward */}
+  <div className="h-6 w-full bg-gradient-to-t from-gray-400 via-gray-100 to-transparent opacity-40"></div>
+  {/* Footer component */}
+  <Footer className=""/>
+</div>
       </div>
 
       <style jsx>{`
