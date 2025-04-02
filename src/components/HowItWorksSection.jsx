@@ -3,7 +3,7 @@ import golfIllustration from "../assets/golfIllustration.svg";
 import golfFlag from "../assets/golf-flag.svg";
 import Illustration_Golf_Balls from "../assets/Illustration_Golf_Balls.svg";
 import Illustration_Greens_mobile from "../assets/Illustration_Greens_mobile.svg";
-import Illustration_Greens_Desktop from "../assets/Illustration_Greens_Desktop.svg";
+import Illustration_Greens_Desktop from "../assets/checking.svg";
 import video_section_right_bg_with_flag from "../assets/video-section.svg";
 import glow_yellow from "../assets/glow_yellow.svg";
 const HowItWorksSection = () => {
@@ -102,7 +102,7 @@ const HowItWorksSection = () => {
           src={Illustration_Greens_Desktop}
           alt="Illustration_Greens_Desktop"
           draggable="false"
-          className="w-full hidden md:block h-80v  object-cover "
+          className="w-full hidden md:block h-80v xl:-mt-4  object-cover "
         />
         <div className="absolute bottom-0 left-0 w-full h-28 noise-bg md:hidden" />
       </div>

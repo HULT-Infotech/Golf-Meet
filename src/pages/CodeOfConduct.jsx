@@ -21,12 +21,12 @@ function CodeOfConduct() {
     <div className="md:overflow-visible overflow-hidden">
       <Navbar />
       <section 
-  className="sm:bg-gray-100 sm:noise-bg noise-bg relative flex flex-col md:min-h-[50vh] lg:min-h-[78vh] md:flex-row tr-bg-m"
+  className="sm:bg-gray-100 sm:noise-bg noise-bg relative flex flex-col md:min-h-[70vh] lg:min-h-[78vh] md:flex-row tr-bg-m"
 >
   <div className="flex flex-col w-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto">
     <div className="relative flex flex-col justify-center items-center md:items-start p-8 md:pl-10 md:p-0 xl:ml-20">
       <h1
-        className="font-quattrocento text-5xl md:text-6xl lg:text-[55px] xl:text-8xl max-w-2xl font-bold mb-4 mt-4 text-[#201E15] text-center md:text-left xl:text-[80px]"
+        className="font-quattrocento text-5xl md:text-6xl md:text-[37px]  lg:text-[55px] xl:text-8xl max-w-2xl font-bold mb-4 mt-4 text-[#201E15] text-center md:text-left xl:text-[80px]"
         style={{lineHeight: "1.1" }}
       >
         <span className="whitespace-nowrap">PLAYER CODE</span>
@@ -54,7 +54,7 @@ function CodeOfConduct() {
   <img
     src={code_of_conduct_greenleft}
     alt="Green left element"
-    className="hidden md:block absolute md:-bottom-12 left-0 w-[270px] md:w-[400px] lg:-bottom-24 object-contain pointer-events-none"
+    className="hidden md:block absolute md:-bottom-20 left-0 w-[270px] lg:w-[400px] lg:-bottom-24 object-contain pointer-events-none"
   />
   
   {/* Mobile decorative element - only visible on mobile */}
@@ -65,9 +65,9 @@ function CodeOfConduct() {
   />
 </section>
       <section className="flex flex-col items-center justify-center mt-16 sm:mt-12 md:mt-16 relative">   
-  <div className="flex flex-col sm:flex-row justify-between items-start text-[#014D4E] bg-[#F3F8F8] w-[95%] sm:w-[90%] md:w-[85%] max-w-6xl] p-6 sm:p-6 md:p-7 rounded-md">     
+  <div className="flex flex-col sm:flex-row justify-between items-start text-[#014D4E] bg-[#F3F8F8] w-[95%] sm:w-[90%] md:w-[85%] max-w-6xl p-6 sm:p-6 md:p-7 rounded-md">     
     <div className="flex flex-col items-start w-full">       
-      <h2 className="text-[34px] leading-tight sm:text-4xl md:text-5xl font-bold uppercase font-quattrocento text-left mb-2 sm:mb-0">         
+      <h2 className="text-[34px] leading-tight sm:text-4xl xl:text-[3rem] lg:text-[2.9rem] md:text-[2.5rem] font-bold uppercase font-quattrocento text-left mb-2 sm:mb-0">         
         TOURNAMENT<br />RULES       
       </h2>       
       <p className="text-[16px] sm:text-lg text-left mt-1">         
