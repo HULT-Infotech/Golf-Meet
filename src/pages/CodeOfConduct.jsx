@@ -1,6 +1,7 @@
 import React from "react";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
-import tr_bg_mobile from "../assets/tr_bg_m.svg";
+import tr_bg_mobile from "../assets/check.svg";
+import tr_dec_mobile from "../assets/green-m.svg";
 import code_of_conduct_greenleft from "../assets/code-of-conduct/code-conduct-left.svg";
 import coc_coins1 from "../assets/coc-coins1.svg";
 import coc_coins2 from "../assets/coc-coins2.svg";
@@ -20,8 +21,7 @@ function CodeOfConduct() {
     <div className="md:overflow-visible overflow-hidden">
       <Navbar />
       <section 
-  className="sm:bg-gray-100 noise-bg-m sm:noise-bg relative flex flex-col md:min-h-[50vh] lg:min-h-[78vh] md:flex-row"
-  
+  className="sm:bg-gray-100 sm:noise-bg noise-bg relative flex flex-col md:min-h-[50vh] lg:min-h-[78vh] md:flex-row tr-bg-m"
 >
   <div className="flex flex-col w-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto">
     <div className="relative flex flex-col justify-center items-center md:items-start p-8 md:pl-10 md:p-0 xl:ml-20">
@@ -56,9 +56,15 @@ function CodeOfConduct() {
     alt="Green left element"
     className="hidden md:block absolute md:-bottom-12 left-0 w-[270px] md:w-[400px] lg:-bottom-24 object-contain pointer-events-none"
   />
+  
+  {/* Mobile decorative element - only visible on mobile */}
+  <img
+    src={tr_dec_mobile}
+    alt="Mobile decorative element"
+    className="absolute -bottom-10 left-0 w-[180px] object-contain pointer-events-none md:hidden"
+  />
 </section>
-
-      <section className="flex flex-col items-center justify-center mt-8 sm:mt-12 md:mt-16 relative">   
+      <section className="flex flex-col items-center justify-center mt-16 sm:mt-12 md:mt-16 relative">   
   <div className="flex flex-col sm:flex-row justify-between items-start text-[#014D4E] bg-[#F3F8F8] w-[95%] sm:w-[90%] md:w-[85%] max-w-6xl] p-6 sm:p-6 md:p-7 rounded-md">     
     <div className="flex flex-col items-start w-full">       
       <h2 className="text-[34px] leading-tight sm:text-4xl md:text-5xl font-bold uppercase font-quattrocento text-left mb-2 sm:mb-0">         
