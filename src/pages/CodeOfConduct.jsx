@@ -110,12 +110,12 @@ function CodeOfConduct() {
         <img
           src={coc_coins1}
           alt="Coins"
-          className="absolute top-[3%] right-20 w-[150px] lg:w-[180px] lg:-right-6 xl:right-20 xl:w-[200px] z-30 hidden md:block"
+          className="absolute lg:top-[3%] top-[6%] right-6  w-[150px] lg:w-[180px] lg:-right-6 xl:right-20 xl:w-[200px] z-30 hidden md:block"
         />
         <img
           src={coc_coins2}
           alt="Coins"
-          className="absolute top-[11%] left-20 w-[100px] lg:w-[120px] lg:left-2 xl:left-20 xl:w-[140px] md:w-[150px] z-30 hidden md:block"
+          className="absolute top-[11%] left-4 w-[100px] lg:w-[120px] lg:left-2 xl:left-16 xl:w-[140px] z-30 hidden md:block"
         />
         <img
           src={mcoc_coins1}
@@ -145,22 +145,22 @@ function CodeOfConduct() {
         <img
           src={coc_coins2}
           alt="Coins"
-          className="absolute top-[22%] left-16 w-[100px] md:w-[150px] z-10 hidden md:block"
+          className="absolute top-[18%] lg:top-[21%]  left-0 w-[100px] lg:w-[120px] lg:left-0 xl:left-12 xl:w-[140px] z-30 hidden md:block"
         />
         <img
           src={coc_coins3}
           alt="Coins"
-          className="absolute top-[40%] left-8 transform -translate-y-1/3 w-[150px] md:w-[200px] z-10 hidden md:block"
+          className="absolute top-[43%] left-0 lg:left-12 xl-left-10 transform -translate-y-1/3 w-[150px] lg:w-[160px] xl-w-[220px] z-10 hidden md:block"
         />
         <img
           src={coc_coins4}
           alt="Coins"
-          className="absolute bottom-[25%] right-0 w-[150px] md:w-[240px] z-10 hidden md:block"
+          className="absolute w-[180px]  bottom-[25%] right-0 xl:w-[200px] w-140px lg:w-[190px] z-10 hidden md:block"
         />
         <img
           src={coc_coins5}
           alt="Coins"
-          className="absolute bottom-[14%] right-[5%] w-[100px] md:w-[150px] z-30 hidden md:block"
+          className="absolute bottom-[14%] right-[5%] lg:w-[120px] w-[100px] xl:w-[140px] z-30 hidden md:block"
         />
 
         {/* Content Container */}
