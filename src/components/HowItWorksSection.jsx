@@ -110,7 +110,7 @@ const HowItWorksSection = () => {
       {/*  Section 4 */}
       <div className="mx-auto noise-bg py-10 md:py-20">
         <div className="text-center mb-12">
-          <h1 className="text-[50px] leading-[60px] w-auto mb-8  lg:text-[90px] font-quattrocento font-bold  md:leading-[106.37px] tracking-[0.025em] text-center">
+          <h1 className="text-[40px] leading-[60px] w-auto mb-8  lg:text-[90px] font-quattrocento font-bold  md:leading-[106.37px] tracking-[0.025em] text-center">
             THE SOCIAL AMATEUR
             <br />
             TOURNAMENT WITH A<br />

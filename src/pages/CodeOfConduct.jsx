@@ -26,8 +26,8 @@ function CodeOfConduct() {
   <div className="flex flex-col w-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto">
     <div className="relative flex flex-col justify-center items-center md:items-start p-8 md:pl-10 md:p-0 xl:ml-20">
       <h1
-        className="font-quattrocento text-5xl md:text-6xl lg:text-7xl xl:text-8xl max-w-2xl font-bold mb-4 mt-4 text-[#201E15] text-center md:text-left"
-        style={{ fontSize: "clamp(32px, 10vw, 80px)", lineHeight: "1.1" }}
+        className="font-quattrocento text-5xl md:text-6xl lg:text-[55px] xl:text-8xl max-w-2xl font-bold mb-4 mt-4 text-[#201E15] text-center md:text-left xl:text-[80px]"
+        style={{lineHeight: "1.1" }}
       >
         <span className="whitespace-nowrap">PLAYER CODE</span>
         <br />
@@ -45,7 +45,7 @@ function CodeOfConduct() {
       <img
         src={tr_bg_mobile}
         alt="Golfers Illustration Mobile"
-        className="w-[85%] object-contain pointer-events-none md:hidden"
+        className="w-[90%] object-contain pointer-events-none md:hidden"
       />
     </div>
   </div>
@@ -121,7 +121,7 @@ function CodeOfConduct() {
         <img
           src={coc_coins2}
           alt="Coins"
-          className="absolute top-[11%] left-4 w-[100px] lg:w-[120px] lg:left-2 xl:left-16 xl:w-[140px] z-30 hidden md:block"
+          className="absolute top-[11%] left-4 w-[100px] lg:w-[120px] lg:left-2 xl:left-20 xl:w-[130px] z-30 hidden md:block"
         />
         <img
           src={mcoc_coins1}
@@ -151,7 +151,7 @@ function CodeOfConduct() {
         <img
           src={coc_coins2}
           alt="Coins"
-          className="absolute top-[18%] lg:top-[21%]  left-0 w-[100px] lg:w-[120px] lg:left-0 xl:left-12 xl:w-[140px] z-30 hidden md:block"
+          className="absolute top-[18%] lg:top-[21%]  left-0 w-[100px] lg:w-[120px] lg:left-0 xl:left-12 xl:w-[130px] z-30 hidden md:block"
         />
         <img
           src={coc_coins3}
@@ -166,7 +166,7 @@ function CodeOfConduct() {
         <img
           src={coc_coins5}
           alt="Coins"
-          className="absolute bottom-[14%] right-[5%] lg:w-[120px] w-[100px] xl:w-[140px] z-30 hidden md:block"
+          className="absolute bottom-[14%] right-[5%] lg:w-[120px] w-[100px] xl:w-[130px] z-30 hidden md:block"
         />
 
         {/* Content Container */}

@@ -5,9 +5,7 @@ import faq_mobile_hero from "../assets/faq-m.svg";
 import faq_greenleft from "../assets/faq/faq-green-left.svg";
 import faq_greenleft_mobile from "../assets/faq/faq-green-left-mobile.svg";
 import faq_gm from "../assets/f-gm.png";
-import faq_bg_mobile from "../assets/paper.svg";
 import Footer from "../components/Footer";
-import gradientbox from "../assets/gradientbox.png"
 
 const FaqItem = ({ question, answer, isOpen, toggleOpen }) => {
   return (
@@ -20,8 +18,8 @@ const FaqItem = ({ question, answer, isOpen, toggleOpen }) => {
         className="flex justify-between items-center p-4 cursor-pointer bg-white rounded-lg"
         onClick={toggleOpen}
       >
-        <span className="text-sm md:text-base">{question}</span>
-        <span className="text-xl">{isOpen ? "−" : "+"}</span>
+        <span className="text-sm md:text-base pr-2 md:pr-0">{question}</span>
+        <span className="text-xl flex-shrink-0">{isOpen ? "−" : "+"}</span>
       </div>
       <div
         className={`overflow-hidden transition-all duration-300 ease-in-out bg-white ${
@@ -181,12 +179,6 @@ function FaQ() {
       <Navbar />
       <section 
         className="bg-gray-100 noise-bg relative flex flex-col h-auto md:min-h-[85vh] md:flex-row"
-        style={{
-          backgroundImage: `url(${faq_bg_mobile})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'top',
-          backgroundRepeat: 'no-repeat',
-        }}
       >
         <div className="flex flex-col w-full justify-between md:justify-around md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
@@ -240,40 +232,31 @@ function FaQ() {
         />
       </div>
 
-      {/* FAQ Content Section */}
-      <section className="py-8 md:py-16 px-4 bg-white mt-8 md:mt-24">
-        <div className="flex flex-col md:flex-row max-w-[1300px] mx-auto gap-6 md:gap-12">
-          {/* Left Sidebar - Using imported gradientbox image */}
-          <div
-            className="hidden md:block w-64 text-white p-4 md:p-6 rounded-md sticky top-32 self-start"
-            style={{
-              ...categoryGradientStyle,
-              background: `url(${gradientbox})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat'
-            }}
+      <section className="py-8 md:py-16 px-6 md:px-8 bg-white mt-8 md:mt-24">
+  <div className="flex flex-col md:flex-row max-w-[1300px] mx-auto gap-6 md:gap-12">
+    {/* Left Sidebar - Using imported gradientbox image */}
+    <div
+      className="hidden md:block w-64 text-white p-4 md:p-6 rounded-md sticky top-32 self-start"
+    >
+      <h3 className="font-quattrocentoSans font-bold text-[32px] leading-[100%] tracking-[0em] uppercase mb-2 relative">
+        CATEGORIES
+      </h3>
+      <ul className="text-sm mt-6">
+        {categoryData.map((category) => (
+          <li
+            key={category.id}
+            className={`py-3 cursor-pointer transition-colors duration-200 relative ${
+              activeCategory === category.id ? "font-bold" : ""
+            }`}
+            onClick={() => handleCategoryClick(category.id)}
           >
-            <h3 className="font-quattrocentoSans font-bold text-[32px] leading-[100%] tracking-[0em] uppercase mb-2 relative">
-              CATEGORIES
-            </h3>
-            <ul className="text-sm mt-6">
-              {categoryData.map((category) => (
-                <li
-                  key={category.id}
-                  className={`py-3 cursor-pointer transition-colors duration-200 relative   ${
-                    activeCategory === category.id ? "font-bold" : ""
-                  }`}
-                  onClick={() => handleCategoryClick(category.id)}
-                >
-                  <span className="relative inline-block text-[#FFFFFFCC] after:content-[''] after:block after:w-full after:h-[1.4px] after:bg-white after:mt-1">
-                    {category.title}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
+            <span className="relative inline-block text-[#FFFFFFCC] after:content-[''] after:block after:w-full after:h-[1.4px] after:bg-white after:mt-1">
+              {category.title}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
           {/* Main Content */}
           <div className="flex-1">
             {categoryData.map((category) => (
