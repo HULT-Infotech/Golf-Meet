@@ -1,10 +1,12 @@
 import React from "react";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
+import tr_bg_mobile from "../assets/check.svg";
+import pr_m from "../assets/right-privacy.svg";
+import code_of_conduct_greenleft from "../assets/code-of-conduct/code-conduct-left.svg";
 import coc_coins1 from "../assets/coc-coins1.svg";
 import coc_coins2 from "../assets/coc-coins2.svg";
 import coc_coins3 from "../assets/coc-coins3.svg";
 import coc_coins4 from "../assets/coc-coins4.svg";
-import tr_mobile from "../assets/tournament-rule/tournaments-mobile.svg";
 import coc_coins5 from "../assets/coc-coins5.svg";
 import mcoc_coins1 from "../assets/m-coin.png";
 import mcoc_coins2 from "../assets/m-coin1.png";
@@ -14,35 +16,37 @@ import Navbar from "../components/navbarother";
 import Footer from "../components/Footer";
 import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
  
-function Terms() {
+function Policy() {
   return (
     <div className="md:overflow-visible overflow-hidden">
-<Navbar />
-<section className="bg-gray-100 noise-bg relative h-[83vh] md:h-[100vh] overflow-hidden">
-  <div className="flex flex-col w-full h-full justify-between md:flex-row max-w-[1700px] mx-auto relative">
+      <Navbar />
+      <section
+  className="sm:bg-gray-100 sm:noise-bg noise-bg h-[84vh] relative flex flex-col md:min-h-[70vh] lg:min-h-[78vh] md:flex-row tr-bg-m overflow-hidden"
+>
+  <div className="flex flex-col w-full h-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto relative">
     {/* Text Section */}
     <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8 min-w-[300px] z-10">
       <h1 className="font-quattrocento font-bold text-5xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
-        TERMS OF <br /> USE
+        PRIVACY <br /> POLICY
       </h1>
     </div>
-    
-    {/* Desktop Image Section - Positioned absolutely at bottom */}
-    <div className="hidden md:block absolute bottom-0 right-0 md:w-1/2">
-      <img
-        src={tr_bg}
-        alt="Golfers Illustration"
-        className="w-full h-auto object-contain pointer-events-none md:mr-12"
-      />
-    </div>
+  </div>
+
+  {/* Desktop image container - fills full right side */}
+  <div className="absolute bottom-0 right-0 hidden md:block" style={{ marginRight: "0px" }}>
+    <img
+      src={tr_bg}
+      alt="Golfers Illustration"
+      className="h-auto object-contain pointer-events-none"
+    />
   </div>
   
-  {/* Mobile image - Positioned absolutely at bottom */}
-  <div className="md:hidden absolute bottom-0 w-full flex justify-center">
+  {/* Mobile image container - full width with right alignment */}
+  <div className="absolute bottom-0 right-0 md:hidden" style={{ marginRight: "0px" }}>
     <img
-      src={tr_mobile}
-      alt="Mobile Golfers Illustration"
-      className="w-[80%] h-auto pointer-events-none object-contain"
+      src={pr_m}
+      alt="Golfers Illustration Mobile"
+      className="h-auto object-contain pointer-events-none" 
     />
   </div>
 </section>
@@ -50,11 +54,11 @@ function Terms() {
           <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">
               <h2 className="lg:text-5xl md:4xl text-[1.8rem]  font-bold uppercase font-quattrocento">
-              PRIVACY POLICY
+              TERMS OF USE
               </h2>
               <p className="lg:text-lg md:3xl tect-[1.5rem]  underline underline-offset-4">
                 Please refer to the
-                <strong> Privacy Policy </strong> here
+                <strong> Terms of Use </strong> here
               </p>
             </div>
             <div>
@@ -354,4 +358,4 @@ function Terms() {
   );
 }
 
-export default Terms;
+export default Policy;

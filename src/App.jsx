@@ -7,6 +7,7 @@ import FaQ from "./pages/FaQ";
 import ScrollToTop from "./utils/ScrollToTop";
 import CodeOfConduct from "./pages/CodeOfConduct";
 import Terms from "./pages/TermsandCondition";
+import Policy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/tournament-rules" element={<TournamentRule />} />
         <Route path="/code-of-conduct" element={<CodeOfConduct />} />
         <Route path="/terms-of-use" element={<Terms />} />
+        <Route path="/privacy-policy" element={<Policy />} />
       </Routes>
       <ScrollToTop />
     </BrowserRouter>

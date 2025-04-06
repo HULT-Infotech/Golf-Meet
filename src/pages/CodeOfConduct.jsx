@@ -22,7 +22,7 @@ function CodeOfConduct() {
       <Navbar />
       <section 
       
-  className="sm:bg-gray-100 sm:noise-bg noise-bg relative flex flex-col md:min-h-[70vh] lg:min-h-[78vh] md:flex-row tr-bg-m"
+  className="sm:bg-gray-100 sm:noise-bg noise-bg h-[84vh] relative flex flex-col md:min-h-[70vh] lg:min-h-[78vh] md:flex-row tr-bg-m"
 >
   <div className="flex flex-col w-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto">
     <div className="relative flex flex-col justify-center items-center md:items-start p-8 md:pl-10 md:p-0 xl:ml-20">
@@ -37,18 +37,22 @@ function CodeOfConduct() {
     </div>
 
     {/* Right Image Section with mobile-specific version */}
-    <div className="flex relative bottom-0 items-end px-0">
-      <img
-        src={tr_bg}
-        alt="Golfers Illustration"
-        className="w-full object-contain pointer-events-none hidden md:block"
-      />
-      <img
-        src={tr_bg_mobile}
-        alt="Golfers Illustration Mobile"
-        className="w-[90%] object-contain pointer-events-none md:hidden"
-      />
-    </div>
+
+    <div className="flex w-full relative" style={{ position: 'absolute', bottom: 0, left: 0, right: 0 }}>
+  {/* Desktop image - hidden on mobile */}
+  <img
+    src={tr_bg}
+    alt="Golfers Illustration"
+    className="w-full object-contain pointer-events-none hidden md:block"
+  />
+  
+  {/* Mobile image - hidden on desktop */}
+  <img
+    src={tr_bg_mobile}
+    alt="Golfers Illustration Mobile"
+    className="w-[92%] mx-auto object-contain pointer-events-none md:hidden"
+  />
+</div>
   </div>
 
   {/* Decorative Green Element */}
