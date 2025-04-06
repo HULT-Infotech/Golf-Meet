@@ -102,19 +102,24 @@ function LandingPage() {
       </div>
       {/* Title */}
       <div className="bg-[#01383A] md:py-0 py-12 md:bg-transparent relative overflow-hidden">
-
   {/* Keep original content with relative positioning so it appears above the texture */}
   <div className="relative">
-    <h1 className="text-[90px] leading-[90px] tracking-[0.025em] mt-5 text-center w-[350px] md:w-auto mx-auto font-quattrocento md:text-6xl lg:text-7xl xl:text-[94px] md:leading-[106.37px] md:tracking-[0.025em] font-bold lg:mt-16 xl:mt-20 bg-gradient-to-b from-[#FFF2BF] to-[#F4D455] text-transparent bg-clip-text">
-      GOLF MEET INDIA 2025
-    </h1>
-    <p className="font-quattrocentoSans w-80 mx-auto sm:w-auto font-normal text-[24px] leading-[26.59px] tracking-[-0.025em] text-center text-[#fff] mt-4">
-  The year-long amateur golf tournament
-</p>
+    
+    {/* Center wrapper for heading */}
+    <div className="flex justify-center">
+      <h1 className="text-[85px] leading-[90px] tracking-[0.025em] mt-5 text-center w-[350px] md:w-auto mx-auto font-quattrocento md:text-6xl lg:text-7xl xl:text-[94px] md:leading-[106.37px] md:tracking-[0.025em] font-bold lg:mt-16 xl:mt-20 bg-gradient-to-b from-[#FFF2BF] to-[#F4D455] text-transparent bg-clip-text">
+        GOLF MEET INDIA 2025
+      </h1>
+    </div>
 
-<p className="font-quattrocentoSans font-normal mt-1 text-[16px] leading-[17.73px] tracking-[-0.025em] text-center text-[#fff] p-2">
-  JANUARY 2025 - DECEMBER 2025
-</p>
+    <p className="font-quattrocentoSans w-80 mx-auto sm:w-auto font-normal text-[24px] leading-[26.59px] tracking-[-0.025em] text-center text-[#fff] mt-4">
+      The year-long amateur golf tournament
+    </p>
+
+    <p className="font-quattrocentoSans font-normal mt-1 text-[16px] leading-[17.73px] tracking-[-0.025em] text-center text-[#fff] p-2">
+      JANUARY 2025 - DECEMBER 2025
+    </p>
+
     {/* Register Button with gold gradient */}
     <div className="flex justify-center">
       <button className="my-7 rounded-md px-10 py-2 font-normal bg-gradient-to-b from-[#FFFFFF] via-[#FBE67B] to-[#FFB41E] shadow-[0px_2px_4px_0px_#0000008C] transition-all duration-500 hover:shadow-[0px_4px_10px_0px_#00000073]">
@@ -125,6 +130,7 @@ function LandingPage() {
     </div>
   </div>
 </div>
+
     </section>
   );
 }

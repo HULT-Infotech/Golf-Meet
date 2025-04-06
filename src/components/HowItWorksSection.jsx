@@ -30,8 +30,8 @@ const HowItWorksSection = () => {
               Register to Play
             </h2>
             <p className="text-gray-700 text-sm w-64">
-              Grab your clubs and secure your spot on the course. Share basic
-              details about you and your golf experience.
+            Sign up for the fairest social golf tournament 
+            easily via Whatsapp
             </p>
           </div>
         </div>
@@ -43,14 +43,14 @@ const HowItWorksSection = () => {
           </span>
           <div>
             <h3 className="text-gray-500 text-sm font-medium">
-              Profile Approval
+              Availability
             </h3>
             <h2 className="text-2xl font-bold font-quattrocento text-gray-900">
-              Get the Green Light
+            Choose Course & Dates
             </h2>
             <p className="text-gray-700 text-sm w-60">
-              We will check your profile to ensure you’re a true amateur. Let’s
-              keep the tournament authentic and exciting!
+            Inform GolfMeet team your preferred golf courses & 
+            available dates.
             </p>
           </div>
         </div>
@@ -62,19 +62,19 @@ const HowItWorksSection = () => {
           </span>
           <div>
             <h3 className="text-gray-500 text-sm font-medium">
-              Pay Tournament Fees
+              Play
             </h3>
             <h2 className="text-2xl font-bold font-quattrocento text-gray-900">
-              Chip in for the game
+            Play and Submit Scores
             </h2>
             <p className="text-gray-700 text-sm w-64">
-              Make your contribution to participate in the tournament.
-              Convenient payment plans for everyone.
+            Play with the group selected by GolfMeet and submit 
+            your scores.
             </p>
           </div>
         </div>
 
-        {/*  Step 4 */}
+         {/* Step 4
         <div className="flex items-start space-x-4">
           <span className="w-8 h-10 rounded-full bg-[#014D4E] text-white flex items-center justify-center text-lg font-semibold">
             4
@@ -90,7 +90,7 @@ const HowItWorksSection = () => {
               leaderboard!
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="py-7 relative md:py-0">
         <img
@@ -110,10 +110,16 @@ const HowItWorksSection = () => {
       {/*  Section 4 */}
       <div className="mx-auto noise-bg py-10 md:py-20">
         <div className="text-center mb-12">
-          <h1 className="text-[40px] leading-[60px] w-auto mb-8  lg:text-[90px] font-quattrocento font-bold  md:leading-[106.37px] tracking-[0.025em] text-center">
+          <h1 className="text-[40px] leading-[40px] hidden md:block w-auto mb-8  lg:text-[90px] font-quattrocento font-bold  md:leading-[106.37px] tracking-[0.025em] text-center">
             THE SOCIAL AMATEUR
             <br />
             TOURNAMENT WITH A<br />
+            DIFFERENCE
+          </h1>
+          <h1 className="text-[40px] leading-[45px] block md:hidden w-auto mb-8  lg:text-[90px] font-quattrocento font-bold  md:leading-[106.37px] tracking-[0.025em] text-center">
+            THE SOCIAL AMATEUR
+            <br />
+            TOURNAMENT<br /> WITH A<br />
             DIFFERENCE
           </h1>
 
@@ -135,16 +141,15 @@ const HowItWorksSection = () => {
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-          <div className="w-10/12 md:w-1/3">
-            {/* Golf bag illustration */}
-            <img
-              src={golfIllustration}
-              draggable="false"
-              alt="Golf Equipment Illustration"
-              className="w-full"
-            />
-          </div>
-
+  <div className="w-10/12 md:w-1/3 self-start md:self-auto">
+    {/* Golf bag illustration */}
+    <img
+      src={golfIllustration}
+      draggable="false"
+      alt="Golf Equipment Illustration"
+      className="w-full"
+    />
+  </div>
           <div className="w-4/5 lg:max-w-[800px] mx-auto md:p-12">
             <h2 className="text-teal-700 text-2xl font-bold mb-4 md:text-4xl">
               Play any number of rounds within the year. Your best 12 rounds
@@ -159,7 +164,7 @@ const HowItWorksSection = () => {
           </div>
         </div>
       </div>
-      <div className="absolute flex justify-end  bottom-96  right-0 w-full">
+      <div className="absolute flex justify-end bottom-[60rem]  right-0 w-full">
         <img src={glow_yellow} alt="glow_yellow" className="w-1/2" />
       </div>
       <div className="absolute  -bottom-24 right-0  w-full ">

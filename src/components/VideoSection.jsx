@@ -4,17 +4,10 @@ function VideoSection() {
   return (
     <section className="bg-[#014D4E] min-h-screen flex flex-col items-center justify-center pt-10 md:p-20 relative">
       {/* Video player container with border */}
-      <div className="w-full max-w-5xl border-2 border-[#00B5CB] rounded mb-8">
-        <div className="relative w-full aspect-video bg-black flex items-center justify-center">
-          {/* Play button */}
-          <button className="w-20 h-20 rounded-full bg-transparent border-4 border-gray-400 flex items-center justify-center">
-            <div className="w-6 h-6 border-t-8 border-r-8 border-b-8 border-transparent border-l-8 border-l-gray-400 ml-1"></div>
-          </button>
-        </div>
-      </div>
+      
 
       {/* Tagline and description */}
-      <div className="text-center text-white py-10">
+      <div className="text-center text-white py-0">
         <h2 className="text-5xl flex  flex-col md:flex-row  justify-center items-center gap-5 font-quattrocento md:text-5xl lg:text-6xl font-bold tracking-wider mb-4">
           <svg
             width="13"

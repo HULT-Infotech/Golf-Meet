@@ -45,83 +45,52 @@ const FairPlaySection = () => {
         </div>
       </section>
 
-      {/* Second Section - Pricing */}
-      <section className="text-center flex flex-col justify-center p-4 sm:p-8 lg:p-16 xl:p-20 w-full">
-        <h2 className="text-xl md:text-2xl font-semibold mb-4">
-          TOURNAMENT FEE
-        </h2>
-
-        <div className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-quattrocento mb-2">
-          ₹48,000
+      {/* Second Section - Pricing - Exact Match to Image */}
+      <section className="bg-[#004141] w-full py-12">
+        {/* Mobile Design - Exact Match */}
+        <div className="flex flex-col items-center px-4 md:hidden">
+          <h2 className="uppercase text-[1.6rem] font-bold tracking-wider text-white mb-6 ">
+            TOURNAMENT FEE
+          </h2>
+          <div className="text-white mb-1">
+            <span className="text-7xl font-bold flex justify-center">
+              <span className="text-5xl mr-4">₹</span>
+              <span className="text-6xl font-quattrocento">500</span>
+            </span>
+          </div>
+          <p className="uppercase text-xs tracking-wider text-gray-400 mb-10">
+            PER ROUND
+          </p>
+          <button 
+            className="text-[#FFF7D9] font-quattrocento font-bold py-3 px-3 w-full max-w-60 rounded uppercase text-[15px] tracking-wider shadow-lg border-red"
+            style={{ background: 'linear-gradient(180deg, #E5181A 0%, #CB1517 50%, #B21214 100%)' }}
+          >
+            REGISTER ON WHATSAPP
+          </button>
         </div>
-
-        <p className="text-xs my-4 md:my-6 lg:my-8 xl:my-10 text-gray-500 uppercase mb-4 md:mb-6 lg:mb-8">
-          Fee is inclusive of 18% GST. Green fee is not included.
-        </p>
-
-        <h2 className="text-xl md:text-2xl font-semibold mb-8 md:mb-12 lg:mb-16">
-          AVAILABLE PAYMENT PLANS:
-        </h2>
-
-        <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 w-full overflow-x-auto">
-          {[
-            {
-              installments: 1,
-              installmentLabel: "Installment of",
-              installmentPrice: "₹ 39,999",
-              totalLabel: "Total",
-              totalPrice: "₹ 39,999",
-              savings: "YOU SAVE 16%",
-            },
-            {
-              installments: 4,
-              installmentLabel: "Installments of",
-              installmentPrice: "₹ 10,699",
-              totalLabel: "Total",
-              totalPrice: "₹ 42,796",
-              savings: "YOU SAVE 10%",
-            },
-            {
-              installments: 12,
-              installmentLabel: "Installments of",
-              installmentPrice: "₹ 3,999",
-              totalLabel: "Total",
-              totalPrice: "₹ 48,000",
-              savings: "NO SAVINGS",
-            },
-          ].map((option, index) => (
-            <article
-              key={index}
-              className={`w-full max-w-xs h-auto min-h-[500px] md:w-64 lg:w-96 flex flex-col justify-evenly border-2 rounded border-black p-4 md:p-6 lg:p-14 mb-4 md:mb-0 transition-all duration-300 group ${
-                index === 0
-                  ? "bg-[linear-gradient(to_bottom_right,#0d8488_0%,#014D4E_100%)] text-white border-transparent"
-                  : ""
-              }`}
+        
+        {/* Desktop Design - Uses the same design but responsive */}
+        <div className="hidden md:block">
+          <div className="max-w-2xl mx-auto flex flex-col items-center">
+            <h2 className="uppercase text-4xl font-bold tracking-wider text-white mb-6">
+              TOURNAMENT FEE
+            </h2>
+            <div className="text-white mb-1">
+              <span className="text-7xl font-bold flex items-center justify-center">
+                <span className="text-5xl mr-4">₹</span>
+                <span className="text-8xl font-quattrocento">500</span>
+              </span>
+            </div>
+            <p className="uppercase text-sm tracking-wider text-gray-400 mb-10">
+              PER ROUND
+            </p>
+            <button 
+              className="text-[#FFF7D9] font-quattrocento font-bold py-4 px-8 w-96 rounded uppercase text-xl tracking-wider shadow-lg border-b-4 border-[#B21214]"
+              style={{ background: 'linear-gradient(180deg, #E5181A 0%, #CB1517 50%, #B21214 100%)' }}
             >
-              <div className="text-5xl md:text-4xl font-normal font-sans mb-2 md:mb-4">
-                {option.installments}
-              </div>
-              <div className="text-2xl md:text-xl  uppercase mb-2 md:mb-4">
-                {option.installmentLabel}
-              </div>
-              <div className="text-5xl font-quattrocento font-bold mb-2 md:mb-4">
-                {option.installmentPrice}
-              </div>
-              <div
-                className={`border-t ${
-                  index === 0 ? "border-white/30" : "border-black/30"
-                } pt-3 md:pt-4 mb-2 md:mb-4`}
-              >
-                <div className="uppercase">{option.totalLabel}</div>
-                <div className="text-3xl font-quattrocento font-bold">
-                  {option.totalPrice}
-                </div>
-              </div>
-              <div className="text-lg md:text-xl font-semibold">
-                {option.savings}
-              </div>
-            </article>
-          ))}
+              REGISTER ON WHATSAPP
+            </button>
+          </div>
         </div>
       </section>
     </>
