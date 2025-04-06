@@ -2,8 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import indiaFlag from "../assets/india_flag.png";
 import centralLogo from "/favicons/favicon.svg";
-// You'll need to import the top coin image
-// import coinImage from "../assets/coin_image.png"; // Add this image to your assets
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
@@ -14,7 +12,6 @@ const Navbar = () => {
     const handleScroll = () => {
       if (navbarRef.current) {
         const rect = navbarRef.current.getBoundingClientRect();
-        // When the navbar's top reaches the viewport top, show its content.
         if (rect.top <= 0) {
           setVisible(true);
         } else {
@@ -24,7 +21,6 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    // Call once to set the initial state.
     handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
@@ -41,6 +37,18 @@ const Navbar = () => {
     return () => {
       document.body.style.overflow = 'auto';
     };
+  }, [sidebarOpen]);
+
+  // Handle escape key to close sidebar
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === 'Escape' && sidebarOpen) {
+        setSidebarOpen(false);
+      }
+    };
+
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
   }, [sidebarOpen]);
 
   return (
@@ -131,37 +139,45 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Sidebar Overlay */}
+      {/* Mobile Sidebar Overlay with enhanced transition */}
       <div
-        className={`fixed inset-0 bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 ${
-          sidebarOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-        }`}
+        className="fixed inset-0 bg-gray-900 bg-opacity-60 z-50"
+        style={{
+          opacity: sidebarOpen ? 1 : 0,
+          visibility: sidebarOpen ? 'visible' : 'hidden',
+          transition: "opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1), visibility 0.5s cubic-bezier(0.19, 1, 0.22, 1)",
+          backdropFilter: 'blur(3px)',
+          WebkitBackdropFilter: 'blur(3px)'
+        }}
         onClick={() => setSidebarOpen(false)}
       ></div>
 
-      {/* Modified Mobile Sidebar - Now 50% width */}
+      {/* Enhanced Mobile Sidebar with smooth transition */}
       <div
-        className={`fixed top-0 right-0 h-full w-[85%] py-28 bg-gray-100 z-50 transform transition-transform duration-300 ease-in-out overflow-y-auto ${
-          sidebarOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className="fixed top-0 right-0 h-full w-[85%] py-28 bg-gray-100 z-50 overflow-y-auto"
+        style={{
+          boxShadow: '-5px 0 25px rgba(0,0,0,0.2)',
+          transform: sidebarOpen ? 'translateX(0)' : 'translateX(100%)',
+          transition: 'transform 0.5s cubic-bezier(0.19, 1, 0.22, 1)',
+          willChange: 'transform'
+        }}
       >
-        {/* Sidebar Header with Coin Image */}
+        {/* Sidebar Header with Coin Image - NO ANIMATIONS */}
         <div className="relative">
-          {/* Top Coin Image - Position at top center */}
+          {/* Top Coin Image */}
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-            {/* Replace with your actual coin image */}
             <img 
-              src={centralLogo} // Replace with your actual coin image path
+              src={centralLogo}
               alt="Gold Coin" 
               className="w-56 h-56" 
             />
           </div>
           
-          {/* Close Button - positioned at top right */}
+          {/* Close Button */}
           <div className="flex justify-end p-4">
             <button
               onClick={() => setSidebarOpen(false)}
-              className="text-gray-800 focus:outline-none"
+              className="text-gray-800 focus:outline-none rounded-full p-2 hover:bg-gray-200"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +197,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Register Now Button - Full Width Red Button like in the image */}
+        {/* Register Now Button - NO ANIMATION */}
         <div className="px-4 mt-12">
           <Link to="/register" className="block">
             <button className="w-full text-center bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white py-3 rounded font-quattrocento text-lg uppercase">
@@ -190,34 +206,33 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Menu Items - Styled like the image with light blue background */}
+        {/* Menu Items - NO ANIMATIONS */}
         <div className="flex flex-col p-4 mt-4">
-          {/* Menu items as shown in the image */}
-          <Link to="/locations" className="text-gray-800 pl-6 font-bold py-6 text-left border-t border-b border-gray-300">
+          <Link to="/locations" className="text-gray-800 pl-6 font-bold py-6 text-left border-t border-b border-gray-300 hover:bg-gray-200">
             LEADERBOARD
           </Link>
           
-          <Link to="/faq" className="text-gray-800 font-bold pt-6 pl-6 text-left">
+          <Link to="/faq" className="text-gray-800 font-bold pt-6 pl-6 text-left hover:bg-gray-200">
             FREQUENTLY ASKED QUESTIONS
           </Link>
           
-          <Link to="/rules" className="text-gray-800 font-bold pt-6 pl-6 text-left ">
+          <Link to="/rules" className="text-gray-800 font-bold pt-6 pl-6 text-left hover:bg-gray-200">
             TOURNAMENT RULES
           </Link>
           
-          <Link to="/code-of-conduct" className="text-gray-800 font-bold pt-6 pl-6 text-left">
+          <Link to="/code-of-conduct" className="text-gray-800 font-bold pt-6 pl-6 text-left hover:bg-gray-200">
             PLAYER CODE OF CONDUCT
           </Link>
           
-          <Link to="/support" className="text-gray-800 font-bold py-6 pl-6 text-left  border-b border-gray-300">
+          <Link to="/support" className="text-gray-800 font-bold py-6 pl-6 text-left border-b border-gray-300 hover:bg-gray-200">
             PLAYER SUPPORT
           </Link>
           
-          <Link to="/terms" className="text-gray-800 font-bold py-6 pl-6 text-left">
+          <Link to="/terms" className="text-gray-800 font-bold py-6 pl-6 text-left hover:bg-gray-200">
             TERMS OF USE
           </Link>
           
-          <Link to="/privacy" className="text-gray-800 font-bold pl-6 text-left">
+          <Link to="/privacy" className="text-gray-800 font-bold pl-6 text-left hover:bg-gray-200">
             PRIVACY POLICY
           </Link>
         </div>
