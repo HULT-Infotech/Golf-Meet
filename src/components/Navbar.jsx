@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import indiaFlag from "../assets/india_flag.png";
 import centralLogo from "/favicons/favicon.svg";
+// You'll need to import the top coin image
+// import coinImage from "../assets/coin_image.png"; // Add this image to your assets
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
@@ -129,7 +131,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Sidebar */}
+      {/* Mobile Sidebar Overlay */}
       <div
         className={`fixed inset-0 bg-gray-900 bg-opacity-50 z-50 transition-opacity duration-300 ${
           sidebarOpen ? "opacity-100" : "opacity-0 pointer-events-none"
@@ -137,95 +139,86 @@ const Navbar = () => {
         onClick={() => setSidebarOpen(false)}
       ></div>
 
+      {/* Modified Mobile Sidebar - Now 50% width */}
       <div
-        className={`fixed top-0 right-0 h-full w-full md:w-72 bg-gray-100 noise-bg z-50 transform transition-transform duration-300 ease-in-out overflow-y-auto ${
+        className={`fixed top-0 right-0 h-full w-[85%] py-28 bg-gray-100 z-50 transform transition-transform duration-300 ease-in-out overflow-y-auto ${
           sidebarOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="p-4 flex justify-between items-center border-b border-gray-300">
-          {/* Language Selector */}
-          <div className="flex items-center gap-2 p-2 bg-white rounded shadow-sm">
-            <img src={indiaFlag} alt="India Flag" className="w-6 h-5" />
-            <span className="font-quattrocento font-semibold text-sm">En</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#5f6368"
-            >
-              <path d="M480-360 280-560h400L480-360Z" />
-            </svg>
+        {/* Sidebar Header with Coin Image */}
+        <div className="relative">
+          {/* Top Coin Image - Position at top center */}
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+            {/* Replace with your actual coin image */}
+            <img 
+              src={centralLogo} // Replace with your actual coin image path
+              alt="Gold Coin" 
+              className="w-56 h-56" 
+            />
           </div>
-
-          {/* Close Button */}
-          <button
-            onClick={() => setSidebarOpen(false)}
-            className="text-gray-800 focus:outline-none"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          
+          {/* Close Button - positioned at top right */}
+          <div className="flex justify-end p-4">
+            <button
+              onClick={() => setSidebarOpen(false)}
+              className="text-gray-800 focus:outline-none"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
 
-        {/* Mobile Menu Items */}
-        <div className="flex flex-col px-4">
-          <Link to="/home-to-play" className="text-center font-bold text-gray-800 text-base py-4 border-b border-gray-300">
-            HOW TO PLAY
-          </Link>
-          
-          <Link to="/register" className="w-full py-4">
+        {/* Register Now Button - Full Width Red Button like in the image */}
+        <div className="px-4 mt-12">
+          <Link to="/register" className="block">
             <button className="w-full text-center bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white py-3 rounded font-quattrocento text-lg uppercase">
-              REGISTER
+              REGISTER NOW
             </button>
           </Link>
-          
-          <Link to="/pay-fees" className="text-gray-800 font-bold py-4 text-center border-b border-t border-gray-300">
-            PAY FEES
+        </div>
+
+        {/* Menu Items - Styled like the image with light blue background */}
+        <div className="flex flex-col p-4 mt-4">
+          {/* Menu items as shown in the image */}
+          <Link to="/locations" className="text-gray-800 pl-6 font-bold py-6 text-left border-t border-b border-gray-300">
+            LEADERBOARD
           </Link>
           
-          <Link to="/faq" className="text-gray-800 font-bold py-4 text-center border-b border-gray-300">
+          <Link to="/faq" className="text-gray-800 font-bold pt-6 pl-6 text-left">
             FREQUENTLY ASKED QUESTIONS
           </Link>
           
-          <Link to="/rules" className="text-gray-800 font-bold py-4 text-center border-b border-gray-300">
+          <Link to="/rules" className="text-gray-800 font-bold pt-6 pl-6 text-left ">
             TOURNAMENT RULES
           </Link>
           
-          <Link to="/code-of-conduct" className="text-gray-800 font-bold py-4 text-center border-b border-gray-300">
+          <Link to="/code-of-conduct" className="text-gray-800 font-bold pt-6 pl-6 text-left">
             PLAYER CODE OF CONDUCT
           </Link>
           
-          <Link to="/support" className="text-gray-800 font-bold py-4 text-center border-b border-gray-300">
+          <Link to="/support" className="text-gray-800 font-bold py-6 pl-6 text-left  border-b border-gray-300">
             PLAYER SUPPORT
           </Link>
           
-          <Link to="/affiliate-login" className="text-gray-800 font-bold py-4 text-center border-b border-gray-300">
-            AFFILIATE LOGIN
-          </Link>
-          
-          <Link to="/terms" className="text-gray-800 font-bold py-4 text-center border-b border-gray-300">
+          <Link to="/terms" className="text-gray-800 font-bold py-6 pl-6 text-left">
             TERMS OF USE
           </Link>
           
-          <Link to="/privacy" className="text-gray-800 font-bold py-4 text-center border-b border-gray-300">
+          <Link to="/privacy" className="text-gray-800 font-bold pl-6 text-left">
             PRIVACY POLICY
-          </Link>
-          
-          <Link to="/sitemap" className="text-gray-800 font-bold py-4 text-center border-b border-gray-300">
-            SITE MAP
           </Link>
         </div>
       </div>

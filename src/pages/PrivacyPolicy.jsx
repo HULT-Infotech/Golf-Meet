@@ -21,7 +21,7 @@ function Policy() {
     <div className="md:overflow-visible overflow-hidden">
       <Navbar />
       <section
-  className="sm:bg-gray-100 sm:noise-bg noise-bg h-[84vh] relative flex flex-col md:min-h-[70vh] lg:min-h-[78vh] md:flex-row tr-bg-m overflow-hidden"
+  className="sm:bg-gray-100 sm:noise-bg noise-bg h-[85vh] relative flex flex-col md:min-h-[70vh] lg:min-h-[78vh] md:flex-row tr-bg-m overflow-hidden"
 >
   <div className="flex flex-col w-full h-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto relative">
     {/* Text Section */}
@@ -46,7 +46,7 @@ function Policy() {
     <img
       src={pr_m}
       alt="Golfers Illustration Mobile"
-      className="h-auto object-contain pointer-events-none" 
+      className="h-[80%] object-contain pointer-events-none" 
     />
   </div>
 </section>
