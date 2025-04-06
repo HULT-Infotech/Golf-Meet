@@ -12,11 +12,12 @@ function HomePage() {
     <>
       {/* Section 1  */}
       <LandingSection />
+      
+<Navbar />
+      {/* Section 2
+      <CompeteWorldwideSection /> */}
 
-      {/* Section 2 */}
-      <CompeteWorldwideSection />
-
-      <Navbar />
+      
       {/* Section 3 */}
       <HowItWorksSection />
 

@@ -12,7 +12,7 @@ import mcoc_coins1 from "../assets/m-coin.png";
 import mcoc_coins2 from "../assets/m-coin1.png";
 import mcoc_coins3 from "../assets/m-coin2.png";
 import mcoc_coins4 from "../assets/m-coin3.png";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbarother";
 import Footer from "../components/Footer";
 import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
  
@@ -93,6 +93,7 @@ function CodeOfConduct() {
             </div>
           </div>
         </section>
+        <Navbar className="md:hidden" />
 
       {/* Code of Conduct Section */}
       <section className="relative mt-32 px-4 flex items-center justify-center">

@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 function LandingPage() {
   return (
-    <section className="min-h-screen text-center mb-10">
+    <section className="min-h-screen text-center">
       <div className="relative flex flex-col min-h-[70vh] bg-gray-50 noise-bg">
         {/* Top Navbar */}
         <div className="lg:absolute z-50 top-0 w-full flex justify-between items-center px-5 lg:px-10 py-10 flex-col-reverse md:flex-row">
@@ -101,24 +101,30 @@ function LandingPage() {
         </div>
       </div>
       {/* Title */}
-      <h1 className="text-[90px] leading-[90px] tracking-[0.025em] mt-5 text-center w-[350px] md:w-auto mx-auto font-quattrocento md:text-6xl lg:text-7xl xl:text-[94px] md:leading-[106.37px] md:tracking-[0.025em] font-bold lg:mt-16 xl:mt-20">
-        GOLF MEET INDIA 2025
-      </h1>
-      <p className="font-quattrocentoSans w-80 mx-auto sm:w-auto font-normal text-[24px] leading-[26.59px] tracking-[-0.025em] text-center text-[#201E15] mt-4">
-        The year-long amateur golf tournament
-      </p>
-      <p className="font-quattrocentoSans font-normal mt-1 text-[16px] leading-[17.73px] tracking-[-0.025em] text-center text-[#201E15] p-2">
-        JANUARY 2025 - DECEMBER 2025
-      </p>
-      {/* Register Button */}
-      <button className=" my-7  rounded-md bg-gray-800 backdrop-blur-lg px-6 py-2 text-base font-normal bg-gradient-to-b from-[#828282] via-[#333333] to-[#1A1A1A] shadow-[0px_2px_4px_0px_#0000008C] transition-all duration-500 hover:shadow-[0px_4px_10px_0px_#00000073] hover:bg-gradient-to-b hover:from-[#6C6C6C] hover:via-[#2F2F2F] hover:to-[#1A1A1A] ">
-        <span className="text-lg text-[#FFF7D9] font-quattrocento">
-          REGISTRATION OPEN
+      <div className="bg-[#015E5F] noise-bg md:py-0 py-12 md:bg-transparent relative overflow-hidden">
+
+  {/* Keep original content with relative positioning so it appears above the texture */}
+  <div className="relative">
+    <h1 className="text-[90px] leading-[90px] tracking-[0.025em] mt-5 text-center w-[350px] md:w-auto mx-auto font-quattrocento md:text-6xl lg:text-7xl xl:text-[94px] md:leading-[106.37px] md:tracking-[0.025em] font-bold lg:mt-16 xl:mt-20 bg-gradient-to-b from-[#FFF2BF] to-[#F4D455] text-transparent bg-clip-text">
+      GOLF MEET INDIA 2025
+    </h1>
+    <p className="font-quattrocentoSans w-80 mx-auto sm:w-auto font-normal text-[24px] leading-[26.59px] tracking-[-0.025em] text-center text-[#fff] mt-4">
+  The year-long amateur golf tournament
+</p>
+
+<p className="font-quattrocentoSans font-normal mt-1 text-[16px] leading-[17.73px] tracking-[-0.025em] text-center text-[#fff] p-2">
+  JANUARY 2025 - DECEMBER 2025
+</p>
+    {/* Register Button with gold gradient */}
+    <div className="flex justify-center">
+      <button className="my-7 rounded-md px-10 py-2 font-normal bg-gradient-to-b from-[#FFFFFF] via-[#FBE67B] to-[#FFB41E] shadow-[0px_2px_4px_0px_#0000008C] transition-all duration-500 hover:shadow-[0px_4px_10px_0px_#00000073]">
+        <span className="text-lg text-[#014D4E] font-quattrocento font-bold">
+          REGISTER ON WHATSAPP
         </span>
-        {/* <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
-          <div className="relative h-full w-10 bg-white/20"></div>
-        </div> */}
       </button>
+    </div>
+  </div>
+</div>
     </section>
   );
 }
