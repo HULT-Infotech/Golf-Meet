@@ -14,7 +14,7 @@ const FairPlaySection = () => {
           />
         </div>
 
-        <h2 className="w-64 text-center mx-auto text-xl md:w-auto uppercase tracking-wide my-4 md:my-6 lg:my-10">
+        <h2 className="w-64 text-center mx-auto text-[1.3rem] font-medium md:text-xl md:w-auto uppercase tracking-wide my-4 md:my-6 lg:my-10">
           Play Fair. No More Handicap Inflation!
         </h2>
 
@@ -54,7 +54,7 @@ const FairPlaySection = () => {
           </h2>
           <div className="text-white mb-1">
             <span className="text-7xl font-bold flex justify-center">
-              <span className="text-5xl mr-4">₹</span>
+              <span className="text-[2.8rem] mr-4">₹</span>
               <span className="text-6xl font-quattrocento">500</span>
             </span>
           </div>

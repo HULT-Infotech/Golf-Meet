@@ -71,50 +71,17 @@ function Footer() {
         </div>
 
         {/* Content Sections */}
-        <div className="flex justify-between w-full max-w-7xl md:mx-auto md:items-center z-20 flex-col-reverse md:flex-row gap-20 md:gap-0 md:h-auto py-16 relative">
+        <div className="flex justify-between w-full max-w-7xl md:mx-auto md:items-center z-20 flex-col-reverse md:flex-row gap-20 md:gap-0 md:h-auto pt-16 relative">
           {/* Left Section - Site Language and Country of Play */}
           <div className="flex flex-col space-y-8 text-white">
             <div>
-              <label className="block text-sm font-quattrocentoSans font-semibold mb-2">
-                SITE LANGUAGE
-              </label>
-              <select className="bg-white font-quattrocento text-gray-800 p-2 rounded-sm w-36">
-                <option className="font-quattrocento">English</option>
-                {/* Add more language options as needed */}
-              </select>
-            </div>
-            <div>
-              <label className="block text-sm font-quattrocentoSans font-semibold mb-2">
-                COUNTRY OF PLAY
-              </label>
-              <div className="bg-white text-gray-800 p-2 rounded-sm w-36 flex items-center">
-                <img
-                  src={indiaFlag}
-                  alt="India Flag"
-                  className="w-5 h-5 mr-2 inline-block"
-                />
-                <span className="font-quattrocento">INDIA</span>
-              </div>
+              
             </div>
           </div>
 
           {/* Middle Section - Frequently Asked Questions, Tournament Rules, etc. */}
-          <div className="flex flex-col uppercase space-y-8 font-quattrocentoSans text-white text-left">
-            <a href="/faq" className="hover:underline">
-              Frequently Asked Questions
-            </a>
-            <a href="/tournament-rules" className="hover:underline">
-              Tournament Rules
-            </a>
-            <a href="/code-of-conduct" className="hover:underline">
-              Player Code of Conduct
-            </a>
-            <a href="/affiliate-login" className="hover:underline">
-              Affiliate Login
-            </a>
-          </div>
 
-          {/* Right Section - Player Support, Terms of Use, etc. */}
+
           <div className="flex uppercase flex-col font-quattrocentoSans space-y-8 text-white text-left">
             <a href="/player-support" className="hover:underline">
               Player Support
@@ -125,15 +92,32 @@ function Footer() {
             <a href="/privacy-policy" className="hover:underline">
               Privacy Policy
             </a>
-            <a href="/site-map" className="hover:underline">
-              Site Map
+          </div>
+          <div className="flex flex-col uppercase space-y-8 font-quattrocentoSans text-white text-left">
+
+
+
+            <a href="/leaderboard" className="hover:underline">
+              LeaderBoard
+            </a>
+            <a href="/faq" className="hover:underline">
+              Frequently Asked Questions
+            </a>
+            <a href="/tournament-rules" className="hover:underline">
+              Tournament Rules
+            </a>
+            <a href="/code-of-conduct" className="hover:underline">
+              Player Code of Conduct
             </a>
           </div>
+
+          {/* Right Section - Player Support, Terms of Use, etc. */}
+          
         </div>
       </section>
 
       {/* Bottom Gray Section */}
-      <section className="bg-gray-100 noise-bg h-24 text-center flex justify-center items-center w-full">
+      <section className="bg-gray-100 noise-bg h-28 text-center flex justify-center items-center w-full">
         <p className="text-gray-600 text-sm">
           Copyright © 2024 Golfmeet LLP. All Rights Reserved.
         </p>
