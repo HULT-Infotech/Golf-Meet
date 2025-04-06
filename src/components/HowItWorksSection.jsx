@@ -12,7 +12,7 @@ const HowItWorksSection = () => {
       {/* Steps */}
 
       <h1
-        className="text-[64px] px-10 lg:mt-10 font-quattrocento font-bold md:text-[64px] leading-[70.91px] tracking-[0.025em] text-center  text-[#014D4E] md:text-5xl mb-10 lg:mb-0 "
+        className="text-[59px] px-10 lg:mt-10 font-quattrocento font-bold md:text-[64px] leading-[70.91px] tracking-[0.025em] text-center  text-[#014D4E] md:text-5xl mb-10 lg:mb-0 "
         style={{ textShadow: "0px 0px 6px #F4D4555C" }}
       >
         HOW IT WORKS

@@ -1,12 +1,10 @@
 import React from "react";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
-import tr_bg_mobile from "../assets/check.svg";
-import tr_dec_mobile from "../assets/green-m.svg";
-import code_of_conduct_greenleft from "../assets/code-of-conduct/code-conduct-left.svg";
 import coc_coins1 from "../assets/coc-coins1.svg";
 import coc_coins2 from "../assets/coc-coins2.svg";
 import coc_coins3 from "../assets/coc-coins3.svg";
 import coc_coins4 from "../assets/coc-coins4.svg";
+import tr_mobile from "../assets/tournament-rule/tournaments-mobile.svg";
 import coc_coins5 from "../assets/coc-coins5.svg";
 import mcoc_coins1 from "../assets/m-coin.png";
 import mcoc_coins2 from "../assets/m-coin1.png";
@@ -16,64 +14,47 @@ import Navbar from "../components/navbarother";
 import Footer from "../components/Footer";
 import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
  
-function CodeOfConduct() {
+function Terms() {
   return (
     <div className="md:overflow-visible overflow-hidden">
       <Navbar />
-      <section 
+      <section className="bg-gray-100 noise-bg relative flex flex-col h-auto md:h-[100vh] md:flex-row">
+                <div className="flex flex-col w-full h-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
+                  {/* Text Section */}
+                  <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8 min-w-[300px] z-10">
+                    <h1 className="font-quattrocento font-bold  text-5xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
+                      TERMS OF <br /> USE
+                    </h1>
+                  </div>
       
-  className="sm:bg-gray-100 sm:noise-bg noise-bg relative flex flex-col md:min-h-[70vh] lg:min-h-[78vh] md:flex-row tr-bg-m"
->
-  <div className="flex flex-col w-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto">
-    <div className="relative flex flex-col justify-center items-center md:items-start p-8 md:pl-10 md:p-0 xl:ml-20">
-      <h1
-        className="font-quattrocento text-5xl md:text-6xl md:text-[37px]  lg:text-[55px] xl:text-8xl max-w-2xl font-bold mb-4 mt-4 text-[#201E15] text-center md:text-left xl:text-[80px]"
-        style={{lineHeight: "1.1" }}
-      >
-        <span className="whitespace-nowrap">PLAYER CODE</span>
-        <br />
-        OF CONDUCT
-      </h1>
-    </div>
-
-    {/* Right Image Section with mobile-specific version */}
-    <div className="flex relative bottom-0 items-end px-0">
-      <img
-        src={tr_bg}
-        alt="Golfers Illustration"
-        className="w-full object-contain pointer-events-none hidden md:block"
-      />
-      <img
-        src={tr_bg_mobile}
-        alt="Golfers Illustration Mobile"
-        className="w-[90%] object-contain pointer-events-none md:hidden"
-      />
-    </div>
-  </div>
-
-  {/* Decorative Green Element */}
-  <img
-    src={code_of_conduct_greenleft}
-    alt="Green left element"
-    className="hidden md:block absolute md:-bottom-20 left-0 w-[270px] lg:w-[400px] lg:-bottom-24 object-contain pointer-events-none"
-  />
-  
-  {/* Mobile decorative element - only visible on mobile */}
-  <img
-    src={tr_dec_mobile}
-    alt="Mobile decorative element"
-    className="absolute -bottom-10 left-0 w-[180px] object-contain pointer-events-none md:hidden"
-  />
-</section>
+                  {/* Right Image Section - Updated to match HowToPlay style */}
+                  <div className="flex items-end px-5 md:px-0">
+                    <img
+                      src={tr_bg}
+                      alt="Golfers Illustration"
+                      className="w-full h-auto object-contain pointer-events-none md:mr-12 md:mt-4 hidden md:block"
+                    />
+                  </div>
+                </div>
+                
+                {/* Mobile image - Updated to match HowToPlay style */}
+                <div className="flex items-end px-5 w-full md:hidden">
+                  <img
+                    src={tr_mobile}
+                    alt="Mobile Golfers Illustration"
+                    className="w-full h-auto pointer-events-none object-contain"
+                  />
+                </div>
+              </section>
 <section className="flex flex-col items-center justify-center  mt-20 md:mt-20 xl:mt-24 relative mb-6 sm:mb-0">
           <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">
               <h2 className="lg:text-5xl md:4xl text-[1.8rem]  font-bold uppercase font-quattrocento">
-              TOURNAMENT RULES
+              PRIVACY POLICY
               </h2>
               <p className="lg:text-lg md:3xl tect-[1.5rem]  underline underline-offset-4">
                 Please refer to the
-                <strong> GolfMeet Tournament Rules </strong> here
+                <strong> Privacy Policy </strong> here
               </p>
             </div>
             <div>
@@ -373,4 +354,4 @@ function CodeOfConduct() {
   );
 }
 
-export default CodeOfConduct;
+export default Terms;
