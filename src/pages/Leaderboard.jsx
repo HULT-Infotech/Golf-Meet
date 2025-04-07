@@ -15,30 +15,317 @@ function LeaderPage() {
                         <div className="border-t-2 border-gray-300 flex-grow"></div>
                     </div>
                     <section className="flex flex-col items-center mx-auto my-12">
-                    <div className="w-[370px] h-[140px] bg-white mb-8 rounded-2xl shadow-2xl relative">
-                <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
-                <div className="w-[370px] h-[75px] bg-[#01383A] rounded-2xl flex items-center">
-                    <span className="text-white left-28 relative">N. Ramachandra Rao</span>
-                </div>
-                <div className="flex justify-between px-8 pt-4 items-center">
-                    <div className="flex items-center">
-                    <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
-                    <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
-                        <span className="text-[#014D4E] text-sm font-bold">123</span>
+                    <div className="wrapper" style={{ 
+                        width: 'clamp(280px, calc(100% - 24px), 370px)',
+                        margin: '0 auto'
+                        }}>
+                        <div style={{ 
+                            width: '100%', 
+                            height: '140px'
+                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                            <div style={{ 
+                            width: '100%', 
+                            height: '75px'
+                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            </div>
+                            <div className="flex justify-between px-8 pt-4 items-center">
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
+                                <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                </div>
+                            </div>
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
+                                <div className="bg-[#F4D455] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                     </div>
+                    <div className="wrapper" style={{ 
+                        width: 'clamp(280px, calc(100% - 24px), 370px)',
+                        margin: '0 auto'
+                        }}>
+                        <div style={{ 
+                            width: '100%', 
+                            height: '140px'
+                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                            <div style={{ 
+                            width: '100%', 
+                            height: '75px'
+                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            </div>
+                            <div className="flex justify-between px-8 pt-4 items-center">
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
+                                <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                </div>
+                            </div>
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
+                                <div className="bg-[#F4D455] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="flex items-center">
-                    <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
-                    <div className="bg-[#F4D455] rounded-full px-4 py-1">
-                        <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                    <div className="wrapper" style={{ 
+                        width: 'clamp(280px, calc(100% - 24px), 370px)',
+                        margin: '0 auto'
+                        }}>
+                        <div style={{ 
+                            width: '100%', 
+                            height: '140px'
+                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                            <div style={{ 
+                            width: '100%', 
+                            height: '75px'
+                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            </div>
+                            <div className="flex justify-between px-8 pt-4 items-center">
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
+                                <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                </div>
+                            </div>
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
+                                <div className="bg-[#F4D455] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                     </div>
+                    <div className="wrapper" style={{ 
+                        width: 'clamp(280px, calc(100% - 24px), 370px)',
+                        margin: '0 auto'
+                        }}>
+                        <div style={{ 
+                            width: '100%', 
+                            height: '140px'
+                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                            <div style={{ 
+                            width: '100%', 
+                            height: '75px'
+                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            </div>
+                            <div className="flex justify-between px-8 pt-4 items-center">
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
+                                <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                </div>
+                            </div>
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
+                                <div className="bg-[#F4D455] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-        </div>
-            <div className="w-[370px] h-[150px] bg-green-800 mb-4"></div>
-            <div className="w-[370px] h-[150px] bg-green-800 mb-4"></div>
-            <div className="w-[370px] h-[150px] bg-green-800 mb-4"></div>
-            <div className="w-[370px] h-[150px] bg-green-800"></div>
+                    <div className="wrapper" style={{ 
+                        width: 'clamp(280px, calc(100% - 24px), 370px)',
+                        margin: '0 auto'
+                        }}>
+                        <div style={{ 
+                            width: '100%', 
+                            height: '140px'
+                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                            <div style={{ 
+                            width: '100%', 
+                            height: '75px'
+                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            </div>
+                            <div className="flex justify-between px-8 pt-4 items-center">
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
+                                <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                </div>
+                            </div>
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
+                                <div className="bg-[#F4D455] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="wrapper" style={{ 
+                        width: 'clamp(280px, calc(100% - 24px), 370px)',
+                        margin: '0 auto'
+                        }}>
+                        <div style={{ 
+                            width: '100%', 
+                            height: '140px'
+                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                            <div style={{ 
+                            width: '100%', 
+                            height: '75px'
+                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            </div>
+                            <div className="flex justify-between px-8 pt-4 items-center">
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
+                                <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                </div>
+                            </div>
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
+                                <div className="bg-[#F4D455] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="wrapper" style={{ 
+                        width: 'clamp(280px, calc(100% - 24px), 370px)',
+                        margin: '0 auto'
+                        }}>
+                        <div style={{ 
+                            width: '100%', 
+                            height: '140px'
+                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                            <div style={{ 
+                            width: '100%', 
+                            height: '75px'
+                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            </div>
+                            <div className="flex justify-between px-8 pt-4 items-center">
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
+                                <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                </div>
+                            </div>
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
+                                <div className="bg-[#F4D455] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="wrapper" style={{ 
+                        width: 'clamp(280px, calc(100% - 24px), 370px)',
+                        margin: '0 auto'
+                        }}>
+                        <div style={{ 
+                            width: '100%', 
+                            height: '140px'
+                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                            <div style={{ 
+                            width: '100%', 
+                            height: '75px'
+                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            </div>
+                            <div className="flex justify-between px-8 pt-4 items-center">
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
+                                <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                </div>
+                            </div>
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
+                                <div className="bg-[#F4D455] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="wrapper" style={{ 
+                        width: 'clamp(280px, calc(100% - 24px), 370px)',
+                        margin: '0 auto'
+                        }}>
+                        <div style={{ 
+                            width: '100%', 
+                            height: '140px'
+                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                            <div style={{ 
+                            width: '100%', 
+                            height: '75px'
+                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            </div>
+                            <div className="flex justify-between px-8 pt-4 items-center">
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
+                                <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                </div>
+                            </div>
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
+                                <div className="bg-[#F4D455] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="wrapper" style={{ 
+                        width: 'clamp(280px, calc(100% - 24px), 370px)',
+                        margin: '0 auto'
+                        }}>
+                        <div style={{ 
+                            width: '100%', 
+                            height: '140px'
+                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                            <div style={{ 
+                            width: '100%', 
+                            height: '75px'
+                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            </div>
+                            <div className="flex justify-between px-8 pt-4 items-center">
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
+                                <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                </div>
+                            </div>
+                            <div className="flex items-center">
+                                <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
+                                <div className="bg-[#F4D455] rounded-full px-4 py-1">
+                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
         </section>
 
     </section>
