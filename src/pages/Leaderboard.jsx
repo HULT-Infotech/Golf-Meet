@@ -6,7 +6,7 @@ import l1 from "../assets/leader1.svg";
 function LeaderPage() {
   return (
     <>
-    <section className="noise-bg h-auto">
+    <section className=" h-auto">
     <Navbar/>
         <h1 className="font-quattrocento font-bold text-4xl mt-12 mb-2 text-center text-[#201E15]">LEADERBOARD</h1>
         <div className="flex items-center justify-center w-full whitespace-nowrap">
@@ -22,12 +22,12 @@ function LeaderPage() {
                         <div style={{ 
                             width: '100%', 
                             height: '140px'
-                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
-                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                        }} className="bg-white mb-8 rounded-2xl shadow-xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8 z-20" />
                             <div style={{ 
                             width: '100%', 
                             height: '75px'
-                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
                             <span className="text-white left-28 relative">N. Ramachandra Rao</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
@@ -53,12 +53,12 @@ function LeaderPage() {
                         <div style={{ 
                             width: '100%', 
                             height: '140px'
-                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
-                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                        }} className="bg-white mb-8 rounded-2xl shadow-xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8 z-20" />
                             <div style={{ 
                             width: '100%', 
                             height: '75px'
-                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
                             <span className="text-white left-28 relative">N. Ramachandra Rao</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
@@ -84,12 +84,12 @@ function LeaderPage() {
                         <div style={{ 
                             width: '100%', 
                             height: '140px'
-                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
-                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                        }} className="bg-white mb-8 rounded-2xl shadow-xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8 z-20" />
                             <div style={{ 
                             width: '100%', 
                             height: '75px'
-                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
                             <span className="text-white left-28 relative">N. Ramachandra Rao</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
@@ -115,12 +115,12 @@ function LeaderPage() {
                         <div style={{ 
                             width: '100%', 
                             height: '140px'
-                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
-                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                        }} className="bg-white mb-8 rounded-2xl shadow-xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8 z-20" />
                             <div style={{ 
                             width: '100%', 
                             height: '75px'
-                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
                             <span className="text-white left-28 relative">N. Ramachandra Rao</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
@@ -146,12 +146,12 @@ function LeaderPage() {
                         <div style={{ 
                             width: '100%', 
                             height: '140px'
-                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
-                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                        }} className="bg-white mb-8 rounded-2xl shadow-xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8 z-20" />
                             <div style={{ 
                             width: '100%', 
                             height: '75px'
-                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
                             <span className="text-white left-28 relative">N. Ramachandra Rao</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
@@ -177,12 +177,12 @@ function LeaderPage() {
                         <div style={{ 
                             width: '100%', 
                             height: '140px'
-                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
-                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                        }} className="bg-white mb-8 rounded-2xl shadow-xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8 z-20" />
                             <div style={{ 
                             width: '100%', 
                             height: '75px'
-                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
                             <span className="text-white left-28 relative">N. Ramachandra Rao</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
@@ -208,12 +208,12 @@ function LeaderPage() {
                         <div style={{ 
                             width: '100%', 
                             height: '140px'
-                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
-                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                        }} className="bg-white mb-8 rounded-2xl shadow-xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8 z-20" />
                             <div style={{ 
                             width: '100%', 
                             height: '75px'
-                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
                             <span className="text-white left-28 relative">N. Ramachandra Rao</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
@@ -239,12 +239,12 @@ function LeaderPage() {
                         <div style={{ 
                             width: '100%', 
                             height: '140px'
-                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
-                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                        }} className="bg-white mb-8 rounded-2xl shadow-xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8 z-20" />
                             <div style={{ 
                             width: '100%', 
                             height: '75px'
-                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
                             <span className="text-white left-28 relative">N. Ramachandra Rao</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
@@ -270,12 +270,12 @@ function LeaderPage() {
                         <div style={{ 
                             width: '100%', 
                             height: '140px'
-                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
-                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                        }} className="bg-white mb-8 rounded-2xl shadow-xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8 z-20" />
                             <div style={{ 
                             width: '100%', 
                             height: '75px'
-                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
                             <span className="text-white left-28 relative">N. Ramachandra Rao</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
@@ -301,12 +301,12 @@ function LeaderPage() {
                         <div style={{ 
                             width: '100%', 
                             height: '140px'
-                        }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
-                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8" />
+                        }} className="bg-white mb-8 rounded-2xl shadow-xl relative">
+                            <img src={l1} alt="placeholder" className="absolute -top-[0.6rem] left-8 z-20" />
                             <div style={{ 
                             width: '100%', 
                             height: '75px'
-                            }} className="bg-[#01383A] rounded-2xl flex items-center">
+                            }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
                             <span className="text-white left-28 relative">N. Ramachandra Rao</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
@@ -325,7 +325,7 @@ function LeaderPage() {
                             </div>
                         </div>
                     </div>
-
+                    
         </section>
 
     </section>
