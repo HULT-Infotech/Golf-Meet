@@ -10,48 +10,30 @@ import { Link } from "react-router-dom";
 function LandingPage() {
   return (
     <section className="min-h-screen text-center">
-      <div className="relative flex flex-col min-h-[70vh] bg-gray-50 noise-bg">
-        {/* Top Navbar */}
-        <div className="lg:absolute z-50 top-0 w-full flex justify-between items-center px-5 lg:px-10 py-10 flex-col-reverse md:flex-row">
-          <div className="flex gap-10 mt-4 md:mt-0 w-full lg:w-auto">
-            <button
-              className="text-sm lg:text-base bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-2 py-1 md:px-5 md:py-2 rounded transition-all duration-300 ease-in-out shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)] 
-  hover:from-[#E5181A] hover:via-[#E51719] hover:to-[#CC1517] hover:scale-110 hover:shadow-[0px_2px_10px_0px_rgba(0,0,0,0.45)]"
-            >
-              <span className="font-quattrocento text-[#FFF7D9]">
-                REGISTER NOW
-              </span>
-            </button>
+<div className="relative flex flex-col min-h-[70vh] bg-gray-50 noise-bg">
+  {/* Top Navbar */}
+  <div className="lg:absolute z-50 top-0 w-full flex justify-between items-center px-8 lg:px-10 py-10">
+  {/* Left Side - Register Button */}
+  <button
+    className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] 
+    px-4 py-2 rounded-md text-[#FFF7D9] uppercase tracking-[0.1em] font-quattrocento text-[.8rem] md:text-base
+    shadow-[0_2px_4px_rgba(0,0,0,0.55)] 
+    hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"
+  >
+    Register Now
+  </button>
 
-            <Link
-              to="/home-to-play"
-              className="text-base  leading-4 text-[#201E15] font-quattrocentoSans font-bold text-center my-auto "
-            >
-              HOW TO PLAY
-            </Link>
-            <a
-              href="#"
-              className="text-base leading-4  text-[#201E15] font-quattrocentoSans  my-auto font-bold"
-            >
-              PAY FEES
-            </a>
-          </div>
-          <div className="flex items-center w-full md:w-auto justify-between gap-2">
-            <div className="flex items-center gap-1">
-              <img src={indiaFlag} alt="India Flag" className="w-6 h-5 mr-1" />
-              <span className="font-quattrocento font-bold text-base">En</span>
-            </div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#201E15"
-            >
-              <path d="M480-360 280-560h400L480-360Z" />
-            </svg>
-          </div>
-        </div>
+  {/* Right Side - Leaderboard Link */}
+  <Link
+    to="/home-to-play"
+    className="uppercase text-[#1C1C1C] font-quattrocentoSans font-bold tracking-[0.1em] text-[.8rem] md:text-base"
+  >
+    Leaderboard
+  </Link>
+</div>
+
+
+
 
         {/*//! Hero Section Laptops */}
         <div className="hidden relative  lg:max-w-5xl  xl:max-w-[85vw] mx-auto  min-h-[70vh] lg:flex flex-col w-full items-center">
@@ -84,7 +66,7 @@ function LandingPage() {
         </div>
 
         {/*//! Design Mobile */}
-        <div className="relative flex flex-col lg:hidden items-center">
+        <div className="relative flex flex-col gap-20 lg:hidden items-center">
           <img
             src="favicons/favicon.svg"
             alt="Golfmeet Logo"
