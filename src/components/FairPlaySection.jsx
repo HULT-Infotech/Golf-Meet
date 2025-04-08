@@ -46,7 +46,7 @@ const FairPlaySection = () => {
       </section>
 
       {/* Second Section - Pricing - Exact Match to Image */}
-      <section className="bg-[#004141] w-full py-12">
+      <section className="bg-[#004141] noise-bg-green w-full py-12">
         {/* Mobile Design - Exact Match */}
         <div className="flex flex-col items-center px-4 md:hidden">
           <h2 className="uppercase text-[1.6rem] font-bold tracking-wider text-white mb-6 ">
