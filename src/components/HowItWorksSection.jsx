@@ -6,6 +6,7 @@ import Illustration_Greens_mobile from "../assets/Illustration_Greens_mobile.svg
 import Illustration_Greens_Desktop from "../assets/checking.svg";
 import video_section_right_bg_with_flag from "../assets/video-section.svg";
 import glow_yellow from "../assets/glow_yellow.svg";
+import Img from "../assets/video.svg";
 const HowItWorksSection = () => {
   return (
     <section className="relative bg-white text-black pt-16">
@@ -156,25 +157,30 @@ const HowItWorksSection = () => {
               will get added to the leaderboard.*
             </h2>
 
-            <p className="text-sm text-gray-600 md:text-lg  md:max-w-xl">
+            <p className="text-sm text-gray-600 max-w-52 md:text-lg  md:max-w-xl">
               *You can play unlimited rounds at any eligible golf course around
               the world. But at least 8 of your qualifying rounds must be played
               at golf courses within your home country.
             </p>
           </div>
         </div>
-      </div>
+      </div><img
+  src={Img}
+  alt=""
+  className="w-full right-0 absolute z-0 [bottom:clamp(-6.6rem,-22vw,-10rem)] md:-bottom-32"
+/>
+
       <div className="absolute flex justify-end bottom-[60rem]  right-0 w-full">
         <img src={glow_yellow} alt="glow_yellow" className="w-1/2" />
       </div>
-      <div className="absolute  -bottom-24 right-0  w-full ">
+      {/* <div className="absolute  -bottom-24 right-0  w-full ">
         <img
           src={video_section_right_bg_with_flag}
           draggable="false"
           alt="right_bg_with_flag "
           className="w-full"
         />
-      </div>
+      </div> */}
     </section>
   );
 };
