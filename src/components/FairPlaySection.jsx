@@ -62,7 +62,7 @@ const FairPlaySection = () => {
             PER ROUND
           </p>
           <button 
-            className="text-[#FFF7D9] font-quattrocento font-bold py-3 px-3 w-full max-w-60 rounded uppercase text-[15px] tracking-wider shadow-lg border-red"
+            className="text-[#FFF7D9] font-quattrocento font-bold py-3 px-3 w-full max-w-60 rounded uppercase text-[15px] tracking-wider shadow-xl border-red"
             style={{ background: 'linear-gradient(180deg, #E5181A 0%, #CB1517 50%, #B21214 100%)' }}
           >
             REGISTER ON WHATSAPP

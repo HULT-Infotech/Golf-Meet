@@ -197,7 +197,7 @@ function FaQ() {
 
     {/* Right Side - Leaderboard Link */}
     <Link
-      to="/home-to-play"
+      to="/leaderboard"
       className="uppercase text-[#1C1C1C] font-quattrocentoSans font-bold tracking-[0.1em] 
       [font-size:clamp(0.65rem,2.5vw,1rem)]"
     >
