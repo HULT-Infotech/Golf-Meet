@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
 import tr_greenleft from "../assets/tournament-rule/tr-green-left.svg";
 import tr_greenleft_m from "../assets/tournament-rule/green-mobile.svg";
@@ -89,11 +90,36 @@ function TournamentRule() {
 
   return (
     <>
-      <Navbar />
       {/* Main container */}
       <div className="md:h-[108vh] flex flex-col relative">
         {/* Hero section */}
         <section className="bg-gray-100 noise-bg relative flex flex-col h-auto md:h-[100vh] md:flex-row">
+        <div className="lg:absolute z-50 min-h-20 top-0 w-full flex justify-between items-center 
+    [padding-left:clamp(1rem,5vw,3.5rem)] 
+    [padding-right:clamp(1rem,5vw,3.5rem)] 
+    [padding-top:clamp(1.5rem,5vw,2.5rem)] 
+    [padding-bottom:clamp(1.5rem,5vw,2.5rem)]">
+
+    {/* Left Side - Register Button */}
+    <button
+      className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] 
+      px-4 py-2 rounded-md text-[#FFF7D9] uppercase tracking-[0.1em] font-quattrocento
+      [font-size:clamp(0.65rem,2.5vw,1rem)]
+      shadow-[0_2px_4px_rgba(0,0,0,0.55)] 
+      hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"
+    >
+      Register Now
+    </button>
+
+    {/* Right Side - Leaderboard Link */}
+    <Link
+      to="/home-to-play"
+      className="uppercase text-[#1C1C1C] font-quattrocentoSans font-bold tracking-[0.1em] 
+      [font-size:clamp(0.65rem,2.5vw,1rem)]"
+    >
+      Leaderboard
+    </Link>
+  </div>
           <div className="flex flex-col w-full h-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
             {/* Text Section */}
             <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8 min-w-[300px] z-10">
@@ -167,6 +193,7 @@ function TournamentRule() {
             </div>
           </div>
         </section>
+      <Navbar/>
 
         {/* Mobile Sections Navigation - Only visible on mobile */}
         <div

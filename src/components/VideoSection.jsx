@@ -2,7 +2,8 @@ import React from "react";
 
 function VideoSection() {
   return (
-    <section className="bg-[#014D4E] min-h-screen flex flex-col items-center justify-center pt-10 md:p-20 relative">
+    <section className="bg-[#014D4E] min-h-screen flex flex-col items-center justify-center pt-10 md:p-20 relative clip-slant">
+
       {/* Video player container with border */}
       
 
