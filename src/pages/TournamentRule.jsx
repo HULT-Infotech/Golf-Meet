@@ -193,7 +193,6 @@ function TournamentRule() {
             </div>
           </div>
         </section>
-      <Navbar/>
 
         {/* Mobile Sections Navigation - Only visible on mobile */}
         <div
@@ -231,6 +230,7 @@ function TournamentRule() {
           </div>
         </div>
       </div>
+      <Navbar/>
 
       {/* Main content section */}
       <section className="flex relative md:mt-12 justify-center w-full mx-auto max-w-screen-xl px-4 sm:px-6 md:px-8">

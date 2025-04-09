@@ -255,6 +255,7 @@ function FaQ() {
           className="w-full object-cover"
         />
       </div>
+      <Navbar/>
 
       <section className="py-8 md:py-16 px-6 md:px-8 bg-white mt-8 md:mt-24">
         <div className="flex flex-col md:flex-row max-w-[1300px] mx-auto gap-6 md:gap-12">
