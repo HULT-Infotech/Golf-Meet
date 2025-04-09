@@ -32,7 +32,7 @@ function Common() {
 </div>
 
 {/* Background color for mobile/smaller screens */}
-<div className="absolute inset-0 w-full z-6 h-full md:hidden noise-bg bg-[#014D4E]">
+<div className="absolute inset-0 w-full z-6 h-full md:hidden noise-bg bg-[#00292D]">
 </div>
 
 {/* Coin Images - visible only on larger screens */}
