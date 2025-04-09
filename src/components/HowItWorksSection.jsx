@@ -109,7 +109,7 @@ const HowItWorksSection = () => {
       </div>
 
       {/*  Section 4 */}
-      <div className="mx-auto noise-bg py-10 md:py-20">
+      <div className="mx-auto noise-bg-low py-10 md:py-20">
         <div className="text-center mb-12">
           <h1 className="text-[40px] leading-[40px] hidden md:block w-auto mb-8  lg:text-[90px] font-quattrocento font-bold  md:leading-[106.37px] tracking-[0.025em] text-center">
             THE SOCIAL AMATEUR
@@ -167,7 +167,7 @@ const HowItWorksSection = () => {
       </div><img
   src={Img}
   alt=""
-  className="w-full right-0 absolute z-0 [bottom:clamp(-6.6rem,-22vw,-10rem)] md:-bottom-32"
+  className="w-full right-0 absolute z-0 [bottom:clamp(-6.3rem,-22vw,-10rem)] md:-bottom-32"
 />
 
       <div className="absolute flex justify-end bottom-[60rem]  right-0 w-full">

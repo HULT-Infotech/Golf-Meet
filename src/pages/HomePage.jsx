@@ -20,8 +20,9 @@ function HomePage() {
       
       {/* Section 3 */}
       <HowItWorksSection />
-
+<div className="-mt-3">
       <VideoSection />
+      </div>
 
       {/* Section 4 */}
       <FairPlaySection />

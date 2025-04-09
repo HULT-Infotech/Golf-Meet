@@ -171,10 +171,10 @@ function TournamentRule() {
               <h2 className="lg:text-5xl md:4xl text-[1.8rem]  font-bold uppercase font-quattrocento">
                 Player Code of Conduct
               </h2>
-              <p className="lg:text-lg md:3xl tect-[1.5rem]  underline underline-offset-4">
+              <Link to="/code-of-conduct"><p className="lg:text-lg md:3xl tect-[1.5rem]  underline underline-offset-4">
                 Please refer to the
                 <strong> GolfMeet Tournament Rules </strong> here
-              </p>
+              </p></Link>
             </div>
             <div>
               <svg

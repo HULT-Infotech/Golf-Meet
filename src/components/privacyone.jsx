@@ -54,12 +54,12 @@ function Policy() {
   
   {/* Mobile image container - full width with right alignment */}
   <div className="absolute bottom-0 right-0 md:hidden" style={{ marginRight: "0px" }}>
-    <img
-      src={pr_m}
-      alt="Golfers Illustration Mobile"
-      className="h-[80%] object-contain pointer-events-none" 
-    />
-  </div>
+  <img
+    src={pr_m}
+    alt="Golfers Illustration Mobile"
+    className="w-[87%] ml-auto object-contain pointer-events-none"
+  />
+</div>
 </section>
 <section className="flex flex-col items-center justify-center  mt-20 md:mt-20 xl:mt-24 relative mb-6 sm:mb-0">
           <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
@@ -67,10 +67,10 @@ function Policy() {
               <h2 className="lg:text-5xl md:4xl text-[1.8rem]  font-bold uppercase font-quattrocento">
               TERMS OF USE
               </h2>
-              <p className="lg:text-lg md:3xl tect-[1.5rem]  underline underline-offset-4">
+              <Link to="/terms-of-use"><p className="lg:text-lg md:3xl tect-[1.5rem]  underline underline-offset-4">
                 Please refer to the
                 <strong> Terms of Use </strong> here
-              </p>
+              </p></Link>
             </div>
             <div>
               <svg
