@@ -1,16 +1,10 @@
 import React from "react";
-import landingRightImg from "../assets/landing_right_img.svg";
-import landingLeftImg from "../assets/landing_left_img.svg";
-import indiaFlag from "../assets/india_flag.png";
-import faq_bg_mobile from "../assets/paper.svg"; // New import
-
-import Illustration_Golfers_Mobile from "../assets/Illustration_Golfers_Mobile.svg";
+import Illustration_Golfers_Mobile from "../assets/HomePage/Illustration_Golfers_Mobile.webp";
 import { Link } from "react-router-dom";
+
   // Function to handle the WhatsApp button click
   const handleWhatsAppClick = () => {
-    // The phone number provided: +91-888 484 4444
-    // Remove non-numeric characters for the WhatsApp link
-    const phoneNumber = "918884844444"; // Added country code without + sign
+    const phoneNumber = "918884844444";
     window.open(`https://wa.me/${phoneNumber}`, "_blank");
   };
 function LandingPage() {
@@ -52,7 +46,7 @@ function LandingPage() {
 
         {/*//! Hero Section Laptops */}
         <div className="hidden relative  lg:max-w-5xl  xl:max-w-[85vw] mx-auto  min-h-[70vh] lg:flex flex-col w-full items-center">
-          <div className="absolute left-0 -bottom-2">
+          {/* <div className="absolute left-0 -bottom-2">
             <img
               src={landingLeftImg}
               alt="Golf Illustration Left"
@@ -67,7 +61,7 @@ function LandingPage() {
               className="w-full lg:w-[380px]  xl:w-[30vw] "
               draggable="false"
             />
-          </div>
+          </div> */}
 
           {/* Center Logo */}
           <div className="absolute lg:-bottom-14 xl:-bottom-20">

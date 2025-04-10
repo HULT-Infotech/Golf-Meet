@@ -1,5 +1,5 @@
 import React from "react";
-import Illustration_Golfers_Mobile from "../assets/Illustration_Golfers_Mobile.svg";
+import Illustration_Golfers_Mobile from "../assets/HomePage/Illustration_Golfers_Mobile.webp";
 
 const FairPlaySection = () => {
   // Function to handle the WhatsApp button click
