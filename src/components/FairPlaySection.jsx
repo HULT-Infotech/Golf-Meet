@@ -13,7 +13,7 @@ const FairPlaySection = () => {
   return (
     <>
       {/* First Section - Introduction */}
-      <section className="relative bg-gray-100 noise-bg-lowest md:min-h-[96vh] drop-shadow-xl w-full flex flex-col justify-between p-4 sm:p-0 md:px-8 text-center">
+      <section className="relative bg-gray-100 noise-bg-neww md:min-h-[96vh] drop-shadow-xl w-full flex flex-col justify-between p-4 sm:p-0 md:px-8 text-center">
         <div className="absolute z-10 bottom-0 left-0 right-0 flex justify-center items-center w-full opacity-30">
           <img
             src={Illustration_Golfers_Mobile}
@@ -54,7 +54,7 @@ const FairPlaySection = () => {
       </section>
 
       {/* Second Section - Pricing - Exact Match to Image */}
-      <section className="bg-[#004141] noise-bg-green w-full py-12">
+      <section className="bg-[#004141] noise-bg-new w-full py-12">
         {/* Mobile Design - Exact Match */}
         <div className="flex flex-col items-center px-4 md:hidden">
           <h2 className="uppercase text-[1.6rem] font-bold tracking-wider text-white mb-6 ">

@@ -106,7 +106,7 @@ const HowItWorksSection = () => {
       </div>
 
       {/*  Section 4 */}
-      <div className="mx-auto noise-bg-low py-10 -mt-16 md:py-20">
+      <div className="mx-auto noise-bg-neww py-10 -mt-16 md:py-20">
         <div className="text-center mt-16 mb-12">
           <h1 className="text-[40px] leading-[40px] hidden md:block w-auto mb-8  lg:text-[90px] font-quattrocento font-bold  md:leading-[106.37px] tracking-[0.025em] text-center">
             THE SOCIAL AMATEUR

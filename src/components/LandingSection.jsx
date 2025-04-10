@@ -93,7 +93,7 @@ function LandingPage() {
         </div>
       </div>
       {/* Title */}
-      <div className="bg-[#01383A] noise-bg-green md:py-0 py-12 md:bg-transparent relative overflow-hidden">
+      <div className="bg-[#01383A] noise-bg-new md:py-0 py-12 md:bg-transparent relative overflow-hidden">
 
   {/* Keep original content with relative positioning so it appears above the texture */}
   <div className="relative">
