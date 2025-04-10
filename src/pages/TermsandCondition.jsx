@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 
 function TermPage() {
   return (
-    <><div className="hidden">
+    <><div className="md:hidden">
       {/* Section 1  */}
       <Termone />
 <Navbar />

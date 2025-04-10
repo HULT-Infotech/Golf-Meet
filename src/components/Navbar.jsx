@@ -48,7 +48,7 @@ const Navbar = () => {
     <>
       <nav
         ref={navbarRef}
-        className="bg-gray-200 noise-bg shadow-lg py-5 px-5 lg:px-10 flex items-center justify-between w-full sticky top-0 z-50"
+        className="bg-gray-200 .noise-bg-lowest shadow-lg py-5 px-5 lg:px-10 flex items-center justify-between w-full sticky top-0 z-50"
         style={{ opacity: visible ? 1 : 0, transition: "opacity 0.3s ease-in-out" }}
       >
         {/* Mobile Layout */}

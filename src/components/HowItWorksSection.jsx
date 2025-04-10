@@ -102,12 +102,12 @@ const HowItWorksSection = () => {
           draggable="false"
           className="w-full hidden md:block h-80v xl:-mt-4  object-cover "
         /> */}
-        <div className="absolute bottom-0 left-0 w-full h-28 noise-bg md:hidden" />
+        {/* <div className="absolute bottom-0 left-0 w-full h-28 noise-bg opacity-55 md:hidden bg-subtle-gray" /> */}
       </div>
 
       {/*  Section 4 */}
-      <div className="mx-auto noise-bg-low py-10 md:py-20">
-        <div className="text-center mb-12">
+      <div className="mx-auto noise-bg-low py-10 -mt-16 md:py-20">
+        <div className="text-center mt-16 mb-12">
           <h1 className="text-[40px] leading-[40px] hidden md:block w-auto mb-8  lg:text-[90px] font-quattrocento font-bold  md:leading-[106.37px] tracking-[0.025em] text-center">
             THE SOCIAL AMATEUR
             <br />

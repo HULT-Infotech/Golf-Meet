@@ -15,7 +15,7 @@ const [isLoading, setIsLoading] = useState(true);
 useEffect(() => {
 console.log("useEffect ran");
 const simulateInitialLoad = async () => {
-await new Promise((resolve) => setTimeout(resolve, 1500)); // Increased delay
+await new Promise((resolve) => setTimeout(resolve, 1000)); // Increased delay
 setIsLoading(false);
 console.log("isLoading set to false");
 };

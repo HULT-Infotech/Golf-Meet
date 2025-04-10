@@ -13,7 +13,7 @@ const FairPlaySection = () => {
   return (
     <>
       {/* First Section - Introduction */}
-      <section className="relative bg-gray-100 noise-bg md:min-h-[96vh] drop-shadow-xl w-full flex flex-col justify-between p-4 sm:p-0 md:px-8 text-center">
+      <section className="relative bg-gray-100 noise-bg-lowest md:min-h-[96vh] drop-shadow-xl w-full flex flex-col justify-between p-4 sm:p-0 md:px-8 text-center">
         <div className="absolute z-10 bottom-0 left-0 right-0 flex justify-center items-center w-full opacity-30">
           <img
             src={Illustration_Golfers_Mobile}

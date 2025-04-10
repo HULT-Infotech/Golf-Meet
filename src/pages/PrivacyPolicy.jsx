@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 
 function PrivacyPage() {
   return (
-    <><div className="hidden">
+    <><div className="md:hidden">
       {/* Section 1  */}
       <Privacyone />
 <Navbar />
