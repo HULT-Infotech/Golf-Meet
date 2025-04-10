@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 function CodeOne() {
   return (
     <div className="md:overflow-visible overflow-hidden">
-      <section className="sm:bg-gray-100 sm:noise-bg noise-bg min-h-screen relative flex flex-col md:flex-row overflow-hidden">
+      <section className="sm:bg-gray-100 sm:noise-bg noise-bg-neww min-h-screen relative flex flex-col md:flex-row overflow-hidden">
   <div className="sticky top-0 z-50 w-full flex justify-between items-center
        [padding-left:clamp(1rem,5vw,3.5rem)]
        [padding-right:clamp(1rem,5vw,3.5rem)]
