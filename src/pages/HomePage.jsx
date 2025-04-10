@@ -1,33 +1,22 @@
 import React from "react";
 import LandingSection from "../components/LandingSection";
-import CompeteWorldwideSection from "../components/CompeteWorldwideSection";
 import Navbar from "../components/Navbar";
 import HowItWorksSection from "../components/HowItWorksSection";
 import FairPlaySection from "../components/FairPlaySection";
 import Footer from "../components/Footer";
 import VideoSection from "../components/VideoSection";
 
-function HomePage() {
+function HomePage({ cachedData }) {
   return (
     <>
-      {/* Section 1  */}
-      <LandingSection />
-      
-<Navbar />
-      {/* Section 2
-      <CompeteWorldwideSection /> */}
-
-      
-      {/* Section 3 */}
-      <HowItWorksSection />
-<div className="-mt-3">
-      <VideoSection />
+      <LandingSection {...cachedData.landingData} />
+      <Navbar {...cachedData.navbarData} />
+      <HowItWorksSection {...cachedData.howItWorksData} />
+      <div className="-mt-3">
+        <VideoSection {...cachedData.videoSectionData} />
       </div>
-
-      {/* Section 4 */}
-      <FairPlaySection />
-
-      <Footer/>
+      <FairPlaySection {...cachedData.fairPlaySectionData} />
+      <Footer {...cachedData.footerData} />
     </>
   );
 }

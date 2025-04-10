@@ -69,7 +69,7 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            <span className="text-white left-28 relative">Golf Lee</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
@@ -100,7 +100,7 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            <span className="text-white left-28 relative">Kim Clooney</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
@@ -131,7 +131,7 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            <span className="text-white left-28 relative">Rajeev Menon</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
@@ -162,7 +162,7 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            <span className="text-white left-28 relative">Amit Kumar</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
@@ -193,7 +193,7 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            <span className="text-white left-28 relative">Dhadhichi</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
@@ -224,7 +224,7 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            <span className="text-white left-28 relative">Tom</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
@@ -255,7 +255,7 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            <span className="text-white left-28 relative">Alex</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
@@ -286,7 +286,7 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            <span className="text-white left-28 relative">Neville</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
@@ -317,7 +317,7 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            <span className="text-white left-28 relative">Kavitha</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">

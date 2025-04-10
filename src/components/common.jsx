@@ -1,8 +1,4 @@
 import React from "react";
-import tr_bg from "../assets/tournament-rule/right-bg.svg";
-import tr_bg_mobile from "../assets/check.svg";
-import tr_dec_mobile from "../assets/green-m.svg";
-import code_of_conduct_greenleft from "../assets/code-of-conduct/code-conduct-left.svg";
 import coc_coins1 from "../assets/coc-coins1.webp";
 import coc_coins2 from "../assets/coc-coins2.webp";
 import coc_coins3 from "../assets/coc-coins3.webp";
@@ -12,7 +8,6 @@ import mcoc_coins1 from "../assets/m-coin.png";
 import mcoc_coins2 from "../assets/m-coin1.png";
 import mcoc_coins3 from "../assets/m-coin2.png";
 import mcoc_coins4 from "../assets/m-coin3.png";
-import Navbar from "../components/navbarother";
 import Footer from "../components/Footer";
 import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
 import { Link } from "react-router-dom";
