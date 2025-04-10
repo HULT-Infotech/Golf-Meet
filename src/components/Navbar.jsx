@@ -152,12 +152,12 @@ const Navbar = () => {
 
               <div className="flex flex-col p-4 mt-4">
                 <Link to="/leaderboard" className="text-gray-800 pl-6 font-bold py-6 text-left border-t border-b border-gray-300 hover:bg-gray-200">LEADERBOARD</Link>
-                <Link to="/faq" className="text-gray-800 font-bold pt-6 pl-6 text-left hover:bg-gray-200">FREQUENTLY ASKED QUESTIONS</Link>
-                <Link to="/tournament-rules" className="text-gray-800 font-bold pt-6 pl-6 text-left hover:bg-gray-200">TOURNAMENT RULES</Link>
-                <Link to="/code-of-conduct" className="text-gray-800 font-bold pt-6 pl-6 text-left hover:bg-gray-200">PLAYER CODE OF CONDUCT</Link>
+                <Link to="/faq" className="text-gray-800 font-bold py-6 pl-6 text-left hover:bg-gray-200">FREQUENTLY ASKED QUESTIONS</Link>
+                <Link to="/tournament-rules" className="text-gray-800 font-bold py-6 pl-6 text-left hover:bg-gray-200">TOURNAMENT RULES</Link>
+                <Link to="/code-of-conduct" className="text-gray-800 font-bold py-6 pl-6 text-left hover:bg-gray-200">PLAYER CODE OF CONDUCT</Link>
                 <Link to="/support" className="text-gray-800 font-bold py-6 pl-6 text-left border-b border-gray-300 hover:bg-gray-200">PLAYER SUPPORT</Link>
                 <Link to="/terms-of-use" className="text-gray-800 font-bold py-6 pl-6 text-left hover:bg-gray-200">TERMS OF USE</Link>
-                <Link to="/privacy-policy" className="text-gray-800 font-bold pl-6 text-left hover:bg-gray-200">PRIVACY POLICY</Link>
+                <Link to="/privacy-policy" className="text-gray-800 font-bold pl-6 py-6 text-left hover:bg-gray-200">PRIVACY POLICY</Link>
               </div>
             </motion.div>
           </>

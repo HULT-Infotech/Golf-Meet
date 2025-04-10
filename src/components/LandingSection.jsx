@@ -75,7 +75,7 @@ function LandingPage() {
         </div>
 
         {/*//! Design Mobile */}
-        <div className="relative flex flex-col gap-20 lg:hidden items-center">
+        <div className="relative flex flex-col gap-[4.3rem] lg:hidden items-center">
           <img
             src="favicons/favicon.svg"
             alt="Golfmeet Logo"
