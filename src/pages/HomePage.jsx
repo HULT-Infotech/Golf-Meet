@@ -8,7 +8,7 @@ import VideoSection from "../components/VideoSection";
 
 function HomePage({ cachedData }) {
   return (
-    <>
+    <><div className="md:hidden">
       <LandingSection {...cachedData.landingData} />
       <Navbar {...cachedData.navbarData} />
       <HowItWorksSection {...cachedData.howItWorksData} />
@@ -17,6 +17,7 @@ function HomePage({ cachedData }) {
       </div>
       <FairPlaySection {...cachedData.fairPlaySectionData} />
       <Footer {...cachedData.footerData} />
+      </div>
     </>
   );
 }

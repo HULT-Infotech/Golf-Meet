@@ -1,5 +1,6 @@
 import React from "react";
 import Illustration_Golfers_Mobile from "../assets/HomePage/Illustration_Golfers_Mobile.webp";
+import fav from "../assets/favicon.webp";
 import { Link } from "react-router-dom";
 
   // Function to handle the WhatsApp button click
@@ -66,7 +67,7 @@ function LandingPage() {
           {/* Center Logo */}
           <div className="absolute lg:-bottom-14 xl:-bottom-20">
             <img
-              src="favicons/favicon.svg"
+              src={fav}
               alt="Golfmeet Logo"
               className="w-48 object-contain lg:w-[380px]  xl:w-[35vw] drop-shadow-[0_10px_10px_rgba(0,0,0,0.40)]"
               draggable="false"

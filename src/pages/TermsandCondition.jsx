@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 
 function TermPage() {
   return (
-    <>
+    <><div className="hidden">
       {/* Section 1  */}
       <Termone />
 <Navbar />
@@ -16,6 +16,7 @@ function TermPage() {
       {/* Section 3 */}
       <div className="md:overflow-visible overflow-hidden">
       <Ctwo />
+      </div>
       </div>
     </>
   );

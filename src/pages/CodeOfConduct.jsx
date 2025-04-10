@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 function CodePage() {
   return (
     <>
+    <div className="md:hidden">
       {/* Section 1  */}
       <Cone />
 <Navbar />
@@ -16,6 +17,7 @@ function CodePage() {
       {/* Section 3 */}
       <div className="md:overflow-visible overflow-hidden">
       <Ctwo />
+      </div>
       </div>
     </>
   );

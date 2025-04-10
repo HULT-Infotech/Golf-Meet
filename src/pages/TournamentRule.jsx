@@ -96,7 +96,7 @@ function TournamentRule() {
   return (
     <>
       {/* Main container */}
-      <div className="md:h-[108vh] flex flex-col relative">
+      <div className="md:h-[108vh] flex flex-col relative md:hidden">
         {/* Hero section */}
         <section className="bg-gray-100 noise-bg relative min-h-screen overflow-hidden">
   <div className="sticky top-0 z-50 w-full flex justify-between items-center

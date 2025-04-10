@@ -15,7 +15,7 @@ import l10 from "../assets/LeaderPage/leader10.svg";
 function LeaderPage() {
   return (
     <>
-    <section className=" h-auto">
+    <section className=" h-auto md:hidden">
         
     <Navbar/>
         <h1 className="font-quattrocento font-bold text-4xl mt-12 mb-2 text-center text-[#201E15]">LEADERBOARD</h1>

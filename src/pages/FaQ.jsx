@@ -180,7 +180,7 @@ function FaQ() {
   return (
     <>
       <section 
-        className="bg-gray-100 noise-bg relative flex flex-col h-auto md:min-h-[85vh] md:flex-row"
+        className="bg-gray-100 noise-bg relative flex flex-col h-auto md:min-h-[85vh] md:flex-row md:hidden"
       >
           <div className="lg:absolute z-50 min-h-20 top-0 w-full flex justify-between items-center 
     [padding-left:clamp(1rem,5vw,3.5rem)] 
