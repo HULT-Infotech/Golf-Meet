@@ -1,20 +1,8 @@
 import React from "react";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
-import tr_bg_mobile from "../assets/check.svg";
+import tr_bg_mobile from "../assets/check.webp";
 import tr_dec_mobile from "../assets/green-m.svg";
 import code_of_conduct_greenleft from "../assets/code-of-conduct/code-conduct-left.svg";
-import coc_coins1 from "../assets/coc-coins1.svg";
-import coc_coins2 from "../assets/coc-coins2.svg";
-import coc_coins3 from "../assets/coc-coins3.svg";
-import coc_coins4 from "../assets/coc-coins4.svg";
-import coc_coins5 from "../assets/coc-coins5.svg";
-import mcoc_coins1 from "../assets/m-coin.png";
-import mcoc_coins2 from "../assets/m-coin1.png";
-import mcoc_coins3 from "../assets/m-coin2.png";
-import mcoc_coins4 from "../assets/m-coin3.png";
-import Navbar from "../components/navbarother";
-import Footer from "../components/Footer";
-import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
 import { Link } from "react-router-dom";
    // Function to handle the WhatsApp button click
    const handleWhatsAppClick = () => {
@@ -26,40 +14,39 @@ import { Link } from "react-router-dom";
 function CodeOne() {
   return (
     <div className="md:overflow-visible overflow-hidden">
-      <section 
-      
-  className="sm:bg-gray-100 sm:noise-bg noise-bg h-[84vh] relative flex flex-col md:min-h-[70vh] lg:min-h-[78vh] md:flex-row tr-bg-m"
->
-    <div className="lg:absolute z-50 min-h-20 top-0 w-full flex justify-between items-center 
-      [padding-left:clamp(1rem,5vw,3.5rem)] 
-      [padding-right:clamp(1rem,5vw,3.5rem)] 
-      [padding-top:clamp(1.5rem,5vw,2.5rem)] 
-      [padding-bottom:clamp(1.5rem,5vw,2.5rem)]">
-  
-      {/* Left Side - Register Button */}
-      <button
-        className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] 
-        px-4 py-2 rounded-md text-[#FFF7D9] uppercase tracking-[0.1em] font-quattrocento
-        [font-size:clamp(0.65rem,2.5vw,1rem)]
-        shadow-[0_2px_4px_rgba(0,0,0,0.55)] 
-        hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"onClick={handleWhatsAppClick}
-      >
-        Register Now
-      </button>
-  
-      {/* Right Side - Leaderboard Link */}
-      <Link
-        to="/leaderboard"
-        className="uppercase text-[#1C1C1C] font-quattrocentoSans font-bold tracking-[0.1em] 
-        [font-size:clamp(0.65rem,2.5vw,1rem)]"
-      >
-        Leaderboard
-      </Link>
-    </div>
-  <div className="flex flex-col w-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto">
-    <div className="relative flex flex-col justify-center items-center md:items-start p-8 md:pl-10 md:p-0 xl:ml-20">
+      <section className="sm:bg-gray-100 sm:noise-bg noise-bg min-h-screen relative flex flex-col md:flex-row overflow-hidden">
+  <div className="sticky top-0 z-50 w-full flex justify-between items-center
+       [padding-left:clamp(1rem,5vw,3.5rem)]
+       [padding-right:clamp(1rem,5vw,3.5rem)]
+       [padding-top:clamp(1.5rem,5vw,2.5rem)]
+       [padding-bottom:clamp(1.5rem,5vw,2.5rem)]">
+    {/* Left Side - Register Button */}
+    <button
+      className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214]
+       px-4 py-2 rounded-md text-[#FFF7D9] uppercase tracking-[0.1em] font-quattrocento
+       [font-size:clamp(0.65rem,2.5vw,1rem)]
+       shadow-[0_2px_4px_rgba(0,0,0,0.55)]
+       hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"
+      onClick={handleWhatsAppClick}
+    >
+      Register Now
+    </button>
+    
+    {/* Right Side - Leaderboard Link */}
+    <Link
+      to="/leaderboard"
+      className="uppercase text-[#1C1C1C] font-quattrocentoSans font-bold tracking-[0.1em]
+       [font-size:clamp(0.65rem,2.5vw,1rem)]"
+    >
+      Leaderboard
+    </Link>
+  </div>
+
+  {/* Main Content Container */}
+  <div className="flex flex-col w-full grow justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto relative pt-4 pb-16 md:py-16">
+    <div className="relative flex flex-col justify-center items-center md:items-start p-8 md:pl-10 md:p-0 xl:ml-20 z-10">
       <h1
-        className="font-quattrocento text-5xl md:text-6xl md:text-[37px]  lg:text-[55px] xl:text-8xl max-w-2xl font-bold mb-4 mt-4 text-[#201E15] text-center md:text-left xl:text-[80px]"
+        className="font-quattrocento text-5xl md:text-6xl md:text-[37px] lg:text-[55px] xl:text-8xl max-w-2xl font-bold mb-4 mt-4 text-[#201E15] text-center md:text-left xl:text-[80px]"
         style={{lineHeight: "1.1" }}
       >
         <span className="whitespace-nowrap">PLAYER CODE</span>
@@ -67,40 +54,42 @@ function CodeOne() {
         OF CONDUCT
       </h1>
     </div>
-
-    {/* Right Image Section with mobile-specific version */}
-
-    <div className="flex w-full relative" style={{ position: 'absolute', bottom: 0, left: 0, right: 0 }}>
-  {/* Desktop image - hidden on mobile */}
-  <img
-    src={tr_bg}
-    alt="Golfers Illustration"
-    className="w-full object-contain pointer-events-none hidden md:block"
-  />
-  
-  {/* Mobile image - hidden on desktop */}
-  <img
-    src={tr_bg_mobile}
-    alt="Golfers Illustration Mobile"
-    className="w-[92%] mx-auto object-contain pointer-events-none md:hidden"
-  />
-</div>
   </div>
-
+  
+  {/* Right Image Section with position fixed to bottom */}
+  <div className="absolute bottom-0 left-0 right-0 w-full">
+    {/* Desktop image - hidden on mobile */}
+    {/* <img
+      src={tr_bg}
+      alt="Golfers Illustration"
+      className="w-full object-contain pointer-events-none hidden md:block"
+    /> */}
+    
+    {/* Mobile image - hidden on desktop */}
+    <img
+      src={tr_bg_mobile}
+      alt="Golfers Illustration Mobile"
+      className="w-[92%] mx-auto object-contain pointer-events-none md:hidden"
+    />
+  </div>
+  
   {/* Decorative Green Element */}
-  <img
+  {/* <img
     src={code_of_conduct_greenleft}
     alt="Green left element"
     className="hidden md:block absolute md:-bottom-20 left-0 w-[270px] lg:w-[400px] lg:-bottom-24 object-contain pointer-events-none"
-  />
-  
+  /> */}
+    
   {/* Mobile decorative element - only visible on mobile */}
-  <img
+
+</section>
+<div className="top-0">
+<img
     src={tr_dec_mobile}
     alt="Mobile decorative element"
-    className="absolute -bottom-10 left-0 w-[180px] object-contain pointer-events-none md:hidden"
+    className="absolute  left-0 w-[180px] object-contain pointer-events-none md:hidden"
   />
-</section>
+  </div>
 <section className="flex flex-col items-center justify-center  mt-20 md:mt-20 xl:mt-24 relative mb-6 sm:mb-0">
           <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">

@@ -5,7 +5,7 @@ import tr_bg from "../assets/tournament-rule/right-bg.svg";
 import tr_greenleft from "../assets/tournament-rule/tr-green-left.svg";
 import tr_greenleft_m from "../assets/tournament-rule/green-mobile.svg";
 import tr_last from "../assets/tournament-rule/tr-last.svg";
-import tr_mobile from "../assets/tournament-rule/tournaments-mobile.svg";
+import tr_mobile from "../assets/tournament-rule/tournaments-mobile.webp";
 import Footer from "../components/Footer";
 import gradientbox from "../assets/greenbox.png";
 import land_m1 from "../assets/land-m.svg";
@@ -98,68 +98,68 @@ function TournamentRule() {
       {/* Main container */}
       <div className="md:h-[108vh] flex flex-col relative">
         {/* Hero section */}
-        <section className="bg-gray-100 noise-bg relative flex flex-col h-auto md:h-[100vh] md:flex-row">
-        <div className="lg:absolute z-50 min-h-20 top-0 w-full flex justify-between items-center 
-    [padding-left:clamp(1rem,5vw,3.5rem)] 
-    [padding-right:clamp(1rem,5vw,3.5rem)] 
-    [padding-top:clamp(1.5rem,5vw,2.5rem)] 
-    [padding-bottom:clamp(1.5rem,5vw,2.5rem)]">
-
+        <section className="bg-gray-100 noise-bg relative min-h-screen overflow-hidden">
+  <div className="sticky top-0 z-50 w-full flex justify-between items-center
+     [padding-left:clamp(1rem,5vw,3.5rem)]
+     [padding-right:clamp(1rem,5vw,3.5rem)]
+     [padding-top:clamp(1.5rem,5vw,2.5rem)]
+     [padding-bottom:clamp(1.5rem,5vw,2.5rem)]">
+    
     {/* Left Side - Register Button */}
     <button
-      className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] 
-      px-4 py-2 rounded-md text-[#FFF7D9] uppercase tracking-[0.1em] font-quattrocento
-      [font-size:clamp(0.65rem,2.5vw,1rem)]
-      shadow-[0_2px_4px_rgba(0,0,0,0.55)] 
-      hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"
+      className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214]
+       px-4 py-2 rounded-md text-[#FFF7D9] uppercase tracking-[0.1em] font-quattrocento
+       [font-size:clamp(0.65rem,2.5vw,1rem)]
+       shadow-[0_2px_4px_rgba(0,0,0,0.55)]
+       hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"
       onClick={handleWhatsAppClick}>
       Register Now
     </button>
-
+    
     {/* Right Side - Leaderboard Link */}
     <Link
       to="/leaderboard"
-      className="uppercase text-[#1C1C1C] font-quattrocentoSans font-bold tracking-[0.1em] 
-      [font-size:clamp(0.65rem,2.5vw,1rem)]"
+      className="uppercase text-[#1C1C1C] font-quattrocentoSans font-bold tracking-[0.1em]
+       [font-size:clamp(0.65rem,2.5vw,1rem)]"
     >
       Leaderboard
     </Link>
   </div>
-          <div className="flex flex-col w-full h-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
-            {/* Text Section */}
-            <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8 min-w-[300px] z-10">
-              <h1 className="font-quattrocento font-bold  text-4xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
-                TOURNAMENT <br /> RULES
-              </h1>
-            </div>
 
-            {/* Right Image Section - Updated to match HowToPlay style */}
-            <div className="flex items-end px-5 md:px-0">
-              <img
-                src={tr_bg}
-                alt="Golfers Illustration"
-                className="w-full h-auto object-contain pointer-events-none md:mr-12 md:mt-4 hidden md:block"
-              />
-            </div>
-          </div>
-          
-          {/* Mobile image - Updated to match HowToPlay style */}
-          <div className="flex items-end px-5 w-full md:hidden">
-            <img
-              src={tr_mobile}
-              alt="Mobile Golfers Illustration"
-              className="w-full h-auto pointer-events-none object-contain"
-            />
-          </div>
-          
-          {/* Desktop decorative element */}
-          <img
-            src={tr_greenleft}
-            alt="Green left element"
-            className="hidden md:block absolute md:-bottom-4 left-0 w-[160px] md:w-[240px] lg:w-[360px] xl:w-[460px] lg:-bottom-8 object-contain pointer-events-none"
-          />
-        </section>
-
+  <div className="flex flex-col w-full grow pb-24 md:py-0 md:flex-row max-w-[1700px] mx-auto relative">
+    {/* Text Section */}
+    <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 min-w-[300px] z-10">
+      <h1 className="font-quattrocento font-bold text-4xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
+        TOURNAMENT <br /> RULES
+      </h1>
+    </div>
+    
+    {/* Right Image Section - Desktop only */}
+    <div className="hidden md:flex items-end px-5 md:px-0">
+      {/* <img
+        src={tr_bg}
+        alt="Golfers Illustration"
+        className="w-full h-auto object-contain pointer-events-none md:mr-12 md:mt-4"
+      /> */}
+    </div>
+  </div>
+  
+  {/* Mobile image */}
+  <div className="md:hidden flex items-end px-5 w-full absolute bottom-0">
+    <img
+      src={tr_mobile}
+      alt="Mobile Golfers Illustration"
+      className="w-full h-auto pointer-events-none object-contain"
+    />
+  </div>
+  
+  {/* Desktop decorative element */}
+  {/* <img
+    src={tr_greenleft}
+    alt="Green left element"
+    className="hidden md:block absolute md:-bottom-4 left-0 w-[160px] md:w-[240px] lg:w-[360px] xl:w-[460px] lg:-bottom-8 object-contain pointer-events-none"
+  /> */}
+</section>
         {/* Mobile decorative element - Moved outside the section */}
         <div className="relative md:hidden">
           <img
@@ -170,7 +170,7 @@ function TournamentRule() {
         </div>
 
         {/* Player Code of Conduct section */}
-        <section className="flex flex-col items-center justify-center  mt-48 md:mt-12 relative mb-6 sm:mb-0">
+        <section className="flex flex-col items-center justify-center  mt-48 md:mt-12 relative mb-12 sm:mb-0">
           <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">
               <h2 className="lg:text-5xl md:4xl text-[1.8rem]  font-bold uppercase font-quattrocento">

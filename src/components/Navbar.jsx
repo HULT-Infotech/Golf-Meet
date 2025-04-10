@@ -4,8 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import indiaFlag from "../assets/india_flag.png";
 import centralLogo from "/favicons/favicon.svg";
 
-
-
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -22,8 +20,6 @@ const Navbar = () => {
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  
 
   useEffect(() => {
     document.body.style.overflow = sidebarOpen ? "hidden" : "auto";
@@ -56,40 +52,37 @@ const Navbar = () => {
         style={{ opacity: visible ? 1 : 0, transition: "opacity 0.3s ease-in-out" }}
       >
         {/* Mobile Layout */}
-{/* Mobile Layout */}
-<div className="relative flex items-center justify-between w-full md:hidden [padding-left:clamp(0.1rem,2vw,0.75rem)] [padding-right:clamp(0.1rem,2vw,0.75rem)] py-3">
+        <div className="relative flex items-center justify-between w-full md:hidden [padding-left:clamp(0.1rem,2vw,0.75rem)] [padding-right:clamp(0.1rem,2vw,0.75rem)] py-3">
 
-  {/* Left - Register */}
-  <button className="z-10 text-xs sm:text-sm bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)]">
-    <span className="font-quattrocento text-[#FFF7D9]"onClick={handleWhatsAppClick}>REGISTER</span>
-  </button>
+          {/* Left - Register */}
+          <button className="z-10 text-xs sm:text-sm bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)]">
+            <span className="font-quattrocento text-[#FFF7D9]" onClick={handleWhatsAppClick}>REGISTER</span>
+          </button>
 
-  {/* Center - Logo */}
-  <div className="absolute left-1/2 transform -translate-x-1/2">
-  <Link to="/">
-    <img
-      src={centralLogo}
-      alt="Central Logo"
-      style={{ width: 'clamp(64px, 21vw, 118px)' }}
-      className="h-auto"
-    />
-  </Link>
-</div>
+          {/* Center - Logo */}
+          <div className="absolute left-1/2 transform -translate-x-1/2">
+            <Link to="/">
+              <img
+                src={centralLogo}
+                alt="Central Logo"
+                style={{ width: 'clamp(64px, 21vw, 118px)' }}
+                className="h-auto"
+              />
+            </Link>
+          </div>
 
-
-  {/* Right - Menu */}
-  <button onClick={() => setSidebarOpen(true)} className="z-10 text-gray-800 focus:outline-none">
-    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-  </button>
-</div>
-
+          {/* Right - Menu */}
+          <button onClick={() => setSidebarOpen(true)} className="z-10 text-gray-800 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
 
         {/* Tablet and Desktop Layout */}
         <div className="hidden md:flex gap-3 lg:gap-10 mt-4 md:mt-0 w-full lg:w-auto items-center">
           <button className="text-xs lg:text-base bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-1 py-1 md:px-3 lg:px-5 md:py-2 rounded transition-all duration-300 ease-in-out shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)] hover:from-[#E5181A] hover:via-[#E51719] hover:to-[#CC1517] hover:scale-110 hover:shadow-[0px_2px_10px_0px_rgba(0,0,0,0.45)]">
-            <span className="font-quattrocento text-[#FFF7D9]"onClick={handleWhatsAppClick}>REGISTER NOW</span>
+            <span className="font-quattrocento text-[#FFF7D9]" onClick={handleWhatsAppClick}>REGISTER NOW</span>
           </button>
           <Link to="/home-to-play" className="text-sm lg:text-base leading-4 text-[#201E15] font-quattrocentoSans font-bold text-center my-auto">HOW TO PLAY</Link>
           <a href="#" className="text-sm lg:text-base leading-4 text-[#201E15] font-quattrocentoSans my-auto font-bold">PAY FEES</a>
@@ -139,7 +132,10 @@ const Navbar = () => {
             >
               <div className="relative">
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-                  <img src={centralLogo} alt="Gold Coin" className="w-56 h-56" />
+                  {/* Added Link component to wrap the sidebar logo */}
+                  <Link to="/" onClick={() => setSidebarOpen(false)}>
+                    <img src={centralLogo} alt="Gold Coin" className="w-56 h-56" />
+                  </Link>
                 </div>
                 <div className="flex justify-end p-10">
                 </div>

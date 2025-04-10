@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import faq_bg from "../assets/faq/right-bg.svg";
-import faq_mobile_hero from "../assets/faq-m.svg";
-import faq_greenleft from "../assets/faq/faq-green-left.svg";
-import faq_greenleft_mobile from "../assets/faq/faq-green-left-mobile.svg";
+import faq_mobile_hero from "../assets/FAQPage//faq-m.webp";
 import faq_gm from "../assets/f-gm.svg";
 import Footer from "../components/Footer";
 import gradientbox from "../assets/greenbox.png";
@@ -227,11 +224,11 @@ function FaQ() {
           {/* Right Image Section */}
           <div className="flex items-center justify-center px-5 md:px-0 md:items-end sm:mt-0 -mt-8">
             {/* Desktop Image */}
-            <img
+            {/* <img
               src={faq_bg}
               alt="Golfers Illustration"
               className="w-[80%] object-contain pointer-events-none hidden md:block"
-            />
+            /> */}
             
             {/* Mobile Image - Centered and reduced gap */}
             <img
@@ -242,16 +239,16 @@ function FaQ() {
           </div>
         </div>
         {/* Decorative Green Element */}
-        <img
+        {/* <img
           src={faq_greenleft}
           alt="Green left element"
           className="hidden md:block absolute md:-bottom-12 left-0 w-[250px] md:w-[400px] lg:w-[550px] xl:w-[750px] xl:-bottom-[90px] lg:-bottom-16 object-contain pointer-events-none"
-        />
-        <img
+        /> */}
+        {/* <img
           src={faq_greenleft_mobile}
           alt="Green left element"
           className="absolute hidden bottom-0 sm:-bottom-20 left-0 w-full"
-        />
+        /> */}
       </section>
 
       {/* New Full-width Mobile Image with higher z-index */}

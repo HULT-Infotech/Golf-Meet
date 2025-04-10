@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
-import pr_m from "../assets/right-privacy.svg";
+import pr_m from "../assets/right-privacy.webp";
 
 const handleWhatsAppClick = () => {
   // The phone number provided: +91-888 484 4444
@@ -12,36 +12,34 @@ const handleWhatsAppClick = () => {
 function Policy() {
   return (
     <div className="md:overflow-visible overflow-hidden">
-      <section
-  className="sm:bg-gray-100 sm:noise-bg noise-bg h-[85vh] relative flex flex-col md:min-h-[70vh] lg:min-h-[78vh] md:flex-row tr-bg-m overflow-hidden"
->
-    <div className="lg:absolute z-50 min-h-20 top-0 w-full flex justify-between items-center 
-      [padding-left:clamp(1rem,5vw,3.5rem)] 
-      [padding-right:clamp(1rem,5vw,3.5rem)] 
-      [padding-top:clamp(1.5rem,5vw,2.5rem)] 
-      [padding-bottom:clamp(1.5rem,5vw,2.5rem)]">
-  
-      {/* Left Side - Register Button */}
-      <button
-        className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] 
-        px-4 py-2 rounded-md text-[#FFF7D9] uppercase tracking-[0.1em] font-quattrocento
-        [font-size:clamp(0.65rem,2.5vw,1rem)]
-        shadow-[0_2px_4px_rgba(0,0,0,0.55)] 
-        hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"
-        onClick={handleWhatsAppClick}>
-        Register Now
-      </button>
-  
-      {/* Right Side - Leaderboard Link */}
-      <Link
-        to="/leaderboard"
-        className="uppercase text-[#1C1C1C] font-quattrocentoSans font-bold tracking-[0.1em] 
-        [font-size:clamp(0.65rem,2.5vw,1rem)]"
-      >
-        Leaderboard
-      </Link>
-    </div>
-  <div className="flex flex-col w-full h-full justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto relative">
+      <section className="sm:bg-gray-100 sm:noise-bg noise-bg min-h-screen relative flex flex-col md:flex-row overflow-hidden">
+  {/* Header Navigation Bar - Fixed */}
+  <div className="sticky top-0 z-50 w-full flex justify-between items-center
+       px-4 sm:px-8 lg:px-14
+       py-6 sm:py-8 lg:py-10">
+    {/* Left Side - Register Button */}
+    <button
+      className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214]
+       px-4 py-2 rounded-md text-[#FFF7D9] uppercase tracking-[0.1em] font-quattrocento
+       text-xs sm:text-sm lg:text-base
+       shadow-[0_2px_4px_rgba(0,0,0,0.55)]
+       hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"
+      onClick={handleWhatsAppClick}>
+      Register Now
+    </button>
+    
+    {/* Right Side - Leaderboard Link */}
+    <Link
+      to="/leaderboard"
+      className="uppercase text-[#1C1C1C] font-quattrocentoSans font-bold tracking-[0.1em]
+       text-xs sm:text-sm lg:text-base"
+    >
+      Leaderboard
+    </Link>
+  </div>
+
+  {/* Main Content Container */}
+  <div className="flex flex-col w-full grow justify-between md:justify-around gap-8 sm:gap-12 md:gap-16 lg:gap-20 md:flex-row max-w-[1700px] mx-auto relative pt-4 pb-16 md:py-16">
     {/* Text Section */}
     <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8 min-w-[300px] z-10">
       <h1 className="font-quattrocento font-bold text-5xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
@@ -49,24 +47,24 @@ function Policy() {
       </h1>
     </div>
   </div>
-
+  
   {/* Desktop image container - fills full right side */}
-  <div className="absolute bottom-0 right-0 hidden md:block" style={{ marginRight: "0px" }}>
-    <img
+  <div className="absolute bottom-0 right-0 hidden md:block">
+    {/* <img
       src={tr_bg}
       alt="Golfers Illustration"
       className="h-auto object-contain pointer-events-none"
-    />
+    /> */}
   </div>
   
   {/* Mobile image container - full width with right alignment */}
-  <div className="absolute bottom-0 right-0 md:hidden" style={{ marginRight: "0px" }}>
-  <img
-    src={pr_m}
-    alt="Golfers Illustration Mobile"
-    className="w-[87%] ml-auto object-contain pointer-events-none"
-  />
-</div>
+  <div className="absolute bottom-0 right-0 md:hidden w-full">
+    <img
+      src={pr_m}
+      alt="Golfers Illustration Mobile"
+      className="w-[87%] ml-auto object-contain pointer-events-none"
+    />
+  </div>
 </section>
 <section className="flex flex-col items-center justify-center  mt-20 md:mt-20 xl:mt-24 relative mb-6 sm:mb-0">
           <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
