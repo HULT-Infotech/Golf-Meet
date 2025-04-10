@@ -6,7 +6,13 @@ import faq_bg_mobile from "../assets/paper.svg"; // New import
 
 import Illustration_Golfers_Mobile from "../assets/Illustration_Golfers_Mobile.svg";
 import { Link } from "react-router-dom";
-
+  // Function to handle the WhatsApp button click
+  const handleWhatsAppClick = () => {
+    // The phone number provided: +91-888 484 4444
+    // Remove non-numeric characters for the WhatsApp link
+    const phoneNumber = "918884844444"; // Added country code without + sign
+    window.open(`https://wa.me/${phoneNumber}`, "_blank");
+  };
 function LandingPage() {
   return (
     <section className="min-h-screen text-center">
@@ -25,6 +31,7 @@ function LandingPage() {
       [font-size:clamp(0.65rem,2.5vw,1rem)]
       shadow-[0_2px_4px_rgba(0,0,0,0.55)] 
       hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"
+      onClick={handleWhatsAppClick}
     >
       Register Now
     </button>
@@ -114,7 +121,8 @@ function LandingPage() {
     {/* Register Button with gold gradient */}
     <div className="flex justify-center">
       <button className="my-7 rounded-md px-10 py-2 font-normal bg-gradient-to-b from-[#FFFFFF] via-[#FBE67B] to-[#FFB41E] shadow-[0px_2px_4px_0px_#0000008C] transition-all duration-500 hover:shadow-[0px_4px_10px_0px_#00000073]">
-        <span className="text-lg text-[#014D4E] font-quattrocento font-bold">
+        <span className="text-lg text-[#014D4E] font-quattrocento font-bold"
+        onClick={handleWhatsAppClick}>
           REGISTER ON WHATSAPP
         </span>
       </button>

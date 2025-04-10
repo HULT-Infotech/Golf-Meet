@@ -16,7 +16,13 @@ import Navbar from "../components/navbarother";
 import Footer from "../components/Footer";
 import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
 import { Link } from "react-router-dom";
- 
+   // Function to handle the WhatsApp button click
+   const handleWhatsAppClick = () => {
+    // The phone number provided: +91-888 484 4444
+    // Remove non-numeric characters for the WhatsApp link
+    const phoneNumber = "918884844444"; // Added country code without + sign
+    window.open(`https://wa.me/${phoneNumber}`, "_blank");
+  };
 function CodeOne() {
   return (
     <div className="md:overflow-visible overflow-hidden">
@@ -36,7 +42,7 @@ function CodeOne() {
         px-4 py-2 rounded-md text-[#FFF7D9] uppercase tracking-[0.1em] font-quattrocento
         [font-size:clamp(0.65rem,2.5vw,1rem)]
         shadow-[0_2px_4px_rgba(0,0,0,0.55)] 
-        hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"
+        hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"onClick={handleWhatsAppClick}
       >
         Register Now
       </button>

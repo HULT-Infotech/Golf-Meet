@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import indiaFlag from "../assets/india_flag.png";
 import centralLogo from "/favicons/favicon.svg";
 
+
+
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -21,6 +23,8 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  
+
   useEffect(() => {
     document.body.style.overflow = sidebarOpen ? "hidden" : "auto";
     return () => {
@@ -37,7 +41,13 @@ const Navbar = () => {
     window.addEventListener("keydown", handleEsc);
     return () => window.removeEventListener("keydown", handleEsc);
   }, [sidebarOpen]);
-
+  
+  const handleWhatsAppClick = () => {
+    // The phone number provided: +91-888 484 4444
+    // Remove non-numeric characters for the WhatsApp link
+    const phoneNumber = "918884844444"; // Added country code without + sign
+    window.open(`https://wa.me/${phoneNumber}`, "_blank");
+  };
   return (
     <>
       <nav
@@ -51,7 +61,7 @@ const Navbar = () => {
 
   {/* Left - Register */}
   <button className="z-10 text-xs sm:text-sm bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)]">
-    <span className="font-quattrocento text-[#FFF7D9]">REGISTER</span>
+    <span className="font-quattrocento text-[#FFF7D9]"onClick={handleWhatsAppClick}>REGISTER</span>
   </button>
 
   {/* Center - Logo */}
@@ -79,7 +89,7 @@ const Navbar = () => {
         {/* Tablet and Desktop Layout */}
         <div className="hidden md:flex gap-3 lg:gap-10 mt-4 md:mt-0 w-full lg:w-auto items-center">
           <button className="text-xs lg:text-base bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-1 py-1 md:px-3 lg:px-5 md:py-2 rounded transition-all duration-300 ease-in-out shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)] hover:from-[#E5181A] hover:via-[#E51719] hover:to-[#CC1517] hover:scale-110 hover:shadow-[0px_2px_10px_0px_rgba(0,0,0,0.45)]">
-            <span className="font-quattrocento text-[#FFF7D9]">REGISTER NOW</span>
+            <span className="font-quattrocento text-[#FFF7D9]"onClick={handleWhatsAppClick}>REGISTER NOW</span>
           </button>
           <Link to="/home-to-play" className="text-sm lg:text-base leading-4 text-[#201E15] font-quattrocentoSans font-bold text-center my-auto">HOW TO PLAY</Link>
           <a href="#" className="text-sm lg:text-base leading-4 text-[#201E15] font-quattrocentoSans my-auto font-bold">PAY FEES</a>
@@ -137,7 +147,8 @@ const Navbar = () => {
 
               <div className="px-4 mt-12">
                 <Link to="/register" className="block">
-                  <button className="w-full text-center bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white py-3 rounded font-quattrocento text-lg uppercase shadow-xl">
+                  <button className="w-full text-center bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white py-3 rounded font-quattrocento text-lg uppercase shadow-xl"
+                  onClick={handleWhatsAppClick}>
                     REGISTER NOW
                   </button>
                 </Link>

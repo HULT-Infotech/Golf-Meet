@@ -2,6 +2,14 @@ import React from "react";
 import Illustration_Golfers_Mobile from "../assets/Illustration_Golfers_Mobile.svg";
 
 const FairPlaySection = () => {
+  // Function to handle the WhatsApp button click
+  const handleWhatsAppClick = () => {
+    // The phone number provided: +91-888 484 4444
+    // Remove non-numeric characters for the WhatsApp link
+    const phoneNumber = "918884844444"; // Added country code without + sign
+    window.open(`https://wa.me/${phoneNumber}`, "_blank");
+  };
+
   return (
     <>
       {/* First Section - Introduction */}
@@ -55,7 +63,7 @@ const FairPlaySection = () => {
           <div className="text-white mb-1">
             <span className="text-7xl font-bold flex justify-center">
               <span className="text-[2.8rem] mr-4">₹</span>
-              <span className="text-6xl font-quattrocento">500</span>
+              <span className="text-6xl font-quattrocento">1000</span>
             </span>
           </div>
           <p className="uppercase text-xs tracking-wider text-gray-400 mb-10">
@@ -64,6 +72,7 @@ const FairPlaySection = () => {
           <button 
             className="text-[#FFF7D9] font-quattrocento font-bold py-3 px-3 w-full max-w-60 rounded uppercase text-[15px] tracking-wider shadow-xl border-red"
             style={{ background: 'linear-gradient(180deg, #E5181A 0%, #CB1517 50%, #B21214 100%)' }}
+            onClick={handleWhatsAppClick}
           >
             REGISTER ON WHATSAPP
           </button>
@@ -78,7 +87,7 @@ const FairPlaySection = () => {
             <div className="text-white mb-1">
               <span className="text-7xl font-bold flex items-center justify-center">
                 <span className="text-5xl mr-4">₹</span>
-                <span className="text-8xl font-quattrocento">500</span>
+                <span className="text-8xl font-quattrocento">1000</span>
               </span>
             </div>
             <p className="uppercase text-sm tracking-wider text-gray-400 mb-10">
@@ -87,6 +96,7 @@ const FairPlaySection = () => {
             <button 
               className="text-[#FFF7D9] font-quattrocento font-bold py-4 px-8 w-96 rounded uppercase text-xl tracking-wider shadow-lg border-b-4 border-[#B21214]"
               style={{ background: 'linear-gradient(180deg, #E5181A 0%, #CB1517 50%, #B21214 100%)' }}
+              onClick={handleWhatsAppClick}
             >
               REGISTER ON WHATSAPP
             </button>

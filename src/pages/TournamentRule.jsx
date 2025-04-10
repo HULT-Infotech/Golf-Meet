@@ -15,7 +15,12 @@ function TournamentRule() {
   const [activeSection, setActiveSection] = useState("home");
   const sidebarRef = useRef(null);
   const footerRef = useRef(null);
-
+  const handleWhatsAppClick = () => {
+    // The phone number provided: +91-888 484 4444
+    // Remove non-numeric characters for the WhatsApp link
+    const phoneNumber = "918884844444"; // Added country code without + sign
+    window.open(`https://wa.me/${phoneNumber}`, "_blank");
+  };
   const sections = [
     { id: "home", label: "Home country" },
     { id: "leaderboard", label: "Leaderboard criteria" },
@@ -107,7 +112,7 @@ function TournamentRule() {
       [font-size:clamp(0.65rem,2.5vw,1rem)]
       shadow-[0_2px_4px_rgba(0,0,0,0.55)] 
       hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"
-    >
+      onClick={handleWhatsAppClick}>
       Register Now
     </button>
 
