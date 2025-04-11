@@ -48,7 +48,7 @@ const Navbar = () => {
     <>
       <nav
         ref={navbarRef}
-        className="bg-gray-200 .noise-bg-lowest shadow-lg py-5 px-5 lg:px-10 flex items-center justify-between w-full sticky top-0 z-50"
+        className="bg-gray-200 noise-bg-neww shadow-lg py-5 px-5 lg:px-10 flex items-center justify-between w-full sticky top-0 z-50"
         style={{ opacity: visible ? 1 : 0, transition: "opacity 0.3s ease-in-out" }}
       >
         {/* Mobile Layout */}
@@ -123,7 +123,7 @@ const Navbar = () => {
             />
 
             <motion.div
-              className="fixed top-0 right-0 h-full w-[85%] py-28 bg-gray-100 z-50 overflow-y-auto"
+              className="fixed top-0 right-0 h-full w-[85%] py-28 bg-gray-100 noise-bg-n z-50 overflow-y-auto"
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}

@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import faq_mobile_hero from "../assets/FAQPage//faq-m.webp";
+import faq_mobile_hero from "../assets/FAQPage/faq-m.webp";
 import faq_gm from "../assets/f-gm.svg";
 import Footer from "../components/Footer";
 import gradientbox from "../assets/greenbox.png";
 import land_m1 from "../assets/land-m.svg";
 import land_m2 from "../assets/land-fm1.svg";
-
 
 const handleWhatsAppClick = () => {
   // The phone number provided: +91-888 484 4444
@@ -180,7 +179,7 @@ function FaQ() {
   return (
     <>
       <section 
-        className="bg-gray-100 noise-bg relative flex flex-col h-auto md:min-h-[85vh] md:flex-row md:hidden"
+        className="bg-gray-100 noise-bg-n relative flex flex-col min-h-screen md:min-h-[85vh] md:flex-row md:hidden"
       >
           <div className="lg:absolute z-50 min-h-20 top-0 w-full flex justify-between items-center 
     [padding-left:clamp(1rem,5vw,3.5rem)] 
@@ -208,48 +207,31 @@ function FaQ() {
       Leaderboard
     </Link>
   </div>
-        <div className="flex flex-col w-full justify-between md:justify-around md:flex-row max-w-[1700px] mx-auto">
-          {/* Text Section */}
-          <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
-            <h1 className="font-quattrocento font-bold text-[2.3rem] text-[#201E15] sm:text-5xl lg:text-[80px] leading-[100%] tracking-[0.025em] mb-4">
-              FREQUENTLY <br /> ASKED <br /> QUESTIONS
-            </h1>
-            {/* Mobile-only text added here */}
-            <div className="p-3 text-sm md:hidden mb-4 w-full">
-              After you have paid the tournament fees, log into the GolfMeet
-              mobile app.
-            </div>
-          </div>
-
-          {/* Right Image Section */}
-          <div className="flex items-center justify-center px-5 md:px-0 md:items-end sm:mt-0 -mt-8">
-            {/* Desktop Image */}
-            {/* <img
-              src={faq_bg}
-              alt="Golfers Illustration"
-              className="w-[80%] object-contain pointer-events-none hidden md:block"
-            /> */}
-            
-            {/* Mobile Image - Centered and reduced gap */}
-            <img
-              src={faq_mobile_hero}
-              alt="Golfers Mobile Illustration"
-              className="w-[75%] max-w-[400px] object-contain pointer-events-none md:hidden mx-auto"
-            />
-          </div>
-        </div>
-        {/* Decorative Green Element */}
-        {/* <img
-          src={faq_greenleft}
-          alt="Green left element"
-          className="hidden md:block absolute md:-bottom-12 left-0 w-[250px] md:w-[400px] lg:w-[550px] xl:w-[750px] xl:-bottom-[90px] lg:-bottom-16 object-contain pointer-events-none"
-        /> */}
-        {/* <img
-          src={faq_greenleft_mobile}
-          alt="Green left element"
-          className="absolute hidden bottom-0 sm:-bottom-20 left-0 w-full"
-        /> */}
-      </section>
+        
+  {/* Main content container - modified to include flex-1 to push image to bottom */}
+  <div className="flex flex-col w-full flex-1 justify-between md:justify-around md:flex-row max-w-[1700px] mx-auto">
+    {/* Text Section */}
+    <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
+      <h1 className="font-quattrocento font-bold text-[2.3rem] text-[#201E15] sm:text-5xl lg:text-[80px] leading-[100%] tracking-[0.025em] mb-4">
+        FREQUENTLY <br /> ASKED <br /> QUESTIONS
+      </h1>
+      {/* Mobile-only text added here */}
+      <div className="p-3 text-sm md:hidden mb-4 w-full">
+        After you have paid the tournament fees, log into the GolfMeet
+        mobile app.
+      </div>
+    </div>
+  </div>
+  
+  {/* Image Section - Moved outside of content div to position at bottom */}
+  <div className="flex items-center justify-center w-full px-5 md:px-0 mt-auto">
+    <img
+      src={faq_mobile_hero}
+      alt="Golfers Mobile Illustration"
+      className="w-[80%] max-w-[400px] object-contain pointer-events-none md:hidden mx-auto"
+    />
+  </div>
+</section>
 
       {/* New Full-width Mobile Image with higher z-index */}
       <div className="w-full md:hidden -mt-24 mb-4 relative z-10">

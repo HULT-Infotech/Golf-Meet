@@ -12,7 +12,7 @@ const handleWhatsAppClick = () => {
 function Policy() {
   return (
     <div className="md:overflow-visible overflow-hidden">
-      <section className="sm:bg-gray-100 sm:noise-bg noise-bg min-h-screen relative flex flex-col md:flex-row overflow-hidden">
+      <section className="sm:bg-gray-100 sm:noise-bg noise-bg-n min-h-screen relative flex flex-col md:flex-row overflow-hidden">
   {/* Header Navigation Bar - Fixed */}
   <div className="sticky top-0 z-50 w-full flex justify-between items-center
        px-4 sm:px-8 lg:px-14

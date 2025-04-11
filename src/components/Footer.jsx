@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer className="w-full">
       {/* Third Section - Logo */}
-      <section className="bg-gray-100 noise-bg-neww flex justify-center items-center w-full p-10 md:min-h-[350px] drop-shadow-2xl">
+      <section className="bg-gray-100 noise-bg-n flex justify-center items-center w-full p-10 md:min-h-[350px] drop-shadow-2xl">
         <div className="w-[90vw] md:w-[30vw] transition-transform duration-500">
           <img
             draggable="false"
