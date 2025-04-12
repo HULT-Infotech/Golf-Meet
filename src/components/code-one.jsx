@@ -14,39 +14,14 @@ import { Link } from "react-router-dom";
 function CodeOne() {
   return (
     <div className="md:overflow-visible overflow-hidden">
-      <section className="sm:bg-gray-100 sm:noise-bg noise-bg-n min-h-screen relative flex flex-col md:flex-row overflow-hidden">
-  <div className="sticky top-0 z-50 w-full flex justify-between items-center
-       [padding-left:clamp(1rem,5vw,3.5rem)]
-       [padding-right:clamp(1rem,5vw,3.5rem)]
-       [padding-top:clamp(1.5rem,5vw,2.5rem)]
-       [padding-bottom:clamp(1.5rem,5vw,2.5rem)]">
-    {/* Left Side - Register Button */}
-    <button
-      className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214]
-       px-4 py-2 rounded-md text-[#FFF7D9] uppercase tracking-[0.1em] font-quattrocento
-       [font-size:clamp(0.65rem,2.5vw,1rem)]
-       shadow-[0_2px_4px_rgba(0,0,0,0.55)]
-       hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"
-      onClick={handleWhatsAppClick}
-    >
-      Register Now
-    </button>
-    
-    {/* Right Side - Leaderboard Link */}
-    <Link
-      to="/leaderboard"
-      className="uppercase text-[#1C1C1C] font-quattrocentoSans font-bold tracking-[0.1em]
-       [font-size:clamp(0.65rem,2.5vw,1rem)]"
-    >
-      Leaderboard
-    </Link>
-  </div>
+      <section className="sm:bg-gray-100 sm:noise-bg noise-bg-n min-h-[90vh] relative flex flex-col md:flex-row overflow-hidden">
+
 
   {/* Main Content Container */}
   <div className="flex flex-col w-full grow justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto relative pt-4 pb-16 md:py-16">
     <div className="relative flex flex-col justify-center items-center md:items-start p-8 md:pl-10 md:p-0 xl:ml-20 z-10">
       <h1
-        className="font-quattrocento text-5xl md:text-6xl md:text-[37px] lg:text-[55px] xl:text-8xl max-w-2xl font-bold mb-4 mt-4 text-[#201E15] text-center md:text-left xl:text-[80px]"
+        className="font-quattrocento text-[2.97rem] md:text-6xl md:text-[37px] lg:text-[55px] xl:text-8xl max-w-2xl font-bold mb-4 mt-4 text-[#201E15] text-center md:text-left xl:text-[80px]"
         style={{lineHeight: "1.1" }}
       >
         <span className="whitespace-nowrap">PLAYER CODE</span>
@@ -83,11 +58,11 @@ function CodeOne() {
   {/* Mobile decorative element - only visible on mobile */}
 
 </section>
-<div className="top-0">
+<div className="top-0 -mt-1">
 <img
     src={tr_dec_mobile}
     alt="Mobile decorative element"
-    className="absolute  left-0 w-[180px] object-contain pointer-events-none md:hidden"
+    className="absolute  left-0 w-[270px] object-contain pointer-events-none md:hidden"
   />
   </div>
 <section className="flex flex-col items-center justify-center  mt-20 md:mt-20 xl:mt-24 relative mb-6 sm:mb-0">

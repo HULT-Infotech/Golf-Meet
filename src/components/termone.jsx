@@ -14,32 +14,7 @@ function Terms() {
   return (
     <div className="md:overflow-visible overflow-hidden">
 <section className="bg-gray-100 noise-bg relative min-h-screen overflow-hidden">
-  <div className="sticky top-0 z-50 w-full flex justify-between items-center
-     [padding-left:clamp(1rem,5vw,3.5rem)]
-     [padding-right:clamp(1rem,5vw,3.5rem)]
-     [padding-top:clamp(1.5rem,5vw,2.5rem)]
-     [padding-bottom:clamp(1.5rem,5vw,2.5rem)]">
-    
-    {/* Left Side - Register Button */}
-    <button
-      className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214]
-       px-4 py-2 rounded-md text-[#FFF7D9] uppercase tracking-[0.1em] font-quattrocento
-       [font-size:clamp(0.65rem,2.5vw,1rem)]
-       shadow-[0_2px_4px_rgba(0,0,0,0.55)]
-       hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"
-      onClick={handleWhatsAppClick}>
-      Register Now
-    </button>
-    
-    {/* Right Side - Leaderboard Link */}
-    <Link
-      to="/leaderboard"
-      className="uppercase text-[#1C1C1C] font-quattrocentoSans font-bold tracking-[0.1em]
-       [font-size:clamp(0.65rem,2.5vw,1rem)]"
-    >
-      Leaderboard
-    </Link>
-  </div>
+ 
 
   <div className="flex flex-col w-full grow pb-24 md:py-0 md:flex-row max-w-[1700px] mx-auto relative h-full">
     {/* Text Section */}

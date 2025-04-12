@@ -7,8 +7,8 @@ function PrivacyPage() {
   return (
     <><div className="md:hidden">
       {/* Section 1  */}
-      <Privacyone />
 <Navbar />
+      <Privacyone />
       {/* Section 2
       <CompeteWorldwideSection /> */}
 

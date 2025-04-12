@@ -8,8 +8,8 @@ function CodePage() {
     <>
     <div className="md:hidden">
       {/* Section 1  */}
+      <Navbar />
       <Cone />
-<Navbar />
       {/* Section 2
       <CompeteWorldwideSection /> */}
 

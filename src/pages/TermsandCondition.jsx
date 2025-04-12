@@ -7,8 +7,8 @@ function TermPage() {
   return (
     <><div className="md:hidden">
       {/* Section 1  */}
-      <Termone />
 <Navbar />
+      <Termone />
       {/* Section 2
       <CompeteWorldwideSection /> */}
 
