@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 function LandingPage() {
   return (
     <section className="min-h-screen text-center">
-<div className="relative flex flex-col min-h-[70vh] bg-gray-50 noise-bg">
+<div className="relative flex flex-col min-h-[70vh] bg-gray-50 noise-bg-n">
   {/* Top Navbar */}
   <div className="lg:absolute z-50 min-h-20 top-0 w-full flex justify-between items-center 
     [padding-left:clamp(1rem,5vw,3.5rem)] 

@@ -21,7 +21,8 @@ function CodeOne() {
       <div className="fixed top-0 left-0 right-0 z-50 w-full">
         <Navbar />
       </div>
-      
+      <div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
+
       <section className="sm:bg-gray-100 sm:noise-bg noise-bg-n min-h-screen relative flex flex-col md:flex-row overflow-hidden pt-16"> {/* Added pt-16 to create space for fixed navbar */}
         {/* Main Content Container */}
         <div className="flex flex-col w-full grow justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto relative pt-4 pb-16 md:py-16">

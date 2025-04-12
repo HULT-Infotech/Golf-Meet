@@ -8,6 +8,8 @@ function TermPage() {
     <><div className="md:hidden">
       {/* Section 1  */}
 <Navbar />
+<div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
+
       <Termone />
       {/* Section 2
       <CompeteWorldwideSection /> */}

@@ -179,8 +179,30 @@ function FaQ() {
   return (
     
     <>
-    
+          <style>
+    {`
+      .custom-margin {
+        margin-top: -6rem;
+      }
+
+      @media (min-width: 375px) {
+        .custom-margin {
+          margin-top: -7rem;
+        }
+      }
+      @media (min-width: 425px) {
+        .custom-margin {
+          margin-top: -8rem;
+        }
+      }
+
+
+      }
+    `}
+  </style>
     <Navbar/>
+    <div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
+
       <section 
         className="bg-gray-100 noise-bg-n relative flex flex-col min-h-[90vh] md:min-h-[85vh] md:flex-row md:hidden"
       >
@@ -213,7 +235,7 @@ function FaQ() {
 </section>
 
       {/* New Full-width Mobile Image with higher z-index */}
-      <div className="w-full md:hidden -mt-24 mb-4 relative z-10">
+      <div className="w-full md:hidden custom-margin mb-4 relative z-10">
         <img
           src={faq_gm}
           alt="Full-width Golfers Illustration"

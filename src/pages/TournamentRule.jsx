@@ -118,6 +118,8 @@ function TournamentRule() {
     `}
   </style>
       <Navbar/>
+      <div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
+
       {/* Main container */}
       <div className="md:h-[108vh] flex flex-col relative md:hidden">
         {/* Hero section */}

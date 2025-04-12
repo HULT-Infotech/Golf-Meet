@@ -1,9 +1,9 @@
 import React from "react";
-import coc_coins1 from "../assets/coc-coins1.webp";
-import coc_coins2 from "../assets/coc-coins2.webp";
-import coc_coins3 from "../assets/coc-coins3.webp";
-import coc_coins4 from "../assets/coc-coins4.webp";
-import coc_coins5 from "../assets/coc-coins5.webp";
+import coc_coins1 from "../assets/coc-coins1.svg";
+import coc_coins2 from "../assets/coc-coins2.svg";
+import coc_coins3 from "../assets/coc-coins3.svg";
+import coc_coins4 from "../assets/coc-coins4.svg";
+import coc_coins5 from "../assets/coc-coins5.svg";
 import mcoc_coins1 from "../assets/m-coin.png";
 import mcoc_coins2 from "../assets/m-coin1.png";
 import mcoc_coins3 from "../assets/m-coin2.png";
@@ -27,7 +27,7 @@ function Common() {
 </div>
 
 {/* Background color for mobile/smaller screens */}
-<div className="absolute inset-0 w-full z-6 h-full md:hidden noise-bg-new bg-[#00292D]">
+<div className="absolute inset-0 w-full z-6 h-full md:hidden noise-bgsvg bg-[#00292D]">
 </div>
 
 {/* Coin Images - visible only on larger screens */}
