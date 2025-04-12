@@ -110,7 +110,7 @@ const Navbar = ({ triggerRef }) => {
         </div>
       </nav>
 
-      {/* Sidebar */}
+      {/* Enhanced Sidebar Animation - Only the slide motion is improved */}
       <AnimatePresence>
         {sidebarOpen && (
           <>
@@ -119,7 +119,7 @@ const Navbar = ({ triggerRef }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.3 }}
               onClick={() => setSidebarOpen(false)}
               style={{
                 backdropFilter: "blur(4px)",
@@ -131,8 +131,17 @@ const Navbar = ({ triggerRef }) => {
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
-              transition={{ type: "spring", stiffness: 300, damping: 35 }}
-              style={{ boxShadow: "-5px 0 25px rgba(0,0,0,0.2)" }}
+              transition={{ 
+                type: "spring", 
+                stiffness: 450, 
+                damping: 40,
+                mass: 1.2,
+                velocity: 15
+              }}
+              style={{ 
+                boxShadow: "-5px 0 25px rgba(0,0,0,0.2)",
+                willChange: "transform" 
+              }}
             >
               <div className="relative">
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
