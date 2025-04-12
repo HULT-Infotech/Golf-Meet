@@ -96,11 +96,32 @@ function TournamentRule() {
   return (
     
     <>
+      <style>
+    {`
+      .custom-margin {
+        margin-top: -2rem;
+      }
+
+      @media (min-width: 375px) {
+        .custom-margin {
+          margin-top: -3rem;
+        }
+      }
+      @media (min-width: 425px) {
+        .custom-margin {
+          margin-top: -3.8rem;
+        }
+      }
+
+
+      }
+    `}
+  </style>
       <Navbar/>
       {/* Main container */}
       <div className="md:h-[108vh] flex flex-col relative md:hidden">
         {/* Hero section */}
-        <section className="bg-gray-100 noise-bg-n relative min-h-screen overflow-hidden">
+        <section className="bg-gray-100 noise-bg-n relative min-h-[90vh] overflow-hidden">
 
 
   <div className="flex flex-col w-full grow pb-24 md:py-0 md:flex-row max-w-[1700px] mx-auto relative">
@@ -138,7 +159,8 @@ function TournamentRule() {
   /> */}
 </section>
         {/* Mobile decorative element - Moved outside the section */}
-        <div className="relative md:hidden">
+        <div className="relative md:hidden custom-margin">
+
           <img
             src={tr_greenleft_m}
             alt="Green left element mobile"
@@ -147,7 +169,7 @@ function TournamentRule() {
         </div>
 
         {/* Player Code of Conduct section */}
-        <section className="flex flex-col items-center justify-center  mt-48 md:mt-12 relative mb-12 sm:mb-0">
+        <section className="flex flex-col items-center justify-center  mt-52 md:mt-12 relative mb-12 sm:mb-0">
           <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">
               <h2 className="lg:text-5xl md:4xl text-[1.8rem]  font-bold uppercase font-quattrocento">

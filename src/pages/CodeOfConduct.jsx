@@ -1,14 +1,12 @@
 import React from "react";
 import Cone from "../components/code-one";
 import  Ctwo from "../components/common";
-import Navbar from "../components/Navbar";
 
 function CodePage() {
   return (
     <>
     <div className="md:hidden">
       {/* Section 1  */}
-      <Navbar />
       <Cone />
       {/* Section 2
       <CompeteWorldwideSection /> */}

@@ -182,7 +182,7 @@ function FaQ() {
     
     <Navbar/>
       <section 
-        className="bg-gray-100 noise-bg-n relative flex flex-col min-h-screen md:min-h-[85vh] md:flex-row md:hidden"
+        className="bg-gray-100 noise-bg-n relative flex flex-col min-h-[90vh] md:min-h-[85vh] md:flex-row md:hidden"
       >
         
        

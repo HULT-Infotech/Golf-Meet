@@ -13,7 +13,7 @@ const handleWhatsAppClick = () => {
 function Terms() {
   return (
     <div className="md:overflow-visible overflow-hidden">
-<section className="bg-gray-100 noise-bg relative min-h-screen overflow-hidden">
+<section className="bg-gray-100 noise-bg-n relative min-h-[90vh] overflow-hidden">
  
 
   <div className="flex flex-col w-full grow pb-24 md:py-0 md:flex-row max-w-[1700px] mx-auto relative h-full">
