@@ -1,33 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import CachedHomePage from "./pages/CachedHomePage";
-import HowToPlay from "./pages/HowToPlay";
-import TournamentRule from "./pages/TournamentRule";
-import FaQ from "./pages/FaQ";
 import ScrollToTop from "./utils/ScrollToTop";
-import CodeOfConduct from "./pages/CodeOfConduct";
-import Terms from "./pages/TermsandCondition";
-import Policy from "./pages/PrivacyPolicy";
-import Leader from "./pages/Leaderboard";
 import LoadingScreen from "./components/LoadingScreen";
+const HomePage = lazy(() => import("./pages/HomePage"));
+const HowToPlay = lazy(() => import("./pages/HowToPlay"));
+const TournamentRule = lazy(() => import("./pages/TournamentRule"));
+const FaQ = lazy(() => import("./pages/FaQ"));
+const CodeOfConduct = lazy(() => import("./pages/CodeOfConduct"));
+const Terms = lazy(() => import("./pages/TermsandCondition"));
+const Policy = lazy(() => import("./pages/PrivacyPolicy"));
+const Leader = lazy(() => import("./pages/Leaderboard"));
 function App() {
-const [isLoading, setIsLoading] = useState(true);
-useEffect(() => {
-console.log("useEffect ran");
-const simulateInitialLoad = async () => {
-await new Promise((resolve) => setTimeout(resolve, 1000)); // Increased delay
-setIsLoading(false);
-console.log("isLoading set to false");
-};
-simulateInitialLoad();
-}, []);
 return (
 <BrowserRouter>
-{isLoading && <LoadingScreen />}
-{!isLoading && (
-<>
+<Suspense fallback={<LoadingScreen />}>
 <Routes>
-<Route path="/" element={<CachedHomePage />} />
+<Route path="/" element={<HomePage />} /> {/* Use the lazily loaded HomePage */}
 <Route path="/home-to-play" element={<HowToPlay />} />
 <Route path="/faq" element={<FaQ />} />
 <Route path="/tournament-rules" element={<TournamentRule />} />
@@ -37,8 +25,7 @@ return (
 <Route path="/leaderboard" element={<Leader />} />
 </Routes>
 <ScrollToTop />
-</>
-)}
+</Suspense>
 </BrowserRouter>
 );
 }

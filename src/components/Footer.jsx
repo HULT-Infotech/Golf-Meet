@@ -83,9 +83,9 @@ function Footer() {
 
 
           <div className="flex uppercase flex-col font-quattrocentoSans space-y-8 text-white text-left">
-            <a href="/player-support" className="hover:underline">
+            {/* <a href="/player-support" className="hover:underline">
               Player Support
-            </a>
+            </a> */}
             <a href="/terms-of-use" className="hover:underline">
               Terms of Use
             </a>

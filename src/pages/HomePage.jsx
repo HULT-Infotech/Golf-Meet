@@ -6,22 +6,22 @@ import FairPlaySection from "../components/FairPlaySection";
 import Footer from "../components/Footer";
 import VideoSection from "../components/VideoSection";
 
-function HomePage({ cachedData }) {
+function HomePage() {
   const triggerRef = useRef(null);
 
   return (
     <>
       <div className="md:hidden">
         <div ref={triggerRef}>
-          <LandingSection {...cachedData.landingData} />
+          <LandingSection/>
         </div>
-        <Navbar triggerRef={triggerRef} {...cachedData.navbarData} />
-        <HowItWorksSection {...cachedData.howItWorksData} />
+        <Navbar triggerRef={triggerRef}/>
+        <HowItWorksSection/>
         <div className="-mt-3">
-          <VideoSection {...cachedData.videoSectionData} />
+          <VideoSection/>
         </div>
-        <FairPlaySection {...cachedData.fairPlaySectionData} />
-        <Footer {...cachedData.footerData} />
+        <FairPlaySection/>
+        <Footer/>
       </div>
     </>
   );

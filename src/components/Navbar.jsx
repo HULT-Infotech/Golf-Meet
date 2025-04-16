@@ -214,13 +214,13 @@ const Navbar = ({ triggerRef }) => {
                 >
                   PLAYER CODE OF CONDUCT
                 </Link>
-                <Link 
+                {/* <Link 
                   to="/support" 
                   className="text-gray-800 font-bold py-6 pl-6 text-left border-b border-gray-300 hover:bg-gray-200"
                   onClick={() => setSidebarOpen(false)}
                 >
                   PLAYER SUPPORT
-                </Link>
+                </Link> */}
                 <Link 
                   to="/terms-of-use" 
                   className="text-gray-800 font-bold py-6 pl-6 text-left hover:bg-gray-200"
