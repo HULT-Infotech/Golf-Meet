@@ -11,22 +11,23 @@ const Terms = lazy(() => import("./pages/TermsandCondition"));
 const Policy = lazy(() => import("./pages/PrivacyPolicy"));
 const Leader = lazy(() => import("./pages/Leaderboard"));
 function App() {
-return (
-<BrowserRouter>
-<Suspense fallback={<LoadingScreen />}>
-<Routes>
-<Route path="/" element={<HomePage />} /> {/* Use the lazily loaded HomePage */}
-<Route path="/home-to-play" element={<HowToPlay />} />
-<Route path="/faq" element={<FaQ />} />
-<Route path="/tournament-rules" element={<TournamentRule />} />
-<Route path="/code-of-conduct" element={<CodeOfConduct />} />
-<Route path="/terms-of-use" element={<Terms />} />
-<Route path="/privacy-policy" element={<Policy />} />
-<Route path="/leaderboard" element={<Leader />} />
-</Routes>
-<ScrollToTop />
-</Suspense>
-</BrowserRouter>
-);
+  return (
+    <BrowserRouter>
+      <Suspense fallback={<LoadingScreen />}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          {/* Use the lazily loaded HomePage */}
+          <Route path="/home-to-play" element={<HowToPlay />} />
+          <Route path="/faq" element={<FaQ />} />
+          <Route path="/tournament-rules" element={<TournamentRule />} />
+          <Route path="/code-of-conduct" element={<CodeOfConduct />} />
+          <Route path="/terms-of-use" element={<Terms />} />
+          <Route path="/privacy-policy" element={<Policy />} />
+          <Route path="/leaderboard" element={<Leader />} />
+        </Routes>
+        <ScrollToTop />
+      </Suspense>
+    </BrowserRouter>
+  );
 }
 export default App;
