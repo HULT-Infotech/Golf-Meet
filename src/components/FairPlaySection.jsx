@@ -10,7 +10,7 @@ const FairPlaySection = () => {
           <img
             src={Illustration_Golfers_Mobile}
             alt="Illustration of Golfers"
-            className="w-[100vw] md:w-[65vw] object-contain"
+            className="w-[90vw] md:w-[65vw] object-contain"
           />
         </div>
 

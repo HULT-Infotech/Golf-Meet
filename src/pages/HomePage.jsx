@@ -9,6 +9,7 @@ import LargeScreen from "../Desktop/LargeScreen";
 import GolfPrize from "../components/GolfPrize";
 import Medalsection from "../components/Medal";
 import Photosection from "../components/photo";
+import Costsection from "../components/Cost";
 
 function HomePage() {
   const triggerRef = useRef(null);
@@ -28,6 +29,7 @@ function HomePage() {
         </div>
         <FairPlaySection/>
         <Photosection/>
+        <Costsection/>
         <Footer/>
       </div>
 
