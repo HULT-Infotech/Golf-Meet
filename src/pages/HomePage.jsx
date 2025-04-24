@@ -22,7 +22,7 @@ function HomePage() {
         <GolfPrize/>
         <Medalsection/>
         <HowItWorksSection/>
-        <div className="-mt-3">
+        <div className="">
           <VideoSection/>
         </div>
         <FairPlaySection/>
