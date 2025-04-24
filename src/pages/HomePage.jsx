@@ -5,6 +5,7 @@ import HowItWorksSection from "../components/HowItWorksSection";
 import FairPlaySection from "../components/FairPlaySection";
 import Footer from "../components/Footer";
 import VideoSection from "../components/VideoSection";
+import LargeScreen from "../Desktop/LargeScreen";
 
 function HomePage() {
   const triggerRef = useRef(null);
@@ -22,6 +23,10 @@ function HomePage() {
         </div>
         <FairPlaySection/>
         <Footer/>
+      </div>
+
+      <div className="hidden md:block">
+        <LargeScreen/>
       </div>
     </>
   );
