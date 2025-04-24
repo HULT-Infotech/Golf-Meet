@@ -4,7 +4,7 @@ import flag from "../assets/GolfPrize/Vector.svg";
 
 const GolfPrize = () => {
   return (
-    <div className="relative w-full h-[70vh]">
+    <div className="relative w-full h-[75vh]">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -18,33 +18,44 @@ const GolfPrize = () => {
       <div className="relative h-full flex flex-col items-center justify-center text-white text-center px-6">
         {/* Golf Flag Icon */}
         <div className="mb-4">
-          <img src={flag} alt="Golf Flag" className="w-6 h-6 mx-auto" />
+          <img src={flag} alt="Golf Flag" className="w-7 h-7 mx-auto" />
         </div>
         
         {/* GRAND PRIZE Text */}
-        <h1 className="font-normal tracking-widest mb-0 leading-tight"
+        <h1 className="mb-0 text-center"
             style={{
-              fontSize: 'clamp(3rem, 10vw, 6rem)',
-              textShadow: '0 0 6px rgba(255,255,255,0.4), 0 0 10px rgba(255,255,255,0.3)',
-              fontFamily: 'serif'
+              fontSize: 'clamp(4.5rem, 8vw, 7.05rem)',  /* 64.71px at largest */
+              fontFamily: 'Quattrocento, serif',
+              fontWeight: 700,
+              lineHeight: 'clamp(4.5rem, 8vw, 6rem)',  /* 64px at largest */
+              letterSpacing: '0.025em',  /* 2.5% */
+              textShadow: '0px 0px 14px rgba(255, 255, 255, 0.45)',
+              color: 'white',
+              textAlign: 'center'
             }}>
           GRAND
         </h1>
-        <h1 className="font-normal tracking-widest mb-8 leading-tight"
+        <h1 className="mb-5 text-center"
             style={{
-              fontSize: 'clamp(3rem, 10vw, 6rem)',
-              textShadow: '0 0 6px rgba(255,255,255,0.4), 0 0 10px rgba(255,255,255,0.3)',
-              fontFamily: 'serif'
+              fontSize: 'clamp(4.5rem, 8vw, 7.05rem)',  /* 64.71px at largest */
+              fontFamily: 'Quattrocento, serif',
+              fontWeight: 700,
+              lineHeight: 'clamp(4.5rem, 8vw, 6rem)',  /* 64px at largest */
+              letterSpacing: '0.025em',  /* 2.5% */
+              textShadow: '0px 0px 14px rgba(255, 255, 255, 0.45)',
+              color: 'white',
+              textAlign: 'center'
             }}>
           PRIZE
         </h1>
         
         {/* Description */}
-        <p className="font-normal mb-16 max-w-md leading-relaxed"
+        <p className=" mb-5 max-w-md leading-relaxed"
            style={{ 
              fontSize: 'clamp(1rem, 4vw, 1.5rem)',
-             fontFamily: 'serif',
-             textShadow: '0 0 3px rgba(255,255,255,0.3)'
+             fontFamily: 'Quattrocento, serif',
+             fontWeight: 400,
+             color: 'white'
            }}>
           The top 5 players from India
           <br />
@@ -54,29 +65,36 @@ const GolfPrize = () => {
         {/* GOLF VACATION IN Text */}
         <h2 className="font-normal tracking-wider mb-0 leading-tight"
             style={{
-              fontSize: 'clamp(2rem, 7vw, 4.5rem)',
-              textShadow: '0 0 5px rgba(255,255,255,0.4), 0 0 8px rgba(255,255,255,0.3)',
-              fontFamily: 'serif'
+              fontSize: 'clamp(2.3rem, 7vw, 4.5rem)',
+              fontFamily: 'Quattrocento, serif',
+             fontWeight: 400,
+              color: 'white'
             }}>
           GOLF
         </h2>
         <h2 className="font-normal tracking-wider mb-2 leading-tight"
             style={{
-              fontSize: 'clamp(2rem, 7vw, 4.5rem)',
-              fontFamily: 'serif'
+              fontSize: 'clamp(2.3rem, 7vw, 4.5rem)',
+              fontFamily: 'Quattrocento, serif',
+             fontWeight: 400,
+              color: 'white'
             }}>
           VACATION IN
         </h2>
         
         {/* VIETNAM Text */}
-        <h2 className="font-normal tracking-widest leading-none"
-            style={{
-              fontSize: 'clamp(4rem, 15vw, 9rem)',
-              textShadow: '0 0 6px rgba(255,255,255,0.4), 0 0 10px rgba(255,255,255,0.3)',
-              fontFamily: 'serif'
-            }}>
-          VIETNAM
-        </h2>
+        <h2 
+  className="font-normal tracking-widest leading-none"
+  style={{
+    fontSize: 'clamp(3.7rem, 15vw, 8.7rem)',
+    textShadow: '2px 2px 14px rgba(255, 255, 255, 0.45), 0px 0px 14px rgba(255, 255, 255, 0.45)',
+    fontFamily: 'Quattrocento, serif',
+    fontWeight: 400,
+    color: 'white'
+  }}
+>
+  VIETNAM
+</h2>
       </div>
     </div>
   );
