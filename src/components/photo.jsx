@@ -6,7 +6,11 @@ const ExclusiveEventsPage = () => {
   return (
     <div className="w-full min-h-screen bg-white">
       {/* Heading Section */}
-      <div className="pt-8 pb-6 px-4 text-center font-quattrocento">
+      <div
+  className="pt-8 pb-6 px-4 text-center font-quattrocento"
+  style={{ fontWeight: "700" }}
+>
+
         <h1 className="text-3xl sm:text-4xl font-bold text-teal-800">ENJOY EXCLUSIVE</h1>
         <h1 className="text-3xl sm:text-4xl font-bold text-teal-800">CURATED EVENTS</h1>
       </div>
