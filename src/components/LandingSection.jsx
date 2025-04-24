@@ -84,13 +84,11 @@ function LandingPage() {
             </h1>
           </div>
 
-          <p className="font-quattrocentoSans w-80 mx-auto sm:w-auto font-normal text-[24px] leading-[26.59px] tracking-[-0.025em] text-center text-[#fff] mt-4">
-            The year-long amateur golf tournament
+          <p className="font-quattrocentoSans w-80 mx-auto sm:w-auto font-normal text-[24px] leading-[28.59px] tracking-[-0.025em] text-center text-[#fff] mt-4">
+            The year-long exclusive networking golf tournament
           </p>
 
-          <p className="font-quattrocentoSans font-normal mt-1 text-[16px] leading-[17.73px] tracking-[-0.025em] text-center text-[#fff] p-2">
-            JANUARY 2025 - DECEMBER 2025
-          </p>
+          
 
           {/* Register Button with gold gradient */}
           <div className="flex justify-center">
@@ -98,11 +96,14 @@ function LandingPage() {
               className="my-7 rounded-md px-10 py-2 font-normal bg-gradient-to-b from-[#FFFFFF] via-[#FBE67B] to-[#FFB41E] shadow-[0px_2px_4px_0px_#0000008C] transition-all duration-500 hover:shadow-[0px_4px_10px_0px_#00000073]"
               onClick={handleWhatsAppClick}
             >
-              <span className="text-lg text-[#014D4E] font-quattrocento font-bold">
-                REGISTER ON WHATSAPP
+              <span className="text-lg text-[#014D4E] font-quattrocento"style={{ fontWeight: "700" }}>
+              APPLY VIA WHATSAPP 
               </span>
             </button>
           </div>
+          <p className="font-quattrocentoSans text-xl text-[16px] leading-[17.73px] tracking-[-0.025em] text-center text-[#fff] p-2" style={{ fontWeight: "700" }}>
+          MAY 1 - DEC 31, 2025
+          </p>
         </div>
       </div>
     </section>
