@@ -18,7 +18,7 @@ const GolfPrize = () => {
       <div className="relative h-full flex flex-col items-center justify-center text-white text-center px-6">
         {/* Golf Flag Icon */}
         <div className="mb-4">
-          <img src={flag} alt="Golf Flag" className="w-7 h-7 mx-auto" />
+          <img src={flag} alt="Golf Flag" className="w-8 h-8 mx-auto" />
         </div>
         
         {/* GRAND PRIZE Text */}
@@ -86,7 +86,7 @@ const GolfPrize = () => {
         <h2 
   className="font-normal tracking-widest leading-none"
   style={{
-    fontSize: 'clamp(3.78rem, 15vw, 8.8rem)',
+    fontSize: 'clamp(3.7rem, 15vw, 8.8rem)',
     textShadow: '2px 2px 14px rgba(255, 255, 255, 0.45), 0px 0px 14px rgba(255, 255, 255, 0.45)',
     fontFamily: 'Quattrocento, serif',
     fontWeight: 400,

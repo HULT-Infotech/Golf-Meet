@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import VideoSection from "../components/VideoSection";
 import LargeScreen from "../Desktop/LargeScreen";
 import GolfPrize from "../components/GolfPrize";
+import Medalsection from "../components/Medal";
 
 function HomePage() {
   const triggerRef = useRef(null);
@@ -19,6 +20,7 @@ function HomePage() {
         </div>
         <Navbar triggerRef={triggerRef}/>
         <GolfPrize/>
+        <Medalsection/>
         <HowItWorksSection/>
         <div className="-mt-3">
           <VideoSection/>
