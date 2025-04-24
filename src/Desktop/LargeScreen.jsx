@@ -11,13 +11,13 @@ function LargeScreen() {
         <img src={phoneimg} className="w-[329px] h-[681px]" alt="phoneimg" />
         </div>
 
-        <div className="flex flex-col justify-center items-center gap-10">
+        <div className="flex flex-col justify-center items-start gap-10">
           <h2 className="font-quattrocentoSans max-w-[426px] font-bold text-[48px] leading-[110%] text-[#014D4E] leading-trim text-edge-cap">
             golfmeet.com is <br /> best experienced on <br /> your mobile phone.
           </h2>
           <img
             src={golfmeet_qr_code}
-            className="mix-blend-overlay"
+            className="ml-2"
             alt="golfmeet_qr_code"
           />
         </div>
