@@ -48,7 +48,7 @@ const Navbar = ({ triggerRef }) => {
   return (
     <>
       <nav
-        className={`bg-gray-200 noise-bg-n shadow-lg mb-10 py-5 px-5 lg:px-10 flex items-center justify-between w-full fixed top-0 z-50 transition-opacity duration-500 ease-in-out ${
+        className={`bg-gray-200 noise-bg-n rounded-b-3xl shadow-xl mb-10 py-8 px-5 lg:px-10 flex items-center justify-between w-full fixed top-0 z-50 transition-opacity duration-500 ease-in-out ${
           visible ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         style={{
@@ -64,7 +64,7 @@ const Navbar = ({ triggerRef }) => {
             onClick={handleWhatsAppClick}
           >
             <span className="font-quattrocento text-[#FFF7D9]">
-              REGISTER
+              APPLY NOW
             </span>
           </button>
           
@@ -88,8 +88,8 @@ const Navbar = ({ triggerRef }) => {
             className="z-10 text-gray-800 focus:outline-none w-10 h-10 flex items-center justify-center"
             aria-label="Open menu"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
