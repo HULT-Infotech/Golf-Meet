@@ -28,7 +28,7 @@ const FairPlaySection = () => {
 
         <div className="mx-auto max-w-4xl relative">
           <h6 className="text-base mb-8 md:text-lg lg:text-xl relative z-10">
-            Introduction
+          Introducing
           </h6>
           <h1 className="text-5xl md:text-6xl lg:text-7xl mx-auto uppercase font-quattrocento font-bold xl:text-[96px] xl:leading-[106.37px] tracking-[0.025em] text-center relative z-10">
             The GolfMeet

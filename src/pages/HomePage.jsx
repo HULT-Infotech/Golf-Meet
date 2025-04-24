@@ -8,6 +8,7 @@ import VideoSection from "../components/VideoSection";
 import LargeScreen from "../Desktop/LargeScreen";
 import GolfPrize from "../components/GolfPrize";
 import Medalsection from "../components/Medal";
+import Photosection from "../components/photo";
 
 function HomePage() {
   const triggerRef = useRef(null);
@@ -26,6 +27,7 @@ function HomePage() {
           <VideoSection/>
         </div>
         <FairPlaySection/>
+        <Photosection/>
         <Footer/>
       </div>
 
