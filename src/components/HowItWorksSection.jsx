@@ -168,11 +168,11 @@ const HowItWorksSection = () => {
             GOLFERS FROM<br />
             ALL OVER INDIA
           </h1>
-          <h1 className="text-[23px] text-[#014D4E]  block md:hidden w-[90%] mx-auto mb-4 lg:text-[90px] font-quattrocento font-bold md:leading-[106.37px]  text-center">
+          <h1 className="text-[25px] text-[#014D4E] max-w-sm  block md:hidden w-[90%] mx-auto mb-4 lg:text-[90px] font-quattrocento font-bold md:leading-[106.37px]  text-center">
           EVEN AS YOU PLAY AT YOUR HOME COURSE.
           </h1>
 
-          <p className="text-teal-700 font-sans text-lg mb-4 p-4 max-w-xl mx-auto">
+          <p className="text-[#014D4E] text-left font-sans text-xl mb-4 p-4 max-w-md mx-auto">
           Unlike typical golf tournaments where the result depends on your form on the tournament day, Golf Meet gives you and everyone else a fair chance all year long.
           </p>
           {/* Golf balls illustration */}
