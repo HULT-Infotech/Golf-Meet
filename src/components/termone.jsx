@@ -13,7 +13,7 @@ const handleWhatsAppClick = () => {
 function Terms() {
   return (
     <div className="md:overflow-visible overflow-hidden">
-<section className="bg-gray-100 noise-bg-n relative min-h-[90vh] overflow-hidden">
+<section className="bg-gray-100 noise-bg-n relative min-h-[90vh] overflow-hidden md:hidden">
  
 
   <div className="flex flex-col w-full grow pb-24 md:py-0 md:flex-row max-w-[1700px] mx-auto relative h-full">
@@ -49,10 +49,10 @@ function Terms() {
               <h2 className="lg:text-5xl md:4xl text-[1.8rem]  font-bold uppercase font-quattrocento">
               PRIVACY POLICY
               </h2>
-              <Link to="/privacy-policy"></Link><p className="lg:text-lg md:3xl tect-[1.5rem]  underline underline-offset-4">
+              <Link to="/privacy-policy"><p className="lg:text-lg md:3xl tect-[1.5rem]  underline underline-offset-4">
                 Please refer to the
                 <strong> Privacy Policy </strong> here
-              </p><Link/>
+              </p></Link>
             </div>
             <div>
               <svg
