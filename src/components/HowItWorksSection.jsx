@@ -7,7 +7,7 @@ import Img from "../assets/video.svg";
 
 const LeaderboardCard = () => {
   return (
-    <div className="max-w-md mx-auto rounded-lg bg-[#01383A] noise-bg-new overflow-hidden shadow-lg" style={{ 
+    <div className="max-w-md mx-auto rounded-2xl bg-[#01383A] noise-bg-new overflow-hidden shadow-lg" style={{ 
       color: "white",
       padding: "2rem 1.5rem",
       textAlign: "center"
