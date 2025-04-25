@@ -46,28 +46,49 @@ const EventsAndCostPage = () => {
       </div>
 
       {/* Curved Container Section with Tournament Fee */}
-      <div className="w-full">
+      <div className="w-full -mt-44 relative z-20">
         <div className="relative w-full h-auto py-12">
-        <svg 
-  className="absolute inset-0 w-full h-full" 
-  viewBox="0 0 100 200" 
+        <svg
+  className="absolute inset-0 w-full h-full z-[-1]"
+  viewBox="0 0 100 200"
   preserveAspectRatio="none"
-  style={{ zIndex: -1 }}
+  xmlns="http://www.w3.org/2000/svg"
 >
-  <path 
+  <defs>
+    {/* High-quality fractal noise filter */}
+    <filter id="noiseFilter">
+      <feTurbulence
+        type="fractalNoise"
+        baseFrequency="1.5"
+        numOctaves="3"
+        stitchTiles="stitch"
+      />
+    </filter>
+
+    {/* Pattern with dark base and optimized noise overlay */}
+    <pattern id="noisePattern" patternUnits="userSpaceOnUse" width="100" height="100">
+      <rect width="100" height="100" fill="#00292D" />
+      <rect width="100" height="100" filter="url(#noiseFilter)" opacity="0.1" />
+    </pattern>
+  </defs>
+
+  {/* Decorative shape with textured background */}
+  <path
     d="
       M0,20 
       C20,15 80,15 100,20 
       L100,180 
       C80,185 20,185 0,180 
       Z
-    " 
-    fill="#064e40"
+    "
+    fill="url(#noisePattern)"
   />
 </svg>
 
+
+
           {/* Tournament Fee Content */}
-          <div className="flex flex-col items-center justify-center px-6 text-white py-8">
+          <div className="flex flex-col items-center justify-center px-6 text-white py-40">
             <h2 className="text-3xl font-bold tracking-wider mb-4">TOURNAMENT FEE</h2>
             
             <div className="flex items-center mb-1">
