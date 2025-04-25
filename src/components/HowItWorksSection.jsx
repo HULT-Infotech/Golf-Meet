@@ -16,7 +16,7 @@ const LeaderboardCard = () => {
       <h2
   className="font-quattrocento font-bold mb-7"
   style={{
-    fontSize: "clamp(2.25rem, 10vw, 5rem)", // reduced min for small screens
+    fontSize: "clamp(2.25rem, 12vw, 5rem)", // reduced min for small screens
     background: "linear-gradient(180deg, #FFF2BF 0%, #F4D455 100%)",
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
@@ -37,7 +37,7 @@ const LeaderboardCard = () => {
       
       {/* Card Subtitle */}
       <div className="mb-4">
-        <h3 className="text-white text-xl font-quattrocento font-semibold mb-4">
+        <h3 className="text-white text-3xl font-quattrocento font-semibold mb-4">
           THE BEST 12 MAKE<br />
           IT TO THE<br />
           LEADERBOARD.
@@ -49,13 +49,13 @@ const LeaderboardCard = () => {
       
       {/* Important Section */}
       <div className="text-center mb-4">
-        <p className="font-semibold font-sans text-[.98rem] mb-5 text-white">IMPORTANT</p>
+        <p className="font-semibold font-sans text-[1.1rem] mb-5 text-white">IMPORTANT</p>
         
-        <p className="text-[.9rem] mb-4 max-w-72 mx-auto  text-white font-sans">
+        <p className="text-[.95rem] mb-4 max-w-72 mx-auto font-thin  text-white font-sans">
           Since most golfers book their rounds through club memberships or as complementary rounds from credit cards, the Golf Meet tournament fee does not cover green fees.
         </p>
         
-        <p className="text-[.9rem]  max-w-72 mx-auto text-white font-sans">
+        <p className="text-[.95rem]  max-w-72 mx-auto font-thin text-white font-sans">
           This also gives you and fellow contestants the freedom and flexibility to book your preferred tee time directly with the golf course.
         </p>
       </div>
