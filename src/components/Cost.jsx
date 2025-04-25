@@ -1,61 +1,44 @@
 import React from "react";
-
+import bg from "../assets/Cost/bg.png"
 const CostPage = () => {
-  // Function to handle the WhatsApp button click
   const handleWhatsAppClick = () => {
-    // The phone number provided: +91-888 484 4444
-    // Remove non-numeric characters for the WhatsApp link
-    const phoneNumber = "918884844444"; // Added country code without + sign
+    const phoneNumber = "918884844444";
     window.open(`https://wa.me/${phoneNumber}`, "_blank");
   };
 
   return (
-    <section className="bg-[#004141] noise-bg-new w-full min-h-screen flex items-center justify-center py-12">
-      {/* Mobile Design */}
-      <div className="flex flex-col items-center px-4 md:hidden">
-        <h2 className="uppercase text-[1.6rem] font-bold tracking-wider text-white mb-6">
+    <section
+      className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center"
+      style={{ backgroundImage: `url(${bg})` }} // replace with your image path
+    >
+      {/* Noise Overlay */}
+      <div className="absolute inset-0  opacity-20 pointer-events-none mix-blend-overlay"></div>
+
+      {/* Main Content */}
+      <div className="text-center px-6 max-w-xl z-10 text-white">
+        <h2 className="uppercase text-white text-2xl font-semibold tracking-widest mb-4">
           TOURNAMENT FEE
         </h2>
         <div className="text-white mb-1">
-          <span className="text-7xl font-bold flex justify-center">
-            <span className="text-[2.8rem] mr-4">₹</span>
-            <span className="text-6xl font-quattrocento">1000</span>
-          </span>
+          <span className="text-5xl font-bold">₹60,000</span>
         </div>
-        <p className="uppercase text-xs tracking-wider text-gray-400 mb-10">
-          PER ROUND
+        <p className="uppercase text-xs tracking-widest text-gray-300 mb-8">
+          Per Year
         </p>
-        <button 
-          className="text-[#FFF7D9] font-quattrocento font-bold py-3 px-3 w-full max-w-60 rounded uppercase text-[15px] tracking-wider shadow-xl border-red"
-          style={{ background: 'linear-gradient(180deg, #E5181A 0%, #CB1517 50%, #B21214 100%)' }}
+        <button
           onClick={handleWhatsAppClick}
+          className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white font-bold uppercase text-sm tracking-wider py-3 px-6 rounded shadow-md transition-transform hover:scale-105"
         >
-          REGISTER ON WHATSAPP
+          Apply via WhatsApp
         </button>
-      </div>
-      
-      {/* Desktop Design */}
-      <div className="hidden md:block">
-        <div className="max-w-2xl mx-auto flex flex-col items-center">
-          <h2 className="uppercase text-4xl font-bold tracking-wider text-white mb-6">
-            TOURNAMENT FEE
-          </h2>
-          <div className="text-white mb-1">
-            <span className="text-7xl font-bold flex items-center justify-center">
-              <span className="text-5xl mr-4">₹</span>
-              <span className="text-8xl font-quattrocento">1000</span>
-            </span>
-          </div>
-          <p className="uppercase text-sm tracking-wider text-gray-400 mb-10">
-            PER ROUND
+        <div className="mt-12 text-gray-200">
+          <h3 className="font-semibold uppercase text-sm mb-2">Important</h3>
+          <p className="text-sm leading-relaxed mb-2">
+            As many golfers use club memberships or complimentary rounds from credit cards to book their games, the Golf Meet tournament fee does not include green fees.
           </p>
-          <button 
-            className="text-[#FFF7D9] font-quattrocento font-bold py-4 px-8 w-96 rounded uppercase text-xl tracking-wider shadow-lg border-b-4 border-[#B21214]"
-            style={{ background: 'linear-gradient(180deg, #E5181A 0%, #CB1517 50%, #B21214 100%)' }}
-            onClick={handleWhatsAppClick}
-          >
-            REGISTER ON WHATSAPP
-          </button>
+          <p className="text-sm leading-relaxed">
+            This approach also gives you and your fellow players the flexibility to choose and book your preferred tee times directly with the golf course.
+          </p>
         </div>
       </div>
     </section>
