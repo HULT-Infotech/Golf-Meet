@@ -174,7 +174,7 @@ const Navbar = ({ triggerRef }) => {
 
               <div className="px-4 mt-32">
                 <button
-                  className="w-full text-center bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-[#FFF7D9] py-3 rounded font-quattrocento text-lg uppercase shadow-xl"
+                  className="w-full text-center bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-[#FFF7D9] py-3 rounded font-medium font-quattrocento text-xl uppercase shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)]"
                   onClick={(e) => {
                     e.stopPropagation();
                     handleWhatsAppClick(e);
@@ -188,49 +188,49 @@ const Navbar = ({ triggerRef }) => {
               <div className="flex flex-col p-4 mt-4">
                 <Link 
                   to="/leaderboard" 
-                  className="text-gray-800 pl-6 font-bold py-6 text-left border-t border-b border-gray-300 hover:bg-gray-200"
+                  className="text-[#211E16] pl-6 font-bold py-6 text-left border-t border-b border-gray-300 hover:bg-gray-200"
                   onClick={() => setSidebarOpen(false)}
                 >
                   LEADERBOARD
                 </Link>
                 <Link 
                   to="/faq" 
-                  className="text-gray-800 font-bold py-6 pl-6 text-left hover:bg-gray-200"
+                  className="text-[#211E16] font-bold py-6 pl-6 text-left hover:bg-gray-200"
                   onClick={() => setSidebarOpen(false)}
                 >
                   FREQUENTLY ASKED QUESTIONS
                 </Link>
                 <Link 
                   to="/tournament-rules" 
-                  className="text-gray-800 font-bold py-6 pl-6 text-left hover:bg-gray-200"
+                  className="text-[#211E16] font-bold py-6 pl-6 text-left hover:bg-gray-200"
                   onClick={() => setSidebarOpen(false)}
                 >
                   TOURNAMENT RULES
                 </Link>
                 <Link 
                   to="/code-of-conduct" 
-                  className="text-gray-800 font-bold py-6 pl-6 text-left hover:bg-gray-200"
+                  className="text-[#211E16] font-bold py-6 pl-6 text-left hover:bg-gray-200"
                   onClick={() => setSidebarOpen(false)}
                 >
                   PLAYER CODE OF CONDUCT
                 </Link>
                 <Link 
                   to="/support" 
-                  className="text-gray-800 font-bold py-6 pl-6 text-left  hover:bg-gray-200"
+                  className="text-[#211E16] font-bold py-6 pl-6 text-left  hover:bg-gray-200"
                   onClick={() => setSidebarOpen(false)}
                 >
                   PLAYER SUPPORT
                 </Link>
                 <Link 
                   to="/terms-of-use" 
-                  className="text-gray-800 font-bold py-6 pl-6 text-left border-t border-gray-300 hover:bg-gray-200"
+                  className="text-[#211E16] font-bold py-6 pl-6 text-left border-t border-gray-300 hover:bg-gray-200"
                   onClick={() => setSidebarOpen(false)}
                 >
                   TERMS OF USE
                 </Link>
                 <Link 
                   to="/privacy-policy" 
-                  className="text-gray-800 font-bold pl-6 py-6 text-left hover:bg-gray-200"
+                  className="text-[#211E16] font-bold pl-6 py-6 text-left hover:bg-gray-200"
                   onClick={() => setSidebarOpen(false)}
                 >
                   PRIVACY POLICY
