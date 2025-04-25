@@ -13,7 +13,7 @@ import Costsection from "../components/Cost";
 
 function HomePage() {
   const triggerRef = useRef(null);
-
+  
   return (
     <>
       <div className="md:hidden">
@@ -24,15 +24,18 @@ function HomePage() {
         <GolfPrize/>
         <Medalsection/>
         <HowItWorksSection/>
-        <div className="">
+        <div>
           <VideoSection/>
         </div>
         <FairPlaySection/>
         <Photosection/>
-        <Costsection/>
-        <Footer/>
+        
+        {/* 👇 Footer wrapped with z-index -20 */}
+        <div className="relative z-[-10]">
+          <Footer/>
+        </div>
       </div>
-
+      
       <div className="hidden md:block">
         <LargeScreen/>
       </div>

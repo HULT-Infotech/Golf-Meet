@@ -8,8 +8,8 @@ const CostPage = () => {
 
   return (
     <section
-      className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: `url(${bg})` }} // replace with your image path
+      className="relative w-full min-h-screen flex items-center justify-center bg-cover bg-center z-20"
+      style={{ backgroundImage: `url(${bg})` }} 
     >
       {/* Noise Overlay */}
       <div className="absolute inset-0  opacity-20 pointer-events-none mix-blend-overlay"></div>
