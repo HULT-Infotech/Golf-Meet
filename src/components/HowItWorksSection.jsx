@@ -172,7 +172,7 @@ const HowItWorksSection = () => {
           EVEN AS YOU PLAY AT YOUR HOME COURSE.
           </h1>
 
-          <p className="text-[#014D4E] text-left font-sans text-xl mb-4 p-4 max-w-md mx-auto">
+          <p className="text-[#014D4E] text-left font-sans text-lg mb-4 p-4 max-w-md mx-auto">
           Unlike typical golf tournaments where the result depends on your form on the tournament day, Golf Meet gives you and everyone else a fair chance all year long.
           </p>
           {/* Golf balls illustration */}
