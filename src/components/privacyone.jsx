@@ -36,11 +36,11 @@ function Policy() {
           
           {/* Desktop image container - fills full right side */}
           <div className="absolute bottom-0 right-0 hidden md:block">
-            {/* <img
+            <img
               src={tr_bg}
               alt="Golfers Illustration"
               className="h-auto object-contain pointer-events-none"
-            /> */}
+            />
           </div>
           
           {/* Mobile image container - full width with right alignment */}

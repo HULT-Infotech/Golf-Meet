@@ -13,7 +13,7 @@ const handleWhatsAppClick = () => {
 function Terms() {
   return (
     <div className="md:overflow-visible overflow-hidden">
-<section className="bg-gray-100 noise-bg-n relative min-h-[90vh] overflow-hidden md:hidden">
+<section className="bg-gray-100 noise-bg-n relative min-h-[90vh] overflow-hidden ">
  
 
   <div className="flex flex-col w-full grow pb-24 md:py-0 md:flex-row max-w-[1700px] mx-auto relative h-full">
@@ -26,11 +26,11 @@ function Terms() {
     
     {/* Desktop Image Section - Positioned absolutely at bottom */}
     <div className="hidden md:block absolute bottom-0 right-0 md:w-1/2">
-      {/* <img
+      <img
         src={tr_bg}
         alt="Golfers Illustration"
         className="w-full h-auto object-contain pointer-events-none md:mr-12"
-      /> */}
+      />
     </div>
   </div>
   
