@@ -101,7 +101,7 @@ const Navbar = ({ triggerRef }) => {
             onClick={handleWhatsAppClick}
           >
             <span className="font-quattrocento text-[#FFF7D9]">
-              REGISTER NOW
+              Apply Now
             </span>
           </button>
           
@@ -148,7 +148,7 @@ const Navbar = ({ triggerRef }) => {
             />
             
             <motion.div
-              className="fixed top-0 right-0 h-full w-[85%] py-28 bg-gray-100 noise-bg-n z-50 overflow-y-auto"
+              className="fixed top-0 right-0 h-full rounded-l-xl  w-[85%] py-28 bg-gray-100 noise-bg-n z-50 overflow-y-auto"
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
@@ -174,14 +174,14 @@ const Navbar = ({ triggerRef }) => {
 
               <div className="px-4 mt-32">
                 <button
-                  className="w-full text-center bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white py-3 rounded font-quattrocento text-lg uppercase shadow-xl"
+                  className="w-full text-center bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-[#FFF7D9] py-3 rounded font-quattrocento text-lg uppercase shadow-xl"
                   onClick={(e) => {
                     e.stopPropagation();
                     handleWhatsAppClick(e);
                     setSidebarOpen(false);
                   }}
                 >
-                  REGISTER NOW
+                  APPLY NOW
                 </button>
               </div>
 
@@ -214,16 +214,16 @@ const Navbar = ({ triggerRef }) => {
                 >
                   PLAYER CODE OF CONDUCT
                 </Link>
-                {/* <Link 
+                <Link 
                   to="/support" 
-                  className="text-gray-800 font-bold py-6 pl-6 text-left border-b border-gray-300 hover:bg-gray-200"
+                  className="text-gray-800 font-bold py-6 pl-6 text-left  hover:bg-gray-200"
                   onClick={() => setSidebarOpen(false)}
                 >
                   PLAYER SUPPORT
-                </Link> */}
+                </Link>
                 <Link 
                   to="/terms-of-use" 
-                  className="text-gray-800 font-bold py-6 pl-6 text-left hover:bg-gray-200"
+                  className="text-gray-800 font-bold py-6 pl-6 text-left border-t border-gray-300 hover:bg-gray-200"
                   onClick={() => setSidebarOpen(false)}
                 >
                   TERMS OF USE
