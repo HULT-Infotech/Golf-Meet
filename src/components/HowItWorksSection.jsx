@@ -186,7 +186,7 @@ const HowItWorksSection = () => {
           </div>
           
           {/* Leaderboard Card - Added here to replace the comment */}
-          <div className="px-4 md:px-0">
+          <div className="px-4 md:px-0 mb-[8.3rem]">
             <LeaderboardCard />
           </div>
         </div>

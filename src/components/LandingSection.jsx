@@ -29,7 +29,7 @@ function LandingPage() {
             hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"
             onClick={handleWhatsAppClick}
           >
-            Register Now
+            Apply Now
           </button>
 
           {/* Right Side - Leaderboard Link - Adding pointer-events-auto to ensure clicks work */}

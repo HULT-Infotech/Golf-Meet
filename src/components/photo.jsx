@@ -33,7 +33,7 @@ const EventsAndCostPage = () => {
         </div>
         
         {/* First Photo */}
-        <div className="px-4 mb-4">
+        <div className="px-4 mb-6">
           <div className="rounded-lg overflow-hidden shadow-md">
             <img
               src={p_1}
@@ -148,7 +148,7 @@ const EventsAndCostPage = () => {
             
             <button 
               onClick={handleWhatsAppClick}
-              className="bg-red-600 hover:bg-red-700 shadow-xl text-white font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-sm tracking-wider"
+              className="bg-red-600 hover:bg-red-700 shadow-xl text-white font-bold py-2 sm:py-3 px-7 sm:px-8 rounded-sm tracking-wider"
               style={{ 
                 fontSize: 'var(--button-text)',
                 marginBottom: 'var(--spacing-lg)'

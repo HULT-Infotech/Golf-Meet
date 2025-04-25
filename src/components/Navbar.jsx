@@ -58,7 +58,7 @@ const Navbar = ({ triggerRef }) => {
         }}
       >
         {/* Mobile Layout */}
-        <div className="relative flex items-center justify-between w-full md:hidden [padding-left:clamp(0.1rem,2vw,0.75rem)] [padding-right:clamp(0.1rem,2vw,0.75rem)] py-3">
+        <div className="relative flex items-center justify-between w-full md:hidden [padding-left:clamp(0.1rem,2vw,0.75rem)] [padding-right:clamp(0.1rem,2vw,0.75rem)] py-2">
           <button 
             className="z-10 text-xs sm:text-sm bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)]"
             onClick={handleWhatsAppClick}
