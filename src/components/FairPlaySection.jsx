@@ -23,21 +23,21 @@ const FairPlaySection = () => {
           Introducing
           </h6>
           <h1 className="text-5xl md:text-6xl lg:text-7xl mx-auto uppercase font-quattrocento font-bold xl:text-[96px] xl:leading-[106.37px] tracking-[0.025em] text-center relative z-10">
-            The GolfMeet
+            The Golf Meet
             <br />
             <span className="block mt-2 md:mt-4">Handicap</span>
           </h1>
         </div>
 
         <p className="mt-4 text-[#014D4E] text-xl md:text-2xl my-4 md:my-6 lg:my-10 mx-auto max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl">
-          GolfMeet uses machine learning to compute the accurate handicap of
+          Golf Meet uses machine learning to compute the accurate handicap of
           each player, based on their scores on each hole of every course they
           have played.
         </p>
 
         <div className="mb-4 md:mb-8 lg:mb-12">
           <p className="font-semibold text-2xl mx-auto max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-3xl lg:p-5 text-[#014D4E]">
-            With the GolfMeet handicap, all that matters is your consistency.
+            With the Golf Meet handicap, all that matters is your consistency.
           </p>
           <p className="mt-12  font-semibold text-xl max-w-xs sm:max-w-sm md:max-w-md mx-auto text-[#014D4E]">
             Not your age or gender.
