@@ -148,7 +148,7 @@ const EventsAndCostPage = () => {
             
             <button 
               onClick={handleWhatsAppClick}
-              className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] shadow-xl text-[#FFF7D9] font-bold py-2 sm:py-3 px-7 sm:px-8 rounded tracking-wider"
+              className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] shadow-xl font-quattrocento text-[#FFF7D9] font-bold py-2 sm:py-3 px-7 sm:px-8 rounded tracking-wider"
               style={{ 
                 fontSize: 'var(--button-text)',
                 marginBottom: 'var(--spacing-lg)'
