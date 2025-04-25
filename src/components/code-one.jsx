@@ -40,11 +40,11 @@ function CodeOne() {
         {/* Right Image Section with position fixed to bottom */}
         <div className="absolute bottom-0 left-0 right-0 w-full">
           {/* Desktop image - hidden on mobile */}
-          {/* <img
+          <img
             src={tr_bg}
             alt="Golfers Illustration"
-            className="w-full object-contain pointer-events-none hidden md:block"
-          /> */}
+            className=" object-contain pointer-events-none hidden md:block"
+          />
           
           {/* Mobile image - hidden on desktop */}
           <img

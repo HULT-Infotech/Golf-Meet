@@ -5,7 +5,7 @@ import  Ctwo from "../components/common";
 function CodePage() {
   return (
     <>
-    <div className="md:hidden">
+    <div className="">
       {/* Section 1  */}
       <Cone />
       {/* Section 2
