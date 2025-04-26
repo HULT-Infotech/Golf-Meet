@@ -22,12 +22,10 @@ const GolfPrize = () => {
         </div>
         
         {/* GRAND PRIZE Text */}
-        <h1 className="mb-0 text-center"
-            style={{
-              fontSize: 'clamp(4.3rem, 8vw, 7.05rem)',  /* 64.71px at largest */
+        <h1 className="mb-0 xsm:text-[3.1rem] xsm:leading-[3rem] leading-[4.5rem] text-[4.3rem] text-center"
+            style={{  /* 64.71px at largest */
               fontFamily: 'Quattrocento, serif',
               fontWeight: 700,
-              lineHeight: 'clamp(4.5rem, 8vw, 6rem)',  /* 64px at largest */
               letterSpacing: '0.025em',  /* 2.5% */
               textShadow: '0px 0px 14px rgba(255, 255, 255, 0.45)',
               color: 'white',
@@ -35,9 +33,8 @@ const GolfPrize = () => {
             }}>
           GRAND
         </h1>
-        <h1 className="mb-5 text-center"
+        <h1 className="mb-5 xsm:text-[3.1rem] text-[4.3rem] text-center"
             style={{
-              fontSize: 'clamp(4.5rem, 8vw, 7.05rem)',  /* 64.71px at largest */
               fontFamily: 'Quattrocento, serif',
               fontWeight: 700,
               lineHeight: 'clamp(4.3rem, 8vw, 6rem)',  /* 64px at largest */
@@ -63,18 +60,16 @@ const GolfPrize = () => {
         </p>
         
         {/* GOLF VACATION IN Text */}
-        <h2 className="font-normal  tracking-wider mb-0 leading-tight"
+        <h2 className="font-normal xsm:text-[1.8rem] text-[2.3rem]  tracking-wider mb-0 leading-tight"
             style={{
-              fontSize: 'clamp(2.3rem, 7vw, 4.5rem)',
               fontFamily: 'Quattrocento, serif',
              fontWeight: 400,
               color: 'white'
             }}>
           GOLF
         </h2>
-        <h2 className="font-normal tracking-wider mb-2 leading-tight"
+        <h2 className="font-normal xsm:text-[1.8rem] text-[2.3rem] tracking-wider mb-2 leading-tight"
             style={{
-              fontSize: 'clamp(2.3rem, 7vw, 4.5rem)',
               fontFamily: 'Quattrocento, serif',
              fontWeight: 400,
               color: 'white'
@@ -84,9 +79,8 @@ const GolfPrize = () => {
         
         {/* VIETNAM Text */}
         <h2 
-  className="font-normal tracking-widest leading-none"
+  className="font-normal xsm:text-[2.9rem] text-[3.5rem] tracking-widest leading-none"
   style={{
-    fontSize: 'clamp(3.3rem, 15vw, 8.8rem)',
     textShadow: '2px 2px 14px rgba(255, 255, 255, 0.45), 0px 0px 14px rgba(255, 255, 255, 0.45)',
     fontFamily: 'Quattrocento, serif',
     fontWeight: 400,

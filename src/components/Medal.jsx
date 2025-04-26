@@ -33,18 +33,16 @@ const Medal = () => {
             }}>
             WIN EXCITING
           </h3>
-          <h1 className="text-center leading-none"
+          <h1 className="text-center text-[3.8rem] xsm:text-[3rem] leading-none"
           style={{
-              fontSize: 'clamp(3.8rem, 8vw, 9rem)',
               fontFamily: 'Quattrocento, serif',
               fontWeight: 700,
               textAlign: 'center'
             }}>
             MONTHLY
           </h1>
-          <h1 className="text-center leading-none"
+          <h1 className="text-center text-[3.8rem] xsm:text-[3rem] leading-none"
           style={{
-              fontSize: 'clamp(3.8rem, 8vw, 9rem)',
               fontFamily: 'Quattrocento, serif',
               fontWeight: 700,
               textAlign: 'center'

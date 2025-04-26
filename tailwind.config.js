@@ -14,6 +14,9 @@ export default {
       colors: {
         'subtle-gray': 'rgb(128, 128, 128, 0.023)',
       },
+      screens: {
+        'xsm': {'max': '374px'},
+      },
     },
   },
   plugins: [],
