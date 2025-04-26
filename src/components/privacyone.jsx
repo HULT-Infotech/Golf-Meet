@@ -28,7 +28,7 @@ function Policy() {
           <div className="flex flex-col w-full grow justify-between md:justify-around gap-8 sm:gap-12 md:gap-16 lg:gap-20 md:flex-row max-w-[1700px] mx-auto relative pt-4 pb-16 md:py-16">
             {/* Text Section */}
             <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8 min-w-[300px] z-10">
-              <h1 className="font-quattrocento font-bold text-5xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
+              <h1 className="font-quattrocento font-bold pt-4 text-5xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
                 PRIVACY <br /> POLICY
               </h1>
             </div>

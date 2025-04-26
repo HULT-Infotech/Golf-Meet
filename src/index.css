@@ -71,12 +71,23 @@
 
 
 .bulge-bottom {
-  clip-path: ellipse(235% 100% at 50% 0%);
+  clip-path: ellipse(255% 100% at 50% 0%);
 }
 .bulge-top {
   clip-path: ellipse(215% 100% at 50% 100%);
 }
 
+.bulge-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  clip-path: ellipse(215% 100% at 50% 100%);  /* Top bulge */
+  z-index: -1;
+}
 .noise-bg-new {
   background-image: url("path-to-your-noise-texture.png"); /* Adjust to your noise texture */
   background-size: cover;

@@ -213,7 +213,7 @@ function FaQ() {
   <div className="flex flex-col w-full flex-1 justify-between md:justify-around md:flex-row max-w-[1700px] mx-auto">
     {/* Text Section */}
     <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
-      <h1 className="font-quattrocento font-bold text-[2.3rem] text-[#201E15] sm:text-5xl lg:text-[80px] leading-[100%] tracking-[0.025em] mb-4">
+      <h1 className="font-quattrocento font-bold text-[2.3rem] text-[#201E15] sm:text-5xl lg:text-[80px] pt-8 leading-[100%] tracking-[0.025em] mb-4">
         FREQUENTLY <br /> ASKED <br /> QUESTIONS
       </h1>
       {/* Mobile-only text added here */}

@@ -20,7 +20,7 @@ function LeaderPage() {
     <Navbar/>
     <div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
 
-        <h1 className="font-quattrocento font-bold text-4xl mt-12 mb-2 text-center text-[#201E15]">LEADERBOARD</h1>
+        <h1 className="font-quattrocento font-bold text-4xl mt-16 mb-2 text-center text-[#201E15]">LEADERBOARD</h1>
         <div className="flex items-center justify-center w-full whitespace-nowrap">
                         <div className="border-t-2 border-gray-300 flex-grow"></div>
                         <h2 className="px-2 font-quattrocento text-gray-500 text-sm font-normal mx-2">↓ Top 10 ranked players ↓</h2>
