@@ -40,19 +40,19 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">N. Ramachandra Rao</span>
+                            <span className="text-white left-28 relative">TBD</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
                                 <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
                                 <div className="bg-[#F4D455] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             </div>
@@ -71,19 +71,19 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">Golf Lee</span>
+                            <span className="text-white left-28 relative">TBD</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
                                 <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
                                 <div className="bg-[#F4D455] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             </div>
@@ -102,19 +102,19 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">Kim Clooney</span>
+                            <span className="text-white left-28 relative">TBD</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
                                 <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
                                 <div className="bg-[#F4D455] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             </div>
@@ -133,19 +133,19 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">Rajeev Menon</span>
+                            <span className="text-white left-28 relative">TBD</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
                                 <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
                                 <div className="bg-[#F4D455] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             </div>
@@ -164,19 +164,19 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">Amit Kumar</span>
+                            <span className="text-white left-28 relative">TBD</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
                                 <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
                                 <div className="bg-[#F4D455] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             </div>
@@ -195,19 +195,19 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">Dhadhichi</span>
+                            <span className="text-white left-28 relative">TBD</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
                                 <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
                                 <div className="bg-[#F4D455] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             </div>
@@ -226,19 +226,19 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">Tom</span>
+                            <span className="text-white left-28 relative">TBD</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
                                 <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
                                 <div className="bg-[#F4D455] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             </div>
@@ -257,19 +257,19 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">Alex</span>
+                            <span className="text-white left-28 relative">TBD</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
                                 <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
                                 <div className="bg-[#F4D455] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             </div>
@@ -288,19 +288,19 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">Neville</span>
+                            <span className="text-white left-28 relative">TBD</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
                                 <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
                                 <div className="bg-[#F4D455] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             </div>
@@ -319,19 +319,19 @@ function LeaderPage() {
                             width: '100%', 
                             height: '75px'
                             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex items-center">
-                            <span className="text-white left-28 relative">Kavitha</span>
+                            <span className="text-white left-28 relative">TBD</span>
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
-                                <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
+                                <span className="text-[#01383A] font-semibold text accelerated-xs mr-2">ROUNDS PLAYED:</span>
                                 <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">123</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             <div className="flex items-center">
                                 <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
                                 <div className="bg-[#F4D455] rounded-full px-4 py-1">
-                                <span className="text-[#014D4E] text-sm font-bold">9,999</span>
+                                <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
                             </div>
                             </div>
