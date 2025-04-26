@@ -1,7 +1,7 @@
 import React from "react";
 import golfIllustration from "../assets/HomePage/golfIllustration.svg";
 import Illustration_Golf_Balls from "../assets/HomePAge/Illustration_Golf_Balls.webp";
-import Illustration_Greens_mobile from "../assets/how.png";
+import Illustration_Greens_mobile from "../assets/how.webp";
 import glow_yellow from "../assets/HomePage/glow_yellow.svg";
 import Img from "../assets/video.svg";
 
