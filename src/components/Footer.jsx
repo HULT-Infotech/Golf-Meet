@@ -119,7 +119,8 @@ function Footer() {
       {/* Bottom Gray Section */}
       <section className="bg-gray-100 noise-bg h-28 text-center flex justify-center items-center w-full">
         <p className="text-gray-600 text-sm">
-          Copyright © 2024 Golfmeet LLP. All Rights Reserved.
+        Copyright © 2025 Koll Corp Services Pvt. Ltd. <br />
+        All rights reserved. 
         </p>
       </section>
     </footer>
