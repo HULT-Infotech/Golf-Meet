@@ -142,10 +142,10 @@ const HowItWorksSection = () => {
             </div>
           </div>
 
-          <div className="relative md:py-0 z-10 -mb-1 -my-16">
+          <div className="relative md:py-0 z-20 mb-4 -my-16 bulge-bottom-image">
             <img
               src={Illustration_Greens_mobile}
-              className="w-full relative z-0 md:hidden"
+              className="w-full relative z-20 md:hidden"
               alt="Illustration Greens mobile"
               style={{ marginBottom: "-2px" }}
             />
@@ -160,7 +160,7 @@ const HowItWorksSection = () => {
       </div>
 
       {/*  Section 4 */}
-      <div className="mx-auto noise-bg-n py-10 mt-4 md:py-20">
+      <div className="mx-auto relative bg-gray-100 -mt-8 noise-bg-n z-10 py-10  md:py-20">
         <div className="text-center mt-8 mb-12">
           <h1 className="text-[40px] leading-[40px] hidden md:block w-auto mb-8 lg:text-[90px] font-quattrocento font-bold md:leading-[106.37px] tracking-[0.025em] text-center">
           COMPETE WITH
@@ -208,7 +208,7 @@ const HowItWorksSection = () => {
         className="w-full right-0 absolute z-0 mt-12 [bottom:clamp(-6.3rem,-22vw,-10rem)] md:-bottom-32"
       />
 
-      <div className="absolute flex justify-end bottom-[60rem] opacity-85 right-0 w-full">
+      <div className="absolute z-30 flex justify-end bottom-[60rem] opacity-85 right-0 w-full">
         <img src={glow_yellow} alt="glow_yellow" className="w-2/3" />
       </div>
     </section> 
