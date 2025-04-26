@@ -1,6 +1,6 @@
 import React from 'react';
-import p_1 from "../assets/Photosection/p1.png";
-import p_2 from "../assets/Photosection/p2.png";
+import p_1 from "../assets/Photosection/p1.webp";
+import p_2 from "../assets/Photosection/p2.webp";
 import bg from "../assets/Cost/bg.png";
 
 const EventsAndCostPage = () => {
