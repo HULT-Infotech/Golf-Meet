@@ -13,19 +13,19 @@ function LargeScreen() {
         style={{ mixBlendMode: 'darken' }} 
         className="relative flex justify-center items-center mx-auto h-full z-20"
       >
-        <div className="max-w-screen-xl w-full flex flex-wrap justify-center md:justify-between items-center px-4 sm:px-6 lg:px-8">
+        <div className="max-w-screen-xl w-full flex flex-wrap justify-center md:justify-around items-center px-4 sm:px-6 lg:px-8">
           {/* Phone image now positioned left on desktop */}
           <div className="md:order-1 md:flex-shrink-0 mb-12 md:-mb-16">
             <img 
               src={phoneimg} 
-              className="w-[200px] sm:w-[190px] md:w-[200px] lg:w-[230px] xl:w-[240px] 2xl:w-[270px] h-auto" 
+              className="w-[200px] sm:w-[190px] md:-mb-12 md:w-[180px] lg:w-[210px] xl:w-[220px] 2xl:w-[250px] h-auto" 
               alt="phoneimg" 
             />
           </div>
 
           {/* Text and QR code now positioned right on desktop */}
           <div className="md:order-2 flex flex-col justify-center items-center md:items-start gap-6 md:gap-8 lg:gap-10 md:ml-4">
-            <h2 className="font-quattrocentoSans font-bold text-center md:text-left text-3xl sm:text-4xl md:text-[40px] lg:text-[44px] xl:text-[48px] leading-[110%] text-[#014D4E]">
+            <h2 className="font-quattrocentoSans font-bold text-center md:text-left text-3xl sm:text-4xl md:text-[35px] lg:text-[40px] xl:text-[45px] leading-[110%] text-[#014D4E]">
               golfmeet.com is <br /> best experienced on <br /> your mobile phone.
             </h2>
             <img

@@ -75,7 +75,7 @@ function LandingPage() {
       
       {/* Title */}
 {/* Section 1 */}
-<div className="bg-[#01383A] noise-bg-new md:py-0 pt-12 md:bg-transparent relative overflow-hidden bulge-topp">
+<div className="noise-bg-new md:py-0 pt-12 md:bg-transparent relative overflow-hidden bulge-topp">
   <div className="relative">
     {/* Center wrapper for heading */}
     <div className="flex justify-center">
@@ -91,7 +91,7 @@ function LandingPage() {
 </div>
 
 {/* Section 2 */}
-<div className="bg-[#01383A] noise-bg-new md:py-0 pb-12 -mt-1 md:bg-transparent relative overflow-hidden bulge-bottomm">
+<div className="noise-bg-new md:py-0 pb-12 -mt-1 md:bg-transparent relative overflow-hidden bulge-bottomm">
   <div className="relative">
     {/* Register Button with gold gradient */}
     <div className="flex justify-center">
