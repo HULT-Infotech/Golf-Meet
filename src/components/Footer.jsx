@@ -82,7 +82,7 @@ function Footer() {
           {/* Middle Section - Frequently Asked Questions, Tournament Rules, etc. */}
 
 
-          <div className="flex uppercase flex-col font-quattrocentoSans space-y-8 text-white text-left">
+          <div className="flex uppercase md:mx-auto flex-col font-quattrocentoSans space-y-8 text-white text-left">
             {/* <a href="/player-support" className="hover:underline">
               Player Support
             </a> */}
@@ -93,7 +93,7 @@ function Footer() {
               Privacy Policy
             </a>
           </div>
-          <div className="flex flex-col uppercase space-y-8 font-quattrocentoSans text-white text-left">
+          <div className="md:hidden flex flex-col uppercase space-y-8 font-quattrocentoSans text-white text-left">
 
 
 
