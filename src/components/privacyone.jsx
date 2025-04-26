@@ -27,11 +27,16 @@ function Policy() {
         <div className="flex flex-col md:flex-row w-full h-full">
           <div className="flex flex-col w-full grow justify-between md:justify-around gap-8 sm:gap-12 md:gap-16 lg:gap-20 md:flex-row max-w-[1700px] mx-auto relative pt-4 pb-16 md:py-16">
             {/* Text Section */}
-            <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8 min-w-[300px] z-10">
+            <div className="relative flex flex-col md:hidden justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8 min-w-[300px] z-10">
               <h1 className="font-quattrocento font-bold pt-4 text-5xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
                 PRIVACY <br /> POLICY
               </h1>
             </div>
+            <div className="hidden md:block ml-12 mt-2 absolute left-0 flex-col justify-center items-start md:p-0  min-w-[300px] z-10">
+          <h1 className="font-quattrocento font-bold pt-4 text-5xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
+            PRIVACY <br />POLICY
+          </h1>
+        </div>
           </div>
           
           {/* Desktop image container - fills full right side */}
@@ -54,8 +59,8 @@ function Policy() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center justify-center mt-20 md:mt-20 xl:mt-24 relative mb-6 sm:mb-0">
-        <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
+      <section className="flex flex-col items-center justify-center mt-20 md:mt-20 xl:mt-24 relative  mb-6 sm:mb-0">
+        <div className="flex justify-between items-center md:mb-12 text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
           <div className="flex flex-col">
             <h2 className="lg:text-5xl md:4xl text-[1.8rem] font-bold uppercase font-quattrocento">
               TERMS OF USE
