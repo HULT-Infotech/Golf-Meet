@@ -55,8 +55,8 @@ const EventsAndCostPage = () => {
         </div>
       </div>
 
-      {/* Curved Container Section with Tournament Fee */}
-      <div className="w-full -mt-32 sm:-mt-36 md:-mt-44 relative z-20">
+      {/* Curved Container Section with Tournament Fee - Modified to have only top curve */}
+      <div className="w-full -mt-32 sm:-mt-36 md:-mt-44 relative z-20 bulge-bottom">
         <div className="relative w-full h-auto py-8 sm:py-10 md:py-12">
           <svg
             className="absolute inset-0 w-full h-full z-[-1]"
@@ -82,13 +82,13 @@ const EventsAndCostPage = () => {
               </pattern>
             </defs>
 
-            {/* Decorative shape with textured background */}
+            {/* Modified path with only top curve, flat bottom */}
             <path
               d="
                 M0,20 
                 C20,15 80,15 100,20 
-                L100,180 
-                C80,185 20,185 0,180 
+                L100,200 
+                L0,200 
                 Z
               "
               fill="url(#noisePattern)"

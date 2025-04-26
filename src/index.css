@@ -24,7 +24,6 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
   background-repeat: repeat;
 }
-
 .curved-top::before {
   content: "";
   position: absolute;
@@ -69,6 +68,19 @@
   background-repeat: repeat;
 }
 
+
+
+.bulge-bottom {
+  clip-path: ellipse(235% 100% at 50% 0%);
+}
+.bulge-top {
+  clip-path: ellipse(215% 100% at 50% 100%);
+}
+
+.noise-bg-new {
+  background-image: url("path-to-your-noise-texture.png"); /* Adjust to your noise texture */
+  background-size: cover;
+}
 
 .noise-bg-green::before {
   content: "";

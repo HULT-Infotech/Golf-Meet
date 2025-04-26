@@ -24,7 +24,7 @@ const GolfPrize = () => {
         {/* GRAND PRIZE Text */}
         <h1 className="mb-0 text-center"
             style={{
-              fontSize: 'clamp(4.5rem, 8vw, 7.05rem)',  /* 64.71px at largest */
+              fontSize: 'clamp(4.3rem, 8vw, 7.05rem)',  /* 64.71px at largest */
               fontFamily: 'Quattrocento, serif',
               fontWeight: 700,
               lineHeight: 'clamp(4.5rem, 8vw, 6rem)',  /* 64px at largest */
@@ -40,7 +40,7 @@ const GolfPrize = () => {
               fontSize: 'clamp(4.5rem, 8vw, 7.05rem)',  /* 64.71px at largest */
               fontFamily: 'Quattrocento, serif',
               fontWeight: 700,
-              lineHeight: 'clamp(4.5rem, 8vw, 6rem)',  /* 64px at largest */
+              lineHeight: 'clamp(4.3rem, 8vw, 6rem)',  /* 64px at largest */
               letterSpacing: '0.025em',  /* 2.5% */
               textShadow: '0px 0px 14px rgba(255, 255, 255, 0.45)',
               color: 'white',
@@ -63,7 +63,7 @@ const GolfPrize = () => {
         </p>
         
         {/* GOLF VACATION IN Text */}
-        <h2 className="font-normal tracking-wider mb-0 leading-tight"
+        <h2 className="font-normal  tracking-wider mb-0 leading-tight"
             style={{
               fontSize: 'clamp(2.3rem, 7vw, 4.5rem)',
               fontFamily: 'Quattrocento, serif',
@@ -86,7 +86,7 @@ const GolfPrize = () => {
         <h2 
   className="font-normal tracking-widest leading-none"
   style={{
-    fontSize: 'clamp(3.7rem, 15vw, 8.8rem)',
+    fontSize: 'clamp(3.3rem, 15vw, 8.8rem)',
     textShadow: '2px 2px 14px rgba(255, 255, 255, 0.45), 0px 0px 14px rgba(255, 255, 255, 0.45)',
     fontFamily: 'Quattrocento, serif',
     fontWeight: 400,

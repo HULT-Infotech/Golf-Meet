@@ -17,20 +17,25 @@ function HomePage() {
   return (
     <>
       <div className="md:hidden">
-        <div ref={triggerRef}>
+        <div className="z-20 relative" ref={triggerRef}>
           <LandingSection />
         </div>
         <Navbar triggerRef={triggerRef} />
+        <div className="-mt-6 relative z-10 ">
         <GolfPrize />
+        </div>
         <Medalsection />
         <HowItWorksSection />
         <div>
           <VideoSection />
         </div>
         <FairPlaySection />
+        <div className="relative z-20">
         <Photosection />
-
+        </div>
+    <div className="relative z-10 -mt-8">
         <Footer />
+        </div>
       </div>
 
       <div className="hidden md:block">

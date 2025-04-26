@@ -26,7 +26,7 @@ const Medal = () => {
         <div className="absolute top-0 left-0 w-full flex flex-col items-center pt-[3.4rem] md:pt-24 text-[#014D4E]">
           <h3 className="mb-2 text-center"
             style={{
-              fontSize: 'clamp(1.8rem, 7vw, 5rem)',
+              fontSize: 'clamp(1.5rem, 7vw, 5rem)',
               fontFamily: 'Quattrocento, serif',
               fontWeight: 400,
               textAlign: 'center'
@@ -35,7 +35,7 @@ const Medal = () => {
           </h3>
           <h1 className="text-center leading-none"
           style={{
-              fontSize: 'clamp(4.3rem, 8vw, 9rem)',
+              fontSize: 'clamp(3.8rem, 8vw, 9rem)',
               fontFamily: 'Quattrocento, serif',
               fontWeight: 700,
               textAlign: 'center'
@@ -44,7 +44,7 @@ const Medal = () => {
           </h1>
           <h1 className="text-center leading-none"
           style={{
-              fontSize: 'clamp(4.3rem, 8vw, 9rem)',
+              fontSize: 'clamp(3.8rem, 8vw, 9rem)',
               fontFamily: 'Quattrocento, serif',
               fontWeight: 700,
               textAlign: 'center'

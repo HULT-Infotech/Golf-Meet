@@ -172,7 +172,7 @@ const HowItWorksSection = () => {
           EVEN AS YOU PLAY AT YOUR HOME COURSE.
           </h1>
 
-          <p className="text-[#014D4E] text-left font-sans text-lg mb-4 p-4 max-w-md mx-auto">
+          <p className="text-teal-700 font-sans text-lg mb-4 p-4 max-w-xl mx-auto">
           Unlike typical golf tournaments where the result depends on your form on the tournament day, Golf Meet gives you and everyone else a fair chance all year long.
           </p>
           {/* Golf balls illustration */}
@@ -202,7 +202,7 @@ const HowItWorksSection = () => {
         className="w-full right-0 absolute z-0 mt-12 [bottom:clamp(-6.3rem,-22vw,-10rem)] md:-bottom-32"
       />
 
-      <div className="absolute flex justify-end bottom-[52rem] right-0 w-full">
+      <div className="absolute flex justify-end bottom-[60rem] opacity-85 right-0 w-full">
         <img src={glow_yellow} alt="glow_yellow" className="w-2/3" />
       </div>
     </section> 
