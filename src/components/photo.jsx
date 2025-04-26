@@ -112,7 +112,7 @@ const EventsAndCostPage = () => {
             }}
           >
             <h2 
-              className="font-bold tracking-wider"
+              className="font-semibold tracking-wider"
               style={{ 
                 fontSize: 'var(--heading-size)',
                 marginBottom: 'var(--spacing-sm)'
@@ -158,7 +158,7 @@ const EventsAndCostPage = () => {
             </button>
             
             <h3 
-              className="font-bold text-center"
+              className="font-semibold  text-center"
               style={{ 
                 fontSize: 'var(--important-heading)',
                 marginBottom: 'var(--spacing-sm)'
