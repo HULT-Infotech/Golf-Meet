@@ -84,7 +84,7 @@ function LandingPage() {
       </h1>
     </div>
     
-    <p className="font-quattrocentoSans w-80 mx-auto sm:w-auto font-normal pb-1 text-[24px] leading-[28.59px] tracking-[-0.025em] text-center text-[#fff] mt-4">
+    <p className="font-quattrocentoSans w-80 mx-auto sm:w-auto font-normal opacity-85 pb-1 text-[24px] leading-[28.59px] tracking-[-0.025em] text-center text-[#fff] mt-4">
             The year-long exclusive networking golf tournament
           </p>
   </div>
