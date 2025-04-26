@@ -71,7 +71,7 @@
 
 
 .bulge-bottom {
-  clip-path: ellipse(255% 100% at 50% 0%);
+  clip-path: ellipse(275% 100% at 50% 0%);
 }
 .bulge-top {
   clip-path: ellipse(215% 100% at 50% 100%);

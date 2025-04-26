@@ -68,12 +68,18 @@ const HowItWorksSection = () => {
     <section className="relative bg-white text-black pt-16 ">
       {/* Steps */}
       <div className="relative overflow-hidden" style={{ 
-          background: "linear-gradient(0deg, #ACF4FF 0%, #FFFFFF 100%)",
-          position: "relative"
-        }}>
-        <div className="absolute top-0 left-0 right-0 h-40 w-full" style={{
-          background: "radial-gradient(50% 50% at 50% 0%, #FFFFFF 0%, transparent 100%)"
-        }}></div>
+  background: "linear-gradient(0deg, #ACF4FF 0%, #FFFFFF 100%)", 
+  position: "relative"
+}}>
+  <div className="absolute top-0 left-0 right-0 h-40 w-full" style={{
+    background: "radial-gradient(50% 50% at 50% 0%, #FFFFFF 0%, transparent 100%)"
+  }}></div>
+
+  {/* Add the white gradient at the bottom */}
+  <div className="absolute bottom-0 left-0 noise-bg-n right-0 w-full" style={{
+    height: "4%", 
+  }}></div>
+
         <div className="pt-[20px] pb-0 relative">
           <h1
             className="text-[59px] px-10 lg:mt-10 font-quattrocento font-bold md:text-[64px] leading-[70.91px] tracking-[0.025em] text-center text-[#014D4E] md:text-5xl mb-10 lg:mb-0"
@@ -154,7 +160,7 @@ const HowItWorksSection = () => {
       </div>
 
       {/*  Section 4 */}
-      <div className="mx-auto noise-bg-n py-10 md:py-20">
+      <div className="mx-auto noise-bg-n py-10 mt-4 md:py-20">
         <div className="text-center mt-8 mb-12">
           <h1 className="text-[40px] leading-[40px] hidden md:block w-auto mb-8 lg:text-[90px] font-quattrocento font-bold md:leading-[106.37px] tracking-[0.025em] text-center">
           COMPETE WITH

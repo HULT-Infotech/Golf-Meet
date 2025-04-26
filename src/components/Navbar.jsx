@@ -105,12 +105,12 @@ const Navbar = ({ triggerRef }) => {
             </span>
           </button>
           
-          <Link to="/home-to-play" className="text-sm lg:text-base leading-4 text-[#201E15] font-quattrocentoSans font-bold text-center my-auto">
-            HOW TO PLAY
+          <Link to="/privacy-policy" className="text-sm lg:text-base leading-4 text-[#201E15] font-quattrocentoSans font-bold text-center my-auto">
+            PRIVACY POLICY
           </Link>
           
-          <a href="#" className="text-sm lg:text-base leading-4 text-[#201E15] font-quattrocentoSans my-auto font-bold">
-            PAY FEES
+          <a href="/terms-of-use" className="text-sm lg:text-base leading-4 text-[#201E15] font-quattrocentoSans my-auto font-bold">
+            TERMS OF USE
           </a>
         </div>
 

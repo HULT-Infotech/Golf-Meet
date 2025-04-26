@@ -1,5 +1,5 @@
 import React from 'react';
-import bgMedal from "../assets/Medal/medal.png";
+import bgMedal from "../assets/Medal/medal.webp";
 
 const Medal = () => {
   return (
