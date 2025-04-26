@@ -205,7 +205,7 @@ const HowItWorksSection = () => {
       <img
         src={Img}
         alt=""
-        className="w-full right-0 absolute z-0 mt-12 [bottom:clamp(-6.3rem,-22vw,-10rem)] md:-bottom-32"
+        className="w-full right-0 absolute z-20 mt-12 [bottom:clamp(-6.3rem,-22vw,-10rem)] md:-bottom-32"
       />
 
       <div className="absolute z-30 flex justify-end bottom-[60rem] opacity-85 right-0 w-full">
