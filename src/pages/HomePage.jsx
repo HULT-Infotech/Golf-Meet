@@ -13,31 +13,28 @@ import Costsection from "../components/Cost";
 
 function HomePage() {
   const triggerRef = useRef(null);
-  
+
   return (
     <>
       <div className="md:hidden">
         <div ref={triggerRef}>
-          <LandingSection/>
+          <LandingSection />
         </div>
-        <Navbar triggerRef={triggerRef}/>
-        <GolfPrize/>
-        <Medalsection/>
-        <HowItWorksSection/>
+        <Navbar triggerRef={triggerRef} />
+        <GolfPrize />
+        <Medalsection />
+        <HowItWorksSection />
         <div>
-          <VideoSection/>
+          <VideoSection />
         </div>
-        <FairPlaySection/>
-        <Photosection/>
-        
-        {/* 👇 Footer wrapped with z-index -20 */}
-        <div className="relative z-[-10]">
-          <Footer/>
-        </div>
+        <FairPlaySection />
+        <Photosection />
+
+        <Footer />
       </div>
-      
+
       <div className="hidden md:block">
-        <LargeScreen/>
+        <LargeScreen />
       </div>
     </>
   );
