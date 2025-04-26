@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer className="w-full">
       {/* Third Section - Logo */}
-      <section className="bg-gray-100 noise-bg-n flex justify-center items-center  w-full p-10 md:min-h-[350px] drop-shadow-2xl">
+      <section className="bg-gray-100 noise-bg-n flex justify-center items-center w-full p-10 md:min-h-[350px] drop-shadow-2xl">
         <div className="w-[90vw] md:w-[30vw] transition-transform duration-500">
           <img
             draggable="false"
@@ -20,16 +20,16 @@ function Footer() {
         </div>
       </section>
       
-      {/* Main Footer Section - With reduced opacity gradient */}
+      {/* Main Footer Section - With conditional background */}
       <section
-        className="relative px-4 flex justify-between items-start min-h-96 shadow-[0_-15px_30px_-10px_rgba(0,0,0,0.3)]"
+        className="relative px-4 flex justify-between items-start min-h-96 shadow-[0_-15px_30px_-10px_rgba(0,0,0,0.3)] md:bg-transparent bg-none noise-bg-new md:noise-bg-none"
         style={{ 
           position: 'relative',
         }}
       >
-        {/* Background with reduced opacity gradient */}
+        {/* Background image only visible on md screens and above */}
         <div 
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0 w-full h-full hidden md:block"
           style={{
             backgroundImage: `url(${green_bg})`,
             backgroundSize: 'cover',
@@ -37,9 +37,9 @@ function Footer() {
           }}
         ></div>
 
-        {/* Gradient overlay with reduced opacity */}
+        {/* Gradient overlay with reduced opacity - only on md screens and above */}
         <div 
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0 w-full h-full hidden md:block"
           style={{
             backgroundImage: 'linear-gradient(to bottom, rgba(1, 77, 78, 0.6), rgba(0, 30, 31, 0.6))',
             zIndex: 2,
@@ -80,8 +80,6 @@ function Footer() {
           </div>
 
           {/* Middle Section - Frequently Asked Questions, Tournament Rules, etc. */}
-
-
           <div className="flex uppercase md:mx-auto flex-col font-quattrocentoSans space-y-8 text-white text-left">
             {/* <a href="/player-support" className="hover:underline">
               Player Support
@@ -94,9 +92,6 @@ function Footer() {
             </a>
           </div>
           <div className="md:hidden flex flex-col uppercase space-y-8 font-quattrocentoSans text-white text-left">
-
-
-
             <a href="/leaderboard" className="hover:underline">
               LeaderBoard
             </a>
