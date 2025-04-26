@@ -79,6 +79,12 @@
 .bulge-top {
   clip-path: ellipse(215% 100% at 50% 100%);
 }
+.bulge-bottomm {
+  clip-path: ellipse(165% 100% at 50% 0%);
+}
+.bulge-topp {
+  clip-path: ellipse(285% 100% at 50% 100%);
+}
 
 .bulge-container::before {
   content: "";

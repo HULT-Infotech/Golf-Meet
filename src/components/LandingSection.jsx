@@ -12,7 +12,7 @@ function LandingPage() {
   
   return (
     <section className="min-h-screen text-center">
-      <div className="relative flex flex-col min-h-[70vh] bg-gray-50 noise-bg-n">
+      <div className="relative flex flex-col min-h-[70vh] -mb-2 bg-gray-50 noise-bg-n">
         {/* Top Navbar */}
         <div className="lg:absolute z-40 min-h-20 top-0 w-full flex justify-between items-center 
           [padding-left:clamp(1rem,5vw,3.5rem)] 
@@ -74,38 +74,41 @@ function LandingPage() {
       </div>
       
       {/* Title */}
-      <div className="bg-[#01383A] noise-bg-new md:py-0 py-12 md:bg-transparent relative overflow-hidden bulge-bottom">
-        {/* Keep original content with relative positioning so it appears above the texture */}
-        <div className="relative">
-          {/* Center wrapper for heading */}
-          <div className="flex justify-center">
-            <h1 className="text-[85px] leading-[90px] tracking-[0.025em] mt-5 text-center w-[350px] md:w-auto mx-auto font-quattrocento md:text-6xl lg:text-7xl xl:text-[94px] md:leading-[106.37px] md:tracking-[0.025em] font-bold lg:mt-16 xl:mt-20 bg-gradient-to-b from-[#FFF2BF] to-[#F4D455] text-transparent bg-clip-text">
-              GOLF MEET INDIA 2025
-            </h1>
-          </div>
-
-          <p className="font-quattrocentoSans w-80 mx-auto sm:w-auto font-normal text-[24px] leading-[28.59px] tracking-[-0.025em] text-center text-[#fff] mt-4">
+{/* Section 1 */}
+<div className="bg-[#01383A] noise-bg-new md:py-0 pt-12 md:bg-transparent relative overflow-hidden bulge-topp">
+  <div className="relative">
+    {/* Center wrapper for heading */}
+    <div className="flex justify-center">
+      <h1 className="text-[85px] leading-[90px] tracking-[0.025em] mt-5 text-center w-[350px] md:w-auto mx-auto font-quattrocento md:text-6xl lg:text-7xl xl:text-[94px] md:leading-[106.37px] md:tracking-[0.025em] font-bold lg:mt-16 xl:mt-20 bg-gradient-to-b from-[#FFF2BF] to-[#F4D455] text-transparent bg-clip-text">
+        GOLF MEET INDIA 2025
+      </h1>
+    </div>
+    
+    <p className="font-quattrocentoSans w-80 mx-auto sm:w-auto font-normal pb-1 text-[24px] leading-[28.59px] tracking-[-0.025em] text-center text-[#fff] mt-4">
             The year-long exclusive networking golf tournament
           </p>
+  </div>
+</div>
 
-          
-
-          {/* Register Button with gold gradient */}
-          <div className="flex justify-center">
-            <button 
-              className="my-7 rounded-md px-10 py-2 font-normal bg-gradient-to-b from-[#FFFFFF] via-[#FBE67B] to-[#FFB41E] shadow-[0px_2px_4px_0px_#0000008C] transition-all duration-500 hover:shadow-[0px_4px_10px_0px_#00000073]"
-              onClick={handleWhatsAppClick}
-            >
-              <span className="text-lg text-[#014D4E] font-quattrocento"style={{ fontWeight: "700" }}>
-              APPLY VIA WHATSAPP 
-              </span>
-            </button>
-          </div>
-          <p className="font-quattrocentoSans text-xl text-[16px] leading-[17.73px] tracking-[-0.025em] text-center text-[#fff] p-2" style={{ fontWeight: "700" }}>
-          MAY 1 - DEC 31, 2025
-          </p>
-        </div>
-      </div>
+{/* Section 2 */}
+<div className="bg-[#01383A] noise-bg-new md:py-0 pb-12 -mt-1 md:bg-transparent relative overflow-hidden bulge-bottomm">
+  <div className="relative">
+    {/* Register Button with gold gradient */}
+    <div className="flex justify-center">
+      <button
+        className="my-7 rounded-md px-10 py-2 font-normal bg-gradient-to-b from-[#FFFFFF] via-[#FBE67B] to-[#FFB41E] shadow-[0px_2px_4px_0px_#0000008C] transition-all duration-500 hover:shadow-[0px_4px_10px_0px_#00000073]"
+        onClick={handleWhatsAppClick}
+      >
+        <span className="text-lg text-[#014D4E] font-quattrocento" style={{ fontWeight: "700" }}>
+          APPLY VIA WHATSAPP 
+        </span>
+      </button>
+    </div>
+    <p className="font-quattrocentoSans text-xl text-[16px] leading-[17.73px] tracking-[-0.025em] text-center text-[#fff] p-2" style={{ fontWeight: "700" }}>
+      MAY 1 - DEC 31, 2025
+    </p>
+  </div>
+</div>
     </section>
   );
 }

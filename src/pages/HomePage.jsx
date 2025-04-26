@@ -21,7 +21,7 @@ function HomePage() {
           <LandingSection />
         </div>
         <Navbar triggerRef={triggerRef} />
-        <div className="-mt-6 relative z-10 ">
+        <div className="-mt-4 relative z-10 ">
         <GolfPrize />
         </div>
         <Medalsection />
