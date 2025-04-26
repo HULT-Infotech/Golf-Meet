@@ -13,16 +13,21 @@ const handleWhatsAppClick = () => {
 function Terms() {
   return (
     <div className="md:overflow-visible overflow-hidden">
-<section className="bg-gray-100 noise-bg-n relative min-h-[90vh] overflow-hidden ">
+<section className="bg-gray-100 noise-bg-n relative min-h-[90vh] md:h-[90vh] overflow-hidden ">
  
 
   <div className="flex flex-col w-full grow pb-24 md:py-0 md:flex-row max-w-[1700px] mx-auto relative h-full">
     {/* Text Section */}
-    <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 min-w-[300px] z-10">
+    <div className="relative md:hidden md:top-0 flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 min-w-[300px] z-10">
       <h1 className="font-quattrocento font-bold text-5xl sm:text-5xl lg:text-[76px] pt-8 leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
         TERMS OF <br /> USE
       </h1>
     </div>
+    <div className="hidden md:block ml-12 mt-16 absolute left-0 flex-col justify-center items-start md:p-0  min-w-[300px] z-10">
+          <h1 className="font-quattrocento font-bold pt-4 text-5xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
+            TERMS OF<br />USE
+          </h1>
+        </div>
     
     {/* Desktop Image Section - Positioned absolutely at bottom */}
     <div className="hidden md:block absolute bottom-0 right-0 md:w-1/2">
@@ -44,7 +49,7 @@ function Terms() {
   </div>
 </section>
 <section className="flex flex-col items-center justify-center  mt-20 md:mt-20 xl:mt-24 relative mb-6 sm:mb-0">
-          <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
+          <div className="flex justify-between items-center md:mb-12 text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">
               <h2 className="lg:text-5xl md:4xl text-[1.8rem]  font-bold uppercase font-quattrocento">
               PRIVACY POLICY
