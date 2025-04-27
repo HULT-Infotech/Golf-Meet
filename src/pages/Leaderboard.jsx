@@ -323,7 +323,7 @@ function LeaderPage() {
                             </div>
                             <div className="flex justify-between px-8 pt-4 items-center">
                             <div className="flex items-center">
-                                <span className="text-[#01383A] font-semibold text accelerated-xs mr-2">ROUNDS PLAYED:</span>
+                            <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
                                 <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
                                 <span className="text-[#014D4E] text-sm font-bold">0</span>
                                 </div>
