@@ -63,7 +63,7 @@ function LandingPage() {
             className="w-10/12 sm:w-3/6 object-contain drop-shadow-2xl"
             draggable="false"
           />
-        <h1 className="text-[#014D4E] mt-10 text-[50px] xsm:text-[40px] xsm:leading-[50px] leading-[60px] font-quattrocento font-bold xsm:mb-3 mb-5">MEET NEW <br /> GOLFERS.</h1>
+        <h1 className="text-[#014D4E] mt-10 text-[50px] xsm:text-[40px] xsm:leading-[50px] leading-[60px] font-quattrocento font-bold xsm:mb-3 mb-4">MEET NEW <br /> GOLFERS.</h1>
         <p className="text-[#014D4E] text-[24px] xsm:text-[22px] font-quattrocento mb-8 font-bold">PLAY BETTER.</p>
           <img
             src={Illustration_Golfers_Mobile}
