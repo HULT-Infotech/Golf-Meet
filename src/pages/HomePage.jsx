@@ -10,6 +10,7 @@ import GolfPrize from "../components/GolfPrize";
 import Medalsection from "../components/Medal";
 import Photosection from "../components/photo";
 import Completesection from "../components/Complete";
+import Leaderboardsection from "../components/Leaderboard";
 
 function HomePage() {
   const triggerRef = useRef(null);
@@ -26,13 +27,14 @@ function HomePage() {
         </div>
         
         <FairPlaySection />
-        <div>
+        <div className="-mt-6">
           <VideoSection />
         </div>
         <Completesection/>
-        
+        <Leaderboardsection/>
+        <div className="-mt-2">
         <GolfPrize />
-        
+        </div>
         <Medalsection />
         <div className="relative z-20">
         <Photosection />

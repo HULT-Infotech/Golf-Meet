@@ -75,17 +75,18 @@ function LandingPage() {
       
       {/* Title */}
 {/* Section 1 */}
-<div className="noise-bg-new md:py-0 pt-12 md:bg-transparent relative overflow-hidden bulge-topp">
+<div className="noise-bg-new md:py-0 pt-[4.8rem] xsm:pt-16 md:bg-transparent relative overflow-hidden bulge-topp">
   <div className="relative">
     {/* Center wrapper for heading */}
     <div className="flex justify-center">
-      <h1 className="text-[85px] leading-[90px] tracking-[0.025em] mt-5 text-center w-[350px] md:w-auto mx-auto font-quattrocento md:text-6xl lg:text-7xl xl:text-[94px] md:leading-[106.37px] md:tracking-[0.025em] font-bold lg:mt-16 xl:mt-20 bg-gradient-to-b from-[#FFF2BF] to-[#F4D455] text-transparent bg-clip-text">
-        GOLF MEET INDIA 2025
+      <h1 className="xsm:text-[40px] xsm:leading-[45px] text-[50px] leading-[60px] tracking-[0.025em] mt-5 text-center w-[350px] md:w-auto mx-auto font-quattrocento md:text-6xl lg:text-7xl xl:text-[94px] md:leading-[106.37px] md:tracking-[0.025em] font-bold lg:mt-16 xl:mt-20 bg-gradient-to-b from-[#FFF2BF] to-[#F4D455] text-transparent bg-clip-text">
+      Golf Meet <br /> matches you <br /> with new <br /> golfers <br />
+      every round. 
       </h1>
     </div>
     
-    <p className="font-quattrocentoSans w-80 mx-auto sm:w-auto font-normal opacity-95 pb-1 text-[24px] leading-[28.59px] tracking-[-0.025em] text-center text-[#ffff] mt-4">
-            The year-long exclusive networking golf tournament
+    <p className="font-quattrocentoSans  w-80 mx-auto sm:w-auto font-normal opacity-85 xsm:text-[18px] pb-1 text-[20px] leading-[28.59px] tracking-[-0.025em] text-center text-[#ffff] mt-5">
+    Players are matched based on their <br /> preferred courses and dates. 
           </p>
   </div>
 </div>
@@ -96,17 +97,14 @@ function LandingPage() {
     {/* Register Button with gold gradient */}
     <div className="flex justify-center">
       <button
-        className="my-7 rounded-md px-10 py-2 font-normal bg-gradient-to-b from-[#FFFFFF] via-[#FBE67B] to-[#FFB41E] shadow-[0px_2px_4px_0px_#0000008C] transition-all duration-500 hover:shadow-[0px_4px_10px_0px_#00000073]"
+        className="mt-12 mb-[3.9rem] rounded-md px-10 py-2 font-normal bg-gradient-to-b from-[#FFFFFF] via-[#FBE67B] to-[#FFB41E] shadow-[0px_2px_4px_0px_#0000008C] transition-all duration-500 hover:shadow-[0px_4px_10px_0px_#00000073]"
         onClick={handleWhatsAppClick}
       >
         <span className="text-lg text-[#014D4E] font-quattrocento" style={{ fontWeight: "700" }}>
-          APPLY VIA WHATSAPP 
+        SIGN UP VIA WHATSAPP 
         </span>
       </button>
     </div>
-    <p className="font-quattrocentoSans text-xl text-[16px] leading-[17.73px] tracking-[-0.025em] text-center text-[#fff] p-2" style={{ fontWeight: "700" }}>
-      MAY 1 - DEC 31, 2025
-    </p>
   </div>
 </div>
     </section>

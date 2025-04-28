@@ -1,5 +1,5 @@
 import React from 'react';
-import bgPrize from "../assets/GolfPrize/bgPrize.png";
+import bgPrize from "../assets/GolfPrize/bgPrize.webp";
 import flag from "../assets/GolfPrize/Vector.svg";
 
 const GolfPrize = () => {
@@ -7,7 +7,7 @@ const GolfPrize = () => {
     <div className="relative w-full h-[75vh]">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bulge-bottom bg-cover bg-center"
         style={{
           backgroundImage: `url(${bgPrize})`,
         }}
@@ -15,7 +15,7 @@ const GolfPrize = () => {
       </div>
       
       {/* Content */}
-      <div className="relative h-full flex flex-col items-center justify-center text-white text-center px-6">
+      <div className="relative h-full flex flex-col items-center justify-center text-white text-center bulge-bottom px-6">
         {/* Golf Flag Icon */}
         <div className="mb-4">
           <img src={flag} alt="Golf Flag" className="w-8 h-8 mx-auto" />

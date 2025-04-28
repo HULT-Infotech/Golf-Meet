@@ -3,7 +3,7 @@ import bgMedal from "../assets/Medal/medal.webp";
 
 const Medal = () => {
   return (
-    <div className="w-full h-[75vh] bg-white overflow-hidden">
+    <div className="w-full h-[77vh] bg-white overflow-hidden">
       {/* Container for image and overlaid text */}
       <div className="relative w-full">
         {/* Medal Image - adjusted to touch both edges */}

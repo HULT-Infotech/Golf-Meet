@@ -14,7 +14,7 @@ const HowItWorksSection = () => {
   }}></div>
 
   {/* Add the white gradient at the bottom */}
-  <div className="absolute bottom-0 left-0 noise-bg-n right-0 w-full" style={{
+  <div className="absolute bottom-0 left-0 noise-bg-n bg-gray-100 right-0 w-full" style={{
     height: "4%", 
   }}></div>
 

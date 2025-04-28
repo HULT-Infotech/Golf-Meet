@@ -1,8 +1,8 @@
 import React from 'react';
 import p_1 from "../assets/Photosection/p1.webp";
 import p_2 from "../assets/Photosection/p2.webp";
-import price_image1 from "../assets/Cost/pro.png";
-import price_image2 from "../assets/Cost/amature.png";
+import price_image1 from "../assets/Cost/pro.webp";
+import price_image2 from "../assets/Cost/amature.webp";
 
 const EventsAndCostPage = () => {
   const handleWhatsAppClick = () => {
