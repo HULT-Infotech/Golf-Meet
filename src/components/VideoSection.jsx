@@ -53,6 +53,7 @@ function VideoSection() {
           golfers nationwide.
         </p>
       </div>
+      
     </section>
   );
 }

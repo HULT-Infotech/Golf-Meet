@@ -1,11 +1,12 @@
 import React from "react";
 import Illustration_Golfers_Mobile from "../assets/fair.png";
+import Img from "../assets/video.svg";
 
 const FairPlaySection = () => {
   return (
     <>
       {/* First Section - Introduction */}
-      <section className="relative bg-gray-100 noise-bg-n md:min-h-[96vh] drop-shadow-xl w-full flex flex-col justify-between p-4 sm:p-0 md:px-8 text-center">
+      <section className="relative  bg-gray-100 noise-bg-n md:min-h-[96vh] drop-shadow-xl w-full flex flex-col justify-between p-4 sm:p-0 md:px-8 text-center">
         <div className="absolute z-10 bottom-0 left-0 right-0 flex justify-center items-center w-full opacity-90">
           <img
             src={Illustration_Golfers_Mobile}
@@ -43,6 +44,11 @@ const FairPlaySection = () => {
             Not your age or gender.
           </p>
         </div>
+        <img
+              src={Img}
+              alt=""
+              className="w-[80%] xsm:w-[92%] right-0 absolute z-20 [bottom:clamp(-12rem,-22vw,-10rem)] md:-bottom-32"
+            />
       </section>
     </>
   );

@@ -1,7 +1,8 @@
 import React from 'react';
 import p_1 from "../assets/Photosection/p1.webp";
 import p_2 from "../assets/Photosection/p2.webp";
-import bg from "../assets/Cost/bg.png";
+import price_image1 from "../assets/Cost/pro.png";
+import price_image2 from "../assets/Cost/amature.png";
 
 const EventsAndCostPage = () => {
   const handleWhatsAppClick = () => {
@@ -56,7 +57,7 @@ const EventsAndCostPage = () => {
       </div>
 
       {/* Curved Container Section with Tournament Fee - Modified to have only top curve */}
-      <div className="w-full -mt-32 sm:-mt-36 md:-mt-44 relative z-20 bulge-bottom">
+      <div className="w-full -mt-40 sm:-mt-36 md:-mt-44 relative z-20 bulge-bottom">
         <div className="relative w-full h-auto py-8 sm:py-10 md:py-12">
           <svg
             className="absolute inset-0 w-full h-full z-[-1]"
@@ -97,7 +98,7 @@ const EventsAndCostPage = () => {
 
           {/* Tournament Fee Content - Completely responsive with clamp */}
           <div 
-            className="flex flex-col items-center justify-center px-4 sm:px-6 text-white py-20 my-16 sm:py-30 md:py-40"
+            className="flex flex-col items-center justify-center px-4 sm:px-6 text-white pt-20 pb-4 mt-20 sm:py-30 md:py-40"
             style={{
               '--heading-size': 'clamp(1.75rem, 5vw, 1.875rem)',
               '--price-rupee': 'clamp(1.75rem, 5vw, 2.25rem)',
@@ -106,59 +107,55 @@ const EventsAndCostPage = () => {
               '--button-text': 'clamp(0.985rem, 3vw, 1.125rem)',
               '--important-heading': 'clamp(1.125rem, 4vw, 1.25rem)',
               '--paragraph': 'clamp(.898rem, 2.5vw, 1rem)',
+              '--paragraphsmall': 'clamp(.8rem, 2.5vw, 1rem)',
               '--spacing-sm': 'clamp(1rem, 2vw, 1rem)',
+              '--spacing-xsm': 'clamp(.5rem, 2vw, 1rem)',
               '--spacing-md': 'clamp(2rem, 4vw, 2rem)',
               '--spacing-lg': 'clamp(2.5rem, 5vw, 2.5rem)',
             }}
           >
             <h2 
-              className="font-semibold tracking-wider"
+              className="font-semibold tracking-wider mb-1"
               style={{ 
-                fontSize: 'var(--heading-size)',
-                marginBottom: 'var(--spacing-sm)'
+                fontSize: 'var(--heading-size)'
               }}
             >
-              TOURNAMENT FEE
+              PARTICIPATION FEE
             </h2>
-            
-            <div className="flex items-center mb-1">
-              <span 
-                className="font-bold font-quattrocentoSans"
-                style={{ fontSize: 'var(--price-rupee)' }}
-              >
-                ₹
-              </span>
-              <span 
-                className="font-bold font-quattrocentoSans"
-                style={{ fontSize: 'var(--price-amount)' }}
-              >
-                60,000
-              </span>
-            </div>
-            
-            <p 
-              className="opacity-40"
+            <p className="text-center opacity-80 mb-8  max-w-[17rem] sm:max-w-sm md:max-w-md"
               style={{ 
-                fontSize: 'var(--subtitle)',
-                marginBottom: 'var(--spacing-md)'
-              }}
-            >
-              PER YEAR
-            </p>
+                fontSize: 'var(--paragraphsmall)'
+              }}>Participation fee must be paid every month for retaining your scores and position on the leaderboard that year.</p>
+            
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
+              <div className="w-full md:w-56 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src={price_image1}
+                  alt="Golf Meet price information"
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="w-full md:w-56 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src={price_image2}
+                  alt="Golf Meet membership benefits"
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
             
             <button 
               onClick={handleWhatsAppClick}
-              className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] shadow-xl font-quattrocento text-[#FFF7D9] font-bold py-2 sm:py-3 px-7 sm:px-8 rounded tracking-wider"
+              className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] shadow-xl font-quattrocento text-[#FFF7D9] font-bold py-2 mb-[3.7rem] sm:py-3 px-7 sm:px-8 rounded tracking-wider"
               style={{ 
                 fontSize: 'var(--button-text)',
-                marginBottom: 'var(--spacing-lg)'
               }}
             >
-              APPLY VIA WHATSAPP
+              SIGN UP VIA WHATSAPP
             </button>
             
             <h3 
-              className="font-semibold  text-center"
+              className="font-semibold text-center"
               style={{ 
                 fontSize: 'var(--important-heading)',
                 marginBottom: 'var(--spacing-sm)'
@@ -168,7 +165,7 @@ const EventsAndCostPage = () => {
             </h3>
             
             <p 
-              className="text-center opacity-75 max-w-[20rem] sm:max-w-sm md:max-w-md"
+              className="text-center opacity-70 max-w-[20rem] sm:max-w-sm md:max-w-md"
               style={{ 
                 fontSize: 'var(--paragraph)',
                 marginBottom: 'var(--spacing-sm)'

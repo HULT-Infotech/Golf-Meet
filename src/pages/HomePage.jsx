@@ -9,7 +9,7 @@ import LargeScreen from "../Desktop/LargeScreen";
 import GolfPrize from "../components/GolfPrize";
 import Medalsection from "../components/Medal";
 import Photosection from "../components/photo";
-import Costsection from "../components/Cost";
+import Completesection from "../components/Complete";
 
 function HomePage() {
   const triggerRef = useRef(null);
@@ -22,14 +22,18 @@ function HomePage() {
         </div>
         <Navbar triggerRef={triggerRef} />
         <div className="-mt-4 relative z-10 ">
-        <GolfPrize />
-        </div>
-        <Medalsection />
         <HowItWorksSection />
+        </div>
+        
+        <FairPlaySection />
         <div>
           <VideoSection />
         </div>
-        <FairPlaySection />
+        <Completesection/>
+        
+        <GolfPrize />
+        
+        <Medalsection />
         <div className="relative z-20">
         <Photosection />
         </div>
