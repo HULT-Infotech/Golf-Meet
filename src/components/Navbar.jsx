@@ -64,7 +64,7 @@ const Navbar = ({ triggerRef }) => {
             onClick={handleWhatsAppClick}
           >
             <span className="font-quattrocento text-[#FFF7D9]">
-              APPLY NOW
+              SIGN UP
             </span>
           </button>
           

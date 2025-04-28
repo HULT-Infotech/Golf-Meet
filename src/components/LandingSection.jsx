@@ -29,7 +29,7 @@ function LandingPage() {
             hover:scale-105 hover:shadow-[0_4px_10px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in-out"
             onClick={handleWhatsAppClick}
           >
-            Apply Now
+            SIGN UP NOW
           </button>
 
           {/* Right Side - Leaderboard Link - Adding pointer-events-auto to ensure clicks work */}
@@ -56,18 +56,19 @@ function LandingPage() {
         </div>
 
         {/*//! Design Mobile */}
-        <div className="relative flex flex-col gap-[4.3rem] lg:hidden items-center">
+        <div className="relative flex flex-col lg:hidden items-center">
           <img
             src="favicons/favicon.svg"
             alt="Golfmeet Logo"
             className="w-10/12 sm:w-3/6 object-contain drop-shadow-2xl"
             draggable="false"
           />
-
+        <h1 className="text-[#014D4E] mt-10 text-[50px] xsm:text-[40px] xsm:leading-[50px] leading-[60px] font-quattrocento font-bold xsm:mb-3 mb-5">MEET NEW <br /> GOLFERS.</h1>
+        <p className="text-[#014D4E] text-[24px] xsm:text-[22px] font-quattrocento mb-8 font-bold">PLAY BETTER.</p>
           <img
             src={Illustration_Golfers_Mobile}
             alt="Golf Illustration"
-            className="w-10/12 sm:w-3/6 mr-5"
+            className="w-12/12 xsm:w-12/12 sm:w-3/6 mr-5"
             draggable="false"
           />
         </div>

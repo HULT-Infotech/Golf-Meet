@@ -49,11 +49,11 @@ const LeaderboardCard = () => {
       <div className="text-center mb-4">
         <p className="font-semibold font-sans text-[1.1rem] mb-5 text-white">IMPORTANT</p>
         
-        <p className="text-[.95rem] mb-4 max-w-72 mx-auto font-thin text-white font-sans">
+        <p className="text-[.95rem] opacity-80 mb-4 max-w-72 mx-auto font-thin text-white font-sans">
           Since most golfers book their rounds through club memberships or as complementary rounds from credit cards, the Golf Meet tournament fee does not cover green fees.
         </p>
         
-        <p className="text-[.95rem] max-w-72 mx-auto font-thin text-white font-sans">
+        <p className="text-[.95rem] max-w-72 opacity-80 mx-auto font-thin text-white font-sans">
           This also gives you and fellow contestants the freedom and flexibility to book your preferred tee time directly with the golf course.
         </p>
       </div>
