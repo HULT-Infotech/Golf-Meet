@@ -27,10 +27,12 @@ function HomePage() {
         </div>
         
         <FairPlaySection />
-        <div className="-mt-6">
+        <div className="-mt-6 relative z-0">
           <VideoSection />
         </div>
+        <div className="relative -z-10 -mt-8">
         <Completesection/>
+        </div>
         <Leaderboardsection/>
         <div className="-mt-2">
         <GolfPrize />
