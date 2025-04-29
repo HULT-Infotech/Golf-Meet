@@ -47,7 +47,7 @@ function VideoSection() {
       </section>
 
       {/* Separate section for COMPETE */}
-      <section className=" -mt-1 noise-bg-new bulge-bottomm flex flex-col items-center justify-center pb-20 pt-7 md:py-16 relative z-10">
+      <section className=" -mt-1 noise-bg-new bulge-bottomm flex flex-col items-center justify-center pb-[4.5rem] pt-7 md:py-16 relative z-10">
         <div className="text-center text-white">
           <h2 className="text-5xl flex flex-col md:flex-row justify-center items-center gap-5 font-quattrocento md:text-5xl lg:text-6xl font-bold tracking-wider mb-4">
             COMPETE

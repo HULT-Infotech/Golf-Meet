@@ -1,6 +1,7 @@
 import React from "react";
 import Illustration_Golfers_Mobile from "../assets/HomePage/Illustration_Golfers_Mobile.webp";
 import fav from "../assets/favicon.webp";
+import FooterBanner from "../assets/HomePage/footer-banner.svg";
 import { Link } from "react-router-dom";
 
 function LandingPage() {
@@ -98,13 +99,23 @@ function LandingPage() {
     {/* Register Button with gold gradient */}
     <div className="flex justify-center">
       <button
-        className="mt-12 mb-[3.9rem] rounded-md px-10 py-2 font-normal bg-gradient-to-b from-[#FFFFFF] via-[#FBE67B] to-[#FFB41E] shadow-[0px_2px_4px_0px_#0000008C] transition-all duration-500 hover:shadow-[0px_4px_10px_0px_#00000073]"
+        className="mt-16 mb-[5.6rem] xsm:mb-[3rem] z-10 rounded-md px-10 py-2 font-normal bg-gradient-to-b from-[#FFFFFF] via-[#FBE67B] to-[#FFB41E] shadow-[0px_2px_4px_0px_#0000008C] transition-all duration-500 hover:shadow-[0px_4px_10px_0px_#00000073]"
         onClick={handleWhatsAppClick}
       >
         <span className="text-lg text-[#014D4E] font-quattrocento" style={{ fontWeight: "700" }}>
         SIGN UP VIA WHATSAPP 
         </span>
       </button>
+    </div>
+    
+    {/* Bottom full-width image inside the section */}
+    <div className="absolute z-0 -bottom-12  left-0 right-0 w-full">
+      <img 
+        src={FooterBanner} 
+        alt="Golf Course Footer" 
+        className="w-full object-cover h-full opacity-80 md:h-64 lg:h-80"
+        draggable="false"
+      />
     </div>
   </div>
 </div>
