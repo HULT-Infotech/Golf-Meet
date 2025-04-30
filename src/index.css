@@ -112,6 +112,9 @@
 .bulge-top-other {
   clip-path: ellipse(375% 100% at 50% 100%);
 }
+.bulge-top-otherr {
+  clip-path: ellipse(415% 100% at 50% 100%);
+}
 .bulge-bottomm {
   clip-path: ellipse(165% 100% at 50% 0%);
 }

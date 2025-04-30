@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 import gradientbox from "../assets/greenbox.png";
 import land_m1 from "../assets/land-m.svg";
 import land_m2 from "../assets/land-fm1.svg";
-import tr_bg_mobile from "../assets/tournament-rule/check.svg";
+import tr_bg_mobile from "../assets/check.webp";
 
 function TournamentRule() {
   const [activeSection, setActiveSection] = useState("home");

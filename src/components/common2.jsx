@@ -27,7 +27,7 @@ function Commonn() {
 </div>
 
 {/* Background color for mobile/smaller screens */}
-<div className="absolute inset-0 w-full z-6 h-full md:hidden bulge-top-other  noise-bg-new ">
+<div className="absolute inset-0 w-full z-6 h-full md:hidden bulge-top-otherr  noise-bg-new ">
 </div>
 
 {/* Coin Images - visible only on larger screens */}

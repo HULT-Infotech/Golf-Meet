@@ -20,7 +20,7 @@ function App() {
           {/* Use the lazily loaded HomePage */}
           <Route path="/home-to-play" element={<HowToPlay />} />
           <Route path="/faq" element={<FaQ />} />
-          <Route path="/tournament-rules" element={<TournamentRule />} />
+          <Route path="/rules-regulations" element={<TournamentRule />} />
           <Route path="/code-of-conduct" element={<CodeOfConduct />} />
           <Route path="/terms-of-use" element={<Terms />} />
           <Route path="/privacy-policy" element={<Policy />} />
