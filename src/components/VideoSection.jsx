@@ -51,7 +51,7 @@ function VideoSection() {
         <div className="text-center text-white">
           <h2 className="text-5xl flex flex-col md:flex-row justify-center items-center gap-5 font-quattrocento md:text-5xl lg:text-6xl font-bold tracking-wider mb-4">
             COMPETE
-            <p className="text-sm block opacity-90 md:hidden">Compete with golfers from <br /> around the country.</p>
+            <p className="text-sm block opacity-90 md:hidden">Track your progress on a <br />nation-wide leaderboard.</p>
           </h2>
           <p className="md:block hidden font-quattrocentoSans font-light text-[20px] leading-[26.59px] tracking-[0.025em] text-center">
             Meet new golfers in your area. Make new friends. Compete with amateur

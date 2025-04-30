@@ -10,6 +10,7 @@ const CodeOfConduct = lazy(() => import("./pages/CodeOfConduct"));
 const Terms = lazy(() => import("./pages/TermsandCondition"));
 const Policy = lazy(() => import("./pages/PrivacyPolicy"));
 const Leader = lazy(() => import("./pages/Leaderboard"));
+const Refund = lazy(() => import("./pages/Refund"));
 function App() {
   return (
     <BrowserRouter>
@@ -19,11 +20,12 @@ function App() {
           {/* Use the lazily loaded HomePage */}
           <Route path="/home-to-play" element={<HowToPlay />} />
           <Route path="/faq" element={<FaQ />} />
-          <Route path="/tournament-rules" element={<TournamentRule />} />
+          <Route path="/rules-regulations" element={<TournamentRule />} />
           <Route path="/code-of-conduct" element={<CodeOfConduct />} />
           <Route path="/terms-of-use" element={<Terms />} />
           <Route path="/privacy-policy" element={<Policy />} />
           <Route path="/leaderboard" element={<Leader />} />
+          <Route path="/refund-policy" element={<Refund />} />
         </Routes>
         <ScrollToTop />
       </Suspense>

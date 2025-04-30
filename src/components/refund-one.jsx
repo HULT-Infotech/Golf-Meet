@@ -1,6 +1,6 @@
 import React from "react";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
-import tr_bg_mobile from "../assets/checkk.webp";
+import tr_bg_mobile from "../assets/refund.webp";
 import tr_dec_mobile from "../assets/green-m.svg";
 import code_of_conduct_greenleft from "../assets/code-of-conduct/code-conduct-left.svg";
 import Navbar from "../components/Navbar";
@@ -14,7 +14,7 @@ const handleWhatsAppClick = () => {
   window.open(`https://wa.me/${phoneNumber}`, "_blank");
 };
 
-function CodeOne() {
+function RefundOne() {
   return (
     <div className="md:overflow-visible overflow-hidden">
       {/* Fixed Navbar at the top */}
@@ -40,14 +40,14 @@ function CodeOne() {
                 filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',
               }}
             >
-              PLAYER CODE <br /> OF CONDUCT
+              REFUND <br /> POLICY
             </h1>
             {/* Mobile-only text added here */}
-            <div className="xsm:text-xs text-sm md:hidden mb-4 xsm:w-[85%] w-[95%]">
-              Golf Meet is built on respect, trust, and the spirit of true sportsmanship. Review the player code that defines our community.
-            </div>
-            <p className="font-semibold xsm:text-xs text-sm xsm:w-[85%] w-[95%]">
-              And if you have suggestions, we're always ready to listen.
+            <div className="xsm:text-xs text-sm md:hidden mb-4 xsm:w-[95%] w-[98%]">
+            Learn about our refund guidelines designed to ensure transparency and fairness for every Golf Meet participant. 
+
+</div>
+            <p className="font-semibold xsm:text-xs text-sm ">Need assistance with a refund request? Our team is ready to support you.
             </p>
           </div>
           
@@ -62,47 +62,19 @@ function CodeOne() {
         </div>
         
         {/* Mobile image container - positioned at bottom left */}
-        <div className="md:hidden relative w-full flex justify-start mt-auto left-0">
+        <div className="md:hidden relative w-full flex justify-end mt-auto right-0">
           <img
             src={tr_bg_mobile}
             alt="Golfers Illustration Mobile"
-            className="w-[93%] object-contain pointer-events-none"
+            className="w-[98%] object-contain pointer-events-none"
           />
         </div>
       </section>
 
-      <section className="flex flex-col items-center justify-center xsm:pt-12 pt-16 bulge-top -mt-4 md:mt-12 relative noise-bg-new sm:mb-0">
-        <div className="flex justify-between items-center font-medium xsm:text-lg text-white bg-[#FFFFFF0D] w-[85%] p-7 rounded-md">
-          <div className="flex flex-col">
-            <h2 className="lg:text-5xl md:4xl text-[1.8rem] uppercase font-quattrocento">
-              RULES & REGULATIONS
-            </h2>
-            <Link to="/code-of-conduct">
-              <p className="lg:text-lg md:3xl xsm:text-xs xsm:pt-2 pt-2 underline underline-offset-4">
-                Please refer to the
-                <strong> GolfMeet Rules & Regulations </strong> here
-              </p>
-            </Link>
-          </div>
-          <div>
-            <svg
-              width="22"
-              height="42"
-              viewBox="0 0 25 47"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 1.5L23 23.5L1 45.5"
-                stroke="#FFF"
-                strokeWidth="2"
-              />
-            </svg>
-          </div>
-        </div>
-      </section>
+      
     </div>
+    
   );
 }
 
-export default CodeOne;
+export default RefundOne;

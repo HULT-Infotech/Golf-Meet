@@ -1,5 +1,5 @@
 import React from "react";
-import Illustration_Golfers_Mobile from "../assets/fair.png";
+import Illustration_Golfers_Mobile from "../assets/fair.webp";
 import Img from "../assets/video.svg";
 
 const FairPlaySection = () => {
@@ -7,7 +7,7 @@ const FairPlaySection = () => {
     <>
       {/* First Section - Introduction */}
       <section className="relative  bg-gray-100 pb-36 noise-bg-n md:min-h-[100vh] pt-10 drop-shadow-xl w-full flex flex-col justify-between p-4 sm:p-0 md:px-8 text-center">
-        <div className="absolute z-10 bottom-0 left-0 right-0 flex justify-center items-center w-full opacity-90">
+        <div className="absolute z-10 bottom-0 left-0 right-0 flex justify-center items-center w-full">
           <img
             src={Illustration_Golfers_Mobile}
             alt="Illustration of Golfers"
@@ -23,7 +23,7 @@ const FairPlaySection = () => {
           </h6>
           <h1 className="xsm:text-5xl mb-6 text-6xl text-[#014D4E] md:text-6xl lg:text-7xl mx-auto uppercase font-quattrocento font-bold xl:text-[96px] xl:leading-[106.37px] tracking-[0.025em] text-center relative z-10"
           style={{
-            background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 26%)',
+            background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 24%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',

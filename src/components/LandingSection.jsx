@@ -1,7 +1,7 @@
 import React from "react";
 import Illustration_Golfers_Mobile from "../assets/HomePage/Illustration_Golfers_Mobile.webp";
 import fav from "../assets/favicon.webp";
-import FooterBanner from "../assets/HomePage/footer-banner.svg";
+import FooterBanner from "../assets/HomePage/footer-banner.webp";
 import { Link } from "react-router-dom";
 
 function LandingPage() {

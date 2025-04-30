@@ -12,11 +12,11 @@ import Footer from "../components/Footer";
 import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
 import { Link } from "react-router-dom";
  
-function Common() {
+function Commonn() {
   return (
 <>
 
-<section className="relative px-4 flex items-center justify-center ">
+<section className="relative px-4 pt-24 flex items-center justify-center ">
 {/* Absolute background image container for desktop */}
 <div className="absolute inset-0 w-full z-6 h-full hidden md:block">
   <img
@@ -27,7 +27,7 @@ function Common() {
 </div>
 
 {/* Background color for mobile/smaller screens */}
-<div className="absolute inset-0 w-full z-6 h-full md:hidden noise-bg-new ">
+<div className="absolute inset-0 w-full z-6 h-full md:hidden bulge-top-otherr  noise-bg-new ">
 </div>
 
 {/* Coin Images - visible only on larger screens */}
@@ -88,7 +88,7 @@ function Common() {
 />
 
 {/* Content Container */}
-<div className="relative bg-gray-100 mt-12 mb-20 xsm:mt-10  rounded-lg p-4 sm:p-6 md:p-8 w-[95%] sm:w-[90%] md:w-[85%] max-w-6xl shadow-gray-800 drop-shadow-2xl shadow z-20">
+<div className="relative bg-gray-100   mb-20 xsm:mt-10  rounded-lg p-4 sm:p-6 md:p-8 w-[95%] sm:w-[90%] md:w-[85%] max-w-6xl shadow-gray-800 drop-shadow-2xl shadow z-20">
   <p className="text-base sm:text-lg md:text-xl text-black leading-relaxed mb-8 md:mb-12 font-quattrocentoSans font-bold mx-auto" style={{ fontSize: "clamp(16px, 4vw, 24px)", lineHeight: "1.4", maxWidth: "100%" }}>
     As a participant in GolfMeet, you are expected to adhere to the
     highest standards of conduct both on and off the course. Your
@@ -293,4 +293,4 @@ function Common() {
   );
 }
 
-export default Common;
+export default Commonn;
