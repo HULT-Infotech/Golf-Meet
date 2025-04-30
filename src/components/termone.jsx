@@ -21,7 +21,7 @@ function Terms() {
     <div className="relative md:top-0 flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 min-w-[300px] z-10">
       <h1 className="font-quattrocento font-bold text-5xl sm:text-5xl lg:text-[76px] pt-8 leading-[100%] tracking-[0.025em]  mb-4"
       style={{
-        background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 47%)',
+        background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 61%)',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
         backgroundClip: 'text',

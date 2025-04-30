@@ -30,7 +30,7 @@ function Policy() {
             <div className="relative flex flex-col md:hidden justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:-mt-8 min-w-[300px] z-10">
               <h1 className="font-quattrocento font-bold pt-4 text-5xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4"
               style={{
-                background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 27%)',
+                background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 47%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
