@@ -27,7 +27,7 @@ function CodeOne() {
         <div className="flex flex-col w-full grow justify-between md:justify-around gap-12 sm:gap-16 md:gap-20 lg:gap-24 md:flex-row max-w-[1700px] mx-auto relative pt-4 pb-16 md:py-16">
           <div className="relative flex flex-col justify-center items-center md:items-start p-8 md:pl-10 md:p-0 xl:ml-20 z-10">
             <h1
-              className="font-quattrocento text-[2.97rem] md:text-6xl md:text-[37px] lg:text-[55px] xl:text-8xl max-w-2xl font-bold mb-4 mt-7 text-[#201E15] text-center md:text-left xl:text-[80px]"
+              className="font-quattrocento text-[2.97rem] md:text-6xl md:text-[37px] lg:text-[55px] xl:text-8xl max-w-2xl font-bold mb-4 mt-7 text-center md:text-left xl:text-[80px]"
               style={{
                 background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 27%)',
                 WebkitBackgroundClip: 'text',

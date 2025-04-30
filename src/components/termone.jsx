@@ -18,16 +18,19 @@ function Terms() {
 
   <div className="flex flex-col w-full grow pb-24 md:py-0 md:flex-row max-w-[1700px] mx-auto relative h-full">
     {/* Text Section */}
-    <div className="relative md:hidden md:top-0 flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 min-w-[300px] z-10">
-      <h1 className="font-quattrocento font-bold text-5xl sm:text-5xl lg:text-[76px] pt-8 leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
+    <div className="relative md:top-0 flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 min-w-[300px] z-10">
+      <h1 className="font-quattrocento font-bold text-5xl sm:text-5xl lg:text-[76px] pt-8 leading-[100%] tracking-[0.025em]  mb-4"
+      style={{
+        background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 61%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
+        textFillColor: 'transparent',
+        textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
+        filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',}}>
         TERMS OF <br /> USE
       </h1>
     </div>
-    <div className="hidden md:block ml-12 mt-16 absolute left-0 flex-col justify-center items-start md:p-0  min-w-[300px] z-10">
-          <h1 className="font-quattrocento font-bold pt-4 text-5xl sm:text-5xl lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
-            TERMS OF<br />USE
-          </h1>
-        </div>
     
     {/* Desktop Image Section - Positioned absolutely at bottom */}
     <div className="hidden md:block absolute bottom-0 right-0 md:w-1/2">
