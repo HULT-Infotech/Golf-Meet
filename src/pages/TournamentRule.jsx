@@ -129,7 +129,14 @@ function TournamentRule() {
   <div className="flex flex-col w-full grow pb-24 md:py-0 md:flex-row max-w-[1700px] mx-auto relative">
     {/* Text Section */}
     <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 min-w-[300px] z-10">
-      <h1 className="font-quattrocento font-bold text-4xl sm:text-5xl pt-8 lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4">
+      <h1 className="font-quattrocento font-bold text-4xl sm:text-5xl pt-8 lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4"style={{
+          background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 27%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          textFillColor: 'transparent',
+          textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
+          filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',}}>
         TOURNAMENT <br /> RULES
       </h1>
     </div>

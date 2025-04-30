@@ -1,6 +1,6 @@
 import React from "react";
 import golfIllustration from "../assets/HomePage/golfIllustration.svg";
-import Illustration_Golf_Balls from "../assets/HomePAge/Illustration_Golf_Balls.webp";
+import Illustration_Golf_Balls from "../assets/HomePage/Illustration_Golf_Balls.webp";
 import glow_yellow from "../assets/HomePage/glow_yellow.svg";
 
 const CompletePage = () => {
