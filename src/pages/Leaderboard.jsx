@@ -201,8 +201,8 @@ function LeaderPage() {
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
           textFillColor: 'transparent',
-          textShadow: '1px 1px 2px rgba(0, 0, 0, 0.25)',
-          filter: 'drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3))',
+          textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
+          filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',
         }}
       >
         LEADERBOARD

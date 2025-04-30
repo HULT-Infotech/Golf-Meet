@@ -23,7 +23,7 @@ const FairPlaySection = () => {
           </h6>
           <h1 className="xsm:text-5xl mb-6 text-6xl text-[#014D4E] md:text-6xl lg:text-7xl mx-auto uppercase font-quattrocento font-bold xl:text-[96px] xl:leading-[106.37px] tracking-[0.025em] text-center relative z-10"
           style={{
-            background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 26%)',
+            background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 24%)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',

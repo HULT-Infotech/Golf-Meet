@@ -17,22 +17,24 @@ const handleWhatsAppClick = () => {
 const FaqItem = ({ question, answer, isOpen, toggleOpen }) => {
   return (
     <div
-      className={`mb-4 border rounded-sm transition-all duration-300 ${
+      className={`mb-4 border rounded-lg transition-all duration-300 ${
         isOpen ? "border-[#014D4E] shadow-md" : "border-gray-200"
       }`}
     >
       <div
-        className="flex justify-between items-center p-4 cursor-pointer bg-white rounded-lg"
+        className={`flex justify-between items-center p-4 cursor-pointer rounded-t-lg ${
+          isOpen ? "bg-white" : "bg-white rounded-b-lg"
+        }`}
         onClick={toggleOpen}
       >
-        <span className="text-sm md:text-base pr-2 md:pr-0">{question}</span>
-        <span className="text-xl flex-shrink-0">{isOpen ? "−" : "+"}</span>
+        <span className="text-sm font-semibold md:text-base pr-2 md:pr-0">{question}</span>
+        <span className="text-xl font-bold flex-shrink-0">{isOpen ? "−" : "+"}</span>
       </div>
       <div
-        className={`overflow-hidden transition-all duration-300 ease-in-out bg-white ${
+        className={`overflow-hidden transition-all duration-300 ease-in-out bg-white rounded-b-lg ${
           isOpen
-            ? "max-h-[500px] opacity-100 p-4 border-t border-gray-200 rounded-b-lg"
-            : "max-h-0 opacity-0 p-0"
+            ? "max-h-[500px] opacity-100 p-4  "
+            : "max-h-0 opacity-0 p-0 border-t-0"
         }`}
       >
         <p className="text-sm md:text-base text-gray-600">{answer}</p>
@@ -58,7 +60,7 @@ function FaQ() {
   const categoryData = [
     {
       id: "registration",
-      title: "Registrations",
+      title: "Registration",
       items: [
         {
           id: "one-time-password",
@@ -229,7 +231,7 @@ function FaQ() {
       Find quick answers to common questions about Golf Meet — 
       from how it works to rules & regulations, scoring, and player verification, refund policy. 
       </div>
-      <p className="font-semibold xsm:text-xs">Still need help? We’re here for you.</p>
+      <p className="font-semibold xsm:text-xs">Still need help? We're here for you.</p>
     </div>
   </div>
   
@@ -238,65 +240,68 @@ function FaQ() {
     <img
       src={faq_mobile_hero}
       alt="Golfers Mobile Illustration"
-      className="w-[80%] max-w-[400px] object-contain pointer-events-none md:hidden mx-auto"
+      className="w-[75%] max-w-[400px] object-contain pointer-events-none md:hidden mx-auto"
     />
   </div>
 </section>
 
-      <section className="py-8 md:py-16 px-6 md:px-8 bg-white mt-8 md:mt-24">
-        <div className="flex flex-col md:flex-row max-w-[1300px] mx-auto gap-6 md:gap-12">
-          {/* Left Sidebar - Using imported gradientbox image */}
-          <div
-            className="hidden md:block w-64 text-white p-4 md:p-6 rounded-md sticky top-32 self-start"
-            style={{
-              background: `url(${gradientbox})`,
-            }}
-          >
-            <h3 className="font-quattrocentoSans font-bold text-[32px] leading-[100%] tracking-[0em] uppercase mb-2 relative">
-              CATEGORIES
-            </h3>
-            <ul className="text-sm mt-6">
-              {categoryData.map((category) => (
-                <li
-                  key={category.id}
-                  className={`py-3 cursor-pointer transition-colors duration-200 relative ${
-                    activeCategory === category.id ? "font-bold" : ""
-                  }`}
-                  onClick={() => handleCategoryClick(category.id)}
-                >
-                  <span className="relative inline-block text-[#FFFFFFCC] after:content-[''] after:block after:w-full after:h-[1.4px] after:bg-white after:mt-1">
-                    {category.title}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          
-          {/* Main Content */}
-          <div className="flex-1">
-            {categoryData.map((category) => (
-              <div
-                id={category.id}
-                key={category.id}
-                className="mb-12 scroll-mt-20"
-              >
-                <h2 className="text-[#014D4E] text-2xl md:text-4xl font-bold mb-6 font-quattrocento uppercase">
-                  {category.title.toUpperCase()}
-                </h2>
-                {category.items.map((item) => (
-                  <FaqItem
-                    key={item.id}
-                    question={item.question}
-                    answer={item.answer}
-                    isOpen={openItems[item.id] || false}
-                    toggleOpen={() => toggleItem(item.id)}
-                  />
-                ))}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+<section className="py-8 md:py-16 px-6 bulge-top-other md:px-8 noise-bg-neww -mt-4 md:mt-24"
+         >
+         <div className="flex flex-col md:flex-row max-w-[1300px] mx-auto gap-6 md:gap-12">
+           {/* Left Sidebar - Using gradient background */}
+           <div
+             className="hidden md:block w-64 text-white p-4 md:p-6 rounded-md sticky top-32 self-start"
+             style={{
+               background: `linear-gradient(0deg, #014D4E, #014D4E)`,
+             }}
+           >
+             <h3 className="font-quattrocentoSans font-bold text-[32px] leading-[100%] tracking-[0em] uppercase mb-2 relative">
+               CATEGORIES
+             </h3>
+             <ul className="text-sm mt-6">
+               {categoryData.map((category) => (
+                 <li
+                   key={category.id}
+                   className={`py-3 cursor-pointer transition-colors duration-200 relative ${
+                     activeCategory === category.id ? "font-bold" : ""
+                   }`}
+                   onClick={() => handleCategoryClick(category.id)}
+                 >
+                   <span className="relative inline-block text-[#FFFFFFCC] after:content-[''] after:block after:w-full after:h-[1.4px] after:bg-white after:mt-1">
+                     {category.title}
+                   </span>
+                 </li>
+               ))}
+             </ul>
+           </div>
+           
+           {/* Main Content */}
+           <div className="flex-1">
+             {categoryData.map((category) => (
+               <div
+                 id={category.id}
+                 key={category.id}
+                 className="mb-12 scroll-mt-20"
+               >
+                 <h2 className={`text-3xl md:text-4xl font-bold mb-6 mt-12 font-quattrocento uppercase ${
+                  category.id === "registration" ? "text-[#FFF]" : "text-[#014D4E]"
+                }`}>
+                   {category.title.toUpperCase()}
+                 </h2>
+                 {category.items.map((item) => (
+                   <FaqItem
+                     key={item.id}
+                     question={item.question}
+                     answer={item.answer}
+                     isOpen={openItems[item.id] || false}
+                     toggleOpen={() => toggleItem(item.id)}
+                   />
+                 ))}
+               </div>
+             ))}
+           </div>
+         </div>
+       </section>
 
       {/* Two Images Before Footer */}
       <div className="relative w-full">
