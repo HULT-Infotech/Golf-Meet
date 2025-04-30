@@ -95,91 +95,78 @@ function TournamentRule() {
   }, [activeSection, sections]);
 
   return (
-    
     <>
       <style>
-    {`
-      .custom-margin {
-        margin-top: -2rem;
-      }
+        {`
+          .custom-margin {
+            margin-top: -2rem;
+          }
 
-      @media (min-width: 375px) {
-        .custom-margin {
-          margin-top: -3rem;
-        }
-      }
-      @media (min-width: 425px) {
-        .custom-margin {
-          margin-top: -3.8rem;
-        }
-      }
-
-
-      }
-    `}
-  </style>
-      <Navbar/>
+          @media (min-width: 375px) {
+            .custom-margin {
+              margin-top: -3rem;
+            }
+          }
+          @media (min-width: 425px) {
+            .custom-margin {
+              margin-top: -3.8rem;
+            }
+          }
+        `}
+      </style>
+      <Navbar />
       <div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
 
       {/* Main container */}
       <div className="md:h-[108vh] flex flex-col relative md:hidden">
         {/* Hero section */}
-        <section className="bg-gray-100 noise-bg-n relative min-h-[90vh] overflow-hidden">
-
-
-  <div className="flex flex-col w-full grow pb-24 md:py-0 md:flex-row max-w-[1700px] mx-auto relative">
-    {/* Text Section */}
-    <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
-      <h1 className="font-quattrocento font-bold xsm:text-[2.2rem] text-[2.7rem] text-[#201E15] sm:text-5xl lg:text-[80px] pt-8 leading-[100%] tracking-[0.025em] mb-4"
-      style={{
-        background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 64%)',
-        WebkitBackgroundClip: 'text',
-        WebkitTextFillColor: 'transparent',
-        backgroundClip: 'text',
-        textFillColor: 'transparent',
-        textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
-        filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',}}>
-        RULES & <br /> REGULATIONS
-      </h1>
-      {/* Mobile-only text added here */}
-      <div className="xsm:text-xs text-sm md:hidden mb-4 xsm:w-[85%] w-[95%]">Play with confidence. Review the rules and guidelines designed to elevate your Golf Meet journey. 
-
-
-      </div>
-      <p className="font-semibold xsm:text-xs text-sm">Need support? We’re just a message away.</p>
-    </div>
-    
-    {/* Right Image Section - Desktop only */}
-    <div className="hidden md:flex items-end px-5 md:px-0">
-      {/* <img
-        src={tr_bg}
-        alt="Golfers Illustration"
-        className="w-full h-auto object-contain pointer-events-none md:mr-12 md:mt-4"
-      /> */}
-    </div>
-  </div>
-  
-  {/* Mobile image */}
-        <div className="absolute bottom-0 pb-4 left-0 right-0 w-full">
+        <section className="bg-gray-100 noise-bg-n relative min-h-[90vh] flex flex-col overflow-hidden">
+          <div className="flex flex-col w-full flex-1 md:flex-row max-w-[1700px] mx-auto relative">
+            {/* Text Section */}
+            <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
+              <h1 
+                className="font-quattrocento font-bold xsm:text-[2.2rem] text-[2.7rem] text-[#201E15] sm:text-5xl lg:text-[80px] pt-8 leading-[100%] tracking-[0.025em] mb-4"
+                style={{
+                  background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 64%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  textFillColor: 'transparent',
+                  textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
+                  filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',
+                }}
+              >
+                RULES & <br /> REGULATIONS
+              </h1>
+              {/* Mobile-only text added here */}
+              <div className="xsm:text-xs text-sm md:hidden mb-4 xsm:w-[85%] w-[95%]">
+                Play with confidence. Review the rules and guidelines designed to elevate your Golf Meet journey.
+              </div>
+              <p className="font-semibold xsm:text-xs text-sm">Need support? We're just a message away.</p>
+            </div>
+            
+            {/* Desktop Image Section - Hidden on mobile */}
+            <div className="hidden md:block relative bottom-0 right-0 md:w-1/2">
+              <img
+                src={tr_bg}
+                alt="Golfers Illustration"
+                className="w-[93%] h-auto object-contain pointer-events-none md:mr-12"
+              />
+            </div>
+          </div>
           
-          {/* Mobile image - hidden on desktop */}
-          <img
-            src={tr_bg_mobile}
-            alt="Golfers Illustration Mobile"
-            className="w-[90%] mx-auto object-contain pointer-events-none md:hidden"
-          />
-        </div>
-  
-  {/* Desktop decorative element */}
-  {/* <img
-    src={tr_greenleft}
-    alt="Green left element"
-    className="hidden md:block absolute md:-bottom-4 left-0 w-[160px] md:w-[240px] lg:w-[360px] xl:w-[460px] lg:-bottom-8 object-contain pointer-events-none"
-  /> */}
-</section>
+          {/* Mobile image container - positioned at bottom */}
+          <div className="relative bottom-0 pb-4 left-0 right-0 w-full md:hidden mt-auto">
+            <img
+              src={tr_bg_mobile}
+              alt="Golfers Illustration Mobile"
+              className="w-[90%] mx-auto object-contain pointer-events-none"
+            />
+          </div>
+        </section>
 
         {/* Player Code of Conduct section */}
-        <section className="flex flex-col items-center justify-center xsm:pt-12 pt-16 bulge-top -mt-7 md:mt-12 relative noise-bg-new sm:mb-0">
+        <section className="flex flex-col items-center justify-center xsm:pt-12 pt-16 bulge-top -mt-8 md:mt-12 relative noise-bg-new sm:mb-0">
           <div className="flex justify-between items-center font-medium xsm:text-lg text-white bg-[#FFFFFF0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">
               <h2 className="lg:text-5xl md:4xl text-[1.8rem] uppercase font-quattrocento">
@@ -425,11 +412,11 @@ function TournamentRule() {
         <img src={tr_last} alt="tr_last" className="md:block hidden w-full mb-8 " />
         
         <div className="relative">
-  {/* Subtle bottom shadow that fades upward */}
-  <div className="h-6 w-full bg-gradient-to-t from-gray-400 via-gray-100 to-transparent opacity-40"></div>
-  {/* Footer component */}
-  <Footer className=""/>
-</div>
+          {/* Subtle bottom shadow that fades upward */}
+          <div className="h-6 w-full bg-gradient-to-t from-gray-400 via-gray-100 to-transparent opacity-40"></div>
+          {/* Footer component */}
+          <Footer className=""/>
+        </div>
       </div>
 
       <style jsx>{`
