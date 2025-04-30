@@ -66,14 +66,14 @@ function Terms() {
     />
   </div>
 </section>
-        <section className="flex flex-col items-center justify-center xsm:pt-12 pt-16 bulge-top -mt-7 md:mt-12 relative noise-bg-new sm:mb-0">
+        <section className="flex flex-col items-center justify-center xsm:pt-12 pt-16 bulge-top -mt-4 md:mt-12 relative noise-bg-new sm:mb-0">
           <div className="flex justify-between items-center font-medium xsm:text-lg text-white bg-[#FFFFFF0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">
               <h2 className="lg:text-5xl md:4xl text-[1.8rem] uppercase font-quattrocento">
               PRIVACY POLICY
               </h2>
-              <Link to="/code-of-conduct"><p className="lg:text-lg md:3xl xsm:text-xs xsm:pt-2 pt-2  underline underline-offset-4">
-                Please refer to the
+              <Link to="/code-of-conduct"><p className="lg:text-lg md:3xl w-[90%] xsm:text-xs xsm:pt-2 pt-2  underline underline-offset-4">
+                Please refer to the 
                 <strong> Privacy Policy </strong> here
               </p></Link>
             </div>
