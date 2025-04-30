@@ -21,7 +21,14 @@ const HowItWorksSection = () => {
         <div className="pt-[20px] pb-0 relative">
           <h1
             className="text-[59px] xsm:text-[3rem] px-10 lg:mt-10 font-quattrocento font-bold md:text-[64px] leading-[70.91px] tracking-[0.025em] text-center text-[#014D4E] md:text-5xl mb-10 lg:mb-0"
-            style={{ textShadow: "0px 0px 6px #F4D4555C" }}
+            style={{
+              background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 29%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              textFillColor: 'transparent',
+              textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
+              filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',}}
           >
             HOW IT WORKS
           </h1>

@@ -15,7 +15,7 @@ function LandingPage() {
     <section className="min-h-screen text-center">
       <div className="relative flex flex-col min-h-[70vh] -mb-2 bg-gray-50 noise-bg-n">
         {/* Top Navbar */}
-        <div className="lg:absolute z-40 min-h-20 top-0 w-full flex justify-between items-center 
+        <div className="lg:absolute z-40 min-h-20 top-0 mt-2 w-full flex justify-between items-center 
           [padding-left:clamp(1rem,5vw,3.5rem)] 
           [padding-right:clamp(1rem,5vw,3.5rem)] 
           [padding-top:clamp(1.5rem,5vw,2.5rem)] 
@@ -64,7 +64,15 @@ function LandingPage() {
             className="w-10/12 sm:w-3/6 object-contain drop-shadow-2xl"
             draggable="false"
           />
-        <h1 className="text-[#014D4E] mt-10 text-[50px] xsm:text-[40px] xsm:leading-[50px] leading-[60px] font-quattrocento font-bold xsm:mb-3 mb-4">MEET NEW <br /> GOLFERS.</h1>
+        <h1 className="text-[#014D4E] mt-10 text-[50px] xsm:text-[40px] xsm:leading-[50px] leading-[60px] font-quattrocento font-bold xsm:mb-3 mb-4"style={{
+          background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 27%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          textFillColor: 'transparent',
+          textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
+          filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',
+        }}>MEET NEW <br /> GOLFERS.</h1>
         <p className="text-[#014D4E] text-[24px] xsm:text-[22px] font-quattrocento mb-8 font-bold">PLAY BETTER.</p>
           <img
             src={Illustration_Golfers_Mobile}

@@ -8,12 +8,28 @@ const CompletePage = () => {
     <>
       <div className="mx-auto relative bg-gray-100 -mt-8 noise-bg-n z-10 pt-10 md:py-20">
         <div className="text-center mt-8 mb-8">
-          <h1 className="text-[40px] leading-[40px] hidden md:block w-auto mb-8 lg:text-[90px] font-quattrocento font-bold md:leading-[106.37px] tracking-[0.025em] text-center">
+          <h1 className="text-[40px] leading-[40px] hidden md:block w-auto mb-8 lg:text-[90px] font-quattrocento font-bold md:leading-[106.37px] tracking-[0.025em] text-center"
+          style={{
+            background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 27%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            textFillColor: 'transparent',
+            textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
+            filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',}}>
             COMPETE WITH <br />
             GOLFERS FROM<br />
             ALL OVER INDIA
           </h1>
-          <h1 className="text-[42px] text-[#014D4E] leading-[45px] block md:hidden w-[95%] mx-auto mb-4 lg:text-[90px] font-quattrocento font-bold md:leading-[106.37px] tracking-[0.025em] text-center">
+          <h1 className="text-[42px]  leading-[45px] block md:hidden w-[95%] mx-auto mb-4 lg:text-[90px] font-quattrocento font-bold md:leading-[106.37px] tracking-[0.025em] text-center"
+          style={{
+            background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 15%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            textFillColor: 'transparent',
+            textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
+            filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',}}>
             COMPETE WITH <br />
             GOLFERS FROM<br />
             ALL OVER INDIA

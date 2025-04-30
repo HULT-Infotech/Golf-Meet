@@ -193,7 +193,20 @@ function LeaderPage() {
       <Navbar/>
       <div style={{ height: "80px" }} className=" md:h-[90px] lg:h-[100px]" />
 
-          <h1 className="font-quattrocento font-bold text-4xl mt-16 mb-2 text-center text-[#201E15]">LEADERBOARD</h1>
+      <h1 
+        className="font-quattrocento font-bold text-4xl mt-16 mb-2 text-center"
+        style={{
+          background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 45%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          textFillColor: 'transparent',
+          textShadow: '1px 1px 2px rgba(0, 0, 0, 0.25)',
+          filter: 'drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3))',
+        }}
+      >
+        LEADERBOARD
+      </h1>
           
           
           {/* Updated Search bar component with clear button */}

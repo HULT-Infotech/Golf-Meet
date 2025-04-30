@@ -21,7 +21,15 @@ const FairPlaySection = () => {
           <h6 className="xsm:text-lg text-xl font-semibold mb-10 md:text-lg lg:text-xl relative z-10">
           INTRODUCING
           </h6>
-          <h1 className="xsm:text-5xl mb-6 text-6xl text-[#014D4E] md:text-6xl lg:text-7xl mx-auto uppercase font-quattrocento font-bold xl:text-[96px] xl:leading-[106.37px] tracking-[0.025em] text-center relative z-10">
+          <h1 className="xsm:text-5xl mb-6 text-6xl text-[#014D4E] md:text-6xl lg:text-7xl mx-auto uppercase font-quattrocento font-bold xl:text-[96px] xl:leading-[106.37px] tracking-[0.025em] text-center relative z-10"
+          style={{
+            background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 26%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            textFillColor: 'transparent',
+            textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
+            filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',}}>
             The <br /> Golf Meet
             <br />
             <span className="block mt-2 md:mt-4">Handicap</span>

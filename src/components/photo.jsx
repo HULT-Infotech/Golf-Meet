@@ -128,14 +128,14 @@ const EventsAndCostPage = () => {
               }}>Participation fee must be paid every month for retaining your scores and position on the leaderboard that year.</p>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
-              <div className="w-full md:w-56 rounded-lg overflow-hidden shadow-md">
+              <div className="w-[90%] md:w-56 rounded-lg overflow-hidden shadow-md">
                 <img
                   src={price_image1}
                   alt="Golf Meet price information"
                   className="w-full h-auto"
                 />
               </div>
-              <div className="w-full md:w-56 rounded-lg overflow-hidden shadow-md">
+              <div className="w-[90%] md:w-56 rounded-lg overflow-hidden shadow-md">
                 <img
                   src={price_image2}
                   alt="Golf Meet membership benefits"
