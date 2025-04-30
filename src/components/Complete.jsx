@@ -1,7 +1,7 @@
 import React from "react";
 import golfIllustration from "../assets/HomePage/golfIllustration.svg";
 import Illustration_Golf_Balls from "../assets/HomePage/Illustration_Golf_Balls.webp";
-import glow_yellow from "../assets/HomePage/glow_yellow.svg";
+// import glow_yellow from "../assets/HomePage/glow_yellow.svg";
 
 const CompletePage = () => {
   return (
@@ -55,9 +55,9 @@ const CompletePage = () => {
           {/* Content for this flex container */}
         </div>
       </div>
-      <div className="absolute z-50 flex justify-end top-[245rem] opacity-85 right-0 w-full">
+      {/* <div className="absolute z-50 flex justify-end top-[245rem] opacity-85 right-0 w-full">
         <img src={glow_yellow} alt="glow_yellow" className="w-2/3" />
-      </div>
+      </div> */}
     </>
   );
 };
