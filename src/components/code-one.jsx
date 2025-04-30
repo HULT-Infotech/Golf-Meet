@@ -28,7 +28,14 @@ function CodeOne() {
           <div className="relative flex flex-col justify-center items-center md:items-start p-8 md:pl-10 md:p-0 xl:ml-20 z-10">
             <h1
               className="font-quattrocento text-[2.97rem] md:text-6xl md:text-[37px] lg:text-[55px] xl:text-8xl max-w-2xl font-bold mb-4 mt-7 text-[#201E15] text-center md:text-left xl:text-[80px]"
-              style={{lineHeight: "1.1" }}
+              style={{
+                background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 27%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                textFillColor: 'transparent',
+                textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
+                filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',lineHeight: "1.1" }}
             >
               <span className="whitespace-nowrap">PLAYER CODE</span>
               <br />
