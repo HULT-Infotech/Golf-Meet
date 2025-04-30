@@ -1,6 +1,6 @@
 import React from "react";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
-import tr_bg_mobile from "../assets/refund.svg";
+import tr_bg_mobile from "../assets/refund.webp";
 import tr_dec_mobile from "../assets/green-m.svg";
 import code_of_conduct_greenleft from "../assets/code-of-conduct/code-conduct-left.svg";
 import Navbar from "../components/Navbar";
