@@ -1,6 +1,6 @@
 import React from "react";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
-import tr_mobile from "../assets/tournament-rule/tournaments-mobile.webp";
+import tr_mobile from "../assets/TR.webp";
 import { Link } from "react-router-dom";
  
 
@@ -18,18 +18,33 @@ function Terms() {
 
   <div className="flex flex-col w-full grow pb-24 md:py-0 md:flex-row max-w-[1700px] mx-auto relative h-full">
     {/* Text Section */}
-    <div className="relative md:top-0 flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 min-w-[300px] z-10">
-      <h1 className="font-quattrocento font-bold text-5xl sm:text-5xl lg:text-[76px] pt-8 leading-[100%] tracking-[0.025em]  mb-4"
+    <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
+      <h1 className="font-quattrocento font-bold xsm:text-[2.4rem] text-[2.9rem] text-[#201E15] sm:text-5xl lg:text-[80px] pt-8 leading-[100%] tracking-[0.025em] mb-4"
       style={{
-        background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 61%)',
+        background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 66%)',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
         backgroundClip: 'text',
         textFillColor: 'transparent',
         textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
         filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',}}>
-        TERMS OF <br /> USE
+        TERMS <br /> OF USE
       </h1>
+      {/* Mobile-only text added here */}
+      <div className="xsm:text-xs text-sm md:hidden mb-4 xsm:w-[90%] w-[98%]">Review the terms that govern your Golf Meet experience — crafted to ensure a trusted, respectful,
+         and rewarding environment for every player. 
+
+
+      </div>
+    </div>
+    
+    {/* Right Image Section - Desktop only */}
+    <div className="hidden md:flex items-end px-5 md:px-0">
+      {/* <img
+        src={tr_bg}
+        alt="Golfers Illustration"
+        className="w-full h-auto object-contain pointer-events-none md:mr-12 md:mt-4"
+      /> */}
     </div>
     
     {/* Desktop Image Section - Positioned absolutely at bottom */}
@@ -37,7 +52,7 @@ function Terms() {
       <img
         src={tr_bg}
         alt="Golfers Illustration"
-        className="w-full h-auto object-contain pointer-events-none md:mr-12"
+        className="w-[93%] h-auto  object-contain pointer-events-none md:mr-12"
       />
     </div>
   </div>
@@ -47,17 +62,17 @@ function Terms() {
     <img
       src={tr_mobile}
       alt="Mobile Golfers Illustration"
-      className="w-[80%] h-auto pointer-events-none object-contain"
+      className="xsm:w-[88%] w-[90%] h-auto p-3  pointer-events-none object-contain"
     />
   </div>
 </section>
-<section className="flex flex-col items-center justify-center  mt-20 md:mt-20 xl:mt-24 relative mb-6 sm:mb-0">
-          <div className="flex justify-between items-center md:mb-12 text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
+        <section className="flex flex-col items-center justify-center xsm:pt-12 pt-16 bulge-top -mt-7 md:mt-12 relative noise-bg-new sm:mb-0">
+          <div className="flex justify-between items-center font-medium xsm:text-lg text-white bg-[#FFFFFF0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">
-              <h2 className="lg:text-5xl md:4xl text-[1.8rem]  font-bold uppercase font-quattrocento">
+              <h2 className="lg:text-5xl md:4xl text-[1.8rem] uppercase font-quattrocento">
               PRIVACY POLICY
               </h2>
-              <Link to="/privacy-policy"><p className="lg:text-lg md:3xl tect-[1.5rem]  underline underline-offset-4">
+              <Link to="/code-of-conduct"><p className="lg:text-lg md:3xl xsm:text-xs xsm:pt-2 pt-2  underline underline-offset-4">
                 Please refer to the
                 <strong> Privacy Policy </strong> here
               </p></Link>
@@ -72,7 +87,7 @@ function Terms() {
               >
                 <path
                   d="M1 1.5L23 23.5L1 45.5"
-                  stroke="#014D4E"
+                  stroke="#FFF"
                   strokeWidth="2"
                 />
               </svg>
