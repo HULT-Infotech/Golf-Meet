@@ -231,7 +231,7 @@ function FaQ() {
       Find quick answers to common questions about Golf Meet — 
       from how it works to rules & regulations, scoring, and player verification, refund policy. 
       </div>
-      <p className="font-semibold xsm:text-xs">Still need help? We're here for you.</p>
+      <p className="font-semibold xsm:text-xs text-sm">Still need help? We're here for you.</p>
     </div>
   </div>
   
@@ -302,27 +302,6 @@ function FaQ() {
            </div>
          </div>
        </section>
-
-      {/* Two Images Before Footer */}
-      <div className="relative w-full">
-        {/* First image at right edge with no space */}
-        <div className="w-full flex justify-end md:hidden">
-          <img
-            src={land_m1} // Using the same image for demo - replace with desired image
-            alt="Right-aligned image"
-            className="w-[65%] object-contain"
-          />
-        </div>
-        
-        {/* Second image below the first, at left edge with no space */}
-        <div className="w-full flex justify-start -mt-12 md:hidden">
-          <img
-            src={land_m2} // Using land_m1 image as requested
-            alt="Left-aligned image"
-            className="w-[40%] mb-20 object-contain md:hidden"
-          />
-        </div>
-      </div>
 
       {/* Footer with improved top shadow */}
       <div className="relative">

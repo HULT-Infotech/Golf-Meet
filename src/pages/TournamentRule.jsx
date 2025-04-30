@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import gradientbox from "../assets/greenbox.png";
 import land_m1 from "../assets/land-m.svg";
 import land_m2 from "../assets/land-fm1.svg";
+import tr_bg_mobile from "../assets/tournament-rule/check.svg";
 
 function TournamentRule() {
   const [activeSection, setActiveSection] = useState("home");
@@ -128,17 +129,24 @@ function TournamentRule() {
 
   <div className="flex flex-col w-full grow pb-24 md:py-0 md:flex-row max-w-[1700px] mx-auto relative">
     {/* Text Section */}
-    <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 min-w-[300px] z-10">
-      <h1 className="font-quattrocento font-bold text-4xl sm:text-5xl pt-8 lg:text-[76px] leading-[100%] tracking-[0.025em] text-[#201E15] mb-4"style={{
-          background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 60%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          textFillColor: 'transparent',
-          textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
-          filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',}}>
-        TOURNAMENT <br /> RULES
+    <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
+      <h1 className="font-quattrocento font-bold xsm:text-[2.2rem] text-[2.7rem] text-[#201E15] sm:text-5xl lg:text-[80px] pt-8 leading-[100%] tracking-[0.025em] mb-4"
+      style={{
+        background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 64%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
+        textFillColor: 'transparent',
+        textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
+        filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',}}>
+        RULES & <br /> REGULATIONS
       </h1>
+      {/* Mobile-only text added here */}
+      <div className="xsm:text-xs text-sm md:hidden mb-4 xsm:w-[85%] w-[95%]">Play with confidence. Review the rules and guidelines designed to elevate your Golf Meet journey. 
+
+
+      </div>
+      <p className="font-semibold xsm:text-xs text-sm">Need support? We’re just a message away.</p>
     </div>
     
     {/* Right Image Section - Desktop only */}
@@ -152,13 +160,15 @@ function TournamentRule() {
   </div>
   
   {/* Mobile image */}
-  <div className="md:hidden flex items-end px-5 w-full absolute bottom-0">
-    <img
-      src={tr_mobile}
-      alt="Mobile Golfers Illustration"
-      className="w-full h-auto pointer-events-none object-contain"
-    />
-  </div>
+        <div className="absolute bottom-0 pb-4 left-0 right-0 w-full">
+          
+          {/* Mobile image - hidden on desktop */}
+          <img
+            src={tr_bg_mobile}
+            alt="Golfers Illustration Mobile"
+            className="w-[90%] mx-auto object-contain pointer-events-none md:hidden"
+          />
+        </div>
   
   {/* Desktop decorative element */}
   {/* <img
@@ -167,24 +177,15 @@ function TournamentRule() {
     className="hidden md:block absolute md:-bottom-4 left-0 w-[160px] md:w-[240px] lg:w-[360px] xl:w-[460px] lg:-bottom-8 object-contain pointer-events-none"
   /> */}
 </section>
-        {/* Mobile decorative element - Moved outside the section */}
-        <div className="relative md:hidden custom-margin">
-
-          <img
-            src={tr_greenleft_m}
-            alt="Green left element mobile"
-            className="absolute w-full object-contain pointer-events-none -top-16 z-0 bottom-0 left-0"
-          />
-        </div>
 
         {/* Player Code of Conduct section */}
-        <section className="flex flex-col items-center justify-center  mt-52 md:mt-12 relative mb-12 sm:mb-0">
-          <div className="flex justify-between items-center text-[#014D4E] bg-[#014D4E0D] w-[85%] p-7 rounded-md">
+        <section className="flex flex-col items-center justify-center xsm:pt-12 pt-16 bulge-top -mt-7 md:mt-12 relative noise-bg-new sm:mb-0">
+          <div className="flex justify-between items-center font-medium xsm:text-lg text-white bg-[#FFFFFF0D] w-[85%] p-7 rounded-md">
             <div className="flex flex-col">
-              <h2 className="lg:text-5xl md:4xl text-[1.8rem]  font-bold uppercase font-quattrocento">
+              <h2 className="lg:text-5xl md:4xl text-[1.8rem] uppercase font-quattrocento">
                 Player Code of Conduct
               </h2>
-              <Link to="/code-of-conduct"><p className="lg:text-lg md:3xl tect-[1.5rem]  underline underline-offset-4">
+              <Link to="/code-of-conduct"><p className="lg:text-lg md:3xl xsm:text-xs xsm:pt-2 pt-2  underline underline-offset-4">
                 Please refer to the
                 <strong> GolfMeet Tournament Rules </strong> here
               </p></Link>
@@ -199,7 +200,7 @@ function TournamentRule() {
               >
                 <path
                   d="M1 1.5L23 23.5L1 45.5"
-                  stroke="#014D4E"
+                  stroke="#FFF"
                   strokeWidth="2"
                 />
               </svg>
@@ -209,12 +210,9 @@ function TournamentRule() {
 
         {/* Mobile Sections Navigation - Only visible on mobile */}
         <div
-          className="md:hidden w-full py-4 relative noise-bg"
-          style={{
-            background: `linear-gradient(to bottom, #1e4d4d, #0a3333)`, // Changed to use the mobile gradient box image
-          }}
+          className="md:hidden w-full pt-9 xsm:pt-5 xsm:pb-12 pb-16 relative noise-bg-new bulge-bottomm "
         >
-          <h3 className="text-white text-xl font-bold uppercase text-center mb-4">
+          <h3 className="text-white text-xl xsm:text-lg  font-semibold uppercase text-center mb-4">
             SECTIONS
           </h3>
 
@@ -223,7 +221,7 @@ function TournamentRule() {
               {sections.map((section) => (
                 <div
                   key={section.id}
-                  className={`flex-shrink-0 cursor-pointer px-4 py-2 text-white text-center whitespace-nowrap ${
+                  className={`flex-shrink-0 font-normal xsm:text-sm cursor-pointer px-4 py-2 text-white text-center whitespace-nowrap ${
                     activeSection === section.id ? "font-bold" : "opacity-80"
                   }`}
                   onClick={() => handleSectionClick(section.id)}
@@ -425,25 +423,7 @@ function TournamentRule() {
 
       <div ref={footerRef}>
         <img src={tr_last} alt="tr_last" className="md:block hidden w-full mb-8 " />
-        <div className="relative w-full">
-                {/* First image at right edge with no space */}
-                <div className="w-full flex justify-end md:hidden">
-                  <img
-                    src={land_m1} // Using the same image for demo - replace with desired image
-                    alt="Right-aligned image"
-                    className="w-[65%] object-contain"
-                  />
-                </div>
-                
-                {/* Second image below the first, at left edge with no space */}
-                <div className="w-full flex justify-start -mt-12 md:hidden">
-                  <img
-                    src={land_m2} // Using land_m1 image as requested
-                    alt="Left-aligned image"
-                    className="w-[40%] mb-20 object-contain md:hidden"
-                  />
-                </div>
-              </div>
+        
         <div className="relative">
   {/* Subtle bottom shadow that fades upward */}
   <div className="h-6 w-full bg-gradient-to-t from-gray-400 via-gray-100 to-transparent opacity-40"></div>
