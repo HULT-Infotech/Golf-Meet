@@ -124,6 +124,28 @@
 .bulge-topp {
   clip-path: ellipse(285% 100% at 50% 100%);
 }
+/* In your CSS file (e.g., styles.css) */
+.curved-top {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  margin-left: calc(-50vw + 50%); /* Center within parent */
+  background: #014D4E; /* Match section background */
+  clip-path: path('M0,60 C150,0 350,80 500,40 C650,0 850,80 1000,60 L1000,1000 L0,1000 Z');
+}
+
+/* Responsive fallback for screens narrower than 1000px */
+@media (max-width: 1000px) {
+  .curved-top {
+    clip-path: polygon(
+      0% 20%,
+      30% 0%,
+      70% 16%,
+      100% 12%,
+      100% 100%,
+      0% 100%
+    ); /* Simplified wave */
+  }
+}
 
 .bulge-container::before {
   content: "";
