@@ -2,7 +2,7 @@ import React from 'react';
 import golfImage from '../assets/howdd.svg'; 
 const GolfMeetCard = () => {
   return (
-    <div className="w-full flex flex-col noise-bg bg-gray-50 relative">
+    <div className="w-full -mt-10 pt-10 flex flex-col noise-bg bg-gray-50 relative">
       {/* Main container for proper stacking context */}
       <div className="flex flex-col w-full">
         {/* Image positioned as background */}
