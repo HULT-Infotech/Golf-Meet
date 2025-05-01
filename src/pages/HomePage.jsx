@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import VideoSection from "../components/VideoSection";
 import LargeScreen from "../Desktop/LargeScreen";
 import LargeLanding from "../Desktop/Landing-d";
+import Completed from "../Desktop/Completed";
 import LargeHow from "../Desktop/Howitdesk";
 import LargeGolf from "../Desktop/GolfMeetCardd";
 import GolfPrize from "../components/GolfPrize";
@@ -55,9 +56,12 @@ function HomePage() {
         </div>
         <Navbar triggerRef={triggerRef} />
         <LargeHow />
-        <div className="lg:mt-96">
+        <div className="lg:mt-96 relative z-10 -mb-4">
         <LargeGolf />
+        
         </div>
+        <div className="relative z-0">
+        <Completed /></div>
       </div>
     </>
   );

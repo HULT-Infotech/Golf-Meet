@@ -69,7 +69,9 @@ const GolfMeetCard = () => {
           className="absolute bottom-0  left-0 w-full "
           viewBox="0 0 1440 100"
           preserveAspectRatio="none"
+          
         >
+          
           <path
             d="M0,20 C300,-20 360,25 720,40 C1080,90 1260,80 1840,75 L1540,100 L0,100 Z"
             fill="#014D4E"
@@ -78,7 +80,7 @@ const GolfMeetCard = () => {
       </section>
 
       {/* Main green section */}
-      <section className=" mb-32 bulge-bottom-desk noise-bg-new w-full min-h-[60vh] px-10 md:px-20 flex items-center justify-center relative z-10">
+      <section className="  bulge-bottom-desk noise-bg-new w-full min-h-[60vh] px-10 md:px-20 flex items-center justify-center relative z-10">
         <div className="text-white py-20 flex flex-col md:flex-row justify-center items-center md:items-start gap-12 md:gap-20 text-center">
           <div className="flex flex-col items-center">
             <h2 className="text-4xl md:text-5xl font-semibold mb-3">MEET</h2>
