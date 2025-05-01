@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import VideoSection from "../components/VideoSection";
 import LargeScreen from "../Desktop/LargeScreen";
 import LargeLanding from "../Desktop/Landing-d";
+import Prized from "../Desktop/Prize";
 import Completed from "../Desktop/Completed";
 import LargeHow from "../Desktop/Howitdesk";
 import LargeGolf from "../Desktop/GolfMeetCardd";
@@ -62,6 +63,7 @@ function HomePage() {
         </div>
         <div className="relative z-0">
         <Completed /></div>
+        <Prized />
       </div>
     </>
   );
