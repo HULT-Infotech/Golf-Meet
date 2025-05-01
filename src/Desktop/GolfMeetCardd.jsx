@@ -15,14 +15,14 @@ const GolfMeetCard = () => {
         }}
       />
 
-<div className="max-w-lg w-full lg:py-12 font-quattrocento  bg-white shadow-lg p-9 md:p-8 relative z-10">
+<div className="max-w-lg w-full lg:py-12  bg-white shadow-lg p-9 md:p-8 relative z-10">
         <div className="mx-auto relative">
           <h6 className="text-base xsm:text-sm md:text-base font-semibold mb-6 relative z-10 text-center">
             INTRODUCING
           </h6>
           
           <h1
-            className="xsm:text-3xl mb-4 text-4xl text-center md:text-4xl lg:text-6xl mx-auto uppercase font-bold tracking-wider relative z-10"
+            className="xsm:text-3xl font-quattrocento mb-4 text-4xl text-center md:text-4xl lg:text-6xl mx-auto uppercase font-bold tracking-wider relative z-10"
             style={{
               background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 24%)',
               WebkitBackgroundClip: 'text',
@@ -50,10 +50,10 @@ const GolfMeetCard = () => {
         </p>
         
         <div className="mb-2 md:mb-4 text-center">
-          <p className="font-semibold lg:w-[95%] text-lg xsm:text-base md:text-lg  mx-auto text-[#211E16]">
+          <p className="font-semibold lg:w-[95%] text-lg xsm:text-base md:text-lg lg:text-base mx-auto text-[#211E16]">
             With the Golf Meet handicap, all<br /> that matters is your  consistency.
           </p>
-          <p className="mt-2 font-semibold text-lg xsm:text-base md:text-lg  mx-auto text-[#211E16]">
+          <p className="mt-2 font-semibold text-lg xsm:text-base md:text-lg lg:text-base mx-auto text-[#211E16]">
             Not your age or gender.
           </p>
         </div>
