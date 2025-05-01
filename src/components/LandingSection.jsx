@@ -12,7 +12,7 @@ function LandingPage() {
   };
   
   return (
-    <section className="min-h-screen text-center">
+    <section className="min-h-screen text-center md:hidden">
       <div className="relative flex flex-col min-h-[70vh] -mb-2 bg-gray-50 noise-bg-n">
         {/* Top Navbar */}
         <div className="lg:absolute z-40 min-h-20 top-0 mt-2 w-full flex justify-between items-center 

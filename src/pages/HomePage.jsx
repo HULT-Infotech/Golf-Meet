@@ -6,6 +6,7 @@ import FairPlaySection from "../components/FairPlaySection";
 import Footer from "../components/Footer";
 import VideoSection from "../components/VideoSection";
 import LargeScreen from "../Desktop/LargeScreen";
+import LargeLanding from "../Desktop/Landing-d";
 import GolfPrize from "../components/GolfPrize";
 import Medalsection from "../components/Medal";
 import Photosection from "../components/photo";
@@ -47,7 +48,8 @@ function HomePage() {
       </div>
 
       <div className="hidden md:block">
-        <LargeScreen />
+        <LargeLanding />
+
       </div>
     </>
   );
