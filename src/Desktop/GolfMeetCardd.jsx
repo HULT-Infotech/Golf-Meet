@@ -15,7 +15,7 @@ const GolfMeetCard = () => {
         }}
       />
 
-<div className="max-w-lg w-full  bg-white shadow-lg p-9 md:p-8 relative z-10">
+<div className="max-w-lg w-full lg:py-12 font-quattrocento  bg-white shadow-lg p-9 md:p-8 relative z-10">
         <div className="mx-auto relative">
           <h6 className="text-base xsm:text-sm md:text-base font-semibold mb-6 relative z-10 text-center">
             INTRODUCING
@@ -39,21 +39,21 @@ const GolfMeetCard = () => {
         
         <div className="bg-[#014D4E] px-1 mb-3 py-1 rounded-lg relative z-20">
           <h2 className="w-full text-center mx-auto text-base xsm:text-sm md:text-base lg:text-2xl uppercase tracking-wide my-2 md:my-3 text-white font-medium">
-            Play Fair. No More Handicap Inflation!
+            Play Fair. No More Handicap <br />Inflation!
           </h2>
         </div>
         
-        <p className="mt-3 text-sm md:text-base my-3 md:my-4 mx-auto text-center">
+        <p className="mt-3 text-sm lg:text-sm my-3 md:my-4 opacity-85 mx-auto text-center">
           Golf Meet uses machine learning to compute the accurate handicap of
           each player, based on their scores on each hole of every course they
           have played.
         </p>
         
         <div className="mb-2 md:mb-4 text-center">
-          <p className="font-semibold text-lg xsm:text-base md:text-lg mx-auto text-[#211E16]">
-            With the Golf Meet handicap, <br /> all that matters is your <br /> consistency.
+          <p className="font-semibold lg:w-[95%] text-lg xsm:text-base md:text-lg  mx-auto text-[#211E16]">
+            With the Golf Meet handicap, all<br /> that matters is your  consistency.
           </p>
-          <p className="mt-2 font-semibold text-lg xsm:text-base md:text-lg mx-auto text-[#211E16]">
+          <p className="mt-2 font-semibold text-lg xsm:text-base md:text-lg  mx-auto text-[#211E16]">
             Not your age or gender.
           </p>
         </div>
