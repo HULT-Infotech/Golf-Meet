@@ -78,7 +78,7 @@ const GolfMeetCard = () => {
       </section>
 
       {/* Main green section */}
-      <section className="bulge-bottom-desk noise-bg-new w-full min-h-[50vh] px-10 md:px-20 flex items-center justify-center relative z-10">
+      <section className=" mb-32 bulge-bottom-desk noise-bg-new w-full min-h-[60vh] px-10 md:px-20 flex items-center justify-center relative z-10">
         <div className="text-white py-20 flex flex-col md:flex-row justify-center items-center md:items-start gap-12 md:gap-20 text-center">
           <div className="flex flex-col items-center">
             <h2 className="text-4xl md:text-5xl font-semibold mb-3">MEET</h2>
