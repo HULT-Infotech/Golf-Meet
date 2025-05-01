@@ -107,7 +107,7 @@ function Footer() {
             <a href="/rules-regulations" className="hover:underline">
               Rules & Regulations
             </a>
-            <a href="/player-code-of-conduct" className="hover:underline">
+            <a href="code-of-conduct" className="hover:underline">
               Player Code of Conduct
             </a>
             <div className="border-t border-gray-600 my-2"></div>
