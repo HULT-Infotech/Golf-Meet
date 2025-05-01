@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import VideoSection from "../components/VideoSection";
 import LargeScreen from "../Desktop/LargeScreen";
 import LargeLanding from "../Desktop/Landing-d";
+import Last from "../Desktop/final";
 import Prized from "../Desktop/Prize";
 import Completed from "../Desktop/Completed";
 import LargeHow from "../Desktop/Howitdesk";
@@ -64,6 +65,12 @@ function HomePage() {
         <div className="relative z-0">
         <Completed /></div>
         <Prized />
+        <div className="relative z-20">
+        <Last />
+        </div>
+        <div className="relative z-10 -mt-8">
+        <Footer />
+        </div>
       </div>
     </>
   );
