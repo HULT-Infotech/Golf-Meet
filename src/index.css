@@ -112,6 +112,9 @@
 .bulge-top-desk {
   clip-path: ellipse(185% 100% at 50% 100%);
 }
+.bulge-bottom-desk {
+  clip-path: ellipse(185% 100% at 50% 0%);
+}
 .bulge-top-other {
   clip-path: ellipse(375% 100% at 50% 100%);
 }
