@@ -82,7 +82,6 @@ function Footerr() {
           <div className="hidden md:flex md:flex-1 md:justify-between text-white">
             {/* Left column */}
             <div className="flex flex-col space-y-6 uppercase font-quattrocentoSans">
-              <h3 className="uppercase font-bold text-xl tracking-wider mb-2">Navigation</h3>
               <a href="/leaderboard" className="hover:underline tracking-wide">
                 Leaderboard
               </a>
@@ -100,7 +99,6 @@ function Footerr() {
 
             {/* Center column */}
             <div className="flex flex-col space-y-6 uppercase font-quattrocentoSans">
-              <h3 className="uppercase font-bold text-xl tracking-wider mb-2">Information</h3>
               <a href="/faq" className="hover:underline tracking-wide">
                 Frequently Asked Questions
               </a>
@@ -114,7 +112,6 @@ function Footerr() {
 
             {/* Right column */}
             <div className="flex flex-col space-y-6 uppercase font-quattrocentoSans">
-              <h3 className="uppercase font-bold text-xl tracking-wider mb-2">Legal</h3>
               <a href="/refund-policy" className="hover:underline tracking-wide">
                 Refund Policy
               </a>
