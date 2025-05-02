@@ -12,58 +12,53 @@ const EventsAndCostPage = () => {
 
   return (
     <>
-      {/* Photo Section - Improved for larger screens */}
+      {/* Photo Section */}
       <div className="w-full min-h-[70vh] bg-white relative">
-        {/* Heading Section - Centered with improved spacing for larger screens */}
+        {/* Heading Section - Improved fluid typography */}
         <div
-          className="pt-8 sm:pt-10 lg:pt-12 pb-6 sm:pb-8 px-4 text-center font-quattrocento"
+          className="pt-6 sm:pt-8 pb-4 sm:pb-6 px-4 text-center font-quattrocento"
           style={{ fontWeight: "700" }}
         >
           <h1 
             className="font-bold text-teal-800"
-            style={{ fontSize: 'clamp(1.75rem, 5vw, 2.5rem)' }}
+            style={{ fontSize: 'clamp(1.75rem, 5vw, 2.25rem)' }}
           >
             ENJOY EXCLUSIVE
           </h1>
           <h1 
             className="font-bold text-teal-800"
-            style={{ fontSize: 'clamp(1.75rem, 5vw, 2.5rem)' }}
+            style={{ fontSize: 'clamp(1.75rem, 5vw, 2.25rem)' }}
           >
             CURATED EVENTS
           </h1>
         </div>
         
-        {/* Images Section - Flexbox for larger screens */}
-        <div className="px-4 md:px-8 lg:px-16 xl:px-32 mb-6 md:mb-10">
-          <div className="flex flex-col md:flex-row gap-4 md:gap-6 lg:gap-8">
-            {/* First Photo */}
-            <div className="w-full md:w-1/2 mb-6 md:mb-0">
-              <div className="rounded-lg overflow-hidden shadow-md">
-                <img
-                  src={p_1}
-                  alt="People enjoying a social gathering at a golf club"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </div>
-            
-            {/* Second Photo */}
-            <div className="w-full md:w-1/2 relative z-30">
-              <div className="rounded-lg overflow-hidden shadow-md">
-                <img
-                  src={p_2}
-                  alt="Stand-up comedy event at an exclusive venue"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </div>
+        {/* First Photo */}
+        <div className="px-4 mb-6">
+          <div className="rounded-lg overflow-hidden shadow-md">
+            <img
+              src={p_1}
+              alt="People enjoying a social gathering at a golf club"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+        
+        {/* Second Photo - Adding specific z-index to ensure it's above cost section */}
+        <div className="px-4 relative z-30">
+          <div className="rounded-lg overflow-hidden shadow-md">
+            <img
+              src={p_2}
+              alt="Stand-up comedy event at an exclusive venue"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </div>
 
-      {/* Curved Container Section with Tournament Fee - Modified for larger screens */}
-      <div className="w-full -mt-20 sm:-mt-24 md:-mt-28 lg:-mt-32 relative z-20 bulge-bottom">
-        <div className="relative w-full h-auto py-10 sm:py-12 md:py-16 lg:py-20">
+      {/* Curved Container Section with Tournament Fee - Modified to have only top curve */}
+      <div className="w-full -mt-40 sm:-mt-36 md:-mt-44 relative z-20 bulge-bottom">
+        <div className="relative w-full h-auto py-8 sm:py-10 md:py-12">
           <svg
             className="absolute inset-0 w-full h-full z-[-1]"
             viewBox="0 0 100 200"
@@ -88,11 +83,11 @@ const EventsAndCostPage = () => {
               </pattern>
             </defs>
 
-            {/* Modified path with curved top for large screens */}
+            {/* Modified path with only top curve, flat bottom */}
             <path
               d="
                 M0,20 
-                C20,10 80,10 100,20 
+                C20,15 80,15 100,20 
                 L100,200 
                 L0,200 
                 Z
@@ -101,110 +96,93 @@ const EventsAndCostPage = () => {
             />
           </svg>
 
-          {/* Tournament Fee Content - Improved for larger screens */}
+          {/* Tournament Fee Content - Completely responsive with clamp */}
           <div 
-            className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 lg:px-16 text-white pt-20 pb-10 mt-20 sm:mt-16"
+            className="flex flex-col items-center justify-center px-4 sm:px-6 text-white pt-20 pb-4 mt-20 sm:py-30 md:py-40"
+            style={{
+              '--heading-size': 'clamp(1.75rem, 5vw, 1.875rem)',
+              '--price-rupee': 'clamp(1.75rem, 5vw, 2.25rem)',
+              '--price-amount': 'clamp(2.5rem, 7vw, 3rem)',
+              '--subtitle': 'clamp(0.75rem, 2vw, 0.875rem)',
+              '--button-text': 'clamp(0.985rem, 3vw, 1.125rem)',
+              '--important-heading': 'clamp(1.125rem, 4vw, 1.25rem)',
+              '--paragraph': 'clamp(.898rem, 2.5vw, 1rem)',
+              '--paragraphsmall': 'clamp(.8rem, 2.5vw, 1rem)',
+              '--spacing-sm': 'clamp(1rem, 2vw, 1rem)',
+              '--spacing-xsm': 'clamp(.5rem, 2vw, 1rem)',
+              '--spacing-md': 'clamp(2rem, 4vw, 2rem)',
+              '--spacing-lg': 'clamp(2.5rem, 5vw, 2.5rem)',
+            }}
           >
             <h2 
-              className="font-semibold tracking-wider mb-2 text-2xl sm:text-3xl md:text-4xl"
+              className="font-semibold tracking-wider mb-1"
+              style={{ 
+                fontSize: 'var(--heading-size)'
+              }}
             >
-              SUBSCRIPTION FEE
+              PARTICIPATION FEE
             </h2>
-            <p className="text-center opacity-80 mb-8 max-w-md md:max-w-lg lg:max-w-xl text-sm sm:text-base">
-              Subscription fee must be paid every month for retaining your scores and position on the 
-              leaderboard that year.
-            </p>
+            <p className="text-center opacity-80 mb-8  max-w-[17rem] sm:max-w-sm md:max-w-md"
+              style={{ 
+                fontSize: 'var(--paragraphsmall)'
+              }}>Participation fee must be paid every month for retaining your scores and position on the leaderboard that year.</p>
             
-            {/* Price Cards - Horizontal layout for larger screens */}
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-10 mb-12">
-              {/* Pro Card */}
-              <div className="w-[90%] md:w-72 lg:w-80 rounded-lg overflow-hidden shadow-lg relative">
-                {/* Pro Card Background with radial lines */}
-                <div className="absolute inset-0 bg-[#FFF7D9]">
-                  <div className="absolute inset-0" style={{
-                    backgroundImage: 'radial-gradient(circle at 50% 120%, transparent 20%, rgba(231, 201, 45, 0.15) 21%, rgba(231, 201, 45, 0.15) 23%, transparent 24%, transparent 30%, rgba(231, 201, 45, 0.15) 31%, rgba(231, 201, 45, 0.15) 33%, transparent 34%)',
-                    backgroundSize: '240px 240px',
-                  }} />
-                </div>
-                
-                {/* Pro Card Content */}
-                <div className="p-5 sm:p-6 relative z-10">
-                  <h3 className="text-teal-800 font-bold text-xl sm:text-2xl text-center mb-2">
-                    PLAY WITH<br />
-                    PROS AND AMATEURS
-                  </h3>
-                  <p className="text-gray-700 text-sm text-center mb-4">*1 Round per month with a pro</p>
-                  <div className="text-center mt-4">
-                    <div className="flex items-center justify-center">
-                      <span className="text-xl font-bold text-teal-800 mr-1">₹</span>
-                      <span className="text-4xl sm:text-5xl font-bold text-teal-800">5,000</span>
-                    </div>
-                    <p className="text-gray-700 text-sm">+GST PER MONTH</p>
-                  </div>
-                </div>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
+              <div className="w-[90%] md:w-56 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src={price_image1}
+                  alt="Golf Meet price information"
+                  className="w-full h-auto"
+                />
               </div>
-              
-              {/* Amateur Card */}
-              <div className="w-[90%] md:w-72 lg:w-80 rounded-lg overflow-hidden shadow-lg relative">
-                {/* Amateur Card Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300">
-                  <div className="absolute inset-0 opacity-20" style={{
-                    backgroundImage: 'linear-gradient(135deg, transparent 25%, rgba(0, 0, 0, 0.05) 25%, rgba(0, 0, 0, 0.05) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.05) 75%)',
-                    backgroundSize: '20px 20px',
-                  }} />
-                </div>
-                
-                {/* Amateur Card Content */}
-                <div className="p-5 sm:p-6 relative z-10">
-                  <h3 className="text-gray-700 font-bold text-xl sm:text-2xl text-center mb-6">
-                    PLAY WITH<br />
-                    AMATEURS ONLY
-                  </h3>
-                  <div className="text-center mt-4">
-                    <div className="flex items-center justify-center">
-                      <span className="text-xl font-bold text-gray-700 mr-1">₹</span>
-                      <span className="text-4xl sm:text-5xl font-bold text-gray-700">2,000</span>
-                    </div>
-                    <p className="text-gray-600 text-sm">+GST PER MONTH</p>
-                  </div>
-                </div>
+              <div className="w-[90%] md:w-56 rounded-lg overflow-hidden shadow-md">
+                <img
+                  src={price_image2}
+                  alt="Golf Meet membership benefits"
+                  className="w-full h-auto"
+                />
               </div>
             </div>
             
-            {/* Call-to-action Button - Larger for better visibility */}
             <button 
               onClick={handleWhatsAppClick}
-              className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] shadow-xl 
-                        font-quattrocento text-[#FFF7D9] font-bold py-3 md:py-4 px-8 md:px-10 
-                        rounded tracking-wider text-lg md:text-xl mb-16"
+              className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] shadow-xl font-quattrocento text-[#FFF7D9] font-bold py-2 mb-[3.7rem] sm:py-3 px-7 sm:px-8 rounded tracking-wider"
+              style={{ 
+                fontSize: 'var(--button-text)',
+              }}
             >
               SIGN UP VIA WHATSAPP
             </button>
             
-            {/* Important Information - Improved layout for larger screens */}
             <h3 
-              className="font-semibold text-center text-xl md:text-2xl mb-4"
+              className="font-semibold text-center"
+              style={{ 
+                fontSize: 'var(--important-heading)',
+                marginBottom: 'var(--spacing-sm)'
+              }}
             >
               IMPORTANT
             </h3>
             
-            {/* Important text in a max-width container for better readability on large screens */}
-            <div className="max-w-2xl mx-auto">
-              <p 
-                className="text-center opacity-80 mb-6 text-base md:text-lg"
-              >
-                As many golfers use club memberships or complimentary rounds from credit 
-                cards to book their games, the Golf Meet tournament fee does not include 
-                green fees.
-              </p>
-              
-              <p 
-                className="text-center opacity-80 text-base md:text-lg"
-              >
-                This approach also gives you and your fellow players the flexibility to choose 
-                and book your preferred tee times directly with the golf course.
-              </p>
-            </div>
+            <p 
+              className="text-center opacity-70 max-w-[20rem] sm:max-w-sm md:max-w-md"
+              style={{ 
+                fontSize: 'var(--paragraph)',
+                marginBottom: 'var(--spacing-sm)'
+              }}
+            >
+              As many golfers use club memberships or complimentary rounds from credit 
+              cards to book their games, the Golf Meet tournament fee does not include 
+              green fees.
+            </p>
+            
+            <p 
+              className="text-center opacity-75 max-w-xs sm:max-w-sm md:max-w-md"
+              style={{ fontSize: 'var(--paragraph)' }}
+            >
+              This approach also gives you and your fellow players the flexibility to choose 
+              and book your preferred tee times directly with the golf course.
+            </p>
           </div>
         </div>
       </div>
