@@ -54,10 +54,7 @@ function HomePage() {
       </div>
 
       <div className="hidden md:block">
-      <div className="z-20 relative" ref={triggerRef}>
         <LargeLanding />
-        </div>
-        <Navbar triggerRef={triggerRef} />
         <LargeHow />
         <div className="lg:mt-96 relative z-10 -mb-4">
         <LargeGolf />
