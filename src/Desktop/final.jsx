@@ -66,7 +66,7 @@ const EventsAndCostPage = () => {
 
           {/* Tournament Fee Content - First Div */}
           <div 
-            className="flex flex-col noise-bg-new items-center bulge-top  justify-center px-4 sm:px-6 lg:px-12 text-white  mt-20 sm:py-30 md:py-3"
+            className="flex flex-col noise-bg-newest items-center bulge-top  justify-center px-4 sm:px-6 lg:px-12 text-white  mt-20 sm:py-30 md:py-3"
             style={{
               '--heading-size': 'clamp(1.75rem, 5vw, 2.7rem)',
               '--price-rupee': 'clamp(1.75rem, 5vw, 2.25rem)',
@@ -121,7 +121,7 @@ const EventsAndCostPage = () => {
       </div>
       
       {/* Second Div - Important Information Section */}
-      <div className="w-full relative -mt-20 z-10 bulge-bottom-desk noise-bg-new">
+      <div className="w-full relative -mt-20 z-10 bulge-bottom-desk noise-bg-newest">
         <div className="relative w-full h-auto py-8 sm:py-10 md:py-12">
           {/* Important Info Content - Second Div */}
           <div 

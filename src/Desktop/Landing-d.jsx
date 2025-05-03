@@ -104,7 +104,7 @@ function DesktopTabletLandingPage() {
       </div>
 
       {/* Second section - no gap */}
-      <section className="relative h-[113vh] bulge-top-desk -mt-8 z-10 w-full overflow-hidden noise-bg-new">
+      <section className="relative h-[113vh] bulge-top-desk -mt-8 z-10 w-full overflow-hidden noise-bg-newest">
       
       {/* Content positioned above the image */}
       <div className="relative z-20 max-w-xl mx-auto px-4">
@@ -150,7 +150,7 @@ function DesktopTabletLandingPage() {
       <img 
         src={landingbg}
         alt="Golf players" 
-        className="absolute bottom-0 mt-10 left-0 w-full object-cover object-bottom z-10"
+        className="absolute bottom-0 mt-10 left-0 w-full object-cover object-bottom opacity-80 z-10"
         style={{ maxHeight: '100%' }}
       />
     </section>

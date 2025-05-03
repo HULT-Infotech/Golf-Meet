@@ -73,7 +73,7 @@ const CombinedGolfPage = () => {
 
         {/* Leaderboard Card Section */}
         <div className="container mx-auto px-4 pb-16 max-w-6xl">
-          <div className="rounded-2xl mx-auto max-w-xl md:max-w-3xl lg:max-w-3xl bg-[#01383A] noise-bg-new overflow-hidden shadow-lg" 
+          <div className="rounded-2xl mx-auto max-w-xl md:max-w-3xl lg:max-w-3xl noise-bg-newest overflow-hidden shadow-lg" 
             style={{
               color: "white",
               padding: "2.5rem 2rem",
