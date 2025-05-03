@@ -8,23 +8,24 @@ import p_2 from "../assets/Photosection/p2.webp";
 const GolfPrize = () => {
   return (
     <>
-    <div className="relative w-full -mt-12 h-[100vh]">
-      {/* Background Image with specified gradient */}
-      <div
-        className="absolute inset-0 bulge-bottom"
-        style={{
-          background: `linear-gradient(180deg, rgba(17, 84, 125, 0.9) 13.28%, rgba(17, 84, 125, 0) 68%),
-                      linear-gradient(0deg, rgba(1, 77, 78, 0.4), rgba(1, 77, 78, 0.4)),
-                      url(${bgPrize})`,
-          backgroundSize: '100% auto',
-          backgroundPosition: 'center top',
-          backgroundRepeat: 'no-repeat',
-        }}
-      >
-      </div>
-      
-      {/* Content */}
-      <div className="relative h-full flex flex-col items-center justify-center text-white text-center bulge-bottom px-6">
+<div className="relative w-full -mt-12 h-[100vh]">
+  {/* Background Image with specified gradient */}
+  <div
+    className="absolute inset-0 bulge-bottom"
+    style={{
+      background: `linear-gradient(180deg, rgba(17, 84, 125, 0.9) 13.28%, rgba(17, 84, 125, 0) 68%),
+                  linear-gradient(0deg, rgba(1, 77, 78, 0.4), rgba(1, 77, 78, 0.4)),
+                  url(${bgPrize})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}
+  >
+  </div>
+  
+  {/* Content */}
+  <div className="relative h-full flex flex-col items-center justify-center text-white text-center bulge-bottom px-6">
+    
         {/* Golf Flag Icon */}
         <div className="mb-4">
           <img src={flag} alt="Golf Flag" className="w-8 h-8 mx-auto" />

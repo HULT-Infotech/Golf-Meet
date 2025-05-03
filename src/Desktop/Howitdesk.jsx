@@ -3,12 +3,12 @@ import bgI from "../assets/bgggggg.webp";
 
 const HowItWorksSection = () => {
   return (
-    <section className="relative pt-16 -mt-16 z-30 overflow-visible">
+    <section className="relative h-auto pt-16 -mt-16 z-30 overflow-visible">
       {/* Background image as a separate element */}
       <img
         src={bgI}
         alt="Golf course background"
-        className="absolute top-0 left-0 w-full h-auto z-0"
+        className="absolute top-0 left-0 w-full h-auto  z-0"
         style={{
           objectFit: "contain",
           objectPosition: "center top"
@@ -19,7 +19,7 @@ const HowItWorksSection = () => {
       <div className="relative z-10 container mx-auto" style={{ pointerEvents: "none" }}>
         {/* Main heading */}
         <h1
-          className="text-[64px] px-10 lg:mt-8 font-quattrocento font-bold md:text-[64px] leading-[70.91px] tracking-[0.025em] text-center text-[#014D4E] md:text-5xl mb-10 lg:mb-0"
+          className="text-[64px] px-10 lg:mt-8 font-quattrocento font-bold lg:text-[50px] xl:text-[64px] leading-[70.91px] tracking-[0.025em] text-center text-[#014D4E] md:text-5xl mb-10 lg:mb-0"
           style={{ textShadow: "0px 0px 6px #F4D4555C", pointerEvents: "auto" }}
         >
           HOW IT WORKS
