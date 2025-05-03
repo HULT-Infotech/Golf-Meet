@@ -12,6 +12,9 @@ import l8 from "../assets/LeaderPage/leader8.svg";
 import l9 from "../assets/LeaderPage/leader9.svg";
 import l10 from "../assets/LeaderPage/leader10.svg";
 import l11 from "../assets/LeaderPage/noleader.svg";
+import bgImage from "../assets/bgffff.png";
+import bgImage1 from "../assets/bg1.svg";
+import bgImage2 from "../assets/bg2.svg";
 
 // Simple Loading Component
 const LoadingScreen = () => {
@@ -108,12 +111,12 @@ function LeaderPage() {
       // Updated design with the specific gradient and no rank text
       return (
         <div className="wrapper" key={player.id} style={{ 
-          width: 'clamp(280px, calc(100% - 24px), 370px)',
+          width: 'clamp(340px, calc(100% - 24px), 450px)',
           margin: '0 auto'
         }}>
           <div style={{ 
             width: '100%', 
-            height: '150px'
+            height: '160px'
           }} className="bg-white mb-8 rounded-2xl shadow-xl relative">
             {/* Using l11 image in same position as other avatars */}
             <img src={player.image} alt="placeholder" className="absolute -top-[0.6rem] left-8 z-20" />
@@ -125,12 +128,12 @@ function LeaderPage() {
               background: 'linear-gradient(180deg, rgba(244, 212, 85, 0) 0%, #F4D455 100%)'
             }} className="z-10 rounded-2xl flex flex-col items-start justify-center pl-28">
               <span className="text-[#01383A] text-xs font-medium">RANK #{player.rank}</span>
-              <span className="text-[#01383A] text-sm font-bold">{player.name}</span>
+              <span className="text-[#01383A] text-lg font-bold">{player.name}</span>
               <span className="text-[#01383A] text-xs opacity-75">{player.phone}</span>
             </div>
             
             {/* Bottom section - with 3 metrics including GM HCP */}
-            <div className="flex justify-between px-4 pt-4 items-center">
+            <div className="flex justify-between px-6 pt-4 items-center">
               <div className="flex items-center">
                 <span className="text-[#01383A] font-semibold text-xs mr-1">ROUNDS:</span>
                 <div className="bg-[#014D4E1A] rounded-full px-3 py-1">
@@ -157,22 +160,22 @@ function LeaderPage() {
       // Original card design for top 10 players, now with GM HCP added
       return (
         <div className="wrapper" key={player.id} style={{ 
-          width: 'clamp(280px, calc(100% - 24px), 370px)',
+          width: 'clamp(340px, calc(100% - 24px), 450px)',
           margin: '0 auto'
         }}>
           <div style={{ 
             width: '100%', 
-            height: '150px'
+            height: '160px'
           }} className="bg-white mb-8 rounded-2xl shadow-xl relative">
             <img src={player.image} alt="placeholder" className="absolute -top-[0.6rem] left-8 z-20" />
             <div style={{ 
               width: '100%', 
               height: '85px'
             }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex flex-col items-start justify-center pl-28">
-              <span className="text-white text-sm font-medium">{player.name}</span>
+              <span className="text-white text-lg font-medium">{player.name}</span>
               <span className="text-white text-sm opacity-75">{player.phone}</span>
             </div>
-            <div className="flex justify-between px-4 pt-4 items-center">
+            <div className="flex justify-between px-6 pt-4 items-center">
               <div className="flex items-center">
                 <span className="text-[#01383A] font-semibold text-xs mr-1">ROUNDS:</span>
                 <div className="bg-[#014D4E1A] rounded-full px-3 py-1">
@@ -200,26 +203,86 @@ function LeaderPage() {
 
   return (
     <>
-      <section className="h-auto noise-bg-n pb-12">
-          
+      {/* Main section with background image and noise overlay */}
+      <div className="relative min-h-screen noise-bg-newest">
+        
       <Navbar/>
-      <div style={{ height: "80px" }} className=" md:h-[90px] lg:h-[100px]" />
-
-      <h1 
-        className="font-quattrocento font-bold text-4xl mt-16 mb-2 text-center"
-        style={{
-          background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 45%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          textFillColor: 'transparent',
-          textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
-          filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',
-        }}
-      >
-        LEADERBOARD
-      </h1>
+        {/* Background image for top half with gradient overlay */}
+        <div className="absolute top-0 bulge-bottom left-0 w-full h-1/2 z-1 overflow-hidden">
+          {/* Original background image */}
+          <div
+            style={{
+              backgroundImage: `url(${bgImage})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              width: '100%',
+              height: '100%',
+              position: 'absolute',
+              top: 0,
+              left: 0
+            }}
+          ></div>
           
+          {/* Sky blue gradient at the top */}
+          <div
+            style={{
+              background: `linear-gradient(180deg, #87CEFA 0%, #ADE4FF 25%, #C1E8FF 40%, rgba(217, 243, 255, 0.8) 60%, rgba(235, 249, 255, 0.6) 75%, rgba(255, 255, 255, 0) 100%)`,
+              width: '100%',
+              height: '60%',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              opacity: 0.95
+            }}
+          ></div>
+          
+          {/* Very light white fade below the blue gradient */}
+          <div
+            style={{
+              background: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.15) 40%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 0.05) 80%, rgba(255, 255, 255, 0) 100%)`,
+              width: '100%',
+              height: '40%',
+              position: 'absolute',
+              top: '60%',
+              left: 0
+            }}
+          ></div>
+        </div>
+        
+        {/* Noise background for bottom half with -mt-4 margin */}
+        <div className="absolute -mt-4 bottom-0 left-0 w-full h-1/2 noise-bg-newest z-0"></div>
+        
+        {/* Corner image - restored to original */}
+        <img 
+          src={bgImage1} 
+          alt="" 
+          className="absolute bottom-0 left-0 w-[26rem] h-auto object-contain z-10"
+        />
+        
+        <img 
+          src={bgImage2} 
+          alt="" 
+          className="absolute bottom-0 right-0 w-[38rem] h-auto object-contain z-10"
+        />
+        
+        {/* Content container */}
+        <div className="relative z-10">
+          <div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
+
+          <h1 
+            className="font-quattrocento font-bold text-4xl mt-16 mb-2 text-center"
+            style={{
+              background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 45%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              textFillColor: 'transparent',
+              textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
+              filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',
+            }}
+          >
+            LEADERBOARD
+          </h1>
           
           {/* Updated Search bar component with clear button */}
           <div className="flex flex-col items-center mb-6">
@@ -282,15 +345,13 @@ function LeaderPage() {
             </div>
           )}
           
-          {/* Player cards section - Same layout for all screen sizes, just centered */}
-          <section className="flex flex-col items-center mx-auto my-12">
-            {/* Same card layout for all screen sizes */}
-            <div className="flex flex-col items-center w-full">
-              {!hasSearched || !searchTerm
-                ? filteredPlayers.slice(0, 10).map(player => renderPlayerCard(player))
-                : filteredPlayers.map(player => renderPlayerCard(player))
-              }
-            </div>
+          {/* Player cards section */}
+          <section className="flex flex-col items-center mx-auto my-12 pb-12 overflow-hidden">
+            {/* Display only top 10 players if not searching */}
+            {!hasSearched || !searchTerm
+              ? filteredPlayers.slice(0, 10).map(player => renderPlayerCard(player))
+              : filteredPlayers.map(player => renderPlayerCard(player))
+            }
             
             {/* No more results message */}
             {hasSearched && searchTerm && filteredPlayers.length > 0 && (
@@ -306,16 +367,8 @@ function LeaderPage() {
               </div>
             )}
           </section>
-
-      </section>
-
-        {/* Footer with improved top shadow */}
-        <div className="relative -mt-20">
-          {/* Subtle bottom shadow that fades upward */}
-          <div className="h-6 w-full bg-gradient-to-t from-gray-400 via-gray-100 to-transparent opacity-40"></div>
-          {/* Footer component */}
-          <Footer className=""/>
         </div>
+      </div>
     </>
   );
 }

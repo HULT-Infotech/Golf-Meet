@@ -2,6 +2,8 @@ import React from 'react';
 import bgPrize from "../assets/pd.png";
 import flag from "../assets/GolfPrize/Vector.svg";
 import bgMedal from "../assets/pdd.png";
+import p_1 from "../assets/Photosection/p1.webp";
+import p_2 from "../assets/Photosection/p2.webp";
 
 const GolfPrize = () => {
   return (
@@ -136,6 +138,51 @@ const GolfPrize = () => {
               top: 0
             }}
           />
+        </div>
+      </div>
+    </div>
+          <div className="w-full min-h-[70vh] -mt-24 bg-white relative">
+      {/* Heading Section - Improved fluid typography */}
+      <div
+        className="pt-6 sm:pt-8 md:pt-10 pb-4 sm:pb-6 px-4 text-center font-quattrocento"
+        style={{ fontWeight: "700" }}
+      >
+        <h1
+          className="font-bold text-teal-800"
+          style={{ fontSize: 'clamp(1.75rem, 5vw, 2.5rem)' }}
+        >
+          ENJOY EXCLUSIVE
+        </h1>
+        <h1
+          className="font-bold text-teal-800"
+          style={{ fontSize: 'clamp(1.75rem, 5vw, 2.5rem)' }}
+        >
+          CURATED EVENTS
+        </h1>
+      </div>
+      
+      {/* Photos Container - Centered horizontally and side by side on larger screens */}
+      <div className="px-4 md:px-8 lg:px-16 mx-auto xl:px-32 flex flex-col md:flex-row md:gap-6 justify-center">
+        {/* First Photo */}
+        <div className="mb-6 md:mb-0 md:w-1/3">
+          <div className="rounded-lg overflow-hidden">
+            <img
+              src={p_1}
+              alt="People enjoying a social gathering at a golf club"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+        
+        {/* Second Photo - Adding specific z-index to ensure it's above cost section */}
+        <div className="relative  md:w-1/3">
+          <div className="rounded-lg overflow-hidden">
+            <img
+              src={p_2}
+              alt="Stand-up comedy event at an exclusive venue"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </div>
     </div>
