@@ -66,13 +66,13 @@ const CombinedGolfPage = () => {
               src={Illustration_Golf_Balls}
               draggable="false"
               alt="Golf Balls"
-              className="mx-auto w-full md:w-1/2 lg:w-3/5 xl:w-6/12"
+              className="mx-auto w-full md:w-1/2 lg:w-2/5 xl:w-5/12"
             />
           </div>
         </div>
 
         {/* Leaderboard Card Section */}
-        <div className="container mx-auto px-4 pb-16 max-w-6xl">
+        <div className="container mx-auto px-4 pb-16 max-w-3xl">
           <div className="rounded-2xl mx-auto max-w-xl md:max-w-3xl lg:max-w-3xl noise-bg-newest overflow-hidden shadow-lg" 
             style={{
               color: "white",
@@ -84,7 +84,7 @@ const CombinedGolfPage = () => {
             <h2
               className="font-quattrocento font-bold mb-6 md:mb-8"
               style={{
-                fontSize: "clamp(2.25rem, 9vw, 4.3rem)",
+                fontSize: "clamp(2.25rem, 9vw, 3.8rem)",
                 background: "linear-gradient(180deg, #FFF2BF 0%, #F4D455 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
@@ -94,29 +94,30 @@ const CombinedGolfPage = () => {
                 display: "inline-block",
               }}
             >
-              PLAY<br />
-              UNLIMITED<br />
+              PLAY UNLIMITED<br />
               ROUNDS.
             </h2>
             
-            <div className="w-full h-px mb-4" 
-              style={{
-                background: "linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%)"
-              }}
-            ></div>
+            <div 
+  className="w-[55%] h-px mb-4 mx-auto"
+  style={{
+    background: "linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%)"
+  }}
+></div>
             
             {/* Card Subtitle */}
             <div className="mb-4">
-              <h3 className="text-white text-2xl md:text-3xl font-quattrocento font-semibold mb-4">
+              <h3 className="text-white text-2xl md:text-3xl lg:text-4xl font-quattrocento font-semibold mb-4">
                 THE BEST 12 MAKE<br />
                 IT TO THE<br />
                 LEADERBOARD.
               </h3>
-              <div className="w-full h-px mb-8 md:mb-12" 
-                style={{
-                  background: "linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%)"
-                }}
-              ></div>
+              <div 
+  className="w-[55%] h-px mb-4 mx-auto"
+  style={{
+    background: "linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%)"
+  }}
+></div>
             </div>
             
             {/* Important Section */}
