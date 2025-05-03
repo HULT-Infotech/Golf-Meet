@@ -62,7 +62,9 @@ function HomePage() {
         </div>
         <div className="relative z-0">
         <Completed /></div>
+        <div className="relative -z-10 -mt-6 ">
         <Prized />
+        </div>
         <div className="relative z-20">
         <Last />
         </div>

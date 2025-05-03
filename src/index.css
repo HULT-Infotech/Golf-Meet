@@ -78,7 +78,17 @@
 
 
 
-
+.element {
+  clip-path: polygon(
+    0% 0%,      /* Top-left */
+    100% 0%,    /* Top-right */
+    100% 100%,  /* Bottom-right */
+    60% 100%,   /* Right curve point */
+    50% 80%,    /* Bottom center (inward bulge) */
+    40% 100%,   /* Left curve point */
+    0% 100%     /* Bottom-left */
+  );
+}
 
 
 .noise-bg-new {

@@ -1,5 +1,5 @@
 import React from 'react';
-import bgPrize from "../assets/pd.png";
+import bgPrize from "../assets/pddddd.png";
 import flag from "../assets/GolfPrize/Vector.svg";
 import bgMedal from "../assets/pdd.png";
 import p_1 from "../assets/Photosection/p1.webp";
@@ -8,12 +8,17 @@ import p_2 from "../assets/Photosection/p2.webp";
 const GolfPrize = () => {
   return (
     <>
-    <div className="relative w-full -mt-12  h-[100vh]">
-      {/* Background Image */}
+    <div className="relative w-full -mt-12 h-[100vh]">
+      {/* Background Image with specified gradient */}
       <div
-        className="absolute inset-0 bulge-top  bg-cover bg-center"
+        className="absolute inset-0 bulge-bottom"
         style={{
-          backgroundImage: `url(${bgPrize})`,
+          background: `linear-gradient(180deg, rgba(17, 84, 125, 0.9) 13.28%, rgba(17, 84, 125, 0) 68%),
+                      linear-gradient(0deg, rgba(1, 77, 78, 0.4), rgba(1, 77, 78, 0.4)),
+                      url(${bgPrize})`,
+          backgroundSize: '100% auto',
+          backgroundPosition: 'center top',
+          backgroundRepeat: 'no-repeat',
         }}
       >
       </div>
@@ -141,7 +146,7 @@ const GolfPrize = () => {
         </div>
       </div>
     </div>
-          <div className="w-full min-h-[70vh] -mt-24 bg-white relative">
+    <div className="w-full min-h-[70vh] -mt-24 bg-white relative">
       {/* Heading Section - Improved fluid typography */}
       <div
         className="pt-6 sm:pt-8 md:pt-10 pb-4 sm:pb-6 px-4 text-center font-quattrocento"
@@ -175,7 +180,7 @@ const GolfPrize = () => {
         </div>
         
         {/* Second Photo - Adding specific z-index to ensure it's above cost section */}
-        <div className="relative  md:w-1/3">
+        <div className="relative md:w-1/3">
           <div className="rounded-lg overflow-hidden">
             <img
               src={p_2}

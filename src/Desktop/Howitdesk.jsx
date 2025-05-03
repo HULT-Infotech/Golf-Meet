@@ -1,5 +1,5 @@
 import React from "react";
-import bgI from "../assets/howbgd.svg";
+import bgI from "../assets/bgggggg.webp";
 
 const HowItWorksSection = () => {
   return (

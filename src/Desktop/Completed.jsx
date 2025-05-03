@@ -7,7 +7,7 @@ const CombinedGolfPage = () => {
   return (
     <>
       {/* CompletePage Section */}
-      <div className="mx-auto relative bg-gray-50 -mt-8 noise-bg z-10 pt-10 md:pt-16 lg:pt-24">
+      <div className="mx-auto relative bg-gray-50  -mt-8 noise-bg z-10 pt-10 md:pt-16 lg:pt-24">
         <div className="container mx-auto px-4 text-center mt-3 mb-12 md:mb-16 lg:mb-20 max-w-6xl">
           {/* Heading for Desktop & Tablets */}
           <h1 
@@ -135,6 +135,34 @@ const CombinedGolfPage = () => {
           </div>
         </div>
       </div>
+      <svg
+  viewBox="0 0 1440 100"
+  xmlns="http://www.w3.org/2000/svg"
+  className="w-full h-auto -mb-[1px]"
+  preserveAspectRatio="none"
+>
+  <defs>
+    <filter id="noiseFilterBottom">
+      <feTurbulence 
+        type="fractalNoise" 
+        baseFrequency="6" 
+        numOctaves="6" 
+        stitchTiles="stitch"
+      />
+    </filter>
+    
+    <pattern id="noisePatternBottom" patternUnits="userSpaceOnUse" width="400" height="400">
+      <rect width="100%" height="100%" fill="#f9fafb" />
+      <rect width="100%" height="100%" filter="url(#noiseFilterBottom)" opacity="0.5" />
+    </pattern>
+  </defs>
+  
+  <path
+    d="M0,100 C480,60 960,60 1440,100 L1440,0 L0,0 Z"
+    fill="url(#noisePatternBottom)"
+  />
+</svg>
+
     </>
   );
 };
