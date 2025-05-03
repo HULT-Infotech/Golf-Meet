@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
-import tr_bg from "../assets/tournament-rule/right-bg.svg";
 import tr_greenleft from "../assets/tournament-rule/tr-green-left.svg";
 import tr_greenleft_m from "../assets/tournament-rule/green-mobile.svg";
 import tr_last from "../assets/tournament-rule/tr-last.svg";
@@ -17,9 +16,7 @@ function TournamentRule() {
   const sidebarRef = useRef(null);
   const footerRef = useRef(null);
   const handleWhatsAppClick = () => {
-    // The phone number provided: +91-888 484 4444
-    // Remove non-numeric characters for the WhatsApp link
-    const phoneNumber = "918884844444"; // Added country code without + sign
+    const phoneNumber = "918884844444";
     window.open(`https://wa.me/${phoneNumber}`, "_blank");
   };
   const sections = [
@@ -117,9 +114,48 @@ function TournamentRule() {
       <Navbar />
       <div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
 
-      {/* Main container */}
+      {/* Desktop Hero Section - Visible only on medium screens and up */}
+      <section className="hidden md:block sm:bg-gray-100 sm:noise-bg noise-bg-n min-h-[90vh] relative flex flex-col overflow-hidden">
+        {/* Content container with flex structure */}
+        <div className="flex flex-col w-full flex-1 md:flex-row max-w-[1700px] mx-auto relative pt-4 md:pt-16">
+          {/* Text Section */}
+          <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
+            <h1 
+              className="font-quattrocento font-bold xsm:text-[2.3rem] text-[2.9rem] text-[#201E15] sm:text-5xl lg:text-[80px] pt-8 leading-[100%] tracking-[0.025em] mb-4"
+              style={{
+                background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 64%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                textFillColor: 'transparent',
+                textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
+                filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',
+              }}
+            >
+              RULES & <br /> REGULATIONS
+            </h1>
+            <div className="text-sm w-[95%] mb-4">
+              Play with confidence. Review the rules and guidelines designed to elevate your Golf Meet journey.
+            </div>
+            <p className="font-semibold text-sm">
+              Need support? We’re just a message away.
+            </p>
+          </div>
+          
+          {/* Desktop image container - Right side */}
+          <div className="relative bottom-0 right-0 md:w-1/2">
+            <img
+              src={tr_bg_mobile}
+              alt="Golfers Illustration"
+              className="w-[70%] h-auto object-contain pointer-events-none md:mr-12"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Main container for mobile */}
       <div className="md:h-[108vh] flex flex-col relative md:hidden">
-        {/* Hero section */}
+        {/* Hero section for mobile */}
         <section className="bg-gray-100 noise-bg-n relative min-h-[90vh] flex flex-col overflow-hidden">
           <div className="flex flex-col w-full flex-1 md:flex-row max-w-[1700px] mx-auto relative">
             {/* Text Section */}
@@ -142,16 +178,7 @@ function TournamentRule() {
               <div className="xsm:text-xs text-sm md:hidden mb-4 xsm:w-[85%] w-[95%]">
                 Play with confidence. Review the rules and guidelines designed to elevate your Golf Meet journey.
               </div>
-              <p className="font-semibold xsm:text-xs text-sm">Need support? We're just a message away.</p>
-            </div>
-            
-            {/* Desktop Image Section - Hidden on mobile */}
-            <div className="hidden md:block relative bottom-0 right-0 md:w-1/2">
-              <img
-                src={tr_bg}
-                alt="Golfers Illustration"
-                className="w-[93%] h-auto object-contain pointer-events-none md:mr-12"
-              />
+              <p className="font-semibold xsm:text-xs text-sm">Need support? We’re just a message away.</p>
             </div>
           </div>
           
@@ -236,7 +263,7 @@ function TournamentRule() {
           ref={sidebarRef}
           className="hidden md:block w-80 text-white p-6 rounded-md sticky top-28 self-start mt-10 mr-20 transition-transform"
           style={{
-            background: `url(${gradientbox})`, // Keep the original gradient box for desktop
+            background: `url(${gradientbox})`,
           }}
         >
           <h3 className="font-bold text-[32px] leading-[100%] tracking-[0em] uppercase mb-6">
@@ -428,7 +455,7 @@ function TournamentRule() {
             font-size: 58px;
           }
           /* Right image (golfers illustration) */
-          img[src="${tr_bg}"] {
+          img[src="${tr_bg_mobile}"] {
             max-width: 1200px;
             margin-right: 6rem;
           }
