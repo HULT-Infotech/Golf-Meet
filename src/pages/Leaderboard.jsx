@@ -34,27 +34,27 @@ function LeaderPage() {
   
   // Mock player data - replace with your actual player data
   const playerData = [
-    { id: 1, name: "Rohan Singh", rounds: 15, points: 320, image: l1, phone: "+91 - XXXX XX0 912" },
-    { id: 2, name: "Rohan Kumar", rounds: 12, points: 280, image: l2, phone: "+91 - XXXX XX0 912" },
-    { id: 3, name: "Rohan Gupta", rounds: 10, points: 240, image: l3, phone: "+91 - XXXX XX0 912" },
-    { id: 4, name: "TBD", rounds: 0, points: 0, image: l4, phone: "+91 - XXXX XX0 912" },
-    { id: 5, name: "TBD", rounds: 0, points: 0, image: l5, phone: "+91 - XXXX XX0 912" },
-    { id: 6, name: "TBD", rounds: 0, points: 0, image: l6, phone: "+91 - XXXX XX0 912" },
-    { id: 7, name: "TBD", rounds: 0, points: 0, image: l7, phone: "+91 - XXXX XX0 912" },
-    { id: 8, name: "TBD", rounds: 0, points: 0, image: l8, phone: "+91 - XXXX XX0 912" },
-    { id: 9, name: "TBD", rounds: 0, points: 0, image: l9, phone: "+91 - XXXX XX0 912" },
-    { id: 10, name: "TBD", rounds: 0, points: 0, image: l10, phone: "+91 - XXXX XX0 912" },
+    { id: 1, name: "Rohan Singh", rounds: 15, points: 320, gmHcp: 12, image: l1, phone: "+91 - XXXX XX0 912" },
+    { id: 2, name: "Rohan Kumar", rounds: 12, points: 280, gmHcp: 18, image: l2, phone: "+91 - XXXX XX0 912" },
+    { id: 3, name: "Rohan Gupta", rounds: 10, points: 240, gmHcp: 24, image: l3, phone: "+91 - XXXX XX0 912" },
+    { id: 4, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l4, phone: "+91 - XXXX XX0 912" },
+    { id: 5, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l5, phone: "+91 - XXXX XX0 912" },
+    { id: 6, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l6, phone: "+91 - XXXX XX0 912" },
+    { id: 7, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l7, phone: "+91 - XXXX XX0 912" },
+    { id: 8, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l8, phone: "+91 - XXXX XX0 912" },
+    { id: 9, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l9, phone: "+91 - XXXX XX0 912" },
+    { id: 10, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l10, phone: "+91 - XXXX XX0 912" },
     // Additional players that only appear in search results
-    { id: 11, name: "Rohan Sharma", rounds: 123, points: 9999, image: l11, phone: "+91 - XXXX XX0 912", rank: 1103 },
-    { id: 12, name: "Rohan Mishra", rounds: 118, points: 9850, image: l11, phone: "+91 - XXXX XX0 912", rank: 1104 },
-    { id: 13, name: "Rohan Patel", rounds: 115, points: 9780, image: l11, phone: "+91 - XXXX XX0 912", rank: 1105 },
-    { id: 14, name: "Rohan Verma", rounds: 112, points: 9650, image: l11, phone: "+91 - XXXX XX0 912", rank: 1106 },
-    { id: 15, name: "Rohan Reddy", rounds: 110, points: 9500, image: l11, phone: "+91 - XXXX XX0 912", rank: 1107 },
-    { id: 16, name: "Rohan Chatterjee", rounds: 108, points: 9350, image: l11, phone: "+91 - XXXX XX0 912", rank: 1108 },
-    { id: 17, name: "Rohan Malhotra", rounds: 105, points: 9200, image: l11, phone: "+91 - XXXX XX0 912", rank: 1109 },
-    { id: 18, name: "Rohan Joshi", rounds: 103, points: 9100, image: l11, phone: "+91 - XXXX XX0 912", rank: 1110 },
-    { id: 19, name: "Rohan Khanna", rounds: 101, points: 8950, image: l11, phone: "+91 - XXXX XX0 912", rank: 1111 },
-    { id: 20, name: "Rohan Bansal", rounds: 99, points: 8800, image: l11, phone: "+91 - XXXX XX0 912", rank: 1112 },
+    { id: 11, name: "Rohan Sharma", rounds: 123, points: 9999, gmHcp: 99, image: l11, phone: "+91 - XXXX XX0 912", rank: 1103 },
+    { id: 12, name: "Rohan Mishra", rounds: 118, points: 9850, gmHcp: 95, image: l11, phone: "+91 - XXXX XX0 912", rank: 1104 },
+    { id: 13, name: "Rohan Patel", rounds: 115, points: 9780, gmHcp: 88, image: l11, phone: "+91 - XXXX XX0 912", rank: 1105 },
+    { id: 14, name: "Rohan Verma", rounds: 112, points: 9650, gmHcp: 90, image: l11, phone: "+91 - XXXX XX0 912", rank: 1106 },
+    { id: 15, name: "Rohan Reddy", rounds: 110, points: 9500, gmHcp: 85, image: l11, phone: "+91 - XXXX XX0 912", rank: 1107 },
+    { id: 16, name: "Rohan Chatterjee", rounds: 108, points: 9350, gmHcp: 82, image: l11, phone: "+91 - XXXX XX0 912", rank: 1108 },
+    { id: 17, name: "Rohan Malhotra", rounds: 105, points: 9200, gmHcp: 79, image: l11, phone: "+91 - XXXX XX0 912", rank: 1109 },
+    { id: 18, name: "Rohan Joshi", rounds: 103, points: 9100, gmHcp: 76, image: l11, phone: "+91 - XXXX XX0 912", rank: 1110 },
+    { id: 19, name: "Rohan Khanna", rounds: 101, points: 8950, gmHcp: 72, image: l11, phone: "+91 - XXXX XX0 912", rank: 1111 },
+    { id: 20, name: "Rohan Bansal", rounds: 99, points: 8800, gmHcp: 68, image: l11, phone: "+91 - XXXX XX0 912", rank: 1112 },
   ];
 
   // Filter players based on search term with improved handling for spaces
@@ -129,18 +129,24 @@ function LeaderPage() {
               <span className="text-[#01383A] text-xs opacity-75">{player.phone}</span>
             </div>
             
-            {/* Bottom section - same layout as original */}
-            <div className="flex justify-between px-8 pt-4 items-center">
+            {/* Bottom section - with 3 metrics including GM HCP */}
+            <div className="flex justify-between px-4 pt-4 items-center">
               <div className="flex items-center">
-                <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
-                <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
+                <span className="text-[#01383A] font-semibold text-xs mr-1">ROUNDS:</span>
+                <div className="bg-[#014D4E1A] rounded-full px-3 py-1">
                   <span className="text-[#014D4E] text-sm font-bold">{player.rounds}</span>
                 </div>
               </div>
               <div className="flex items-center">
-                <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
-                <div className="bg-[#F4D455] rounded-full px-4 py-1">
+                <span className="text-[#01383A] font-semibold text-xs mr-1">POINTS:</span>
+                <div className="bg-[#F4D455] rounded-full px-3 py-1">
                   <span className="text-[#014D4E] text-sm font-bold">{player.points.toLocaleString()}</span>
+                </div>
+              </div>
+              <div className="flex items-center">
+                <span className="text-[#01383A] font-semibold text-xs mr-1">GM HCP:</span>
+                <div className="bg-[#CCCCCC] rounded-full px-3 py-1">
+                  <span className="text-[#014D4E] text-sm font-bold">{player.gmHcp}</span>
                 </div>
               </div>
             </div>
@@ -148,7 +154,7 @@ function LeaderPage() {
         </div>
       );
     } else {
-      // Original card design for top 10 players
+      // Original card design for top 10 players, now with GM HCP added
       return (
         <div className="wrapper" key={player.id} style={{ 
           width: 'clamp(280px, calc(100% - 24px), 370px)',
@@ -166,17 +172,23 @@ function LeaderPage() {
               <span className="text-white text-sm font-medium">{player.name}</span>
               <span className="text-white text-sm opacity-75">{player.phone}</span>
             </div>
-            <div className="flex justify-between px-8 pt-4 items-center">
+            <div className="flex justify-between px-4 pt-4 items-center">
               <div className="flex items-center">
-                <span className="text-[#01383A] font-semibold text-xs mr-2">ROUNDS PLAYED:</span>
-                <div className="bg-[#014D4E1A] rounded-full px-4 py-1">
+                <span className="text-[#01383A] font-semibold text-xs mr-1">ROUNDS:</span>
+                <div className="bg-[#014D4E1A] rounded-full px-3 py-1">
                   <span className="text-[#014D4E] text-sm font-bold">{player.rounds}</span>
                 </div>
               </div>
               <div className="flex items-center">
-                <span className="text-[#01383A] font-semibold text-xs mr-2">POINTS:</span>
-                <div className="bg-[#F4D455] rounded-full px-4 py-1">
+                <span className="text-[#01383A] font-semibold text-xs mr-1">POINTS:</span>
+                <div className="bg-[#F4D455] rounded-full px-3 py-1">
                   <span className="text-[#014D4E] text-sm font-bold">{player.points}</span>
+                </div>
+              </div>
+              <div className="flex items-center">
+                <span className="text-[#01383A] font-semibold text-xs mr-1">GM HCP:</span>
+                <div className="bg-[#CCCCCC] rounded-full px-3 py-1">
+                  <span className="text-[#014D4E] text-sm font-bold">{player.gmHcp}</span>
                 </div>
               </div>
             </div>
