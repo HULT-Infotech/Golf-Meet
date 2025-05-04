@@ -6,6 +6,7 @@ import tr_greenleft_m from "../assets/tournament-rule/green-mobile.svg";
 import tr_last from "../assets/tournament-rule/tr-last.svg";
 import tr_mobile from "../assets/tournament-rule/tournaments-mobile.webp";
 import Footer from "../components/Footer";
+import Footerr from "../Desktop/Footerr";
 import gradientbox from "../assets/greenbox.png";
 import land_m1 from "../assets/land-m.svg";
 import land_m2 from "../assets/land-fm1.svg";
@@ -154,8 +155,37 @@ Need support? We’re just a message away.
           </div>
         </div>
       </section>
-
-
+      <section className="md:flex hidden flex-col items-center justify-center -mt-2 relative sm:mb-0 w-full">
+  <div 
+    onClick={() => window.location.href = '/code-of-conduct'}
+    className="flex justify-between items-center text-white bg-[#014D4E0D] noise-bg-newest w-full md:px-8 lg:px-32 lg:py-10 md:py-6 cursor-pointer hover:opacity-90 transition-opacity"
+  >
+    <div className="flex flex-col">
+      <h2 className="lg:text-4xl md:4xl text-[1.8rem] font-bold uppercase font-quattrocento">
+        Player Code of Conduct
+      </h2>
+      <p className="lg:text-base md:3xl tect-[1.5rem] underline underline-offset-4">
+        Please refer to the
+        <strong> GolfMeet Tournament Rules </strong> here
+      </p>
+    </div>
+    <div>
+      <svg
+        width="22"
+        height="42"
+        viewBox="0 0 25 47"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1 1.5L23 23.5L1 45.5"
+          stroke="#FFF"
+          strokeWidth="2"
+        />
+      </svg>
+    </div>
+  </div>
+</section>
       {/* Main container for mobile */}
       <div className="md:h-[108vh] flex flex-col relative md:hidden">
         {/* Hero section for mobile */}
@@ -439,15 +469,20 @@ Need support? We’re just a message away.
       </section>
 
       <div ref={footerRef}>
-        <img src={tr_last} alt="tr_last" className="md:block hidden w-full mb-8 " />
         
-        <div className="relative">
+        <div className="relative md:hidden">
           {/* Subtle bottom shadow that fades upward */}
           <div className="h-6 w-full bg-gradient-to-t from-gray-400 via-gray-100 to-transparent opacity-40"></div>
           {/* Footer component */}
           <Footer className=""/>
         </div>
       </div>
+        <div className="relative hidden mt-12 md:block">
+          {/* Subtle bottom shadow that fades upward */}
+          <div className="h-6 w-full bg-gradient-to-t from-gray-400 via-gray-100 to-transparent opacity-40"></div>
+          {/* Footer component */}
+          <Footerr className=""/>
+        </div>
 
       <style jsx>{`
         @media (min-width: 2556px) {
