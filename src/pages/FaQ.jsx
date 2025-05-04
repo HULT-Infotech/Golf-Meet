@@ -1,30 +1,40 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import faq_bg from "../assets/faq/right-bg.svg";
-import faq_greenleft from "../assets/faq/faq-green-left.svg";
-import faq_greenleft_mobile from "../assets/faq/faq-green-left-mobile.svg";
+import faq_mobile_hero from "../assets/FAQPage/faq-m.webp";
+import faq_gm from "../assets/f-gm.svg";
 import Footer from "../components/Footer";
-import gradientbox from "../assets/gradientbox.png"
+import Footerr from "../Desktop/Footerr";
+import gradientbox from "../assets/greenbox.png";
+import land_m1 from "../assets/land-m.svg";
+import land_m2 from "../assets/land-fm1.svg";
+
+const handleWhatsAppClick = () => {
+  const phoneNumber = "918884844444";
+  window.open(`https://wa.me/${phoneNumber}`, "_blank");
+};
 
 const FaqItem = ({ question, answer, isOpen, toggleOpen }) => {
   return (
     <div
-      className={`mb-4 border rounded-sm transition-all duration-300 ${
-        isOpen ? "border-[rgb(1,77,78)] shadow-md" : "border-gray-200"
+      className={`mb-4 border rounded-lg transition-all duration-300 ${
+        isOpen ? "border-[#014D4E] shadow-md" : "border-gray-200"
       }`}
     >
       <div
-        className="flex justify-between items-center p-4 cursor-pointer bg-white rounded-lg"
+        className={`flex justify-between items-center p-4 cursor-pointer rounded-t-lg ${
+          isOpen ? "bg-white" : "bg-white rounded-b-lg"
+        }`}
         onClick={toggleOpen}
       >
-        <span className="text-sm md:text-base">{question}</span>
-        <span className="text-xl">{isOpen ? "−" : "+"}</span>
+        <span className="text-sm font-semibold md:text-base pr-2 md:pr-0">{question}</span>
+        <span className="text-xl font-bold flex-shrink-0">{isOpen ? "−" : "+"}</span>
       </div>
       <div
-        className={`overflow-hidden transition-all duration-300 ease-in-out bg-white ${
+        className={`overflow-hidden transition-all duration-300 ease-in-out bg-white rounded-b-lg ${
           isOpen
-            ? "max-h-[500px] opacity-100 p-4 border-t border-gray-200 rounded-b-lg"
-            : "max-h-0 opacity-0 p-0"
+            ? "max-h-[500px] opacity-100 p-4"
+            : "max-h-0 opacity-0 p-0 border-t-0"
         }`}
       >
         <p className="text-sm md:text-base text-gray-600">{answer}</p>
@@ -50,7 +60,7 @@ function FaQ() {
   const categoryData = [
     {
       id: "registration",
-      title: "Registrations",
+      title: "Registration",
       items: [
         {
           id: "one-time-password",
@@ -64,7 +74,7 @@ function FaQ() {
           question:
             "Can I use an email address instead of a mobile number to use the GolfMeet app?",
           answer:
-            "You must use a mobile number to register. The GolfMeet tournament requires you to use the GolfMeet mobile app. However, please be assured that your mobile number will not be shared with any third party under any circumstances.",
+            "You must use a mobile number to register. The GolfMeet турни requires you to use the GolfMeet mobile app. However, please be assured that your mobile number will not be shared with any third party under any circumstances.",
         },
         {
           id: "different-country",
@@ -164,139 +174,194 @@ function FaQ() {
 
   const handleCategoryClick = (categoryId) => {
     setActiveCategory(categoryId);
-    // Scroll to that category section
     document.getElementById(categoryId)?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  // Custom gradient style
-  const categoryGradientStyle = {
-    background:
-      "linear-gradient(150deg, rgb(48, 92, 93) 0%, rgb(0, 54, 55) 50%, rgb(0, 53, 54) 100%)",
   };
 
   return (
     <>
+      <style>
+        {`
+          .custom-margin {
+            margin-top: -6rem;
+          }
+
+          @media (min-width: 375px) {
+            .custom-margin {
+              margin-top: -7rem;
+            }
+          }
+          @media (min-width: 425px) {
+            .custom-margin {
+              margin-top: -8rem;
+            }
+          }
+        `}
+      </style>
       <Navbar />
-      <section className="bg-gray-100 noise-bg relative flex flex-col md:min-h-[92vh] md:flex-row">
-        <div className="flex flex-col w-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
+      <div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
+
+      {/* Desktop Hero Section - Visible only on medium screens and up */}
+      <section
+        className="bg-gray-100 noise-bg relative hidden md:flex flex-col min-h-[90vh] md:flex-row"
+      >
+        <div className="flex flex-col w-full justify-between md:justify-around md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
-          <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20">
-            <h1 className="font-quattrocento font-bold text-[2.3rem] text-[#201E15] sm:text-5xl lg:text-[96px] leading-[100%] tracking-[0.025em] mb-4">
+          <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
+            <h1
+              className="font-quattrocento font-bold text-[2.85rem] text-[#201E15] sm:text-5xl lg:text-[55px] xl:text-[65px] leading-[100%] tracking-[0.025em] mb-4"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 23%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                textFillColor: "transparent",
+                textShadow: "0px 0px 1px rgba(0, 0, 0, 0.15)",
+                filter: "drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))",
+              }}
+            >
               FREQUENTLY <br /> ASKED <br /> QUESTIONS
             </h1>
-            {/* Mobile-only text added here */}
-            <div className="p-3 text-sm md:hidden mb-4 w-full">
-              After you have paid the tournament fees, log into the GolfMeet
-              mobile app.
+            <div className="text-sm w-[95%]">
+              Find quick answers to common questions about Golf Meet — from how
+              it works to rules & regulations, scoring, and player verification,
+              refund policy.
             </div>
+            <p className="font-semibold text-sm mt-4">
+              Still need help? We're here for you.
+            </p>
           </div>
 
           {/* Right Image Section */}
-          <div className="flex items-end px-5 md:px-0">
+          <div className="flex items-center justify-center px-5 md:px-0 md:items-end mt-8">
             <img
-              src={faq_bg}
+              src={faq_mobile_hero}
               alt="Golfers Illustration"
-              className="w-full object-contain pointer-events-none"
+              className="xl:w-[55%] lg:w-[65%] md:w-[75%] object-contain pointer-events-none"
             />
           </div>
         </div>
-        {/* Decorative Green Element */}
-        <img
-          src={faq_greenleft}
-          alt="Green left element"
-          className="hidden md:block absolute md:-bottom-12 left-0 w-[270px] md:w-[400px] lg:w-[550px] xl:w-[750px] xl:-bottom-[90px] lg:-bottom-16 object-contain pointer-events-none"
-        />
-        <img
-          src={faq_greenleft_mobile}
-          alt="Green left element"
-          className="absolute hidden -bottom-36 sm:-bottom-20 left-0 w-full"
-        />
       </section>
 
-      {/* FAQ Content Section */}
-      <section className="py-8 md:py-16 px-4 bg-white mt-8 md:mt-24">
-  <div className="flex flex-col md:flex-row max-w-[1300px] mx-auto gap-6 md:gap-12">
-    {/* Left Sidebar - Using imported gradientbox image */}
-    <div
-      className="hidden md:block w-64 text-white p-4 md:p-6 rounded-md sticky top-32 self-start"
-      style={{
-        ...categoryGradientStyle,
-        background: `url(${gradientbox})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
-      <h3 className="font-quattrocentoSans font-bold text-[32px] leading-[100%] tracking-[0em] uppercase mb-2 relative">
-        CATEGORIES
-      </h3>
-      <ul className="text-sm mt-6">
-        {categoryData.map((category) => (
-          <li
-            key={category.id}
-            className={`py-3 cursor-pointer transition-colors duration-200 relative   ${
-              activeCategory === category.id ? "font-bold" : ""
-            }`}
-            onClick={() => handleCategoryClick(category.id)}
-          >
-            <span className="relative inline-block text-[#FFFFFFCC] after:content-[''] after:block after:w-full after:h-[1.4px] after:bg-white after:mt-1">
-              {category.title}
-            </span>
-          </li>
-        ))}
-      </ul>
-    </div>
-
-    {/* Main Content */}
-    <div className="flex-1">
-      {categoryData.map((category) => (
-        <div
-          id={category.id}
-          key={category.id}
-          className="mb-12 scroll-mt-20"
-        >
-          <h2 className="text-[#014D4E] text-2xl md:text-4xl font-bold mb-6 font-quattrocento uppercase">
-            {category.title.toUpperCase()}
-          </h2>
-          {category.items.map((item) => (
-            <FaqItem
-              key={item.id}
-              question={item.question}
-              answer={item.answer}
-              isOpen={openItems[item.id] || false}
-              toggleOpen={() => toggleItem(item.id)}
-            />
-          ))}
+      {/* Mobile Hero Section - Visible only on small screens */}
+      <section className="bg-gray-100 noise-bg-n relative flex flex-col min-h-[90vh] md:hidden">
+        <div className="flex flex-col w-full flex-1 justify-between max-w-[1700px] mx-auto">
+          {/* Text Section */}
+          <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
+            <h1
+              className="font-quattrocento font-bold xsm:text-[2.3rem] text-[2.85rem] text-[#201E15] sm:text-5xl lg:text-[80px] pt-8 leading-[100%] tracking-[0.025em] mb-4"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 53%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                textFillColor: "transparent",
+                textShadow: "0px 0px 1px rgba(0, 0, 0, 0.15)",
+                filter: "drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))",
+              }}
+            >
+              FREQUENTLY <br /> ASKED <br /> QUESTIONS
+            </h1>
+            {/* Mobile-only text added here */}
+            <div className="xsm:text-xs text-sm mb-4 xsm:w-[85%] w-[95%]">
+              Find quick answers to common questions about Golf Meet — from how
+              it works to rules & regulations, scoring, and player verification,
+              refund policy.
+            </div>
+            <p className="font-semibold xsm:text-xs text-sm">
+              Still need help? We're here for you.
+            </p>
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
 
-      {/* Fixed Mobile Navigation Buttons - For easier category navigation */}
-      <div className="fixed bottom-4 right-4 md:hidden">
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="bg-[#014D4E] text-white p-3 rounded-full shadow-lg"
-        >
-          <svg
-            className="h-6 w-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+        {/* Image Section - Moved outside of content div to position at bottom */}
+        <div className="flex items-center justify-center w-full px-5 md:px-0 mt-auto">
+          <img
+            src={faq_mobile_hero}
+            alt="Golfers Mobile Illustration"
+            className="w-[75%] max-w-[400px] object-contain pointer-events-none mx-auto"
+          />
+        </div>
+      </section>
+
+      {/* FAQ Content Section - Adjusted margin for desktop */}
+      <section
+        className="py-8 md:py-16 px-6 bulge-top-other md:px-8 noise-bg-neww -mt-4 md:-mt-16 lg:-mt-24 xl:-mt-20 z-10"
+      >
+        <div className="flex flex-col md:flex-row max-w-[1300px] mx-auto gap-6 md:gap-12">
+          {/* Left Sidebar - Using gradient background */}
+          <div
+            className="hidden md:block w-64 text-white p-4 md:p-6 rounded-md sticky top-32 self-start"
+            style={{
+              background: `linear-gradient(0deg, #014D4E, #014D4E)`,
+            }}
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M5 11l7-7 7 7M5 19l7-7 7 7"
-            ></path>
-          </svg>
-        </button>
-      </div>
+            <h3 className="font-quattrocentoSans font-bold text-[32px] leading-[100%] tracking-[0em] uppercase mb-2 relative">
+              CATEGORIES
+            </h3>
+            <ul className="text-sm mt-6">
+              {categoryData.map((category) => (
+                <li
+                  key={category.id}
+                  className={`py-3 cursor-pointer transition-colors duration-200 relative ${
+                    activeCategory === category.id ? "font-bold" : ""
+                  }`}
+                  onClick={() => handleCategoryClick(category.id)}
+                >
+                  <span className="relative inline-block text-[#FFFFFFCC] after:content-[''] after:block after:w-full after:h-[1.4px] after:bg-white after:mt-1">
+                    {category.title}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-      <Footer />
+          {/* Main Content */}
+          <div className="flex-1">
+            {categoryData.map((category) => (
+              <div
+                id={category.id}
+                key={category.id}
+                className="mb-12 scroll-mt-20"
+              >
+                <h2
+                  className={`text-3xl md:text-4xl font-bold mb-6 mt-12 font-quattrocento uppercase ${
+                    category.id === "registration"
+                      ? "text-[#FFF]"
+                      : "text-[#014D4E]"
+                  }`}
+                >
+                  {category.title.toUpperCase()}
+                </h2>
+                {category.items.map((item) => (
+                  <FaqItem
+                    key={item.id}
+                    question={item.question}
+                    answer={item.answer}
+                    isOpen={openItems[item.id] || false}
+                    toggleOpen={() => toggleItem(item.id)}
+                  />
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Footer with improved top shadow */}
+      <div className="relative md:hidden">
+        {/* Subtle bottom shadow that fades upward */}
+        <div className="h-6 w-full bg-gradient-to-t from-gray-400 via-gray-100 to-transparent opacity-40"></div>
+        {/* Footer component */}
+        <Footer className="" />
+      </div>
+      <div className="relative hidden md:block">
+        {/* Subtle bottom shadow that fades upward */}
+        <div className="h-6 w-full bg-gradient-to-t from-gray-400 via-gray-100 to-transparent opacity-40"></div>
+        {/* Footer component */}
+        <Footerr className="" />
+      </div>
     </>
   );
 }
