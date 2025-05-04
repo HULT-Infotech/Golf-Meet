@@ -250,6 +250,7 @@ const Navbar = ({ triggerRef }) => {
                   onClick={() => setSidebarOpen(false)}
                 >
                   TERMS OF USE
+                  
                 </Link>
                 <Link 
                   to="/privacy-policy" 
