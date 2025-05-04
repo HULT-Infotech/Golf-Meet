@@ -166,12 +166,12 @@ function LeaderPage() {
           <div style={{ 
             width: '100%', 
             height: '160px'
-          }} className="bg-white mb-8 rounded-2xl shadow-xl relative">
+          }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
             <img src={player.image} alt="placeholder" className="absolute -top-[0.6rem] left-8 z-20" />
             <div style={{ 
               width: '100%', 
               height: '85px'
-            }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex flex-col items-start justify-center pl-28">
+            }} className="bg-[#01383A] z-10 noise-bg-newest rounded-xl flex flex-col items-start justify-center pl-28">
               <span className="text-white text-lg font-medium">{player.name}</span>
               <span className="text-white text-sm opacity-75">{player.phone}</span>
             </div>
@@ -250,19 +250,19 @@ function LeaderPage() {
         </div>
         
         {/* Noise background for bottom half with -mt-4 margin */}
-        <div className="absolute -mt-4 bottom-0 left-0 w-full h-1/2 noise-bg-newest z-0"></div>
+        <div className="absolute -mt-4 pb-12 bottom-0 left-0 w-full h-1/2 noise-bg-newest bulge-bottom z-0"></div>
         
         {/* Corner image - restored to original */}
         <img 
           src={bgImage1} 
           alt="" 
-          className="absolute bottom-0 left-0 w-[26rem] h-auto object-contain z-10"
+          className="absolute bottom-0 left-0 xl:w-[26rem] lg:w-[20rem] md:w-[14rem]  h-auto object-contain z-10"
         />
         
         <img 
           src={bgImage2} 
           alt="" 
-          className="absolute bottom-0 right-0 w-[38rem] h-auto object-contain z-10"
+          className="absolute bottom-0 right-0 xl:w-[38rem] lg:w-[30rem] md:w-[24rem] h-auto object-contain z-10"
         />
         
         {/* Content container */}
@@ -270,7 +270,7 @@ function LeaderPage() {
           <div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
 
           <h1 
-            className="font-quattrocento font-bold text-5xl mt-16 mb-2 text-center"
+            className="font-quattrocento font-bold text-5xl xl:text-6xl mt-16 mb-2 text-center"
             style={{
               background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 45%)',
               WebkitBackgroundClip: 'text',
@@ -331,17 +331,37 @@ function LeaderPage() {
           {/* Search Results Info */}
           {hasSearched && searchTerm ? (
             <div className="flex items-center justify-center w-full whitespace-nowrap">
-              <div className="border-t-2 border-gray-300 flex-grow"></div>
-              <h2 className="px-2 font-quattrocento text-gray-500 text-sm font-normal mx-2">
+              <div 
+                className="w-[15%] h-px"
+                style={{
+                  background: "linear-gradient(270deg, rgba(156, 163, 175, 0) 0%, #9CA3AF 50%, rgba(156, 163, 175, 0) 100%)"
+                }}
+              ></div>
+              <h2 className="font-quattrocento text-gray-500 text-sm font-normal">
                 Showing {filteredPlayers.length} results for "{searchTerm}"
               </h2>
-              <div className="border-t-2 border-gray-300 flex-grow"></div>
+              <div 
+                className="w-[15%] h-px"
+                style={{
+                  background: "linear-gradient(270deg, rgba(156, 163, 175, 0) 0%, #9CA3AF 50%, rgba(156, 163, 175, 0) 100%)"
+                }}
+              ></div>
             </div>
           ) : (
             <div className="flex items-center justify-center w-full whitespace-nowrap">
-              <div className="border-t-2 border-gray-300 flex-grow"></div>
-              <h2 className="px-2 font-quattrocento text-gray-500 text-sm font-normal mx-2">↓ Top 10 ranked players ↓</h2>
-              <div className="border-t-2 border-gray-300 flex-grow"></div>
+              <div 
+                className="w-[15%] h-px"
+                style={{
+                  background: "linear-gradient(270deg, rgba(156, 163, 175, 0) 0%, #9CA3AF 50%, rgba(156, 163, 175, 0) 100%)"
+                }}
+              ></div>
+              <h2 className="font-quattrocento text-gray-500 text-sm font-normal">↓ Top 10 ranked players ↓</h2>
+              <div 
+                className="w-[15%] h-px"
+                style={{
+                  background: "linear-gradient(270deg, rgba(156, 163, 175, 0) 0%, #9CA3AF 50%, rgba(156, 163, 175, 0) 100%)"
+                }}
+              ></div>
             </div>
           )}
           
