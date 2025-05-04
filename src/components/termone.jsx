@@ -102,11 +102,11 @@ function Terms() {
   >
     <div className="flex flex-col">
       <h2 className="lg:text-4xl md:4xl text-[1.8rem] font-bold uppercase font-quattrocento">
-        Player Code of Conduct
+      PRIVACY POLICY
       </h2>
       <p className="lg:text-base md:3xl tect-[1.5rem] underline underline-offset-4">
         Please refer to the
-        <strong> GolfMeet Tournament Rules </strong> here
+        <strong> GolfMeet Privacy Policy </strong> here
       </p>
     </div>
     <div>

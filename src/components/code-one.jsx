@@ -37,13 +37,12 @@ function CodeOne() {
                 filter: "drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))",
               }}
             >
-              RULES & <br /> REGULATIONS
+              PLAYER CODE OF <br />CONDUCT
             </h1>
-            <div className="text-sm lg:w-[95%] md:w-[80%]">
-            Play with confidence. Review the rules and guidelines designed to elevate your Golf Meet journey. 
+            <div className="text-sm lg:w-[95%] md:w-[80%]">Golf Meet is built on respect, trust, and the spirit of true sportsmanship. Review the player code that defines our community.
             </div>
             <p className="font-semibold text-sm mt-4">
-Need support? We’re just a message away.
+            And if you have suggestions, we’re always ready to listen.
             </p>
           </div>
   
