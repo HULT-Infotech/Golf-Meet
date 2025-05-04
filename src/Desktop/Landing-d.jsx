@@ -18,10 +18,10 @@ function DesktopTabletLandingPage() {
       <div className="relative flex flex-col min-h-[72vh] bg-gray-50 z-0  noise-bg overflow-hidden">
         {/* Top Navbar */}
         <div className="md:absolute z-50 top-0 w-full flex justify-between items-center px-5 md:px-8 lg:px-10 py-8 md:py-10 flex-col-reverse md:flex-row">
-      <div className="flex gap-6 md:gap-8 lg:gap-10 mt-4 md:mt-0 w-full md:w-auto">
+      <div className="flex text-xsm lg:text-sm gap-6 md:gap-8 lg:gap-10 mt-4 md:mt-0 w-full md:w-auto">
         <a
           href={whatsappLink}
-          className="text-sm md:text-base lg:text-base bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-2 py-1 md:px-4 lg:px-5 md:py-2 rounded transition-all duration-300 ease-in-out shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)] hover:from-[#E5181A] hover:via-[#E51719] hover:to-[#CC1517] hover:scale-110 hover:shadow-[0px_2px_10px_0px_rgba(0,0,0,0.45)]"
+          className=" md:text-xsm   bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-2 py-1 md:px-4 lg:px-5 md:py-2 rounded transition-all duration-300 ease-in-out shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)] hover:from-[#E5181A] hover:via-[#E51719] hover:to-[#CC1517] hover:scale-110 hover:shadow-[0px_2px_10px_0px_rgba(0,0,0,0.45)]"
         >
           <span className="font-bold text-[#FFF7D9]">
             SIGN UP NOW
@@ -30,26 +30,26 @@ function DesktopTabletLandingPage() {
         
         <a
           href="/leaderboard"
-          className="text-sm md:text-base leading-4 text-[#211E16] font-bold text-center my-auto"
+          className="  leading-4 text-[#211E16] font-bold text-center my-auto"
         >
           LEADERBOARD
         </a>
       </div>
       
-      <div className="flex items-center w-full md:w-auto justify-between gap-8">
+      <div className="flex items-center text-xsm lg:text-sm w-full md:w-auto justify-between gap-8">
         <div className="flex items-center gap-1">
           {/* Language dropdown placeholder */}
         </div>
         <a
           href="/faq"
-          className="text-sm md:text-base leading-4 text-[#211E16] font-bold text-center my-auto"
+          className="  leading-4 text-[#211E16] font-bold text-center my-auto"
         >
           FAQ
         </a>
         
         <a
           href={whatsappLink}
-          className="text-sm md:text-base flex leading-4 text-[#211E16] my-auto font-bold"
+          className=" flex leading-4 text-[#211E16] my-auto font-bold"
         >
           
           Contact Support <svg className="ml-3 w-5 h-5" viewBox="0 0 24 24" fill="#211E16" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +60,7 @@ function DesktopTabletLandingPage() {
     </div>
 
         {/*//! Hero Section for Tablets and Laptops */}
-        <div className="md:flex hidden relative min-h-[72vh] flex-col w-full items-center justify-center">
+        <div className="md:flex hidden relative md:min-h-[74vh] lg:min-h-[72vh] flex-col w-full items-center justify-center">
           {/* Full width image at bottom - positioned to touch both edges correctly */}
           <div className="absolute bottom-0 left-0 right-0 z-20 w-full">
             <img
@@ -79,7 +79,7 @@ function DesktopTabletLandingPage() {
             <img
               src="favicons/favicon.svg"
               alt="Golfmeet Logo"
-              className="w-48 object-contain md:w-[320px] lg:w-[360px] xl:w-[34vw] drop-shadow-[0_10px_10px_rgba(0,0,0,0.40)]"
+              className="w-48 object-contain md:w-[300px] lg:w-[340px] xl:w-[31vw] xl:-mt-5 drop-shadow-[0_10px_10px_rgba(0,0,0,0.40)]"
               draggable="false"
             />
           </div>
@@ -104,41 +104,41 @@ function DesktopTabletLandingPage() {
       </div>
 
       {/* Second section - no gap */}
-      <section className="relative h-[113vh] bulge-top-desk -mt-8 z-10 w-full overflow-hidden noise-bg-new">
+      <section className="relative xl:h-[113vh] lg:h-[100vh] md:h-[78vh] bulge-top-desk -mt-8 z-10 w-full overflow-hidden noise-bg-newest">
       
       {/* Content positioned above the image */}
       <div className="relative z-20 max-w-xl mx-auto px-4">
     {/* First Section */}
     <div>
-      <h1 className="text-[40px] mt-10 md:text-[52px] lg:text-[61px] leading-tight tracking-normal text-center font-quattrocento font-bold">
+      <h1 className="text-[40px] mt-10 md:text-[48px] lg:text-[61px] leading-tight tracking-normal text-center font-quattrocento font-bold">
         <span className="bg-gradient-to-t from-[#FFFFFF] to-[#f0bb64] bg-clip-text text-transparent">GOLF MEET</span> <br />
         <span className="text-white"> PLAYERS.</span>
       </h1>
     </div>
     
     {/* Second Section with PLAY BETTER centered */}
-    <div className="flex flex-col items-center justify-center py-8 md:py-12 lg:py-3">
-      <p className="font-quattrocento text-[24px] md:text-[28px] leading-tight tracking-normal text-center text-white">
+    <div className="flex flex-col items-center justify-center py-10 md:py-5 lg:py-3">
+      <p className="font-quattrocento text-[24px] md:text-[23.5px] lg:text-[28px] leading-tight tracking-normal text-center text-white">
         PLAY BETTER.
       </p>
     </div>
     
     {/* Third Section */}
     <div>
-    <p className="font-extrabold font-quattrocento text-2xl md:text-4xl drop-shadow-lg leading-relaxed tracking-normal lg:mt-44 bg-gradient-to-b from-[#FFF2BF] to-[#F4D455] text-transparent bg-clip-text text-center">
+    <p className="font-extrabold font-quattrocento md:text-3xl lg:text-[2.5rem]  drop-shadow-lg lg:leading-[2.8rem] tracking-normal lg:mt-20 xl:mt-44 md:mt-4 bg-gradient-to-b from-[#FFF2BF] to-[#F4D455] text-transparent bg-clip-text text-center">
         Golf Meet matches you with <br /> new golfers every round.
       </p>
-      <p className="font-quattrocento font-normal text-[20px] leading-normal tracking-normal text-center text-[#FFFFFF] opacity-70 mt-3">
+      <p className="font-quattrocento font-normal lg:text-[20px] md:text-[17px] leading-normal tracking-normal text-center text-[#FFFFFF] opacity-70 mt-3">
       Players are matched based on <br /> their preferred courses and dates. 
       </p>
       
       {/* Register Button */}
-      <div className="flex justify-center mt-6 md:mt-12">
+      <div className="flex justify-center md:mt-7 lg:mt-12">
       <a 
         href={whatsappLink}
         className="rounded-md bg-gradient-to-b from-white via-[#fce570] to-[#fcb017] px-8 py-3 font-bold transition-all duration-300 hover:opacity-90 hover:shadow-md"
       >
-        <span className="text-[20px] md:text-base font-quattrocento text-[#014D4E] font-bold uppercase">
+        <span className="text-[20px] md:text-sm lg:text-base font-quattrocento text-[#014D4E] font-bold uppercase">
         SIGN UP VIA WHATSAPP 
         </span>
       </a>
@@ -150,7 +150,7 @@ function DesktopTabletLandingPage() {
       <img 
         src={landingbg}
         alt="Golf players" 
-        className="absolute bottom-0 mt-10 left-0 w-full object-cover object-bottom z-10"
+        className="absolute bottom-0 mt-10 left-0 w-full object-cover object-bottom opacity-80 z-10"
         style={{ maxHeight: '100%' }}
       />
     </section>

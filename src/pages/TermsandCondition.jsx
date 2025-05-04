@@ -1,6 +1,6 @@
 import React from "react";
 import Termone from "../components/termone";
-import Ctwo from "../components/common";
+import Ctwo from "../components/termsofuse";
 import Navbar from "../components/Navbar";
 
 function TermPage() {

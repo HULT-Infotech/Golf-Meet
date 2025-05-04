@@ -1,6 +1,4 @@
 import React from 'react';
-import p_1 from "../assets/Photosection/p1.webp";
-import p_2 from "../assets/Photosection/p2.webp";
 import price_image1 from "../assets/Cost/pro.webp";
 import price_image2 from "../assets/Cost/amature.webp";
 
@@ -13,51 +11,7 @@ const EventsAndCostPage = () => {
   return (
     <>
       {/* Photo Section */}
-      <div className="w-full min-h-[70vh] -mt-24 bg-white relative">
-  {/* Heading Section - Improved fluid typography */}
-  <div
-    className="pt-6 sm:pt-8 md:pt-10 pb-4 sm:pb-6 px-4 text-center font-quattrocento"
-    style={{ fontWeight: "700" }}
-  >
-    <h1
-      className="font-bold text-teal-800"
-      style={{ fontSize: 'clamp(1.75rem, 5vw, 2.5rem)' }}
-    >
-      ENJOY EXCLUSIVE
-    </h1>
-    <h1
-      className="font-bold text-teal-800"
-      style={{ fontSize: 'clamp(1.75rem, 5vw, 2.5rem)' }}
-    >
-      CURATED EVENTS
-    </h1>
-  </div>
-  
-  {/* Photos Container - Centered horizontally and side by side on larger screens */}
-  <div className="px-4 md:px-8 lg:px-16 mx-auto xl:px-32 flex flex-col md:flex-row md:gap-6 justify-center">
-    {/* First Photo */}
-    <div className="mb-6 md:mb-0 md:w-1/3">
-      <div className="rounded-lg overflow-hidden">
-        <img
-          src={p_1}
-          alt="People enjoying a social gathering at a golf club"
-          className="w-full h-auto"
-        />
-      </div>
-    </div>
-    
-    {/* Second Photo - Adding specific z-index to ensure it's above cost section */}
-    <div className="relative z-30 md:w-1/3">
-      <div className="rounded-lg overflow-hidden">
-        <img
-          src={p_2}
-          alt="Stand-up comedy event at an exclusive venue"
-          className="w-full h-auto"
-        />
-      </div>
-    </div>
-  </div>
-</div>
+
 
       {/* Curved Container Section - First Div with Subscription Fee */}
       <div className="w-full -mt-20 sm:-mt-24 md:-mt-28 lg:-mt-32 relative z-20">
@@ -66,7 +20,7 @@ const EventsAndCostPage = () => {
 
           {/* Tournament Fee Content - First Div */}
           <div 
-            className="flex flex-col noise-bg-new items-center bulge-top  justify-center px-4 sm:px-6 lg:px-12 text-white  mt-20 sm:py-30 md:py-3"
+            className="flex flex-col noise-bg-newest items-center bulge-top  justify-center px-4 sm:px-6 lg:px-12 text-white  mt-20 sm:py-30 md:py-3"
             style={{
               '--heading-size': 'clamp(1.75rem, 5vw, 2.7rem)',
               '--price-rupee': 'clamp(1.75rem, 5vw, 2.25rem)',
@@ -121,7 +75,7 @@ const EventsAndCostPage = () => {
       </div>
       
       {/* Second Div - Important Information Section */}
-      <div className="w-full relative -mt-20 z-10 bulge-bottom-desk noise-bg-new">
+      <div className="w-full relative -mt-20 z-10 bulge-bottom-desk noise-bg-newest">
         <div className="relative w-full h-auto py-8 sm:py-10 md:py-12">
           {/* Important Info Content - Second Div */}
           <div 

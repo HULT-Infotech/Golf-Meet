@@ -1,6 +1,6 @@
 import React from "react";
 import Cone from "../components/refund-one";
-import  Ctwo from "../components/common2";
+import  Ctwo from "../components/refundpolicy.jsx";
 
 function RefundPage() {
   return (
