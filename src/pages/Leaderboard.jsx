@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import LeaderM from "../components/Leadermobile";
+import Navbar from "../components/Navbar";
 import LeaderPaged from "../Desktop/LeaderD"
 import Prized from "../Desktop/Prize";
 import Footer from "../Desktop/Footerr";
@@ -13,6 +14,7 @@ function LeaderPage() {
       </div>
 
       <div className="hidden md:block">
+      <Navbar/>
       <div className="relative z-10">
         <LeaderPaged/>
         </div>

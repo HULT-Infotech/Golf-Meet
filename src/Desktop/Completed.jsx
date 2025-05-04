@@ -72,7 +72,7 @@ const CombinedGolfPage = () => {
         </div>
 
         {/* Leaderboard Card Section */}
-        <div className="container mx-auto px-4 pb-16 xl:max-w-[44rem] lg:max-w-[40rem] md:max-w-[35rem]">
+        <div className="container mx-auto px-4 pb-16 xl:max-w-[37rem] lg:max-w-[33rem] md:max-w-[30rem]">
           <div className="rounded-2xl mx-auto max-w-xl md:max-w-3xl lg:max-w-3xl noise-bg-newest overflow-hidden shadow-lg" 
             style={{
               color: "white",
@@ -82,7 +82,7 @@ const CombinedGolfPage = () => {
           >
             {/* Card Title */}
             <h2
-              className="font-quattrocento md:text-[3.1rem] lg:text-[3.7rem] font-bold mb-6 md:mb-8"
+              className="font-quattrocento md:text-[2.9rem] lg:text-[3.5rem] font-bold mb-6 md:mb-8"
               style={{
                 background: "linear-gradient(180deg, #FFF2BF 0%, #F4D455 100%)",
                 WebkitBackgroundClip: "text",

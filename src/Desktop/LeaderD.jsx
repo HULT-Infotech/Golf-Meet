@@ -37,9 +37,9 @@ function LeaderPage() {
   
   // Mock player data - replace with your actual player data
   const playerData = [
-    { id: 1, name: "Rohan Singh", rounds: 15, points: 320, gmHcp: 12, image: l1, phone: "+91 - XXXX XX0 912" },
-    { id: 2, name: "Rohan Kumar", rounds: 12, points: 280, gmHcp: 18, image: l2, phone: "+91 - XXXX XX0 912" },
-    { id: 3, name: "Rohan Gupta", rounds: 10, points: 240, gmHcp: 24, image: l3, phone: "+91 - XXXX XX0 912" },
+    { id: 1, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l1, phone: "+91 - XXXX XX0 912" },
+    { id: 2, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l2, phone: "+91 - XXXX XX0 912" },
+    { id: 3, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l3, phone: "+91 - XXXX XX0 912" },
     { id: 4, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l4, phone: "+91 - XXXX XX0 912" },
     { id: 5, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l5, phone: "+91 - XXXX XX0 912" },
     { id: 6, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l6, phone: "+91 - XXXX XX0 912" },
@@ -47,18 +47,18 @@ function LeaderPage() {
     { id: 8, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l8, phone: "+91 - XXXX XX0 912" },
     { id: 9, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l9, phone: "+91 - XXXX XX0 912" },
     { id: 10, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l10, phone: "+91 - XXXX XX0 912" },
-    // Additional players that only appear in search results
-    { id: 11, name: "Rohan Sharma", rounds: 123, points: 9999, gmHcp: 99, image: l11, phone: "+91 - XXXX XX0 912", rank: 1103 },
-    { id: 12, name: "Rohan Mishra", rounds: 118, points: 9850, gmHcp: 95, image: l11, phone: "+91 - XXXX XX0 912", rank: 1104 },
-    { id: 13, name: "Rohan Patel", rounds: 115, points: 9780, gmHcp: 88, image: l11, phone: "+91 - XXXX XX0 912", rank: 1105 },
-    { id: 14, name: "Rohan Verma", rounds: 112, points: 9650, gmHcp: 90, image: l11, phone: "+91 - XXXX XX0 912", rank: 1106 },
-    { id: 15, name: "Rohan Reddy", rounds: 110, points: 9500, gmHcp: 85, image: l11, phone: "+91 - XXXX XX0 912", rank: 1107 },
-    { id: 16, name: "Rohan Chatterjee", rounds: 108, points: 9350, gmHcp: 82, image: l11, phone: "+91 - XXXX XX0 912", rank: 1108 },
-    { id: 17, name: "Rohan Malhotra", rounds: 105, points: 9200, gmHcp: 79, image: l11, phone: "+91 - XXXX XX0 912", rank: 1109 },
-    { id: 18, name: "Rohan Joshi", rounds: 103, points: 9100, gmHcp: 76, image: l11, phone: "+91 - XXXX XX0 912", rank: 1110 },
-    { id: 19, name: "Rohan Khanna", rounds: 101, points: 8950, gmHcp: 72, image: l11, phone: "+91 - XXXX XX0 912", rank: 1111 },
-    { id: 20, name: "Rohan Bansal", rounds: 99, points: 8800, gmHcp: 68, image: l11, phone: "+91 - XXXX XX0 912", rank: 1112 },
+    { id: 11, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l11, phone: "+91 - XXXX XX0 912", rank: 1103 },
+    { id: 12, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l11, phone: "+91 - XXXX XX0 912", rank: 1104 },
+    { id: 13, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l11, phone: "+91 - XXXX XX0 912", rank: 1105 },
+    { id: 14, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l11, phone: "+91 - XXXX XX0 912", rank: 1106 },
+    { id: 15, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l11, phone: "+91 - XXXX XX0 912", rank: 1107 },
+    { id: 16, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l11, phone: "+91 - XXXX XX0 912", rank: 1108 },
+    { id: 17, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l11, phone: "+91 - XXXX XX0 912", rank: 1109 },
+    { id: 18, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l11, phone: "+91 - XXXX XX0 912", rank: 1110 },
+    { id: 19, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l11, phone: "+91 - XXXX XX0 912", rank: 1111 },
+    { id: 20, name: "TBD", rounds: 0, points: 0, gmHcp: 0, image: l11, phone: "+91 - XXXX XX0 912", rank: 1112 },
   ];
+  
 
   // Filter players based on search term with improved handling for spaces
   const filteredPlayers = playerData.filter(player => {
@@ -206,7 +206,7 @@ function LeaderPage() {
       {/* Main section with background image and noise overlay */}
       <div className="relative min-h-screen noise-bg-newest">
         
-      <Navbar/>
+      
         {/* Background image for top half with gradient overlay */}
         <div className="absolute top-0 bulge-bottom left-0 w-full h-1/2 z-1 overflow-hidden">
           {/* Original background image */}
