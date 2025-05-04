@@ -206,7 +206,7 @@ function LeaderPage() {
       {/* Main section with background image and noise overlay */}
       <div className="relative min-h-screen noise-bg-newest">
         
-      <Navbar/>
+      
         {/* Background image for top half with gradient overlay */}
         <div className="absolute top-0 bulge-bottom left-0 w-full h-1/2 z-1 overflow-hidden">
           {/* Original background image */}
