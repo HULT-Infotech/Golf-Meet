@@ -1,6 +1,6 @@
 import React from "react";
 import Privacyone from "../components/privacyone";
-import  Ctwo from "../components/common";
+import  Ctwo from "../components/privacy";
 import Navbar from "../components/Navbar";
 
 function PrivacyPage() {

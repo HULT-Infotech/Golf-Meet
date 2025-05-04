@@ -11,6 +11,7 @@ const Terms = lazy(() => import("./pages/TermsandCondition"));
 const Policy = lazy(() => import("./pages/PrivacyPolicy"));
 const Leader = lazy(() => import("./pages/Leaderboard"));
 const Refund = lazy(() => import("./pages/Refund"));
+const Redirect = lazy(() => import("./pages/Redirect"));
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +27,7 @@ function App() {
           <Route path="/privacy-policy" element={<Policy />} />
           <Route path="/leaderboard" element={<Leader />} />
           <Route path="/refund-policy" element={<Refund />} />
+          <Route path="/redirect" element={<Redirect />} />
         </Routes>
         <ScrollToTop />
       </Suspense>
