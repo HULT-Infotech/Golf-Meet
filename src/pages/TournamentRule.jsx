@@ -115,43 +115,46 @@ function TournamentRule() {
       <div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
 
       {/* Desktop Hero Section - Visible only on medium screens and up */}
-      <section className="hidden md:block sm:bg-gray-100 sm:noise-bg noise-bg-n min-h-[90vh] relative flex flex-col overflow-hidden">
-        {/* Content container with flex structure */}
-        <div className="flex flex-col w-full flex-1 md:flex-row max-w-[1700px] mx-auto relative pt-4 md:pt-16">
+<section
+        className="bg-gray-100 noise-bg relative hidden md:flex flex-col min-h-[90vh] md:flex-row"
+      >
+        <div className="flex flex-col w-full justify-between md:justify-around md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
           <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
-            <h1 
-              className="font-quattrocento font-bold xsm:text-[2.3rem] text-[2.9rem] text-[#201E15] sm:text-5xl lg:text-[80px] pt-8 leading-[100%] tracking-[0.025em] mb-4"
+            <h1
+              className="font-quattrocento -mt-28 font-bold text-[2.85rem] text-[#201E15] sm:text-5xl lg:text-[55px] xl:text-[65px] leading-[100%] tracking-[0.025em] mb-4"
               style={{
-                background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 64%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
-                textFillColor: 'transparent',
-                textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
-                filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',
+                background:
+                  "linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 23%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                textFillColor: "transparent",
+                textShadow: "0px 0px 1px rgba(0, 0, 0, 0.15)",
+                filter: "drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))",
               }}
             >
               RULES & <br /> REGULATIONS
             </h1>
-            <div className="text-sm w-[95%] mb-4">
-              Play with confidence. Review the rules and guidelines designed to elevate your Golf Meet journey.
+            <div className="text-sm w-[95%]">
+            Play with confidence. Review the rules and guidelines designed to elevate your Golf Meet journey. 
             </div>
-            <p className="font-semibold text-sm">
-              Need support? We’re just a message away.
+            <p className="font-semibold text-sm mt-4">
+Need support? We’re just a message away.
             </p>
           </div>
-          
-          {/* Desktop image container - Right side */}
-          <div className="relative bottom-0 right-0 md:w-1/2">
+
+          {/* Right Image Section */}
+          <div className="flex items-center justify-center px-5 md:px-0 md:items-end mt-8">
             <img
               src={tr_bg_mobile}
               alt="Golfers Illustration"
-              className="w-[70%] h-auto object-contain pointer-events-none md:mr-12"
+              className="xl:w-[60%] lg:w-[75%] md:w-[85%] object-contain pointer-events-none"
             />
           </div>
         </div>
       </section>
+
 
       {/* Main container for mobile */}
       <div className="md:h-[108vh] flex flex-col relative md:hidden">

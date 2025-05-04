@@ -202,7 +202,7 @@ function FaQ() {
 
       {/* Desktop Hero Section - Visible only on medium screens and up */}
       <section
-        className="bg-gray-100 noise-bg relative hidden md:flex flex-col min-h-[85vh] md:flex-row"
+        className="bg-gray-100 noise-bg relative hidden md:flex flex-col min-h-[90vh] md:flex-row"
       >
         <div className="flex flex-col w-full justify-between md:justify-around md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
