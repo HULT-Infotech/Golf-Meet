@@ -166,12 +166,12 @@ function LeaderPage() {
           <div style={{ 
             width: '100%', 
             height: '160px'
-          }} className="bg-white mb-8 rounded-2xl shadow-xl relative">
+          }} className="bg-white mb-8 rounded-2xl shadow-2xl relative">
             <img src={player.image} alt="placeholder" className="absolute -top-[0.6rem] left-8 z-20" />
             <div style={{ 
               width: '100%', 
               height: '85px'
-            }} className="bg-[#01383A] z-10 noise-bg-green rounded-2xl flex flex-col items-start justify-center pl-28">
+            }} className="bg-[#01383A] z-10 noise-bg-newest rounded-xl flex flex-col items-start justify-center pl-28">
               <span className="text-white text-lg font-medium">{player.name}</span>
               <span className="text-white text-sm opacity-75">{player.phone}</span>
             </div>
@@ -331,17 +331,37 @@ function LeaderPage() {
           {/* Search Results Info */}
           {hasSearched && searchTerm ? (
             <div className="flex items-center justify-center w-full whitespace-nowrap">
-              <div className="border-t-2 border-gray-300 flex-grow"></div>
-              <h2 className="px-2 font-quattrocento text-gray-500 text-sm font-normal mx-2">
+              <div 
+                className="w-[15%] h-px"
+                style={{
+                  background: "linear-gradient(270deg, rgba(156, 163, 175, 0) 0%, #9CA3AF 50%, rgba(156, 163, 175, 0) 100%)"
+                }}
+              ></div>
+              <h2 className="font-quattrocento text-gray-500 text-sm font-normal">
                 Showing {filteredPlayers.length} results for "{searchTerm}"
               </h2>
-              <div className="border-t-2 border-gray-300 flex-grow"></div>
+              <div 
+                className="w-[15%] h-px"
+                style={{
+                  background: "linear-gradient(270deg, rgba(156, 163, 175, 0) 0%, #9CA3AF 50%, rgba(156, 163, 175, 0) 100%)"
+                }}
+              ></div>
             </div>
           ) : (
             <div className="flex items-center justify-center w-full whitespace-nowrap">
-              <div className="border-t-2 border-gray-300 flex-grow"></div>
-              <h2 className="px-2 font-quattrocento text-gray-500 text-sm font-normal mx-2">↓ Top 10 ranked players ↓</h2>
-              <div className="border-t-2 border-gray-300 flex-grow"></div>
+              <div 
+                className="w-[15%] h-px"
+                style={{
+                  background: "linear-gradient(270deg, rgba(156, 163, 175, 0) 0%, #9CA3AF 50%, rgba(156, 163, 175, 0) 100%)"
+                }}
+              ></div>
+              <h2 className="font-quattrocento text-gray-500 text-sm font-normal">↓ Top 10 ranked players ↓</h2>
+              <div 
+                className="w-[15%] h-px"
+                style={{
+                  background: "linear-gradient(270deg, rgba(156, 163, 175, 0) 0%, #9CA3AF 50%, rgba(156, 163, 175, 0) 100%)"
+                }}
+              ></div>
             </div>
           )}
           
