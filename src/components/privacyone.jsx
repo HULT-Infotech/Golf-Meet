@@ -115,14 +115,11 @@ function Policy() {
                       filter: "drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))",
                     }}
                   >
-                    RULES & <br /> REGULATIONS
+                    PRIVACY <br /> POLICY
                   </h1>
                   <div className="text-sm w-[95%]">
-                  Play with confidence. Review the rules and guidelines designed to elevate your Golf Meet journey. 
+                  Review the terms that govern your Golf Meet experience — crafted to ensure a trusted, respectful, and rewarding environment for every player. 
                   </div>
-                  <p className="font-semibold text-sm mt-4">
-      Need support? We’re just a message away.
-                  </p>
                 </div>
       
                 {/* Right Image Section */}
@@ -137,16 +134,16 @@ function Policy() {
             </section>
             <section className="md:flex hidden flex-col items-center justify-center -mt-2 relative sm:mb-0 w-full">
         <div 
-          onClick={() => window.location.href = '/code-of-conduct'}
+          onClick={() => window.location.href = '/terms-of-use'}
           className="flex justify-between items-center text-white bg-[#014D4E0D] noise-bg-newest w-full md:px-8 lg:px-32 lg:py-10 md:py-6 cursor-pointer hover:opacity-90 transition-opacity"
         >
           <div className="flex flex-col">
             <h2 className="lg:text-4xl md:4xl text-[1.8rem] font-bold uppercase font-quattrocento">
-              Player Code of Conduct
+            TERMS OF USE
             </h2>
             <p className="lg:text-base md:3xl tect-[1.5rem] underline underline-offset-4">
               Please refer to the
-              <strong> GolfMeet Tournament Rules </strong> here
+              <strong> GolfMeet Terms of Use </strong> here
             </p>
           </div>
           <div>

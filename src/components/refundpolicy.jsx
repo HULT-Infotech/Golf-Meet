@@ -9,6 +9,7 @@ import mcoc_coins2 from "../assets/m-coin1.svg";
 import mcoc_coins3 from "../assets/m-coin2.svg";
 import mcoc_coins4 from "../assets/m-coin4.svg";
 import Footer from "../components/Footer";
+import Footerr from "../Desktop/Footerr";
 import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
 import { Link } from "react-router-dom";
 
@@ -201,7 +202,12 @@ function RefundPolicy() {
         </div>
       </section>
 
-      <Footer />
+      <div className="md:hidden">
+<Footer />
+</div>
+<div className="md:block hidden">
+<Footerr />
+</div>
     </>
   );
 }

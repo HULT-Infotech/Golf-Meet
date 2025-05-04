@@ -87,13 +87,13 @@ function RefundOne() {
                 filter: "drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))",
               }}
             >
-              RULES & <br /> REGULATIONS
+              REFUND <br />
+              POLICY
             </h1>
             <div className="text-sm lg:w-[95%] md:w-[80%]">
-            Play with confidence. Review the rules and guidelines designed to elevate your Golf Meet journey. 
-            </div>
+            Learn about our refund guidelines designed to ensure transparency and fairness for every Golf Meet participant. </div>
             <p className="font-semibold text-sm mt-4">
-Need support? We’re just a message away.
+            Need assistance with a refund request? Our team is ready to support you.
             </p>
           </div>
   
