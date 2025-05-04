@@ -270,7 +270,7 @@ function LeaderPage() {
           <div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
 
           <h1 
-            className="font-quattrocento font-bold text-4xl mt-16 mb-2 text-center"
+            className="font-quattrocento font-bold text-5xl mt-16 mb-2 text-center"
             style={{
               background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 45%)',
               WebkitBackgroundClip: 'text',
