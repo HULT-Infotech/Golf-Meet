@@ -1,6 +1,6 @@
 import React from 'react';
-import price_image1 from "../assets/Cost/pro.webp";
-import price_image2 from "../assets/Cost/amature.webp";
+import price_image1 from "../assets/pro.svg";
+import price_image2 from "../assets/ama.svg";
 
 const EventsAndCostPage = () => {
   const handleWhatsAppClick = () => {
