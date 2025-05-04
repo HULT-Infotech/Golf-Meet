@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import faq_mobile_hero from "../assets/FAQPage/faq-m.webp";
 import faq_gm from "../assets/f-gm.svg";
 import Footer from "../components/Footer";
+import Footerr from "../Desktop/Footerr";
 import gradientbox from "../assets/greenbox.png";
 import land_m1 from "../assets/land-m.svg";
 import land_m2 from "../assets/land-fm1.svg";
@@ -207,7 +208,7 @@ function FaQ() {
           {/* Text Section */}
           <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
             <h1
-              className="font-quattrocento font-bold text-[2.85rem] text-[#201E15] sm:text-5xl lg:text-[80px] leading-[100%] tracking-[0.025em] mb-4"
+              className="font-quattrocento font-bold text-[2.85rem] text-[#201E15] sm:text-5xl lg:text-[55px] xl:text-[65px] leading-[100%] tracking-[0.025em] mb-4"
               style={{
                 background:
                   "linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 23%)",
@@ -236,7 +237,7 @@ function FaQ() {
             <img
               src={faq_mobile_hero}
               alt="Golfers Illustration"
-              className="w-[55%] object-contain pointer-events-none"
+              className="xl:w-[55%] lg:w-[65%] md:w-[75%] object-contain pointer-events-none"
             />
           </div>
         </div>
@@ -286,7 +287,7 @@ function FaQ() {
 
       {/* FAQ Content Section - Adjusted margin for desktop */}
       <section
-        className="py-8 md:py-16 px-6 bulge-top-other md:px-8 noise-bg-neww -mt-4 md:-mt-32 z-10"
+        className="py-8 md:py-16 px-6 bulge-top-other md:px-8 noise-bg-neww -mt-4 md:-mt-16 lg:-mt-24 xl:-mt-20 z-10"
       >
         <div className="flex flex-col md:flex-row max-w-[1300px] mx-auto gap-6 md:gap-12">
           {/* Left Sidebar - Using gradient background */}
@@ -349,11 +350,17 @@ function FaQ() {
       </section>
 
       {/* Footer with improved top shadow */}
-      <div className="relative">
+      <div className="relative md:hidden">
         {/* Subtle bottom shadow that fades upward */}
         <div className="h-6 w-full bg-gradient-to-t from-gray-400 via-gray-100 to-transparent opacity-40"></div>
         {/* Footer component */}
         <Footer className="" />
+      </div>
+      <div className="relative hidden md:block">
+        {/* Subtle bottom shadow that fades upward */}
+        <div className="h-6 w-full bg-gradient-to-t from-gray-400 via-gray-100 to-transparent opacity-40"></div>
+        {/* Footer component */}
+        <Footerr className="" />
       </div>
     </>
   );
