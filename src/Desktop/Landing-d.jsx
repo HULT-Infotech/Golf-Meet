@@ -111,7 +111,14 @@ function DesktopTabletLandingPage() {
     {/* First Section */}
     <div>
       <h1 className="text-[40px] mt-10 md:text-[48px] lg:text-[61px] leading-tight tracking-normal text-center font-quattrocento font-bold">
-        <span className="bg-gradient-to-t from-[#FFFFFF] to-[#f0bb64] bg-clip-text text-transparent">GOLF MEET</span> <br />
+      <span style={{
+  background: ' linear-gradient(180deg, rgba(255, 180, 30, 0.4) 0%, rgba(255, 180, 30, 0) 75%),white',
+  WebkitBackgroundClip: 'text',
+  backgroundClip: 'text',
+  color: 'transparent'
+}}>
+  GOLF MEET
+</span> <br />
         <span className="text-white"> PLAYERS.</span>
       </h1>
     </div>
