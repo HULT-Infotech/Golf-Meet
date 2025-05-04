@@ -1,22 +1,23 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Add this import
 import price_image1 from "../assets/pro.svg";
 import price_image2 from "../assets/ama.svg";
 
 const EventsAndCostPage = () => {
+  const navigate = useNavigate(); // Add this hook
+
   const handleWhatsAppClick = () => {
-    const phoneNumber = "918884844444";
-    window.open(`https://wa.me/${phoneNumber}`, "_blank");
+    // Navigate to the redirect route
+    navigate('/redirect');
   };
 
   return (
     <>
       {/* Photo Section */}
 
-
       {/* Curved Container Section - First Div with Subscription Fee */}
       <div className="w-full -mt-20 sm:-mt-24 md:-mt-28 lg:-mt-32 relative z-20">
         <div className="relative w-full h-auto py-10 sm:py-12 md:py-16 lg:py-20">
-
 
           {/* Tournament Fee Content - First Div */}
           <div 
