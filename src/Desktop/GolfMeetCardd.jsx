@@ -2,7 +2,7 @@ import React from 'react';
 import golfImage from '../assets/howdd.svg'; 
 const GolfMeetCard = () => {
   return (
-    <div className="w-full xl:-mt-10 pt-10 flex flex-col noise-bg bg-gray-50 relative">
+    <div className="w-full xl:-mt-10 pt-10 flex flex-col noise-bg-optim bg-gray-50 relative">
       {/* Main container for proper stacking context */}
       <div className="flex flex-col w-full">
         {/* Image positioned as background */}
@@ -64,7 +64,7 @@ const GolfMeetCard = () => {
         {/* Green section with tagline now properly positioned below */}
 
       {/* Top wavy section */}
-<section className="w-full h-[300px] relative md:-mt-96 lg:-mt-80 z-0">
+      <section className="w-full h-[300px] relative md:-mt-96 lg:-mt-80 z-0">
   {/* SVG wave at bottom of this section */}
   <svg
     className="absolute bottom-0 left-0 w-full"
@@ -72,20 +72,20 @@ const GolfMeetCard = () => {
     preserveAspectRatio="none"
   >
     <defs>
-      {/* Create a pattern with noise for consistency */}
+      {/* Updated noise filter from noise-bg-newest */}
       <filter id="noiseFilterTop">
         <feTurbulence
           type="fractalNoise"
-          baseFrequency="1.5"
-          numOctaves="3"
+          baseFrequency="0.8"
+          numOctaves="4"
           stitchTiles="stitch"
         />
       </filter>
 
-      {/* Pattern with the base color and noise overlay */}
+      {/* Updated pattern with the same color and opacity */}
       <pattern id="noisePatternTop" patternUnits="userSpaceOnUse" width="100" height="100">
         <rect width="100" height="100" fill="#002327" />
-        <rect width="100" height="100" filter="url(#noiseFilterTop)" opacity="0.23" />
+        <rect width="100" height="100" filter="url(#noiseFilterTop)" opacity="0.2" />
       </pattern>
     </defs>
     
@@ -96,17 +96,8 @@ const GolfMeetCard = () => {
   </svg>
 </section>
 
-{/* Main green section with the same background pattern */}
-{/* Main green section with the same background pattern */}
-<section className="w-full py-12 px-10 md:px-20 lg:h-[50vh] bulge-bottom-desk flex items-center justify-center relative z-10">
-  {/* SVG background to apply the same noise pattern */}
-  <svg
-    className="absolute inset-0 w-full h-full z-[-1]"
-    preserveAspectRatio="none"
-  >
-    <rect width="100%" height="100%" fill="url(#noisePatternTop)" />
-  </svg>
-  
+{/* Main green section with the updated noise background pattern */}
+<section className="w-full py-12 px-10 md:px-20 lg:h-[50vh] bulge-bottom-desk flex items-center justify-center relative z-10 noise-bg-newest">
   <div className="text-center text-white w-full max-w-4xl mx-auto">
     <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0">
       {/* MEET Section */}
