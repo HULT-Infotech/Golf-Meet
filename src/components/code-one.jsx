@@ -28,7 +28,7 @@ function CodeOne() {
               className="font-quattrocento -mt-28 font-bold text-[2.85rem] text-[#201E15] sm:text-5xl lg:text-[55px] xl:text-[65px] leading-[100%] tracking-[0.025em] mb-4"
               style={{
                 background:
-                
+
                   "linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 23%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
