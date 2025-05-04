@@ -1,7 +1,7 @@
 import React from 'react';
 import bgPrize from "../assets/pddddd.png";
 import flag from "../assets/GolfPrize/Vector.svg";
-import bgMedal from "../assets/pdd.png";
+import bgMedal from "../assets/medd.png";
 import p_1 from "../assets/Photosection/p1.webp";
 import p_2 from "../assets/Photosection/p2.webp";
 
@@ -102,27 +102,27 @@ const GolfPrize = () => {
       </div>
     </div>
     <div className="w-full h-[77vh] overflow-hidden">
-      {/* Main container with flexbox layout for side-by-side content */}
-      <div className="w-full h-full flex justify-center items-center">
-        {/* Left side - Text content - Container centered, text left-aligned */}
-        <div className="w-1/2 flex flex-col items-center justify-center text-[#014D4E]">
-          <div className="flex flex-col items-start">
-            <h3 className="mb-2"
+      {/* Main container with absolute positioning for independent sections */}
+      <div className="w-full h-full relative">
+        
+        {/* Left side - Text content - Independent positioning */}
+        <div className="absolute left-0  top-0 w-1/2 h-full flex items-center justify-center">
+          <div className="text-[#014D4E]">
+            <h3 className="mb-2 xl:text-[3rem] lg:text-[2.5rem] md:text-[1.9rem]"
               style={{
-                fontSize: 'clamp(1.5rem, 7vw, 3rem)',
                 fontFamily: 'Quattrocento, serif',
                 fontWeight: 400,
               }}>
               WIN EXCITING
             </h3>
-            <h1 className="text-[64px] xsm:text-[3rem] leading-none"
+            <h1 className="xl:text-[64px] md:text-[50px] xsm:text-[3rem] leading-none"
             style={{
                 fontFamily: 'Quattrocento, serif',
                 fontWeight: 700,
               }}>
               MONTHLY
             </h1>
-            <h1 className="text-[64px] xsm:text-[3rem] leading-none"
+            <h1 className="xl:text-[64px] md:text-[50px]  xsm:text-[3rem] leading-none"
             style={{
                 fontFamily: 'Quattrocento, serif',
                 fontWeight: 700,
@@ -132,19 +132,22 @@ const GolfPrize = () => {
           </div>
         </div>
         
-        {/* Right side - Medal Image - Positioned at the top */}
-        <div className="w-1/3 relative flex justify-center items-start h-full -mt-80">
+        {/* Right side - Medal Image - Extremely large size */}
+        <div className="absolute right-0 top-0 -mt-32 xl:w-3/5 lg:w-7/12 md:w-3/6 h-full flex items-center justify-center">
           <img
             src={bgMedal}
             alt="Medal"
             className="object-contain"
             style={{
-              maxHeight: '80vh',
-              position: 'absolute',
-              top: 0
+              maxHeight: '170%',
+              maxWidth: '170%',
+              width: '120%',
+              height: '120%',
+              transform: 'scale(1)'
             }}
           />
         </div>
+        
       </div>
     </div>
     <div className="w-full min-h-[70vh] -mt-24 bg-white relative">
@@ -154,14 +157,12 @@ const GolfPrize = () => {
         style={{ fontWeight: "700" }}
       >
         <h1
-          className="font-bold text-teal-800"
-          style={{ fontSize: 'clamp(1.75rem, 5vw, 2.5rem)' }}
+          className="font-bold text-teal-800 md:text-[2.2rem] xl:text-[2.5rem] lg:text-[2.3rem]"
         >
           ENJOY EXCLUSIVE
         </h1>
         <h1
-          className="font-bold text-teal-800"
-          style={{ fontSize: 'clamp(1.75rem, 5vw, 2.5rem)' }}
+          className="font-bold text-teal-800 md:text-[2.2rem] xl:text-[2.5rem] lg:text-[2.3rem]"
         >
           CURATED EVENTS
         </h1>
@@ -170,7 +171,7 @@ const GolfPrize = () => {
       {/* Photos Container - Centered horizontally and side by side on larger screens */}
       <div className="px-4 md:px-8 lg:px-16 mx-auto xl:px-32 flex flex-col md:flex-row md:gap-6 justify-center">
         {/* First Photo */}
-        <div className="mb-6 md:mb-0 md:w-1/3">
+        <div className="mb-6 md:mb-0 xl:w-1/3 md:w-2/5">
           <div className="rounded-lg overflow-hidden">
             <img
               src={p_1}
@@ -181,7 +182,7 @@ const GolfPrize = () => {
         </div>
         
         {/* Second Photo - Adding specific z-index to ensure it's above cost section */}
-        <div className="relative md:w-1/3">
+        <div className="relative xl:w-1/3 md:w-2/5">
           <div className="rounded-lg overflow-hidden">
             <img
               src={p_2}
