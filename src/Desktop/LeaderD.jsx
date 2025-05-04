@@ -250,19 +250,19 @@ function LeaderPage() {
         </div>
         
         {/* Noise background for bottom half with -mt-4 margin */}
-        <div className="absolute -mt-4 bottom-0 left-0 w-full h-1/2 noise-bg-newest z-0"></div>
+        <div className="absolute -mt-4 pb-12 bottom-0 left-0 w-full h-1/2 noise-bg-newest bulge-bottom z-0"></div>
         
         {/* Corner image - restored to original */}
         <img 
           src={bgImage1} 
           alt="" 
-          className="absolute bottom-0 left-0 w-[26rem] h-auto object-contain z-10"
+          className="absolute bottom-0 left-0 xl:w-[26rem] lg:w-[20rem] md:w-[14rem]  h-auto object-contain z-10"
         />
         
         <img 
           src={bgImage2} 
           alt="" 
-          className="absolute bottom-0 right-0 w-[38rem] h-auto object-contain z-10"
+          className="absolute bottom-0 right-0 xl:w-[38rem] lg:w-[30rem] md:w-[24rem] h-auto object-contain z-10"
         />
         
         {/* Content container */}
@@ -270,7 +270,7 @@ function LeaderPage() {
           <div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
 
           <h1 
-            className="font-quattrocento font-bold text-5xl mt-16 mb-2 text-center"
+            className="font-quattrocento font-bold text-5xl xl:text-6xl mt-16 mb-2 text-center"
             style={{
               background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 45%)',
               WebkitBackgroundClip: 'text',
