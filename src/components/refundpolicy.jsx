@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 function RefundPolicy() {
   return (
     <>
-      <section className="relative px-4 flex items-center justify-center">
+      <section className="relative px-4 flex items-center justify-center overflow-hidden">
         {/* Absolute background image container for desktop */}
         <div className="absolute inset-0 w-full z-6 h-full hidden md:block">
           <img
@@ -32,12 +32,12 @@ function RefundPolicy() {
         <img
           src={coc_coins1}
           alt="Coins"
-          className="absolute lg:top-[3%] top-[%] right-6 w-[150px] lg:w-[180px] lg:-right-6 xl:right-20 xl:w-[200px] z-30 hidden md:block"
+          className="absolute lg:top-[10%] top-[4%] -right-3 xl:right-5 w-[150px] lg:w-[180px] lg:-right-6  xl:w-[200px] z-30 hidden md:block"
         />
         <img
           src={coc_coins2}
           alt="Coins"
-          className="absolute top-[11%] left-4 w-[100px] lg:w-[120px] lg:left-2 xl:left-20 xl:w-[130px] z-30 hidden md:block"
+          className="absolute top-[51%] left-4 w-[100px] lg:w-[120px] lg:left-2 xl:left-20 xl:w-[130px] z-30 hidden md:block"
         />
         <img
           src={mcoc_coins1}
@@ -47,12 +47,12 @@ function RefundPolicy() {
         <img
           src={mcoc_coins2}
           alt="Coins"
-          className="absolute bottom-[60%] left-0 w-[60px] z-30 md:hidden"
+          className="absolute bottom-[68%] left-0 w-[60px] z-30 md:hidden"
         />
         <img
           src={mcoc_coins3}
           alt="Coins"
-          className="absolute top-[7%] right-0 w-[60px] z-30 md:hidden"
+          className="absolute top-[10%] right-0 w-[60px] z-30 md:hidden"
         />
         <img
           src={mcoc_coins4}
@@ -62,7 +62,7 @@ function RefundPolicy() {
         <img
           src={coc_coins2}
           alt="Coins"
-          className="absolute top-[70%] -right-12 w-[130px] z-10 md:hidden"
+          className="absolute top-[50%] -right-12 w-[130px] z-10 md:hidden"
         />
         <img
           src={coc_coins2}
@@ -72,18 +72,18 @@ function RefundPolicy() {
         <img
           src={coc_coins3}
           alt="Coins"
-          className="absolute top-[43%] left-0 lg:left-12 xl-left-10 transform -translate-y-1/3 w-[150px] lg:w-[160px] xl-w-[220px] z-10 hidden md:block"
+          className="absolute top-[83%] left-0 lg:left-12 xl-left-10 transform -translate-y-1/3 w-[150px] lg:w-[160px] xl-w-[220px] z-10 hidden md:block"
         />
-        <img
+        {/* <img
           src={coc_coins4}
           alt="Coins"
           className="absolute w-[180px] bottom-[25%] right-0 xl:w-[200px] w-140px lg:w-[190px] z-10 hidden md:block"
-        />
-        <img
+        /> */}
+        {/* <img
           src={coc_coins5}
           alt="Coins"
           className="absolute bottom-[14%] right-[5%] lg:w-[120px] w-[100px] xl:w-[130px] z-30 hidden md:block"
-        />
+        /> */}
 
         {/* Content Container */}
         <div className="relative bg-gray-100 mt-12 mb-20 xsm:mt-10 rounded-lg p-4 sm:p-6 md:p-8 w-[95%] sm:w-[90%] md:w-[85%] max-w-6xl shadow-gray-800 drop-shadow-2xl shadow z-20">

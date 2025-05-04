@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 function Common() {
   return (
     <>
-      <section className="relative px-4 flex items-center justify-center">
+      <section className="relative px-4 flex items-center justify-center overflow-hidden">
         {/* Absolute background image container for desktop */}
         <div className="absolute inset-0 w-full z-6 h-full hidden md:block">
           <img

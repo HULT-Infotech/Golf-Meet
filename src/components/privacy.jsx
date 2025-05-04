@@ -9,13 +9,14 @@ import mcoc_coins2 from "../assets/m-coin1.svg";
 import mcoc_coins3 from "../assets/m-coin2.svg";
 import mcoc_coins4 from "../assets/m-coin4.svg";
 import Footer from "../components/Footer";
+import Footerr from "../Desktop/Footerr";
 import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
 import { Link } from "react-router-dom";
 
 function Common() {
   return (
     <>
-      <section className="relative px-4 flex items-center justify-center">
+      <section className="relative px-4 flex items-center justify-center overflow-hidden">
         {/* Absolute background image container for desktop */}
         <div className="absolute inset-0 w-full z-6 h-full hidden md:block">
           <img
@@ -32,7 +33,7 @@ function Common() {
         <img
           src={coc_coins1}
           alt="Coins"
-          className="absolute lg:top-[3%] top-[%] right-6 w-[150px] lg:w-[180px] lg:-right-6 xl:right-20 xl:w-[200px] z-30 hidden md:block"
+          className="absolute lg:top-[3%] top-[6%] -right-3 w-[150px] lg:w-[180px] lg:-right-6 xl:right-20 xl:w-[200px] z-30 hidden md:block"
         />
         <img
           src={coc_coins2}
@@ -47,17 +48,17 @@ function Common() {
         <img
           src={mcoc_coins2}
           alt="Coins"
-          className="absolute bottom-[60%] left-0 w-[60px] z-30 md:hidden"
+          className="absolute bottom-[62%] left-0 xsm:w-[60px] w-[50px] z-30 md:hidden"
         />
         <img
           src={mcoc_coins3}
           alt="Coins"
-          className="absolute top-[7%] right-0 w-[60px] z-30 md:hidden"
+          className="absolute xsm:top-[3%] top-[10%] right-0 w-[60px] z-30 md:hidden"
         />
         <img
           src={mcoc_coins4}
           alt="Coins"
-          className="absolute top-[48%] right-0 w-[55px] z-30 md:hidden"
+          className="absolute xsm:top-[49%] top-[56%] right-0 w-[55px] z-30 md:hidden"
         />
         <img
           src={coc_coins2}
@@ -72,7 +73,7 @@ function Common() {
         <img
           src={coc_coins3}
           alt="Coins"
-          className="absolute top-[43%] left-0 lg:left-12 xl-left-10 transform -translate-y-1/3 w-[150px] lg:w-[160px] xl-w-[220px] z-10 hidden md:block"
+          className="absolute top-[68%] left-0 lg:left-12 xl-left-10 transform -translate-y-1/3 w-[150px] lg:w-[160px] xl-w-[220px] z-10 hidden md:block"
         />
         <img
           src={coc_coins4}
@@ -489,7 +490,12 @@ function Common() {
         </div>
       </section>
 
-      <Footer />
+      <div className="md:hidden">
+<Footer />
+</div>
+<div className="md:block hidden">
+<Footerr />
+</div>
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import tr_bg from "../assets/tournament-rule/right-bg.svg";
+import tr_bg from "../assets/cdd.svg";
 import tr_bg_mobile from "../assets/refund.webp";
 import tr_dec_mobile from "../assets/green-m.svg";
 import code_of_conduct_greenleft from "../assets/code-of-conduct/code-conduct-left.svg";
@@ -23,7 +23,7 @@ function RefundOne() {
       </div>
       <div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
 
-      <section className="sm:bg-gray-100 sm:noise-bg noise-bg-n min-h-[90vh] relative flex flex-col overflow-hidden">
+      <section className="sm:bg-gray-100 sm:noise-bg noise-bg-n min-h-[90vh] md:hidden relative flex flex-col overflow-hidden">
         {/* Content container with flex structure */}
         <div className="flex flex-col w-full flex-1 md:flex-row max-w-[1700px] mx-auto relative pt-4 md:pt-16">
           {/* Text Section */}
@@ -70,8 +70,46 @@ function RefundOne() {
           />
         </div>
       </section>
-
+<section 
+  className="bg-gray-100  noise-bg relative hidden md:flex flex-col min-h-[90vh] md:flex-row overflow-hidden"
+>
+<div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
+            <h1
+              className="font-quattrocento -mt-28 font-bold text-[2.85rem] text-[#201E15] sm:text-5xl lg:text-[55px] xl:text-[65px] leading-[100%] tracking-[0.025em] mb-4"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 23%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                textFillColor: "transparent",
+                textShadow: "0px 0px 1px rgba(0, 0, 0, 0.15)",
+                filter: "drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))",
+              }}
+            >
+              RULES & <br /> REGULATIONS
+            </h1>
+            <div className="text-sm lg:w-[95%] md:w-[80%]">
+            Play with confidence. Review the rules and guidelines designed to elevate your Golf Meet journey. 
+            </div>
+            <p className="font-semibold text-sm mt-4">
+Need support? We’re just a message away.
+            </p>
+          </div>
+  
+  {/* Right Image Section - Positioned at bottom-right */}
+  <div className="absolute bottom-0 right-4 w-1/2 h-auto">
+    <img
+      src={tr_bg}
+      alt="Golfers Illustration"
+      className="w-full h-auto object-contain object-bottom pointer-events-none"
+    />
+  </div>
+</section>
       
+<section className="md:block hidden w-full h-[25vh] bulge-top-desk noise-bg-newest -mt-4 -mb-24">
+        
+        </section>
     </div>
     
   );

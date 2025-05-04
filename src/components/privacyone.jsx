@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
 import pr_m from "../assets/PV.webp";
 import Navbar from "../components/Navbar";
-
+import tr_bg_mobile from "../assets/check.webp";
 const handleWhatsAppClick = () => {
   // The phone number provided: +91-888 484 4444
   // Remove non-numeric characters for the WhatsApp link
@@ -21,7 +21,7 @@ function Policy() {
       <div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
 
       {/* First section with min-h-screen, with padding-top to account for navbar */}
-      <section className="sm:bg-gray-100 sm:noise-bg noise-bg-n min-h-[90vh] relative flex flex-col overflow-hidden">
+      <section className="sm:bg-gray-100 md:hidden sm:noise-bg noise-bg-n min-h-[90vh] relative flex flex-col overflow-hidden">
         {/* Content container with flex structure */}
         <div className="flex flex-col w-full flex-1 md:flex-row max-w-[1700px] mx-auto relative pt-4 md:pt-16">
           {/* Text Section */}
@@ -66,7 +66,7 @@ function Policy() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center justify-center xsm:pt-12 pt-16 bulge-top -mt-3 md:mt-12 relative noise-bg-new sm:mb-0">
+      <section className="md:hidden flex flex-col items-center justify-center xsm:pt-12 pt-16 bulge-top -mt-3 md:mt-12 relative noise-bg-new sm:mb-0">
         <div className="flex justify-between items-center font-medium xsm:text-lg text-white bg-[#FFFFFF0D] w-[85%] p-7 rounded-md">
           <div className="flex flex-col">
             <h2 className="lg:text-5xl md:4xl text-[1.8rem] uppercase font-quattrocento">
@@ -96,7 +96,79 @@ function Policy() {
           </div>
         </div>
       </section>
+      <section
+              className="bg-gray-100 noise-bg relative hidden md:flex flex-col min-h-[90vh] md:flex-row"
+            >
+              <div className="flex flex-col w-full justify-between md:justify-around md:flex-row max-w-[1700px] mx-auto">
+                {/* Text Section */}
+                <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
+                  <h1
+                    className="font-quattrocento -mt-28 font-bold text-[2.85rem] text-[#201E15] sm:text-5xl lg:text-[55px] xl:text-[65px] leading-[100%] tracking-[0.025em] mb-4"
+                    style={{
+                      background:
+                        "linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 23%)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      backgroundClip: "text",
+                      textFillColor: "transparent",
+                      textShadow: "0px 0px 1px rgba(0, 0, 0, 0.15)",
+                      filter: "drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))",
+                    }}
+                  >
+                    RULES & <br /> REGULATIONS
+                  </h1>
+                  <div className="text-sm w-[95%]">
+                  Play with confidence. Review the rules and guidelines designed to elevate your Golf Meet journey. 
+                  </div>
+                  <p className="font-semibold text-sm mt-4">
+      Need support? We’re just a message away.
+                  </p>
+                </div>
+      
+                {/* Right Image Section */}
+                <div className="flex items-center justify-center px-5 md:px-0 md:items-end mt-8">
+                  <img
+                    src={tr_bg_mobile}
+                    alt="Golfers Illustration"
+                    className="xl:w-[60%] lg:w-[75%] md:w-[85%] object-contain pointer-events-none"
+                  />
+                </div>
+              </div>
+            </section>
+            <section className="md:flex hidden flex-col items-center justify-center -mt-2 relative sm:mb-0 w-full">
+        <div 
+          onClick={() => window.location.href = '/code-of-conduct'}
+          className="flex justify-between items-center text-white bg-[#014D4E0D] noise-bg-newest w-full md:px-8 lg:px-32 lg:py-10 md:py-6 cursor-pointer hover:opacity-90 transition-opacity"
+        >
+          <div className="flex flex-col">
+            <h2 className="lg:text-4xl md:4xl text-[1.8rem] font-bold uppercase font-quattrocento">
+              Player Code of Conduct
+            </h2>
+            <p className="lg:text-base md:3xl tect-[1.5rem] underline underline-offset-4">
+              Please refer to the
+              <strong> GolfMeet Tournament Rules </strong> here
+            </p>
+          </div>
+          <div>
+            <svg
+              width="22"
+              height="42"
+              viewBox="0 0 25 47"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1.5L23 23.5L1 45.5"
+                stroke="#FFF"
+                strokeWidth="2"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      
     </div>
+    
   );
 }
 
