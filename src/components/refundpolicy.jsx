@@ -62,7 +62,7 @@ function RefundPolicy() {
         <img
           src={coc_coins2}
           alt="Coins"
-          className="absolute top-[50%] -right-12 w-[130px] z-10 md:hidden"
+          className="absolute top-[60%] -right-12 w-[130px] z-10 md:hidden"
         />
         <img
           src={coc_coins2}
