@@ -6,12 +6,11 @@ const GolfMeetCard = () => {
       {/* Main container for proper stacking context */}
       <div className="flex flex-col w-full">
         {/* Image positioned as background */}
-        <div className="w-full h-screen relative">
-          <img 
-            src={golfImage}
-            className="absolute xl:top-16 md:top-28 lg:top-28 left-0 w-full h-full object-contain object-center"
-            alt="Golf meet"
-          />
+    <div className="w-full h-screen relative">
+      <img
+        src={golfImage}
+        className="absolute xl:top-16 md:top-28 lg:top-28 inset-0 w-full h-full xl:object-cover object-contain mx-auto"
+        alt="Golf meet"/>
           
           {/* Card positioned on top of the image */}
           <div className="relative w-full h-full flex items-center justify-center md:mt-8 lg:mt-24 p-4 ">
@@ -21,20 +20,31 @@ const GolfMeetCard = () => {
                   INTRODUCING
                 </h6>
                  
-                <h1
-                  className="xsm:text-3xl font-quattrocento mb-4 text-4xl text-center md:text-4xl xl:text-6xl mx-auto uppercase font-bold tracking-wider relative z-10"
-                  style={{
-                    background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 24%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text',
-                    textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
-                    filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',
-                  }}
-                >
-                  The <br /> Golf Meet <br />
-                  <span className="block mt-1 md:mt-2">Handicap</span>
-                </h1>
+                <div className="relative">
+  <h1                   
+    className="xsm:text-3xl font-quattrocento mb-4 text-4xl text-center md:text-4xl xl:text-6xl mx-auto uppercase font-bold tracking-wider relative z-10"                   
+    style={{                     
+      background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 24%)',                     
+      WebkitBackgroundClip: 'text',                     
+      WebkitTextFillColor: 'transparent',                     
+      backgroundClip: 'text',                   
+    }}                 
+  >                   
+    The <br /> Golf Meet <br />                   
+    <span className="block mt-1 md:mt-2">Handicap</span>                 
+  </h1>
+  {/* Stronger shadow layer */}
+  <h1                   
+    className="xsm:text-3xl font-quattrocento mb-4 text-4xl text-center md:text-4xl xl:text-6xl mx-auto uppercase font-bold tracking-wider absolute top-0 left-0 w-full -z-1"
+    style={{
+      color: 'rgba(0, 0, 0, 0.08)',
+      transform: 'translate(2px, 2px)'
+    }}
+  >                   
+    The <br /> Golf Meet <br />                   
+    <span className="block mt-1 md:mt-2">Handicap</span>                 
+  </h1>
+</div>
               </div>
               
               <div className="bg-[#014D4E] px-1 mb-3 py-1 rounded-lg relative z-20">

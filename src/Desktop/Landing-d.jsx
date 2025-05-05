@@ -19,18 +19,18 @@ function DesktopTabletLandingPage() {
         {/* Top Navbar */}
         <div className="md:absolute z-50 top-0 w-full flex justify-between items-center px-5 md:px-8 lg:px-10 py-8 md:py-10 flex-col-reverse md:flex-row">
       <div className="flex text-xsm lg:text-sm gap-6 md:gap-8 lg:gap-10 mt-4 md:mt-0 w-full md:w-auto">
-        <Link
-          to="/redirect"
-          className=" md:text-xsm   bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-2 py-1 md:px-4 lg:px-5 md:py-2 rounded transition-all duration-300 ease-in-out shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)] hover:from-[#E5181A] hover:via-[#E51719] hover:to-[#CC1517]  hover:shadow-[0px_2px_10px_0px_rgba(0,0,0,0.45)]"
-        >
-          <span className="font-bold text-[#FFF7D9]">
-            SIGN UP NOW
-          </span>
-        </Link>
+      <Link
+  to="/redirect"
+  className="flex items-center justify-center md:text-xsm md:pt-3 font-quattrocento bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-2 py-1 md:px-4 lg:px-5 md:pb-2 rounded transition-all duration-300 ease-in-out shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)] hover:from-[#E5181A] hover:via-[#E51719] hover:to-[#CC1517] hover:shadow-[0px_2px_10px_0px_rgba(0,0,0,0.45)]"
+>
+  <span className="font-semibold text-[#FFF7D9] leading-none">
+    SIGN UP NOW
+  </span>
+</Link>
         
         <a
           href="/leaderboard"
-          className="  leading-4 text-[#211E16] font-bold text-center my-auto"
+          className="  leading-4 text-[#211E16] font-semibold text-center my-auto"
         >
           LEADERBOARD
         </a>
@@ -42,14 +42,14 @@ function DesktopTabletLandingPage() {
         </div>
         <a
           href="/faq"
-          className="  leading-4 text-[#211E16] font-bold text-center my-auto"
+          className="  leading-4 text-[#211E16] font-semibold text-center my-auto"
         >
           FAQS
         </a>
         
         <Link
           to="/redirect"
-          className="flex items-center gap-1.5 leading-4 text-[#211E16] my-auto font-bold"
+          className="flex items-center gap-1.5 leading-4 text-[#211E16] my-auto font-semibold"
         >
           PLAYER SUPPORT 
           <svg className="w-4 h-4" viewBox="0 0 24 24" fill="#211E16" xmlns="http://www.w3.org/2000/svg">
