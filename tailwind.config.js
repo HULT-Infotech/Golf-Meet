@@ -16,6 +16,15 @@ export default {
       },
       screens: {
         'xsm': {'max': '374px'},
+        'xsh': {
+          'raw': '(min-width: 700px) and (max-width: 1279px) and (min-height: 700px) and (max-height: 1100px)'
+        },
+        'xh': {
+          'raw': '(min-width: 700px) and (max-width: 1279px) and (min-height: 1099px) and (max-height: 1299px)'
+        },
+        'xhh': {
+          'raw': '(min-width: 700px) and (max-width: 1279px) and (min-height: 1300px) and (max-height: 1440px)'
+        },
       },
     },
   },

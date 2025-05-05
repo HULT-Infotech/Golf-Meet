@@ -28,12 +28,11 @@ const HowToPlay = () => {
   return (
     <>
       <Navbar />
-      <section 
-        className="bg-gray-100 noise-bg relative flex flex-col md:min-h-[80vh] md:flex-row mb-12 md:mb-0"
-      >
+      {/* Hero Section */}
+      <section className="bg-gray-100 noise-bg relative flex flex-col md:min-h-[80vh] md:flex-row mb-12 md:mb-0 overflow-hidden">
         <div className="flex flex-col w-full justify-between md:justify-around gap-24 md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
-          <div className="relative flex flex-col justify-center sm:-mt-20 items-start p-8 md:pl-10 md:p-0 xl:ml-20">
+          <div className="relative flex flex-col justify-center sm:-mt-20 items-start p-8 md:pl-10 md:p-0 xl:ml-20 z-10">
             <h1 className="font-quattrocento font-bold text-4xl sm:text-5xl md:text-[3rem] lg:text-[clamp(70px,5vw+1.2rem,100px)] leading-[100%] tracking-[0.025em] whitespace-nowrap text-[#201E15]">
               HOW TO PLAY
             </h1>
@@ -44,36 +43,34 @@ const HowToPlay = () => {
             </p>
           </div>
 
-          {/* Right Image Section */}
-          <div className="flex items-end px-5 md:px-0 xl:mt-4">
+          {/* Right Image Section - Added max-height and object-fit properties */}
+          <div className="flex items-end px-5 md:px-0 xl:mt-4 max-w-full">
             <img
               src={howToPlay_bg}
               alt="Golfers Illustration"
-              className="w-full object-contain pointer-events-none"
+              className="w-full object-contain pointer-events-none max-h-[50vh] md:max-h-[60vh]"
             />
           </div>
         </div>
-        {/* Decorative Green Element */}
+        {/* Decorative Green Element - Adjusted positioning and z-index */}
         <img
           src={howToPlay_greenleft}
           alt="Green left element"
-          className="hidden md:block absolute md:-bottom-12 left-0 w-[270px] md:w-[400px] lg:w-[550px] lg:-bottom-16 object-contain pointer-events-none"
+          className="hidden md:block absolute md:-bottom-12 left-0 w-[270px] md:w-[400px] lg:w-[550px] lg:-bottom-16 object-contain pointer-events-none z-0"
         />
         <img
           src={howToPlay_greenleft_mobile}
           alt="Green left element"
-          className="absolute md:hidden -bottom-20 sm:-bottom-20 left-0 w-[350px]"
+          className="absolute md:hidden -bottom-20 sm:-bottom-20 left-0 w-[350px] z-0"
         />
       </section>
 
+      {/* Steps Section */}
       <section className="flex flex-col w-full">
-        {/* Step 1 */}
-        <div 
-  className="relative flex flex-col  items-center w-full py-10 md:p-5 px-5  md:mt-10
-             md:h-[25rem] lg:h-[40rem]"
->
-          <div className="flex flex-col md:flex-row justify-center items-center lg:items-start md:justify-between w-full mx-auto max-w-6xl">
-            <div className="flex flex-col md:flex-row items-start md:space-x-8 lg:mt-36 w-full md:w-auto">
+        {/* Step 1 - Added position containment and adjusted spacing */}
+        <div className="relative flex flex-col items-center w-full py-16 px-5 md:py-24 md:px-8 lg:py-32 overflow-hidden">
+          <div className="flex flex-col md:flex-row justify-center items-center lg:items-start md:justify-between w-full mx-auto max-w-6xl z-10">
+            <div className="flex flex-col md:flex-row items-start md:space-x-8 w-full md:w-auto">
               <span className="w-[45px] h-[60px] md:w-[60px] md:h-[80px] lg:w-[clamp(45px,5vw,110px)] 
                  lg:h-[clamp(60px,7vw,120px)] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
                 1
@@ -89,28 +86,32 @@ const HowToPlay = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[85%] sm:w-[45%] md:w-[26vw] p-2 md:p-0 mt-6 md:mt-0">
-              <img src={Mobile_Screen_Step_1} alt="Mobile_Screen_Step_1" />
+            {/* Mobile image - Added proper containment */}
+            <div className="w-[85%] sm:w-[45%] md:w-[26vw] md:max-w-[300px] p-2 md:p-0 mt-6 md:mt-0">
+              <img 
+                src={Mobile_Screen_Step_1} 
+                alt="Mobile_Screen_Step_1" 
+                className="w-full h-auto object-contain"
+              />
             </div>
           </div>
-          {/* Ground Images */}
+          {/* Ground Images - Improved positioning */}
           <img
             src={ground_1}
             alt="ground_1"
-            className="absolute left-0 bottom-0 hidden md:block md:w-[300px] lg:w-auto md:mt-28"
+            className="absolute left-0 bottom-0 hidden md:block md:w-[300px] lg:w-auto object-contain max-w-full z-0"
           />
           <img
             src={ground_1_mobile}
             alt="ground_1"
-            className="absolute left-0 bottom-0 md:hidden"
+            className="absolute left-0 bottom-0 md:hidden object-contain max-w-full z-0"
           />
         </div>
 
-        {/* Step 2 */}
-        <div className="flex relative flex-col justify-center items-center w-full py-10 md:p-5 px-5 lg:-mt-8
-             md:h-[25rem] lg:h-[50rem]">
-          <div className="flex flex-col md:flex-row-reverse justify-center items-center lg:items-start md:justify-between w-full mx-auto max-w-7xl">
-            <div className="flex flex-col md:flex-row md:justify-between items-start md:space-x-8 lg:mt-32 w-full md:w-auto">
+        {/* Step 2 - Added spacing and fixed positioning */}
+        <div className="relative flex flex-col justify-center items-center w-full py-16 px-5 md:py-24 md:px-8 lg:py-32 overflow-hidden">
+          <div className="flex flex-col md:flex-row-reverse justify-center items-center lg:items-start md:justify-between w-full mx-auto max-w-7xl z-10">
+            <div className="flex flex-col md:flex-row md:justify-between items-start md:space-x-8 w-full md:w-auto">
               <span className="w-[45px] h-[60px] md:w-[60px] md:h-[80px] lg:w-[clamp(45px,5vw,110px)] 
                  lg:h-[clamp(60px,7vw,120px)] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
                 2
@@ -129,26 +130,32 @@ const HowToPlay = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[75%] sm:w-[40%] md:w-[22vw] p-4 md:p-0 mt-6 md:mt-0">
-              <img src={Mobile_Screen_Step_2} alt="Mobile_Screen_Step_2" />
+            {/* Mobile image - Added proper containment */}
+            <div className="w-[75%] sm:w-[40%] md:w-[22vw] md:max-w-[280px] p-4 md:p-0 mt-6 md:mt-0">
+              <img 
+                src={Mobile_Screen_Step_2} 
+                alt="Mobile_Screen_Step_2" 
+                className="w-full h-auto object-contain"
+              />
             </div>
           </div>
+          {/* Ground Images - Improved positioning */}
           <img
             src={ground_2}
             alt="ground_2"
-            className="absolute right-0 bottom-0 hidden md:block md:w-[300px] lg:w-auto md:mt-10"
+            className="absolute right-0 bottom-0 hidden md:block md:w-[300px] lg:w-auto object-contain max-w-full z-0"
           />
           <img
             src={ground_2_mobile}
             alt="ground_2_mobile"
-            className="absolute right-0 bottom-0 md:hidden"
+            className="absolute right-0 bottom-0 md:hidden object-contain max-w-full z-0"
           />
         </div>
 
-        {/* Step 3 */}
-        <div className="flex relative flex-col justify-center md:h-[30rem] lg:h-[50rem] items-center w-full py-10 md:p-5 px-5 lg:-mt-12">
-          <div className="flex flex-col md:flex-row justify-center items-center lg:items-start md:justify-between w-full mx-auto max-w-6xl">
-            <div className="flex flex-col md:flex-row items-start md:space-x-8 lg:mt-32 w-full md:w-auto">
+        {/* Step 3 - Fixed spacing and added containment */}
+        <div className="relative flex flex-col justify-center items-center w-full py-16 px-5 md:py-24 md:px-8 lg:py-32 overflow-hidden">
+          <div className="flex flex-col md:flex-row justify-center items-center lg:items-start md:justify-between w-full mx-auto max-w-6xl z-10">
+            <div className="flex flex-col md:flex-row items-start md:space-x-8 w-full md:w-auto">
               <span className="w-[45px] h-[60px] md:w-[60px] md:h-[80px] lg:w-[clamp(45px,5vw,110px)] 
                  lg:h-[clamp(60px,7vw,120px)] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
                 3
@@ -166,26 +173,32 @@ const HowToPlay = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[75%] sm:w-[40%] md:w-[22vw] p-4 md:mt-20 md:p-0 mt-6">
-              <img src={Mobile_Screen_Step_2} alt="Mobile_Screen_Step_2" />
+            {/* Mobile image - Added proper containment */}
+            <div className="w-[75%] sm:w-[40%] md:w-[22vw] md:max-w-[280px] p-4 md:p-0 mt-6">
+              <img 
+                src={Mobile_Screen_Step_2} 
+                alt="Mobile_Screen_Step_2" 
+                className="w-full h-auto object-contain"
+              />
             </div>
           </div>
+          {/* Ground Images - Improved positioning */}
           <img
             src={ground_3}
             alt="ground_3"
-            className="absolute left-0 bottom-0 hidden md:block md:w-[300px] lg:w-auto md:mt-10"
+            className="absolute left-0 bottom-0 hidden md:block md:w-[300px] lg:w-auto object-contain max-w-full z-0"
           />
           <img
             src={ground_3_mobile}
             alt="ground_3_mobile"
-            className="absolute left-0 bottom-0 md:hidden"
+            className="absolute left-0 bottom-0 md:hidden object-contain max-w-full z-0"
           />
         </div>
 
-        {/* Step 4 */}
-        <div className="flex relative flex-col justify-start md:h-[30rem] lg:h-[45rem] items-center w-full py-10 md:p-5 px-5 mb-10 lg:mt-24">
-          <div className="flex flex-col md:flex-row-reverse justify-center items-center md:items-start md:justify-around w-full mx-auto max-w-screen-xl">
-            <div className="flex flex-col md:flex-row items-start md:space-x-8 lg:mt-32 w-full md:w-auto">
+        {/* Step 4 - Fixed spacing and added containment */}
+        <div className="relative flex flex-col justify-start items-center w-full py-16 px-5 md:py-24 md:px-8 lg:py-32 mb-10 overflow-hidden">
+          <div className="flex flex-col md:flex-row-reverse justify-center items-center md:items-start md:justify-around w-full mx-auto max-w-screen-xl z-10">
+            <div className="flex flex-col md:flex-row items-start md:space-x-8 w-full md:w-auto">
               <span className="w-[45px] h-[60px] md:w-[60px] md:h-[80px] lg:w-[clamp(45px,5vw,110px)] 
                  lg:h-[clamp(60px,7vw,120px)] rounded-full mb-4 bg-[#014D4E] text-white flex items-center font-quattrocentoSans justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
                 4
@@ -204,37 +217,54 @@ const HowToPlay = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[85%] sm:w-[45%] md:w-[26vw] p-2 md:mt-14 md:p-0 mt-6s">
-              <img src={Mobile_Screen_Step_1} alt="Mobile_Screen_Step_1" />
+            {/* Mobile image - Added proper containment */}
+            <div className="w-[85%] sm:w-[45%] md:w-[26vw] md:max-w-[300px] p-2 md:p-0 mt-6">
+              <img 
+                src={Mobile_Screen_Step_1} 
+                alt="Mobile_Screen_Step_1" 
+                className="w-full h-auto object-contain"
+              />
             </div>
           </div>
+          {/* Ground Images - Improved positioning */}
           <img
             src={ground_4}
             alt="ground_4"
-            className="absolute right-0 bottom-10 md:w-[450px] lg:w-auto hidden sm:block"
+            className="absolute right-0 bottom-0 hidden sm:block md:w-[450px] lg:w-auto object-contain max-w-full z-0"
           />
           <img
             src={ground_4_mobile}
             alt="ground_4_mobile"
-            className="absolute right-0 bottom-0 sm:hidden"
+            className="absolute right-0 bottom-0 sm:hidden object-contain max-w-full z-0"
           />
         </div>
 
-        {/* Step 5 */}
-        <div className="relative">
-          <div className="w-full absolute hidden md:block mx-auto">
-            <img src={step_5_bg} alt="step_5_bg" className="w-full" />
+        {/* Step 5 - Fixed background image and positioning */}
+        <div className="relative overflow-hidden">
+          {/* Background images with improved containment */}
+          <div className="w-full hidden md:block">
+            <img 
+              src={step_5_bg} 
+              alt="step_5_bg" 
+              className="w-full object-cover h-auto max-h-[800px]" 
+            />
           </div>
-          <div className="w-full absolute md:hidden">
-            <img src={step_5_bg_mobile} alt="step_5_bg_mobile" className="w-full" />
+          <div className="w-full md:hidden">
+            <img 
+              src={step_5_bg_mobile} 
+              alt="step_5_bg_mobile" 
+              className="w-full object-cover h-auto" 
+            />
           </div>
-          <div className="relative -bottom-10 p-8 md:-bottom-16 lg:-left-8 xl:-left-4 flex flex-col md:flex-row justify-center items-center w-[90%] mx-auto min-h-[600px]">
+          
+          {/* Content overlay */}
+          <div className="absolute inset-0 flex flex-col md:flex-row justify-center items-center p-8 md:p-16">
             <div className="flex flex-col md:flex-row items-start md:space-x-8 w-full md:w-auto">
               <span className="w-[45px] font-quattrocentoSans h-[60px] md:w-[60px] md:h-[80px] lg:w-[clamp(45px,5vw,110px)] 
-                 lg:h-[clamp(60px,7vw,120px)] rounded-full bg-white text-[#014D4E] flex items-center justify-center lg:ml-2 xl:ml-0 md:-mt-[17.4rem] lg:-mt-44 xl:mt-2 text-3xl sm:text-5xl font-bold flex-shrink-0">
+                 lg:h-[clamp(60px,7vw,120px)] rounded-full bg-white text-[#014D4E] flex items-center justify-center text-3xl sm:text-5xl font-bold flex-shrink-0">
                 5
               </span>
-              <div className="md:-mt-[17rem] lg:-mt-44 xl:mt-2 w-full">
+              <div className="mt-4 md:mt-0 w-full">
                 <h2 className="font-quattrocento uppercase font-bold text-3xl sm:text-5xl md:text-[40px] lg:text-[clamp(40px,5vw,64px)] leading-[100%] tracking-[0em] text-white max-w-80 md:max-w-2xl">
                   Earn your GolfMeet points
                 </h2>
@@ -250,8 +280,14 @@ const HowToPlay = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[80%] -rotate-3 sm:w-[45%] md:w-[26vw] p-2 md:p-0 mt-6 md:mt-0">
-              <img src={gold_coins_3} alt="gold_coins_3" />
+            
+            {/* Coins image with proper containment */}
+            <div className="w-[80%] sm:w-[45%] md:w-[26vw] md:max-w-[300px] p-2 md:p-0 mt-8 md:mt-0">
+              <img 
+                src={gold_coins_3} 
+                alt="gold_coins_3" 
+                className="w-full h-auto object-contain transform -rotate-3"
+              />
             </div>
           </div>
         </div>

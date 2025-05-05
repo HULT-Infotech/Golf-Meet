@@ -65,7 +65,7 @@ function HomePage() {
         <div className="relative -z-10 -mt-6 ">
         <Prized />
         </div>
-        <div className="relative z-20">
+        <div className=" bulge-bottomm relative z-20">
         <Last />
         </div>
         <div className="relative z-10 -mt-8">
