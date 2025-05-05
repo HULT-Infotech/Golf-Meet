@@ -2,16 +2,15 @@ import React from 'react';
 import golfImage from '../assets/howdd.svg'; 
 const GolfMeetCard = () => {
   return (
-    <div className="w-full xl:-mt-10 pt-10 flex flex-col noise-bg-optim bg-gray-50 relative">
+    <div className="w-full xl:-mt-10 xh:-mt-72 xsh:-mt-60 pt-10 xhh:-mt-[36rem] flex flex-col noise-bg-optim bg-gray-50 relative">
       {/* Main container for proper stacking context */}
       <div className="flex flex-col w-full">
         {/* Image positioned as background */}
-        <div className="w-full h-screen relative">
-          <img 
-            src={golfImage}
-            className="absolute xl:top-16 md:top-28 lg:top-28 left-0 w-full h-full object-contain object-center"
-            alt="Golf meet"
-          />
+    <div className="w-full h-screen relative">
+      <img
+        src={golfImage}
+        className="absolute xl:top-16 md:top-28 lg:top-28 inset-0 w-full h-full xl:object-cover object-contain mx-auto"
+        alt="Golf meet"/>
           
           {/* Card positioned on top of the image */}
           <div className="relative w-full h-full flex items-center justify-center md:mt-8 lg:mt-24 p-4 ">
@@ -21,20 +20,31 @@ const GolfMeetCard = () => {
                   INTRODUCING
                 </h6>
                  
-                <h1
-                  className="xsm:text-3xl font-quattrocento mb-4 text-4xl text-center md:text-4xl xl:text-6xl mx-auto uppercase font-bold tracking-wider relative z-10"
-                  style={{
-                    background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 24%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text',
-                    textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
-                    filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',
-                  }}
-                >
-                  The <br /> Golf Meet <br />
-                  <span className="block mt-1 md:mt-2">Handicap</span>
-                </h1>
+                <div className="relative">
+  <h1                   
+    className="xsm:text-3xl font-quattrocento mb-4 text-4xl text-center md:text-4xl xl:text-6xl mx-auto uppercase font-bold tracking-wider relative z-10"                   
+    style={{                     
+      background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 24%)',                     
+      WebkitBackgroundClip: 'text',                     
+      WebkitTextFillColor: 'transparent',                     
+      backgroundClip: 'text',                   
+    }}                 
+  >                   
+    The <br /> Golf Meet <br />                   
+    <span className="block mt-1 md:mt-2">Handicap</span>                 
+  </h1>
+  {/* Stronger shadow layer */}
+  <h1                   
+    className="xsm:text-3xl font-quattrocento mb-4 text-4xl text-center md:text-4xl xl:text-6xl mx-auto uppercase font-bold tracking-wider absolute top-0 left-0 w-full -z-1"
+    style={{
+      color: 'rgba(0, 0, 0, 0.08)',
+      transform: 'translate(2px, 2px)'
+    }}
+  >                   
+    The <br /> Golf Meet <br />                   
+    <span className="block mt-1 md:mt-2">Handicap</span>                 
+  </h1>
+</div>
               </div>
               
               <div className="bg-[#014D4E] px-1 mb-3 py-1 rounded-lg relative z-20">
@@ -64,7 +74,7 @@ const GolfMeetCard = () => {
         {/* Green section with tagline now properly positioned below */}
 
       {/* Top wavy section */}
-      <section className="w-full h-[300px] relative md:-mt-96 lg:-mt-80 z-0">
+      <section className="w-full md:h-[300px] xh:-mt-[37rem] xhh:-mt-[40rem] xsh:-mt-[34rem] relative md:-mt-96 lg:-mt-80 z-10">
   {/* SVG wave at bottom of this section */}
   <svg
     className="absolute bottom-0 left-0 w-full"
@@ -97,7 +107,7 @@ const GolfMeetCard = () => {
 </section>
 
 {/* Main green section with the updated noise background pattern */}
-<section className="w-full py-12 px-10 md:px-20 lg:h-[50vh] bulge-bottom-desk flex items-center justify-center relative z-10 noise-bg-newest">
+<section className="w-full py-12 -mt-2 px-10 md:px-20 lg:h-[50vh] xhh:h-[20vh]  bulge-bottom-desk flex items-center justify-center relative z-10 noise-bg-newest">
   <div className="text-center text-white w-full max-w-4xl mx-auto">
     <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0">
       {/* MEET Section */}

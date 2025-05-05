@@ -8,7 +8,7 @@ import p_2 from "../assets/Photosection/p2.webp";
 const GolfPrize = () => {
   return (
     <>
-<div className="relative w-full -mt-12 h-[100vh]">
+<div className="relative w-full -mt-12  xsm:h-[40vh] xh:h-[50vh]  xhh:h-[50vh]">
   {/* Background Image with specified gradient */}
   <div
     className="absolute inset-0 bulge-bottom"
@@ -24,7 +24,7 @@ const GolfPrize = () => {
   </div>
   
   {/* Content */}
-  <div className="relative h-full flex flex-col items-center justify-center text-white text-center bulge-bottom px-6">
+  <div className="relative h-full flex md:py-32 xsh:py-20 flex-col items-center justify-center text-white text-center bulge-bottom px-6">
     
         {/* Golf Flag Icon */}
         <div className="mb-4">
@@ -101,7 +101,7 @@ const GolfPrize = () => {
 </h2>
       </div>
     </div>
-    <div className="w-full h-[77vh] overflow-hidden">
+    <div className="w-full h-[77vh] xh:h-[40vh] xhh:h-[40vh] xsh:h-[50vh] overflow-hidden">
       {/* Main container with absolute positioning for independent sections */}
       <div className="w-full h-full relative">
         

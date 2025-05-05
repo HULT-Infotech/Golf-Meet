@@ -10,23 +10,34 @@ const CombinedGolfPage = () => {
       <div className="mx-auto relative  -mt-8 noise-bg-optim z-10 pt-10 md:pt-16 lg:pt-24">
         <div className="container mx-auto px-4 text-center mt-3 mb-12 md:mb-16 lg:mb-20 max-w-6xl">
           {/* Heading for Desktop & Tablets */}
-          <h1 
-            className="hidden md:block text-[60px] md:text-[45px] lg:text-[50px] xl:text-[60px] font-quattrocento font-bold leading-tight md:leading-tight lg:leading-tight tracking-[0.025em] text-center mb-8 lg:mb-12"
-            style={{
-              background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 27%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              textFillColor: 'transparent',
-              textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
-              filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',
-            }}
-          >
-            COMPETE WITH <br />
-            GOLFERS FROM<br />
-            ALL OVER INDIA
-          </h1>
-
+          <div className="relative">
+  <h1              
+    className="hidden md:block text-[60px] md:text-[45px] lg:text-[50px] xl:text-[60px] font-quattrocento font-bold leading-tight md:leading-tight lg:leading-tight tracking-[0.025em] text-center mb-8 lg:mb-12"             
+    style={{               
+      background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 27%)',               
+      WebkitBackgroundClip: 'text',               
+      WebkitTextFillColor: 'transparent',               
+      backgroundClip: 'text',               
+      textFillColor: 'transparent',
+    }}           
+  >             
+    COMPETE WITH <br />             
+    GOLFERS FROM<br />             
+    ALL OVER INDIA           
+  </h1>
+  {/* Shadow layer */}
+  <h1              
+    className="hidden md:block text-[60px] md:text-[45px] lg:text-[50px] xl:text-[60px] font-quattrocento font-bold leading-tight md:leading-tight lg:leading-tight tracking-[0.025em] text-center mb-8 lg:mb-12 absolute top-0 left-0 w-full -z-1"
+    style={{
+      color: 'rgba(0, 0, 0, 0.08)',
+      transform: 'translate(2px, 2px)'
+    }}
+  >             
+    COMPETE WITH <br />             
+    GOLFERS FROM<br />             
+    ALL OVER INDIA           
+  </h1>
+</div>
           {/* Heading for Mobile */}
           <h1 
             className="block md:hidden text-[42px] leading-[45px] w-[95%] mx-auto mb-2 font-quattrocento font-bold tracking-[0.025em] text-center"
@@ -72,7 +83,7 @@ const CombinedGolfPage = () => {
         </div>
 
         {/* Leaderboard Card Section */}
-        <div className="container mx-auto px-4 pb-16 xl:max-w-[44rem] lg:max-w-[40rem] md:max-w-[35rem]">
+        <div className="container mx-auto px-4 pb-16 xl:max-w-[37rem] lg:max-w-[33rem] md:max-w-[30rem]">
           <div className="rounded-2xl mx-auto max-w-xl md:max-w-3xl lg:max-w-3xl noise-bg-newest overflow-hidden shadow-lg" 
             style={{
               color: "white",
@@ -82,7 +93,7 @@ const CombinedGolfPage = () => {
           >
             {/* Card Title */}
             <h2
-              className="font-quattrocento md:text-[3.1rem] lg:text-[3.7rem] font-bold mb-6 md:mb-8"
+              className="font-quattrocento md:text-[2.9rem] lg:text-[3.5rem] font-bold mb-6 md:mb-8"
               style={{
                 background: "linear-gradient(180deg, #FFF2BF 0%, #F4D455 100%)",
                 WebkitBackgroundClip: "text",
