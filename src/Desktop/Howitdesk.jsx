@@ -18,32 +18,8 @@ const HowItWorksSection = () => {
       {/* Content positioned on top of the image */}
       <div className="relative z-10 container mx-auto" style={{ pointerEvents: "none" }}>
         {/* Main heading */}
-        <div className="relative">
-  <h1
-    className="text-[64px] px-10 xl:mt-8 lg:mt-1 md:-mt-4 font-quattrocento font-bold md:text-[42px] lg:text-[50px] xl:text-[64px] leading-[70.91px] tracking-[0.025em] text-center md:text-5xl mb-10 lg:mb-0"
-    style={{
-      pointerEvents: "auto",
-      background: "linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 50%)",
-      WebkitBackgroundClip: "text",
-      WebkitTextFillColor: "transparent",
-      backgroundClip: "text",
-      textFillColor: "transparent"
-    }}
-  >
-    HOW IT WORKS
-  </h1>
-  {/* Shadow layer */}
-  <h1
-    className="text-[64px] px-10 xl:mt-8 lg:mt-1 md:-mt-4 font-quattrocento font-bold md:text-[42px] lg:text-[50px] xl:text-[64px] leading-[70.91px] tracking-[0.025em] text-center md:text-5xl mb-10 lg:mb-0 absolute top-0 left-0 w-full -z-1"
-    style={{
-      pointerEvents: "none",
-      color: 'rgba(0, 0, 0, 0.08)',
-      transform: 'translate(2px, 2px)'
-    }}
-  >
-    HOW IT WORKS
-  </h1>
-</div>
+        <h1           className="text-[64px] px-10 xl:mt-8 lg:mt-1  md:-mt-4 font-quattrocento font-bold md:text-[42px] lg:text-[50px] xl:text-[64px]  leading-[70.91px] tracking-[0.025em] text-center md:text-5xl mb-10 lg:mb-0"           style={{ textShadow: "0px 0px 1px rgba(0, 0, 0, 0.05)", pointerEvents: "auto",background:             "linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 50%)",           WebkitBackgroundClip: "text",           WebkitTextFillColor: "transparent",           backgroundClip: "text",           textFillColor: "transparent",           textShadow: "0px 0px 1px rgba(0, 0, 0, 0.05)",           filter: "drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.1))", }}         >           HOW IT WORKS         </h1>
+        
         {/* Steps container */}
         <div className="md:bg-[#ffffff27] md:rounded-sm lg:rounded-none md:p-2 lg:bg-[#ffffff00] lg:p-0 flex flex-col gap-10 md:mt-4 lg:mt-32 items-center justify-center sm:flex-wrap sm:flex-row sm:gap-10 xl:flex-nowrap lg:gap-10">
           {/* Step 1 */}
