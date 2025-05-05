@@ -108,7 +108,7 @@ const Navbar = ({ triggerRef }) => {
             to="/redirect"
             className="md:text-xsm bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-2 py-1 md:px-4 lg:px-5 md:pb-2 md:pt-2 rounded transition-all duration-300 ease-in-out shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)]  hover:shadow-[0px_2px_10px_0px_rgba(0,0,0,0.45)]"
           >
-            <span className="font-semibold text-[#FFF7D9]">
+            <span className="font-semibold font-quattrocento text-[#FFF7D9]">
               SIGN UP NOW
             </span>
           </Link>
