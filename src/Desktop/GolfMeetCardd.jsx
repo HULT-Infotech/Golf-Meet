@@ -6,10 +6,10 @@ const GolfMeetCard = () => {
       {/* Main container for proper stacking context */}
       <div className="flex flex-col w-full">
         {/* Image positioned as background */}
-    <div className="w-full h-screen relative">
+        <div className="w-full h-screen relative">
       <img
         src={golfImage}
-        className="absolute xl:top-16 md:top-28 lg:top-28 left-0 right-0 w-full h-full object-contain object-center"
+        className="absolute xl:top-16 md:top-28 lg:top-28 inset-0 w-full h-full object-cover mx-auto"
         alt="Golf meet"
       />
           
