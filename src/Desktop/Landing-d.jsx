@@ -48,7 +48,7 @@ function DesktopTabletLandingPage() {
             </a>
             
             <Link
-              to="/redirect"
+              to="/contact"
               className="flex items-center gap-1.5 leading-4 text-[#211E16] my-auto font-semibold"
             >
               PLAYER SUPPORT 

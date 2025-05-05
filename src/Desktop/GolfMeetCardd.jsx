@@ -74,7 +74,7 @@ const GolfMeetCard = () => {
         {/* Green section with tagline now properly positioned below */}
 
       {/* Top wavy section */}
-      <section className="w-full md:h-[300px] xh:-mt-[37rem] xsh:-mt-[34rem] relative md:-mt-96 lg:-mt-80 z-10">
+      <section className="w-full md:h-[300px] xh:-mt-[37rem] xhh:-mt-[40rem] xsh:-mt-[34rem] relative md:-mt-96 lg:-mt-80 z-10">
   {/* SVG wave at bottom of this section */}
   <svg
     className="absolute bottom-0 left-0 w-full"
@@ -107,7 +107,7 @@ const GolfMeetCard = () => {
 </section>
 
 {/* Main green section with the updated noise background pattern */}
-<section className="w-full py-12 -mt-2 px-10 md:px-20 lg:h-[50vh]  bulge-bottom-desk flex items-center justify-center relative z-10 noise-bg-newest">
+<section className="w-full py-12 -mt-2 px-10 md:px-20 lg:h-[50vh] xhh:h-[20vh]  bulge-bottom-desk flex items-center justify-center relative z-10 noise-bg-newest">
   <div className="text-center text-white w-full max-w-4xl mx-auto">
     <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0">
       {/* MEET Section */}

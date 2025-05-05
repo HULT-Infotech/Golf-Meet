@@ -18,7 +18,7 @@ function LeaderPage() {
       <div className="relative z-10">
         <LeaderPaged/>
         </div>
-        <div className="relative z-20 bulge-top -mt-28">
+        <div className="relative z-20 bulge-top-others -mt-28">
         <Prized/>
         </div>
 

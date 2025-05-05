@@ -27,7 +27,7 @@ function App() {
           <Route path="/privacy-policy" element={<Policy />} />
           <Route path="/leaderboard" element={<Leader />} />
           <Route path="/refund-policy" element={<Refund />} />
-          <Route path="/redirect" element={<Redirect />} />
+          <Route path="/contact" element={<Redirect />} />
         </Routes>
         <ScrollToTop />
       </Suspense>
