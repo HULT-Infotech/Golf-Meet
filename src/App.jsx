@@ -2,6 +2,8 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./utils/ScrollToTop";
 import LoadingScreen from "./components/LoadingScreen";
+import GoogleAnalytics from "./hooks/GoogleAnalytics";
+
 const HomePage = lazy(() => import("./pages/HomePage"));
 const HowToPlay = lazy(() => import("./pages/HowToPlay"));
 const TournamentRule = lazy(() => import("./pages/TournamentRule"));
@@ -12,9 +14,12 @@ const Policy = lazy(() => import("./pages/PrivacyPolicy"));
 const Leader = lazy(() => import("./pages/Leaderboard"));
 const Refund = lazy(() => import("./pages/Refund"));
 const Redirect = lazy(() => import("./pages/Redirect"));
+
 function App() {
   return (
     <BrowserRouter>
+      {/* Add Google Analytics - it will load on all pages */}
+      <GoogleAnalytics />
       <Suspense fallback={<LoadingScreen />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -34,4 +39,5 @@ function App() {
     </BrowserRouter>
   );
 }
+
 export default App;
