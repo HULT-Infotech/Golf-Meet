@@ -208,7 +208,8 @@ function LeaderPage() {
         
       
         {/* Background image for top half with gradient overlay */}
-        <div className="absolute top-0 bulge-bottom left-0 w-full h-2/3 z-1 overflow-hidden">
+       
+           <div className="absolute top-0 bulge-bottom left-0 w-full h-2/3 z-1 overflow-hidden">
           {/* Original background image */}
           <div
             style={{
@@ -222,19 +223,20 @@ function LeaderPage() {
               left: 0
             }}
           ></div>
-          
           {/* Sky blue gradient at the top */}
-          <div
-            style={{
-              background: `linear-gradient(180deg, #87CEFA 0%, #ADE4FF 25%, #C1E8FF 40%, rgba(217, 243, 255, 0.8) 60%, rgba(235, 249, 255, 0.6) 75%, rgba(255, 255, 255, 0) 100%)`,
-              width: '100%',
-              height: '60%',
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              opacity: 0.95
-            }}
-          ></div>
+          <div className="absolute top-0 bulge-bottom left-0 w-full h-2/3 z-1 overflow-hidden">
+  <div
+    style={{
+      background: `radial-gradient(109.45% 100% at 50% 0%, #FFFFFF 10%, rgba(255, 255, 255, 0) 70%), 
+                  linear-gradient(180deg, #DBEAF3 9.68%, rgba(219, 234, 243, 0) 53.22%)`,
+      width: '100%',
+      height: '100%',
+      position: 'absolute',
+      top: 0,
+      left: 0
+    }}
+  ></div>
+</div>
           
           {/* Very light white fade below the blue gradient */}
           <div
