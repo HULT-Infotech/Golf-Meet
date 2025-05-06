@@ -5,7 +5,7 @@ import topGolfImage from '../assets/top-golf.svg';
 
 const GolfMeetCard = () => {
   return (
-    <div className="w-full xl:-mt-10 xh:-mt-72 xsh:-mt-60 pt-10 xhh:-mt-[36rem] flex flex-col noise-bg-optim bg-gray-50 relative">
+    <div className="w-full  flex flex-col noise-bg-optim bg-gray-50 relative">
       {/* Main container for proper stacking context */}
       <div className="flex flex-col w-full">
         {/* Images positioned as background */}
@@ -91,7 +91,7 @@ const GolfMeetCard = () => {
         </div>
 
         {/* Top wavy section */}
-        <section className="w-full md:h-[300px] xh:-mt-[37rem] xhh:-mt-[40rem] xsh:-mt-[34rem] relative md:-mt-96 lg:-mt-80 z-9">
+        <section className="w-full md:h-[300px]  relative md:-mt-[20rem] lg:-mt-80 z-9">
           {/* SVG wave at bottom of this section */}
           <svg
             className="absolute bottom-0 left-0 w-full"

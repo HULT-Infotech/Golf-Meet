@@ -1,19 +1,17 @@
 import React from "react";
-import bgI from "../assets/bgggggg.webp";
+import bgI from "../assets/finallll.png";
 
 const HowItWorksSection = () => {
   return (
-    <section className="relative h-auto pt-16 xl:mb-0 lg:-mb-56 -mt-16 z-30 overflow-visible">
-      {/* Background image as a separate element */}
-      <img
-        src={bgI}
-        alt="Golf course background"
-        className="absolute top-0 left-0 w-full h-auto  z-0"
-        style={{
-          objectFit: "contain",
-          objectPosition: "center top"
-        }}
-      />
+<section className="relative pt-16 lg:h-screen xhh:h-[40vh] md:h-[50vh] md: z-30 overflow-visible">
+  <div
+    className="absolute inset-0 w-full h-full bg-no-repeat bg-top bg-cover"
+    style={{
+      backgroundImage: `url(${bgI})`
+    }}
+  ></div>
+
+
       
       {/* Content positioned on top of the image */}
       <div className="relative z-10 container mx-auto" style={{ pointerEvents: "none" }}>
