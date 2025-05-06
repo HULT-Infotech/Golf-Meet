@@ -15,7 +15,7 @@ function DesktopTabletLandingPage() {
   return (
     <section className="text-center">
       {/* First section */}
-      <div className="relative flex flex-col min-h-[72vh] xh:min-h-[50vh] xhhh:min-h-[78vh] xsh:min-h-[50vh] xhh:min-h-[50vh] bg-gray-50 z-0 noise-bg overflow-hidden">
+      <div className="relative flex flex-col min-h-[72vh]  xh:min-h-[50vh] xhhh:min-h-[78vh] xsh:min-h-[50vh] xhh:min-h-[50vh] bg-gray-50 z-0 noise-bg overflow-hidden">
         {/* Top Navbar */}
         <div className="md:absolute z-50 top-0 w-full flex justify-between items-center px-5 md:px-8 lg:px-10 py-8 md:py-10 flex-col-reverse md:flex-row">
           <div className="flex text-xsm lg:text-sm gap-6 md:gap-8 lg:gap-10 mt-4 md:mt-0 w-full md:w-auto">
