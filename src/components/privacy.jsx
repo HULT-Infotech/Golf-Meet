@@ -431,7 +431,9 @@ function Common() {
                   <span style={{ display: "block", marginLeft: "5px" }}><b>Name:</b> R. Kolleri</span>
                 </li>
                 <li style={{ paddingLeft: "5px", marginBottom: "10px" }}>
-                  <span style={{ display: "block", marginLeft: "5px" }}><b>Email:</b> rgeorge@kollcorp.com</span>
+                  <span style={{ display: "block", marginLeft: "5px" }}><b>Email:</b> <a href="mailto:golfmeet.email@gmail.com" className="text-blue-600 underline ml-1">
+    golfmeet.email@gmail.com
+  </a>.</span>
                 </li>
                 <li style={{ paddingLeft: "5px", marginBottom: "10px" }}>
                   <span style={{ display: "block", marginLeft: "5px" }}><b>Phone:</b> +91-8884844444</span>
