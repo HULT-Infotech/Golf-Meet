@@ -24,7 +24,7 @@ const GolfPrize = () => {
   </div>
   
   {/* Content */}
-  <div className="relative h-full flex md:py-32 xsh:py-20 flex-col items-center justify-center text-white text-center bulge-bottom px-6">
+  <div className="relative h-full flex md:py-32 xhhh:py-44 xsh:py-20 flex-col items-center justify-center text-white text-center bulge-bottom px-6">
     
         {/* Golf Flag Icon */}
         <div className="mb-4">
