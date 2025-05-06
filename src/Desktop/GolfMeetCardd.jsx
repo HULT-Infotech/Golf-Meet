@@ -20,7 +20,7 @@ const GolfMeetCard = () => {
           {/* Right image */}
           <img
             src={rightGolfImage}
-            className="absolute xl:top-16 md:top-28 lg:top-28 right-0 w-1/3 h-full object-contain z-1"
+            className="absolute xl:top-16 md:top-28 lg:top-28 xhhh:top-[7.2rem] right-0 w-1/3 h-full object-contain z-1"
             alt="Right golf meet"
           />
           
