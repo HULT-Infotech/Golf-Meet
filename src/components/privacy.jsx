@@ -428,7 +428,7 @@ function Common() {
                 style={{ fontSize: "clamp(16px, 4vw, 24px)", listStyleType: "disc" }}
               >
                 <li style={{ paddingLeft: "5px", marginBottom: "10px" }}>
-                  <span style={{ display: "block", marginLeft: "5px" }}><b>Name:</b> R. Kolleri</span>
+                  <span style={{ display: "block", marginLeft: "5px" }}><b>Name:</b> Grievance officer</span>
                 </li>
                 <li style={{ paddingLeft: "5px", marginBottom: "10px" }}>
                   <span style={{ display: "block", marginLeft: "5px" }}><b>Email:</b> <a href="mailto:golfmeet.email@gmail.com" className="text-blue-600 underline ml-1">
