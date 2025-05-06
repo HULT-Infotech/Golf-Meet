@@ -25,6 +25,7 @@ export default {
         'xhh': {
           'raw': '(min-width: 700px) and (max-width: 1279px) and (min-height: 1300px) and (max-height: 1440px)'
         },
+        'xhhh': {'min': '1650px'},
       },
     },
   },

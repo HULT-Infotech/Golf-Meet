@@ -15,13 +15,13 @@ function DesktopTabletLandingPage() {
   return (
     <section className="text-center">
       {/* First section */}
-      <div className="relative flex flex-col min-h-[72vh] xh:min-h-[50vh] xsh:min-h-[50vh] xhh:min-h-[50vh] bg-gray-50 z-0 noise-bg overflow-hidden">
+      <div className="relative flex flex-col min-h-[72vh] xh:min-h-[50vh] xhhh:min-h-[78vh] xsh:min-h-[50vh] xhh:min-h-[50vh] bg-gray-50 z-0 noise-bg overflow-hidden">
         {/* Top Navbar */}
         <div className="md:absolute z-50 top-0 w-full flex justify-between items-center px-5 md:px-8 lg:px-10 py-8 md:py-10 flex-col-reverse md:flex-row">
           <div className="flex text-xsm lg:text-sm gap-6 md:gap-8 lg:gap-10 mt-4 md:mt-0 w-full md:w-auto">
             <Link
               to="/contact"
-              className="flex items-center justify-center md:text-xsm md:pt-3 font-quattrocento bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-2 py-1 md:px-4 lg:px-5 md:pb-2 rounded transition-all duration-300 ease-in-out shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)] hover:from-[#E5181A] hover:via-[#E51719] hover:to-[#CC1517] hover:shadow-[0px_2px_10px_0px_rgba(0,0,0,0.45)]"
+              className="flex items-center justify-center xhhh:text-sm md:text-xsm md:pt-3 font-quattrocento bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-2 py-1 md:px-4 lg:px-5 md:pb-2 rounded transition-all duration-300 ease-in-out shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)] hover:from-[#E5181A] hover:via-[#E51719] hover:to-[#CC1517] hover:shadow-[0px_2px_10px_0px_rgba(0,0,0,0.45)]"
             >
               <span className="font-semibold text-[#FFF7D9] leading-none">
                 SIGN UP NOW
@@ -60,7 +60,7 @@ function DesktopTabletLandingPage() {
         </div>
 
         {/*//! Hero Section for Tablets and Laptops */}
-        <div className="md:flex hidden relative md:min-h-[74vh] lg:min-h-[72vh] xh:min-h-[50vh] xsh:min-h-[50vh] xhh:min-h-[50vh] flex-col w-full items-center justify-center">
+        <div className="md:flex hidden relative md:min-h-[74vh] lg:min-h-[72vh] xhhh:min-h-[78vh] xh:min-h-[50vh] xsh:min-h-[50vh] xhh:min-h-[50vh] flex-col w-full items-center justify-center">
           {/* Full width image at bottom - positioned to touch both edges correctly */}
           <div className="absolute bottom-0 left-0 right-0 z-20 w-full">
             <img
@@ -79,7 +79,7 @@ function DesktopTabletLandingPage() {
             <img
               src="favicons/favicon.svg"
               alt="Golfmeet Logo"
-              className="w-48 object-contain md:w-[300px] xh:w-[380px] xsh:w-[380px] xhh:w-[380px]  lg:w-[340px] xl:w-[31vw] xl:-mt-5 drop-shadow-[0_10px_10px_rgba(0,0,0,0.40)]"
+              className="w-48 object-contain md:w-[300px] xh:w-[380px] xhhh:w-32vw xsh:w-[380px] xhh:w-[380px]  lg:w-[340px] xl:w-[31vw] xl:-mt-5 drop-shadow-[0_10px_10px_rgba(0,0,0,0.40)]"
               draggable="false"
             />
           </div>
@@ -104,13 +104,13 @@ function DesktopTabletLandingPage() {
       </div>
 
       {/* Second section */}
-      <section className="relative xl:h-[113vh] lg:h-[100vh] md:h-[78vh] xh:h-[55vh] xsh:h-[55vh] xhh:h-[60vh] bulge-top-desk -mt-8 z-10 w-full overflow-hidden noise-bg-newest">
+      <section className="relative xl:h-[113vh] xhhh:h-[105vh] lg:h-[100vh] md:h-[78vh] xh:h-[55vh] xsh:h-[55vh] xhh:h-[60vh] bulge-top-desk -mt-8 z-10 w-full overflow-hidden noise-bg-newest">
       
         {/* Content positioned above the image */}
         <div className="relative z-20 max-w-xl  mx-auto px-4">
           {/* First Section */}
           <div>
-            <h1 className="text-[40px] mt-10 xh:text-[3.6rem] xsh:text-[3.6rem] md:text-[48px] lg:text-[61px]  xh:mt-8 xsh:mt-8 leading-tight tracking-normal text-center font-quattrocento font-bold">
+            <h1 className="text-[40px] mt-10 xh:text-[3.6rem] xhhh:text-[68px] xsh:text-[3.6rem] md:text-[48px] lg:text-[61px]  xh:mt-8 xsh:mt-8 leading-tight tracking-normal text-center font-quattrocento font-bold">
               <span style={{
                 background: ' linear-gradient(180deg, rgba(255, 180, 30, 0.4) 0%, rgba(255, 180, 30, 0) 75%),white',
                 WebkitBackgroundClip: 'text',
@@ -125,17 +125,17 @@ function DesktopTabletLandingPage() {
           
           {/* Second Section with PLAY BETTER centered */}
           <div className="flex flex-col items-center justify-center py-10 md:py-5 lg:py-3 xh:py-2 xsh:py-2">
-            <p className="font-quattrocento text-[24px] md:text-[23.5px] lg:text-[28px] xh:text-[25px] xsh:text-[25px] leading-tight tracking-normal text-center text-white">
+            <p className="font-quattrocento text-[24px] xhhh:text-[30px] md:text-[23.5px] lg:text-[28px] xh:text-[25px] xsh:text-[25px] leading-tight tracking-normal text-center text-white">
               PLAY BETTER.
             </p>
           </div>
           
           {/* Third Section */}
           <div>
-            <p className="font-extrabold font-quattrocento md:text-3xl lg:text-[2.5rem] xhh:mt-20 xhh:text-[2.6rem] xh:mt-16 xsh:mt-16 xh:text-[2.4rem] xsh:text-[2.4rem] drop-shadow-lg lg:leading-[2.8rem] tracking-normal lg:mt-20 xl:mt-44 md:mt-4  bg-gradient-to-b from-[#FFF2BF] to-[#F4D455] text-transparent bg-clip-text text-center">
+            <p className="font-extrabold font-quattrocento md:text-3xl xhhh:text-[2.6rem] xhhh:mt-60 lg:text-[2.5rem] xhh:mt-20 xhh:text-[2.6rem] xh:mt-16 xsh:mt-16 xh:text-[2.4rem] xsh:text-[2.4rem] drop-shadow-lg lg:leading-[2.8rem] tracking-normal lg:mt-20 xl:mt-44 md:mt-4  bg-gradient-to-b from-[#FFF2BF] to-[#F4D455] text-transparent bg-clip-text text-center">
               Golf Meet matches you with <br /> new golfers every round.
             </p>
-            <p className="font-quattrocento font-normal lg:text-[20px] md:text-[17px] xh:text-[18px] xsh:text-[18px] leading-normal tracking-normal text-center text-[#FFFFFF] opacity-70 mt-3 xh:mt-2 xsh:mt-2">
+            <p className="font-quattrocento font-normal lg:text-[20px] xhhh:text-[24px] md:text-[17px] xh:text-[18px] xsh:text-[18px] leading-normal tracking-normal text-center text-[#FFFFFF] opacity-70 mt-3 xh:mt-2 xsh:mt-2">
               Players are matched based on <br /> their preferred courses and dates. 
             </p>
             
@@ -145,7 +145,7 @@ function DesktopTabletLandingPage() {
                 to="/redirect"
                 className="rounded-md bg-gradient-to-b from-white via-[#fce570] to-[#fcb017] px-8 py-3 font-bold transition-all duration-300 hover:opacity-90 hover:shadow-md"
               >
-                <span className="text-[20px] md:text-sm lg:text-base xh:text-[15px] xsh:text-[15px] font-quattrocento text-[#014D4E] font-bold uppercase">
+                <span className="text-[20px] md:text-sm lg:text-base xhhh:text-xl xh:text-[15px] xsh:text-[15px] font-quattrocento text-[#014D4E] font-bold uppercase">
                   SIGN UP VIA WHATSAPP 
                 </span>
               </Link>
