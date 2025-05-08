@@ -13,7 +13,7 @@ const EventsAndCostPage = () => {
   return (
     <>
       {/* Single Combined Section */}
-      <div className="w-full -mt-20 sm:-mt-24 md:-mt-28 lg:-mt-32 xh:-mt-96 xsh:-mt-80 xhh:-mt-96 relative z-20">
+      <div className="w-full -mt-20 sm:-mt-24 xsh-landscape:-mt-28 md:-mt-28 lg:-mt-24 xh:-mt-96 xsh:-mt-80 xhh:-mt-96 relative z-20">
         <div className="relative w-full h-auto">
           {/* Combined Content in Single Div */}
           <div 
