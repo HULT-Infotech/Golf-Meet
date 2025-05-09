@@ -10,16 +10,17 @@ import mcoc_coins3 from "../assets/m-coin2.svg";
 import mcoc_coins4 from "../assets/m-coin4.svg";
 import Footer from "../components/Footer";
 import Footerr from "../Desktop/Footerr";
-import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
+import code_of_conduct from "../assets/code-of-conduct/bgmm.png";
 import { Link } from "react-router-dom";
  
 function Common() {
   return (
 <>
 
-<section className="relative px-4 flex items-center justify-center overflow-hidden">
+<section className="relative px-4 flex items-center  justify-center overflow-x-hidden">
+  <div className="absolute top-[50%] left-0 w-full h-1/2 noise-bg-newest"></div>
 {/* Absolute background image container for desktop */}
-<div className="absolute inset-0 w-full z-6 h-full hidden md:block">
+<div className="absolute inset-0 w-full z-10 -mt-12 h-full hidden md:block">
   <img
     src={code_of_conduct}
     alt="Code of Conduct background"
