@@ -117,13 +117,13 @@ function TournamentRule() {
 
       {/* Desktop Hero Section - Visible only on medium screens and up */}
 <section
-        className="bg-gray-100 noise-bg relative hidden md:flex flex-col min-h-[90vh] md:flex-row"
+        className="bg-gray-100 noise-bg relative hidden md:flex flex-col min-h-[85vh] xhh:min-h-[50vh] xh:min-h-[50vh]  xsh:min-h-[60vh] xsh-landscape:min-h-[85vh]  md:flex-row"
       >
         <div className="flex flex-col w-full justify-between md:justify-around md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
-          <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
+          <div className="relative flex flex-col justify-center items-start md:-mt-24 xl:-mt-0 p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
             <h1
-              className="font-quattrocento -mt-28 font-bold text-[2.85rem] text-[#201E15] sm:text-5xl lg:text-[55px] xl:text-[65px] leading-[100%] tracking-[0.025em] mb-4"
+              className="font-quattrocento xl:-mt-28  font-bold text-[2.85rem] text-[#201E15] sm:text-5xl lg:text-[55px] xl:text-[65px] leading-[100%] tracking-[0.025em] mb-4"
               style={{
                 background:
                   "linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 23%)",
@@ -150,12 +150,12 @@ Need support? We’re just a message away.
             <img
               src={tr_bg_mobile}
               alt="Golfers Illustration"
-              className="xl:w-[60%] lg:w-[75%] md:w-[85%] object-contain pointer-events-none"
+              className="xl:w-[55%] lg:w-[75%] xsh-landscape::w-[75%] md:w-[95%] object-contain pointer-events-none"
             />
           </div>
         </div>
       </section>
-      <section className="md:flex hidden flex-col items-center justify-center -mt-2 relative sm:mb-0 w-full">
+      <section className="md:flex hidden flex-col items-center justify-center md:-mt-24 lg:-mt-32 relative sm:mb-0 w-full">
   <div 
     onClick={() => window.location.href = '/code-of-conduct'}
     className="flex justify-between items-center text-white bg-[#014D4E0D] noise-bg-newest w-full md:px-8 lg:px-32 lg:py-10 md:py-6 cursor-pointer hover:opacity-90 transition-opacity"
