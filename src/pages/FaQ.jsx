@@ -202,11 +202,11 @@ function FaQ() {
 
       {/* Desktop Hero Section - Visible only on medium screens and up */}
       <section
-        className="bg-gray-100 noise-bg relative hidden md:flex flex-col min-h-[70vh] md:flex-row"
+        className="bg-gray-100 noise-bg relative hidden md:flex flex-col min-h-[70vh] xh:min-h-[40vh] xsh:min-h-[50vh] xhh:min-h-[40vh] md:flex-row"
       >
         <div className="flex flex-col w-full justify-between md:justify-around md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
-          <div className="relative flex flex-col lg:mt-16  xl:mt-12 justify-center items-start  md:pl-1 md:p-0 lg:ml-16 md:ml-10 xl:ml-16 md:mb-40">
+          <div className="relative flex flex-col lg:mt-16  xl:mt-12 xhh:-mt-12 justify-center items-start  md:pl-1 md:p-0 lg:ml-16 md:ml-10 xl:ml-16 md:mb-40">
             <h1
               className="font-quattrocento font-bold text-[2.85rem] text-[#201E15] sm:text-5xl md:text-[2.4rem] lg:text-[50px] xl:text-[65px] leading-[100%] tracking-[0.025em] mb-4"
               style={{
