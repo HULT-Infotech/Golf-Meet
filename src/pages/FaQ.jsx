@@ -202,13 +202,13 @@ function FaQ() {
 
       {/* Desktop Hero Section - Visible only on medium screens and up */}
       <section
-        className="bg-gray-100 noise-bg relative hidden md:flex flex-col min-h-[90vh] md:flex-row"
+        className="bg-gray-100 noise-bg relative hidden md:flex flex-col min-h-[70vh] md:flex-row"
       >
         <div className="flex flex-col w-full justify-between md:justify-around md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
-          <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
+          <div className="relative flex flex-col lg:mt-16  xl:mt-12 justify-center items-start  md:pl-1 md:p-0 lg:ml-16 md:ml-10 xl:ml-16 md:mb-40">
             <h1
-              className="font-quattrocento font-bold text-[2.85rem] text-[#201E15] sm:text-5xl lg:text-[55px] xl:text-[65px] leading-[100%] tracking-[0.025em] mb-4"
+              className="font-quattrocento font-bold text-[2.85rem] text-[#201E15] sm:text-5xl md:text-[2.4rem] lg:text-[50px] xl:text-[65px] leading-[100%] tracking-[0.025em] mb-4"
               style={{
                 background:
                   "linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 23%)",
@@ -220,7 +220,7 @@ function FaQ() {
                 filter: "drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))",
               }}
             >
-              FREQUENTLY <br /> ASKED <br /> QUESTIONS
+              FREQUENTLY ASKED <br /> QUESTIONS
             </h1>
             <div className="text-sm w-[95%]">
               Find quick answers to common questions about Golf Meet — from how
@@ -237,7 +237,7 @@ function FaQ() {
             <img
               src={faq_mobile_hero}
               alt="Golfers Illustration"
-              className="xl:w-[55%] lg:w-[65%] md:w-[75%] object-contain pointer-events-none"
+              className="xl:w-[45%] lg:w-[55%] md:w-[65%] object-contain pointer-events-none"
             />
           </div>
         </div>
@@ -287,12 +287,12 @@ function FaQ() {
 
       {/* FAQ Content Section - Adjusted margin for desktop */}
       <section
-        className="py-8 md:py-16 px-6 bulge-top-other md:px-8 noise-bg-neww -mt-4 md:-mt-16 lg:-mt-24 xl:-mt-20 z-10"
+        className="py-8 md:py-16 lg:py-12 px-6 bulge-top-other md:px-8 noise-bg-neww -mt-4 md:-mt-16 lg:-mt-24 xl:-mt-28 z-10"
       >
         <div className="flex flex-col md:flex-row max-w-[1300px] mx-auto gap-6 md:gap-12">
           {/* Left Sidebar - Using gradient background */}
           <div
-            className="hidden md:block w-64 text-white p-4 md:p-6 rounded-md sticky top-32 self-start"
+            className="xl:mt-44 lg:mt-36 md:mt-28 hidden md:block w-64 text-white p-4 md:p-6 rounded-md sticky top-24 self-start"
             style={{
               background: `linear-gradient(0deg, #014D4E, #014D4E)`,
             }}
