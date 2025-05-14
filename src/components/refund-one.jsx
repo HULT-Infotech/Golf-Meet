@@ -71,7 +71,7 @@ function RefundOne() {
         </div>
       </section>
 <section 
-  className="bg-gray-100  noise-bg relative hidden md:flex flex-col min-h-[90vh] md:flex-row overflow-hidden"
+  className="bg-gray-100  noise-bg relative hidden md:flex  flex-col md:min-h-[70vh] lg:min-h-[85vh] md:flex-row overflow-hidden"
 >
 <div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
             <h1
@@ -106,10 +106,6 @@ function RefundOne() {
     />
   </div>
 </section>
-      
-<section className="md:block hidden w-full h-[25vh] bulge-top-desk noise-bg-newest -mt-4 -mb-24">
-        
-        </section>
     </div>
     
   );

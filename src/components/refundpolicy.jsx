@@ -10,7 +10,7 @@ import mcoc_coins3 from "../assets/m-coin2.svg";
 import mcoc_coins4 from "../assets/m-coin4.svg";
 import Footer from "../components/Footer";
 import Footerr from "../Desktop/Footerr";
-import code_of_conduct from "../assets/code-of-conduct/bg-code.png";
+import code_of_conduct from "../assets/code-of-conduct/bgmm.png";
 import { Link } from "react-router-dom";
 
 function RefundPolicy() {
@@ -18,7 +18,8 @@ function RefundPolicy() {
     <>
       <section className="relative px-4 flex items-center justify-center overflow-hidden">
         {/* Absolute background image container for desktop */}
-        <div className="absolute inset-0 w-full z-6 h-full hidden md:block">
+        <div className="absolute top-0 left-0 w-full h-full bulge-top noise-bg-newest"></div>
+        <div className="absolute inset-0 w-full md:mt-32 z-6 h-full hidden md:block">
           <img
             src={code_of_conduct}
             alt="Refund Policy background"
@@ -87,7 +88,7 @@ function RefundPolicy() {
         /> */}
 
         {/* Content Container */}
-        <div className="relative bg-gray-100 mt-12 mb-20 xsm:mt-10 rounded-lg p-4 sm:p-6 md:p-8 w-[95%] sm:w-[90%] md:w-[85%] max-w-6xl shadow-gray-800 drop-shadow-2xl shadow z-20">
+        <div className="relative bg-gray-100 md:mt-32 mt-12 mb-20 xsm:mt-10 rounded-lg p-4 sm:p-6 md:p-8 w-[95%] sm:w-[90%] md:w-[85%] max-w-6xl shadow-gray-800 drop-shadow-2xl shadow z-20">
           <div className="space-y-6 md:space-y-8 mx-auto" style={{ maxWidth: "100%" }}>
             <div>
               <h3
