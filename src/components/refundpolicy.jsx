@@ -23,7 +23,7 @@ function RefundPolicy() {
           <img
             src={code_of_conduct}
             alt="Refund Policy background"
-            className="w-full h-full"
+            className="w-full h-auto"
           />
         </div>
 
@@ -88,7 +88,7 @@ function RefundPolicy() {
         /> */}
 
         {/* Content Container */}
-        <div className="relative bg-gray-100 md:mt-32 mt-12 mb-20 xsm:mt-10 rounded-lg p-4 sm:p-6 md:p-8 w-[95%] sm:w-[90%] md:w-[85%] max-w-6xl shadow-gray-800 drop-shadow-2xl shadow z-20">
+        <div className="relative bg-gray-100 md:mt-32 mt-12 mb-20 xsm:mt-10 rounded-lg p-4 sm:p-6 md:p-8 w-[95%] sm:w-[90%] md:w-[85%]  max-w-6xl xhhh:max-w-[100rem] shadow-gray-800 drop-shadow-2xl shadow z-20">
           <div className="space-y-6 md:space-y-8 mx-auto" style={{ maxWidth: "100%" }}>
             <div>
               <h3
