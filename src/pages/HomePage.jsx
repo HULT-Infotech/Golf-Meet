@@ -61,7 +61,7 @@ function HomePage() {
       <div className="hidden md:block">
         <div className="bulge-bottom relative z-30 ">
         <LargeLanding /></div>
-        <div className=" relative bulge-bottom z-20 -mt-4">
+        <div className=" relative bulge-bottom z-20 -mt-6">
         <LargeHow />
         </div>
         <div className=" relative z-10 -mt-4 ">
