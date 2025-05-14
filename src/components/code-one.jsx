@@ -21,9 +21,9 @@ function CodeOne() {
         <Navbar />
       {/* Main Hero Section - Fixed overflow */}
       <section 
-  className="bg-gray-100 mt-[10vh] noise-bg relative hidden md:flex flex-col min-h-[90vh] md:flex-row overflow-hidden"
+  className="bg-gray-100 mt-[10vh] noise-bg relative hidden md:flex flex-col min-h-[70vh] xhh:min-h-[50vh] xh:min-h-[50vh]  xsh:min-h-[60vh] xsh-landscape:min-h-[85vh] md:flex-row overflow-hidden"
 >
-<div className="relative flex flex-col justify-center items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
+<div className="relative flex flex-col justify-center mt-32 items-start p-8 md:pl-10 md:p-0 xl:ml-20 md:mb-40">
             <h1
               className="font-quattrocento -mt-28 font-bold text-[2.85rem] text-[#201E15] sm:text-5xl lg:text-[55px] xl:text-[65px] leading-[100%] tracking-[0.025em] mb-4"
               style={{
@@ -40,7 +40,7 @@ function CodeOne() {
             >
               PLAYER CODE OF <br />CONDUCT
             </h1>
-            <div className="text-sm lg:w-[95%] md:w-[80%]">Golf Meet is built on respect, trust, and the spirit of true sportsmanship. Review the player code that defines our community.
+            <div className="text-sm xl:w-[95%] lg:w-[85%] md:w-[80%]">Golf Meet is built on respect, trust, and the spirit of true sportsmanship. Review the player code that defines our community.
             </div>
             <p className="font-semibold text-sm mt-4">
             And if you have suggestions, we’re always ready to listen.
@@ -48,7 +48,7 @@ function CodeOne() {
           </div>
   
   {/* Right Image Section - Positioned at bottom-right */}
-  <div className="absolute bottom-0 right-4 w-1/2 h-auto">
+  <div className="absolute bottom-0 right-4 xl:w-5/12 h-auto">
     <img
       src={tr_bg}
       alt="Golfers Illustration"
@@ -58,7 +58,7 @@ function CodeOne() {
 </section>
 
 {/* Code of Conduct Banner - Fixed overflow */}
-<section className="md:flex hidden flex-col items-center justify-center -mt-2 relative sm:mb-0 w-full">
+<section className="md:flex hidden flex-col items-center justify-center -mt-4 mb-0 relative sm:mb-0 w-full">
   <div 
     onClick={() => window.location.href = '/code-of-conduct'}
     className="flex justify-between items-center text-white bg-[#014D4E0D] noise-bg-newest w-full md:px-8 lg:px-32 lg:py-10 md:py-6 cursor-pointer hover:opacity-90 transition-opacity"

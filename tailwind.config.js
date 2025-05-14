@@ -22,6 +22,7 @@ export default {
         'xh': {
           'raw': '(min-width: 700px) and (max-width: 1279px) and (min-height: 1099px) and (max-height: 1299px)'
         },
+        'split': { 'raw': '(min-height: 600px) and (min-width: 624px)' },
         'xhh': {
           'raw': '(min-width: 700px) and (max-width: 1279px) and (min-height: 1300px) and (max-height: 1440px)'
         },

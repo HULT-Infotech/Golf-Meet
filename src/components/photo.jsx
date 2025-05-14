@@ -1,8 +1,8 @@
 import React from 'react';
 import p_1 from "../assets/Photosection/p1.webp";
 import p_2 from "../assets/Photosection/p2.webp";
-import price_image1 from "../assets/Cost/pro.webp";
-import price_image2 from "../assets/Cost/amature.webp";
+import price_image1 from "../assets/pro.svg";
+import price_image2 from "../assets/ama.svg";
 
 const EventsAndCostPage = () => {
   const handleWhatsAppClick = () => {
@@ -35,25 +35,25 @@ const EventsAndCostPage = () => {
         
         {/* First Photo */}
         <div className="px-4 mb-6">
-          <div className="rounded-lg overflow-hidden shadow-md">
-            <img
-              src={p_1}
-              alt="People enjoying a social gathering at a golf club"
-              className="w-full h-auto"
-            />
-          </div>
-        </div>
-        
-        {/* Second Photo - Adding specific z-index to ensure it's above cost section */}
-        <div className="px-4 relative z-30">
-          <div className="rounded-lg overflow-hidden shadow-md">
-            <img
-              src={p_2}
-              alt="Stand-up comedy event at an exclusive venue"
-              className="w-full h-auto"
-            />
-          </div>
-        </div>
+  <div className="overflow-hidden flex justify-center">
+    <img
+      src={p_1}
+      alt="People enjoying a social gathering at a golf club"
+      className="w-full split:w-[80%] h-auto shadow-md rounded-lg"
+    />
+  </div>
+</div>
+
+<div className="px-4 relative z-30">
+  <div className="rounded-lg overflow-hidden shadow-md flex justify-center">
+    <img
+      src={p_2}
+      alt="Stand-up comedy event at an exclusive venue"
+      className="w-full split:w-[80%] h-auto shadow-md rounded-lg"
+    />
+  </div>
+</div>
+
       </div>
 
       {/* Curved Container Section with Tournament Fee - Modified to have only top curve */}
@@ -120,7 +120,7 @@ const EventsAndCostPage = () => {
                 fontSize: 'var(--heading-size)'
               }}
             >
-              PARTICIPATION FEE
+              SUBSCRIPTION FEE
             </h2>
             <p className="text-center opacity-80 mb-8  max-w-[17rem] sm:max-w-sm md:max-w-md"
               style={{ 
@@ -128,14 +128,14 @@ const EventsAndCostPage = () => {
               }}>Participation fee must be paid every month for retaining your scores and position on the leaderboard that year.</p>
             
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12">
-              <div className="w-[90%] md:w-56 rounded-lg overflow-hidden shadow-md">
+              <div className="w-[110%] split:w-[115%]  md:w-56 rounded-lg overflow-hidden shadow-md">
                 <img
                   src={price_image1}
                   alt="Golf Meet price information"
                   className="w-full h-auto"
                 />
               </div>
-              <div className="w-[90%] md:w-56 rounded-lg overflow-hidden shadow-md">
+              <div className="w-[110%] split:w-[115%] md:w-56 rounded-lg overflow-hidden shadow-md">
                 <img
                   src={price_image2}
                   alt="Golf Meet membership benefits"

@@ -59,7 +59,7 @@ function Terms() {
         </div>
       </section>
 <section
-        className="bg-gray-100 noise-bg relative hidden md:flex flex-col min-h-[90vh] md:flex-row"
+        className="bg-gray-100 noise-bg relative hidden md:flex flex-col md:min-h-[70vh] lg:min-h-[68vh]  md:flex-row"
       >
         <div className="flex flex-col w-full justify-between md:justify-around md:flex-row max-w-[1700px] mx-auto">
           {/* Text Section */}
@@ -90,7 +90,7 @@ function Terms() {
             <img
               src={faq_mobile_hero}
               alt="Golfers Illustration"
-              className="xl:w-[55%] lg:w-[65%] md:w-[75%] object-contain pointer-events-none"
+              className="xl:w-[55%] lg:w-[60%] md:w-[75%] object-contain pointer-events-none"
             />
           </div>
         </div>

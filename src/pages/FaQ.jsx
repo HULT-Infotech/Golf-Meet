@@ -287,7 +287,7 @@ function FaQ() {
 
       {/* FAQ Content Section - Adjusted margin for desktop */}
       <section
-        className="py-8 md:py-16 lg:py-12 px-6 bulge-top-other md:px-8 noise-bg-neww -mt-4 md:-mt-16 lg:-mt-24 xl:-mt-28 z-10"
+        className="py-8 md:py-12 lg:py-10 px-6 bulge-top-other md:px-8 noise-bg-neww -mt-4 md:-mt-16 lg:-mt-20 xl:-mt-28 z-10"
       >
         <div className="flex flex-col md:flex-row max-w-[1300px] mx-auto gap-6 md:gap-12">
           {/* Left Sidebar - Using gradient background */}

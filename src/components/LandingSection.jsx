@@ -99,10 +99,6 @@ function LandingPage() {
     Players are matched based on their <br /> preferred courses and dates. 
           </p>
   </div>
-</div>
-
-{/* Section 2 */}
-<div className="noise-bg-new md:py-0 pb-12 -mt-1 md:bg-transparent relative overflow-hidden bulge-bottomm">
   <div className="relative">
     {/* Register Button with gold gradient */}
     <div className="flex justify-center">
