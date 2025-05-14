@@ -113,7 +113,7 @@ function LandingPage() {
     </div>
     
     {/* Bottom full-width image inside the section */}
-    <div className="absolute z-0 -bottom-12  left-0 right-0 w-full">
+    <div className="absolute z-0 -bottom-3  left-0 right-0 w-full">
       <img 
         src={FooterBanner} 
         alt="Golf Course Footer" 
