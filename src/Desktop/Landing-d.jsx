@@ -142,7 +142,7 @@ function DesktopTabletLandingPage() {
             {/* Register Button */}
             <div className="flex justify-center md:mt-7 lg:mt-12 xh:mt-8 xsh:mt-8">
               <Link 
-                to="/redirect"
+                to="/contact"
                 className="rounded-md bg-gradient-to-b from-white via-[#fce570] to-[#fcb017] px-8 py-3 font-bold transition-all duration-300 hover:opacity-90 hover:shadow-md"
               >
                 <span className="text-[20px] md:text-sm lg:text-base xhhh:text-xl xh:text-[15px] xsh:text-[15px] font-quattrocento text-[#014D4E] font-bold uppercase">
