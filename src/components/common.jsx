@@ -17,7 +17,7 @@ function Common() {
   return (
 <>
 
-<section className="relative px-4 flex items-center  justify-center overflow-x-hidden">
+<section className="relative px-4 flex items-center  justify-center overflow-x-hidden overflow-y-hidden">
   <div className="absolute top-[50%] left-0 w-full h-1/2 noise-bg-newest"></div>
 {/* Absolute background image container for desktop */}
 <div className="absolute inset-0 w-full z-10 -mt-36 h-auto hidden md:block">
