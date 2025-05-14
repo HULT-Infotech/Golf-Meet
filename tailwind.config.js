@@ -22,17 +22,16 @@ export default {
         'xh': {
           'raw': '(min-width: 700px) and (max-width: 1279px) and (min-height: 1099px) and (max-height: 1299px)'
         },
+        'split': { 'raw': '(min-height: 600px) and (min-width: 624px)' },
         'xhh': {
           'raw': '(min-width: 700px) and (max-width: 1279px) and (min-height: 1300px) and (max-height: 1440px)'
         },
         'xhhh': {'min': '1650px'},
+        'xsh-landscape': {'raw': '(min-width: 700px) and (max-width: 1279px) and (min-height: 700px) and (max-height: 1100px) and (orientation: landscape)'},
+        'xh-landscape': {'raw': '(min-width: 700px) and (max-width: 1279px) and (min-height: 1099px) and (max-height: 1299px) and (orientation: landscape)'},
+        'xhh-landscape': {'raw': '(min-width: 700px) and (max-width: 1279px) and (min-height: 1300px) and (max-height: 1440px) and (orientation: landscape)'},
+        'xhhh-landscape': {'raw': '(min-width: 1650px) and (orientation: landscape)'},
       },
-      'land-sm': {'raw': '(min-width: 700px) and (max-width: 1100px) and (min-height: 300px) and (max-height: 699px)'},
-        'land-md': {'raw': '(min-width: 1101px) and (max-width: 1279px) and (min-height: 300px) and (max-height: 699px)'},
-        'land-lg': {'raw': '(min-width: 1280px) and (max-width: 1440px) and (min-height: 300px) and (max-height: 699px)'},
-        
-        // Device-specific exclusions to avoid affecting laptops/tablets
-        'mobile-only': {'raw': '(max-device-width: 812px), (max-device-height: 812px)'},
     },
   },
   plugins: [],

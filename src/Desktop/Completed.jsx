@@ -12,7 +12,7 @@ const CombinedGolfPage = () => {
           {/* Heading for Desktop & Tablets */}
           <div className="relative">
   <h1              
-    className="hidden md:block text-[60px] md:text-[45px] lg:text-[50px] xl:text-[60px] font-quattrocento font-bold leading-tight md:leading-tight lg:leading-tight tracking-[0.025em] text-center mb-8 lg:mb-12"             
+    className="hidden md:block text-[60px] xhhh:text-[70px] md:text-[45px] lg:text-[50px] xl:text-[60px] font-quattrocento font-bold leading-tight md:leading-tight lg:leading-tight tracking-[0.025em] text-center mb-8 lg:mb-12"             
     style={{               
       background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 27%)',               
       WebkitBackgroundClip: 'text',               
@@ -27,7 +27,7 @@ const CombinedGolfPage = () => {
   </h1>
   {/* Shadow layer */}
   <h1              
-    className="hidden md:block text-[60px] md:text-[45px] lg:text-[50px] xl:text-[60px] font-quattrocento font-bold leading-tight md:leading-tight lg:leading-tight tracking-[0.025em] text-center mb-8 lg:mb-12 absolute top-0 left-0 w-full -z-1"
+    className="hidden md:block text-[60px] md:text-[45px] lg:text-[50px] xhhh:text-[70px] xl:text-[60px] font-quattrocento font-bold leading-tight md:leading-tight lg:leading-tight tracking-[0.025em] text-center mb-8 lg:mb-12 absolute top-0 left-0 w-full -z-1"
     style={{
       color: 'rgba(0, 0, 0, 0.08)',
       transform: 'translate(2px, 2px)'
@@ -57,27 +57,27 @@ const CombinedGolfPage = () => {
           </h1>
 
           {/* Subheading for Mobile */}
-          <h1 className="text-[20px] text-[#014D4E] max-w-md block md:hidden w-[90%] mx-auto mb-6 font-quattrocento font-bold text-center">
+          <h1 className="text-[20px] text-[#014D4E] max-w-md block   md:hidden w-[90%] mx-auto mb-6 font-quattrocento font-bold text-center">
             EVEN AS YOU PLAY AT YOUR HOME COURSE.
           </h1>
 
           {/* Subheading for Tablets & Desktop */}
-          <h1 className="text-[20px] md:text-[22px] lg:text-[23px] xl:text-[25px] text-[#014D4E] xl:max-w-3xl hidden md:block mx-auto -mt-3 mb-6 lg:mb-5 font-quattrocento font-bold text-center">
+          <h1 className="text-[20px] md:text-[22px] lg:text-[23px] xhhh:text-[32px] xl:text-[25px] text-[#014D4E] xl:max-w-3xl hidden md:block mx-auto -mt-3 mb-6 lg:mb-5 font-quattrocento font-bold text-center">
             EVEN AS YOU PLAY AT YOUR <br />  HOME COURSE.
           </h1>
 
           {/* Description paragraph */}
-          <p className="text-teal-700 font-sans text-lg md:text-[15px] lg:text-[17px]   xl:text-[19px] mb-8 md:mb-12 p-4 max-w-[500px] md:max-w-2xl lg:max-w-3xl mx-auto">
+          <p className="text-teal-700 font-sans xhhh:text-[21px] text-lg md:text-[15px] lg:text-[17px]   xl:text-[19px] mb-8 md:mb-12 p-4 max-w-[500px] md:max-w-2xl lg:max-w-3xl mx-auto">
             Unlike typical golf tournaments where the result depends <br />on your form on the tournament day, Golf Meet gives you <br />and everyone else a fair chance all year long.
           </p>
 
           {/* Golf balls illustration */}
-          <div className="relative mb-8 md:mb-12 lg:mb-16 p-6 md:p-8 lg:p-10">
+          <div className="relative mb-8 md:mb-12 lg:mb-16 xhhh:mt-12 p-6 md:p-8 lg:p-10">
             <img
               src={Illustration_Golf_Balls}
               draggable="false"
               alt="Golf Balls"
-              className="mx-auto w-full md:w-1/2 lg:w-2/5 xl:w-5/12"
+              className="mx-auto w-full md:w-1/2 lg:w-2/5 xl:w-5/12 xhhh:w-[45%]"
             />
           </div>
         </div>
@@ -93,7 +93,7 @@ const CombinedGolfPage = () => {
           >
             {/* Card Title */}
             <h2
-              className="font-quattrocento md:text-[2.9rem] lg:text-[3.5rem] font-bold mb-6 md:mb-8"
+              className="font-quattrocento md:text-[2.9rem] lg:text-[3.5rem] xhhh:text-[3.7rem] font-bold mb-6 md:mb-8"
               style={{
                 background: "linear-gradient(180deg, #FFF2BF 0%, #F4D455 100%)",
                 WebkitBackgroundClip: "text",

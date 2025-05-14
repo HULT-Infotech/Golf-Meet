@@ -46,7 +46,7 @@ const CompletePage = () => {
               src={Illustration_Golf_Balls}
               draggable="false"
               alt="Golf Balls"
-              className="mx-auto md:w-1/2 lg:w-[29%]"
+              className="mx-auto md:w-1/2 split:w-3/5 lg:w-[29%]"
             />
           </div>
           

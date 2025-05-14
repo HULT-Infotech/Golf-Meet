@@ -24,7 +24,7 @@ const GolfPrize = () => {
   </div>
   
   {/* Content */}
-  <div className="relative h-full flex md:py-32 xsh:py-20 flex-col items-center justify-center text-white text-center bulge-bottom px-6">
+  <div className="relative h-full flex md:py-32 xhhh:py-44 xsh:py-20 flex-col items-center justify-center text-white text-center bulge-bottom px-6">
     
         {/* Golf Flag Icon */}
         <div className="mb-4">
@@ -32,7 +32,7 @@ const GolfPrize = () => {
         </div>
         
         {/* GRAND PRIZE Text */}
-        <h1 className="mb-0 xsm:text-[3.1rem] xsm:leading-[3rem] leading-[4.5rem] text-[4.3rem] text-center"
+        <h1 className="mb-0 xsm:text-[3.1rem] xsm:leading-[3rem] xhhh:text-[6.5rem] xhhh:leading-[7rem] leading-[4.5rem] text-[4.3rem] text-center"
             style={{  /* 64.71px at largest */
               fontFamily: 'Quattrocento, serif',
               fontWeight: 700,
@@ -43,7 +43,7 @@ const GolfPrize = () => {
             }}>
           GRAND
         </h1>
-        <h1 className="mb-5 xsm:text-[3.1rem] text-[4.3rem] text-center"
+        <h1 className="mb-5 xsm:text-[3.1rem] text-[4.3rem] xhhh:leading-[7rem] xhhh:text-[6.5rem] text-center"
             style={{
               fontFamily: 'Quattrocento, serif',
               fontWeight: 700,
@@ -57,7 +57,7 @@ const GolfPrize = () => {
         </h1>
         
         {/* Description */}
-        <p className=" mb-5 max-w-md leading-relaxed"
+        <p className=" mb-5 max-w-md  leading-relaxed"
            style={{ 
              fontSize: 'clamp(1rem, 4vw, 1.5rem)',
              fontFamily: 'Quattrocento, serif',
@@ -70,7 +70,7 @@ const GolfPrize = () => {
         </p>
         
         {/* GOLF VACATION IN Text */}
-        <h2 className="font-normal xsm:text-[1.8rem] text-[2.3rem]  tracking-wider mb-0 leading-tight"
+        <h2 className="font-normal xsm:text-[1.8rem] text-[2.3rem] xhhh:text-[3.7rem]  tracking-wider mb-0 leading-tight"
             style={{
               fontFamily: 'Quattrocento, serif',
              fontWeight: 400,
@@ -78,7 +78,7 @@ const GolfPrize = () => {
             }}>
           GOLF
         </h2>
-        <h2 className="font-normal xsm:text-[1.8rem] text-[2.3rem] tracking-wider mb-2 leading-tight"
+        <h2 className="font-normal xsm:text-[1.8rem] text-[2.3rem] xhhh:text-[4rem] tracking-wider mb-2 leading-tight"
             style={{
               fontFamily: 'Quattrocento, serif',
              fontWeight: 400,
@@ -89,7 +89,7 @@ const GolfPrize = () => {
         
         {/* VIETNAM Text */}
         <h2 
-  className="font-normal xsm:text-[2.9rem] text-[3.5rem] tracking-widest leading-none"
+  className="font-normal xsm:text-[2.9rem] text-[3.5rem] xhhh:text-[6.5rem] tracking-widest leading-none"
   style={{
     textShadow: '2px 2px 14px rgba(255, 255, 255, 0.45), 0px 0px 14px rgba(255, 255, 255, 0.45)',
     fontFamily: 'Quattrocento, serif',
@@ -101,7 +101,7 @@ const GolfPrize = () => {
 </h2>
       </div>
     </div>
-    <div className="w-full h-[77vh] xh:h-[40vh] xhh:h-[40vh] xsh:h-[50vh] overflow-hidden">
+    <div className="w-full h-[77vh] xh:h-[40vh] xhh:h-[40vh] xhhh:h-[60vh] xsh:h-[50vh] overflow-hidden">
       {/* Main container with absolute positioning for independent sections */}
       <div className="w-full h-full relative">
         

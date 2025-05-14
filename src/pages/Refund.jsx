@@ -13,7 +13,7 @@ function RefundPage() {
 
       
       {/* Section 3 */}
-      <div className="md:overflow-visible -mt-7 overflow-hidden">
+      <div className="md:overflow-visible -mt-7 md:-mt-12 overflow-hidden">
       <Ctwo />
       </div>
       </div>

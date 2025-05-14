@@ -15,7 +15,7 @@ function DesktopTabletLandingPage() {
   return (
     <section className="text-center">
       {/* First section */}
-      <div className="relative flex flex-col min-h-[72vh] xh:min-h-[50vh] xhhh:min-h-[78vh] xsh:min-h-[50vh] xhh:min-h-[50vh] bg-gray-50 z-0 noise-bg overflow-hidden">
+      <div className="relative flex flex-col min-h-[72vh] xsh-landscape:min-h-[70vh]  xh:min-h-[50vh] xhhh:min-h-[78vh] xsh:min-h-[50vh] xhh:min-h-[50vh] bg-gray-50 z-0 noise-bg overflow-hidden">
         {/* Top Navbar */}
         <div className="md:absolute z-50 top-0 w-full flex justify-between items-center px-5 md:px-8 lg:px-10 py-8 md:py-10 flex-col-reverse md:flex-row">
           <div className="flex text-xsm lg:text-sm gap-6 md:gap-8 lg:gap-10 mt-4 md:mt-0 w-full md:w-auto">
@@ -60,7 +60,7 @@ function DesktopTabletLandingPage() {
         </div>
 
         {/*//! Hero Section for Tablets and Laptops */}
-        <div className="md:flex hidden relative md:min-h-[74vh] lg:min-h-[72vh] xhhh:min-h-[78vh] xh:min-h-[50vh] xsh:min-h-[50vh] xhh:min-h-[50vh] flex-col w-full items-center justify-center">
+        <div className="md:flex hidden relative md:min-h-[74vh] xsh-landscape:min-h-[70vh] lg:min-h-[72vh] xhhh:min-h-[78vh] xh:min-h-[50vh] xsh:min-h-[50vh] xhh:min-h-[50vh] flex-col w-full items-center justify-center">
           {/* Full width image at bottom - positioned to touch both edges correctly */}
           <div className="absolute bottom-0 left-0 right-0 z-20 w-full">
             <img
@@ -79,7 +79,7 @@ function DesktopTabletLandingPage() {
             <img
               src="favicons/favicon.svg"
               alt="Golfmeet Logo"
-              className="w-48 object-contain md:w-[300px] xh:w-[380px] xhhh:w-32vw xsh:w-[380px] xhh:w-[380px]  lg:w-[340px] xl:w-[31vw] xl:-mt-5 drop-shadow-[0_10px_10px_rgba(0,0,0,0.40)]"
+              className="w-48 object-contain md:w-[300px]  xh:w-[380px] xhhh:w-32vw xsh:w-[380px] xhh:w-[380px]  lg:w-[340px] xl:w-[31vw] xl:-mt-5 drop-shadow-[0_10px_10px_rgba(0,0,0,0.40)]"
               draggable="false"
             />
           </div>
@@ -104,7 +104,7 @@ function DesktopTabletLandingPage() {
       </div>
 
       {/* Second section */}
-      <section className="relative xl:h-[113vh] xhhh:h-[105vh] lg:h-[100vh] md:h-[78vh] xh:h-[55vh] xsh:h-[55vh] xhh:h-[60vh] bulge-top-desk -mt-8 z-10 w-full overflow-hidden noise-bg-newest">
+      <section className="relative xl:h-[113vh] xsh-landscape:h-[80vh]   xhhh:h-[105vh] lg:h-[100vh] md:h-[78vh] xh:h-[55vh] xsh:h-[55vh] xhh:h-[60vh] bulge-top-desk -mt-8 z-10 w-full overflow-hidden noise-bg-newest">
       
         {/* Content positioned above the image */}
         <div className="relative z-20 max-w-xl  mx-auto px-4">

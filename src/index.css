@@ -128,6 +128,9 @@
 .bulge-bottom {
   clip-path: ellipse(275% 100% at 50% 0%);
 }
+.bulge-botto {
+  clip-path: ellipse(325% 100% at 50% 0%);
+}
 .bulge-bottom-image {
   clip-path: ellipse(185% 100% at 50% 0%);
 }
