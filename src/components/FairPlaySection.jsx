@@ -11,7 +11,7 @@ const FairPlaySection = () => {
           <img
             src={Illustration_Golfers_Mobile}
             alt="Illustration of Golfers"
-            className="w-[86vw] md:w-[65vw] object-contain"
+            className="w-[86vw] md:w-[65vw] split:w-[60vw] object-contain"
           />
         </div>
 
@@ -57,7 +57,7 @@ const FairPlaySection = () => {
         <img
               src={Img}
               alt=""
-              className="w-[80%] xsm:w-[92%] right-0 absolute z-20 [bottom:clamp(-4.6rem,-22vw,-10rem)] md:-bottom-32"
+              className="w-[80%] split:hidden xsm:w-[92%] right-0 absolute z-20 [bottom:clamp(-4.6rem,-22vw,-10rem)] md:-bottom-32"
             />
       </section>
     </>

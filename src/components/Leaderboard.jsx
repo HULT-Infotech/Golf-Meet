@@ -14,7 +14,7 @@ const LeaderboardCard = () => {
       <h2 
         className="font-quattrocento font-bold mb-7" 
         style={{
-          fontSize: "clamp(2.25rem, 12vw, 5rem)", // reduced min for small screens
+          fontSize: "clamp(2.25rem, 12vw, 4.5rem)", // reduced min for small screens
           background: "linear-gradient(180deg, #FFF2BF 0%, #F4D455 100%)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",

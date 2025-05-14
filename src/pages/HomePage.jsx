@@ -25,7 +25,7 @@ function HomePage() {
   return (
     <>
       <div className="md:hidden">
-        <div className="z-20 relative" ref={triggerRef}>
+        <div className="z-20 relative bulge-botto" ref={triggerRef}>
           <LandingSection />
         </div>
         <Navbar triggerRef={triggerRef} />
@@ -40,7 +40,12 @@ function HomePage() {
         <div className="relative -z-10 -mt-8">
         <Completesection/>
         </div>
-        <Leaderboardsection/>
+        <div className="w-full bg-gray-100 noise-bg-n">
+  <div className="mx-auto w-fit ">
+    <Leaderboardsection />
+  </div>
+</div>
+
         <div className="-mt-2">
         <GolfPrize />
         </div>
