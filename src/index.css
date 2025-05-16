@@ -66,6 +66,10 @@
   background: linear-gradient(180deg, #01393a 0%, rgba(1, 66, 67, 0.9) 8%, rgba(255, 255, 255, 1) 30%, #FFFFFF 100%);
   position: relative;
 }
+.noise-bg-newwee{
+  background: linear-gradient(180deg, #01393a 0%, rgba(1, 66, 67, 1) 6%, rgba(255, 255, 255, 1) 30%, #FFFFFF 100%);
+  position: relative;
+}
 
 .noise-bg-neww::after {
   content: "";
