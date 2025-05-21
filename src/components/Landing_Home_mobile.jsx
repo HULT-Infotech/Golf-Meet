@@ -31,7 +31,7 @@ function LandingHomePage() {
           {/* Right Side - Leaderboard Link */}
           <Link
             to="/leaderboard"
-            className="uppercase text-[#1C1C1C] font-quattrocentoSans font-bold tracking-[0.1em]
+            className="uppercase text-[#014D4E] font-quattrocentoSans font-bold tracking-[0.1em]
                       [font-size:clamp(0.65rem,2.5vw,1rem)] pointer-events-auto"
           >
             Leaderboard
@@ -83,9 +83,9 @@ function LandingHomePage() {
         </div>
       </div>
       
-      {/* Second Section - Leaderboard Card (now outside the noise-bg section with overlap) */}
+      {/* Second Section - Leaderboard Card */}
       <div className="w-full flex justify-center bg-white relative -top-6">
-        <div className="w-full max-w-md bg-white rounded-lg shadow-lg overflow-hidden mb-4 z-40 mx-4">
+        <div className="w-full max-w-md bg-white rounded-lg shadow-lg overflow-hidden z-40 mx-4">
           <div className="px-4 pt-3 pb-2">
             <div className="flex justify-between items-center border-b pb-2">
               <div className="text-sm font-bold text-[#014D4E]">RANK</div>
@@ -95,12 +95,16 @@ function LandingHomePage() {
             
             {/* First Player Row */}
             <div className="py-3 border-b">
-              <div className="flex justify-between items-start">
-                <div className="flex flex-col items-center">
-                  <span className="text-lg font-bold">1</span>
-                  <div className="flex items-center text-green-500 text-xs">
-                    <span className="mr-1">▲</span>
-                    <span>+3</span>
+              <div className="flex justify-between items-center">
+                <div className="w-10 flex items-center flex-col">
+                  <div className="flex flex-col items-center">
+                    <span className="text-lg font-bold leading-none text-[#014D4E]">1</span>
+                    <div className="text-green-500 text-xs mt-1">
+                      <span className="flex items-center">
+                        <span className="mr-1">▲</span>
+                        <span>+3</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
                 
@@ -115,41 +119,65 @@ function LandingHomePage() {
                 </div>
                 
                 <div className="flex flex-col items-end">
-                  <span className="text-lg font-medium">9999</span>
-                  <span className="text-xs text-blue-600 underline mt-1">Details &gt;</span>
+                  <span className="text-lg font-medium text-[#014D4E]">9999</span>
+                  <span className="text-xs text-[#014D4E] underline mt-1">Details &gt;</span>
                 </div>
               </div>
             </div>
             
-            {/* Second Player Row - Faded version */}
+            {/* Second Player Row - Updated to match image */}
             <div className="py-3">
-              <div className="flex justify-between items-start opacity-50">
-                <div className="flex flex-col items-center">
-                  <span className="text-lg font-bold">2</span>
-                  <div className="flex items-center text-red-500 text-xs">
-                    <span className="mr-1">▼</span>
-                    <span>-1</span>
+              <div className="flex justify-between items-center">
+                <div className="w-10 flex items-center flex-col">
+                  <div className="flex flex-col items-center">
+                    <span className="text-lg font-bold text-gray-400 leading-none">2</span>
+                    <div className="text-red-500 text-xs mt-1">
+                      <span className="flex items-center">
+                        <span className="mr-1">▼</span>
+                        <span>-1</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
                 
                 <div className="flex flex-col items-start text-left flex-grow mx-4">
-                  <span className="font-bold text-[#014D4E]">Srinivas Raaghav Kashyap</span>
-                  <div className="text-xs text-gray-500">
+                  <span className="font-bold text-gray-400">Srinivas Raaghav Kashyap</span>
+                  <div className="text-xs text-gray-400">
                     +91 xxxxx x1234 · Bengaluru, IN
                   </div>
-                  <div className="text-xs text-gray-400 mt-1">
+                  <div className="text-xs text-gray-300 mt-1">
                     ROUNDS: 123 · RAW SCORE: 9999
                   </div>
                 </div>
                 
                 <div className="flex flex-col items-end">
-                  <span className="text-lg font-medium">9999</span>
-                  <span className="text-xs text-blue-600 underline mt-1">Details &gt;</span>
+                  <span className="text-lg font-medium text-gray-400">9999</span>
+                  <span className="text-xs text-[#014D4E] underline mt-1">Details &gt;</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      
+      {/* Position the "VIEW INDIA RANKING" button to overlap between second and third sections */}
+      <div className="w-full flex justify-center relative -top-10 z-50">
+        <div className="w-full max-w-xs mx-4">
+          <button 
+            className="w-full py-3 rounded-md text-white font-bold tracking-wider uppercase"
+            style={{
+              background: 'linear-gradient(180deg, #029A9C 0%, #014D4E 100%)',
+              boxShadow: '0px 2px 4px rgba(0,0,0,0.25)'
+            }}
+          >
+            VIEW INDIA RANKING
+          </button>
+        </div>
+      </div>
+      
+      {/* Third Section */}
+      <div className="w-full bg-white pt-6 pb-12">
+        {/* Content for the third section goes here */}
       </div>
     </div>
   );
