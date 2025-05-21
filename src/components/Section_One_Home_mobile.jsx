@@ -174,11 +174,6 @@ function LandingHomePage() {
           </button>
         </div>
       </div>
-      
-      {/* Third Section */}
-      <div className="w-full bg-white pt-6 pb-12">
-        {/* Content for the third section goes here */}
-      </div>
     </div>
   );
 }

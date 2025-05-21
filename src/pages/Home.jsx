@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
-import Home_First_Section_mobile from "../components/Landing_Home_mobile";
+import Home_First_Section_mobile from "../components/Section_One_Home_mobile";
+import Home_Two_Section_mobile from "../components/Section_Two_Home_mobile";
 import Navbar from "../components/Navbar";
 import HowItWorksSection from "../components/HowItWorksSection";
 import FairPlaySection from "../components/FairPlaySection";
@@ -29,6 +30,9 @@ function Home() {
           <Home_First_Section_mobile />
         </div>
         <Navbar triggerRef={triggerRef} />
+        <div className="-mt-4 relative z-10 ">
+        <Home_Two_Section_mobile />
+        </div>
         <div className="-mt-4 relative z-10 ">
         <HowItWorksSection />
         </div>
