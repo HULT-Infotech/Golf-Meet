@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Home_First_Section_mobile from "../components/Section_One_Home_mobile";
 import Home_Two_Section_mobile from "../components/Section_Two_Home_mobile";
+import Home_Three_Section_mobile from "../components/Section_Three_Home_mobile";
 import Navbar from "../components/Navbar";
 import HowItWorksSection from "../components/HowItWorksSection";
 import FairPlaySection from "../components/FairPlaySection";
@@ -34,21 +35,8 @@ function Home() {
         <Home_Two_Section_mobile />
         </div>
         <div className="-mt-4 relative z-10 ">
-        <HowItWorksSection />
+        <Home_Three_Section_mobile />
         </div>
-        
-        <FairPlaySection />
-        <div className="-mt-6 relative z-0">
-          <VideoSection />
-        </div>
-        <div className="relative -z-10 -mt-8">
-        <Completesection/>
-        </div>
-        <div className="w-full bg-gray-100 noise-bg-n">
-  <div className="mx-auto w-fit ">
-    <Leaderboardsection />
-  </div>
-</div>
 
         <div className="-mt-2">
         <GolfPrize />
