@@ -40,7 +40,7 @@ const CompletePage = () => {
             textFillColor: 'transparent',
             textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
             filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',}}>
-            NO HANDICAPs, <br />
+            NO HANDICAPS, <br />
 ONLY RAW <br />SCORES MATTER.
           </h1>
           <p className="text-teal-700 font-sans text-lg mb-4 p-4 max-w-xl mx-auto">
