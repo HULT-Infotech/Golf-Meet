@@ -5,6 +5,7 @@ import LoadingScreen from "./components/LoadingScreen";
 import GoogleAnalytics from "./hooks/GoogleAnalytics";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
+const Home = lazy(() => import("./pages/Home"));
 const HowToPlay = lazy(() => import("./pages/HowToPlay"));
 const TournamentRule = lazy(() => import("./pages/TournamentRule"));
 const FaQ = lazy(() => import("./pages/FaQ"));
@@ -23,6 +24,7 @@ function App() {
       <Suspense fallback={<LoadingScreen />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/h" element={<Home />} />
           {/* Use the lazily loaded HomePage */}
           <Route path="/home-to-play" element={<HowToPlay />} />
           <Route path="/faq" element={<FaQ />} />
