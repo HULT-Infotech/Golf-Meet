@@ -181,6 +181,8 @@ function LandingHomePage() {
       </div>
       
     </div>
+
+
     {/*Bigger Screen Layout */}
       <section className="text-center md:block hidden">
           {/* First section */}
@@ -206,9 +208,6 @@ function LandingHomePage() {
               </div>
               
               <div className="flex items-center text-xsm lg:text-sm w-full md:w-auto justify-between gap-8">
-                <div className="flex items-center gap-1">
-                  {/* Language dropdown placeholder */}
-                </div>
                 <a
                   href="/faq"
                   className="  leading-4 text-[#211E16] font-semibold text-center my-auto"
@@ -248,9 +247,34 @@ function LandingHomePage() {
                 <img
                   src="favicons/favicon.svg"
                   alt="Golfmeet Logo"
-                  className="w-48 object-contain md:w-[300px]  xh:w-[380px] xhhh:w-32vw xsh:w-[380px] xhh:w-[380px]  lg:w-[340px] xl:w-[31vw] xl:-mt-5 drop-shadow-[0_10px_10px_rgba(0,0,0,0.40)]"
+                  className="w-48 object-contain md:w-[300px]  xh:w-[380px] xhhh:w-32vw xsh:w-[380px] xhh:w-[380px]  lg:w-[310px] xl:w-[27vw] xl:-mt-5 drop-shadow-[0_10px_10px_rgba(0,0,0,0.40)]"
                   draggable="false"
                 />
+              </div>
+
+              {/* Gradient Heading below logo with proper spacing */}
+              <div 
+                className="absolute z-30 flex flex-col items-center px-4"
+                style={{ top: "78%", transform: "translateY(-50%)" }}
+              >
+                <h1
+                  className="text-[#014D4E] text-4xl md:text-5xl leading-tight font-quattrocento font-bold mb-4"
+                  style={{
+                    background: 'linear-gradient(180deg, rgba(255, 180, 30, 0.9) 0%, #014D4E 27%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                    textFillColor: 'transparent',
+                    textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
+                    filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',
+                  }}
+                >
+                  WHAT'S YOUR RANK?
+                </h1>
+                
+                <p className="text-[#014D4E] text-xl md:text-2xl font-quattrocento font-bold text-center">
+                  AMONG AMATEUR GOLFERS IN INDIA
+                </p>
               </div>
             </div>
     
