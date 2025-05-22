@@ -254,7 +254,7 @@ function LandingHomePage() {
               {/* Gradient Heading below logo with proper spacing */}
               <div 
                 className="absolute z-30 flex flex-col items-center px-4"
-                style={{ top: "78%", transform: "translateY(-50%)" }}
+                style={{ top: "80%", transform: "translateY(-50%)" }}
               >
                 <h1
                   className="text-[#014D4E] text-4xl md:text-5xl leading-tight font-quattrocento font-bold mb-4"
