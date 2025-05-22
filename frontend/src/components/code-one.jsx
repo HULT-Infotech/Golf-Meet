@@ -3,7 +3,7 @@ import tr_bg from "../assets/cdd.svg";
 import tr_bg_mobile from "../assets/checkk.webp";
 import tr_dec_mobile from "../assets/green-m.svg";
 import code_of_conduct_greenleft from "../assets/code-of-conduct/code-conduct-left.svg";
-import Navbar from "../components/Navbar";
+import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 
 // Function to handle the WhatsApp button click

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import l1 from "../assets/LeaderPage/leader1.svg";
 import l2 from "../assets/LeaderPage/leader2.svg";
 import l3 from "../assets/LeaderPage/leader3.svg";

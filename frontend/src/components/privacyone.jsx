@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import tr_bg from "../assets/tournament-rule/right-bg.svg";
 import pr_m from "../assets/PV.webp";
-import Navbar from "../components/Navbar";
+import Navbar from "./Navbar";
 import tr_bg_mobile from "../assets/check.webp";
 const handleWhatsAppClick = () => {
   // The phone number provided: +91-888 484 4444
