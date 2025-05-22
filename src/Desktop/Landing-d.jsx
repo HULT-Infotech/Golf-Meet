@@ -1,9 +1,6 @@
 import React from "react";
 import landingImg from "../assets/full.svg";
 import landingbg from "../assets/bgmen.svg";
-import landingLeftImg from "../assets/landing_left_img.svg";
-import indiaFlag from "../assets/india_flag.png";
-import faq_bg_mobile from "../assets/paper.svg";
 import Illustration_Golfers_Mobile from "../assets/Illustration_Golfers_Mobile.svg";
 import { Link } from "react-router-dom";
 

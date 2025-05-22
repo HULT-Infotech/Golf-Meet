@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Home_First_Section_mobile from "../components/Section_One_Home_mobile";
+import Home_First_Section_mobile from "../components/Section_One_Home";
 import Home_Two_Section_mobile from "../components/Section_Two_Home_mobile";
 import Home_Three_Section_mobile from "../components/Section_Three_Home_mobile";
 import Navbar from "../components/Navbar";
@@ -26,7 +26,7 @@ function Home() {
 
   return (
     <>
-      <div className="md:hidden">
+      <div className="">
         <div className="z-20 relative" ref={triggerRef}>
           <Home_First_Section_mobile />
         </div>
@@ -50,7 +50,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="hidden md:block">
+      {/* <div className="hidden md:block">
         <div className="bulge-bottom relative z-30 ">
         <LargeLanding /></div>
         <div className=" relative bulge-bottom z-20 -mt-6">
@@ -71,7 +71,7 @@ function Home() {
         <div className="relative z-10 -mt-8">
         <Footerr />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
