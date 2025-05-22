@@ -3,7 +3,6 @@ import Illustration_Golfers_Mobile from "../assets/land.svg";
 import fav from "../assets/favicon.webp";
 import { Link } from "react-router-dom";
 import landingImg from "../assets/full.svg";
-import landingbg from "../assets/bgmen.svg";
 import Illustration_Golfers_Mobiles from "../assets/Illustration_Golfers_Mobile.svg";
 
 function LandingHomePage() {
