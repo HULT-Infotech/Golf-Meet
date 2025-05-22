@@ -183,7 +183,7 @@ function LandingHomePage() {
 
 
     {/*Bigger Screen Layout */}
-      <section className="text-center md:block hidden">
+      <section className="text-center -mb-20 md:block hidden">
           {/* First section */}
           <div className="relative flex flex-col min-h-[80vh] xsh-landscape:min-h-[70vh]  xh:min-h-[50vh] xhhh:min-h-[78vh] xsh:min-h-[50vh] xhh:min-h-[50vh] bg-gray-50 z-0 noise-bg overflow-hidden">
             {/* Top Navbar */}
@@ -246,7 +246,7 @@ function LandingHomePage() {
                 <img
                   src="favicons/favicon.svg"
                   alt="Golfmeet Logo"
-                  className="w-48 object-contain md:w-[300px]  xh:w-[380px] xhhh:w-32vw xsh:w-[380px] xhh:w-[380px]  lg:w-[310px] xl:w-[27vw] xl:-mt-5 drop-shadow-[0_10px_10px_rgba(0,0,0,0.40)]"
+                  className="w-48 object-contain md:w-[300px]  xh:w-[380px] xhhh:w-32vw xsh:w-[380px] xhh:w-[380px]  lg:w-[315px] xl:w-[27vw] xl:-mt-5 drop-shadow-[0_10px_10px_rgba(0,0,0,0.40)]"
                   draggable="false"
                 />
               </div>
@@ -373,8 +373,8 @@ function LandingHomePage() {
       </div>
       
       {/* Position the "VIEW INDIA RANKING" button to overlap between second and third sections */}
-      <div className="w-full flex justify-center relative -top-10 mt-6 z-50">
-        <div className="w-full max-w-xs mx-4">
+      <div className="w-full  flex justify-center relative -top-10 mt-6 z-50">
+        <div className="w-full max-w-xs mx-4 ">
           <button 
             className="w-full py-3 rounded-md text-white font-bold tracking-wider uppercase"
             style={{

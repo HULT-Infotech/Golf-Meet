@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Home_First_Section_mobile from "../components/Section_One_Home";
-import Home_Two_Section_mobile from "../components/Section_Two_Home_mobile";
+import Home_Two_Section_mobile from "../components/Section_Two_Home";
 import Home_Three_Section_mobile from "../components/Section_Three_Home_mobile";
 import Navbar from "../components/Navbar";
 import HowItWorksSection from "../components/HowItWorksSection";
