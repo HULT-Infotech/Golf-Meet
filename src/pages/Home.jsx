@@ -38,11 +38,10 @@ function Home() {
         <Home_Three_Section_mobile />
         </div>
 
-        <div className="-mt-2">
+        <div className=" bulge-topp">
         <GolfPrize />
         </div>
-        <Medalsection />
-        <div className="relative z-20">
+        <div className="relative z-20 bulge-botto">
         <Photosection />
         </div>
     <div className="relative z-10 -mt-8">

@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";  // Using React Router
 import landingRightImg from "../assets/landing_right_img.svg";
 import landingLeftImg from "../assets/landing_left_img.svg";
-import indiaFlag from "../assets/india_flag.png";
 import INDIA_golfmeet_logo from "/favicons/favicon.svg";
 import green_bg from "../assets/green.webp";
 
