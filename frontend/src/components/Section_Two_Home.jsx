@@ -40,6 +40,7 @@ const CompletePage = () => {
             textShadow: '0px 0px 1px rgba(0, 0, 0, 0.15)',
             filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',}}>
             PLAY WITH ASSIGNED <br />
+            GOLFERS TO EARN <br />
             YOUR GOLF MEET <br />
              RANK
 
