@@ -23,8 +23,8 @@ function App() {
       <GoogleAnalytics />
       <Suspense fallback={<LoadingScreen />}>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/h" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/h" element={<HomePage />} />
           {/* Use the lazily loaded HomePage */}
           <Route path="/home-to-play" element={<HowToPlay />} />
           <Route path="/faq" element={<FaQ />} />
