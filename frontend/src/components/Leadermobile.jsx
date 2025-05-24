@@ -397,7 +397,7 @@ function LeaderPage() {
 
         {/* Header Section */}
         <div className="bg-white px-4 py-4">
-          <h1 className="text-xl font-bold text-center text-teal-700 mb-1">
+          <h1 className="text-xl font-bold mt-12 text-center text-teal-700 mb-1">
             GOLF MEET INDIA
           </h1>
           <h2 className="text-lg font-semibold text-center text-teal-700 mb-3">

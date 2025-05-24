@@ -24,7 +24,7 @@ function App() {
       <Suspense fallback={<LoadingScreen />}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/h" element={<HomePage />} />
+          <Route path="/improve" element={<HomePage />} />
           {/* Use the lazily loaded HomePage */}
           <Route path="/home-to-play" element={<HowToPlay />} />
           <Route path="/faq" element={<FaQ />} />
@@ -32,7 +32,7 @@ function App() {
           <Route path="/code-of-conduct" element={<CodeOfConduct />} />
           <Route path="/terms-of-use" element={<Terms />} />
           <Route path="/privacy-policy" element={<Policy />} />
-          <Route path="/leaderboard" element={<Leader />} />
+          <Route path="/ranking" element={<Leader />} />
           <Route path="/refund-policy" element={<Refund />} />
           <Route path="/contact" element={<Redirect />} />
         </Routes>

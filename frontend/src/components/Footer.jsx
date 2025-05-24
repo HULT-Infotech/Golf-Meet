@@ -95,8 +95,11 @@ function Footer() {
           
           {/* Mobile links section - Exact match with design and WhatsApp icon */}
           <div className="md:hidden flex flex-col uppercase space-y-8 font-quattrocentoSans text-white text-left">
-            <a href="/leaderboard" className="hover:underline">
-              Leaderboard
+            <a href="/improve" className="hover:underline">
+              IMPROVE YOUR GAME
+            </a>
+            <a href="/ranking" className="hover:underline">
+              Ranking
             </a>
             <button 
               onClick={handleWhatsAppClick} 
@@ -212,8 +215,11 @@ function Footer() {
               <div className="hidden md:flex md:flex-1 md:justify-between text-white">
                 {/* Left column */}
                 <div className="flex flex-col space-y-6 uppercase font-quattrocentoSans">
-                  <a href="/leaderboard" className="hover:underline tracking-wide">
-                    Leaderboard
+                  <a href="/improve" className="hover:underline tracking-wide">
+                    IMPROVE YOUR GAME
+                  </a>
+                  <a href="/ranking" className="hover:underline tracking-wide">
+                    Ranking
                   </a>
                   <button
                     onClick={handleContactClick}

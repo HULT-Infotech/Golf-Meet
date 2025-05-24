@@ -109,7 +109,7 @@ const Navbar = ({ triggerRef }) => {
                         className="flex items-center justify-center xhhh:text-sm md:text-xsm md:pt-3 font-quattrocento bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214] text-white px-2 py-1 md:px-4 lg:px-5 md:pb-2 rounded transition-all duration-300 ease-in-out shadow-[0px_2px_4px_0px_rgba(0,0,0,0.55)] hover:from-[#E5181A] hover:via-[#E51719] hover:to-[#CC1517] hover:shadow-[0px_2px_10px_0px_rgba(0,0,0,0.45)]"
                       >
                         <span className="font-semibold text-[#FFF7D9] leading-none">
-                          SIGN UP NOW
+                          SIGN IN
                         </span>
                       </Link>
           
