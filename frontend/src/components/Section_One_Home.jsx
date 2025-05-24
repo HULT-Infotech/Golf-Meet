@@ -34,7 +34,7 @@ function LandingHomePage() {
           
           {/* Right Side - Leaderboard Link */}
           <Link
-            to="/leaderboard"
+            to="/ranking"
             className="uppercase text-[#014D4E] font-quattrocentoSans font-bold tracking-[0.1em]
                       [font-size:clamp(0.65rem,2.5vw,1rem)] pointer-events-auto"
           >

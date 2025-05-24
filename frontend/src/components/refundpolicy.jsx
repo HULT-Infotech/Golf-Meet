@@ -207,7 +207,7 @@ function RefundPolicy() {
 <Footer />
 </div>
 <div className="md:block hidden">
-<Footerr />
+<Footer />
 </div>
     </>
   );

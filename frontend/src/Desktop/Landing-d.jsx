@@ -26,10 +26,10 @@ function DesktopTabletLandingPage() {
             </Link>
             
             <a
-              href="/leaderboard"
+              href="/ranking"
               className="  leading-4 text-[#211E16] font-semibold text-center my-auto"
             >
-              LEADERBOARD
+              RANKING
             </a>
           </div>
           

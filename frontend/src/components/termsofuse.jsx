@@ -568,7 +568,7 @@ function Common() {
 <Footer />
 </div>
 <div className="md:block hidden">
-<Footerr />
+<Footer />
 </div>
     </>
   );

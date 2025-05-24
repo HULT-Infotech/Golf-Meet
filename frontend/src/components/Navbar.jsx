@@ -114,10 +114,10 @@ const Navbar = ({ triggerRef }) => {
                       </Link>
           
           <Link
-            to="/leaderboard"
+            to="/ranking"
             className="leading-4 text-[#211E16] font-semibold text-center my-auto"
           >
-            LEADERBOARD
+            RANKING
           </Link>
         </div>
 
@@ -205,11 +205,11 @@ const Navbar = ({ triggerRef }) => {
 
               <div className="flex flex-col p-4 mt-4">
                 <Link 
-                  to="/leaderboard" 
+                  to="/ranking" 
                   className="text-[#211E16] pl-6 font-bold py-6 text-left border-t border-gray-300 hover:bg-gray-200"
                   onClick={() => setSidebarOpen(false)}
                 >
-                  LEADERBOARD
+                  RANKING
                 </Link>
                 <button 
                   className="text-[#211E16] pl-6 font-bold pb-6 pt-3 text-left border-b border-gray-300 hover:bg-gray-200 flex items-center gap-2"
