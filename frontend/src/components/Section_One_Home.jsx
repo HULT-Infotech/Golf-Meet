@@ -1,15 +1,22 @@
 import React from "react";
 import Illustration_Golfers_Mobile from "../assets/land.svg";
 import fav from "../assets/favicon.webp";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; // Add useNavigate import
 import landingImg from "../assets/full.svg";
 import Illustration_Golfers_Mobiles from "../assets/Illustration_Golfers_Mobile.svg";
 
 function LandingHomePage() {
+  const navigate = useNavigate(); // Add navigate hook
+  
   // Function to handle the WhatsApp button click
   const handleWhatsAppClick = () => {
     const phoneNumber = "918884844444";
     window.open(`https://wa.me/${phoneNumber}`, "_blank");
+  };
+
+  // Function to handle ranking navigation
+  const handleRankingClick = () => {
+    navigate('/ranking');
   };
   
   return (
@@ -173,6 +180,7 @@ function LandingHomePage() {
               background: 'linear-gradient(180deg, #029A9C 0%, #014D4E 100%)',
               boxShadow: '0px 2px 4px rgba(0,0,0,0.25)'
             }}
+            onClick={handleRankingClick}
           >
             VIEW INDIA RANKING
           </button>
@@ -381,6 +389,7 @@ function LandingHomePage() {
               background: 'linear-gradient(180deg, #029A9C 0%, #014D4E 100%)',
               boxShadow: '0px 2px 4px rgba(0,0,0,0.25)'
             }}
+            onClick={handleRankingClick}
           >
             VIEW INDIA RANKING
           </button>
