@@ -1,4 +1,4 @@
-# Golf Meet 🏌️‍♂️
+# Golf Meet Official Website 🏌️‍♂️
 
 A full-stack web application for golf enthusiasts to connect, organize meetups, and share their golfing experiences.
 

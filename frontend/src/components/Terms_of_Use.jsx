@@ -43,7 +43,7 @@ function Terms() {
                 filter: 'drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.2))',
               }}
             >
-              TERMS <br /> OF USE
+              TERM <br /> OF USE
             </h1>
             {/* Mobile-only text added here */}
             <div className="xsm:text-xs text-sm md:hidden mb-4 xsm:w-[90%] w-[98%]">
