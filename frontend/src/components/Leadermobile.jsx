@@ -373,7 +373,7 @@ function LeaderPage() {
           </div>
           
           {/* Right section - Points and Details */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2"> 
             <div className="text-right">
               <div className="text-lg font-bold text-gray-900">{player.points?.toLocaleString()}</div>
             </div>
