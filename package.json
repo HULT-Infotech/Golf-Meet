@@ -9,7 +9,7 @@
     "build:frontend": "npm --prefix frontend run build",
     "copy:dist": "cp -r frontend/dist ./dist",
     "dev": "npm --prefix frontend run dev",
-    "start": "npm --prefix frontend run dev",
+    "start": "npm --prefix frontend start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
