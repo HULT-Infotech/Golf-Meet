@@ -6,7 +6,6 @@ import GoogleAnalytics from "./hooks/GoogleAnalytics";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const Home = lazy(() => import("./pages/Home"));
-const HowToPlay = lazy(() => import("./pages/HowToPlay"));
 const TournamentRule = lazy(() => import("./pages/TournamentRule"));
 const FaQ = lazy(() => import("./pages/FaQ"));
 const CodeOfConduct = lazy(() => import("./pages/CodeOfConduct"));
@@ -14,7 +13,7 @@ const Terms = lazy(() => import("./pages/TermsandCondition"));
 const Policy = lazy(() => import("./pages/PrivacyPolicy"));
 const Leader = lazy(() => import("./pages/Leaderboard"));
 const Refund = lazy(() => import("./pages/Refund"));
-const Redirect = lazy(() => import("./pages/Redirect"));
+const Redirect = lazy(() => import("./pages/Contact_Page_Desktop_layout"));
 
 function App() {
   return (
@@ -26,7 +25,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/improve" element={<HomePage />} />
           {/* Use the lazily loaded HomePage */}
-          <Route path="/home-to-play" element={<HowToPlay />} />
           <Route path="/faq" element={<FaQ />} />
           <Route path="/rules-regulations" element={<TournamentRule />} />
           <Route path="/code-of-conduct" element={<CodeOfConduct />} />
