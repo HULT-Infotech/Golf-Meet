@@ -1,6 +1,5 @@
 import React from "react";
-import Termone from "../components/termone";
-import Ctwo from "../components/termsofuse";
+import Term from "../components/Terms_of_Use";
 import Navbar from "../components/Navbar";
 
 function TermPage() {
@@ -11,14 +10,7 @@ function TermPage() {
         <Navbar />
         <div style={{ height: "80px" }} className="md:h-[90px] lg:h-[100px]" />
 
-        <Termone />
-        {/* Section 2
-      <CompeteWorldwideSection /> */}
-
-        {/* Section 3 */}
-        <div className="md:overflow-visible overflow-hidden">
-          <Ctwo />
-        </div>
+        <Term />
       </div>
     </>
   );
