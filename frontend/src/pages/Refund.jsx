@@ -1,6 +1,5 @@
 import React from "react";
-import Cone from "../components/refund-one.jsx";
-import  Ctwo from "../components/refundpolicy.jsx";
+import Cone from "../components/Refund_policy.jsx";
 
 function RefundPage() {
   return (
@@ -8,14 +7,6 @@ function RefundPage() {
     <div className="">
       {/* Section 1  */}
       <Cone />
-      {/* Section 2
-      <CompeteWorldwideSection /> */}
-
-      
-      {/* Section 3 */}
-      <div className="md:overflow-visible -mt-7 md:-mt-12 overflow-hidden">
-      <Ctwo />
-      </div>
       </div>
     </>
   );
