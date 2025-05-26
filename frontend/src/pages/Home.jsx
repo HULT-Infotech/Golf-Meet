@@ -3,22 +3,9 @@ import Home_First_Section_mobile from "../components/Section_One_Home";
 import Home_Two_Section_mobile from "../components/Section_Two_Home";
 import Home_Three_Section_mobile from "../components/Section_Three_Home_mobile";
 import Navbar from "../components/Navbar";
-import HowItWorksSection from "../components/HowItWorksSection";
-import FairPlaySection from "../components/FairPlaySection";
 import Footer from "../components/Footer";
-import VideoSection from "../components/VideoSection";
-import LargeLanding from "../Desktop/Landing-d";
-import Last from "../Desktop/final";
-import Footerr from "../Desktop/Footerr";
-import Prized from "../Desktop/Prize";
-import Completed from "../Desktop/Completed";
-import LargeHow from "../Desktop/Howitdesk";
-import LargeGolf from "../Desktop/GolfMeetCardd";
-import GolfPrize from "../components/GolfPrize";
-import Medalsection from "../components/Medal";
-import Photosection from "../components/photo";
-import Completesection from "../components/Complete";
-import Leaderboardsection from "../components/Leaderboard";
+import GolfPrize from "../components/CommonGolfPrize";
+import Photosection from "../components/Common_photo";
 
 function Home() {
   const triggerRef = useRef(null);
@@ -48,28 +35,7 @@ function Home() {
         </div>
       </div>
 
-      {/* <div className="hidden md:block">
-        <div className="bulge-bottom relative z-30 ">
-        <LargeLanding /></div>
-        <div className=" relative bulge-bottom z-20 -mt-6">
-        <LargeHow />
-        </div>
-        <div className=" relative z-10 -mt-4 ">
-        <LargeGolf />
-        
-        </div>
-        <div className="relative z-0">
-        <Completed /></div>
-        <div className="relative -z-10 -mt-6 ">
-        <Prized />
-        </div>
-        <div className=" bulge-bottomm relative z-20">
-        <Last />
-        </div>
-        <div className="relative z-10 -mt-8">
-        <Footerr />
-        </div>
-      </div> */}
+      
     </>
   );
 }

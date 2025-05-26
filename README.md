@@ -21,7 +21,8 @@ A full-stack web application for golf enthusiasts to connect, organize meetups, 
 - **React Router DOM** - Client-side routing
 
 ### Backend
-- **Express.js 5** - Fast web framework for Node.js
+- **Express.js** - Fast web framework for Node.js
+- **MongoDB** - NoSQL database
 - **JWT** - Secure authentication
 - **bcrypt** - Password hashing
 - **Helmet** - Security middleware
@@ -32,22 +33,23 @@ A full-stack web application for golf enthusiasts to connect, organize meetups, 
 
 Before running this project, make sure you have:
 
-- **Node.js** (v18 or higher)
-- **npm** (v9 or higher)
+- **Node.js** (v18.17.1 or higher)
+- **npm** (v9.6.7 or higher)
+- **MongoDB** (local installation or MongoDB Atlas account)
 - **Git**
 
 ## 🚀 Quick Start
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/golf-meet.git
-cd golf-meet
+git clone https://github.com/HULT-Infotech/Golf-Meet.git
+cd Golf-Meet
 ```
 
 ### 2. Install Dependencies
 ```bash
 # Install all dependencies (frontend + backend)
-npm run install:all
+npm run ci:all
 ```
 
 ### 3. Environment Setup
@@ -57,51 +59,76 @@ NODE_ENV=development
 PORT=5000
 FRONTEND_URL=http://localhost:5173
 
-# JWT Configuration
+# MongoDB Configuration
+MONGODB_URL=mongodb://localhost:27017/golf-meet
+# Or for MongoDB Atlas:
+# MONGODB_URL=mongodb+srv://username:password@cluster.mongodb.net/golf-meet
+
+# JWT Configuration (add these)
 JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
 JWT_EXPIRE=7d
 
-# Database (configure based on your choice)
-DATABASE_URL=your-database-connection-string
-
-# File Upload
+# File Upload (add these if needed)
 MAX_FILE_SIZE=10485760
 UPLOAD_PATH=uploads
 ```
 
-### 4. Run the Application
+### 4. Database Setup
+Make sure MongoDB is running:
+```bash
+# For local MongoDB
+mongod
+
+# Or use MongoDB Atlas (cloud) - no local setup required
+```
+
+### 5. Run the Application
 
 #### Development Mode (Both Servers)
 ```bash
-npm run dev
+npm start
 ```
 
-#### Development with Network Access
+#### Frontend Development Only
 ```bash
-npm run dev:host
-```
-
-#### Run Servers Separately
-```bash
-# Frontend only (Terminal 1)
 npm run dev:frontend
+```
 
-# Backend only (Terminal 2)
+#### Backend Development Only
+```bash
 npm run dev:backend
 ```
 
-### 5. Access the Application
+#### Individual Server Commands
+```bash
+# Frontend only
+npm run start:frontend
+
+# Backend only
+npm run start:backend
+```
+
+### 6. Production Build
+```bash
+# Build frontend for production
+npm run build
+
+# Start backend in production mode
+npm run start:prod
+```
+
+### 7. Access the Application
 - **Frontend**: http://localhost:5173
 - **Backend API**: http://localhost:5000
-- **With --host**: http://your-local-ip:5173
 
 ## 📁 Project Structure
 
 ```
-golf-meet/
+Golf-Meet/
 ├── package.json                 # Root package with concurrent scripts
 ├── README.md
 ├── LICENSE
+├── dist/                        # Production build output
 ├── frontend/                    # React application
 │   ├── public/
 │   ├── src/
@@ -117,11 +144,11 @@ golf-meet/
 │   ├── package.json
 │   ├── vite.config.js
 │   ├── tailwind.config.js
-│   └── ...
+│   └── dist/                   # Frontend build output
 └── backend/                     # Express.js API server
     ├── controllers/             # Route controllers
     ├── routes/                  # API routes
-    ├── models/                  # Data models
+    ├── models/                  # MongoDB models
     ├── middleware/              # Custom middleware
     ├── services/                # Business logic
     ├── config/                  # Configuration files
@@ -135,46 +162,60 @@ golf-meet/
 ## 🔧 Available Scripts
 
 ### Root Level
-- `npm run dev` - Run both frontend and backend
-- `npm run dev:host` - Run with network access
-- `npm run install:all` - Install all dependencies
-- `npm run build` - Build for production
-- `npm run clean` - Clean all node_modules
+- `npm start` - Run both frontend and backend concurrently
+- `npm run ci:all` - Install all dependencies (CI/CD friendly)
+- `npm run build` - Install frontend deps, build frontend, and copy to dist
+- `npm run clean` - Remove dist directory
+- `npm run dev:frontend` - Start frontend development server
+- `npm run dev:backend` - Start backend development server
+- `npm run start:prod` - Start backend in production mode
 
-### Frontend
-- `npm run dev` - Start development server
-- `npm run dev:host` - Start with network access
-- `npm run build` - Build for production
-- `npm run lint` - Run ESLint
+### Frontend Scripts
+- `npm run install:frontend` - Install frontend dependencies only
+- `npm run build:frontend` - Build frontend for production
+- `npm run start:frontend` - Start frontend development server
 
-### Backend
-- `npm run dev` - Start with nodemon
-- `npm start` - Start production server
-- `npm test` - Run tests
+### Backend Scripts
+- `npm run install:backend` - Install backend dependencies only
+- `npm run start:backend` - Start backend development server
 
 ## 🧪 Testing
 
 ```bash
-# Run backend tests
-cd backend && npm test
-
-# Run frontend linting
-npm run lint
+# Run tests (when implemented)
+npm test
 ```
+
+## 🗄️ Database
+
+This application uses MongoDB as the database. You can use either:
+
+1. **Local MongoDB**: Install MongoDB locally and use default connection
+2. **MongoDB Atlas**: Cloud-hosted MongoDB service (recommended for production)
+
+### MongoDB Atlas Setup
+1. Create account at [MongoDB Atlas](https://www.mongodb.com/atlas)
+2. Create a new cluster
+3. Get connection string and update `MONGODB_URL` in `.env`
+4. Whitelist your IP address
 
 ## 🚀 Deployment
 
 ### Frontend (Netlify/Vercel)
 ```bash
-npm run build:frontend
-# Deploy the frontend/dist folder
+npm run build
+# Deploy the dist/ folder
 ```
 
 ### Backend (Railway/Heroku/DigitalOcean)
 ```bash
 # Set environment variables in your hosting platform
 # Deploy the backend folder
+# Make sure to set NODE_ENV=production
 ```
+
+### Full Stack Deployment
+The build process creates a `dist/` folder with the frontend build that can be served statically alongside your backend API.
 
 ## 🤝 Contributing
 
@@ -197,10 +238,11 @@ npm run build:frontend
 - Consistent error handling
 - Proper HTTP status codes
 - Input validation on all endpoints
+- MongoDB best practices for data modeling
 
 ## 🐛 Issues
 
-Found a bug? Have a feature request? Please create an issue in the [GitHub repository](https://github.com/HULT-Infotech/golf-meet/issues).
+Found a bug? Have a feature request? Please create an issue in the [GitHub repository](https://github.com/HULT-Infotech/Golf-Meet/issues).
 
 ## 📄 License
 
@@ -208,11 +250,12 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **HULT** - *Initial work* - [YourGitHub](https://github.com/HULT-Infotech)
+- **HULT Infotech** - *Initial work* - [HULT-Infotech](https://github.com/HULT-Infotech)
 
 ## 🙏 Acknowledgments
 
 - Thanks to the React and Express.js communities
+- MongoDB for robust database solutions
 - Golf course data providers
 - All contributors and testers
 

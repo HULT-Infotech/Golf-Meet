@@ -205,8 +205,22 @@ const Navbar = ({ triggerRef }) => {
 
               <div className="flex flex-col p-4 mt-4">
                 <Link 
-                  to="/ranking" 
+                  to="/" 
                   className="text-[#211E16] pl-6 font-bold py-6 text-left border-t border-gray-300 hover:bg-gray-200"
+                  onClick={() => setSidebarOpen(false)}
+                >
+                  HOME
+                </Link>
+                <Link 
+                  to="/improve" 
+                  className="text-[#211E16] pl-6 font-bold py-6 text-left hover:bg-gray-200"
+                  onClick={() => setSidebarOpen(false)}
+                >
+                  IMPROVE YOUR GAME
+                </Link>
+                <Link 
+                  to="/ranking" 
+                  className="text-[#211E16] pl-6 font-bold py-6 text-left hover:bg-gray-200"
                   onClick={() => setSidebarOpen(false)}
                 >
                   RANKING
