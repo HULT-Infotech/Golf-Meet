@@ -1,21 +1,14 @@
 import React, { useRef } from "react";
-import LandingSection from "../components/LandingSection";
+import LandingSection from "../components/Improve_Section_landing";
 import Navbar from "../components/Navbar";
-import HowItWorksSection from "../components/HowItWorksSection";
-import FairPlaySection from "../components/FairPlaySection";
+import HowItWorksSection from "../components/Improve_HowItWorksSection";
+import FairPlaySection from "../components/Improve_section_handicap";
 import Footer from "../components/Footer";
 import VideoSection from "../components/VideoSection";
-import LargeLanding from "../Desktop/Landing-d";
-import Last from "../Desktop/final";
-import Footerr from "../Desktop/Footerr";
-import Prized from "../Desktop/Prize";
-import Completed from "../Desktop/Completed";
-import LargeHow from "../Desktop/Howitdesk";
-import LargeGolf from "../Desktop/GolfMeetCardd";
-import GolfPrize from "../components/GolfPrize";
+import GolfPrize from "../components/CommonGolfPrize";
 import Medalsection from "../components/Medal";
-import Photosection from "../components/photo";
-import Completesection from "../components/Complete";
+import Photosection from "../components/Common_photo";
+import Completesection from "../components/Improve_Section_completed";
 import Leaderboardsection from "../components/Leaderboard";
 
 function HomePage() {
@@ -23,60 +16,39 @@ function HomePage() {
 
   return (
     <>
-      <div className="md:hidden">
-        <div className="z-20 relative bulge-botto" ref={triggerRef}>
+      <div className="">
+        <div className="z-20 relative bulge-botto md:bulge-bottom md:z-30" ref={triggerRef}>
           <LandingSection />
         </div>
         <Navbar triggerRef={triggerRef} />
-        <div className="-mt-4 relative z-10 ">
+        <div className="-mt-4 relative z-10 md:bulge-bottom md:z-20 md:-mt-6 ">
         <HowItWorksSection />
         </div>
         
         <FairPlaySection />
-        <div className="-mt-6 relative z-0">
+        <div className="-mt-6 relative z-0 md:hidden">
           <VideoSection />
         </div>
-        <div className="relative -z-10 -mt-8">
+        <div className="relative -z-10 -mt-8 md:z-0">
         <Completesection/>
         </div>
-        <div className="w-full bg-gray-100 noise-bg-n">
+        <div className="w-full bg-gray-100 noise-bg-n md:hidden">
   <div className="mx-auto w-fit ">
     <Leaderboardsection />
   </div>
 </div>
 
-        <div className="-mt-2">
+        <div className="-mt-2 md:bulge-topp">
         <GolfPrize />
         </div>
+        <div className="md:hidden">
         <Medalsection />
-        <div className="relative z-20">
+        </div>
+        <div className="relative z-20 md:bulge-bottomm">
         <Photosection />
         </div>
     <div className="relative z-10 -mt-8">
         <Footer />
-        </div>
-      </div>
-
-      <div className="hidden md:block">
-        <div className="bulge-bottom relative z-30 ">
-        <LargeLanding /></div>
-        <div className=" relative bulge-bottom z-20 -mt-6">
-        <LargeHow />
-        </div>
-        <div className=" relative z-10 -mt-4 ">
-        <LargeGolf />
-        
-        </div>
-        <div className="relative z-0">
-        <Completed /></div>
-        <div className="relative -z-10 -mt-6 ">
-        <Prized />
-        </div>
-        <div className=" bulge-bottomm relative z-20">
-        <Last />
-        </div>
-        <div className="relative z-10 -mt-8">
-        <Footerr />
         </div>
       </div>
     </>
