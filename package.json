@@ -6,10 +6,18 @@
   "scripts": {
     "build": "npm run install:frontend && npm run build:frontend && npm run copy:dist",
     "install:frontend": "npm install --prefix frontend",
+    "install:backend": "npm install --prefix backend",
+    "install:all": "npm run install:frontend && npm run install:backend",
     "build:frontend": "npm --prefix frontend run build",
-    "copy:dist": "cp -r frontend/dist ./dist",
+    "copy:dist": "mkdir -p dist && cp -r frontend/dist/* ./dist/",
+    "clean": "rm -rf dist",
     "dev": "npm --prefix frontend run dev",
-    "start": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "start": "npm run dev:frontend & npm run dev:backend",
+    "start:frontend": "npm --prefix frontend run dev",
+    "start:backend": "npm --prefix backend run dev",
+    "start:prod": "npm --prefix backend start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
