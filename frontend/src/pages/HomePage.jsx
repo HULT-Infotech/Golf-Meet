@@ -5,7 +5,6 @@ import HowItWorksSection from "../components/HowItWorksSection";
 import FairPlaySection from "../components/FairPlaySection";
 import Footer from "../components/Footer";
 import VideoSection from "../components/VideoSection";
-import LargeScreen from "../Desktop/LargeScreen";
 import LargeLanding from "../Desktop/Landing-d";
 import Last from "../Desktop/final";
 import Footerr from "../Desktop/Footerr";
