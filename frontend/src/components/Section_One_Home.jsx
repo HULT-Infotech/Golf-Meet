@@ -26,7 +26,7 @@ function LandingHomePage() {
       {/* First Section with noise background */}
       <div className="relative w-full bg-gray-50 noise-bg-n flex flex-col">
         {/* Top Navbar */}
-        <div className="z-50 w-full flex justify-between items-center px-4 py-4">
+        <div className="z-50 w-full flex justify-between items-center px-4 py-6">
           {/* Left Side - Register Button */}
           <button
             className="bg-gradient-to-b from-[#E5181A] via-[#CB1517] to-[#B21214]
