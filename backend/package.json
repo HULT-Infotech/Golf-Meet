@@ -1,31 +1,29 @@
 {
   "name": "golf-meet-backend",
-  "version": "0.0.1",
-  "description": "Golf Meet backend API server",
-  "main": "app.js",
+  "version": "1.0.0",
   "scripts": {
-    "start": "node server.js",
     "dev": "nodemon server.js",
+    "start": "node server.js",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "lint": "echo \"Add ESLint config to use this\"",
+    "build": "echo \"No build step needed for backend\""
   },
   "dependencies": {
-    "express": "^5.1.0",
+    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "helmet": "^7.1.0",
-    "morgan": "^1.10.0",
-    "multer": "^1.4.5",
-    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "golf-meet-app": "file:..",
+    "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.2",
-    "express-validator": "^7.0.1"
+    "mongoose": "^8.15.0",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0",
     "jest": "^29.7.0",
-    "supertest": "^6.3.4"
-  },
-  "keywords": ["express", "api", "backend", "golf"],
-  "author": "Your Name",
-  "license": "ISC"
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.1"
+  }
 }
