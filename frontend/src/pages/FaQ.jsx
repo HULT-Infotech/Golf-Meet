@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import faq_mobile_hero from "../assets/FAQPage/faq-m.webp";
-import faq_gm from "../assets/f-gm.svg";
 import Footer from "../components/Footer";
-import Footerr from "../Desktop/Footerr";
-import gradientbox from "../assets/greenbox.png";
-import land_m1 from "../assets/land-m.svg";
-import land_m2 from "../assets/land-fm1.svg";
 
 const handleWhatsAppClick = () => {
   const phoneNumber = "918884844444";
