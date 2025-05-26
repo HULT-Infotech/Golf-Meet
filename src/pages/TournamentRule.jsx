@@ -3,13 +3,9 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import tr_greenleft from "../assets/tournament-rule/tr-green-left.svg";
 import tr_greenleft_m from "../assets/tournament-rule/green-mobile.svg";
-import tr_last from "../assets/tournament-rule/tr-last.svg";
 import tr_mobile from "../assets/tournament-rule/tournaments-mobile.webp";
 import Footer from "../components/Footer";
-import Footerr from "../Desktop/Footerr";
 import gradientbox from "../assets/greenbox.png";
-import land_m1 from "../assets/land-m.svg";
-import land_m2 from "../assets/land-fm1.svg";
 import tr_bg_mobile from "../assets/check.webp";
 
 function TournamentRule() {
