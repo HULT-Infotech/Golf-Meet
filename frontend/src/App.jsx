@@ -11,7 +11,7 @@ const FaQ = lazy(() => import("./pages/FaQ"));
 const CodeOfConduct = lazy(() => import("./pages/CodeOfConduct"));
 const Terms = lazy(() => import("./pages/TermsandCondition"));
 const Policy = lazy(() => import("./pages/PrivacyPolicy"));
-const Leader = lazy(() => import("./pages/Leaderboard"));
+const Leader = lazy(() => import("./pages/LeaderPage"));
 const Refund = lazy(() => import("./pages/Refund"));
 const Redirect = lazy(() => import("./pages/Contact_Page_Desktop_layout"));
 

@@ -1,17 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import l1 from "../assets/LeaderPage/leader1.svg";
-import l2 from "../assets/LeaderPage/leader2.svg";
-import l3 from "../assets/LeaderPage/leader3.svg";
-import l4 from "../assets/LeaderPage/leader4.svg";
-import l5 from "../assets/LeaderPage/leader5.svg";
-import l6 from "../assets/LeaderPage/leader6.svg";
-import l7 from "../assets/LeaderPage/leader7.svg";
-import l8 from "../assets/LeaderPage/leader8.svg";
-import l9 from "../assets/LeaderPage/leader9.svg";
-import l10 from "../assets/LeaderPage/leader10.svg";
-import l11 from "../assets/LeaderPage/noleader.svg";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 // Simple Loading Component
 const LoadingScreen = () => {
