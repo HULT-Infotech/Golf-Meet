@@ -50,7 +50,7 @@ function LandingHomePage() {
         </div>
         
         {/* Main Content Area - Logo with margin-top */}
-        <div className="flex flex-col items-center pt-4 px-4 mt-4 mb-12 xsm:mb-4">
+        <div className="flex flex-col relative z-40 items-center pt-4 px-4 mt-4 mb-12 xsm:mb-4">
           <img
             src="favicons/favicon.svg"
             alt="Golfmeet Logo"
