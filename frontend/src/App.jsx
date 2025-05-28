@@ -14,6 +14,7 @@ const Policy = lazy(() => import("./pages/PrivacyPolicy"));
 const Leader = lazy(() => import("./pages/LeaderPage"));
 const Refund = lazy(() => import("./pages/Refund"));
 const Redirect = lazy(() => import("./pages/Contact_Page_Desktop_layout"));
+const Reg = lazy(() => import("./pages/Registration"));
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/improve" element={<HomePage />} />
+          <Route path="/reg" element={<Reg />} />
           {/* Use the lazily loaded HomePage */}
           <Route path="/faq" element={<FaQ />} />
           <Route path="/rules-regulations" element={<TournamentRule />} />
