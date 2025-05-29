@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import IndianFlag from "../assets/India.svg";
+import IndianFlag from "../assets/india.svg";
 import SignInIllustration from '../assets/signin-illustration.svg';
 
 const OTPVerification = () => {
