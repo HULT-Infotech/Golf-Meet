@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import IndianFlag from "../assets/India.svg";
 import SignInIllustration from '../assets/signin-illustration.svg';
+
 const OTPVerification = () => {
   const [step, setStep] = useState(1); // 1 for phone input, 2 for OTP input
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -116,10 +117,10 @@ const OTPVerification = () => {
   };
 
   return (
-    <div className="min-h-screen bg-stone-100">
+    <div className="min-h-screen gradient-noise-bg">
       {/* Mobile View */}
-      <div className="block lg:hidden">
-        <div className="bg-white min-h-screen">
+      <div className="block lg:hidden ">
+        <div className="min-h-screen">
           {step === 1 ? (
             // Mobile Phone Number Step
             <div className="px-6 py-8">
@@ -354,7 +355,7 @@ const OTPVerification = () => {
       </div>
 
       {/* Desktop View - Single Viewport Layout */}
-      <div className="hidden lg:block min-h-screen bg-stone-100 relative">
+      <div className="hidden lg:block min-h-screen relative">
         {/* Back arrow - positioned absolute */}
         {step === 2 && (
           <button 
@@ -390,7 +391,7 @@ const OTPVerification = () => {
                 <img 
                   src={SignInIllustration}
                   alt="Sign in illustration" 
-                  className="w-[80%] h-auto max-w-xs mx-auto filter grayscale"
+                  className="w-[75%] h-auto max-w-xs bottom-0  absolute  mx-auto filter grayscale "
                   style={{ 
                     filter: 'grayscale(100%) contrast(1.2)',
                     mixBlendMode: 'multiply'
@@ -567,7 +568,7 @@ const OTPVerification = () => {
         </div>
         
         {/* Green section at bottom - full width */}
-        <div className="absolute bottom-0 left-0 right-0 h-8 noise-bg-new bulge-topest  z-0"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-12 noise-bg-new bulge-topest  z-0"></div>
       </div>
     </div>
   );
