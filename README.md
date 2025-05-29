@@ -1,268 +1,261 @@
-# Golf Meet Official Website 🏌️‍♂️
+# Golf Meet Frontend 🏌️‍♂️⚛️
 
-A full-stack web application for golf enthusiasts to connect, organize meetups, and share their golfing experiences.
-
-## 🚀 Features
-
-- **User Authentication** - Secure registration and login
-- **Golf Course Directory** - Browse and discover golf courses
-- **Meetup Organization** - Create and join golf meetups
-- **Player Profiles** - Showcase your golfing skills and history
-- **Real-time Chat** - Connect with fellow golfers
-- **Responsive Design** - Works seamlessly on all devices
+The frontend application for Golf Meet - built with React 19, Vite, and modern web technologies for a seamless golfing community experience.
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- **React 19** - Modern UI library
-- **Vite** - Fast build tool and dev server
-- **Tailwind CSS** - Utility-first CSS framework
-- **Framer Motion** - Smooth animations
-- **React Router DOM** - Client-side routing
+- **React 19** - Latest React with concurrent features and improved performance
+- **Vite 6** - Next-generation frontend tooling with lightning-fast HMR
+- **React Router DOM 7** - Declarative routing for React applications
+- **Framer Motion 12** - Production-ready motion library for React
+- **Tailwind CSS 3** - Utility-first CSS framework for rapid UI development
+- **TypeScript Support** - Type definitions included for better development experience
+- **ESLint** - Code linting with React-specific rules
 
-### Backend
-- **Express.js** - Fast web framework for Node.js
-- **MongoDB** - NoSQL database
-- **JWT** - Secure authentication
-- **bcrypt** - Password hashing
-- **Helmet** - Security middleware
-- **CORS** - Cross-origin resource sharing
-- **Multer** - File upload handling
+## 🚀 Features
+
+- ⚡ Lightning-fast development with Vite HMR
+- 🎨 Modern UI with Tailwind CSS
+- 🎭 Smooth animations with Framer Motion
+- 🧭 Client-side routing with React Router
+- 📱 Responsive design for all devices
+- 🔍 ESLint integration for code quality
+- 🌐 Network access support for testing on mobile devices
 
 ## 📋 Prerequisites
 
-Before running this project, make sure you have:
-
 - **Node.js** (v18.17.1 or higher)
 - **npm** (v9.6.7 or higher)
-- **MongoDB** (local installation or MongoDB Atlas account)
-- **Git**
 
 ## 🚀 Quick Start
 
-### 1. Clone the Repository
+### 1. Install Dependencies
 ```bash
-git clone https://github.com/HULT-Infotech/Golf-Meet.git
-cd Golf-Meet
+npm install
 ```
 
-### 2. Install Dependencies
+### 2. Start Development Server
 ```bash
-# Install all dependencies (frontend + backend)
-npm run ci:all
+npm run dev
 ```
 
-### 3. Environment Setup
-Create a `.env` file in the `backend` directory:
-```env
-NODE_ENV=development
-PORT=5000
-FRONTEND_URL=http://localhost:5173
+### 3. Access the Application
+- **Local**: http://localhost:5173
+- **Network**: Use `npm run dev:host` for mobile testing
 
-# MongoDB Configuration
-MONGODB_URL=mongodb://localhost:27017/golf-meet
-# Or for MongoDB Atlas:
-# MONGODB_URL=mongodb+srv://username:password@cluster.mongodb.net/golf-meet
+## 🔧 Available Scripts
 
-# JWT Configuration (add these)
-JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
-JWT_EXPIRE=7d
-
-# File Upload (add these if needed)
-MAX_FILE_SIZE=10485760
-UPLOAD_PATH=uploads
-```
-
-### 4. Database Setup
-Make sure MongoDB is running:
-```bash
-# For local MongoDB
-mongod
-
-# Or use MongoDB Atlas (cloud) - no local setup required
-```
-
-### 5. Run the Application
-
-#### Development Mode (Both Servers)
-```bash
-npm start
-```
-
-#### Frontend Development Only
-```bash
-npm run dev:frontend
-```
-
-#### Backend Development Only
-```bash
-npm run dev:backend
-```
-
-#### Individual Server Commands
-```bash
-# Frontend only
-npm run start:frontend
-
-# Backend only
-npm run start:backend
-```
-
-### 6. Production Build
-```bash
-# Build frontend for production
-npm run build
-
-# Start backend in production mode
-npm run start:prod
-```
-
-### 7. Access the Application
-- **Frontend**: http://localhost:5173
-- **Backend API**: http://localhost:5000
+- `npm run dev` - Start development server on localhost
+- `npm run dev:host` - Start development server with network access (mobile testing)
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run preview:host` - Preview production build with network access
+- `npm run lint` - Run ESLint to check code quality
 
 ## 📁 Project Structure
 
 ```
-Golf-Meet/
-├── package.json                 # Root package with concurrent scripts
-├── README.md
-├── LICENSE
-├── dist/                        # Production build output
-├── frontend/                    # React application
-│   ├── public/
-│   ├── src/
-│   │   ├── components/          # Reusable UI components
-│   │   ├── pages/              # Page components
-│   │   ├── hooks/              # Custom React hooks
-│   │   ├── utils/              # Utility functions
-│   │   ├── services/           # API service layer
-│   │   ├── context/            # React Context providers
-│   │   ├── assets/             # Images, icons, etc.
-│   │   ├── App.jsx             # Main App component
-│   │   └── main.jsx            # Entry point
-│   ├── package.json
-│   ├── vite.config.js
-│   ├── tailwind.config.js
-│   └── dist/                   # Frontend build output
-└── backend/                     # Express.js API server
-    ├── controllers/             # Route controllers
-    ├── routes/                  # API routes
-    ├── models/                  # MongoDB models
-    ├── middleware/              # Custom middleware
-    ├── services/                # Business logic
-    ├── config/                  # Configuration files
-    ├── utils/                   # Utility functions
-    ├── uploads/                 # File upload directory
-    ├── app.js                   # Main server file
-    ├── package.json
-    └── .env
+frontend/
+├── public/                      # Static assets
+│   ├── vite.svg
+│   └── ...
+├── src/                         # Source code
+│   ├── components/              # Reusable UI components
+│   │   ├── common/              # Common components (Header, Footer, etc.)
+│   │   ├── golf/                # Golf-specific components
+│   │   └── ui/                  # Base UI components
+│   ├── pages/                   # Page components
+│   │   ├── Home/
+│   │   ├── Courses/
+│   │   ├── Meetups/
+│   │   ├── Profile/
+│   │   └── Auth/
+│   ├── hooks/                   # Custom React hooks
+│   ├── services/                # API services and HTTP clients
+│   ├── utils/                   # Utility functions
+│   ├── context/                 # React Context providers
+│   ├── assets/                  # Images, icons, fonts
+│   ├── styles/                  # Global styles and Tailwind config
+│   ├── App.jsx                  # Main App component
+│   └── main.jsx                 # Application entry point
+├── package.json
+├── vite.config.js               # Vite configuration
+├── tailwind.config.js           # Tailwind CSS configuration
+├── postcss.config.js            # PostCSS configuration
+├── eslint.config.js             # ESLint configuration
+└── README.md
 ```
 
-## 🔧 Available Scripts
+## ⚙️ Configuration
 
-### Root Level
-- `npm start` - Run both frontend and backend concurrently
-- `npm run ci:all` - Install all dependencies (CI/CD friendly)
-- `npm run build` - Install frontend deps, build frontend, and copy to dist
-- `npm run clean` - Remove dist directory
-- `npm run dev:frontend` - Start frontend development server
-- `npm run dev:backend` - Start backend development server
-- `npm run start:prod` - Start backend in production mode
+### Vite Configuration
+The project uses Vite with the SWC plugin for optimal performance:
+- Fast Refresh with SWC compiler
+- Hot Module Replacement (HMR)
+- Optimized build process
+- Development server with instant updates
 
-### Frontend Scripts
-- `npm run install:frontend` - Install frontend dependencies only
-- `npm run build:frontend` - Build frontend for production
-- `npm run start:frontend` - Start frontend development server
+### Tailwind CSS
+Configured for:
+- Utility-first styling approach
+- Responsive design
+- Custom color schemes for golf theme
+- Component-friendly utilities
 
-### Backend Scripts
-- `npm run install:backend` - Install backend dependencies only
-- `npm run start:backend` - Start backend development server
+### ESLint Setup
+Includes rules for:
+- React best practices
+- React Hooks guidelines
+- Code formatting and consistency
+- React Refresh compatibility
 
-## 🧪 Testing
+## 🎨 Styling Guide
 
-```bash
-# Run tests (when implemented)
-npm test
+This project uses Tailwind CSS for styling. Key conventions:
+
+### Color Scheme
+```css
+/* Golf-themed colors (example) */
+.golf-green: theme('colors.green.600')
+.golf-sand: theme('colors.yellow.100')
+.golf-sky: theme('colors.blue.400')
 ```
 
-## 🗄️ Database
+### Component Structure
+```jsx
+// Use Tailwind classes for consistent styling
+<div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+  <h2 className="text-2xl font-bold text-gray-800 mb-4">Course Name</h2>
+  <p className="text-gray-600">Course description...</p>
+</div>
+```
 
-This application uses MongoDB as the database. You can use either:
+## 🎭 Animations
 
-1. **Local MongoDB**: Install MongoDB locally and use default connection
-2. **MongoDB Atlas**: Cloud-hosted MongoDB service (recommended for production)
+Framer Motion is integrated for smooth animations:
 
-### MongoDB Atlas Setup
-1. Create account at [MongoDB Atlas](https://www.mongodb.com/atlas)
-2. Create a new cluster
-3. Get connection string and update `MONGODB_URL` in `.env`
-4. Whitelist your IP address
+```jsx
+import { motion } from 'framer-motion'
 
-## 🚀 Deployment
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+>
+  Your content here
+</motion.div>
+```
 
-### Frontend (Netlify/Vercel)
+## 🌐 API Integration
+
+The frontend communicates with the backend API:
+
+```javascript
+// Example API service
+const API_BASE_URL = 'http://localhost:5000/api'
+
+export const golfService = {
+  getCourses: () => fetch(`${API_BASE_URL}/courses`),
+  getMeetups: () => fetch(`${API_BASE_URL}/meetups`),
+  // ... other API calls
+}
+```
+
+## 📱 Responsive Design
+
+The application is built mobile-first with Tailwind's responsive utilities:
+
+```jsx
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {/* Responsive grid layout */}
+</div>
+```
+
+## 🧪 Development Tips
+
+### Hot Reload
+Vite provides instant hot reload. Changes to components will update immediately without losing state.
+
+### Network Testing
+Use `npm run dev:host` to test on mobile devices on the same network.
+
+### Code Quality
+Run `npm run lint` before committing to ensure code quality.
+
+### Performance
+- Use React.memo() for expensive components
+- Implement code splitting with React.lazy()
+- Optimize images and assets
+
+## 🚀 Building for Production
+
 ```bash
+# Build the application
 npm run build
-# Deploy the dist/ folder
+
+# Preview the production build
+npm run preview
 ```
 
-### Backend (Railway/Heroku/DigitalOcean)
+The build output will be in the `dist/` directory, ready for deployment.
+
+## 🌍 Deployment
+
+### Static Hosting (Recommended)
+Deploy the `dist/` folder to:
+- **Netlify**: Drag and drop the dist folder
+- **Vercel**: Connect your GitHub repository
+- **GitHub Pages**: Upload dist contents
+
+### Configuration for Deployment
+Update the base URL in `vite.config.js` if deploying to a subdirectory:
+
+```javascript
+export default defineConfig({
+  base: '/your-subdirectory/',
+  // ... other config
+})
+```
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+**Vite server not starting:**
 ```bash
-# Set environment variables in your hosting platform
-# Deploy the backend folder
-# Make sure to set NODE_ENV=production
+# Clear cache and reinstall
+rm -rf node_modules package-lock.json
+npm install
 ```
 
-### Full Stack Deployment
-The build process creates a `dist/` folder with the frontend build that can be served statically alongside your backend API.
+**Tailwind styles not loading:**
+```bash
+# Ensure PostCSS and Tailwind are properly configured
+npm run build
+```
+
+**ESLint errors:**
+```bash
+# Fix common issues automatically
+npm run lint -- --fix
+```
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. Follow the established folder structure
+2. Use Tailwind CSS for styling
+3. Add Framer Motion animations where appropriate
+4. Run `npm run lint` before committing
+5. Test responsive design on multiple screen sizes
 
-## 📝 Development Guidelines
+## 📝 Code Style
 
-### Code Style
-- Use ESLint configuration provided
+- Use functional components with hooks
+- Implement proper TypeScript types (when applicable)
 - Follow React best practices
-- Use TypeScript for type safety (future enhancement)
-- Write meaningful commit messages
-
-### API Conventions
-- RESTful API design
-- Consistent error handling
-- Proper HTTP status codes
-- Input validation on all endpoints
-- MongoDB best practices for data modeling
-
-## 🐛 Issues
-
-Found a bug? Have a feature request? Please create an issue in the [GitHub repository](https://github.com/HULT-Infotech/Golf-Meet/issues).
-
-## 📄 License
-
-This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Authors
-
-- **HULT Infotech** - *Initial work* - [HULT-Infotech](https://github.com/HULT-Infotech)
-
-## 🙏 Acknowledgments
-
-- Thanks to the React and Express.js communities
-- MongoDB for robust database solutions
-- Golf course data providers
-- All contributors and testers
-
-## 📞 Support
-
-For support, email hultinfo2024@gmail.com or create an issue in the repository.
+- Use descriptive component and variable names
+- Add comments for complex logic
 
 ---
 
-**Happy Golfing!** ⛳
+**Built with ⚡ Vite and ⚛️ React 19**
