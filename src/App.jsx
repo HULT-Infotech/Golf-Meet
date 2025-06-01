@@ -14,7 +14,7 @@ const Policy = lazy(() => import("./pages/PrivacyPolicy"));
 const Leader = lazy(() => import("./pages/LeaderPage"));
 const Refund = lazy(() => import("./pages/Refund"));
 const Redirect = lazy(() => import("./pages/Contact_Page_Desktop_layout"));
-const Reg = lazy(() => import("./pages/Registration"));
+const Reg = lazy(() => import("./pages/Registration/Registration_Layout"));
 
 function App() {
   return (
