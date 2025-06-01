@@ -140,7 +140,7 @@ const PhoneVerification = () => {
           <div className="w-1/2 flex flex-col px-20 py-28 h-screen">
             {/* Text content */}
             <div className="mb-8 flex-shrink-0">
-              <h1 className="text-5xl font-bold text-[#014D4E] mb-3 leading-tight font-quattrocento">
+              <h1 className="text-[3.2rem] font-bold text-[#014D4E] mb-3 leading-tight font-quattrocento">
                 LET'S GET YOU<br />
                 SIGNED IN
               </h1>
@@ -169,8 +169,8 @@ const PhoneVerification = () => {
           </div>
 
           {/* Right side - Form */}
-          <div className="w-1/2 flex flex-col justify-start px-16 py-16 h-screen overflow-y-auto">
-            <div className="max-w-md mx-auto w-full">
+          <div className="w-1/2 flex flex-col justify-start px-16 py-28 h-screen overflow-y-auto">
+            <div className="max-w-auto mx-auto w-full">
               {/* Progress indicator line */}
               <div className="mb-8">
                 <div className="flex items-center space-x-4">
@@ -179,18 +179,18 @@ const PhoneVerification = () => {
               </div>
 
               <div className="mb-6">
-                <h2 className="text-lg font-bold text-teal-700 mb-1 uppercase tracking-wider">
+                <h2 className="text-2xl font-bold text-[#014D4E] font-quattrocento my-10 uppercase tracking-wider">
                   YOUR CONTACT INFORMATION
                 </h2>
               </div>
 
               <div className="space-y-4">
                 <div>
-                  <label className="block text-xs font-medium text-gray-700 mb-2 uppercase tracking-wide">
+                  <label className="block text-xs font-medium text-[#000000] mb-3 uppercase tracking-wide">
                     MOBILE WITH COUNTRY CODE
                   </label>
                   <div className="relative">
-                    <div className="flex border-2 border-teal-600 rounded-lg overflow-hidden bg-white">
+                    <div className="flex border-2 max-w-md border-[#014D4E] rounded-lg overflow-hidden bg-white">
                       <span className="inline-flex items-center px-4 py-4 bg-white text-gray-700 font-medium">
                         <img 
                           src={IndianFlag}
@@ -223,13 +223,13 @@ const PhoneVerification = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <p className="text-sm text-gray-600">
-                    We'll use this number to send you important updates about CollMeet.
+                  <p className="text-sm text-gray-600 font-normal">
+                    You will receive a verification code via <strong>SMS</strong> on this number.
                   </p>
                   
                   <div className="flex items-start space-x-3">
-                    <span className="text-red-500 mt-1">❤️</span>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <span className="font-bold mt-1">❤️</span>
+                    <p className="text-sm max-w-xl text-gray-600 leading-relaxed">
                       We understand how important your privacy is and assure you that communication will 
                       focus solely on what truly matters. Your comfort is our priority, and you can opt-out at any 
                       time you wish. Thank you for trusting us!
