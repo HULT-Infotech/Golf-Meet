@@ -1,10 +1,10 @@
 import React from "react";
-import Cone from "./components/Number";
+import Cone from "./pages/Number";
 
 function Registration() {
   return (
     <>
-    <div className="">
+    <div>
       <Cone />
       </div>
     </>
