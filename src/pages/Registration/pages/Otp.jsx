@@ -1,20 +1,16 @@
 import React, { useState } from 'react';
 import LeftSection from '../components/NumOtpLeft';
-import RightSection from '../components/NumRight';
+import RightSection from '../components/OtpRight';
 
-const PhoneVerificationPage = () => {
-  const [phoneNumber, setPhoneNumber] = useState('');
+const OtpVerificationPage = () => {
+  const [otp, setOtp] = useState('');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [agreedToNotifications, setAgreedToNotifications] = useState(false);
+  const [resendCooldown, setResendCooldown] = useState(0);
 
-  const handlePhoneSubmit = () => {
-    if (phoneNumber.length !== 10) {
-      setError('Please enter a valid 10-digit mobile number');
-      return;
-    }
-    if (!agreedToNotifications) {
-      setError('Please agree to receive notifications to continue');
+  const handleOtpSubmit = () => {
+    if (otp.length !== 6) {
+      setError('Please enter a valid 6-digit OTP');
       return;
     }
     setError('');
@@ -24,9 +20,22 @@ const PhoneVerificationPage = () => {
     setTimeout(() => {
       setIsLoading(false);
       // Reset form
-      setPhoneNumber('');
-      setAgreedToNotifications(false);
+      setOtp('');
     }, 1500);
+  };
+
+  const handleResendOtp = () => {
+    setResendCooldown(30);
+    // Simulate resend API call
+    const timer = setInterval(() => {
+      setResendCooldown(prev => {
+        if (prev <= 1) {
+          clearInterval(timer);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
   };
 
   const handleBackClick = () => {
@@ -66,18 +75,18 @@ const PhoneVerificationPage = () => {
           
           {/* Right Section Component - Mobile & Desktop */}
           <RightSection 
-            phoneNumber={phoneNumber}
-            setPhoneNumber={setPhoneNumber}
+            otp={otp}
+            setOtp={setOtp}
             error={error}
             setError={setError}
             isLoading={isLoading}
-            agreedToNotifications={agreedToNotifications}
-            setAgreedToNotifications={setAgreedToNotifications}
-            handlePhoneSubmit={handlePhoneSubmit}
+            resendCooldown={resendCooldown}
+            handleOtpSubmit={handleOtpSubmit}
+            handleResendOtp={handleResendOtp}
             // Stage indicator props
-            currentStage={1}
+            currentStage={2}
             totalStages={5}
-            progressPercentage={10} // 20% for phone verification step
+            progressPercentage={20} // 40% for OTP verification step
           />
         </div>
         
@@ -88,4 +97,4 @@ const PhoneVerificationPage = () => {
   );
 };
 
-export default PhoneVerificationPage;
+export default OtpVerificationPage;

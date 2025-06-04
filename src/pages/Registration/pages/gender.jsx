@@ -1,31 +1,60 @@
 import React, { useState } from 'react';
-import LeftSection from '../components/NumOtpLeft';
-import RightSection from '../components/NumRight';
+import LeftSection from '../components/GenderLeft';
+import RightSection from '../components/Gender'; // Keep original import path
 
-const PhoneVerificationPage = () => {
-  const [phoneNumber, setPhoneNumber] = useState('');
+const GolferMatchingPage = () => {
+  const [dateOfBirth, setDateOfBirth] = useState('');
+  const [selectedGender, setSelectedGender] = useState('');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [agreedToNotifications, setAgreedToNotifications] = useState(false);
 
-  const handlePhoneSubmit = () => {
-    if (phoneNumber.length !== 10) {
-      setError('Please enter a valid 10-digit mobile number');
+  const handleSubmit = () => {
+    // Validate date of birth
+    if (!dateOfBirth.trim()) {
+      setError('Please select your date of birth');
       return;
     }
-    if (!agreedToNotifications) {
-      setError('Please agree to receive notifications to continue');
+
+    // Validate gender selection
+    if (!selectedGender) {
+      setError('Please select your gender');
       return;
     }
+
+    // Validate age (must be at least 13 years old for most platforms)
+    const birthDate = new Date(dateOfBirth);
+    const today = new Date();
+    const age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+    
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+
+    if (age < 13) {
+      setError('You must be at least 13 years old to continue');
+      return;
+    }
+
+    if (age > 120) {
+      setError('Please enter a valid date of birth');
+      return;
+    }
+
     setError('');
     setIsLoading(true);
-    
+
     // Simulate API call
     setTimeout(() => {
       setIsLoading(false);
-      // Reset form
-      setPhoneNumber('');
-      setAgreedToNotifications(false);
+      // Add your navigation logic here - proceed to next step
+      console.log('Golfer matching data submitted:', {
+        dateOfBirth,
+        selectedGender,
+        age
+      });
+      // Example: navigate to next page
+      // navigate('/next-step');
     }, 1500);
   };
 
@@ -66,18 +95,18 @@ const PhoneVerificationPage = () => {
           
           {/* Right Section Component - Mobile & Desktop */}
           <RightSection 
-            phoneNumber={phoneNumber}
-            setPhoneNumber={setPhoneNumber}
+            dateOfBirth={dateOfBirth}
+            setDateOfBirth={setDateOfBirth}
+            selectedGender={selectedGender}
+            setSelectedGender={setSelectedGender}
             error={error}
             setError={setError}
             isLoading={isLoading}
-            agreedToNotifications={agreedToNotifications}
-            setAgreedToNotifications={setAgreedToNotifications}
-            handlePhoneSubmit={handlePhoneSubmit}
+            handleFormSubmit={handleSubmit}
             // Stage indicator props
-            currentStage={1}
-            totalStages={5}
-            progressPercentage={10} // 20% for phone verification step
+            currentStage={4}
+            totalStages={10}
+            progressPercentage={40} // 40% for second step - golfer matching
           />
         </div>
         
@@ -88,4 +117,4 @@ const PhoneVerificationPage = () => {
   );
 };
 
-export default PhoneVerificationPage;
+export default GolferMatchingPage;

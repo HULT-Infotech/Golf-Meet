@@ -1,5 +1,6 @@
 import React from 'react';
 import IndianFlag from "../assets/india.svg";
+import StageIndicator from "../components/StageIndictor"; 
 
 const RightSection = ({ 
   phoneNumber, 
@@ -9,17 +10,22 @@ const RightSection = ({
   isLoading, 
   agreedToNotifications, 
   setAgreedToNotifications, 
-  handlePhoneSubmit 
+  handlePhoneSubmit,
+  // New props for stage indicator
+  currentStage = 1,
+  totalStages = 10,
+  progressPercentage = 10 
 }) => {
   return (
     <div className="w-full lg:w-1/2 flex flex-col justify-start px-6 py-8 lg:px-16 lg:py-28 min-h-screen lg:h-screen overflow-y-auto">
       <div className="max-w-auto mx-auto w-full">
-        {/* Progress indicator line */}
-        <div className="mb-6 lg:mb-8">
-          <div className="flex items-center space-x-4">
-            <div className="flex-1 h-1 bg-teal-600 rounded-full"></div>
-          </div>
-        </div>
+        {/* Progress indicator - now using StageIndicator component */}
+        <StageIndicator 
+          currentStage={currentStage}
+          totalStages={totalStages}
+          progressPercentage={progressPercentage}
+          showStageText={true}
+        />
 
         <div className="mb-6 lg:mb-6">
           <h2 className="text-xl lg:text-2xl font-bold text-[#014D4E] font-quattrocento my-6 lg:my-10 uppercase tracking-wider">
@@ -95,28 +101,48 @@ const RightSection = ({
           <button
             onClick={handlePhoneSubmit}
             disabled={isLoading || phoneNumber.length !== 10 || !agreedToNotifications}
-            className="w-full lg:max-w-xs py-3 lg:py-3 px-6 rounded-full disabled:opacity-50 disabled:cursor-not-allowed transition-all font-medium text-sm lg:text-sm tracking-wide flex items-center justify-between lg:justify-between"
+            className="w-full lg:max-w-xs py-3 px-6 rounded-full disabled:opacity-50 disabled:cursor-not-allowed transition-all font-medium text-sm tracking-wide flex items-center justify-between"
             style={{
-              background: (phoneNumber.length === 10 && agreedToNotifications && !isLoading) 
-                ? `linear-gradient(0deg, #014D4E, #014D4E), linear-gradient(279.93deg, rgba(255, 180, 30, 0) 70.48%, rgba(255, 180, 30, 0.3) 100%)`
-                : '#d1d5db',
-              color: (phoneNumber.length === 10 && agreedToNotifications && !isLoading) ? 'white' : '#6b7280'
+              background:
+                phoneNumber.length === 10 && agreedToNotifications && !isLoading
+                  ? 'linear-gradient(90deg, #1f6c5d 0%, #064c45 100%)'
+                  : '#d1d5db',
+              color:
+                phoneNumber.length === 10 && agreedToNotifications && !isLoading
+                  ? 'white'
+                  : '#6b7280',
+              height: '48px', // Fix height to prevent resizing
             }}
           >
             {isLoading ? (
-              <div className="flex items-center justify-center w-full">
-                <div className="w-4 h-4 border-2 border-gray-400 border-t-white rounded-full animate-spin mr-2"></div>
-                SUBMITTING...
-              </div>
+              <>
+                <div className="flex items-center justify-center w-full">
+                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
+                  <span className="text-white">SUBMITTING...</span>
+                </div>
+              </>
             ) : (
               <>
-                <span className="text-center lg:text-left flex-1 lg:flex-none">PROCEED TO VERIFY</span>
-                <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0 ml-2 lg:ml-0">
-                  <span className="text-white text-sm font-bold">→</span>
+                <span className="text-center flex-1">PROCEED TO VERIFY</span>
+                <div className="w-8 h-8 rounded-full flex items-center justify-center ml-2" style={{ backgroundColor: '#5f8f91' }}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#004042"  // Dark teal color
+                    strokeWidth="4"   // Thicker stroke
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
                 </div>
               </>
             )}
           </button>
+
         </div>
       </div>
     </div>

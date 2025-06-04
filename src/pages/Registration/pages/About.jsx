@@ -1,31 +1,33 @@
 import React, { useState } from 'react';
-import LeftSection from '../components/NumOtpLeft';
-import RightSection from '../components/NumRight';
+import LeftSection from '../components/LocationAbout';
+import RightSection from '../components/AboutRight';
 
-const PhoneVerificationPage = () => {
-  const [phoneNumber, setPhoneNumber] = useState('');
+const NameInputPage = () => {
+  const [fullName, setFullName] = useState('');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [agreedToNotifications, setAgreedToNotifications] = useState(false);
 
-  const handlePhoneSubmit = () => {
-    if (phoneNumber.length !== 10) {
-      setError('Please enter a valid 10-digit mobile number');
+  const handleSubmit = () => {
+    if (!fullName.trim()) {
+      setError('Please tell us about yourself');
       return;
     }
-    if (!agreedToNotifications) {
-      setError('Please agree to receive notifications to continue');
+    
+    if (fullName.trim().length < 50) {
+      setError('Please provide at least 50 characters to tell us about yourself');
       return;
     }
+    
     setError('');
     setIsLoading(true);
     
     // Simulate API call
     setTimeout(() => {
       setIsLoading(false);
-      // Reset form
-      setPhoneNumber('');
-      setAgreedToNotifications(false);
+      // Add your navigation logic here - proceed to next step
+      console.log('About you submitted:', fullName);
+      // Example: navigate to next page
+      // navigate('/next-step');
     }, 1500);
   };
 
@@ -66,18 +68,16 @@ const PhoneVerificationPage = () => {
           
           {/* Right Section Component - Mobile & Desktop */}
           <RightSection 
-            phoneNumber={phoneNumber}
-            setPhoneNumber={setPhoneNumber}
+            fullName={fullName}
+            setFullName={setFullName}
             error={error}
             setError={setError}
             isLoading={isLoading}
-            agreedToNotifications={agreedToNotifications}
-            setAgreedToNotifications={setAgreedToNotifications}
-            handlePhoneSubmit={handlePhoneSubmit}
+            handleSubmit={handleSubmit}
             // Stage indicator props
-            currentStage={1}
+            currentStage={3}
             totalStages={5}
-            progressPercentage={10} // 20% for phone verification step
+            progressPercentage={30} // 30% for about you step
           />
         </div>
         
@@ -88,4 +88,4 @@ const PhoneVerificationPage = () => {
   );
 };
 
-export default PhoneVerificationPage;
+export default NameInputPage;
