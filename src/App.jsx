@@ -15,6 +15,9 @@ const Leader = lazy(() => import("./pages/LeaderPage"));
 const Refund = lazy(() => import("./pages/Refund"));
 const Redirect = lazy(() => import("./pages/Contact_Page_Desktop_layout"));
 const Reg = lazy(() => import("./pages/Registration/Registration_Layout"));
+const Paymentfail = lazy(() => import("./pages/Registration/pages/Paymentfail"));
+const Problem = lazy(() => import("./pages/Registration/pages/Problem"));
+
 
 function App() {
   return (
@@ -35,6 +38,9 @@ function App() {
           <Route path="/ranking" element={<Leader />} />
           <Route path="/refund-policy" element={<Refund />} />
           <Route path="/contact" element={<Redirect />} />
+          <Route path="/paymentfail" element={<Paymentfail />} /> 
+          <Route path="/problem" element={<Problem />} /> 
+
         </Routes>
         <ScrollToTop />
       </Suspense>
