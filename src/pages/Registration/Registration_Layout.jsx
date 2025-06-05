@@ -6,6 +6,7 @@ import Coneeee from "./pages/gender";
 import Coneeeee from "./pages/Location";
 import Coneeeeee from "./pages/About";
 import Coneeeeeee from "./pages/Plan";
+import Coneeeeeeee from "./pages/Gst";
 function Registration() {
   return (
     <>
@@ -17,6 +18,7 @@ function Registration() {
       <Coneeeee />
       <Coneeeeee />
       <Coneeeeeee />
+      <Coneeeeeeee />
       </div>
     </>
   );

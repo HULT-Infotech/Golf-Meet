@@ -1,0 +1,101 @@
+import React, { useState } from 'react';
+import LeftSection from '../components/PersonalLeft';
+import RightSection from '../components/gst';
+
+const GSTClaimPage = () => {
+  const [gstNumber, setGstNumber] = useState('');
+  const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [validationState, setValidationState] = useState(''); // 'valid', 'invalid', or ''
+
+  // GST number validation
+  const validateGST = (value) => {
+    const gstPattern = /^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$/;
+    return gstPattern.test(value.toUpperCase());
+  };
+
+  const handleSubmit = () => {
+    if (!gstNumber.trim()) {
+      setError('Please enter a GST number');
+      return;
+    }
+
+    if (!validateGST(gstNumber)) {
+      setError('This is not a valid GST number');
+      setValidationState('invalid');
+      return;
+    }
+
+    setError('');
+    setIsLoading(true);
+
+    // Simulate API call
+    setTimeout(() => {
+      setIsLoading(false);
+      // Add your navigation logic here - proceed to next step
+      console.log('GST number submitted:', gstNumber);
+      // Example: navigate to next page
+      // navigate('/next-step');
+    }, 1500);
+  };
+
+  const handleBackClick = () => {
+    // Add your navigation logic here
+    window.history.back();
+  };
+
+  return (
+    <div className="min-h-screen gradient-noise-bg">
+      {/* Back Button */}
+      <div className="absolute top-4 left-4 z-50">
+        <button
+          onClick={handleBackClick}
+          className="md:flex hidden items-center justify-center w-10 h-8 text-black transition-colors"
+        >
+          <svg
+            width="56"
+            height="24"
+            viewBox="0 0 32 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M28 12H5"/>
+            <path d="m12 19-7-7 7-7"/>
+          </svg>
+        </button>
+      </div>
+
+      {/* Mobile & Desktop Unified View */}
+      <div className="min-h-screen relative">
+        <div className="flex flex-col lg:flex-row min-h-screen">
+          {/* Left Section Component - Desktop Only */}
+          <LeftSection />
+                    
+          {/* Right Section Component - Mobile & Desktop */}
+          <RightSection 
+            gstNumber={gstNumber}
+            setGstNumber={setGstNumber}
+            error={error}
+            setError={setError}
+            isLoading={isLoading}
+            handleSubmit={handleSubmit}
+            validationState={validationState}
+            setValidationState={setValidationState}
+            // Stage indicator props
+            currentStage={3}
+            totalStages={5}
+            progressPercentage={30} // 30% for GST claim step
+          />
+        </div>
+                
+        {/* Green section at bottom - full width - Desktop Only */}
+        <div className="hidden lg:block absolute bottom-0 left-0 right-0 h-12 noise-bg-new bulge-topest z-0"></div>
+      </div>
+    </div>
+  );
+};
+
+export default GSTClaimPage;
