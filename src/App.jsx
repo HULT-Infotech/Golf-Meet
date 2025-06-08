@@ -17,6 +17,11 @@ const Redirect = lazy(() => import("./pages/Contact_Page_Desktop_layout"));
 const Reg = lazy(() => import("./pages/Registration/Registration_Layout"));
 const Paymentfail = lazy(() => import("./pages/Registration/pages/Paymentfail"));
 const Problem = lazy(() => import("./pages/Registration/pages/Problem"));
+const Success = lazy(() => import("./pages/Registration/pages/success"));
+const Number = lazy(() => import("./pages/Registration/pages/Number"));
+
+
+
 
 
 function App() {
@@ -40,6 +45,9 @@ function App() {
           <Route path="/contact" element={<Redirect />} />
           <Route path="/paymentfail" element={<Paymentfail />} /> 
           <Route path="/problem" element={<Problem />} /> 
+          <Route path="/success" element={<Success />} /> 
+          <Route path="/number" element={<Number />} /> 
+
 
         </Routes>
         <ScrollToTop />

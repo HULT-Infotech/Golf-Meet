@@ -19,7 +19,7 @@ const Paymentfail = () => {
         <h1 className="text-2xl sm:text-3xl font-bold text-red-600 mb-3 font-quattrocento text-center">
           THERE WAS A PROBLEM!
         </h1>
-        <p className="text-gray-600 text-base sm:text-lg mb-2 text-center max-w-sm">
+        <p className="text-gray-600 text-base sm:text-lg mb-8 text-center max-w-sm">
           We did not receive a response from your bank or service provider.
         </p>
 
@@ -55,7 +55,7 @@ const Paymentfail = () => {
             <img 
               src={VectorIcon} 
               alt="Vector Icon" 
-              className="w-6 h-6 sm:w-8 sm:h-8 opacity-40 ml-3"
+              className="w-6 h-6 sm:w-8 sm:h-8 opacity-40 ml-24"
             />
           </button>
           

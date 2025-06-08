@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import LeftSection from '../components/NumOtpLeft';
-import RightSection from '../components/NumOtpRight';
+import LeftSection from '../components/NumOtpLeft.jsx';
+import RightSection from '../components/NumOtpRight.jsx';
 import IndianFlag from "../assets/india.svg";
 
 const PhoneVerificationPage = () => {
